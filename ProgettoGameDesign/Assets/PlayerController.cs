@@ -1,8 +1,11 @@
+using System;
 using UnityEngine;
 
 public class PlayerController : MonoBehaviour
 {
+    public static PlayerController Instance { get; private set; }
     private Rigidbody2D rb;
+    private Animator animator; 
     [Header("Horizontal Movement")]
     [SerializeField] float speed = 5f;
     private Vector2 moveInput;
@@ -13,12 +16,24 @@ public class PlayerController : MonoBehaviour
     [SerializeField] float groundCheckY = 0.2f;
     [SerializeField] float GroundCheckX = 0.5f;
     [SerializeField] LayerMask groundLayer;
-    
+
+    private void Awake()
+    {
+        if (Instance != null && Instance != this)
+        {
+            Destroy(gameObject);
+            return;
+        }
+        Instance = this;
+        DontDestroyOnLoad(gameObject);
+    }
+
     void Start()
     {
         rb = GetComponent<Rigidbody2D>();
         InputManager.Instance.OnMoveInput += HandleMoveInput;
         InputManager.Instance.OnJumpInput += HandleJump;
+        animator = GetComponent<Animator>();
     }
 
    
@@ -48,12 +63,26 @@ public class PlayerController : MonoBehaviour
     {
         Move();
         Jump();
+        Flip();
+    }
+
+    void Flip()
+    {
+        if (moveInput.x > 0)
+        {
+            transform.rotation = Quaternion.Euler(0, 0, 0);
+        }
+        else if (moveInput.x < 0)
+        {
+            transform.rotation = Quaternion.Euler(0, 180, 0);
+        }
     }
     void Move()
     {
         // Preserva la velocit� verticale (gestita dalla gravit� o da altri effetti fisici)
         Vector2 newVelocity = new Vector2(moveInput.x * speed, rb.linearVelocity.y);
         rb.linearVelocity = newVelocity;
+        animator.SetBool("Walking", rb.linearVelocity.x !=0 &&IsGrounded());
     }
     public bool IsGrounded()
     {
@@ -70,7 +99,9 @@ public class PlayerController : MonoBehaviour
         }
         if (IsGrounded()) { 
             rb.linearVelocity = new Vector2(rb.linearVelocity.x, jumpInput * jumpForce);
+            
         }
+        animator.SetBool("Jumping", !IsGrounded());
 
     }
 
