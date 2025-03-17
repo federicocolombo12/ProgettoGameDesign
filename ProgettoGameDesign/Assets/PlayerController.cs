@@ -44,14 +44,14 @@ public class PlayerController : MonoBehaviour
         // Puoi implementare qui l'effettivo salto del giocatore
     }
 
-    private void Update()
+    private void FixedUpdate()
     {
         Move();
         Jump();
     }
     void Move()
     {
-        // Preserva la velocità verticale (gestita dalla gravità o da altri effetti fisici)
+        // Preserva la velocitï¿½ verticale (gestita dalla gravitï¿½ o da altri effetti fisici)
         Vector2 newVelocity = new Vector2(moveInput.x * speed, rb.linearVelocity.y);
         rb.linearVelocity = newVelocity;
     }
