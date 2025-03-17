@@ -6,16 +6,28 @@ public class PlayerController : MonoBehaviour
     public static PlayerController Instance { get; private set; }
     private Rigidbody2D rb;
     private Animator animator; 
+    private PlayerStateList pState;
+    
     [Header("Horizontal Movement")]
     [SerializeField] float speed = 5f;
     private Vector2 moveInput;
+    
     [Header("Jumping")]
     private float jumpInput;
     [SerializeField] float jumpForce = 10f;
+    float jumpBufferCounter = 0;
+    [SerializeField] private float jumpBufferFrames;
+    private float coyoteTimeCounter = 0;
+    [SerializeField] private float coyoteTime;
+    private int jumpCount = 0;
+    [SerializeField] private int maxJumpCount = 2;
+    
+    [Header("Ground Check")]
     [SerializeField] Transform groundCheck;
     [SerializeField] float groundCheckY = 0.2f;
     [SerializeField] float GroundCheckX = 0.5f;
     [SerializeField] LayerMask groundLayer;
+    
 
     private void Awake()
     {
@@ -34,6 +46,7 @@ public class PlayerController : MonoBehaviour
         InputManager.Instance.OnMoveInput += HandleMoveInput;
         InputManager.Instance.OnJumpInput += HandleJump;
         animator = GetComponent<Animator>();
+        pState = GetComponent<PlayerStateList>();
     }
 
    
@@ -61,6 +74,7 @@ public class PlayerController : MonoBehaviour
 
     private void FixedUpdate()
     {
+        UpdateJumpVariables();
         Move();
         Jump();
         Flip();
@@ -96,13 +110,47 @@ public class PlayerController : MonoBehaviour
         if (jumpInput == 0 && rb.linearVelocity.y > 0)
         {
             rb.linearVelocity = new Vector2(rb.linearVelocity.x, 0);
+            pState.jumping = false;
         }
-        if (IsGrounded()) { 
-            rb.linearVelocity = new Vector2(rb.linearVelocity.x, jumpInput * jumpForce);
+
+        if (!pState.jumping)
+        {
+            if (coyoteTimeCounter>0&&jumpBufferCounter>0) 
+            { 
+                rb.linearVelocity = new Vector2(rb.linearVelocity.x, jumpInput * jumpForce);
+                pState.jumping = true;
+            }
+            else if (!IsGrounded() && jumpBufferCounter > 0 && jumpCount < maxJumpCount)
+            {
+                rb.linearVelocity = new Vector2(rb.linearVelocity.x, jumpInput * jumpForce);
+                pState.jumping = true;
+                jumpCount++;
+            }
             
         }
         animator.SetBool("Jumping", !IsGrounded());
+        
 
     }
-
+    void UpdateJumpVariables()
+    {
+        if (IsGrounded())
+        {
+            pState.jumping = false;
+            coyoteTimeCounter = coyoteTime;
+            jumpCount = 0;
+        }
+        else
+        {
+            coyoteTimeCounter -= Time.deltaTime;
+        }
+        if (jumpInput!=0)
+        {
+            jumpBufferCounter = jumpBufferFrames;
+        }
+        else
+        {
+            jumpBufferCounter --;
+        }
+    }
 }

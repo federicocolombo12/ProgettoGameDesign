@@ -28,6 +28,9 @@
     "accountId": "aea07c06-0781-4404-8912-19f8b4dea6b1"
   }
 }]]></component>
+  <component name="HighlightingSettingsPerFile">
+    <setting file="file://$PROJECT_DIR$/Assets/PlayerStateList.cs" root0="FORCE_HIGHLIGHTING" />
+  </component>
   <component name="ProjectColorInfo"><![CDATA[{
   "associatedIndex": 1
 }]]></component>
@@ -101,7 +104,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1742221642456</updated>
-      <workItem from="1742221644203" duration="4319000" />
+      <workItem from="1742221644203" duration="6622000" />
     </task>
     <servers />
   </component>
