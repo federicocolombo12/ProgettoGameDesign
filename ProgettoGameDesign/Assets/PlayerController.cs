@@ -77,6 +77,7 @@ public class PlayerController : MonoBehaviour
         UpdateJumpVariables();
         Move();
         Jump();
+        
         Flip();
     }
 
@@ -120,11 +121,13 @@ public class PlayerController : MonoBehaviour
                 rb.linearVelocity = new Vector2(rb.linearVelocity.x, jumpInput * jumpForce);
                 pState.jumping = true;
             }
-            else if (!IsGrounded() && jumpBufferCounter > 0 && jumpCount < maxJumpCount)
+            else if (!IsGrounded() && jumpCount < maxJumpCount && jumpInput!=0)
             {
-                rb.linearVelocity = new Vector2(rb.linearVelocity.x, jumpInput * jumpForce);
                 pState.jumping = true;
                 jumpCount++;
+                rb.linearVelocity = new Vector2(rb.linearVelocity.x, jumpInput * jumpForce);
+                
+                
             }
             
         }
