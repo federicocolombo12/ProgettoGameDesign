@@ -37,10 +37,12 @@ public class PlayerController : MonoBehaviour
     private bool dashed = false;
 
     [Space(10)]
+
     [Header("Attack")]
+    [SerializeField] LayerMask attackableLayer;
     [SerializeField] Transform sideAttackTransform, upAttackTransform, downAttackTransform;
     [SerializeField] Vector2 sideAttackArea, upAttackArea, downAttackArea;
-    [SerializeField] LayerMask attackableLayer;
+    
     bool attack = false;
     float timeBetweenAttack, timeSinceAttack;
 
