@@ -6,7 +6,7 @@ public class PlayerController : MonoBehaviour
 {
     [Header("Horizontal Movement")]
     [SerializeField] float speed = 5f;
-    private Vector2 moveInput;
+    private Vector2 directionalInput;
     [Space(10)]
     
     [Header("Jumping Mechanics")]
@@ -38,8 +38,11 @@ public class PlayerController : MonoBehaviour
 
     [Space(10)]
     [Header("Attack")]
-    bool attack=false;
-    [SerializeField] float timeBetweenAttack, timeSinceAttack;
+    [SerializeField] Transform sideAttackTransform, upAttackTransform, downAttackTransform;
+    [SerializeField] Vector2 sideAttackArea, upAttackArea, downAttackArea;
+    [SerializeField] LayerMask attackableLayer;
+    bool attack = false;
+    float timeBetweenAttack, timeSinceAttack;
 
 
 
@@ -73,6 +76,15 @@ public class PlayerController : MonoBehaviour
         pState = GetComponent<PlayerStateList>();
         gravityScale = rb.gravityScale;
     }
+    void OnDrawGizmos()
+    {
+        Gizmos.color = Color.red;
+        Gizmos.DrawWireCube(sideAttackTransform.position, sideAttackArea);
+        Gizmos.color = Color.green;
+        Gizmos.DrawWireCube(upAttackTransform.position, upAttackArea);
+        Gizmos.color = Color.blue;
+        Gizmos.DrawWireCube(downAttackTransform.position, downAttackArea);
+    }
 
    
 
@@ -89,7 +101,7 @@ public class PlayerController : MonoBehaviour
 
     private void HandleMoveInput(Vector2 input)
     {
-        moveInput = input;
+        directionalInput = input;
     }
 
     private void HandleJump(float input)
@@ -136,11 +148,11 @@ public class PlayerController : MonoBehaviour
 
     void Flip()
     {
-        if (moveInput.x > 0)
+        if (directionalInput.x > 0)
         {
             transform.rotation = Quaternion.Euler(0, 0, 0);
         }
-        else if (moveInput.x < 0)
+        else if (directionalInput.x < 0)
         {
             transform.rotation = Quaternion.Euler(0, 180, 0);
         }
@@ -148,7 +160,7 @@ public class PlayerController : MonoBehaviour
     void Move()
     {
         // Preserva la velocit� verticale (gestita dalla gravit� o da altri effetti fisici)
-        Vector2 newVelocity = new Vector2(moveInput.x * speed, rb.linearVelocity.y);
+        Vector2 newVelocity = new Vector2(directionalInput.x * speed, rb.linearVelocity.y);
         rb.linearVelocity = newVelocity;
         animator.SetBool("Walking", rb.linearVelocity.x !=0 &&IsGrounded());
     }
@@ -233,7 +245,27 @@ public class PlayerController : MonoBehaviour
             animator.SetTrigger("Attack");
             attack = false;
             Debug.Log("Attacco eseguito!");
+            if (directionalInput.y < 0 || directionalInput.y == 0 && IsGrounded())
+            {
+                Hit(sideAttackTransform, sideAttackArea);
+            }
+            else if (directionalInput.y>0)
+            {
+                Hit(upAttackTransform, upAttackArea);
+            }
+            else if (directionalInput.y < 0 && !IsGrounded())
+            {
+                Hit(upAttackTransform, upAttackArea);
+            }
             //Attacco
+        }
+    }
+    void Hit(Transform _attackTransform, Vector2 _attackArea)
+    {
+        Collider2D[] hits = Physics2D.OverlapBoxAll(_attackTransform.position, _attackArea, 0, attackableLayer);
+        if (hits.Length > 0)
+        {
+            Debug.Log("Colpito!");
         }
     }
 }
