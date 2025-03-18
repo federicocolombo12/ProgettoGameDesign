@@ -674,11 +674,10 @@ MonoBehaviour:
   jumpBufferFrames: 10
   coyoteTime: 0.2
   maxJumpCount: 2
-  canDash: 1
-  dashed: 0
-  dashSpeed: 5
+  dashSpeed: 2.5
   dashTime: 0.2
   dashCooldown: 0.3
+  dashEffect: {fileID: 1349972566738812877, guid: 41fe29b72e0207f4397afe6cb01e6a0b, type: 3}
   groundCheck: {fileID: 24373061}
   groundCheckY: 0.2
   GroundCheckX: 0.2

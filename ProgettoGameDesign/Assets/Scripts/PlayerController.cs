@@ -25,11 +25,12 @@ public class PlayerController : MonoBehaviour
     [SerializeField] private int maxJumpCount = 2;
 
     [Header("Dashing")]
-    [SerializeField] private bool canDash = true;
-    [SerializeField] private bool dashed = false;
+    private bool canDash = true;
+    private bool dashed = false;
     [SerializeField] float dashSpeed = 10f;
     [SerializeField] float dashTime = 0.5f;
     [SerializeField] float dashCooldown = 1f;
+    [SerializeField] GameObject dashEffect;
     
     [Header("Ground Check")]
     [SerializeField] Transform groundCheck;
@@ -196,6 +197,7 @@ public class PlayerController : MonoBehaviour
         animator.SetTrigger("Dashing");
         rb.gravityScale = 0;
         rb.linearVelocity = new Vector2(rb.linearVelocity.x*dashSpeed, 0);
+        if (IsGrounded()) { Instantiate(dashEffect, transform); }
         yield return new WaitForSeconds(dashTime);
         rb.gravityScale = gravityScale;
         pState.dashing = false;
