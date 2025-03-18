@@ -4,19 +4,15 @@ using UnityEngine;
 
 public class PlayerController : MonoBehaviour
 {
-    public static PlayerController Instance { get; private set; }
-    private Rigidbody2D rb;
-    private Animator animator; 
-    private PlayerStateList pState;
-    private float gravityScale;
-    
     [Header("Horizontal Movement")]
     [SerializeField] float speed = 5f;
     private Vector2 moveInput;
+    [Space(10)]
     
     [Header("Jumping Mechanics")]
-    private float jumpInput;
+    
     [SerializeField] float jumpForce = 10f;
+    private float jumpInput;
     float jumpBufferCounter = 0;
     [SerializeField] private float jumpBufferFrames;
     private float coyoteTimeCounter = 0;
@@ -24,20 +20,36 @@ public class PlayerController : MonoBehaviour
     private int jumpCount = 0;
     [SerializeField] private int maxJumpCount = 2;
 
-    [Header("Dashing")]
-    private bool canDash = true;
-    private bool dashed = false;
-    [SerializeField] float dashSpeed = 10f;
-    [SerializeField] float dashTime = 0.5f;
-    [SerializeField] float dashCooldown = 1f;
-    [SerializeField] GameObject dashEffect;
-    
     [Header("Ground Check")]
     [SerializeField] Transform groundCheck;
     [SerializeField] float groundCheckY = 0.2f;
     [SerializeField] float GroundCheckX = 0.5f;
     [SerializeField] LayerMask groundLayer;
+    [Space(10)]
+
+    [Header("Dashing")]
     
+    [SerializeField] float dashSpeed = 10f;
+    [SerializeField] float dashTime = 0.5f;
+    [SerializeField] float dashCooldown = 1f;
+    [SerializeField] GameObject dashEffect;
+    private bool canDash = true;
+    private bool dashed = false;
+
+    [Space(10)]
+    [Header("Attack")]
+    bool attack=false;
+    [SerializeField] float timeBetweenAttack, timeSinceAttack;
+
+
+
+
+    public static PlayerController Instance { get; private set; }
+    private Rigidbody2D rb;
+    private Animator animator;
+    private PlayerStateList pState;
+    private float gravityScale;
+
 
     private void Awake()
     {
@@ -56,6 +68,7 @@ public class PlayerController : MonoBehaviour
         InputManager.Instance.OnMoveInput += HandleMoveInput;
         InputManager.Instance.OnJumpInput += HandleJump;
         InputManager.Instance.OnDashInput += HandleDash;
+        InputManager.Instance.OnAttackInput += HandleAttack;
         animator = GetComponent<Animator>();
         pState = GetComponent<PlayerStateList>();
         gravityScale = rb.gravityScale;
@@ -71,6 +84,7 @@ public class PlayerController : MonoBehaviour
         InputManager.Instance.OnJumpInput -= HandleJump;
 
         InputManager.Instance.OnDashInput -= HandleDash;
+        InputManager.Instance.OnAttackInput -= HandleAttack;
     }
 
     private void HandleMoveInput(Vector2 input)
@@ -94,6 +108,10 @@ public class PlayerController : MonoBehaviour
         
         
     }
+    private void HandleAttack()
+    {
+        attack = true;
+    }
     void ResetDash() { 
         
         if (IsGrounded())
@@ -113,6 +131,7 @@ public class PlayerController : MonoBehaviour
         Jump();
         ResetDash();
         Flip();
+        Attack();
     }
 
     void Flip()
@@ -203,5 +222,18 @@ public class PlayerController : MonoBehaviour
         pState.dashing = false;
         yield return new WaitForSeconds(dashCooldown);
         canDash = true;
+    }
+    void Attack()
+    {
+        timeSinceAttack += Time.deltaTime;
+        if (attack && timeSinceAttack >= timeBetweenAttack)
+        {
+            
+            timeSinceAttack = 0;
+            animator.SetTrigger("Attack");
+            attack = false;
+            Debug.Log("Attacco eseguito!");
+            //Attacco
+        }
     }
 }

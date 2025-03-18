@@ -10,6 +10,7 @@ public class InputManager : MonoBehaviour
     public event System.Action<Vector2> OnMoveInput;
     public event System.Action<float> OnJumpInput;
     public event System.Action OnDashInput;
+    public event System.Action OnAttackInput;
 
     private InputSystem_Actions inputActions;
 
@@ -36,7 +37,9 @@ public class InputManager : MonoBehaviour
         inputActions.Player.Jump.performed += HandleJump;
         inputActions.Player.Jump.canceled += HandleJumpCanceled;
         inputActions.Player.Dash.started += HandleDash;
-        inputActions.Player.Dash.canceled += HandleDashCanceled;
+        
+        inputActions.Player.Attack.performed += HandleAttack;
+        
     }
 
     private void OnDisable()
@@ -72,5 +75,13 @@ public class InputManager : MonoBehaviour
     private void HandleDashCanceled(InputAction.CallbackContext context)
     {
         OnDashInput?.Invoke();
+    }
+    private void HandleAttack(InputAction.CallbackContext context)
+    {
+        OnAttackInput?.Invoke();
+    }
+    private void HandleAttackCanceled(InputAction.CallbackContext context)
+    {
+        OnAttackInput?.Invoke();
     }
 }
