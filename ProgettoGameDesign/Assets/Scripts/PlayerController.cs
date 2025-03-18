@@ -14,7 +14,7 @@ public class PlayerController : MonoBehaviour
     [SerializeField] float speed = 5f;
     private Vector2 moveInput;
     
-    [Header("Jumping")]
+    [Header("Jumping Mechanics")]
     private float jumpInput;
     [SerializeField] float jumpForce = 10f;
     float jumpBufferCounter = 0;
