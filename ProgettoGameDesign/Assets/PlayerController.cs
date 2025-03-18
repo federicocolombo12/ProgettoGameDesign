@@ -1,4 +1,5 @@
 using System;
+using System.Collections;
 using UnityEngine;
 
 public class PlayerController : MonoBehaviour
@@ -7,6 +8,7 @@ public class PlayerController : MonoBehaviour
     private Rigidbody2D rb;
     private Animator animator; 
     private PlayerStateList pState;
+    private float gravityScale;
     
     [Header("Horizontal Movement")]
     [SerializeField] float speed = 5f;
@@ -21,6 +23,13 @@ public class PlayerController : MonoBehaviour
     [SerializeField] private float coyoteTime;
     private int jumpCount = 0;
     [SerializeField] private int maxJumpCount = 2;
+
+    [Header("Dashing")]
+    [SerializeField] private bool canDash = true;
+    [SerializeField] private bool dashed = false;
+    [SerializeField] float dashSpeed = 10f;
+    [SerializeField] float dashTime = 0.5f;
+    [SerializeField] float dashCooldown = 1f;
     
     [Header("Ground Check")]
     [SerializeField] Transform groundCheck;
@@ -45,8 +54,10 @@ public class PlayerController : MonoBehaviour
         rb = GetComponent<Rigidbody2D>();
         InputManager.Instance.OnMoveInput += HandleMoveInput;
         InputManager.Instance.OnJumpInput += HandleJump;
+        InputManager.Instance.OnDashInput += HandleDash;
         animator = GetComponent<Animator>();
         pState = GetComponent<PlayerStateList>();
+        gravityScale = rb.gravityScale;
     }
 
    
@@ -57,6 +68,8 @@ public class PlayerController : MonoBehaviour
         // Rimozione delle sottoscrizioni per evitare errori
         InputManager.Instance.OnMoveInput -= HandleMoveInput;
         InputManager.Instance.OnJumpInput -= HandleJump;
+
+        InputManager.Instance.OnDashInput -= HandleDash;
     }
 
     private void HandleMoveInput(Vector2 input)
@@ -71,13 +84,33 @@ public class PlayerController : MonoBehaviour
         jumpInput = input;
         // Puoi implementare qui l'effettivo salto del giocatore
     }
+    private void HandleDash() {
+        if (canDash && !dashed)
+        {
+            dashed = true;
+            StartCoroutine(Dash());
+        }
+        
+        
+    }
+    void ResetDash() { 
+        
+        if (IsGrounded())
+        {
+            dashed = false;
+        }
+    }
 
     private void FixedUpdate()
     {
         UpdateJumpVariables();
+        if (pState.dashing)
+        {
+            return;
+        }
         Move();
         Jump();
-        
+        ResetDash();
         Flip();
     }
 
@@ -155,5 +188,18 @@ public class PlayerController : MonoBehaviour
         {
             jumpBufferCounter --;
         }
+    }
+    IEnumerator Dash()
+    {
+        canDash = false;
+        pState.dashing = true;
+        animator.SetTrigger("Dashing");
+        rb.gravityScale = 0;
+        rb.linearVelocity = new Vector2(rb.linearVelocity.x*dashSpeed, 0);
+        yield return new WaitForSeconds(dashTime);
+        rb.gravityScale = gravityScale;
+        pState.dashing = false;
+        yield return new WaitForSeconds(dashCooldown);
+        canDash = true;
     }
 }

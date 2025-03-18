@@ -9,6 +9,7 @@ public class InputManager : MonoBehaviour
     // Eventi per gli input, ad esempio per il movimento e il salto
     public event System.Action<Vector2> OnMoveInput;
     public event System.Action<float> OnJumpInput;
+    public event System.Action OnDashInput;
 
     private InputSystem_Actions inputActions;
 
@@ -34,6 +35,8 @@ public class InputManager : MonoBehaviour
         inputActions.Player.Move.canceled += HandleMoveCanceled;
         inputActions.Player.Jump.performed += HandleJump;
         inputActions.Player.Jump.canceled += HandleJumpCanceled;
+        inputActions.Player.Dash.started += HandleDash;
+        inputActions.Player.Dash.canceled += HandleDashCanceled;
     }
 
     private void OnDisable()
@@ -61,5 +64,13 @@ public class InputManager : MonoBehaviour
     private void HandleJumpCanceled(InputAction.CallbackContext context)
     {
         OnJumpInput?.Invoke(0);
+    }
+    private void HandleDash(InputAction.CallbackContext context)
+    {
+        OnDashInput?.Invoke();
+    }
+    private void HandleDashCanceled(InputAction.CallbackContext context)
+    {
+        OnDashInput?.Invoke();
     }
 }

@@ -669,11 +669,16 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5e347e985ca14c047b33e709e788609b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: 5
+  speed: 10
   jumpForce: 10
   jumpBufferFrames: 10
-  coyoteTime: 0.5
-  maxJumpCount: 1
+  coyoteTime: 0.2
+  maxJumpCount: 2
+  canDash: 1
+  dashed: 0
+  dashSpeed: 5
+  dashTime: 0.2
+  dashCooldown: 0.3
   groundCheck: {fileID: 24373061}
   groundCheckY: 0.2
   GroundCheckX: 0.2
@@ -787,6 +792,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   jumping: 0
+  dashing: 0
 --- !u!1 &676118989
 GameObject:
   m_ObjectHideFlags: 0
