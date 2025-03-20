@@ -42,7 +42,15 @@ public class PlayerController : MonoBehaviour
     [SerializeField] LayerMask attackableLayer;
     [SerializeField] Transform sideAttackTransform, upAttackTransform, downAttackTransform;
     [SerializeField] Vector2 sideAttackArea, upAttackArea, downAttackArea;
-    
+    [SerializeField] float damage = 10;
+    [SerializeField] float hitForce = 10;
+    [SerializeField] GameObject slashEffect;
+    [SerializeField] float recoilXSpeed = 1f;
+    [SerializeField] float recoilYSpeed = 1f;
+    [SerializeField] int recoilXSteps = 10;
+    [SerializeField] int recoilYSteps = 10;
+    int stepsXRecoiled = 0;
+    int stepsYRecoiled = 0;
     bool attack = false;
     float timeBetweenAttack, timeSinceAttack;
 
@@ -146,6 +154,7 @@ public class PlayerController : MonoBehaviour
         ResetDash();
         Flip();
         Attack();
+        Recoil();
     }
 
     void Flip()
@@ -153,10 +162,12 @@ public class PlayerController : MonoBehaviour
         if (directionalInput.x > 0)
         {
             transform.rotation = Quaternion.Euler(0, 0, 0);
+            pState.lookingRight = true;
         }
         else if (directionalInput.x < 0)
         {
             transform.rotation = Quaternion.Euler(0, 180, 0);
+            pState.lookingRight = false;
         }
     }
     void Move()
@@ -172,6 +183,16 @@ public class PlayerController : MonoBehaviour
         return Physics2D.Raycast(groundCheck.position, Vector2.down, groundCheckY, groundLayer)||
             Physics2D.Raycast(groundCheck.position+ new Vector3(GroundCheckX,0,0), Vector2.down, groundCheckY, groundLayer)
             ||Physics2D.Raycast(groundCheck.position+   new Vector3(-GroundCheckX,0,0), Vector2.down, groundCheckY, groundLayer);
+    }
+    void StopRecoilX()
+    {
+        stepsXRecoiled = 0;
+        pState.recoilingX = false;
+    }
+    void StopRecoilY()
+    {
+        stepsYRecoiled = 0;
+        pState.recoilingY = false;
     }
     void Jump()
     {
@@ -220,7 +241,7 @@ public class PlayerController : MonoBehaviour
         }
         else
         {
-            jumpBufferCounter --;
+            jumpBufferCounter -=Time.deltaTime*10;
         }
     }
     IEnumerator Dash()
@@ -247,27 +268,97 @@ public class PlayerController : MonoBehaviour
             animator.SetTrigger("Attack");
             attack = false;
             Debug.Log("Attacco eseguito!");
-            if (directionalInput.y < 0 || directionalInput.y == 0 && IsGrounded())
+            if (directionalInput.y == 0 || directionalInput.y < 0 && IsGrounded())
             {
-                Hit(sideAttackTransform, sideAttackArea);
+                Hit(sideAttackTransform, sideAttackArea, ref pState.recoilingX, recoilXSpeed);
+                Instantiate(slashEffect, sideAttackTransform);
             }
             else if (directionalInput.y>0)
             {
-                Hit(upAttackTransform, upAttackArea);
+                Hit(upAttackTransform, upAttackArea, ref pState.recoilingY, recoilYSpeed);
+                SlashEffectAngle(slashEffect, 90, upAttackTransform);
             }
             else if (directionalInput.y < 0 && !IsGrounded())
             {
-                Hit(upAttackTransform, upAttackArea);
+                Hit(downAttackTransform, downAttackArea, ref pState.recoilingY, recoilYSpeed);
+                SlashEffectAngle(slashEffect, -90, downAttackTransform);
             }
             //Attacco
         }
     }
-    void Hit(Transform _attackTransform, Vector2 _attackArea)
+    void Hit(Transform _attackTransform, Vector2 _attackArea, ref bool _recoildDir, float _recoilStrenght)
     {
         Collider2D[] hits = Physics2D.OverlapBoxAll(_attackTransform.position, _attackArea, 0, attackableLayer);
         if (hits.Length > 0)
         {
-            Debug.Log("Colpito!");
+            _recoildDir = true;
+            for (int i = 0; i < hits.Length; i++)
+            {
+                hits[i].GetComponent<Enemy>().EnemyHit(
+                    damage, transform.position - 
+                    hits[i].transform.position, _recoilStrenght);
+            }
+        }
+    }
+    void SlashEffectAngle(GameObject slashEffect, int angle, Transform attackTransform)
+    {
+        GameObject slash = Instantiate(slashEffect, attackTransform);
+        slash.transform.eulerAngles = new Vector3(0, 0, angle);
+        slash.transform.localScale = new Vector2(transform.localScale.x, transform.localScale.y);
+        
+    }
+    void Recoil()
+    {
+        if (pState.recoilingX)
+        {
+            if (pState.lookingRight)
+            {
+                rb.linearVelocity = new Vector2(-recoilXSpeed, 0);
+            }
+            else
+            {
+                rb.linearVelocity = new Vector2(recoilXSpeed, 0);
+            }
+
+        }
+        if (pState.recoilingY)
+        {
+            rb.gravityScale = 0;
+            if (directionalInput.y < 0)
+            {
+                
+                rb.linearVelocity = new Vector2(rb.linearVelocity.x, recoilYSpeed);
+            }
+            else
+            {
+                rb.linearVelocity = new Vector2(rb.linearVelocity.x, -recoilYSpeed);
+                
+            }
+            jumpCount = 0;
+        }
+        else
+        {
+            rb.gravityScale = gravityScale;
+        }
+        if (pState.recoilingX&&stepsXRecoiled<recoilXSteps)
+        {
+            stepsXRecoiled++;
+        }
+        else
+        {
+            StopRecoilX();
+        }
+        if (pState.recoilingY && stepsYRecoiled < recoilYSteps)
+        {
+            stepsYRecoiled++;
+        }
+        else
+        {
+            StopRecoilY();
+        }
+        if (IsGrounded())
+        {
+            StopRecoilY();
         }
     }
 }
