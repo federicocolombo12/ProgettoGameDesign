@@ -45,6 +45,7 @@ public class PlayerController : MonoBehaviour
     [SerializeField] float damage = 10;
     [SerializeField] float hitForce = 10;
     [SerializeField] GameObject slashEffect;
+    [Space(10)]
     [Header("Recoil")]
     [SerializeField] float recoilXSpeed = 1f;
     [SerializeField] float recoilYSpeed = 1f;
