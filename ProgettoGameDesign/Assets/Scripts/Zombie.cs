@@ -5,7 +5,7 @@ public class Zombie : Enemy
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
-        rb.gravityScale = 30f;
+        rb.gravityScale = 12f;
         player = PlayerController.Instance;
     }
     protected override void Awake()
@@ -18,10 +18,8 @@ public class Zombie : Enemy
         base.Update();
         if (!isRecoiling)
         {
-            transform.position = Vector2.MoveTowards(transform.position,
-                new Vector2(player.transform.position.x,
-                0),
-                speed * Time.deltaTime);
+            Vector2 direction = (new Vector2(player.transform.position.x - transform.position.x, 0)).normalized;
+            transform.Translate(direction*speed*Time.deltaTime);
                 
         }
     }

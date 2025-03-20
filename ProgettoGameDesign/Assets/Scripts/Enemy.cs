@@ -44,6 +44,7 @@ public class Enemy : MonoBehaviour
         if (!isRecoiling)
         {
             rb.AddForce(-hitDirection * _hitForce*recoilFactor);
+            isRecoiling = true;
         }
     }
 
