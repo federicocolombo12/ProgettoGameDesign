@@ -45,6 +45,8 @@ public class PlayerController : MonoBehaviour
     [SerializeField] float damage = 10;
     [SerializeField] float hitForce = 10;
     [SerializeField] GameObject slashEffect;
+    bool attack = false;
+    float timeBetweenAttack, timeSinceAttack;
     [Space(10)]
     [Header("Recoil")]
     [SerializeField] float recoilXSpeed = 1f;
@@ -53,8 +55,12 @@ public class PlayerController : MonoBehaviour
     [SerializeField] int recoilYSteps = 10;
     int stepsXRecoiled = 0;
     int stepsYRecoiled = 0;
-    bool attack = false;
-    float timeBetweenAttack, timeSinceAttack;
+    [Space(10)]
+    [Header("Health")]
+    [SerializeField] float health = 100;
+    [SerializeField] float maxHealth = 100;
+    [SerializeField] float invincibleTime = 1;
+    
 
 
 
@@ -62,7 +68,7 @@ public class PlayerController : MonoBehaviour
     public static PlayerController Instance { get; private set; }
     private Rigidbody2D rb;
     private Animator animator;
-    private PlayerStateList pState;
+    public PlayerStateList pState;
     private float gravityScale;
 
 
@@ -362,5 +368,24 @@ public class PlayerController : MonoBehaviour
         {
             StopRecoilY();
         }
+    }
+    void ClampHealt()
+    {
+        health = Mathf.Clamp(health, 0, maxHealth);
+    }
+
+    public void TakeDamage(float damage)
+    {
+        health -= Mathf.RoundToInt(damage);
+        StartCoroutine(Invincible());
+
+    }
+    IEnumerator Invincible()
+    {
+        pState.invincible = true;
+        ClampHealt();
+        animator.SetTrigger("TakeDamage");
+        yield return new WaitForSeconds(invincibleTime);
+        pState.invincible = false;
     }
 }

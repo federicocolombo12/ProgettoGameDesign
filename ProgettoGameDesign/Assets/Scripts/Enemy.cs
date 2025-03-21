@@ -12,6 +12,7 @@ public class Enemy : MonoBehaviour
     [SerializeField] protected PlayerController player;
     [SerializeField] protected float speed;
     protected float recoilTimer;
+    [SerializeField] protected float damage;
     protected virtual void Awake()
     {
         rb = GetComponent<Rigidbody2D>();
@@ -46,6 +47,20 @@ public class Enemy : MonoBehaviour
             rb.AddForce(-hitDirection * _hitForce*recoilFactor);
             isRecoiling = true;
         }
+    }
+    protected virtual void OnTriggerStay2D(Collider2D collision)
+    {
+
+        if (collision.CompareTag("Player")&&!player.pState.invincible)
+        {
+            Attack();
+        }
+
+
+    }
+    protected virtual void Attack()
+    {
+        player.TakeDamage(damage);
     }
 
 }
