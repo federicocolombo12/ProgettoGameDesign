@@ -384,17 +384,17 @@ public class PlayerController : MonoBehaviour
     }
     void RestoreTimeScale()
     {
-        Debug.Log("Restoring");
+        
         if (restoreTime)
         {
             if (Time.timeScale < 1) 
             {
-                Debug.Log("Restoring");
+               
                 Time.timeScale += restoreTimeSpeed * Time.unscaledDeltaTime;
             }
             else
             {
-                Debug.Log("Restored");
+                
                 Time.timeScale = 1;
                 restoreTime = false;
                 
