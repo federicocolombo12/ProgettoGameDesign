@@ -13,6 +13,7 @@ public class Enemy : MonoBehaviour
     [SerializeField] protected float speed;
     protected float recoilTimer;
     [SerializeField] protected float damage;
+    [SerializeField] protected int restoreTimeSpeed;
     protected virtual void Awake()
     {
         rb = GetComponent<Rigidbody2D>();
@@ -54,6 +55,7 @@ public class Enemy : MonoBehaviour
         if (collision.CompareTag("Player")&&!player.pState.invincible)
         {
             Attack();
+            player.HitStopTime(0,restoreTimeSpeed,0.5f);
         }
 
 

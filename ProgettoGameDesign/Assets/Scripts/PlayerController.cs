@@ -57,9 +57,13 @@ public class PlayerController : MonoBehaviour
     int stepsYRecoiled = 0;
     [Space(10)]
     [Header("Health")]
-    [SerializeField] float health = 100;
-    [SerializeField] float maxHealth = 100;
+    [SerializeField] int health ;
+    [SerializeField] int maxHealth = 100;
     [SerializeField] float invincibleTime = 1;
+    [SerializeField] GameObject blood;
+    [SerializeField] float hitFlashSpeed;
+    float restoreTimeSpeed;
+    bool restoreTime;
     
 
 
@@ -70,6 +74,7 @@ public class PlayerController : MonoBehaviour
     private Animator animator;
     public PlayerStateList pState;
     private float gravityScale;
+    private SpriteRenderer sr;
 
 
     private void Awake()
@@ -93,6 +98,8 @@ public class PlayerController : MonoBehaviour
         animator = GetComponent<Animator>();
         pState = GetComponent<PlayerStateList>();
         gravityScale = rb.gravityScale;
+        Health= maxHealth;
+        sr = GetComponent<SpriteRenderer>();
     }
     void OnDrawGizmos()
     {
@@ -150,7 +157,7 @@ public class PlayerController : MonoBehaviour
         }
     }
 
-    private void FixedUpdate()
+    void Update()
     {
         UpdateJumpVariables();
         if (pState.dashing)
@@ -162,6 +169,12 @@ public class PlayerController : MonoBehaviour
         ResetDash();
         Flip();
         Attack();
+        
+        RestoreTimeScale();
+        FlashWhileInvincible();
+    }
+    private void FixedUpdate()
+    {
         Recoil();
     }
 
@@ -369,23 +382,84 @@ public class PlayerController : MonoBehaviour
             StopRecoilY();
         }
     }
-    void ClampHealt()
+    void RestoreTimeScale()
     {
-        health = Mathf.Clamp(health, 0, maxHealth);
+        Debug.Log("Restoring");
+        if (restoreTime)
+        {
+            if (Time.timeScale < 1) 
+            {
+                Debug.Log("Restoring");
+                Time.timeScale += restoreTimeSpeed * Time.unscaledDeltaTime;
+            }
+            else
+            {
+                Debug.Log("Restored");
+                Time.timeScale = 1;
+                restoreTime = false;
+                
+            }
+
+
+        }
+        
     }
+    public void HitStopTime(float _newTimeScale, int _restoreSpeed, float _delay)
+    {
+        restoreTimeSpeed = _restoreSpeed;
+        Time.timeScale = _newTimeScale;
+        if (_delay > 0)
+        {
+            Debug.Log(_delay);
+            StartCoroutine(StartTimeAgain());
+        }
+        else
+        {
+            
+            restoreTime = true;
+        }
+    }
+    IEnumerator StartTimeAgain()
+    {
+
+        restoreTime = true;
+
+        yield return new WaitForSeconds(0.5f);
+        
+        
+        
+    }
+    public int Health
+    {
+        get { return health; }
+        set
+        {
+            if (health != value)
+            {
+                health = Math.Clamp(value, 0, maxHealth);
+            }
+        }
+    }
+
 
     public void TakeDamage(float damage)
     {
-        health -= Mathf.RoundToInt(damage);
-        StartCoroutine(Invincible());
+        Health -= Mathf.RoundToInt(damage);
+        StartCoroutine(StopTakingDamage());
 
     }
-    IEnumerator Invincible()
+    IEnumerator StopTakingDamage()
     {
         pState.invincible = true;
-        ClampHealt();
+       
         animator.SetTrigger("TakeDamage");
+        GameObject schizzoSangue=Instantiate(blood, transform);
+        Destroy(schizzoSangue, 1.5f);
         yield return new WaitForSeconds(invincibleTime);
         pState.invincible = false;
+    }
+    void FlashWhileInvincible()
+    {
+        sr.material.color=pState.invincible?Color.Lerp(Color.white, Color.black, Mathf.PingPong(Time.time*hitFlashSpeed, 1.0f)):Color.white;
     }
 }

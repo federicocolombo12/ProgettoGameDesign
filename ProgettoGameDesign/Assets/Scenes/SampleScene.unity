@@ -3636,9 +3636,11 @@ MonoBehaviour:
   recoilYSpeed: 10
   recoilXSteps: 10
   recoilYSteps: 10
-  health: 100
+  health: 0
   maxHealth: 100
   invincibleTime: 1
+  blood: {fileID: 4217489016284576809, guid: adc782687189b894a99fcf16e89a03ec, type: 3}
+  hitFlashSpeed: 3
   pState: {fileID: 0}
 --- !u!212 &666702798
 SpriteRenderer:
@@ -3928,6 +3930,10 @@ PrefabInstance:
     - target: {fileID: 4331924998440069118, guid: 101babb9685bdce4bb816672b4441d9b, type: 3}
       propertyPath: damage
       value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 4331924998440069118, guid: 101babb9685bdce4bb816672b4441d9b, type: 3}
+      propertyPath: restoreTimeSpeed
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 5134359070225032766, guid: 101babb9685bdce4bb816672b4441d9b, type: 3}
       propertyPath: m_Interpolate
