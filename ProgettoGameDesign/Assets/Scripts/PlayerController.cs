@@ -284,29 +284,30 @@ public class PlayerController : MonoBehaviour
         timeSinceAttack += Time.deltaTime;
         if (attack && timeSinceAttack >= timeBetweenAttack)
         {
-            
             timeSinceAttack = 0;
             animator.SetTrigger("Attack");
             attack = false;
             Debug.Log("Attacco eseguito!");
-            if (directionalInput.y == 0 || directionalInput.y < 0 && IsGrounded())
+
+            if (Mathf.Abs(directionalInput.y) < 0.3f || (directionalInput.y < 0 && IsGrounded()))
             {
                 Hit(sideAttackTransform, sideAttackArea, ref pState.recoilingX, recoilXSpeed);
                 Instantiate(slashEffect, sideAttackTransform);
             }
-            else if (directionalInput.y>0)
+            else if (directionalInput.y > 0.3f)
             {
                 Hit(upAttackTransform, upAttackArea, ref pState.recoilingY, recoilYSpeed);
                 SlashEffectAngle(slashEffect, 90, upAttackTransform);
             }
-            else if (directionalInput.y < 0 && !IsGrounded())
+            else if (directionalInput.y < 0.3f && !IsGrounded())
             {
                 Hit(downAttackTransform, downAttackArea, ref pState.recoilingY, recoilYSpeed);
                 SlashEffectAngle(slashEffect, -90, downAttackTransform);
             }
-            //Attacco
+            // Attacco
         }
     }
+
     void Hit(Transform _attackTransform, Vector2 _attackArea, ref bool _recoildDir, float _recoilStrenght)
     {
         Collider2D[] hits = Physics2D.OverlapBoxAll(_attackTransform.position, _attackArea, 0, attackableLayer);
