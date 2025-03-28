@@ -83,7 +83,7 @@ public class PlayerController : MonoBehaviour
     [SerializeField] float manaSpellCost = 0.3f;
     [SerializeField] float timeBetweenCast = 0.5f;
     float timeSinceCast;
-    private bool cast = true;
+    private bool cast = false;
     [SerializeField] float spelldamage;
     [SerializeField] float downSpellForce;
 
@@ -119,7 +119,7 @@ public class PlayerController : MonoBehaviour
         InputManager.Instance.OnDashInput += HandleDash;
         InputManager.Instance.OnAttackInput += HandleAttack;
         InputManager.Instance.OnHealInput += HandleHeal;
-        InputManager.Instance.OnCastSpellInput += CastSpell;
+        InputManager.Instance.OnCastSpellInput += HandleCast;
         animator = GetComponent<Animator>();
         pState = GetComponent<PlayerStateList>();
         gravityScale = rb.gravityScale;
