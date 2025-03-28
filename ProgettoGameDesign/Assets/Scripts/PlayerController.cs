@@ -301,6 +301,7 @@ public class PlayerController : MonoBehaviour
         timeSinceAttack += Time.deltaTime;
         if (attack && timeSinceAttack >= timeBetweenAttack)
         {
+
             timeSinceAttack = 0;
             animator.SetTrigger("Attack");
             attack = false;
@@ -308,16 +309,19 @@ public class PlayerController : MonoBehaviour
 
             if (Mathf.Abs(directionalInput.y) < 0.3f || (directionalInput.y < 0 && IsGrounded()))
             {
+                Debug.Log("Attacco laterale");
                 Hit(sideAttackTransform, sideAttackArea, ref pState.recoilingX, recoilXSpeed);
                 Instantiate(slashEffect, sideAttackTransform);
             }
             else if (directionalInput.y > 0.3f)
             {
+                Debug.Log("Attacco alto");
                 Hit(upAttackTransform, upAttackArea, ref pState.recoilingY, recoilYSpeed);
                 SlashEffectAngle(slashEffect, 90, upAttackTransform);
             }
             else if (directionalInput.y < 0.3f && !IsGrounded())
             {
+                Debug.Log("Attacco basso");
                 Hit(downAttackTransform, downAttackArea, ref pState.recoilingY, recoilYSpeed);
                 SlashEffectAngle(slashEffect, -90, downAttackTransform);
             }
@@ -333,6 +337,8 @@ public class PlayerController : MonoBehaviour
             _recoildDir = true;
             for (int i = 0; i < hits.Length; i++)
             {
+                Debug.Log(hits.Length);
+                Debug.Log("Colpito " + hits[i].name);
                 hits[i].GetComponent<Enemy>().EnemyHit(
                     damage, transform.position - 
                     hits[i].transform.position, _recoilStrenght);
