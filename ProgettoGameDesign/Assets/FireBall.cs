@@ -17,13 +17,12 @@ public class FireBall : MonoBehaviour
         transform.position += speed * transform.right;
     }
     //detected hit
-    private void OnCollisionEnter2D(Collision2D _other)
+    private void OnTriggerEnter2D(Collider2D _other)
     {
-        Debug.Log("Hit");
-        if (_other.gameObject.tag == "Enemy")
+        if (_other.tag == "Enemy")
         {
             Debug.Log("Enemy Hit");
-            _other.gameObject.GetComponent<Enemy>().EnemyHit(damage, (_other.transform.position).normalized, -hitForce);
+            _other.GetComponent<Enemy>().EnemyHit(damage, (_other.transform.position).normalized, -hitForce);
         }
     }
 
