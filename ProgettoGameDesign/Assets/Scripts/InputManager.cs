@@ -9,6 +9,7 @@ public class InputManager : MonoBehaviour
     // Eventi per gli input, ad esempio per il movimento e il salto
     public event System.Action<Vector2> OnMoveInput;
     public event System.Action<float> OnJumpInput;
+    public event System.Action<bool> OnHealInput;
     public event System.Action OnDashInput;
     public event System.Action OnAttackInput;
 
@@ -37,9 +38,9 @@ public class InputManager : MonoBehaviour
         inputActions.Player.Jump.performed += HandleJump;
         inputActions.Player.Jump.canceled += HandleJumpCanceled;
         inputActions.Player.Dash.started += HandleDash;
-        
         inputActions.Player.Attack.performed += HandleAttack;
-        
+        inputActions.Player.Healing.performed += HandleHeal;
+        inputActions.Player.Healing.canceled += HandleHealCanceled;
     }
 
     private void OnDisable()
@@ -82,6 +83,15 @@ public class InputManager : MonoBehaviour
     }
     private void HandleAttackCanceled(InputAction.CallbackContext context)
     {
-        OnAttackInput?.Invoke();
+        //OnAttackInput?.Invoke();
+    }
+    private void HandleHeal(InputAction.CallbackContext context)
+    {
+        bool healValue = context.ReadValueAsButton();
+        OnHealInput?.Invoke(healValue);
+    }
+    private void HandleHealCanceled(InputAction.CallbackContext context)
+    {
+        OnHealInput?.Invoke(false);
     }
 }

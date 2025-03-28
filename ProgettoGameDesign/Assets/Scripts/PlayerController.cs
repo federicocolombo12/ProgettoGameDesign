@@ -58,14 +58,24 @@ public class PlayerController : MonoBehaviour
     [Space(10)]
     [Header("Health")]
     [SerializeField] int health ;
-    [SerializeField] int maxHealth = 100;
+    public int maxHealth = 100;
     [SerializeField] float invincibleTime = 1;
     [SerializeField] GameObject blood;
     [SerializeField] float hitFlashSpeed;
     float restoreTimeSpeed;
     bool restoreTime;
-    
-
+    public delegate void OnHealtChangedDelegate();
+    [HideInInspector] public OnHealtChangedDelegate OnHealthChangedCallback;
+    [Space(10)]
+    [Header("Healing")]
+    [SerializeField] float timeToHeal = 1;
+    float healTimer;
+    bool healPressed = false;
+    [Space(10)]
+    [Header("Mana")]
+    [SerializeField] float mana;
+    [SerializeField] float manaDrainSpeed;
+    [SerializeField] float manaGain;
 
 
 
@@ -95,11 +105,13 @@ public class PlayerController : MonoBehaviour
         InputManager.Instance.OnJumpInput += HandleJump;
         InputManager.Instance.OnDashInput += HandleDash;
         InputManager.Instance.OnAttackInput += HandleAttack;
+        InputManager.Instance.OnHealInput += HandleHeal;
         animator = GetComponent<Animator>();
         pState = GetComponent<PlayerStateList>();
         gravityScale = rb.gravityScale;
         Health= maxHealth;
         sr = GetComponent<SpriteRenderer>();
+        Mana = mana;
     }
     void OnDrawGizmos()
     {
@@ -149,6 +161,10 @@ public class PlayerController : MonoBehaviour
     {
         attack = true;
     }
+    private void HandleHeal(bool healValue)
+    {
+        healPressed=healValue;
+    }
     void ResetDash() { 
         
         if (IsGrounded())
@@ -172,6 +188,7 @@ public class PlayerController : MonoBehaviour
         
         RestoreTimeScale();
         FlashWhileInvincible();
+        Heal();
     }
     private void FixedUpdate()
     {
@@ -319,6 +336,10 @@ public class PlayerController : MonoBehaviour
                 hits[i].GetComponent<Enemy>().EnemyHit(
                     damage, transform.position - 
                     hits[i].transform.position, _recoilStrenght);
+                if (hits[i].CompareTag("Enemy"))
+                {
+                    Mana += manaGain;
+                }
             }
         }
     }
@@ -438,7 +459,46 @@ public class PlayerController : MonoBehaviour
             if (health != value)
             {
                 health = Math.Clamp(value, 0, maxHealth);
+                if (OnHealthChangedCallback != null)
+                {
+
+                   OnHealthChangedCallback.Invoke();
+                }
             }
+        }
+    }
+    float Mana
+    {
+        get { return mana; }
+        set
+        {
+            if (mana != value)
+            {
+                mana = Mathf.Clamp(value, 0, 1);
+                
+            }
+            
+        }
+    }
+    void Heal()
+    {
+        if (healPressed && Health < maxHealth && !pState.jumping && !pState.dashing && Mana>0)
+        {
+            animator.SetBool("Healing", true);
+            pState.healing = true;
+            healTimer += Time.deltaTime;
+            if (healTimer >= timeToHeal)
+            {
+                Health++;
+                healTimer = 0;
+            }
+            Mana-= Time.deltaTime * manaDrainSpeed;
+        }
+        else
+        {
+            pState.healing = false;
+            healTimer = 0;
+            animator.SetBool("Healing", false);
         }
     }
 
