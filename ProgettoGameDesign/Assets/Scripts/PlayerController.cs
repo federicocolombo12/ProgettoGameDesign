@@ -1,6 +1,7 @@
 using System;
 using System.Collections;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class PlayerController : MonoBehaviour
 {
@@ -73,6 +74,7 @@ public class PlayerController : MonoBehaviour
     bool healPressed = false;
     [Space(10)]
     [Header("Mana")]
+    [SerializeField] Image manaStorage;
     [SerializeField] float mana;
     [SerializeField] float manaDrainSpeed;
     [SerializeField] float manaGain;
@@ -112,6 +114,7 @@ public class PlayerController : MonoBehaviour
         Health= maxHealth;
         sr = GetComponent<SpriteRenderer>();
         Mana = mana;
+        manaStorage.fillAmount = mana;
     }
     void OnDrawGizmos()
     {
@@ -481,7 +484,7 @@ public class PlayerController : MonoBehaviour
             if (mana != value)
             {
                 mana = Mathf.Clamp(value, 0, 1);
-                
+                manaStorage.fillAmount = mana;
             }
             
         }

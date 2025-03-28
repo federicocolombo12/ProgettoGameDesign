@@ -49,10 +49,10 @@ public class Enemy : MonoBehaviour
             isRecoiling = true;
         }
     }
-    protected virtual void OnTriggerStay2D(Collider2D collision)
+    protected virtual void OnCollisionStay2D(Collision2D collision)
     {
 
-        if (collision.CompareTag("Player")&&!player.pState.invincible)
+        if (collision.gameObject.CompareTag("Player")&&!player.pState.invincible)
         {
             Attack();
             player.HitStopTime(0,restoreTimeSpeed,0.5f);
