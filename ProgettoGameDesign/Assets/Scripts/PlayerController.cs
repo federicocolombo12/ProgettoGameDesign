@@ -46,7 +46,7 @@ public class PlayerController : MonoBehaviour
     [SerializeField] float hitForce = 10;
     [SerializeField] GameObject slashEffect;
     bool attack = false;
-    float timeBetweenAttack, timeSinceAttack;
+    [SerializeField] float timeBetweenAttack, timeSinceAttack;
     [Space(10)]
     [Header("Recoil")]
     [SerializeField] float recoilXSpeed = 1f;
@@ -337,8 +337,8 @@ public class PlayerController : MonoBehaviour
             _recoildDir = true;
             for (int i = 0; i < hits.Length; i++)
             {
-                Debug.Log(hits.Length);
-                Debug.Log("Colpito " + hits[i].name);
+                
+
                 hits[i].GetComponent<Enemy>().EnemyHit(
                     damage, transform.position - 
                     hits[i].transform.position, _recoilStrenght);

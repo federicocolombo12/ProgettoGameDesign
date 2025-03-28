@@ -3632,6 +3632,8 @@ MonoBehaviour:
   damage: 10
   hitForce: 10
   slashEffect: {fileID: 6564155392743935712, guid: 5c536675066dd6c44932a0d2da33c003, type: 3}
+  timeBetweenAttack: 0.5
+  timeSinceAttack: 0
   recoilXSpeed: 5
   recoilYSpeed: 10
   recoilXSteps: 10
