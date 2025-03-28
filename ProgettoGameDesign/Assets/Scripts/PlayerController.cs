@@ -83,6 +83,7 @@ public class PlayerController : MonoBehaviour
     [SerializeField] float manaSpellCost = 0.3f;
     [SerializeField] float timeBetweenCast = 0.5f;
     float timeSinceCast;
+    private bool cast = true;
     [SerializeField] float spelldamage;
     [SerializeField] float downSpellForce;
 
@@ -118,6 +119,7 @@ public class PlayerController : MonoBehaviour
         InputManager.Instance.OnDashInput += HandleDash;
         InputManager.Instance.OnAttackInput += HandleAttack;
         InputManager.Instance.OnHealInput += HandleHeal;
+        InputManager.Instance.OnCastSpellInput += CastSpell;
         animator = GetComponent<Animator>();
         pState = GetComponent<PlayerStateList>();
         gravityScale = rb.gravityScale;
@@ -178,6 +180,11 @@ public class PlayerController : MonoBehaviour
     {
         healPressed=healValue;
     }
+
+    private void HandleCast()
+    {
+        cast=true;
+    }
     void ResetDash() { 
         
         if (IsGrounded())
@@ -202,10 +209,19 @@ public class PlayerController : MonoBehaviour
         RestoreTimeScale();
         FlashWhileInvincible();
         Heal();
+        CastSpell();
     }
     private void FixedUpdate()
     {
         Recoil();
+    }
+
+    private void OnTriggerEnter2d(Collider other)
+    {
+        if (other.GetComponent<Enemy>()!=null&&pState.casting)
+        {
+            other.GetComponent<Enemy>().EnemyHit(spelldamage, (other.transform.position-transform.position).normalized, -recoilYSpeed);
+        }
     }
 
     void Flip()
@@ -525,7 +541,59 @@ public class PlayerController : MonoBehaviour
 
     void CastSpell()
     {
+        if (cast&& timeSinceAttack>=timeBetweenCast&&Mana>=manaSpellCost)
+        {
+            timeSinceCast = 0;
+            pState.casting = true;
+            cast = false;
+            StartCoroutine(CastCoroutine());
+        }
+        else
+        {
+            pState.casting = false;
+        }
 
+        if (IsGrounded())
+        {
+            downSpellfireBall.SetActive(false);
+        }
+
+        if (downSpellfireBall.activeInHierarchy)
+        {
+            rb.linearVelocity+=downSpellForce*Vector2.down;
+        }
+    }
+
+    IEnumerator CastCoroutine()
+    {
+        animator.SetBool("Casting", true);
+        yield return new WaitForSeconds(0.15f);
+        if (Mathf.Abs(directionalInput.y) < 0.3f || (directionalInput.y < 0 && IsGrounded()))
+        {
+            GameObject fireball = Instantiate(sideSpellfireBall, sideAttackTransform.position, Quaternion.identity);
+            if (pState.lookingRight)
+            {
+                fireball.transform.eulerAngles=Vector3.zero;
+            }
+            else
+            {
+                fireball.transform.eulerAngles = new Vector2(fireball.transform.eulerAngles.x, 180);
+            }
+            pState.recoilingX = true;
+        }
+        else if (directionalInput.y > 0.3f)
+        {
+            Instantiate(upSpellfireBall, transform);
+            rb.linearVelocity=Vector2.zero;
+        }
+        else if (directionalInput.y < 0.3f && !IsGrounded())
+        {
+            downSpellfireBall.SetActive(true);
+        }
+        Mana -= manaSpellCost;
+        yield return new WaitForSeconds(0.35f);
+        animator.SetBool("Casting", false);
+        pState.casting = false;
     }
 
     public void TakeDamage(float damage)
