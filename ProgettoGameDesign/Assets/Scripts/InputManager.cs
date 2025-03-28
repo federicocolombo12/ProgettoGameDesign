@@ -12,6 +12,7 @@ public class InputManager : MonoBehaviour
     public event System.Action<bool> OnHealInput;
     public event System.Action OnDashInput;
     public event System.Action OnAttackInput;
+    public event System.Action OnCastSpellInput;
 
     private InputSystem_Actions inputActions;
 
@@ -41,6 +42,8 @@ public class InputManager : MonoBehaviour
         inputActions.Player.Attack.performed += HandleAttack;
         inputActions.Player.Healing.performed += HandleHeal;
         inputActions.Player.Healing.canceled += HandleHealCanceled;
+        inputActions.Player.CastSpell.performed += HandleCastSpell;
+        inputActions.Player.CastSpell.canceled += HandleCastSpellCanceled;
     }
 
     private void OnDisable()
@@ -93,5 +96,13 @@ public class InputManager : MonoBehaviour
     private void HandleHealCanceled(InputAction.CallbackContext context)
     {
         OnHealInput?.Invoke(false);
+    }
+    private void HandleCastSpell(InputAction.CallbackContext context)
+    {
+        OnCastSpellInput?.Invoke();
+    }
+    private void HandleCastSpellCanceled(InputAction.CallbackContext context)
+    {
+        //OnCastSpellInput?.Invoke(false);
     }
 }

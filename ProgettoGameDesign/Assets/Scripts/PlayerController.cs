@@ -78,8 +78,18 @@ public class PlayerController : MonoBehaviour
     [SerializeField] float mana;
     [SerializeField] float manaDrainSpeed;
     [SerializeField] float manaGain;
+    [Space(10)]
+    [Header("Spell Casting")]
+    [SerializeField] float manaSpellCost = 0.3f;
+    [SerializeField] float timeBetweenCast = 0.5f;
+    float timeSinceCast;
+    [SerializeField] float spelldamage;
+    [SerializeField] float downSpellForce;
 
-
+    [SerializeField] GameObject sideSpellfireBall;
+    [SerializeField] GameObject downSpellfireBall;
+    [SerializeField] GameObject upSpellfireBall;
+    
 
     public static PlayerController Instance { get; private set; }
     private Rigidbody2D rb;
@@ -332,6 +342,8 @@ public class PlayerController : MonoBehaviour
         }
     }
 
+    
+
     void Hit(Transform _attackTransform, Vector2 _attackArea, ref bool _recoildDir, float _recoilStrenght)
     {
         Collider2D[] hits = Physics2D.OverlapBoxAll(_attackTransform.position, _attackArea, 0, attackableLayer);
@@ -511,6 +523,10 @@ public class PlayerController : MonoBehaviour
         }
     }
 
+    void CastSpell()
+    {
+
+    }
 
     public void TakeDamage(float damage)
     {
