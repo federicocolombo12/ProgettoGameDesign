@@ -97,12 +97,12 @@
                 },
                 {
                     "name": "CastSpell",
-                    "type": "Button",
+                    "type": "Value",
                     "id": "276764d1-ffd1-49d1-97cf-c57a7ce91a4c",
                     "expectedControlType": "",
                     "processors": "",
                     "interactions": "",
-                    "initialStateCheck": false
+                    "initialStateCheck": true
                 }
             ],
             "bindings": [
@@ -517,6 +517,17 @@
                     "name": "",
                     "id": "55a882b3-6f86-49bd-92ef-724e962e13c7",
                     "path": "<Gamepad>/buttonNorth",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "CastSpell",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "1d2c1002-be12-4aa8-8671-50341ea346a7",
+                    "path": "<Keyboard>/f",
                     "interactions": "",
                     "processors": "",
                     "groups": "",

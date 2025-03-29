@@ -5,7 +5,7 @@ public class FireBall : MonoBehaviour
     [SerializeField] float damage;
     [SerializeField] float hitForce;
     [SerializeField] int speed;
-    [SerializeField] float lifetime;
+    [SerializeField] float lifetime = 1;
 
     void Start()
     {
@@ -23,7 +23,7 @@ public class FireBall : MonoBehaviour
         if (_other.GetComponent<Enemy>() != null)
         {
             Debug.Log("Enemy Hit");
-            _other.GetComponent<Enemy>().EnemyHit(damage, (_other.transform.position).normalized, -hitForce);
+            _other.GetComponent<Enemy>().EnemyHit(damage, (_other.transform.position - transform.position).normalized, -hitForce);
         }
     }
 
