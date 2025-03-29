@@ -183,7 +183,11 @@ public class PlayerController : MonoBehaviour
 
     private void HandleCast()
     {
-        cast=true;
+        if (Mana >= manaSpellCost)
+        {
+            cast = true;
+        }
+        
     }
     void ResetDash() { 
         
@@ -216,7 +220,7 @@ public class PlayerController : MonoBehaviour
         Recoil();
     }
 
-    private void OnTriggerEnter2d(Collider other)
+    private void OnTriggerEnter2D(Collider2D other)
     {
         if (other.GetComponent<Enemy>()!=null&&pState.casting)
         {
@@ -550,7 +554,7 @@ public class PlayerController : MonoBehaviour
         }
         else
         {
-            pState.casting = false;
+            timeSinceCast += Time.deltaTime;
         }
 
         if (IsGrounded())

@@ -19,7 +19,8 @@ public class FireBall : MonoBehaviour
     //detected hit
     private void OnTriggerEnter2D(Collider2D _other)
     {
-        if (_other.tag == "Enemy")
+        Debug.Log("Hit");
+        if (_other.GetComponent<Enemy>() != null)
         {
             Debug.Log("Enemy Hit");
             _other.GetComponent<Enemy>().EnemyHit(damage, (_other.transform.position).normalized, -hitForce);

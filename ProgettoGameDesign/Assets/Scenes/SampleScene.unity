@@ -3723,10 +3723,10 @@ MonoBehaviour:
   mana: 0
   manaDrainSpeed: 0.1
   manaGain: 0.3
-  manaSpellCost: 0.3
+  manaSpellCost: 0.1
   timeBetweenCast: 0.5
   spelldamage: 10000
-  downSpellForce: 5
+  downSpellForce: 2
   sideSpellfireBall: {fileID: 917215352964490749, guid: f5741c3ec50793749aac1f983ecd299e, type: 3}
   downSpellfireBall: {fileID: 1085765604}
   upSpellfireBall: {fileID: 4782286840622885309, guid: 9f27d6c86f3acec4db1e33d13e22996a, type: 3}
