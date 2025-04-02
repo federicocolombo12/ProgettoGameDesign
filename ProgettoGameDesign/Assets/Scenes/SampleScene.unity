@@ -4310,6 +4310,10 @@ PrefabInstance:
       propertyPath: m_Offset.y
       value: 0.00000008940697
       objectReference: {fileID: 0}
+    - target: {fileID: 4331924998440069118, guid: 101babb9685bdce4bb816672b4441d9b, type: 3}
+      propertyPath: restoreTimeSpeed
+      value: 5
+      objectReference: {fileID: 0}
     - target: {fileID: 6344562058082375487, guid: 101babb9685bdce4bb816672b4441d9b, type: 3}
       propertyPath: m_Name
       value: Zombie

@@ -204,16 +204,24 @@ public class PlayerController : MonoBehaviour
         {
             return;
         }
-        Move();
-        Jump();
-        ResetDash();
-        Flip();
-        Attack();
-        
         RestoreTimeScale();
         FlashWhileInvincible();
+        Move();
         Heal();
         CastSpell();
+        if (pState.healing)
+        {
+            return;
+        }
+        Flip();
+        Jump();
+        ResetDash();
+        
+        Attack();
+        
+        
+       
+       
     }
     private void FixedUpdate()
     {
@@ -244,6 +252,11 @@ public class PlayerController : MonoBehaviour
     void Move()
     {
         // Preserva la velocit� verticale (gestita dalla gravit� o da altri effetti fisici)
+        if (pState.healing)
+        {
+           rb.linearVelocity= new Vector2(0, 0);
+            return;
+        }
         Vector2 newVelocity = new Vector2(directionalInput.x * speed, rb.linearVelocity.y);
         rb.linearVelocity = newVelocity;
         animator.SetBool("Walking", rb.linearVelocity.x !=0 &&IsGrounded());
@@ -467,7 +480,7 @@ public class PlayerController : MonoBehaviour
         }
         
     }
-    public void HitStopTime(float _newTimeScale, int _restoreSpeed, float _delay)
+    public void HitStopTime(float _newTimeScale, float _restoreSpeed, float _delay)
     {
         restoreTimeSpeed = _restoreSpeed;
         Time.timeScale = _newTimeScale;
@@ -484,10 +497,10 @@ public class PlayerController : MonoBehaviour
     }
     IEnumerator StartTimeAgain()
     {
-
+        yield return new WaitForSecondsRealtime(0.5f);
         restoreTime = true;
 
-        yield return new WaitForSeconds(0.5f);
+        
         
         
         
@@ -523,7 +536,7 @@ public class PlayerController : MonoBehaviour
     }
     void Heal()
     {
-        if (healPressed && Health < maxHealth && !pState.jumping && !pState.dashing && Mana>0)
+        if (healPressed && Health < maxHealth && IsGrounded() && !pState.dashing && Mana>0)
         {
             animator.SetBool("Healing", true);
             pState.healing = true;
