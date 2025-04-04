@@ -14,7 +14,7 @@ public class Enemy : MonoBehaviour
     protected float recoilTimer;
     [SerializeField] protected float damage;
     [SerializeField] protected float restoreTimeSpeed;
-    protected virtual void Awake()
+    protected virtual void Start()
     {
         rb = GetComponent<Rigidbody2D>();
         player = PlayerController.Instance;

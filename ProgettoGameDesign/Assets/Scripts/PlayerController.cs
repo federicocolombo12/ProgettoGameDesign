@@ -105,9 +105,11 @@ public class PlayerController : MonoBehaviour
         if (Instance != null && Instance != this)
         {
             Destroy(gameObject);
-            return;
         }
-        Instance = this;
+        else
+        {
+            Instance = this;
+        }
         DontDestroyOnLoad(gameObject);
     }
 
@@ -280,28 +282,24 @@ public class PlayerController : MonoBehaviour
     }
     void Jump()
     {
-        if (jumpInput == 0 && rb.linearVelocity.y > 0)
+        if (jumpInput == 0 && rb.linearVelocity.y > 3)
         {
             rb.linearVelocity = new Vector2(rb.linearVelocity.x, 0);
             pState.jumping = false;
         }
 
-        if (!pState.jumping)
+        if (coyoteTimeCounter > 0 && jumpBufferCounter > 0 && !pState.jumping)
         {
-            if (coyoteTimeCounter>0&&jumpBufferCounter>0) 
-            { 
-                rb.linearVelocity = new Vector2(rb.linearVelocity.x, jumpInput * jumpForce);
-                pState.jumping = true;
-            }
-            else if (!IsGrounded() && jumpCount < maxJumpCount && jumpInput!=0)
-            {
-                pState.jumping = true;
-                jumpCount++;
-                rb.linearVelocity = new Vector2(rb.linearVelocity.x, jumpInput * jumpForce);
-                
-                
-            }
-            
+            rb.linearVelocity = new Vector2(rb.linearVelocity.x, jumpInput * jumpForce);
+            pState.jumping = true;
+        }
+        else if (!IsGrounded() && jumpCount < maxJumpCount && jumpInput != 0)
+        {
+            pState.jumping = true;
+            jumpCount++;
+            rb.linearVelocity = new Vector2(rb.linearVelocity.x, jumpInput * jumpForce);
+
+
         }
         animator.SetBool("Jumping", !IsGrounded());
         
@@ -334,7 +332,8 @@ public class PlayerController : MonoBehaviour
         pState.dashing = true;
         animator.SetTrigger("Dashing");
         rb.gravityScale = 0;
-        rb.linearVelocity = new Vector2(rb.linearVelocity.x*dashSpeed, 0);
+        int _dir = pState.lookingRight ? 1 : -1;
+        rb.linearVelocity = new Vector2(_dir * dashSpeed, 0);
         if (IsGrounded()) { Instantiate(dashEffect, transform); }
         yield return new WaitForSeconds(dashTime);
         rb.gravityScale = gravityScale;
