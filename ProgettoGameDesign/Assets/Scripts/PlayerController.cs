@@ -282,28 +282,28 @@ public class PlayerController : MonoBehaviour
     }
     void Jump()
     {
-        if (jumpInput == 0 && rb.linearVelocity.y > 3)
-        {
-            rb.linearVelocity = new Vector2(rb.linearVelocity.x, 0);
-            pState.jumping = false;
-        }
-
         if (coyoteTimeCounter > 0 && jumpBufferCounter > 0 && !pState.jumping)
         {
             rb.linearVelocity = new Vector2(rb.linearVelocity.x, jumpInput * jumpForce);
             pState.jumping = true;
         }
-        else if (!IsGrounded() && jumpCount < maxJumpCount && jumpInput != 0)
+
+        if (!IsGrounded() && jumpCount < maxJumpCount && jumpInput != 0)
         {
             pState.jumping = true;
             jumpCount++;
             rb.linearVelocity = new Vector2(rb.linearVelocity.x, jumpInput * jumpForce);
-
-
         }
-        animator.SetBool("Jumping", !IsGrounded());
-        
 
+        if (jumpInput == 0 && rb.linearVelocity.y > 3)
+        {
+            rb.linearVelocity = new Vector2(rb.linearVelocity.x, 0);
+            pState.jumping = false;
+        }
+        
+     
+        animator.SetBool("Jumping", !IsGrounded());
+       
     }
     void UpdateJumpVariables()
     {
