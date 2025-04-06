@@ -20,7 +20,9 @@ public class PlayerController : MonoBehaviour
     [SerializeField] private float coyoteTime;
     private int jumpCount = 0;
     [SerializeField] private int maxJumpCount = 2;
-
+    [SerializeField] float jumpGScale = 2f;
+    [SerializeField] float fallGScale = 0.5f;
+    [Space(10)]
     [Header("Ground Check")]
     [SerializeField] Transform groundCheck;
     [SerializeField] float groundCheckY = 0.2f;
@@ -288,6 +290,7 @@ public class PlayerController : MonoBehaviour
         {
             rb.linearVelocity = new Vector2(rb.linearVelocity.x, 0);
             pState.jumping = false;
+            gravityScale = fallGScale;
             
         }
 
@@ -297,13 +300,15 @@ public class PlayerController : MonoBehaviour
             {
                 rb.linearVelocity = new Vector2(rb.linearVelocity.x, jumpForce);
                 pState.jumping = true;
+                gravityScale = jumpGScale;
+               
             }
             else if (!IsGrounded() && jumpCount < maxJumpCount && jumpInput)
             {
                 pState.jumping = true;
                 jumpCount++;
                 rb.linearVelocity = new Vector2(rb.linearVelocity.x, jumpForce);
-                
+                gravityScale = jumpGScale;
 
 
             }
