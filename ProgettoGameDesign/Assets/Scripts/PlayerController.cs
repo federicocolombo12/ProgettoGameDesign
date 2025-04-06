@@ -9,9 +9,9 @@ public class PlayerController : MonoBehaviour
     [SerializeField] float speed = 5f;
     private Vector2 directionalInput;
     [Space(10)]
-    
+
     [Header("Jumping Mechanics")]
-    
+
     [SerializeField] float jumpForce = 10f;
     private float jumpInput;
     float jumpBufferCounter = 0;
@@ -29,7 +29,7 @@ public class PlayerController : MonoBehaviour
     [Space(10)]
 
     [Header("Dashing")]
-    
+
     [SerializeField] float dashSpeed = 10f;
     [SerializeField] float dashTime = 0.5f;
     [SerializeField] float dashCooldown = 1f;
@@ -58,7 +58,7 @@ public class PlayerController : MonoBehaviour
     int stepsYRecoiled = 0;
     [Space(10)]
     [Header("Health")]
-    [SerializeField] int health ;
+    [SerializeField] int health;
     public int maxHealth = 100;
     [SerializeField] float invincibleTime = 1;
     [SerializeField] GameObject blood;
@@ -90,7 +90,7 @@ public class PlayerController : MonoBehaviour
     [SerializeField] GameObject sideSpellfireBall;
     [SerializeField] GameObject downSpellfireBall;
     [SerializeField] GameObject upSpellfireBall;
-    
+
 
     public static PlayerController Instance { get; private set; }
     private Rigidbody2D rb;
@@ -105,11 +105,9 @@ public class PlayerController : MonoBehaviour
         if (Instance != null && Instance != this)
         {
             Destroy(gameObject);
+            return;
         }
-        else
-        {
-            Instance = this;
-        }
+        Instance = this;
         DontDestroyOnLoad(gameObject);
     }
 
@@ -125,7 +123,7 @@ public class PlayerController : MonoBehaviour
         animator = GetComponent<Animator>();
         pState = GetComponent<PlayerStateList>();
         gravityScale = rb.gravityScale;
-        Health= maxHealth;
+        Health = maxHealth;
         sr = GetComponent<SpriteRenderer>();
         Mana = mana;
         manaStorage.fillAmount = mana;
@@ -140,7 +138,7 @@ public class PlayerController : MonoBehaviour
         Gizmos.DrawWireCube(downAttackTransform.position, downAttackArea);
     }
 
-   
+
 
 
     private void OnDisable()
@@ -165,14 +163,15 @@ public class PlayerController : MonoBehaviour
         jumpInput = input;
         // Puoi implementare qui l'effettivo salto del giocatore
     }
-    private void HandleDash() {
+    private void HandleDash()
+    {
         if (canDash && !dashed)
         {
             dashed = true;
             StartCoroutine(Dash());
         }
-        
-        
+
+
     }
     private void HandleAttack()
     {
@@ -180,7 +179,7 @@ public class PlayerController : MonoBehaviour
     }
     private void HandleHeal(bool healValue)
     {
-        healPressed=healValue;
+        healPressed = healValue;
     }
 
     private void HandleCast()
@@ -189,10 +188,11 @@ public class PlayerController : MonoBehaviour
         {
             cast = true;
         }
-        
+
     }
-    void ResetDash() { 
-        
+    void ResetDash()
+    {
+
         if (IsGrounded())
         {
             dashed = false;
@@ -218,12 +218,12 @@ public class PlayerController : MonoBehaviour
         Flip();
         Jump();
         ResetDash();
-        
+
         Attack();
-        
-        
-       
-       
+
+
+
+
     }
     private void FixedUpdate()
     {
@@ -232,9 +232,9 @@ public class PlayerController : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D other)
     {
-        if (other.GetComponent<Enemy>()!=null&&pState.casting)
+        if (other.GetComponent<Enemy>() != null && pState.casting)
         {
-            other.GetComponent<Enemy>().EnemyHit(spelldamage, (other.transform.position-transform.position).normalized, -recoilYSpeed);
+            other.GetComponent<Enemy>().EnemyHit(spelldamage, (other.transform.position - transform.position).normalized, -recoilYSpeed);
         }
     }
 
@@ -256,19 +256,19 @@ public class PlayerController : MonoBehaviour
         // Preserva la velocit� verticale (gestita dalla gravit� o da altri effetti fisici)
         if (pState.healing)
         {
-           rb.linearVelocity= new Vector2(0, 0);
+            rb.linearVelocity = new Vector2(0, 0);
             return;
         }
         Vector2 newVelocity = new Vector2(directionalInput.x * speed, rb.linearVelocity.y);
         rb.linearVelocity = newVelocity;
-        animator.SetBool("Walking", rb.linearVelocity.x !=0 &&IsGrounded());
+        animator.SetBool("Walking", rb.linearVelocity.x != 0 && IsGrounded());
     }
     public bool IsGrounded()
     {
 
-        return Physics2D.Raycast(groundCheck.position, Vector2.down, groundCheckY, groundLayer)||
-            Physics2D.Raycast(groundCheck.position+ new Vector3(GroundCheckX,0,0), Vector2.down, groundCheckY, groundLayer)
-            ||Physics2D.Raycast(groundCheck.position+   new Vector3(-GroundCheckX,0,0), Vector2.down, groundCheckY, groundLayer);
+        return Physics2D.Raycast(groundCheck.position, Vector2.down, groundCheckY, groundLayer) ||
+            Physics2D.Raycast(groundCheck.position + new Vector3(GroundCheckX, 0, 0), Vector2.down, groundCheckY, groundLayer)
+            || Physics2D.Raycast(groundCheck.position + new Vector3(-GroundCheckX, 0, 0), Vector2.down, groundCheckY, groundLayer);
     }
     void StopRecoilX()
     {
@@ -282,28 +282,32 @@ public class PlayerController : MonoBehaviour
     }
     void Jump()
     {
-        if (coyoteTimeCounter > 0 && jumpBufferCounter > 0 && !pState.jumping)
-        {
-            rb.linearVelocity = new Vector2(rb.linearVelocity.x, jumpInput * jumpForce);
-            pState.jumping = true;
-        }
-
-        if (!IsGrounded() && jumpCount < maxJumpCount && jumpInput != 0)
-        {
-            pState.jumping = true;
-            jumpCount++;
-            rb.linearVelocity = new Vector2(rb.linearVelocity.x, jumpInput * jumpForce);
-        }
-
-        if (jumpInput == 0 && rb.linearVelocity.y > 3)
+        if (jumpInput == 0 && rb.linearVelocity.y > 0)
         {
             rb.linearVelocity = new Vector2(rb.linearVelocity.x, 0);
             pState.jumping = false;
         }
-        
-     
+
+        if (!pState.jumping)
+        {
+            if (coyoteTimeCounter > 0 && jumpBufferCounter > 0)
+            {
+                rb.linearVelocity = new Vector2(rb.linearVelocity.x, jumpInput * jumpForce);
+                pState.jumping = true;
+            }
+            else if (!IsGrounded() && jumpCount < maxJumpCount && jumpInput != 0)
+            {
+                pState.jumping = true;
+                jumpCount++;
+                rb.linearVelocity = new Vector2(rb.linearVelocity.x, jumpInput * jumpForce);
+
+
+            }
+
+        }
         animator.SetBool("Jumping", !IsGrounded());
-       
+
+
     }
     void UpdateJumpVariables()
     {
@@ -317,13 +321,13 @@ public class PlayerController : MonoBehaviour
         {
             coyoteTimeCounter -= Time.deltaTime;
         }
-        if (jumpInput!=0)
+        if (jumpInput != 0)
         {
             jumpBufferCounter = jumpBufferFrames;
         }
         else
         {
-            jumpBufferCounter -=Time.deltaTime*10;
+            jumpBufferCounter -= Time.deltaTime * 10;
         }
     }
     IEnumerator Dash()
@@ -332,8 +336,7 @@ public class PlayerController : MonoBehaviour
         pState.dashing = true;
         animator.SetTrigger("Dashing");
         rb.gravityScale = 0;
-        int _dir = pState.lookingRight ? 1 : -1;
-        rb.linearVelocity = new Vector2(_dir * dashSpeed, 0);
+        rb.linearVelocity = new Vector2(rb.linearVelocity.x * dashSpeed, 0);
         if (IsGrounded()) { Instantiate(dashEffect, transform); }
         yield return new WaitForSeconds(dashTime);
         rb.gravityScale = gravityScale;
@@ -374,7 +377,7 @@ public class PlayerController : MonoBehaviour
         }
     }
 
-    
+
 
     void Hit(Transform _attackTransform, Vector2 _attackArea, ref bool _recoildDir, float _recoilStrenght)
     {
@@ -384,10 +387,10 @@ public class PlayerController : MonoBehaviour
             _recoildDir = true;
             for (int i = 0; i < hits.Length; i++)
             {
-                
+
 
                 hits[i].GetComponent<Enemy>().EnemyHit(
-                    damage, transform.position - 
+                    damage, transform.position -
                     hits[i].transform.position, _recoilStrenght);
                 if (hits[i].CompareTag("Enemy"))
                 {
@@ -401,7 +404,7 @@ public class PlayerController : MonoBehaviour
         GameObject slash = Instantiate(slashEffect, attackTransform);
         slash.transform.eulerAngles = new Vector3(0, 0, angle);
         slash.transform.localScale = new Vector2(transform.localScale.x, transform.localScale.y);
-        
+
     }
     void Recoil()
     {
@@ -422,13 +425,13 @@ public class PlayerController : MonoBehaviour
             rb.gravityScale = 0;
             if (directionalInput.y < 0)
             {
-                
+
                 rb.linearVelocity = new Vector2(rb.linearVelocity.x, recoilYSpeed);
             }
             else
             {
                 rb.linearVelocity = new Vector2(rb.linearVelocity.x, -recoilYSpeed);
-                
+
             }
             jumpCount = 0;
         }
@@ -436,7 +439,7 @@ public class PlayerController : MonoBehaviour
         {
             rb.gravityScale = gravityScale;
         }
-        if (pState.recoilingX&&stepsXRecoiled<recoilXSteps)
+        if (pState.recoilingX && stepsXRecoiled < recoilXSteps)
         {
             stepsXRecoiled++;
         }
@@ -459,25 +462,25 @@ public class PlayerController : MonoBehaviour
     }
     void RestoreTimeScale()
     {
-        
+
         if (restoreTime)
         {
-            if (Time.timeScale < 1) 
+            if (Time.timeScale < 1)
             {
-               
+
                 Time.timeScale += restoreTimeSpeed * Time.unscaledDeltaTime;
             }
             else
             {
-                
+
                 Time.timeScale = 1;
                 restoreTime = false;
-                
+
             }
 
 
         }
-        
+
     }
     public void HitStopTime(float _newTimeScale, float _restoreSpeed, float _delay)
     {
@@ -490,7 +493,7 @@ public class PlayerController : MonoBehaviour
         }
         else
         {
-            
+
             restoreTime = true;
         }
     }
@@ -499,10 +502,10 @@ public class PlayerController : MonoBehaviour
         yield return new WaitForSecondsRealtime(0.5f);
         restoreTime = true;
 
-        
-        
-        
-        
+
+
+
+
     }
     public int Health
     {
@@ -515,7 +518,7 @@ public class PlayerController : MonoBehaviour
                 if (OnHealthChangedCallback != null)
                 {
 
-                   OnHealthChangedCallback.Invoke();
+                    OnHealthChangedCallback.Invoke();
                 }
             }
         }
@@ -530,12 +533,12 @@ public class PlayerController : MonoBehaviour
                 mana = Mathf.Clamp(value, 0, 1);
                 manaStorage.fillAmount = mana;
             }
-            
+
         }
     }
     void Heal()
     {
-        if (healPressed && Health < maxHealth && IsGrounded() && !pState.dashing && Mana>0)
+        if (healPressed && Health < maxHealth && IsGrounded() && !pState.dashing && Mana > 0)
         {
             animator.SetBool("Healing", true);
             pState.healing = true;
@@ -545,7 +548,7 @@ public class PlayerController : MonoBehaviour
                 Health++;
                 healTimer = 0;
             }
-            Mana-= Time.deltaTime * manaDrainSpeed;
+            Mana -= Time.deltaTime * manaDrainSpeed;
         }
         else
         {
@@ -557,7 +560,7 @@ public class PlayerController : MonoBehaviour
 
     void CastSpell()
     {
-        if (cast&& timeSinceAttack>=timeBetweenCast&&Mana>=manaSpellCost)
+        if (cast && timeSinceAttack >= timeBetweenCast && Mana >= manaSpellCost)
         {
             timeSinceCast = 0;
             pState.casting = true;
@@ -576,7 +579,7 @@ public class PlayerController : MonoBehaviour
 
         if (downSpellfireBall.activeInHierarchy)
         {
-            rb.linearVelocity+=downSpellForce*Vector2.down;
+            rb.linearVelocity += downSpellForce * Vector2.down;
         }
     }
 
@@ -589,7 +592,7 @@ public class PlayerController : MonoBehaviour
             GameObject fireball = Instantiate(sideSpellfireBall, sideAttackTransform.position, Quaternion.identity);
             if (pState.lookingRight)
             {
-                fireball.transform.eulerAngles=Vector3.zero;
+                fireball.transform.eulerAngles = Vector3.zero;
             }
             else
             {
@@ -600,7 +603,7 @@ public class PlayerController : MonoBehaviour
         else if (directionalInput.y > 0.3f)
         {
             Instantiate(upSpellfireBall, transform);
-            rb.linearVelocity=Vector2.zero;
+            rb.linearVelocity = Vector2.zero;
         }
         else if (directionalInput.y < 0.3f && !IsGrounded())
         {
@@ -621,15 +624,15 @@ public class PlayerController : MonoBehaviour
     IEnumerator StopTakingDamage()
     {
         pState.invincible = true;
-       
+
         animator.SetTrigger("TakeDamage");
-        GameObject schizzoSangue=Instantiate(blood, transform);
+        GameObject schizzoSangue = Instantiate(blood, transform);
         Destroy(schizzoSangue, 1.5f);
         yield return new WaitForSeconds(invincibleTime);
         pState.invincible = false;
     }
     void FlashWhileInvincible()
     {
-        sr.material.color=pState.invincible?Color.Lerp(Color.white, Color.black, Mathf.PingPong(Time.time*hitFlashSpeed, 1.0f)):Color.white;
+        sr.material.color = pState.invincible ? Color.Lerp(Color.white, Color.black, Mathf.PingPong(Time.time * hitFlashSpeed, 1.0f)) : Color.white;
     }
 }
