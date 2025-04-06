@@ -17,6 +17,10 @@ public class SceneTransition : MonoBehaviour
             StartCoroutine(PlayerController.Instance.WalkIntoNewScene(exitDirection,exitTime));
             
         }
+        if (UiManager.Instance == null)
+        {
+            Debug.LogError(" not found in UiManager");
+        }
         StartCoroutine(UiManager.Instance.sceneFader.Fade(SceneFader.FadeDirection.Out));
     }
     private void OnTriggerEnter2D(Collider2D collision)

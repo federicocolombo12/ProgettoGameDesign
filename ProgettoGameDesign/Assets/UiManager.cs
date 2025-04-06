@@ -3,6 +3,7 @@ using UnityEngine;
 public class UiManager : MonoBehaviour
 {
     public static UiManager Instance;
+    public SceneFader sceneFader;
     private void Awake()
     {
         if (Instance != null && Instance != this)
@@ -14,10 +15,8 @@ public class UiManager : MonoBehaviour
             Instance = this;
         }
         DontDestroyOnLoad(gameObject);
-    }
-    public SceneFader sceneFader;
-    private void Start()
-    {
         sceneFader = GetComponentInChildren<SceneFader>();
     }
+   
+    
 }

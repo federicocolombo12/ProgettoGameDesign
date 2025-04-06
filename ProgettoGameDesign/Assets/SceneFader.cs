@@ -12,7 +12,7 @@ public class SceneFader : MonoBehaviour
         In,
         Out
     }
-    void Start()
+    void Awake()
     {
         fadeImage= GetComponent<Image>();
     }
