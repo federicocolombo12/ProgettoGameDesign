@@ -13,7 +13,7 @@ public class PlayerController : MonoBehaviour
     [Header("Jumping Mechanics")]
 
     [SerializeField] float jumpForce = 10f;
-    private float jumpInput;
+    private bool jumpInput;
     float jumpBufferCounter = 0;
     [SerializeField] private float jumpBufferFrames;
     private float coyoteTimeCounter = 0;
@@ -116,6 +116,7 @@ public class PlayerController : MonoBehaviour
         rb = GetComponent<Rigidbody2D>();
         InputManager.Instance.OnMoveInput += HandleMoveInput;
         InputManager.Instance.OnJumpInput += HandleJump;
+        
         InputManager.Instance.OnDashInput += HandleDash;
         InputManager.Instance.OnAttackInput += HandleAttack;
         InputManager.Instance.OnHealInput += HandleHeal;
@@ -156,12 +157,13 @@ public class PlayerController : MonoBehaviour
         directionalInput = input;
     }
 
-    private void HandleJump(float input)
+    private void HandleJump(bool jump)
     {
         // Logica di salto, ad esempio:
         Debug.Log("Salto eseguito!");
-        jumpInput = input;
-        // Puoi implementare qui l'effettivo salto del giocatore
+        
+        jumpInput = jump;
+            
     }
     private void HandleDash()
     {
@@ -282,24 +284,26 @@ public class PlayerController : MonoBehaviour
     }
     void Jump()
     {
-        if (jumpInput == 0 && rb.linearVelocity.y > 0)
+        if (!jumpInput && rb.linearVelocity.y > 0)
         {
             rb.linearVelocity = new Vector2(rb.linearVelocity.x, 0);
             pState.jumping = false;
+            
         }
 
         if (!pState.jumping)
         {
             if (coyoteTimeCounter > 0 && jumpBufferCounter > 0)
             {
-                rb.linearVelocity = new Vector2(rb.linearVelocity.x, jumpInput * jumpForce);
+                rb.linearVelocity = new Vector2(rb.linearVelocity.x, jumpForce);
                 pState.jumping = true;
             }
-            else if (!IsGrounded() && jumpCount < maxJumpCount && jumpInput != 0)
+            else if (!IsGrounded() && jumpCount < maxJumpCount && jumpInput)
             {
                 pState.jumping = true;
                 jumpCount++;
-                rb.linearVelocity = new Vector2(rb.linearVelocity.x, jumpInput * jumpForce);
+                rb.linearVelocity = new Vector2(rb.linearVelocity.x, jumpForce);
+                
 
 
             }
@@ -321,7 +325,7 @@ public class PlayerController : MonoBehaviour
         {
             coyoteTimeCounter -= Time.deltaTime;
         }
-        if (jumpInput != 0)
+        if (jumpInput)
         {
             jumpBufferCounter = jumpBufferFrames;
         }

@@ -8,7 +8,7 @@ public class InputManager : MonoBehaviour
 
     // Eventi per gli input, ad esempio per il movimento e il salto
     public event System.Action<Vector2> OnMoveInput;
-    public event System.Action<float> OnJumpInput;
+    public event System.Action<bool> OnJumpInput;
     public event System.Action<bool> OnHealInput;
     public event System.Action OnDashInput;
     public event System.Action OnAttackInput;
@@ -65,12 +65,12 @@ public class InputManager : MonoBehaviour
 
     private void HandleJump(InputAction.CallbackContext context)
     {
-        float jumpValue = context.ReadValue<float>();
-        OnJumpInput?.Invoke(jumpValue);
+        
+        OnJumpInput?.Invoke(true);
     }
     private void HandleJumpCanceled(InputAction.CallbackContext context)
     {
-        OnJumpInput?.Invoke(0);
+        OnJumpInput?.Invoke(false);
     }
     private void HandleDash(InputAction.CallbackContext context)
     {
