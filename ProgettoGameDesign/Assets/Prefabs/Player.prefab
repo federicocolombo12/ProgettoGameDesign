@@ -114,10 +114,12 @@ MonoBehaviour:
   jumpForce: 10
   jumpBufferFrames: 1
   coyoteTime: 0.2
-  maxJumpCount: 1
+  maxJumpCount: 2
+  jumpGScale: 1
+  fallGScale: 3
   groundCheck: {fileID: 3429251840089909367}
   groundCheckY: 0.2
-  GroundCheckX: 0.2
+  GroundCheckX: 0.4
   groundLayer:
     serializedVersion: 2
     m_Bits: 8
@@ -267,6 +269,7 @@ MonoBehaviour:
   invincible: 0
   healing: 0
   casting: 0
+  cutscene: 0
 --- !u!1 &4986755741747033650
 GameObject:
   m_ObjectHideFlags: 0

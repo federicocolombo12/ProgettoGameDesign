@@ -205,6 +205,10 @@ public class PlayerController : MonoBehaviour
 
     void Update()
     {
+        if (pState.cutscene)
+        {
+            return;
+        }
         UpdateJumpVariables();
         if (pState.dashing)
         {
@@ -231,6 +235,10 @@ public class PlayerController : MonoBehaviour
     }
     private void FixedUpdate()
     {
+        if (pState.cutscene)
+        {
+            return;
+        }
         Recoil();
     }
 
@@ -240,6 +248,26 @@ public class PlayerController : MonoBehaviour
         {
             other.GetComponent<Enemy>().EnemyHit(spelldamage, (other.transform.position - transform.position).normalized, -recoilYSpeed);
         }
+    }
+    public IEnumerator WalkIntoNewScene(Vector2 _exitDir, float _delay)
+    {
+        
+        if (_exitDir.y > 0)
+        {
+            rb.linearVelocity=jumpForce * _exitDir;
+        }
+        if (_exitDir.x > 0)
+        {
+           directionalInput.x = _exitDir.x>0?1:-1;
+            Move();
+            
+        }
+        
+        Flip();
+        
+        yield return new WaitForSeconds(_delay);
+        pState.cutscene = false;
+
     }
 
     void Flip()
