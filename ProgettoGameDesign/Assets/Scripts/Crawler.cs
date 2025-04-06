@@ -31,6 +31,7 @@ public class Crawler : Enemy
                 {
                     ChangeState(EnemyStates.Crawler_Flip);
                 }
+                
                 if (transform.localScale.x>0)
                 {
                     rb.linearVelocity = new Vector2(speed, rb.linearVelocity.y);
@@ -49,6 +50,13 @@ public class Crawler : Enemy
                     ChangeState(EnemyStates.Crawler_Idle);
                 }
                 break;
+        }
+    }
+    private void OnCollisionEnter2D(Collision2D collision)
+    {
+        if (collision.gameObject.CompareTag("Enemy"))
+        {
+            ChangeState(EnemyStates.Crawler_Flip);
         }
     }
 }
