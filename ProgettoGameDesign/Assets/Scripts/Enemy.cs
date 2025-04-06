@@ -14,6 +14,13 @@ public class Enemy : MonoBehaviour
     protected float recoilTimer;
     [SerializeField] protected float damage;
     [SerializeField] protected float restoreTimeSpeed;
+
+    protected enum EnemyStates
+    {
+        Crawler_Idle,
+        Crawler_Flip
+    }
+    protected EnemyStates currentEnemyState;
     protected virtual void Start()
     {
         rb = GetComponent<Rigidbody2D>();
@@ -22,6 +29,7 @@ public class Enemy : MonoBehaviour
     
     protected virtual void Update()
     {
+        UpdateEnemyState();
         if (health <= 0)
         {
             Destroy(gameObject);
@@ -60,6 +68,16 @@ public class Enemy : MonoBehaviour
 
 
     }
+    protected virtual void UpdateEnemyState()
+    {
+        
+    }
+    protected void ChangeState(EnemyStates _newState)
+    {
+        currentEnemyState = _newState;
+    }
+    
+    
     protected virtual void Attack()
     {
         player.TakeDamage(damage);
