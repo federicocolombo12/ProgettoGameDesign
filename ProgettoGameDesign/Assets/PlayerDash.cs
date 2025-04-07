@@ -40,7 +40,7 @@ public class PlayerDash : MonoBehaviour
         { Instantiate(dashEffect, transform); 
         }
         yield return new WaitForSeconds(dashTime);
-        rb.gravityScale = playerMovement.gravityScale;
+        rb.gravityScale =   playerMovement.gravityScale;
         pState.dashing = false;
         yield return new WaitForSeconds(dashCooldown);
         canDash = true;

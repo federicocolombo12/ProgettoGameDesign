@@ -22,7 +22,7 @@ public class Player : MonoBehaviour
         playerInput = GetComponent<PlayerInput>();
         playerSpell = GetComponent<PlayerCast>();
         playerDash = GetComponent<PlayerDash>();
-        
+        pState = GetComponent<PlayerStateList>();
        
     }
 
@@ -30,6 +30,7 @@ public class Player : MonoBehaviour
     void Update()
     {
         playerMovement.UpdateJumpVariables(playerInput.jumpInput);
+        if (pState.dashing) return;
         playerMovement.Move(playerInput.directionalInput);
         playerMovement.Jump(playerInput.jumpInput);
         playerDash.DoDash(playerInput.dashed);

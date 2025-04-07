@@ -6030,8 +6030,8 @@ MonoBehaviour:
   jumpBufferFrames: 1
   coyoteTime: 0.2
   maxJumpCount: 2
-  jumpGScale: 2
-  fallGScale: 0.5
+  jumpGScale: 1
+  fallGScale: 3
   groundCheck: {fileID: 707294783}
   groundCheckY: 0.2
   GroundCheckX: 0.5
@@ -6941,6 +6941,10 @@ PrefabInstance:
     - target: {fileID: 1038730058775713584, guid: 1e5e95d1c8d2a664aa123a5933f1c74e, type: 3}
       propertyPath: m_Name
       value: Player
+      objectReference: {fileID: 0}
+    - target: {fileID: 1462792280493928275, guid: 1e5e95d1c8d2a664aa123a5933f1c74e, type: 3}
+      propertyPath: m_Enabled
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 1653175155450436630, guid: 1e5e95d1c8d2a664aa123a5933f1c74e, type: 3}
       propertyPath: m_LocalPosition.x
