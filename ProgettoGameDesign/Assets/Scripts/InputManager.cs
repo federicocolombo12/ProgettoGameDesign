@@ -10,9 +10,9 @@ public class InputManager : MonoBehaviour
     public event System.Action<Vector2> OnMoveInput;
     public event System.Action<bool> OnJumpInput;
     public event System.Action<bool> OnHealInput;
-    public event System.Action OnDashInput;
-    public event System.Action OnAttackInput;
-    public event System.Action OnCastSpellInput;
+    public event System.Action<bool> OnDashInput;
+    public event System.Action<bool> OnAttackInput;
+    public event System.Action<bool> OnCastSpellInput;
 
     private InputSystem_Actions inputActions;
 
@@ -74,15 +74,15 @@ public class InputManager : MonoBehaviour
     }
     private void HandleDash(InputAction.CallbackContext context)
     {
-        OnDashInput?.Invoke();
+        OnDashInput?.Invoke(true);
     }
     private void HandleDashCanceled(InputAction.CallbackContext context)
     {
-        OnDashInput?.Invoke();
+        OnDashInput?.Invoke(false);
     }
     private void HandleAttack(InputAction.CallbackContext context)
     {
-        OnAttackInput?.Invoke();
+        OnAttackInput?.Invoke(true);
     }
     private void HandleAttackCanceled(InputAction.CallbackContext context)
     {
@@ -99,7 +99,7 @@ public class InputManager : MonoBehaviour
     }
     private void HandleCastSpell(InputAction.CallbackContext context)
     {
-        OnCastSpellInput?.Invoke();
+        OnCastSpellInput?.Invoke(true);
     }
     private void HandleCastSpellCanceled(InputAction.CallbackContext context)
     {

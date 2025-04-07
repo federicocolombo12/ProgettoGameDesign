@@ -167,7 +167,7 @@ public class PlayerController : MonoBehaviour
         jumpInput = jump;
             
     }
-    private void HandleDash()
+    private void HandleDash(bool dashed)
     {
         if (canDash && !dashed)
         {
@@ -177,7 +177,7 @@ public class PlayerController : MonoBehaviour
 
 
     }
-    private void HandleAttack()
+    private void HandleAttack(bool casted)
     {
         attack = true;
     }
@@ -186,7 +186,7 @@ public class PlayerController : MonoBehaviour
         healPressed = healValue;
     }
 
-    private void HandleCast()
+    private void HandleCast(bool casted)
     {
         if (Mana >= manaSpellCost)
         {
