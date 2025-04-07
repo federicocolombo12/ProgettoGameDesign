@@ -42,14 +42,22 @@ public class Player : MonoBehaviour
     {
         playerMovement.UpdateJumpVariables(playerInput.jumpInput);
         if (pState.dashing) return;
+        playerHealth.RestoreTimeScale();
+        playerHealth.FlashWhileInvincible();
+        
         playerMovement.Move(playerInput.directionalInput);
+        playerHealth.Heal(playerInput.healPressed);
+        if (pState.healing)
+        {
+            return;
+        }
         playerMovement.Jump(playerInput.jumpInput);
         playerDash.DoDash(playerInput.dashed);
         playerAttack.Attack(playerInput.attack, playerInput.directionalInput);
         playerAttack.Recoil(playerInput.directionalInput);
-        playerHealth.Heal(playerInput.healPressed);
-        playerHealth.RestoreTimeScale();
-        playerHealth.FlashWhileInvincible();
+        
+        
+        
     }
 
 }
