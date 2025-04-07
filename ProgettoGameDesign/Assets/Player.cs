@@ -14,6 +14,17 @@ public class Player : MonoBehaviour
     public PlayerHealth playerHealth { get; private set; }
     public PlayerCast playerSpell { get; private set; }
     public PlayerDash playerDash { get; private set; }
+    private void Awake()
+    {
+        if (Instance == null)
+        {
+            Instance = this;
+        }
+        else
+        {
+            Destroy(gameObject);
+        }
+    }
     void Start()
     {
         playerAttack = GetComponent<PlayerAttack>();
@@ -34,6 +45,11 @@ public class Player : MonoBehaviour
         playerMovement.Move(playerInput.directionalInput);
         playerMovement.Jump(playerInput.jumpInput);
         playerDash.DoDash(playerInput.dashed);
-        
+        playerAttack.Attack(playerInput.attack, playerInput.directionalInput);
+        playerAttack.Recoil(playerInput.directionalInput);
+        playerHealth.Heal(playerInput.healPressed);
+        playerHealth.RestoreTimeScale();
+        playerHealth.FlashWhileInvincible();
     }
+
 }

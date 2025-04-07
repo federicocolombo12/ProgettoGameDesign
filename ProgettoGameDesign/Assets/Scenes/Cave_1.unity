@@ -3742,6 +3742,11 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!4 &385469319 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 5011728812269063769, guid: 1e5e95d1c8d2a664aa123a5933f1c74e, type: 3}
+  m_PrefabInstance: {fileID: 5619979300539852979}
+  m_PrefabAsset: {fileID: 0}
 --- !u!114 &398973539 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 7486843798181019534, guid: 45add3c22ddf0c3488e09f91eb6c4068, type: 3}
@@ -5973,6 +5978,16 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 65ee91efa4655424cbf1bed424ca2ff4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  health: 0
+  maxHealth: 5
+  invincibleTime: 1
+  blood: {fileID: 4217489016284576809, guid: adc782687189b894a99fcf16e89a03ec, type: 3}
+  hitFlashSpeed: 3
+  timeToHeal: 1
+  manaStorage: {fileID: 398973539}
+  mana: 0
+  manaDrainSpeed: 0.1
+  manaGain: 0.3
 --- !u!114 &1749915358
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -6013,6 +6028,24 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e8a8e1ef87c54484f9d0548f4f36e63e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  attackableLayer:
+    serializedVersion: 2
+    m_Bits: 64
+  sideAttackTransform: {fileID: 2146264841}
+  upAttackTransform: {fileID: 385469319}
+  downAttackTransform: {fileID: 1996328949}
+  sideAttackArea: {x: 4.5, y: 4.5}
+  upAttackArea: {x: 3.5, y: 4.5}
+  downAttackArea: {x: 3.5, y: 4.5}
+  damage: 10
+  hitForce: 10
+  slashEffect: {fileID: 6564155392743935712, guid: 5c536675066dd6c44932a0d2da33c003, type: 3}
+  timeBetweenAttack: 0.5
+  timeSinceAttack: 0
+  recoilXSpeed: 10
+  recoilYSpeed: 10
+  recoilXSteps: 10
+  recoilYSteps: 10
 --- !u!114 &1749915361
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -6029,6 +6062,7 @@ MonoBehaviour:
   jumpForce: 10
   jumpBufferFrames: 1
   coyoteTime: 0.2
+  jumpCount: 0
   maxJumpCount: 2
   jumpGScale: 1
   fallGScale: 3
@@ -6383,6 +6417,11 @@ CanvasRenderer:
 --- !u!4 &1962581558 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 2622103494175976343, guid: 1e5e95d1c8d2a664aa123a5933f1c74e, type: 3}
+  m_PrefabInstance: {fileID: 5619979300539852979}
+  m_PrefabAsset: {fileID: 0}
+--- !u!4 &1996328949 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 3764880250544692220, guid: 1e5e95d1c8d2a664aa123a5933f1c74e, type: 3}
   m_PrefabInstance: {fileID: 5619979300539852979}
   m_PrefabAsset: {fileID: 0}
 --- !u!1 &2006899654
@@ -6762,6 +6801,11 @@ Transform:
   m_Children: []
   m_Father: {fileID: 1346316756}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!4 &2146264841 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 5786731983210329177, guid: 1e5e95d1c8d2a664aa123a5933f1c74e, type: 3}
+  m_PrefabInstance: {fileID: 5619979300539852979}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &3293110773164495304
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -6919,6 +6963,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Canvas
       objectReference: {fileID: 0}
+    - target: {fileID: 8323471209048209068, guid: 45add3c22ddf0c3488e09f91eb6c4068, type: 3}
+      propertyPath: player
+      value: 
+      objectReference: {fileID: 1749915357}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects:
@@ -7019,10 +7067,10 @@ PrefabInstance:
       addedObject: {fileID: 1749915360}
     - targetCorrespondingSourceObject: {fileID: 1038730058775713584, guid: 1e5e95d1c8d2a664aa123a5933f1c74e, type: 3}
       insertIndex: -1
-      addedObject: {fileID: 1749915358}
+      addedObject: {fileID: 1749915357}
     - targetCorrespondingSourceObject: {fileID: 1038730058775713584, guid: 1e5e95d1c8d2a664aa123a5933f1c74e, type: 3}
       insertIndex: -1
-      addedObject: {fileID: 1749915357}
+      addedObject: {fileID: 1749915358}
   m_SourcePrefab: {fileID: 100100000, guid: 1e5e95d1c8d2a664aa123a5933f1c74e, type: 3}
 --- !u!1001 &8281791718627007278
 PrefabInstance:

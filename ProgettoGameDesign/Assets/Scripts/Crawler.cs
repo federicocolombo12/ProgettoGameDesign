@@ -13,7 +13,7 @@ public class Crawler : Enemy
     {
         base.Start();
         rb.gravityScale = 12f;
-        player = PlayerController.Instance;
+        player = Player.Instance;
     }
     // Update is called once per frame
     

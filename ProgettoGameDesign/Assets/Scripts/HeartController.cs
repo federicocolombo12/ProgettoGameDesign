@@ -2,17 +2,17 @@ using UnityEngine;
 using UnityEngine.UI;
 public class HeartController : MonoBehaviour
 {
-    PlayerController player;
+    [SerializeField] PlayerHealth player;
     private GameObject[] heartContainers;
     private Image[] heartFills;
     public Transform heartsParent;
     public GameObject heartContainerPrefab;
     void Start()
     {
-        player = PlayerController.Instance;
-        heartContainers = new GameObject[PlayerController.Instance.maxHealth];
-        heartFills = new Image[PlayerController.Instance.maxHealth];
-        PlayerController.Instance.OnHealthChangedCallback += UpdateHeartsHUD;
+       
+        heartContainers = new GameObject[player.maxHealth];
+        heartFills = new Image[player.maxHealth];
+        player.OnHealthChangedCallback += UpdateHeartsHUD;
         InstantiateHeartContainers();
         UpdateHeartsHUD();
     }

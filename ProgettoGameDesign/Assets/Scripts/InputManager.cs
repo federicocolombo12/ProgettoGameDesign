@@ -41,6 +41,7 @@ public class InputManager : MonoBehaviour
         inputActions.Player.Dash.performed += HandleDash;
         inputActions.Player.Dash.canceled += HandleDashCanceled;
         inputActions.Player.Attack.performed += HandleAttack;
+        inputActions.Player.Attack.canceled += HandleAttackCanceled;
         inputActions.Player.Healing.performed += HandleHeal;
         inputActions.Player.Healing.canceled += HandleHealCanceled;
         inputActions.Player.CastSpell.performed += HandleCastSpell;
@@ -87,12 +88,12 @@ public class InputManager : MonoBehaviour
     }
     private void HandleAttackCanceled(InputAction.CallbackContext context)
     {
-        //OnAttackInput?.Invoke();
+        OnAttackInput?.Invoke(false);
     }
     private void HandleHeal(InputAction.CallbackContext context)
     {
-        bool healValue = context.ReadValueAsButton();
-        OnHealInput?.Invoke(healValue);
+       
+        OnHealInput?.Invoke(true);
     }
     private void HandleHealCanceled(InputAction.CallbackContext context)
     {

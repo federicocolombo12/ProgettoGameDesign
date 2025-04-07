@@ -9,7 +9,7 @@ public class Enemy : MonoBehaviour
     [SerializeField] protected float recoilFactor;
     [SerializeField] protected bool isRecoiling = false;
 
-    [SerializeField] protected PlayerController player;
+    [SerializeField] protected Player player;
     [SerializeField] protected float speed;
     protected float recoilTimer;
     [SerializeField] protected float damage;
@@ -24,7 +24,7 @@ public class Enemy : MonoBehaviour
     protected virtual void Start()
     {
         rb = GetComponent<Rigidbody2D>();
-        player = PlayerController.Instance;
+        player = Player.Instance;
     }
     
     protected virtual void Update()
@@ -63,7 +63,7 @@ public class Enemy : MonoBehaviour
         if (collision.gameObject.CompareTag("Player")&&!player.pState.invincible)
         {
             Attack();
-            player.HitStopTime(0.1f,restoreTimeSpeed,0.5f);
+            player.playerHealth.HitStopTime(0.1f,restoreTimeSpeed,0.5f);
         }
 
 
@@ -80,7 +80,7 @@ public class Enemy : MonoBehaviour
     
     protected virtual void Attack()
     {
-        player.TakeDamage(damage);
+        player.playerHealth.TakeDamage(damage);
     }
 
 }

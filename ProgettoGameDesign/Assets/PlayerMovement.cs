@@ -15,7 +15,7 @@ public class PlayerMovement : MonoBehaviour
     [SerializeField] private float jumpBufferFrames;
     private float coyoteTimeCounter = 0;
     [SerializeField] private float coyoteTime;
-    private int jumpCount = 0;
+    public int jumpCount = 0;
     [SerializeField] private int maxJumpCount = 2;
     [SerializeField] float jumpGScale = 2f;
     [SerializeField] float fallGScale = 0.5f;
