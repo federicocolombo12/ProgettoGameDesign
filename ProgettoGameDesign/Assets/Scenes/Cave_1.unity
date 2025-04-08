@@ -6019,7 +6019,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ea490ad14e1293441ad8b8acd832383a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  dashSpeed: 2.5
+  dashSpeed: 5
   dashTime: 0.2
   dashCooldown: 0.3
   dashEffect: {fileID: 1349972566738812877, guid: 41fe29b72e0207f4397afe6cb01e6a0b, type: 3}
