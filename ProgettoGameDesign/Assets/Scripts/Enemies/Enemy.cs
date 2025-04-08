@@ -16,6 +16,7 @@ public class Enemy : MonoBehaviour
     [SerializeField] protected float damage;
     [SerializeField] protected float restoreTimeSpeed;
     [SerializeField] GameObject orangeBlood;
+    protected Animator animator;
 
 
     protected enum EnemyStates
@@ -30,10 +31,20 @@ public class Enemy : MonoBehaviour
             Bat_Death,
     }
     protected EnemyStates currentEnemyState;
+    protected virtual EnemyStates GetCurrentEnemyState
+    {
+        get { return currentEnemyState; }
+        set { if (currentEnemyState != value)
+            {
+                currentEnemyState = value;
+                ChangeCurrentAnimation();
+            }; }
+    }
     protected virtual void Start()
     {
         rb = GetComponent<Rigidbody2D>();
         sr = GetComponent<SpriteRenderer>();
+        animator = GetComponent<Animator>();
         player = Player.Instance;
     }
     
@@ -72,7 +83,8 @@ public class Enemy : MonoBehaviour
     protected virtual void OnCollisionStay2D(Collision2D collision)
     {
 
-        if (collision.gameObject.CompareTag("Player")&&!player.pState.invincible)
+        if (collision.gameObject.CompareTag("Player")&&!player.pState.invincible
+            &&health>0)
         {
             Attack();
             player.playerHealth.HitStopTime(0.1f,restoreTimeSpeed,0.5f);
@@ -90,7 +102,13 @@ public class Enemy : MonoBehaviour
     }
     protected void ChangeState(EnemyStates _newState)
     {
-        currentEnemyState = _newState;
+        GetCurrentEnemyState = _newState;
+    }
+    protected virtual void ChangeCurrentAnimation()
+    {
+        
+        
+       
     }
     
     

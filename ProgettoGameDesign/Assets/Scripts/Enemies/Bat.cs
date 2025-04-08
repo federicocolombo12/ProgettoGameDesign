@@ -15,7 +15,7 @@ public class Bat : Enemy
     protected override void UpdateEnemyState()
     {
         float _dist = Vector2.Distance(transform.position, player.transform.position);
-        switch (currentEnemyState)
+        switch (GetCurrentEnemyState)
         {
             case EnemyStates.Bat_Idle:
                 if (_dist < chaseDistance)
@@ -37,6 +37,7 @@ public class Bat : Enemy
                 }
                 break;
             case EnemyStates.Bat_Death:
+                Death(Random.Range(5, 10));
                 break;
         }
     }
@@ -56,5 +57,20 @@ public class Bat : Enemy
             ChangeState(EnemyStates.Bat_Stunned);
             
         }
+    }
+    protected override void ChangeCurrentAnimation()
+    {
+        animator.SetBool("Idle", GetCurrentEnemyState == EnemyStates.Bat_Idle);
+        animator.SetBool("Chasing", GetCurrentEnemyState == EnemyStates.Bat_Chase);
+        animator.SetBool("Stunned", GetCurrentEnemyState == EnemyStates.Bat_Stunned);
+        if (GetCurrentEnemyState == EnemyStates.Bat_Death)
+        {
+            animator.SetTrigger("Death");
+        }
+    }
+    protected override void Death(float _destroyTime)
+    {
+        base.Death(_destroyTime);
+        rb.gravityScale = 12f;
     }
 }
