@@ -14,6 +14,7 @@ public class Player : MonoBehaviour
     public PlayerHealth playerHealth { get; private set; }
     public PlayerCast playerSpell { get; private set; }
     public PlayerDash playerDash { get; private set; }
+
     private void Awake()
     {
         if (Instance == null)
@@ -55,6 +56,7 @@ public class Player : MonoBehaviour
         playerDash.DoDash(playerInput.dashed);
         playerAttack.Attack(playerInput.attack, playerInput.directionalInput);
         playerAttack.Recoil(playerInput.directionalInput);
+        playerSpell.CastSpell(playerInput.cast, playerMovement.IsGrounded(), playerInput.directionalInput);
         
         
         

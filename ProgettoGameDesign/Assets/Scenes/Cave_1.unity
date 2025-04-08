@@ -6000,6 +6000,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 28ddbe0854e113b45a62e0648a063c46, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  manaSpellCost: 0.1
+  timeBetweenCast: 0.5
+  spelldamage: 10000
+  downSpellForce: 1
+  sideSpellfireBall: {fileID: 917215352964490749, guid: f5741c3ec50793749aac1f983ecd299e, type: 3}
+  downSpellfireBall: {fileID: 5619979300539852980}
+  upSpellfireBall: {fileID: 4782286840622885309, guid: 9f27d6c86f3acec4db1e33d13e22996a, type: 3}
 --- !u!114 &1749915359
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -7046,7 +7053,8 @@ PrefabInstance:
       propertyPath: maxJumpCount
       value: 1
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 2892052724485403871, guid: 1e5e95d1c8d2a664aa123a5933f1c74e, type: 3}
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents:
@@ -7072,6 +7080,11 @@ PrefabInstance:
       insertIndex: -1
       addedObject: {fileID: 1749915358}
   m_SourcePrefab: {fileID: 100100000, guid: 1e5e95d1c8d2a664aa123a5933f1c74e, type: 3}
+--- !u!1 &5619979300539852980 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 7121136082989070535, guid: 1e5e95d1c8d2a664aa123a5933f1c74e, type: 3}
+  m_PrefabInstance: {fileID: 5619979300539852979}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &8281791718627007278
 PrefabInstance:
   m_ObjectHideFlags: 0

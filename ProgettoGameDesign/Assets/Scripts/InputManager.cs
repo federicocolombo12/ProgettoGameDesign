@@ -105,6 +105,6 @@ public class InputManager : MonoBehaviour
     }
     private void HandleCastSpellCanceled(InputAction.CallbackContext context)
     {
-        //OnCastSpellInput?.Invoke(false);
+        OnCastSpellInput?.Invoke(false);
     }
 }

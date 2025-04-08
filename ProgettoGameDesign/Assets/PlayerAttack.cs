@@ -4,7 +4,9 @@ public class PlayerAttack : MonoBehaviour
 {
     [Header("Attack")]
     [SerializeField] LayerMask attackableLayer;
-    [SerializeField] Transform sideAttackTransform, upAttackTransform, downAttackTransform;
+    public Transform sideAttackTransform;
+    public Transform upAttackTransform;
+    public Transform downAttackTransform;
     [SerializeField] Vector2 sideAttackArea, upAttackArea, downAttackArea;
     [SerializeField] float damage = 10;
     [SerializeField] float hitForce = 10;
@@ -23,6 +25,7 @@ public class PlayerAttack : MonoBehaviour
     private Animator animator;
     private PlayerMovement playerMovement;
     private PlayerHealth playerHealth;
+    PlayerCast playerSpell;
     private void Start()
     {
         pState = GetComponent<PlayerStateList>();
@@ -30,6 +33,15 @@ public class PlayerAttack : MonoBehaviour
         animator = GetComponent<Animator>();
         playerMovement = GetComponent<PlayerMovement>();
         playerHealth = GetComponent<PlayerHealth>();
+        playerSpell = GetComponent<PlayerCast>();
+    }
+    private void OnTriggerEnter2D(Collider2D other)
+    {
+        if (other.GetComponent<Enemy>() != null && pState.casting)
+        {
+            Debug.Log("Enemy Hit by spell");
+            other.GetComponent<Enemy>().EnemyHit(playerSpell.spelldamage, (other.transform.position - transform.position).normalized, -recoilYSpeed);
+        }
     }
     void StopRecoilX()
     {
