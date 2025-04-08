@@ -4,6 +4,7 @@ using UnityEngine;
 public class Enemy : MonoBehaviour
 {
     protected Rigidbody2D rb;
+    protected SpriteRenderer sr;
     [SerializeField] protected float health;
     [SerializeField] protected float recoilLenght;
     [SerializeField] protected float recoilFactor;
@@ -14,26 +15,31 @@ public class Enemy : MonoBehaviour
     protected float recoilTimer;
     [SerializeField] protected float damage;
     [SerializeField] protected float restoreTimeSpeed;
+    [SerializeField] GameObject orangeBlood;
+
 
     protected enum EnemyStates
     {
+        // Crawler states
         Crawler_Idle,
-        Crawler_Flip
+        Crawler_Flip,
+            // Bat states
+            Bat_Idle,
+            Bat_Chase,
+            Bat_Stunned,
+            Bat_Death,
     }
     protected EnemyStates currentEnemyState;
     protected virtual void Start()
     {
         rb = GetComponent<Rigidbody2D>();
+        sr = GetComponent<SpriteRenderer>();
         player = Player.Instance;
     }
     
     protected virtual void Update()
     {
-        UpdateEnemyState();
-        if (health <= 0)
-        {
-            Destroy(gameObject);
-        }
+        
         if (isRecoiling ) {
             
             if (recoilTimer < recoilLenght)
@@ -46,6 +52,10 @@ public class Enemy : MonoBehaviour
                 recoilTimer = 0;
             }
         }
+        else
+        {
+            UpdateEnemyState();
+        }
     
     }
     public virtual void EnemyHit(float damage, Vector2 hitDirection, float _hitForce)
@@ -53,7 +63,9 @@ public class Enemy : MonoBehaviour
         health -= damage;
         if (!isRecoiling)
         {
-            rb.AddForce(-hitDirection * _hitForce*recoilFactor);
+            GameObject _orangeBlood = Instantiate(orangeBlood, transform.position, Quaternion.identity);
+            Destroy(_orangeBlood, 5.5f);
+            rb.linearVelocity= hitDirection * _hitForce*recoilFactor;
             isRecoiling = true;
         }
     }
@@ -67,6 +79,10 @@ public class Enemy : MonoBehaviour
         }
 
 
+    }
+    protected virtual void Death(float _destroyTime) 
+    {
+        Destroy(gameObject, _destroyTime);
     }
     protected virtual void UpdateEnemyState()
     {

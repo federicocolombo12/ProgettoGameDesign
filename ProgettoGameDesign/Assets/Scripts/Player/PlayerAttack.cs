@@ -67,19 +67,20 @@ public class PlayerAttack : MonoBehaviour
             if (Mathf.Abs(directionalInput.y) < 0.3f || (directionalInput.y < 0 && playerMovement.IsGrounded()))
             {
                 Debug.Log("Attacco laterale");
-                Hit(sideAttackTransform, sideAttackArea, ref pState.recoilingX, recoilXSpeed);
+                int _recoilLeftOrRight = pState.lookingRight ? 1 : -1;
+                Hit(sideAttackTransform, sideAttackArea, ref pState.recoilingX, Vector2.right * _recoilLeftOrRight, recoilXSpeed);
                 Instantiate(slashEffect, sideAttackTransform);
             }
             else if (directionalInput.y > 0.3f)
             {
                 Debug.Log("Attacco alto");
-                Hit(upAttackTransform, upAttackArea, ref pState.recoilingY, recoilYSpeed);
+                Hit(upAttackTransform, upAttackArea, ref pState.recoilingY,Vector2.up, recoilYSpeed);
                 SlashEffectAngle(slashEffect, 90, upAttackTransform);
             }
             else if (directionalInput.y < 0.3f && !playerMovement.IsGrounded())
             {
                 Debug.Log("Attacco basso");
-                Hit(downAttackTransform, downAttackArea, ref pState.recoilingY, recoilYSpeed);
+                Hit(downAttackTransform, downAttackArea, ref pState.recoilingY,Vector2.down, recoilYSpeed);
                 SlashEffectAngle(slashEffect, -90, downAttackTransform);
             }
             // Attacco
@@ -88,19 +89,18 @@ public class PlayerAttack : MonoBehaviour
 
 
 
-    void Hit(Transform _attackTransform, Vector2 _attackArea, ref bool _recoildDir, float _recoilStrenght)
+    void Hit(Transform _attackTransform, Vector2 _attackArea, ref bool _recoildBool,Vector2 _recoilDir, float _recoilStrenght)
     {
         Collider2D[] hits = Physics2D.OverlapBoxAll(_attackTransform.position, _attackArea, 0, attackableLayer);
         if (hits.Length > 0)
         {
-            _recoildDir = true;
+            _recoildBool = true;
             for (int i = 0; i < hits.Length; i++)
             {
 
 
                 hits[i].GetComponent<Enemy>().EnemyHit(
-                    damage, transform.position -
-                    hits[i].transform.position, _recoilStrenght);
+                    damage, _recoilDir, _recoilStrenght);
                 if (hits[i].CompareTag("Enemy"))
                 {
                     playerHealth.Mana += playerHealth.manaGain;
