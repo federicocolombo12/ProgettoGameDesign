@@ -4,6 +4,7 @@ public class GameManager : MonoBehaviour
 {
     public string transitionedFromScene;    
     public static GameManager Instance { get; private set; }
+    public Vector2 platformRespawnPoint;
     private void Awake()
     {
         if (Instance!=null && Instance != this)

@@ -6,6 +6,7 @@ public class Crawler : Enemy
     [SerializeField] private float ledgeCheckX;
     [SerializeField] private float ledgeCheckY;
     [SerializeField] private LayerMask whatIsGround;
+    
     float timer;
     
         

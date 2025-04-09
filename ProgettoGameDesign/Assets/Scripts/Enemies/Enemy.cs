@@ -9,12 +9,11 @@ public class Enemy : MonoBehaviour
     [SerializeField] protected float recoilLenght;
     [SerializeField] protected float recoilFactor;
     [SerializeField] protected bool isRecoiling = false;
-
+    [SerializeField] private float restoreTimeSpeed;
     [SerializeField] protected Player player;
     [SerializeField] protected float speed;
     protected float recoilTimer;
     [SerializeField] protected float damage;
-    [SerializeField] protected float restoreTimeSpeed;
     [SerializeField] GameObject orangeBlood;
     protected Animator animator;
 
@@ -24,11 +23,17 @@ public class Enemy : MonoBehaviour
         // Crawler states
         Crawler_Idle,
         Crawler_Flip,
-            // Bat states
-            Bat_Idle,
-            Bat_Chase,
-            Bat_Stunned,
-            Bat_Death,
+        // Bat states
+        Bat_Idle,
+        Bat_Chase,
+        Bat_Stunned,
+        Bat_Death,
+        // Charger states
+        Charger_Idle,
+        Charger_Surprised,
+        Charger_Charge,
+
+
     }
     protected EnemyStates currentEnemyState;
     protected virtual EnemyStates GetCurrentEnemyState
