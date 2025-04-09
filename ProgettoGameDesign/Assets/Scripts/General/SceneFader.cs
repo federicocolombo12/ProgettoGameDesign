@@ -6,7 +6,7 @@ using UnityEngine.UI;
 public class SceneFader : MonoBehaviour
 {
     private Image fadeImage;
-    [SerializeField] private float fadeTime = 1f;
+    public float fadeTime { get; private set; }
     public enum FadeDirection
     {
         In,
@@ -24,6 +24,7 @@ public class SceneFader : MonoBehaviour
     }
     public IEnumerator Fade(FadeDirection _fadeDirection)
     {
+        Debug.Log("Fade " + _fadeDirection);
         float _alpha = _fadeDirection == FadeDirection.Out ? 1 : 0;
         float _fadeEndValue = _fadeDirection == FadeDirection.Out ? 0 : 1;
         if (_fadeDirection == FadeDirection.Out)

@@ -81,4 +81,8 @@ public class PlayerInput : MonoBehaviour
             dashed = false;
         }
     }
+    public void SetDirectionalInput(Vector2 input)
+    {
+        directionalInput = input;
+    }
 }

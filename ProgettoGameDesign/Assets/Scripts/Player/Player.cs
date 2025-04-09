@@ -3,7 +3,7 @@ using UnityEngine;
 public class Player : MonoBehaviour
 {
     public static Player Instance { get; private set; }
-    private Rigidbody2D rb;
+    public Rigidbody2D rb;
     private Animator animator;
     public PlayerStateList pState;
     
@@ -35,6 +35,7 @@ public class Player : MonoBehaviour
         playerSpell = GetComponent<PlayerCast>();
         playerDash = GetComponent<PlayerDash>();
         pState = GetComponent<PlayerStateList>();
+        rb = GetComponent<Rigidbody2D>();
        
     }
 

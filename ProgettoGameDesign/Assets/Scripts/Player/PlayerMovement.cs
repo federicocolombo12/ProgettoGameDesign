@@ -1,7 +1,9 @@
 ﻿using UnityEngine;
+using System.Collections;
 
 public class PlayerMovement : MonoBehaviour
 {
+    PlayerInput pInput;
     [Header("Horizontal Movement")]
     [SerializeField] float speed = 5f;
     
@@ -127,6 +129,27 @@ public class PlayerMovement : MonoBehaviour
         {
             jumpBufferCounter -= Time.deltaTime * 10;
         }
+    }
+    public IEnumerator WalkIntoNewScene(Vector2 _exitDir, float _delay)
+    {
+
+        if (_exitDir.y > 0)
+        {
+            rb.linearVelocity = jumpForce * _exitDir;
+        }
+        if (_exitDir.x > 0)
+        {
+            float exitValue = _exitDir.x > 0 ? 1 : -1;
+            pInput.SetDirectionalInput(new Vector2(exitValue, 0));
+            Move(pInput.directionalInput);
+
+        }
+
+        Flip(pInput.directionalInput);
+
+        yield return new WaitForSeconds(_delay);
+        pState.cutscene = false;
+
     }
 
 }
