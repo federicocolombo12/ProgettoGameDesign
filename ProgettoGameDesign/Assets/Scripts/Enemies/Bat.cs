@@ -26,6 +26,10 @@ public class Bat : Enemy
             case EnemyStates.Bat_Chase:
                 rb.MovePosition(Vector2.MoveTowards(transform.position, player.transform.position, speed * Time.deltaTime));
                 FlipBat();
+                if (_dist > chaseDistance)
+                {
+                    ChangeState(EnemyStates.Bat_Idle);
+                }
                 break;
             case EnemyStates.Bat_Stunned:
                 timer += Time.deltaTime;
