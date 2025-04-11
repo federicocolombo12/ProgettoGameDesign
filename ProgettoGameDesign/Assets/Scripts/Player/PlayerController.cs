@@ -658,6 +658,16 @@ public class PlayerController : MonoBehaviour
         StartCoroutine(StopTakingDamage());
 
     }
+    public void Respawned()
+    {
+        if (!pState.alive)
+        {
+            pState.alive = true;
+            Health = maxHealth;
+            animator.Play("Idle");
+        }
+    }
+
     IEnumerator StopTakingDamage()
     {
         pState.invincible = true;

@@ -2,6 +2,7 @@ using UnityEngine;
 using UnityEngine.UI;
 using System.Collections;
 using System;
+using System.Xml.Serialization;
 
 public class PlayerHealth : MonoBehaviour
 {
@@ -41,6 +42,7 @@ public class PlayerHealth : MonoBehaviour
         sr = GetComponent<SpriteRenderer>();
         Mana = mana;
         manaStorage.fillAmount = mana;
+        pState.alive = true;
     }
     
     
@@ -144,8 +146,20 @@ public class PlayerHealth : MonoBehaviour
     }
     public void TakeDamage(float damage)
     {
-        Health -= Mathf.RoundToInt(damage);
-        StartCoroutine(StopTakingDamage());
+        if (pState.alive)
+        {
+            Health -= Mathf.RoundToInt(damage);
+            if (Health <= 0)
+            {
+                Health = 0;
+                StartCoroutine(Death());
+            }
+            else
+            {
+                StartCoroutine(StopTakingDamage());
+            }
+            StartCoroutine(StopTakingDamage());
+        }
 
     }
     IEnumerator StopTakingDamage()
@@ -162,4 +176,17 @@ public class PlayerHealth : MonoBehaviour
     {
         sr.material.color = pState.invincible ? Color.Lerp(Color.white, Color.black, Mathf.PingPong(Time.time * hitFlashSpeed, 1.0f)) : Color.white;
     }
+
+    IEnumerator Death()
+    {
+        pState.alive = false;
+        Time.timeScale = 1f;
+        GameObject schizzoSangue = Instantiate(blood, transform);
+        Destroy(schizzoSangue, 1.5f);
+        animator.SetTrigger("Death");
+
+        yield return new WaitForSeconds(0.9f);
+    }
+
+    
 }
