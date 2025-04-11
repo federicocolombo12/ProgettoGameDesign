@@ -8,6 +8,8 @@ public class PlayerInput : MonoBehaviour
     public bool healPressed { get; private set; }
     public bool cast { get; private set; }
     public bool dashed { get; private set; }
+    public bool leftTranformation { get; private set; }
+    public bool rightTransformation { get; private set; }
     private bool canDash = true;
     void Start()
     {
@@ -18,6 +20,8 @@ public class PlayerInput : MonoBehaviour
         InputManager.Instance.OnAttackInput += HandleAttack;
         InputManager.Instance.OnHealInput += HandleHeal;
         InputManager.Instance.OnCastSpellInput += HandleCast;
+        InputManager.Instance.OnTriggerAbility1Input += HandleTriggerAbility1;
+        InputManager.Instance.OnTriggerAbility2Input += HandleTriggerAbility2;
     }
 
     // Update is called once per frame
@@ -33,6 +37,11 @@ public class PlayerInput : MonoBehaviour
 
         InputManager.Instance.OnDashInput -= HandleDash;
         InputManager.Instance.OnAttackInput -= HandleAttack;
+        InputManager.Instance.OnHealInput -= HandleHeal;
+        InputManager.Instance.OnCastSpellInput -= HandleCast;
+        InputManager.Instance.OnTriggerAbility1Input -= HandleTriggerAbility1;
+        InputManager.Instance.OnTriggerAbility2Input -= HandleTriggerAbility2;
+
     }
     private void HandleMoveInput(Vector2 input)
     {
@@ -84,5 +93,15 @@ public class PlayerInput : MonoBehaviour
     public void SetDirectionalInput(Vector2 input)
     {
         directionalInput = input;
+    }
+    private void HandleTriggerAbility1(bool leftTransform)
+    {
+        leftTranformation = leftTransform;
+
+        
+    }
+    private void HandleTriggerAbility2(bool rightTransform)
+    {
+        rightTransformation = rightTransform;
     }
 }

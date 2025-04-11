@@ -4,16 +4,18 @@ public class Player : MonoBehaviour
 {
     public static Player Instance { get; private set; }
     public Rigidbody2D rb;
-    private Animator animator;
+    public Animator animator;
     public PlayerStateList pState;
+    public PlayerTransformation playerTransformation;
     
-    private SpriteRenderer sr;
+    public SpriteRenderer sr;
     public PlayerMovement playerMovement { get; private set; }
     public PlayerInput playerInput { get; private set; }
     public PlayerAttack playerAttack { get; private set; }
     public PlayerHealth playerHealth { get; private set; }
     public PlayerCast playerSpell { get; private set; }
     public PlayerDash playerDash { get; private set; }
+    public PlayerTransform playerTransform { get; private set; }
 
     private void Awake()
     {
@@ -34,9 +36,11 @@ public class Player : MonoBehaviour
         playerInput = GetComponent<PlayerInput>();
         playerSpell = GetComponent<PlayerCast>();
         playerDash = GetComponent<PlayerDash>();
+        playerTransform = GetComponent<PlayerTransform>();
         pState = GetComponent<PlayerStateList>();
         rb = GetComponent<Rigidbody2D>();
-       
+        animator = GetComponent<Animator>();
+
     }
 
     // Update is called once per frame
@@ -58,7 +62,7 @@ public class Player : MonoBehaviour
         playerAttack.Attack(playerInput.attack, playerInput.directionalInput);
         playerAttack.Recoil(playerInput.directionalInput);
         playerSpell.CastSpell(playerInput.cast, playerMovement.IsGrounded(), playerInput.directionalInput);
-        
+        playerTransform.HandleTransform(playerInput.leftTranformation, playerInput.rightTransformation);
         
         
     }

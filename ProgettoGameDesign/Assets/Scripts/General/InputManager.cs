@@ -13,6 +13,8 @@ public class InputManager : MonoBehaviour
     public event System.Action<bool> OnDashInput;
     public event System.Action<bool> OnAttackInput;
     public event System.Action<bool> OnCastSpellInput;
+    public event System.Action<bool> OnTriggerAbility1Input;
+    public event System.Action<bool> OnTriggerAbility2Input;
 
     private InputSystem_Actions inputActions;
 
@@ -46,6 +48,11 @@ public class InputManager : MonoBehaviour
         inputActions.Player.Healing.canceled += HandleHealCanceled;
         inputActions.Player.CastSpell.performed += HandleCastSpell;
         inputActions.Player.CastSpell.canceled += HandleCastSpellCanceled;
+        inputActions.Player.TriggerAbility1.started += HandleTriggerAbility1;
+        inputActions.Player.TriggerAbility1.canceled += HandleTriggerAbility1Canceled;
+        inputActions.Player.TriggerAbility2.started += HandleTriggerAbility2;
+        inputActions.Player.TriggerAbility2.canceled += HandleTriggerAbility2Canceled;
+       
     }
 
     private void OnDisable()
@@ -107,4 +114,21 @@ public class InputManager : MonoBehaviour
     {
         OnCastSpellInput?.Invoke(false);
     }
+    private void HandleTriggerAbility1(InputAction.CallbackContext context)
+    {
+        OnTriggerAbility1Input?.Invoke(true);
+    }
+    private void HandleTriggerAbility1Canceled(InputAction.CallbackContext context)
+    {
+        OnTriggerAbility1Input?.Invoke(false);
+    }
+    private void HandleTriggerAbility2(InputAction.CallbackContext context)
+    {
+        OnTriggerAbility2Input?.Invoke(true);
+    }
+    private void HandleTriggerAbility2Canceled(InputAction.CallbackContext context)
+    {
+        OnTriggerAbility2Input?.Invoke(false);
+    }
+    
 }

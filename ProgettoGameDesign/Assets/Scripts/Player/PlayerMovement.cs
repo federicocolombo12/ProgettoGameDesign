@@ -6,7 +6,7 @@ public class PlayerMovement : MonoBehaviour
     PlayerInput pInput;
     [Header("Horizontal Movement")]
     [SerializeField] float speed = 5f;
-    
+   
     [Space(10)]
 
     [Header("Jumping Mechanics")]
@@ -39,9 +39,18 @@ public class PlayerMovement : MonoBehaviour
         pState = GetComponent<PlayerStateList>();
         gravityScale = rb.gravityScale;
     }
+    private void Update()
+    {
+        UpdateVariables();
+    }
 
     // Update is called once per frame
-    
+    void UpdateVariables()
+    {
+        speed = Player.Instance.playerTransformation.moveSpeed;
+        jumpForce = Player.Instance.playerTransformation.jumpForce;
+
+    }
     void Flip(Vector2 directionalInput)
     {
         if (directionalInput.x > 0)

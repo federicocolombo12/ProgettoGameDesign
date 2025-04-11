@@ -7806,7 +7806,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   dashSpeed: 5
   dashTime: 0.2
-  dashCooldown: 0.3
+  dashCooldown: 1
   dashEffect: {fileID: 1349972566738812877, guid: 41fe29b72e0207f4397afe6cb01e6a0b, type: 3}
 --- !u!114 &1749915360
 MonoBehaviour:
@@ -7889,7 +7889,26 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   rb: {fileID: 0}
+  animator: {fileID: 0}
   pState: {fileID: 0}
+  playerTransformation: {fileID: 11400000, guid: 34644fc0004a56a45927fc9ad2f602ce, type: 2}
+  sr: {fileID: 0}
+--- !u!114 &1749915370
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1749915355}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f982a2ddec0d9d5459e9a6a75ae200df, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  playerTransformations:
+  - {fileID: 11400000, guid: 34644fc0004a56a45927fc9ad2f602ce, type: 2}
+  - {fileID: 11400000, guid: a85abe56df98ddd489746a5ed5666703, type: 2}
+  - {fileID: 11400000, guid: 08614dbdfebc506409c90886dd347a37, type: 2}
 --- !u!1 &1751187491
 GameObject:
   m_ObjectHideFlags: 0
@@ -9565,6 +9584,9 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 1038730058775713584, guid: 1e5e95d1c8d2a664aa123a5933f1c74e, type: 3}
       insertIndex: -1
       addedObject: {fileID: 1749915358}
+    - targetCorrespondingSourceObject: {fileID: 1038730058775713584, guid: 1e5e95d1c8d2a664aa123a5933f1c74e, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1749915370}
   m_SourcePrefab: {fileID: 100100000, guid: 1e5e95d1c8d2a664aa123a5933f1c74e, type: 3}
 --- !u!1 &5619979300539852980 stripped
 GameObject:
