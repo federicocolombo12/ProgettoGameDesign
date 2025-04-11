@@ -15,6 +15,7 @@ MonoBehaviour:
   maxHealth: 5
   moveSpeed: 3
   jumpForce: 3
+  jumpCount: 0
   dashSpeed: 1
   abilityType: 1
   attackDamage: 1

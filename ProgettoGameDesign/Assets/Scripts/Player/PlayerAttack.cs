@@ -35,6 +35,14 @@ public class PlayerAttack : MonoBehaviour
         playerHealth = GetComponent<PlayerHealth>();
         playerSpell = GetComponent<PlayerCast>();
     }
+    private void Update()
+    {
+        UpdateVariables();
+    }
+    void UpdateVariables()
+    {
+        damage = Player.Instance.playerTransformation.attackDamage;
+    }
     private void OnTriggerEnter2D(Collider2D other)
     {
         if (other.GetComponent<Enemy>() != null && pState.casting)

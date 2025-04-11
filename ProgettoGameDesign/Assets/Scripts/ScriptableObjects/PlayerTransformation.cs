@@ -14,6 +14,7 @@ public class PlayerTransformation : ScriptableObject
     public float maxHealth;
     public float moveSpeed;
     public float jumpForce;
+    public float jumpCount;
     public float dashSpeed;
     public AbilityType abilityType;
     public float attackDamage;
