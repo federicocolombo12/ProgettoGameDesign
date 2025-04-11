@@ -10,11 +10,12 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 15c4b7b544189c24ebf7d140ea5e6685, type: 3}
-  m_Name: Monster1
+  m_Name: Wolf
   m_EditorClassIdentifier: 
   maxHealth: 5
   moveSpeed: 3
   jumpForce: 3
+  jumpCount: 0
   dashSpeed: 1
   abilityType: 1
   attackDamage: 1

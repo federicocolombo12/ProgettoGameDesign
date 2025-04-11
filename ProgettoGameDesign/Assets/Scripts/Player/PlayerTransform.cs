@@ -14,7 +14,13 @@ public class PlayerTransform : MonoBehaviour
     }
     [SerializeField] List<PlayerTransformation> playerTransformations; // List of possible transformations
     Form currentForm;
-
+    private void Start()
+    {
+        // Initialize the current form to Human
+        currentForm = Form.Human;
+        timeSinceLastTransform = transformCooldown; // Start with cooldown ready
+    
+    }
     private void Update()
     {
         // Update the cooldown timer
@@ -24,7 +30,7 @@ public class PlayerTransform : MonoBehaviour
         }
     }
 
-    public void HandleTransform(bool transform1, bool transform2)
+    public void HandleTransform(bool leftTransform, bool rightTransform)
     {
         if (timeSinceLastTransform < transformCooldown)
         {
@@ -34,33 +40,33 @@ public class PlayerTransform : MonoBehaviour
         switch (currentForm)
         {
             case Form.Human:
-                if (transform1)
+                if (leftTransform)
                 {
                     ChangeState(Form.Bat, 1);
                 }
-                else if (transform2)
+                else if (rightTransform)
                 {
                     ChangeState(Form.Wolf, 2);
                 }
                 break;
             case Form.Bat:
-                if (transform1)
+                if (leftTransform)
                 {
                     ChangeState(Form.Human, 0);
                 }
-                else if (transform2)
+                else if (rightTransform)
                 {
                     ChangeState(Form.Wolf, 2);
                 }
                 break;
             case Form.Wolf:
-                if (transform1)
+                if (leftTransform)
                 {
-                    ChangeState(Form.Bat, 0);
+                    ChangeState(Form.Bat, 1);
                 }
-                else if (transform2)
+                else if (rightTransform)
                 {
-                    ChangeState(Form.Human, 1);
+                    ChangeState(Form.Human, 0);
                 }
                 break;
         }
