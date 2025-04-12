@@ -182,12 +182,12 @@ public class PlayerHealth : MonoBehaviour
     IEnumerator Death()
     {
         pState.alive = false;
-        Time.timeScale = 1f;
+        Time.timeScale = 0;
         GameObject schizzoSangue = Instantiate(blood, transform);
         Destroy(schizzoSangue, 1.5f);
         animator.SetTrigger("Death");
 
-        yield return new WaitForSeconds(0.9f);
+        yield return new WaitForSecondsRealtime(1.2f);
         GameManager.Instance.RespawnPlayer(Player.Instance);
     }
 

@@ -72,6 +72,7 @@ public class Player : MonoBehaviour
         transform.position = position;
         rb.linearVelocity = Vector2.zero;
         playerHealth.Respawned();
+        //eventuali altre inizializzazioni del player necessarie dopo il respawn ( l'avevo pensata cosi)
     }
 
 }
