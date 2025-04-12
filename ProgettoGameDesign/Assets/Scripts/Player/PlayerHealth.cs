@@ -32,7 +32,9 @@ public class PlayerHealth : MonoBehaviour
     private SpriteRenderer sr;
     private PlayerMovement playerMovement;
     public PlayerStateList pState { get; private set; }
-    
+
+    public static event Action OnPlayerDeath;
+
     private void Start()
     {
         pState = GetComponent<PlayerStateList>();
@@ -186,7 +188,16 @@ public class PlayerHealth : MonoBehaviour
         animator.SetTrigger("Death");
 
         yield return new WaitForSeconds(0.9f);
+        GameManager.Instance.RespawnPlayer(Player.Instance);
     }
 
-    
+    public void Respawned()
+    {
+        if (!pState.alive)
+        {
+            pState.alive = true;
+            Health = maxHealth;
+            animator.Play("Idle");
+        }
+    }
 }

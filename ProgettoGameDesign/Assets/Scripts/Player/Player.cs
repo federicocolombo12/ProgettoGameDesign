@@ -67,4 +67,11 @@ public class Player : MonoBehaviour
         
     }
 
+    public void RespawnAt(Vector2 position)
+    {
+        transform.position = position;
+        rb.linearVelocity = Vector2.zero;
+        playerHealth.Respawned();
+    }
+
 }
