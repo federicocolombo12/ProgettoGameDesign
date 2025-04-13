@@ -8506,14 +8506,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7de2ca4266262c04ab27506118b81382, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: 5
+  speed: 8
   jumpForce: 10
   jumpBufferFrames: 1
   coyoteTime: 0.2
   jumpCount: 0
   maxJumpCount: 2
   jumpGScale: 1
-  fallGScale: 3
+  fallGScale: 5
   groundCheck: {fileID: 707294783}
   groundCheckY: 0.2
   GroundCheckX: 0.5

@@ -49,7 +49,7 @@ public class PlayerMovement : MonoBehaviour
     {
         speed = Player.Instance.playerTransformation.moveSpeed;
         jumpForce = Player.Instance.playerTransformation.jumpForce;
-
+        maxJumpCount = Player.Instance.playerTransformation.jumpCount;
     }
     void Flip(Vector2 directionalInput)
     {
@@ -90,7 +90,7 @@ public class PlayerMovement : MonoBehaviour
         {
             rb.linearVelocity = new Vector2(rb.linearVelocity.x, 0);
             pState.jumping = false;
-            gravityScale = fallGScale;
+            
 
         }
 
@@ -100,7 +100,7 @@ public class PlayerMovement : MonoBehaviour
             {
                 rb.linearVelocity = new Vector2(rb.linearVelocity.x, jumpForce);
                 pState.jumping = true;
-                gravityScale = jumpGScale;
+                
 
             }
             else if (!IsGrounded() && jumpCount < maxJumpCount && jumpInput)
@@ -108,7 +108,7 @@ public class PlayerMovement : MonoBehaviour
                 pState.jumping = true;
                 jumpCount++;
                 rb.linearVelocity = new Vector2(rb.linearVelocity.x, jumpForce);
-                gravityScale = jumpGScale;
+                
 
 
             }
@@ -133,10 +133,12 @@ public class PlayerMovement : MonoBehaviour
         if (jumpInput)
         {
             jumpBufferCounter = jumpBufferFrames;
+            gravityScale = jumpGScale;
         }
         else
         {
             jumpBufferCounter -= Time.deltaTime * 10;
+            gravityScale = fallGScale;
         }
     }
     public IEnumerator WalkIntoNewScene(Vector2 _exitDir, float _delay)

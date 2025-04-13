@@ -13,10 +13,10 @@ MonoBehaviour:
   m_Name: BaseClass
   m_EditorClassIdentifier: 
   maxHealth: 5
-  moveSpeed: 5
+  moveSpeed: 8
   jumpForce: 10
-  jumpCount: 2
-  dashSpeed: 5
-  abilityType: 1
+  jumpCount: 1
+  dashSpeed: 10
+  abilityType: 0
   attackDamage: 3
   spellDamage: 1

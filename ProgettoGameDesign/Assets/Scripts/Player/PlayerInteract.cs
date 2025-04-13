@@ -27,22 +27,28 @@ public class PlayerInteract : MonoBehaviour
         Vector2 boxCenter = (Vector2)transform.position + (direction * interactDistance / 2);
         Collider2D[] colliders = Physics2D.OverlapBoxAll(boxCenter, boxSize, 0f, interactableLayer);
 
-        if (interacted && interactionTimer >= interactionCooldown)
-        {
+        
+        
             foreach (Collider2D collider in colliders)
             {
                 if (collider != coll)
                 {
                     IInteractable interactable = collider.GetComponent<IInteractable>();
-                    if (interactable != null)
+                if (interactable != null) {
+                    interactable.Detected(gameObject);
+                    if (interacted && interactionTimer >= interactionCooldown)
                     {
+
                         interactable.Interact(gameObject);
                         interactionTimer = 0f; // reset dopo la prima interazione valida
                         break; // se vuoi interagire con un solo oggetto per frame
+
                     }
                 }
+                   
+                }
             }
-        }
+        
     }
     private void OnDrawGizmosSelected()
     {
