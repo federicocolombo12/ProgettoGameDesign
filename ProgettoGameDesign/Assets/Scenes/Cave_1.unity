@@ -8577,8 +8577,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 34d89f979d1f59a4a8c80e47f5b6e790, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  hookSpeed: 20
   stopDistance: 0.2
+  initialHookSpeed: 20
+  hookAcceleration: 5
+  hookMaxSpeed: 50
+  waitTime: 0.3
 --- !u!114 &1749915374
 MonoBehaviour:
   m_ObjectHideFlags: 0
