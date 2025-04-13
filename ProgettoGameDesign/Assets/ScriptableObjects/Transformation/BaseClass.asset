@@ -17,6 +17,6 @@ MonoBehaviour:
   jumpForce: 10
   jumpCount: 1
   dashSpeed: 10
-  abilityType: 0
-  attackDamage: 3
-  spellDamage: 1
+  abilityType: 2
+  attackDamage: 1
+  spellDamage: 2
