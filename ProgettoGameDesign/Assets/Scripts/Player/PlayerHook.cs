@@ -7,16 +7,23 @@ public class PlayerHook : MonoBehaviour
     private Rigidbody2D rb;
     [SerializeField] float hookSpeed = 10f;
     [SerializeField] float stopDistance = 0.1f;
+    
+    
     private PlayerStateList pState;
     private void Start()
     {
         rb = GetComponent<Rigidbody2D>();
         pState = GetComponent<PlayerStateList>();
+       
     
     }
     public void Hook(Vector2 hookPosition)
     {
-        StartCoroutine(MoveToHook(hookPosition));
+        if (Player.Instance.playerTransformation.abilityType==PlayerTransformation.AbilityType.GrapplingHook)
+        {
+            StartCoroutine(MoveToHook(hookPosition));
+        }
+        
     }
 
     private IEnumerator MoveToHook(Vector2 target)
