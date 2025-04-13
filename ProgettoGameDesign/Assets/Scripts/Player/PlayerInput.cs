@@ -10,6 +10,7 @@ public class PlayerInput : MonoBehaviour
     public bool dashed { get; private set; }
     public bool leftTranformation { get; private set; }
     public bool rightTransformation { get; private set; }
+    public bool interact { get; private set; } // Aggiunto per l'interazione
     private bool canDash = true;
     void Start()
     {
@@ -22,13 +23,10 @@ public class PlayerInput : MonoBehaviour
         InputManager.Instance.OnCastSpellInput += HandleCast;
         InputManager.Instance.OnTriggerAbility1Input += HandleTriggerAbility1;
         InputManager.Instance.OnTriggerAbility2Input += HandleTriggerAbility2;
+        InputManager.Instance.OnInteractInput += HandleInteract; // Aggiunto per l'interazione
     }
 
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
+   
     private void OnDisable()
     {
         // Rimozione delle sottoscrizioni per evitare errori
@@ -41,6 +39,7 @@ public class PlayerInput : MonoBehaviour
         InputManager.Instance.OnCastSpellInput -= HandleCast;
         InputManager.Instance.OnTriggerAbility1Input -= HandleTriggerAbility1;
         InputManager.Instance.OnTriggerAbility2Input -= HandleTriggerAbility2;
+        InputManager.Instance.OnInteractInput -= HandleInteract; // Aggiunto per l'interazione
 
     }
     private void HandleMoveInput(Vector2 input)
@@ -103,5 +102,9 @@ public class PlayerInput : MonoBehaviour
     private void HandleTriggerAbility2(bool rightTransform)
     {
         rightTransformation = rightTransform;
+    }
+    private void HandleInteract(bool interacted)
+    {
+        interact = interacted;
     }
 }

@@ -16,6 +16,7 @@ public class Player : MonoBehaviour
     public PlayerCast playerSpell { get; private set; }
     public PlayerDash playerDash { get; private set; }
     public PlayerTransform playerTransform { get; private set; }
+    public PlayerInteract playerInteract { get; private set; }
 
     private void Awake()
     {
@@ -37,6 +38,7 @@ public class Player : MonoBehaviour
         playerSpell = GetComponent<PlayerCast>();
         playerDash = GetComponent<PlayerDash>();
         playerTransform = GetComponent<PlayerTransform>();
+        playerInteract = GetComponent<PlayerInteract>();
         pState = GetComponent<PlayerStateList>();
         rb = GetComponent<Rigidbody2D>();
         animator = GetComponent<Animator>();
@@ -48,6 +50,7 @@ public class Player : MonoBehaviour
     {
         playerMovement.UpdateJumpVariables(playerInput.jumpInput);
         if (pState.dashing) return;
+        if (pState.hooked) return;
         playerHealth.RestoreTimeScale();
         playerHealth.FlashWhileInvincible();
         
@@ -63,7 +66,7 @@ public class Player : MonoBehaviour
         playerAttack.Recoil(playerInput.directionalInput);
         playerSpell.CastSpell(playerInput.cast, playerMovement.IsGrounded(), playerInput.directionalInput);
         playerTransform.HandleTransform(playerInput.leftTranformation, playerInput.rightTransformation);
-        
+        playerInteract.PlayerCheckForInteractables(playerInput.interact);
         
     }
 

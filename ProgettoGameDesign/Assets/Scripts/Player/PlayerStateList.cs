@@ -12,4 +12,5 @@ public class PlayerStateList : MonoBehaviour
     public bool casting;
     public bool cutscene=false;
     public bool alive;
+    public bool hooked;
 }

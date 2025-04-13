@@ -15,6 +15,7 @@ public class InputManager : MonoBehaviour
     public event System.Action<bool> OnCastSpellInput;
     public event System.Action<bool> OnTriggerAbility1Input;
     public event System.Action<bool> OnTriggerAbility2Input;
+    public event System.Action<bool> OnInteractInput;
 
     private InputSystem_Actions inputActions;
 
@@ -52,6 +53,8 @@ public class InputManager : MonoBehaviour
         inputActions.Player.TriggerAbility1.canceled += HandleTriggerAbility1Canceled;
         inputActions.Player.TriggerAbility2.started += HandleTriggerAbility2;
         inputActions.Player.TriggerAbility2.canceled += HandleTriggerAbility2Canceled;
+        inputActions.Player.Interact.performed += HandleInteract;
+        inputActions.Player.Interact.canceled += HandleInteractCanceled;
        
     }
 
@@ -129,6 +132,14 @@ public class InputManager : MonoBehaviour
     private void HandleTriggerAbility2Canceled(InputAction.CallbackContext context)
     {
         OnTriggerAbility2Input?.Invoke(false);
+    }
+    private void HandleInteract(InputAction.CallbackContext context)
+    {
+        OnInteractInput?.Invoke(true);
+    }
+    private void HandleInteractCanceled(InputAction.CallbackContext context)
+    {
+        OnInteractInput?.Invoke(false);
     }
     
 }
