@@ -76,5 +76,6 @@ public class Bat : Enemy
     {
         base.Death(_destroyTime);
         rb.gravityScale = 12f;
+        gameObject.layer = LayerMask.NameToLayer("Background");
     }
 }
