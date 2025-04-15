@@ -8582,6 +8582,8 @@ MonoBehaviour:
   hookAcceleration: 5
   hookMaxSpeed: 50
   waitTime: 0.3
+  inertiaDuration: 0.5
+  inertiaForce: 10
 --- !u!114 &1749915374
 MonoBehaviour:
   m_ObjectHideFlags: 0
