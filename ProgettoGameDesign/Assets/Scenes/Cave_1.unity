@@ -8577,13 +8577,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 34d89f979d1f59a4a8c80e47f5b6e790, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  hookSpeed: 10
   stopDistance: 0.2
-  initialHookSpeed: 20
-  hookAcceleration: 5
-  hookMaxSpeed: 50
-  waitTime: 0.3
-  inertiaDuration: 0.5
-  inertiaForce: 10
+  initialHookSpeed: 10
+  hookAcceleration: 300
+  hookMaxSpeed: 20
+  waitTime: 0.5
+  hookDeceleration: 50
 --- !u!114 &1749915374
 MonoBehaviour:
   m_ObjectHideFlags: 0

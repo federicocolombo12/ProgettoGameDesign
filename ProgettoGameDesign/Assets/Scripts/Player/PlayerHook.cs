@@ -4,14 +4,17 @@ using UnityEngine;
 public class PlayerHook : MonoBehaviour
 {
     private Rigidbody2D rb;
+    [SerializeField] float hookSpeed = 10f;
+
 
     [SerializeField] float stopDistance = 0.1f;
-    [SerializeField] float initialHookSpeed = 0.1f; // Velocit� iniziale del rampino
+    [SerializeField] float initialHookSpeed = 0.1f; // Velocità iniziale del rampino
     [SerializeField] float hookAcceleration = 0.1f; // Accelerazione del rampino
-    [SerializeField] float hookMaxSpeed = 5f; // Velocit� massima del rampino
-    [SerializeField] float waitTime = 0.1f; // Tempo di attesa prima di iniziare il movimento del rampino
-    [SerializeField] float inertiaDuration = 0.5f; // Durata dell'inerzia
-    [SerializeField] float inertiaForce = 5f; // Forza dell'inerzia
+    [SerializeField] float hookMaxSpeed = 5f; // Velocità massima del rampino
+    [SerializeField] float waitTime = 0.1f;
+
+    // Nuova variabile: decelerazione per simulare l'inerzia dopo il target
+    [SerializeField] float hookDeceleration = 5f;
 
     private PlayerStateList pState;
 
@@ -31,51 +34,44 @@ public class PlayerHook : MonoBehaviour
 
     private IEnumerator MoveToHook(Vector2 target)
     {
-        // Fase 1: Ritardo iniziale
-        yield return new WaitForSeconds(waitTime); // Breve pausa prima dell'inizio del movimento
+        // Attendi un breve momento prima di iniziare il movimento
+        yield return new WaitForSeconds(waitTime);
 
         pState.hooked = true;
         rb.gravityScale = 0;
         rb.linearVelocity = Vector2.zero;
 
+        // Calcola la direzione dal punto di partenza al target
         Vector2 direction = (target - rb.position).normalized;
 
-        // Fase 2: Lancio del rampino - Scatto iniziale verso il bersaglio
-        float launchSpeed = initialHookSpeed; // Velocità iniziale per il lancio
-        float launchDuration = 0.1f; // Durata della fase di lancio
-        float elapsedTime = 0f;
-
-        while (elapsedTime < launchDuration)
-        {
-            rb.MovePosition(rb.position + direction * launchSpeed * Time.fixedDeltaTime);
-            elapsedTime += Time.fixedDeltaTime;
-            yield return new WaitForFixedUpdate();
-        }
-
-        // Fase 3: Traversata - Accelerazione verso il bersaglio
-        float currentSpeed = launchSpeed;
+        float currentSpeed = initialHookSpeed;
         float acceleration = hookAcceleration;
         float maxSpeed = hookMaxSpeed;
 
-        while (Vector2.Distance(rb.position, target) > stopDistance)
+        // FASE 1: Accelerazione (continua finché non si raggiunge o si supera il target)
+        // Usiamo il prodotto scalare per capire se abbiamo già superato il target lungo la direzione
+        while (Vector2.Dot(target - rb.position, direction) > 0)
         {
             currentSpeed = Mathf.Min(currentSpeed + acceleration * Time.fixedDeltaTime, maxSpeed);
             rb.MovePosition(rb.position + direction * currentSpeed * Time.fixedDeltaTime);
+
             yield return new WaitForFixedUpdate();
         }
 
-        // Assicura che il personaggio raggiunga esattamente il bersaglio
-        rb.MovePosition(target);
+        // FASE 2: Decelerazione (l'inerzia spinge oltre il target, poi il giocatore rallenta)
+        // La decelerazione continuerà finché la velocità raggiunge zero
+        while (currentSpeed > 0)
+        {
+            currentSpeed = Mathf.Max(currentSpeed - hookDeceleration * Time.fixedDeltaTime, 0);
+            rb.MovePosition(rb.position + direction * currentSpeed * Time.fixedDeltaTime);
 
-        // Applica l'inerzia
-        rb.linearVelocity = direction * inertiaForce;
-        yield return new WaitForSeconds(inertiaDuration);
+            yield return new WaitForFixedUpdate();
+        }
 
-        // Ferma il movimento e ripristina la gravità
+        // Alla fine azzeriamo la velocità ed eventualmente correggiamo la posizione
+        
         rb.linearVelocity = Vector2.zero;
         rb.gravityScale = 1;
         pState.hooked = false;
     }
-
-
 }
