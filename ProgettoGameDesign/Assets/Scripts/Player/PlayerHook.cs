@@ -35,11 +35,12 @@ public class PlayerHook : MonoBehaviour
     private IEnumerator MoveToHook(Vector2 target)
     {
         // Attendi un breve momento prima di iniziare il movimento
-        yield return new WaitForSeconds(waitTime);
-
         pState.hooked = true;
         rb.gravityScale = 0;
         rb.linearVelocity = Vector2.zero;
+        yield return new WaitForSeconds(waitTime);
+
+        
 
         // Calcola la direzione dal punto di partenza al target
         Vector2 direction = (target - rb.position).normalized;
