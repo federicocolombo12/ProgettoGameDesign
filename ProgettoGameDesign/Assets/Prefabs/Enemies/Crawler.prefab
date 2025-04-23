@@ -180,10 +180,10 @@ MonoBehaviour:
   recoilLenght: 0.5
   recoilFactor: 1
   isRecoiling: 0
+  restoreTimeSpeed: 5
   player: {fileID: 0}
   speed: 3
   damage: 1
-  restoreTimeSpeed: 5
   orangeBlood: {fileID: 4792805946373802877, guid: 99392edfef6f7574fbd4cc2077f8cc06, type: 3}
   flipWaitTime: 1
   ledgeCheckX: 1.2

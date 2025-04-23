@@ -14,9 +14,9 @@ GameObject:
   - component: {fileID: 2227936742511885159}
   - component: {fileID: 1280140854710752864}
   - component: {fileID: 7824597355454086688}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Bat
-  m_TagString: Untagged
+  m_TagString: Enemy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -188,14 +188,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9641ab4983bda044a9b3829c3299687d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  health: 10
-  recoilLenght: 0.5
-  recoilFactor: 10
+  health: 5
+  recoilLenght: 0.3
+  recoilFactor: 0.3
   isRecoiling: 0
-  player: {fileID: 0}
-  speed: 10
-  damage: 1
   restoreTimeSpeed: 1
+  player: {fileID: 0}
+  speed: 20
+  damage: 1
   orangeBlood: {fileID: 4792805946373802877, guid: 99392edfef6f7574fbd4cc2077f8cc06, type: 3}
-  chaseDistance: 1.2
-  stunDuration: 1
+  chaseDistance: 15
+  stunDuration: 0.2
