@@ -9,7 +9,7 @@ public class HeartController : MonoBehaviour
     public GameObject heartContainerPrefab;
     void Start()
     {
-       
+        player = Player.Instance.GetComponent<PlayerHealth>();
         heartContainers = new GameObject[player.maxHealth];
         heartFills = new Image[player.maxHealth];
         player.OnHealthChangedCallback += UpdateHeartsHUD;
