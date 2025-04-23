@@ -27,6 +27,13 @@ public class PlayerMovement : MonoBehaviour
     [SerializeField] float groundCheckY = 0.2f;
     [SerializeField] float GroundCheckX = 0.5f;
     [SerializeField] LayerMask groundLayer;
+    [Space(10)]
+    [Header("Wall Jump")]
+    [SerializeField] LayerMask wallLayer;
+    [SerializeField] float stickGravityScale = 0.1f;
+    [SerializeField] float wallSpeed = 2f;
+    [SerializeField] float stickTimerMax = 0.5f;
+    private float stickTimer = 0;
     private Rigidbody2D rb;
     private Animator animator;
     private PlayerStateList pState;
@@ -83,6 +90,46 @@ public class PlayerMovement : MonoBehaviour
         return Physics2D.Raycast(groundCheck.position, Vector2.down, groundCheckY, groundLayer) ||
             Physics2D.Raycast(groundCheck.position + new Vector3(GroundCheckX, 0, 0), Vector2.down, groundCheckY, groundLayer)
             || Physics2D.Raycast(groundCheck.position + new Vector3(-GroundCheckX, 0, 0), Vector2.down, groundCheckY, groundLayer);
+    }
+
+    public bool IsTouchingStickyWall()
+    {
+        Debug.DrawRay(transform.position, Vector2.right * (pState.lookingRight ? 1 : -1), Color.red);
+        return Physics2D.Raycast(transform.position, Vector2.right * (pState.lookingRight ? 1 : -1), 2f, wallLayer);
+        
+    }
+
+    public void Stick(Vector2 directionalInput, bool jumpInput)
+    {
+        if (IsTouchingStickyWall())
+        {
+            pState.sticking = true;
+            rb.gravityScale = stickGravityScale;
+            Vector2 newVelocity = new Vector2(rb.linearVelocity.x, wallSpeed* directionalInput.y);
+            rb.linearVelocity = newVelocity;
+            
+            
+           
+            
+            
+            if (jumpInput&&directionalInput.x!=0)
+            {
+                
+                pState.sticking = false;
+                float jumpDirection = pState.lookingRight ? -1 : 1;
+                rb.linearVelocity = new Vector2(jumpDirection*rb.linearVelocity.x, jumpForce);
+                
+                
+            }
+            
+
+        }
+        else
+        {
+            pState.sticking = false;
+            rb.gravityScale = gravityScale;
+            
+        }
     }
     public void Jump(bool jumpInput)
     {

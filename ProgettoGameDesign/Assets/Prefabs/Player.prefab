@@ -216,6 +216,7 @@ MonoBehaviour:
   cutscene: 0
   alive: 0
   hooked: 0
+  sticking: 0
 --- !u!114 &3811647094664802597
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -271,6 +272,10 @@ MonoBehaviour:
   groundLayer:
     serializedVersion: 2
     m_Bits: 8
+  wallLayer:
+    serializedVersion: 2
+    m_Bits: 512
+  stickGravityScale: 0.1
 --- !u!114 &1084953805667698412
 MonoBehaviour:
   m_ObjectHideFlags: 0

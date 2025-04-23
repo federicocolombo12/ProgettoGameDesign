@@ -49,12 +49,19 @@ public class Player : MonoBehaviour
     void Update()
     {
         playerMovement.UpdateJumpVariables(playerInput.jumpInput);
+        playerMovement.Stick(playerInput.directionalInput, playerInput.jumpInput);
         if (pState.dashing) return;
         if (pState.hooked) return;
+        
+        if (pState.sticking) return;
+        
         playerHealth.RestoreTimeScale();
         playerHealth.FlashWhileInvincible();
         
+        
         playerMovement.Move(playerInput.directionalInput);
+        
+        
         playerHealth.Heal(playerInput.healPressed);
         if (pState.healing)
         {
