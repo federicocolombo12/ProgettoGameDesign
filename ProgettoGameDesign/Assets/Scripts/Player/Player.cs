@@ -1,0 +1,88 @@
+using UnityEngine;
+
+public class Player : MonoBehaviour
+{
+    public static Player Instance { get; private set; }
+    public Rigidbody2D rb;
+    public Animator animator;
+    public PlayerStateList pState;
+    public PlayerTransformation playerTransformation;
+    
+    public SpriteRenderer sr;
+    public PlayerMovement playerMovement { get; private set; }
+    public PlayerInput playerInput { get; private set; }
+    public PlayerAttack playerAttack { get; private set; }
+    public PlayerHealth playerHealth { get; private set; }
+    public PlayerCast playerSpell { get; private set; }
+    public PlayerDash playerDash { get; private set; }
+    public PlayerTransform playerTransform { get; private set; }
+    public PlayerInteract playerInteract { get; private set; }
+
+    private void Awake()
+    {
+        if (Instance == null)
+        {
+            Instance = this;
+        }
+        else
+        {
+            Destroy(gameObject);
+        }
+    }
+    void Start()
+    {
+        playerAttack = GetComponent<PlayerAttack>();
+        playerHealth = GetComponent<PlayerHealth>();
+        playerMovement = GetComponent<PlayerMovement>();
+        playerInput = GetComponent<PlayerInput>();
+        playerSpell = GetComponent<PlayerCast>();
+        playerDash = GetComponent<PlayerDash>();
+        playerTransform = GetComponent<PlayerTransform>();
+        playerInteract = GetComponent<PlayerInteract>();
+        pState = GetComponent<PlayerStateList>();
+        rb = GetComponent<Rigidbody2D>();
+        animator = GetComponent<Animator>();
+
+    }
+
+    // Update is called once per frame
+    void Update()
+    {
+        playerMovement.UpdateJumpVariables(playerInput.jumpInput);
+        playerMovement.Stick(playerInput.directionalInput, playerInput.jumpInput);
+        if (pState.dashing) return;
+        if (pState.hooked) return;
+        
+        if (pState.sticking) return;
+        
+        playerHealth.RestoreTimeScale();
+        playerHealth.FlashWhileInvincible();
+        
+        
+        playerMovement.Move(playerInput.directionalInput);
+        
+        
+        playerHealth.Heal(playerInput.healPressed);
+        if (pState.healing)
+        {
+            return;
+        }
+        playerMovement.Jump(playerInput.jumpInput);
+        playerDash.DoDash(playerInput.dashed);
+        playerAttack.Attack(playerInput.attack, playerInput.directionalInput);
+        playerAttack.Recoil(playerInput.directionalInput);
+        playerSpell.CastSpell(playerInput.cast, playerMovement.IsGrounded(), playerInput.directionalInput);
+        playerTransform.HandleTransform(playerInput.leftTranformation, playerInput.rightTransformation);
+        playerInteract.PlayerCheckForInteractables(playerInput.interact);
+        
+    }
+
+    public void RespawnAt(Vector2 position)
+    {
+        transform.position = position;
+        rb.linearVelocity = Vector2.zero;
+        playerHealth.Respawned();
+        //eventuali altre inizializzazioni del player necessarie dopo il respawn ( l'avevo pensata cosi)
+    }
+
+}

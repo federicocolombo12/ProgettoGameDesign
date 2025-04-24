@@ -10,11 +10,20 @@ GameObject:
   m_Component:
   - component: {fileID: 1653175155450436630}
   - component: {fileID: 6364274869288263467}
-  - component: {fileID: 2892052724485403871}
   - component: {fileID: 1814032075909799558}
   - component: {fileID: 7696116805699684671}
   - component: {fileID: 9011937325471716554}
   - component: {fileID: 1462792280493928275}
+  - component: {fileID: 3811647094664802597}
+  - component: {fileID: 3471068395693891920}
+  - component: {fileID: 2670939194795898005}
+  - component: {fileID: 1084953805667698412}
+  - component: {fileID: 4980118878545884433}
+  - component: {fileID: 989102055181137705}
+  - component: {fileID: 571223849233744321}
+  - component: {fileID: 4525009401178718108}
+  - component: {fileID: 443132013862689332}
+  - component: {fileID: 6697238519948228974}
   m_Layer: 0
   m_Name: Player
   m_TagString: Player
@@ -98,71 +107,6 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!114 &2892052724485403871
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1038730058775713584}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 5e347e985ca14c047b33e709e788609b, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  speed: 10
-  jumpForce: 10
-  jumpBufferFrames: 1
-  coyoteTime: 0.2
-  maxJumpCount: 2
-  jumpGScale: 1
-  fallGScale: 3
-  groundCheck: {fileID: 3429251840089909367}
-  groundCheckY: 0.2
-  GroundCheckX: 0.4
-  groundLayer:
-    serializedVersion: 2
-    m_Bits: 8
-  dashSpeed: 2.5
-  dashTime: 0.2
-  dashCooldown: 0.3
-  dashEffect: {fileID: 1349972566738812877, guid: 41fe29b72e0207f4397afe6cb01e6a0b, type: 3}
-  attackableLayer:
-    serializedVersion: 2
-    m_Bits: 64
-  sideAttackTransform: {fileID: 5786731983210329177}
-  upAttackTransform: {fileID: 5011728812269063769}
-  downAttackTransform: {fileID: 3764880250544692220}
-  sideAttackArea: {x: 4.5, y: 3.5}
-  upAttackArea: {x: 3.5, y: 4.5}
-  downAttackArea: {x: 3.5, y: 4.5}
-  damage: 10
-  hitForce: 10
-  slashEffect: {fileID: 6564155392743935712, guid: 5c536675066dd6c44932a0d2da33c003, type: 3}
-  timeBetweenAttack: 0.5
-  timeSinceAttack: 0
-  recoilXSpeed: 10
-  recoilYSpeed: 10
-  recoilXSteps: 10
-  recoilYSteps: 10
-  health: 0
-  maxHealth: 5
-  invincibleTime: 1
-  blood: {fileID: 4217489016284576809, guid: adc782687189b894a99fcf16e89a03ec, type: 3}
-  hitFlashSpeed: 3
-  timeToHeal: 1
-  manaStorage: {fileID: 0}
-  mana: 0
-  manaDrainSpeed: 0.1
-  manaGain: 0.3
-  manaSpellCost: 0.1
-  timeBetweenCast: 0.5
-  spelldamage: 10000
-  downSpellForce: 2
-  sideSpellfireBall: {fileID: 917215352964490749, guid: f5741c3ec50793749aac1f983ecd299e, type: 3}
-  downSpellfireBall: {fileID: 7121136082989070535}
-  upSpellfireBall: {fileID: 4782286840622885309, guid: 9f27d6c86f3acec4db1e33d13e22996a, type: 3}
-  pState: {fileID: 0}
 --- !u!70 &1814032075909799558
 CapsuleCollider2D:
   m_ObjectHideFlags: 0
@@ -270,6 +214,208 @@ MonoBehaviour:
   healing: 0
   casting: 0
   cutscene: 0
+  alive: 0
+  hooked: 0
+  sticking: 0
+--- !u!114 &3811647094664802597
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1038730058775713584}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7e4aa521f6fdcc64cada132e7d49acd8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  rb: {fileID: 0}
+  animator: {fileID: 0}
+  pState: {fileID: 0}
+  playerTransformation: {fileID: 11400000, guid: 34644fc0004a56a45927fc9ad2f602ce, type: 2}
+  sr: {fileID: 0}
+--- !u!114 &3471068395693891920
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1038730058775713584}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2edd28e9c774b4f44a6007bc6e43a482, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &2670939194795898005
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1038730058775713584}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7de2ca4266262c04ab27506118b81382, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  speed: 8
+  jumpForce: 10
+  jumpBufferFrames: 1
+  coyoteTime: 0.2
+  jumpCount: 0
+  maxJumpCount: 2
+  jumpGScale: 1
+  fallGScale: 5
+  groundCheck: {fileID: 3429251840089909367}
+  groundCheckY: 0.2
+  GroundCheckX: 0.5
+  groundLayer:
+    serializedVersion: 2
+    m_Bits: 8
+  wallLayer:
+    serializedVersion: 2
+    m_Bits: 512
+  stickGravityScale: 0.1
+--- !u!114 &1084953805667698412
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1038730058775713584}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ea490ad14e1293441ad8b8acd832383a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  dashSpeed: 5
+  dashTime: 0.2
+  dashCooldown: 1
+  dashEffect: {fileID: 1349972566738812877, guid: 41fe29b72e0207f4397afe6cb01e6a0b, type: 3}
+--- !u!114 &4980118878545884433
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1038730058775713584}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e8a8e1ef87c54484f9d0548f4f36e63e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  attackableLayer:
+    serializedVersion: 2
+    m_Bits: 64
+  sideAttackTransform: {fileID: 5786731983210329177}
+  upAttackTransform: {fileID: 5011728812269063769}
+  downAttackTransform: {fileID: 3764880250544692220}
+  sideAttackArea: {x: 4.5, y: 4.5}
+  upAttackArea: {x: 3.5, y: 4.5}
+  downAttackArea: {x: 3.5, y: 4.5}
+  damage: 1
+  hitForce: 10
+  slashEffect: {fileID: 6564155392743935712, guid: 5c536675066dd6c44932a0d2da33c003, type: 3}
+  timeBetweenAttack: 0.5
+  timeSinceAttack: 0
+  recoilXSpeed: 10
+  recoilYSpeed: 10
+  recoilXSteps: 10
+  recoilYSteps: 10
+--- !u!114 &989102055181137705
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1038730058775713584}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 65ee91efa4655424cbf1bed424ca2ff4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  health: 0
+  maxHealth: 5
+  invincibleTime: 1
+  blood: {fileID: 4217489016284576809, guid: adc782687189b894a99fcf16e89a03ec, type: 3}
+  hitFlashSpeed: 3
+  timeToHeal: 1
+  manaStorage: {fileID: 0}
+  mana: 0
+  manaDrainSpeed: 0.1
+  manaGain: 0.3
+--- !u!114 &571223849233744321
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1038730058775713584}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 28ddbe0854e113b45a62e0648a063c46, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  manaSpellCost: 0.1
+  timeBetweenCast: 0.5
+  spelldamage: 10000
+  downSpellForce: 1
+  sideSpellfireBall: {fileID: 917215352964490749, guid: f5741c3ec50793749aac1f983ecd299e, type: 3}
+  downSpellfireBall: {fileID: 7121136082989070535}
+  upSpellfireBall: {fileID: 4782286840622885309, guid: 9f27d6c86f3acec4db1e33d13e22996a, type: 3}
+--- !u!114 &4525009401178718108
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1038730058775713584}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f982a2ddec0d9d5459e9a6a75ae200df, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  playerTransformations:
+  - {fileID: 11400000, guid: 34644fc0004a56a45927fc9ad2f602ce, type: 2}
+  - {fileID: 11400000, guid: a85abe56df98ddd489746a5ed5666703, type: 2}
+  - {fileID: 11400000, guid: 08614dbdfebc506409c90886dd347a37, type: 2}
+--- !u!114 &443132013862689332
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1038730058775713584}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 34d89f979d1f59a4a8c80e47f5b6e790, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  hookSpeed: 10
+  stopDistance: 0.2
+  initialHookSpeed: 10
+  hookAcceleration: 300
+  hookMaxSpeed: 20
+  waitTime: 0.5
+  hookDeceleration: 50
+--- !u!114 &6697238519948228974
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1038730058775713584}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 64ee427b71730264687e89b4071fbac9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  interactDistance: 5.76
+  interactableLayer:
+    serializedVersion: 2
+    m_Bits: 128
+  boxSize: {x: 10, y: 12.65}
+  interactionCooldown: 0.5
 --- !u!1 &4986755741747033650
 GameObject:
   m_ObjectHideFlags: 0
