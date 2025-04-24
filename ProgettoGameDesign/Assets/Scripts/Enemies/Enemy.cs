@@ -12,6 +12,7 @@ public class Enemy : MonoBehaviour
     [SerializeField] private float restoreTimeSpeed;
     [SerializeField] protected Player player;
     [SerializeField] protected float speed;
+    [SerializeField] protected LayerMask playerLayer;
     protected float recoilTimer;
     [SerializeField] protected float damage;
     [SerializeField] GameObject orangeBlood;
