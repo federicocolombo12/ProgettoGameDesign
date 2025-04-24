@@ -9,8 +9,16 @@ public class Projectile : MonoBehaviour
         _player = Player.Instance;
     }
 
-    private void OnTriggerEnter2D(Collider2D other)
+    private void OnCollisionEnter2D(Collision2D other)
     {
-        _player.playerHealth.TakeDamage(1);
+        if (other.gameObject.CompareTag("Player"))
+        {
+            _player.playerHealth.TakeDamage(1);
+        }
+        if (!other.gameObject.CompareTag("Enemy"))
+        {
+            Destroy(gameObject);
+        }
+        
     }
 }

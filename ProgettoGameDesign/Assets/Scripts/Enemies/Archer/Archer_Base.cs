@@ -5,18 +5,15 @@ public class Archer_Base : Enemy
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     [SerializeField] GameObject projectilePrefab;
     [SerializeField] float projectileSpeed;
-    private Rigidbody2D projectileRb;
-    protected override void Start()
-    {
-        base.Start();
-        projectileRb = projectilePrefab.GetComponent<Rigidbody2D>();
-        
-    }
+    [SerializeField] Transform projectileTransform;
+    
+    
+    
     public void Shoot()
     {
-        Instantiate(projectilePrefab, transform.position, Quaternion.identity);
-        Vector2 projectileDirection = (player.transform.position - transform.position).normalized;
-        projectileRb.linearVelocity = projectileDirection * projectileSpeed;
+        GameObject projectile=Instantiate(projectilePrefab, projectileTransform.position, Quaternion.identity);
+        Vector2 projectileDirection = (player.transform.position - projectileTransform.position).normalized;
+        projectile.GetComponent<Rigidbody2D>().AddForce(projectileDirection * projectileSpeed, ForceMode2D.Impulse);
     }
 
     
