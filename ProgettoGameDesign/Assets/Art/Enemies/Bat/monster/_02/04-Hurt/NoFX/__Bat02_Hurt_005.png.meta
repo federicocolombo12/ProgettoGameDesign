@@ -134,7 +134,8 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      __Bat02_Hurt_005_0: -9210590409519970589
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
