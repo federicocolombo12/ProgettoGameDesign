@@ -134,7 +134,8 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      modulo_tronco_corto_semplice_0: -2495035787724068129
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

@@ -6,6 +6,7 @@ public class Archer_Base : Enemy
     [SerializeField] GameObject projectilePrefab;
     [SerializeField] float projectileSpeed;
     [SerializeField] Transform projectileTransform;
+    public Transform centerOfInfluence;
     
     
     

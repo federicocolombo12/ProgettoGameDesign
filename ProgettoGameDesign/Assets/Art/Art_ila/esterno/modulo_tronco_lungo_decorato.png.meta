@@ -134,7 +134,8 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      modulo_tronco_lungo_decorato_0: -8176354447681282515
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

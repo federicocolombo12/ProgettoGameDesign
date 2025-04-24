@@ -134,7 +134,8 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      tileset_parete_arrampicata_0: -867637325133190000
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

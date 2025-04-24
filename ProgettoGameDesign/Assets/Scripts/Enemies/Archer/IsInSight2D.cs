@@ -18,7 +18,7 @@ public class IsInSight2D : Conditional
         
         
         Vector2 direction = Player.Instance.transform.position - enemy.transform.position;
-        float angle = Vector2.Angle(enemy.transform.right, direction);
+        float angle = Vector2.Angle(enemy.transform.right*enemy.transform.localScale.x, direction);
         
         if (angle <= 45f)
         {
