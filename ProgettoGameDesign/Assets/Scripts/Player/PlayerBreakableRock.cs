@@ -17,12 +17,7 @@ public class PlayerBreakableRock : MonoBehaviour
 
     void Update()
     {
-        // Input per avviare la carica (puoi cambiarlo con un altro trigger)
-        if (Input.GetKeyDown(KeyCode.Space) && !isCharging)
-        {
-            StartCharge();
-        }
-
+       
         if (isCharging)
         {
             chargeTimer -= Time.deltaTime;
@@ -39,9 +34,7 @@ public class PlayerBreakableRock : MonoBehaviour
     {
         isCharging = true;
         chargeTimer = chargeDuration;
-
-        // Calcola la direzione in cui caricare (in questo caso verso dove guarda il player)
-        chargeDirection = transform.right.normalized; // oppure basato su input o un target
+        chargeDirection = transform.right.normalized; 
     }
 
     void StopCharge()
@@ -62,7 +55,7 @@ public class PlayerBreakableRock : MonoBehaviour
             BreakableRock rock = other.GetComponent<BreakableRock>();
             if (rock != null)
             {
-                // Interagisce con la roccia per distruggerla
+              
                 rock.Interact(gameObject);
             }
         }
