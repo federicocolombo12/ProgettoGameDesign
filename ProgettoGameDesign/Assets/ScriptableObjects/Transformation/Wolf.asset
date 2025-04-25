@@ -20,4 +20,4 @@ MonoBehaviour:
   abilityType: 4
   attackDamage: 5
   spellDamage: 1
-  transformationSprite: {fileID: -2507327564514934084, guid: e04824fb82c773e4d8e47bd93152b0f9, type: 3}
+  animatorController: {fileID: 0}
