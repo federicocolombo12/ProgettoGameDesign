@@ -17,6 +17,7 @@ MonoBehaviour:
   jumpForce: 10
   jumpCount: 1
   dashSpeed: 10
-  abilityType: 2
+  abilityType: 0
   attackDamage: 1
   spellDamage: 2
+  transformationSprite: {fileID: 0}

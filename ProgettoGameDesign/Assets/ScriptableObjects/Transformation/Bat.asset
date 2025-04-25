@@ -12,10 +12,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 15c4b7b544189c24ebf7d140ea5e6685, type: 3}
   m_Name: Bat
   m_EditorClassIdentifier: 
-  maxHealth: 5
-  moveSpeed: 3
-  jumpForce: 3
-  dashSpeed: 1
-  abilityType: 1
+  maxHealth: 3
+  moveSpeed: 10
+  jumpForce: 20
+  jumpCount: 2
+  dashSpeed: 10
+  abilityType: 2
   attackDamage: 1
   spellDamage: 1
+  transformationSprite: {fileID: -3593839270025477552, guid: 1910cb8870f96c546ae484a6ed8c1093, type: 3}

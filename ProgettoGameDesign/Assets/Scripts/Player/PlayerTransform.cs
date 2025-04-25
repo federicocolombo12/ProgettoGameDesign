@@ -75,7 +75,10 @@ public class PlayerTransform : MonoBehaviour
     void ChangeState(Form nextForm, int transformationIndex)
     {
         currentForm = nextForm;
-        Player.Instance.playerTransformation = playerTransformations[transformationIndex];
-        timeSinceLastTransform = 0f; // Reset cooldown
+        var transformation = playerTransformations[transformationIndex];
+        Player.Instance.animator.runtimeAnimatorController = transformation.animatorController;
+        Player.Instance.playerTransformation = transformation;
+
+        timeSinceLastTransform = 0f;
     }
 }

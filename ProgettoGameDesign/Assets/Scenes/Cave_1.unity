@@ -8244,17 +8244,36 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!1 &1735410697 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1038730058775713584, guid: 1e5e95d1c8d2a664aa123a5933f1c74e, type: 3}
+  m_PrefabInstance: {fileID: 5619979300539852979}
+  m_PrefabAsset: {fileID: 0}
 --- !u!114 &1749915357 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 989102055181137705, guid: 1e5e95d1c8d2a664aa123a5933f1c74e, type: 3}
   m_PrefabInstance: {fileID: 5619979300539852979}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
+  m_GameObject: {fileID: 1735410697}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 65ee91efa4655424cbf1bed424ca2ff4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &1749915373
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1735410697}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0fa20bc7ffd0f5f48b970f14524e34e6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  trasformazioneAttuale: {fileID: 0}
+  spriteRenderer: {fileID: 0}
 --- !u!1 &1751187491
 GameObject:
   m_ObjectHideFlags: 0
@@ -8785,7 +8804,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 984020612704210456, guid: d229b29d423bb9243b65d5af9b059f47, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -8.84
+      value: -13.75
       objectReference: {fileID: 0}
     - target: {fileID: 984020612704210456, guid: d229b29d423bb9243b65d5af9b059f47, type: 3}
       propertyPath: m_LocalPosition.y
@@ -8826,7 +8845,7 @@ PrefabInstance:
     - target: {fileID: 1410440029222897601, guid: d229b29d423bb9243b65d5af9b059f47, type: 3}
       propertyPath: m_Sprite
       value: 
-      objectReference: {fileID: -867637325133190000, guid: 4fd195a4d5de347e9b5613d1ca749595, type: 3}
+      objectReference: {fileID: 3469940636223747940, guid: 17730596000c8a8438ae692545c33155, type: 3}
     - target: {fileID: 2762208341527280619, guid: d229b29d423bb9243b65d5af9b059f47, type: 3}
       propertyPath: m_Name
       value: Rampino (2)
@@ -9862,7 +9881,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 1713859284054786000, guid: 4f685e4a63d16d644b6d9723490a39fb, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 55.67
+      value: 60.05
       objectReference: {fileID: 0}
     - target: {fileID: 1713859284054786000, guid: 4f685e4a63d16d644b6d9723490a39fb, type: 3}
       propertyPath: m_LocalPosition.y
@@ -10069,7 +10088,10 @@ PrefabInstance:
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 1038730058775713584, guid: 1e5e95d1c8d2a664aa123a5933f1c74e, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1749915373}
   m_SourcePrefab: {fileID: 100100000, guid: 1e5e95d1c8d2a664aa123a5933f1c74e, type: 3}
 --- !u!1001 &5964795833959029636
 PrefabInstance:

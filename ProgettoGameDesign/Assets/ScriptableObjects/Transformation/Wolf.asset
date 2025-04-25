@@ -12,11 +12,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 15c4b7b544189c24ebf7d140ea5e6685, type: 3}
   m_Name: Wolf
   m_EditorClassIdentifier: 
-  maxHealth: 5
-  moveSpeed: 3
-  jumpForce: 3
+  maxHealth: 6
+  moveSpeed: 5
+  jumpForce: 5
   jumpCount: 0
-  dashSpeed: 1
-  abilityType: 1
-  attackDamage: 1
+  dashSpeed: 8
+  abilityType: 4
+  attackDamage: 5
   spellDamage: 1
+  transformationSprite: {fileID: -2507327564514934084, guid: e04824fb82c773e4d8e47bd93152b0f9, type: 3}

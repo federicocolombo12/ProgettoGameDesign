@@ -10,6 +10,7 @@ public class PlayerTransformation : ScriptableObject
         WallSlide,
         GrapplingHook,
         miniMe,
+        ChargingRockBreaker,
     }
     public float maxHealth;
     public float moveSpeed;
@@ -19,5 +20,7 @@ public class PlayerTransformation : ScriptableObject
     public AbilityType abilityType;
     public float attackDamage;
     public float spellDamage;
-    
+
+    public RuntimeAnimatorController animatorController;
+
 }
