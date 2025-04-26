@@ -9,6 +9,9 @@ public class PlayerBreakableRock : MonoBehaviour
     [SerializeField] private float chargeSpeed = 10f;
     [SerializeField] private float chargeDuration = 0.5f;
 
+    private bool isCharging = false;
+    private Transform targetRock;
+
     private void Start()
     {
         rb = GetComponent<Rigidbody2D>();
@@ -19,7 +22,8 @@ public class PlayerBreakableRock : MonoBehaviour
     {
         if (Player.Instance.playerTransformation.abilityType == PlayerTransformation.AbilityType.ChargingRockBreaker)
         {
-            StartCoroutine(ChargeTowardsRock(rockTransform));
+            targetRock = rockTransform;
+            StartCoroutine(ChargeTowardsRock());
         }
         else
         {
@@ -27,11 +31,12 @@ public class PlayerBreakableRock : MonoBehaviour
         }
     }
 
-    private IEnumerator ChargeTowardsRock(Transform target)
+    private IEnumerator ChargeTowardsRock()
     {
-        pState.dashing = true; // se vuoi bloccare altri movimenti
+        pState.dashing = true;
+        isCharging = true;
 
-        Vector2 direction = (target.position - transform.position).normalized;
+        Vector2 direction = (targetRock.position - transform.position).normalized;
 
         float timer = 0f;
         while (timer < chargeDuration)
@@ -43,11 +48,15 @@ public class PlayerBreakableRock : MonoBehaviour
 
         rb.linearVelocity = Vector2.zero;
         pState.dashing = false;
+        isCharging = false;
+    }
 
-        // Dopo aver caricato, distruggi la roccia
-        if (Vector2.Distance(transform.position, target.position) < 2f) // distanza tolleranza
+    private void OnCollisionEnter2D(Collision2D collision)
+    {
+        if (isCharging && collision.transform == targetRock)
         {
-            Destroy(target.gameObject);
+            Destroy(targetRock.gameObject);
+            isCharging = false;
         }
     }
 }

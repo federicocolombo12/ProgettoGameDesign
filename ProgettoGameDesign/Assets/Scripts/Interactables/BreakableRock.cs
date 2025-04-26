@@ -2,50 +2,42 @@ using UnityEngine;
 
 public class BreakableRock : MonoBehaviour, IInteractable
 {
-    private SpriteRenderer sr;
-
-    [Header("Color Settings")]
-    [SerializeField] private Color normalColor = Color.white;
-    [SerializeField] private Color detectedColor = Color.red;
-    [SerializeField] private Color interactedColor = Color.green;
-
-    private bool isDetected = false;
-    private bool isInteracted = false;
-
-    private void Start()
+    SpriteRenderer sr;
+    public void Start()
     {
+
+
         sr = GetComponent<SpriteRenderer>();
-        sr.color = normalColor;
+        sr.color = Color.white;
     }
-
-    public void Detected(GameObject interactor)
+    public void Update()
     {
-        if (interactor.GetComponent<PlayerBreakableRock>() != null && !isInteracted)
+        
+
+        if (sr.color == Color.red)
         {
-            isDetected = true;
-            sr.color = detectedColor;
+            sr.color = Color.white;
         }
     }
-
     public void Interact(GameObject interactor)
     {
-        if (interactor.GetComponent<PlayerBreakableRock>() != null && !isInteracted)
+        if (interactor.GetComponent<PlayerBreakableRock>() != null)
         {
-            isInteracted = true;
-            sr.color = interactedColor;
 
-            // Qui viene chiamata la carica dal player
             interactor.GetComponent<PlayerBreakableRock>().ChargeAndBreak(transform);
-        }
-    }
 
-    private void Update()
+            sr.color = Color.green;
+        }
+
+    }
+    public void Detected(GameObject interactor)
     {
-        if (!isDetected && !isInteracted)
+
+        if (interactor.GetComponent<PlayerBreakableRock>() != null)
         {
-            sr.color = normalColor;
+            sr.color = Color.red;
         }
 
-        isDetected = false; // Ogni frame resetto il detect, verrà reimpostato se rilevato di nuovo
     }
+
 }
