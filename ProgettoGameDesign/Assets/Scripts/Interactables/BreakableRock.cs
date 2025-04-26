@@ -2,46 +2,50 @@ using UnityEngine;
 
 public class BreakableRock : MonoBehaviour, IInteractable
 {
-    SpriteRenderer sr;
-    public float interactionDistance = 2f; // distanza massima per l'interazione
-    private bool isDetected = false;
+    private SpriteRenderer sr;
 
-    void Start()
+    [Header("Color Settings")]
+    [SerializeField] private Color normalColor = Color.white;
+    [SerializeField] private Color detectedColor = Color.red;
+    [SerializeField] private Color interactedColor = Color.green;
+
+    private bool isDetected = false;
+    private bool isInteracted = false;
+
+    private void Start()
     {
         sr = GetComponent<SpriteRenderer>();
-        sr.color = Color.white;
-    }
-
-    void Update()
-    {
-        if (isDetected)
-        {
-            sr.color = Color.red;
-        }
-        else
-        {
-            sr.color = Color.white;
-        }
-
-        isDetected = false; // resettiamo ogni frame, verrà riattivato da Detected se applicabile
-    }
-
-    public void Interact(GameObject interactor)
-    {
-        PlayerBreakableRock playerBreak = interactor.GetComponent<PlayerBreakableRock>();
-        if (playerBreak != null && playerBreak.IsCharging())
-        {
-            Destroy(gameObject);
-        }
-
+        sr.color = normalColor;
     }
 
     public void Detected(GameObject interactor)
     {
-        float distance = Vector2.Distance(interactor.transform.position, transform.position);
-        if (distance <= interactionDistance)
+        if (interactor.GetComponent<PlayerBreakableRock>() != null && !isInteracted)
         {
             isDetected = true;
+            sr.color = detectedColor;
         }
+    }
+
+    public void Interact(GameObject interactor)
+    {
+        if (interactor.GetComponent<PlayerBreakableRock>() != null && !isInteracted)
+        {
+            isInteracted = true;
+            sr.color = interactedColor;
+
+            // Qui viene chiamata la carica dal player
+            interactor.GetComponent<PlayerBreakableRock>().ChargeAndBreak(transform);
+        }
+    }
+
+    private void Update()
+    {
+        if (!isDetected && !isInteracted)
+        {
+            sr.color = normalColor;
+        }
+
+        isDetected = false; // Ogni frame resetto il detect, verrà reimpostato se rilevato di nuovo
     }
 }
