@@ -20,4 +20,5 @@ MonoBehaviour:
   abilityType: 4
   attackDamage: 5
   spellDamage: 1
-  animatorController: {fileID: 0}
+  animatorController: {fileID: 9100000, guid: f5e528d88cb841b428e0fd2c220b16bc, type: 2}
+  transformationScale: {x: 1, y: 1, z: 1}

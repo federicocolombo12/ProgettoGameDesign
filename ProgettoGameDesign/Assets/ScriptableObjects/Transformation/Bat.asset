@@ -14,10 +14,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   maxHealth: 3
   moveSpeed: 10
-  jumpForce: 20
-  jumpCount: 2
+  jumpForce: 6
+  jumpCount: 10
   dashSpeed: 10
   abilityType: 2
   attackDamage: 1
   spellDamage: 1
   animatorController: {fileID: 9100000, guid: c1ddf30cc83a5f840ba7e1545d0a3ba8, type: 2}
+  transformationScale: {x: 0.5, y: 0.5, z: 0.5}

@@ -78,6 +78,7 @@ public class PlayerTransform : MonoBehaviour
         var transformation = playerTransformations[transformationIndex];
         Player.Instance.animator.runtimeAnimatorController = transformation.animatorController;
         Player.Instance.playerTransformation = transformation;
+        transform.localScale = transformation.transformationScale;
 
         timeSinceLastTransform = 0f;
     }

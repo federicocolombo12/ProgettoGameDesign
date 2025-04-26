@@ -22,5 +22,7 @@ public class PlayerTransformation : ScriptableObject
     public float spellDamage;
 
     public RuntimeAnimatorController animatorController;
+    public Vector3 transformationScale = Vector3.one;
+
 
 }
