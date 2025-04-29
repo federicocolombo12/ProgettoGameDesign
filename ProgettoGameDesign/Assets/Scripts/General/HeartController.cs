@@ -7,6 +7,7 @@ public class HeartController : MonoBehaviour
     private Image[] heartFills;
     public Transform heartsParent;
     public GameObject heartContainerPrefab;
+   
     void Start()
     {
         player = Player.Instance.GetComponent<PlayerHealth>();
@@ -18,10 +19,7 @@ public class HeartController : MonoBehaviour
     }
 
     // Update is called once per frame
-    void Update()
-    {
-        
-    }
+    
     void SetHearthContainers()
     {
 
@@ -62,9 +60,25 @@ public class HeartController : MonoBehaviour
             heartFills[i] = temp.transform.Find("HeartFill").GetComponent<Image>();
         }
     }
+
     void UpdateHeartsHUD()
     {
+        if (heartContainers == null || heartContainers.Length != player.maxHealth)
+        {
+            // Rimuovi quelli vecchi
+            foreach (Transform child in heartsParent)
+            {
+                Destroy(child.gameObject);
+            }
+
+            // Ricrea tutto da zero
+            heartContainers = new GameObject[player.maxHealth];
+            heartFills = new Image[player.maxHealth];
+            InstantiateHeartContainers();
+        }
+
         SetHearthContainers();
         SetFilledHearts();
     }
+
 }

@@ -6,6 +6,7 @@ public class PlayerTransform : MonoBehaviour
 {
     private float timeSinceLastTransform = 0f;
     private float transformCooldown = 1f; // Cooldown time in seconds
+    public static event System.Action OnTransform; // Event to notify when transformation occurs
     enum Form
     {
         Human,
@@ -81,5 +82,6 @@ public class PlayerTransform : MonoBehaviour
         transform.localScale = transformation.transformationScale;
 
         timeSinceLastTransform = 0f;
+        OnTransform?.Invoke(); // Notify subscribers about the transformation
     }
 }

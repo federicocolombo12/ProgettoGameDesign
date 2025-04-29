@@ -34,7 +34,14 @@ public class PlayerHealth : MonoBehaviour
     public PlayerStateList pState { get; private set; }
 
     public static event Action OnPlayerDeath;
-
+    void OnEnable()
+    {
+        PlayerTransform.OnTransform += SetMaxHealth;
+    }
+    void OnDisable()
+    {
+        PlayerTransform.OnTransform -= SetMaxHealth;
+    }
     private void Start()
     {
         pState = GetComponent<PlayerStateList>();
@@ -46,8 +53,14 @@ public class PlayerHealth : MonoBehaviour
         manaStorage.fillAmount = mana;
         pState.alive = true;
     }
-    
-    
+
+    void SetMaxHealth()
+    {
+        maxHealth = Player.Instance.playerTransformation.maxHealth;
+        Health = maxHealth;
+        manaStorage.fillAmount = mana;
+        OnHealthChangedCallback?.Invoke();
+    }
     public float Mana
     {
         get { return mana; }

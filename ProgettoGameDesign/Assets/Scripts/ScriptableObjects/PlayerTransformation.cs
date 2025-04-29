@@ -12,7 +12,7 @@ public class PlayerTransformation : ScriptableObject
         miniMe,
         ChargingRockBreaker,
     }
-    public float maxHealth;
+    public int maxHealth;
     public float moveSpeed;
     public float jumpForce;
     public int jumpCount;
