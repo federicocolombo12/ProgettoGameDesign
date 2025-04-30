@@ -21,5 +21,7 @@ MonoBehaviour:
   attackDamage: 1
   spellDamage: 2
   baseSprite: {fileID: 21300000, guid: e70ab950968e2ef439f986ec395141c6, type: 3}
+  colliderSize: {x: 1.28, y: 1.52}
+  colliderOffset: {x: 0, y: -0.55}
   animatorController: {fileID: 9100000, guid: 9ec7393172c4048e8918d2775e9f7b5b, type: 2}
   transformationScale: {x: 1, y: 1, z: 1}

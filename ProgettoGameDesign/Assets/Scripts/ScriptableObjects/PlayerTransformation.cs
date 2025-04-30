@@ -21,6 +21,8 @@ public class PlayerTransformation : ScriptableObject
     public float attackDamage;
     public float spellDamage;
     public Sprite baseSprite;
+    public Vector2 colliderSize;
+    public Vector2 colliderOffset;
     public RuntimeAnimatorController animatorController;
     public Vector3 transformationScale = Vector3.one;
 

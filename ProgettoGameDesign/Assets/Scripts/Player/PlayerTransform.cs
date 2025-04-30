@@ -92,9 +92,10 @@ public class PlayerTransform : MonoBehaviour
         var transformation = playerTransformations[transformationIndex];
         Player.Instance.animator.runtimeAnimatorController = transformation.animatorController;
         Player.Instance.playerTransformation = transformation;
-        Debug.Log("Player transformation changed to: " + transformation.baseSprite.name);
-        Debug.Log("size is " + transformation.baseSprite.bounds.size);
-        collider.size = transformation.baseSprite.bounds.size;
-        Debug.Log("Collider size is " + collider.size);
+        
+        collider.size = transformation.colliderSize;
+        collider.offset = transformation.colliderOffset;
+        transform.localScale = transformation.transformationScale;
+        
     }
 }
