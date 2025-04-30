@@ -14,9 +14,9 @@ public class Switch : MonoBehaviour, IInteractable
     // The object that will be switched
     public void Interact(GameObject interactor)
     {
-        if (switchObject.GetComponent<SwitchableObject>() != null)
+        if (switchObject.GetComponent<IInteractable>() != null)
         {
-            switchObject.GetComponent<SwitchableObject>().Interact();
+            switchObject.GetComponent<IInteractable>().Interact(gameObject);
         }
         else
         {

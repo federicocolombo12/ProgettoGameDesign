@@ -2,7 +2,7 @@ using System;
 using DG.Tweening;
 using UnityEngine;
 
-public class SwitchableObject : MonoBehaviour
+public class SwitchableObject : MonoBehaviour, IInteractable
 {
     [SerializeField] private float moveDistance = 1f;
     Vector2 startPos;
@@ -14,7 +14,13 @@ public class SwitchableObject : MonoBehaviour
     
     }
 
-    public void Interact()
+    public void Detected(GameObject interactor)
+    {
+        // Optional: Add any detection logic if needed
+    }
+    
+
+    public void Interact(GameObject interactor)
     {
         if (isOpen)
         {
