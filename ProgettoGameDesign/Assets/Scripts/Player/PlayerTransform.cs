@@ -9,6 +9,7 @@ public class PlayerTransform : MonoBehaviour
     public static event System.Action OnTransform; // Event to notify when transformation occurs
     private CapsuleCollider2D collider;
     
+    
    
 
     enum Form
@@ -97,5 +98,7 @@ public class PlayerTransform : MonoBehaviour
         collider.offset = transformation.colliderOffset;
         transform.localScale = transformation.transformationScale;
         
+        
     }
+    
 }

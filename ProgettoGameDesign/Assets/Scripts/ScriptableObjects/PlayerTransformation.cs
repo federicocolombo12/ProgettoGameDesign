@@ -25,6 +25,12 @@ public class PlayerTransformation : ScriptableObject
     public Vector2 colliderOffset;
     public RuntimeAnimatorController animatorController;
     public Vector3 transformationScale = Vector3.one;
-
+    public Vector3 GetGroundCheckPosition() {
+        // Calculate the ground check position based on the collider size and offset
+        Vector3 groundCheckPosition = new Vector3(Player.Instance.transform.position.x,
+            Player.Instance.transform.position.y- 
+            (colliderSize.y * Player.Instance.transform.localScale.x) / 2 + colliderOffset.y, 0);
+        return groundCheckPosition;
+    }
 
 }
