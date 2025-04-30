@@ -5,16 +5,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="527a8daf-816c-46f2-8b53-a90cdb675d8e" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.ProgettoGameDesign/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.ProgettoGameDesign/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Projectile.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Projectile.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Interactables/Switch.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Interactables/Switch.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scripts/Player/PlayerInteract.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Player/PlayerInteract.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/SetGroundCheck.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/SetGroundCheck.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Switch.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Switch.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/SwitchableObject.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/SwitchableObject.cs.meta" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />

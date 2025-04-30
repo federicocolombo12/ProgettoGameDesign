@@ -33,7 +33,7 @@ public class PlayerInteract : MonoBehaviour
                 IInteractable interactable = collider.GetComponent<IInteractable>();
                 if (interactable != null)
                 {
-                    interactable.Detected(gameObject);
+                    
 
                     // Linecast per controllare se c'è un muro in mezzo
                     RaycastHit2D hit = Physics2D.Linecast(transform.position, collider.transform.position, wallLayer);
@@ -43,6 +43,7 @@ public class PlayerInteract : MonoBehaviour
                         // C'è un muro in mezzo: ignora questo oggetto
                         continue;
                     }
+                    interactable.Detected(gameObject);
 
                     if (interacted && interactionTimer >= interactionCooldown)
                     {
