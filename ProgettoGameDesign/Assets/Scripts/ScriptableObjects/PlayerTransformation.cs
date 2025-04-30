@@ -13,6 +13,7 @@ public class PlayerTransformation : ScriptableObject
         ChargingRockBreaker,
     }
     public int maxHealth;
+    public float damageMultiplier;
     public float moveSpeed;
     public float jumpForce;
     public int jumpCount;

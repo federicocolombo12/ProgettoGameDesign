@@ -21,6 +21,7 @@ public class PlayerHealth : MonoBehaviour
     [Header("Healing")]
     [SerializeField] float timeToHeal = 1;
     float healTimer;
+    float damageMultiplier = 1;
     [Space(10)]
     [Header("Mana")]
     [SerializeField] Image manaStorage;
@@ -36,11 +37,11 @@ public class PlayerHealth : MonoBehaviour
     public static event Action OnPlayerDeath;
     void OnEnable()
     {
-        PlayerTransform.OnTransform += SetMaxHealth;
+        PlayerTransform.OnTransform += SetDamageMultiplier;
     }
     void OnDisable()
     {
-        PlayerTransform.OnTransform -= SetMaxHealth;
+        PlayerTransform.OnTransform -= SetDamageMultiplier;
     }
     private void Start()
     {
@@ -54,10 +55,11 @@ public class PlayerHealth : MonoBehaviour
         pState.alive = true;
     }
 
-    void SetMaxHealth()
+    void SetDamageMultiplier()
     {
-        maxHealth = Player.Instance.playerTransformation.maxHealth;
-        Health = maxHealth;
+        
+        damageMultiplier = Player.Instance.playerTransformation.damageMultiplier;
+        
        
         OnHealthChangedCallback?.Invoke();
     }
@@ -163,7 +165,7 @@ public class PlayerHealth : MonoBehaviour
     {
         if (pState.alive)
         {
-            Health -= Mathf.RoundToInt(damage);
+            Health -= Mathf.RoundToInt(damage* damageMultiplier);
             if (Health <= 0)
             {
                 Health = 0;
