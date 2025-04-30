@@ -20,5 +20,6 @@ MonoBehaviour:
   abilityType: 2
   attackDamage: 1
   spellDamage: 1
+  baseSprite: {fileID: 3526732155374269853, guid: 0923fcf6d18c22b4e833b0bfb95d3738, type: 3}
   animatorController: {fileID: 9100000, guid: c1ddf30cc83a5f840ba7e1545d0a3ba8, type: 2}
   transformationScale: {x: 0.5, y: 0.5, z: 0.5}

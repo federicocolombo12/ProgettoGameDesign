@@ -7,6 +7,10 @@ public class PlayerTransform : MonoBehaviour
     private float timeSinceLastTransform = 0f;
     private float transformCooldown = 1f; // Cooldown time in seconds
     public static event System.Action OnTransform; // Event to notify when transformation occurs
+    private CapsuleCollider2D collider;
+    
+   
+
     enum Form
     {
         Human,
@@ -20,6 +24,8 @@ public class PlayerTransform : MonoBehaviour
         // Initialize the current form to Human
         currentForm = Form.Human;
         timeSinceLastTransform = transformCooldown; // Start with cooldown ready
+        collider = GetComponent<CapsuleCollider2D>();
+        
     
     }
     private void Update()
@@ -76,12 +82,19 @@ public class PlayerTransform : MonoBehaviour
     void ChangeState(Form nextForm, int transformationIndex)
     {
         currentForm = nextForm;
-        var transformation = playerTransformations[transformationIndex];
-        Player.Instance.animator.runtimeAnimatorController = transformation.animatorController;
-        Player.Instance.playerTransformation = transformation;
-        transform.localScale = transformation.transformationScale;
+        ChangeSprite(transformationIndex);
 
         timeSinceLastTransform = 0f;
         OnTransform?.Invoke(); // Notify subscribers about the transformation
+    }
+    void ChangeSprite(int transformationIndex)
+    {
+        var transformation = playerTransformations[transformationIndex];
+        Player.Instance.animator.runtimeAnimatorController = transformation.animatorController;
+        Player.Instance.playerTransformation = transformation;
+        Debug.Log("Player transformation changed to: " + transformation.baseSprite.name);
+        Debug.Log("size is " + transformation.baseSprite.bounds.size);
+        collider.size = transformation.baseSprite.bounds.size;
+        Debug.Log("Collider size is " + collider.size);
     }
 }

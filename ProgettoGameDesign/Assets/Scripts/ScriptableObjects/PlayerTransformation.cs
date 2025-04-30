@@ -20,7 +20,7 @@ public class PlayerTransformation : ScriptableObject
     public AbilityType abilityType;
     public float attackDamage;
     public float spellDamage;
-
+    public Sprite baseSprite;
     public RuntimeAnimatorController animatorController;
     public Vector3 transformationScale = Vector3.one;
 
