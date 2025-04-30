@@ -6,6 +6,7 @@ public class PlayerInteract : MonoBehaviour
     Collider2D coll;
     [SerializeField] float interactDistance = 1f;
     [SerializeField] LayerMask interactableLayer;
+    [SerializeField] private LayerMask wallLayer;
     [SerializeField] Vector2 boxSize;
     [SerializeField] float interactionCooldown = 0.5f;
     private float interactionTimer;
@@ -16,38 +17,44 @@ public class PlayerInteract : MonoBehaviour
     }
     public void PlayerCheckForInteractables(bool interacted)
     {
-        // Avanza il timer, ma non oltre il cooldown
         if (interactionTimer < interactionCooldown)
         {
             interactionTimer += Time.deltaTime;
         }
 
-        // Calcolo direzione e area di rilevamento
         Vector2 direction = transform.right.normalized;
         Vector2 boxCenter = (Vector2)transform.position + (direction * interactDistance / 2);
         Collider2D[] colliders = Physics2D.OverlapBoxAll(boxCenter, boxSize, 0f, interactableLayer);
 
-        
-        
-            foreach (Collider2D collider in colliders)
+        foreach (Collider2D collider in colliders)
+        {
+            if (collider != coll)
             {
-                if (collider != coll)
+                IInteractable interactable = collider.GetComponent<IInteractable>();
+                if (interactable != null)
                 {
-                    IInteractable interactable = collider.GetComponent<IInteractable>();
-                if (interactable != null) {
                     interactable.Detected(gameObject);
+
+                    // Linecast per controllare se c'è un muro in mezzo
+                    RaycastHit2D hit = Physics2D.Linecast(transform.position, collider.transform.position, wallLayer);
+                
+                    if (hit.collider != null)
+                    {
+                        // C'è un muro in mezzo: ignora questo oggetto
+                        continue;
+                    }
+
                     if (interacted && interactionTimer >= interactionCooldown)
                     {
-
                         interactable.Interact(gameObject);
-                        interactionTimer = 0f; // reset dopo la prima interazione valida
-                        break; // se vuoi interagire con un solo oggetto per frame
-
+                        interactionTimer = 0f;
+                        break; // Interagisce con il primo oggetto valido
                     }
                 }
-                   
-                }
             }
+        }
+    
+
         
     }
     private void OnDrawGizmosSelected()
