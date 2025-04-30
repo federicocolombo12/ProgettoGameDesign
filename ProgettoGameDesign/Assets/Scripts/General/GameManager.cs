@@ -21,7 +21,7 @@ public class GameManager : MonoBehaviour
            
         }
         DontDestroyOnLoad(gameObject);
-        bench = FindObjectOfType<Bench>();
+        bench = FindFirstObjectByType<Bench>();
 
     }
 

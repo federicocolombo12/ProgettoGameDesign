@@ -58,7 +58,7 @@ public class PlayerHealth : MonoBehaviour
     {
         maxHealth = Player.Instance.playerTransformation.maxHealth;
         Health = maxHealth;
-        manaStorage.fillAmount = mana;
+       
         OnHealthChangedCallback?.Invoke();
     }
     public float Mana
