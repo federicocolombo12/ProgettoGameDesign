@@ -24,6 +24,7 @@ public class Spikes : MonoBehaviour
         StartCoroutine(UiManager.Instance.sceneFader.Fade(SceneFader.FadeDirection.In));
         Player.Instance.playerHealth.TakeDamage(1);
         yield return new WaitForSecondsRealtime(respawnTime);
+        
         Player.Instance.transform.position = GameManager.Instance.platformRespawnPoint;
         StartCoroutine(UiManager.Instance.sceneFader.Fade(SceneFader.FadeDirection.Out));
         yield return new WaitForSecondsRealtime(UiManager.Instance.sceneFader.fadeTime);

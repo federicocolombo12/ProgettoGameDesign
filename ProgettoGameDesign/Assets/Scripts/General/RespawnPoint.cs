@@ -2,23 +2,14 @@ using UnityEngine;
 
 public class RespawnPoint : MonoBehaviour
 {
-    // Start is called once before the first execution of Update after the MonoBehaviour is created
-    void Start()
-    {
-        
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
+    
     private void OnTriggerEnter2D(Collider2D other)
     {
         if (other.CompareTag("Player"))
         {
+            Debug.Log("Player entered respawn point");
             // Set the player's respawn point to this position
-            GameManager.Instance.platformRespawnPoint = transform.position;
+            GameManager.Instance.SetRespawnPoint(transform.position);
         }
     }
 }

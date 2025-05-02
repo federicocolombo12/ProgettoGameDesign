@@ -24,7 +24,10 @@ public class GameManager : MonoBehaviour
         bench = FindFirstObjectByType<Bench>();
 
     }
-
+    public void SetRespawnPoint(Vector2 newRespawnPoint)
+    {
+        platformRespawnPoint = newRespawnPoint;
+    }
 
 
     public void RespawnPlayer(Player player)
