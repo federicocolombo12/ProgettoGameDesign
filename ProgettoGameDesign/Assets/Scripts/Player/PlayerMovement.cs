@@ -38,6 +38,14 @@ public class PlayerMovement : MonoBehaviour
     private Animator animator;
     private PlayerStateList pState;
     public float gravityScale { get; private set; }
+    private void OnEnable()
+    {
+        PlayerTransform.OnTransform += UpdateVariables;
+    }
+    private void OnDisable()
+    {
+        PlayerTransform.OnTransform -= UpdateVariables;
+    }
     
     void Start()
     {
@@ -46,10 +54,7 @@ public class PlayerMovement : MonoBehaviour
         pState = GetComponent<PlayerStateList>();
         gravityScale = rb.gravityScale;
     }
-    private void Update()
-    {
-        UpdateVariables();
-    }
+    
 
     // Update is called once per frame
     void UpdateVariables()
@@ -126,8 +131,11 @@ public class PlayerMovement : MonoBehaviour
         }
         else
         {
-            pState.sticking = false;
-            rb.gravityScale = gravityScale;
+            if (!pState.hooked)
+            {
+                pState.sticking = false;
+                rb.gravityScale = gravityScale;
+            }
             
         }
     }
@@ -177,15 +185,19 @@ public class PlayerMovement : MonoBehaviour
         {
             coyoteTimeCounter -= Time.deltaTime;
         }
-        if (jumpInput)
+        if (jumpInput&&!pState.hooked)
         {
             jumpBufferCounter = jumpBufferFrames;
             gravityScale = jumpGScale;
         }
         else
         {
-            jumpBufferCounter -= Time.deltaTime * 10;
-            gravityScale = fallGScale;
+            if (!pState.hooked)
+            {
+                jumpBufferCounter -= Time.deltaTime * 10;
+                gravityScale = fallGScale;
+            }
+            
         }
     }
     public IEnumerator WalkIntoNewScene(Vector2 _exitDir, float _delay)

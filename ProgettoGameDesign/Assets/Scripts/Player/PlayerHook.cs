@@ -17,7 +17,7 @@ public class PlayerHook : MonoBehaviour
     [SerializeField] float hookDeceleration = 5f;
 
     private PlayerStateList pState;
-
+    
     private void Start()
     {
         rb = GetComponent<Rigidbody2D>();

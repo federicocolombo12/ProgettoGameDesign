@@ -48,11 +48,11 @@ public class Player : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        playerMovement.UpdateJumpVariables(playerInput.jumpInput);
+       
         playerMovement.Stick(playerInput.directionalInput, playerInput.jumpInput);
         if (pState.dashing) return;
         if (pState.hooked) return;
-        
+        playerMovement.UpdateJumpVariables(playerInput.jumpInput);
         if (pState.sticking) return;
         
         playerHealth.RestoreTimeScale();
