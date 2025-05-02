@@ -50,7 +50,6 @@ public class PlayerInput : MonoBehaviour
     private void HandleJump(bool jump)
     {
         // Logica di salto, ad esempio:
-        Debug.Log("Salto eseguito!");
 
         jumpInput = jump;
 

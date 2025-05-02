@@ -24,7 +24,7 @@ GameObject:
   - component: {fileID: 4525009401178718108}
   - component: {fileID: 443132013862689332}
   - component: {fileID: 6697238519948228974}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: Player
   m_TagString: Player
   m_Icon: {fileID: 0}
@@ -275,7 +275,9 @@ MonoBehaviour:
   wallLayer:
     serializedVersion: 2
     m_Bits: 512
-  stickGravityScale: 0.1
+  stickGravityScale: 4
+  wallSpeed: 2
+  stickTimerMax: 0.5
 --- !u!114 &1084953805667698412
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -414,6 +416,9 @@ MonoBehaviour:
   interactableLayer:
     serializedVersion: 2
     m_Bits: 128
+  wallLayer:
+    serializedVersion: 2
+    m_Bits: 2048
   boxSize: {x: 10, y: 12.65}
   interactionCooldown: 0.5
 --- !u!1 &4986755741747033650
@@ -425,7 +430,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 3764880250544692220}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: BottomAttack
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -456,7 +461,8 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 3429251840089909367}
-  m_Layer: 0
+  - component: {fileID: 4958183606836262155}
+  m_Layer: 10
   m_Name: GroundCheckPoint
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -478,6 +484,18 @@ Transform:
   m_Children: []
   m_Father: {fileID: 1653175155450436630}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &4958183606836262155
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5244237973568241264}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6190d41537c3ac345a5c4c454c2a3db2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &5953472702973749322
 GameObject:
   m_ObjectHideFlags: 0
@@ -487,7 +505,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 5786731983210329177}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: SideAttack
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -518,7 +536,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 2622103494175976343}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: FollowPos
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -552,7 +570,7 @@ GameObject:
   - component: {fileID: 4619382452762762905}
   - component: {fileID: 2222593607717399569}
   - component: {fileID: 6787979013632286651}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: Down Spell Fireball
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -696,7 +714,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 5011728812269063769}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: TopAttack
   m_TagString: Untagged
   m_Icon: {fileID: 0}

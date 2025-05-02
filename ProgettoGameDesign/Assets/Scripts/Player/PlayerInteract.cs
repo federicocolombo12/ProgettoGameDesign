@@ -47,6 +47,7 @@ public class PlayerInteract : MonoBehaviour
 
                     if (interacted && interactionTimer >= interactionCooldown)
                     {
+                        
                         interactable.Interact(gameObject);
                         interactionTimer = 0f;
                         break; // Interagisce con il primo oggetto valido
