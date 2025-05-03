@@ -5,7 +5,6 @@ public class Sentinel : Enemy
     [SerializeField] private GameObject projectilePrefab;
     [SerializeField] private float projectileSpeed;
     [SerializeField] private Transform projectileTransform;
-    public Transform centerOfInfluence;
 
     public void Shoot()
     {
