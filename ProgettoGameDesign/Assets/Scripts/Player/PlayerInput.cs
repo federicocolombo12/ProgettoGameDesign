@@ -2,6 +2,7 @@ using UnityEngine;
 
 public class PlayerInput : MonoBehaviour
 {
+    InputSystem_Actions inputActions;
     public Vector2 directionalInput { get; private set; }
     public bool jumpInput { get; private set; }
     public bool attack { get; private set; }
@@ -14,6 +15,7 @@ public class PlayerInput : MonoBehaviour
     private bool canDash = true;
     void Start()
     {
+        inputActions = InputManager.inputActions;
         InputManager.Instance.OnMoveInput += HandleMoveInput;
         InputManager.Instance.OnJumpInput += HandleJump;
 
@@ -24,6 +26,7 @@ public class PlayerInput : MonoBehaviour
         InputManager.Instance.OnTriggerAbility1Input += HandleTriggerAbility1;
         InputManager.Instance.OnTriggerAbility2Input += HandleTriggerAbility2;
         InputManager.Instance.OnInteractInput += HandleInteract; // Aggiunto per l'interazione
+        InputManager.Instance.OnMenuInput += HandleMenuInput; // Aggiunto per il menu
     }
 
    
@@ -40,8 +43,10 @@ public class PlayerInput : MonoBehaviour
         InputManager.Instance.OnTriggerAbility1Input -= HandleTriggerAbility1;
         InputManager.Instance.OnTriggerAbility2Input -= HandleTriggerAbility2;
         InputManager.Instance.OnInteractInput -= HandleInteract; // Aggiunto per l'interazione
+        InputManager.Instance.OnMenuInput -= HandleMenuInput; // Aggiunto per il menu
 
     }
+  
     private void HandleMoveInput(Vector2 input)
     {
         directionalInput = input;
@@ -105,5 +110,9 @@ public class PlayerInput : MonoBehaviour
     private void HandleInteract(bool interacted)
     {
         interact = interacted;
+    }
+    private void HandleMenuInput()
+    {
+        InputManager.SwitchActionMap(inputActions.UI);
     }
 }

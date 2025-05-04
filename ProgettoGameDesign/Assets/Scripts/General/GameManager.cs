@@ -7,7 +7,7 @@ public class GameManager : MonoBehaviour
     public Vector2 platformRespawnPoint;
     public Vector2 respawnPoint;
     [SerializeField] Bench bench;
-
+    
     private void Awake()
     {
         if (Instance!=null && Instance != this)
@@ -35,6 +35,8 @@ public class GameManager : MonoBehaviour
         respawnPoint = bench.transform.position;
         player.RespawnAt(respawnPoint);
     }
+
+
 
 
 

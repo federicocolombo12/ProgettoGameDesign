@@ -16,8 +16,11 @@ public class InputManager : MonoBehaviour
     public event System.Action<bool> OnTriggerAbility1Input;
     public event System.Action<bool> OnTriggerAbility2Input;
     public event System.Action<bool> OnInteractInput;
+    public event System.Action OnMenuInput;
 
-    private InputSystem_Actions inputActions;
+    public static InputSystem_Actions inputActions;
+    public static event System.Action<InputActionMap> OnActionMapChanged;
+    
 
     private void Awake()
     {
@@ -31,12 +34,19 @@ public class InputManager : MonoBehaviour
         DontDestroyOnLoad(gameObject);
 
         inputActions = new InputSystem_Actions();
+        
     }
 
     private void OnEnable()
     {
+
         inputActions.Enable();
-        // Sottoscrizione agli eventi di input
+        
+        PlayerInputActionMap();
+        
+
+    }
+    private void PlayerInputActionMap() {
         inputActions.Player.Move.performed += HandleMove;
         inputActions.Player.Move.canceled += HandleMoveCanceled;
         inputActions.Player.Jump.performed += HandleJump;
@@ -55,14 +65,26 @@ public class InputManager : MonoBehaviour
         inputActions.Player.TriggerAbility2.canceled += HandleTriggerAbility2Canceled;
         inputActions.Player.Interact.performed += HandleInteract;
         inputActions.Player.Interact.canceled += HandleInteractCanceled;
-       
+        inputActions.Player.Menu.performed += HandleMenu;
+        inputActions.Player.Menu.canceled += HandleMenu;
     }
 
     private void OnDisable()
     {
         inputActions.Disable();
     }
+    public static void SwitchActionMap(InputActionMap _inputActionMap)
+    {
+        if (_inputActionMap.enabled)
+        {
+            return;
+        }
+        inputActions.Disable();
+        
+        OnActionMapChanged?.Invoke(_inputActionMap);
+        _inputActionMap.Enable();
 
+    }
     private void HandleMove(InputAction.CallbackContext context)
     {
         Vector2 moveValue = context.ReadValue<Vector2>();
@@ -141,5 +163,10 @@ public class InputManager : MonoBehaviour
     {
         OnInteractInput?.Invoke(false);
     }
+    private void HandleMenu(InputAction.CallbackContext context)
+    {
+        OnMenuInput?.Invoke();
+    }
+    
     
 }
