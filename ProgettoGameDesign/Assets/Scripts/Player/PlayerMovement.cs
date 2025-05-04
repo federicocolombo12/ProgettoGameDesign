@@ -1,42 +1,72 @@
 ﻿using UnityEngine;
 using System.Collections;
+using Sirenix.OdinInspector;
 
 public class PlayerMovement : MonoBehaviour
 {
-    PlayerInput pInput;
-    [Header("Horizontal Movement")]
-    [SerializeField] float speed = 5f;
-   
-    [Space(10)]
+    private PlayerInput pInput;
 
-    [Header("Jumping Mechanics")]
+    [TabGroup("Movement"), LabelText("Speed")]
+    [SerializeField] private float speed = 5f;
 
-    [SerializeField] float jumpForce = 10f;
-    
-    float jumpBufferCounter = 0;
+    [TabGroup("Jumping"), LabelText("Jump Force")]
+    [SerializeField] private float jumpForce = 10f;
+
+    [TabGroup("Jumping"), LabelText("Jump Buffer Frames")]
     [SerializeField] private float jumpBufferFrames;
-    private float coyoteTimeCounter = 0;
+    private float jumpBufferCounter = 0;
+
+    [TabGroup("Jumping"), LabelText("Coyote Time")]
     [SerializeField] private float coyoteTime;
-    public int jumpCount = 0;
+    private float coyoteTimeCounter = 0;
+
+    [TabGroup("Jumping"), LabelText("Max Jump Count")]
     [SerializeField] private int maxJumpCount = 2;
-    [SerializeField] float jumpGScale = 2f;
-    [SerializeField] float fallGScale = 0.5f;
-    [Space(10)]
-    [Header("Ground Check")]
-    [SerializeField] Transform groundCheck;
-    [SerializeField] float groundCheckY = 0.2f;
-    [SerializeField] float GroundCheckX = 0.5f;
-    [SerializeField] LayerMask groundLayer;
-    [Space(10)]
-    [Header("Wall Jump")]
-    [SerializeField] LayerMask wallLayer;
-    [SerializeField] float stickGravityScale = 0.1f;
-    [SerializeField] float wallSpeed = 2f;
-    [SerializeField] float stickTimerMax = 0.5f;
+
+    [TabGroup("Jumping"), LabelText("Jump Gravity Scale")]
+    [SerializeField] private float jumpGScale = 2f;
+
+    [TabGroup("Jumping"), LabelText("Fall Gravity Scale")]
+    [SerializeField] private float fallGScale = 0.5f;
+
+    [TabGroup("Jumping"), ReadOnly, LabelText("Current Jump Count")]
+    public int jumpCount = 0;
+
+    [TabGroup("Ground Check")]
+    [SerializeField] private Transform groundCheck;
+
+    [TabGroup("Ground Check"), LabelText("Check Distance Y")]
+    [SerializeField] private float groundCheckY = 0.2f;
+
+    [TabGroup("Ground Check"), LabelText("Check Offset X")]
+    [SerializeField] private float GroundCheckX = 0.5f;
+
+    [TabGroup("Ground Check")]
+    [SerializeField] private LayerMask groundLayer;
+
+    [TabGroup("Wall Jump")]
+    [SerializeField] private LayerMask wallLayer;
+
+    [TabGroup("Wall Jump"), LabelText("Stick Gravity Scale")]
+    [SerializeField] private float stickGravityScale = 0.1f;
+
+    [TabGroup("Wall Jump"), LabelText("Wall Speed")]
+    [SerializeField] private float wallSpeed = 2f;
+
+    [TabGroup("Wall Jump"), LabelText("Stick Timer Max")]
+    [SerializeField] private float stickTimerMax = 0.5f;
     private float stickTimer = 0;
+
+    [TabGroup("Runtime"), ReadOnly]
     private Rigidbody2D rb;
+
+    [TabGroup("Runtime"), ReadOnly]
     private Animator animator;
+
+    [TabGroup("Runtime"), ReadOnly]
     private PlayerStateList pState;
+
+    [TabGroup("Runtime"), ReadOnly]
     public float gravityScale { get; private set; }
     private void OnEnable()
     {
