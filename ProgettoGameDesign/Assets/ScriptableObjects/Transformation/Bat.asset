@@ -14,7 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   index: 1
   maxHealth: 3
-  damageMultiplier: 0
+  damageMultiplier: 2
   moveSpeed: 10
   jumpForce: 10
   jumpCount: 10
