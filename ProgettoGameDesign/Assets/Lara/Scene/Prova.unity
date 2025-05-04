@@ -91989,10 +91989,6 @@ PrefabInstance:
     m_TransformParent: {fileID: 0}
     m_Modifications:
     - target: {fileID: 989102055181137705, guid: 1e5e95d1c8d2a664aa123a5933f1c74e, type: 3}
-      propertyPath: manaGain
-      value: 0.1
-      objectReference: {fileID: 0}
-    - target: {fileID: 989102055181137705, guid: 1e5e95d1c8d2a664aa123a5933f1c74e, type: 3}
       propertyPath: manaStorage
       value: 
       objectReference: {fileID: 274391432}
@@ -92039,10 +92035,6 @@ PrefabInstance:
     - target: {fileID: 1653175155450436630, guid: 1e5e95d1c8d2a664aa123a5933f1c74e, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 2670939194795898005, guid: 1e5e95d1c8d2a664aa123a5933f1c74e, type: 3}
-      propertyPath: wallSpeed
-      value: 5
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []

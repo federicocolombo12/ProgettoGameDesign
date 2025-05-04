@@ -263,10 +263,10 @@ MonoBehaviour:
   jumpForce: 10
   jumpBufferFrames: 1
   coyoteTime: 0.2
-  jumpCount: 0
   maxJumpCount: 2
   jumpGScale: 1
   fallGScale: 5
+  jumpCount: 0
   groundCheck: {fileID: 3429251840089909367}
   groundCheckY: 0.2
   GroundCheckX: 0.5
@@ -277,7 +277,7 @@ MonoBehaviour:
     serializedVersion: 2
     m_Bits: 512
   stickGravityScale: 4
-  wallSpeed: 2
+  wallSpeed: 5
   stickTimerMax: 0.5
 --- !u!114 &1084953805667698412
 MonoBehaviour:
@@ -346,7 +346,7 @@ MonoBehaviour:
   manaStorage: {fileID: 0}
   mana: 0
   manaDrainSpeed: 0.1
-  manaGain: 0.3
+  manaGain: 0.1
 --- !u!114 &571223849233744321
 MonoBehaviour:
   m_ObjectHideFlags: 0
