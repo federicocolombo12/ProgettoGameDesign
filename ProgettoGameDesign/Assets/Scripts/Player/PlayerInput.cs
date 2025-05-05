@@ -113,6 +113,7 @@ public class PlayerInput : MonoBehaviour
     }
     private void HandleMenuInput()
     {
+        Debug.Log("Called from Player Input");
         InputManager.SwitchActionMap(inputActions.UI);
     }
 }

@@ -81,9 +81,11 @@ public class InputManager : MonoBehaviour
             return;
         }
         inputActions.Disable();
-        Debug.Log("Disabilitato ActionMap: " + _inputActionMap);
-        OnActionMapChanged?.Invoke(_inputActionMap);
+        Debug.Log("abilitato ActionMap: " + _inputActionMap);
+       
         _inputActionMap.Enable();
+        OnActionMapChanged?.Invoke(_inputActionMap);
+        LogActionMapStates();
 
     }
     private void HandleMove(InputAction.CallbackContext context)
@@ -168,6 +170,13 @@ public class InputManager : MonoBehaviour
     {
         OnMenuInput?.Invoke();
     }
-    
-    
+    public static void LogActionMapStates()
+    {
+        foreach (var map in inputActions.asset.actionMaps)
+        {
+            Debug.Log($"ActionMap {map.name} is enabled: {map.enabled}");
+        }
+    }
+
+
 }
