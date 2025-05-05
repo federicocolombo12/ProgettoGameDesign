@@ -40,8 +40,8 @@ public class InputManager : MonoBehaviour
     private void OnEnable()
     {
 
-        inputActions.Enable();
         
+        SwitchActionMap(inputActions.Player); // Abilita l'ActionMap Player all'avvio
         PlayerInputActionMap();
         
 
@@ -66,7 +66,7 @@ public class InputManager : MonoBehaviour
         inputActions.Player.Interact.performed += HandleInteract;
         inputActions.Player.Interact.canceled += HandleInteractCanceled;
         inputActions.Player.Menu.performed += HandleMenu;
-        inputActions.Player.Menu.canceled += HandleMenu;
+        
     }
 
     private void OnDisable()
@@ -77,10 +77,11 @@ public class InputManager : MonoBehaviour
     {
         if (_inputActionMap.enabled)
         {
+            Debug.LogWarning("L'ActionMap è già abilitato: " + _inputActionMap.name);
             return;
         }
         inputActions.Disable();
-        
+        Debug.Log("Disabilitato ActionMap: " + _inputActionMap);
         OnActionMapChanged?.Invoke(_inputActionMap);
         _inputActionMap.Enable();
 

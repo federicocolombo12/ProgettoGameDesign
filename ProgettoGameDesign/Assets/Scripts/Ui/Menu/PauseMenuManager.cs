@@ -8,7 +8,6 @@ public class PauseMenuManager : MonoBehaviour
     private void Start()
     {
         pauseMenuCanvas = GetComponent<Canvas>();
-        pauseMenuCanvas.enabled = false; // Assicurati che il menu sia inizialmente disabilitato
     }
     private void OnEnable()
     {
@@ -22,7 +21,7 @@ public class PauseMenuManager : MonoBehaviour
     void EnableMenu(InputActionMap uiMap)
     {
         
-        pauseMenuCanvas.enabled = true; // Abilita il menu di pausa quando l'input è attivo
+        pauseMenuCanvas.enabled = !pauseMenuCanvas.enabled; // Abilita il menu di pausa quando l'input è attivo
     }
 
 
