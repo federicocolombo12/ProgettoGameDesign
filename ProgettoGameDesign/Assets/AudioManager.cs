@@ -27,12 +27,12 @@ public class AudioManager : MonoBehaviour
         musicChannel.OnMusicChangeRequested -= PlayMusic;
     }
 
-    private void PlaySFX(SfxData data)
+    public void PlaySFX(SfxData data)
     {
         sfxSource.pitch = data.pitch;
         sfxSource.PlayOneShot(data.clip, data.volume);
     }
-    private void PlayMusic(AudioClip newClip, float fadeDuration)
+    public void PlayMusic(AudioClip newClip, float fadeDuration)
     {
         StartCoroutine(FadeMusic(newClip, fadeDuration));
     }

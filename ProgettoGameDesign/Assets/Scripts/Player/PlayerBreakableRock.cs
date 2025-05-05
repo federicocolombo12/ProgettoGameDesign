@@ -8,6 +8,7 @@ public class PlayerBreakableRock : MonoBehaviour
 
     [SerializeField] private float chargeSpeed = 10f;
     [SerializeField] private float chargeDuration = 0.5f;
+    [SerializeField] SfxData breakRockSfx;
 
     private bool isCharging = false;
     private Transform targetRock;
@@ -35,6 +36,7 @@ public class PlayerBreakableRock : MonoBehaviour
     {
         pState.dashing = true;
         isCharging = true;
+        AudioManager.Instance.sfxChannel.OnSFXPlayRequested?.Invoke(breakRockSfx);
 
         Vector2 direction = (targetRock.position - transform.position).normalized;
 

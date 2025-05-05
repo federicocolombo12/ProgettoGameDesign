@@ -6,6 +6,7 @@ public class GameManager : MonoBehaviour
     public static GameManager Instance { get; private set; }
     public Vector2 platformRespawnPoint;
     public Vector2 respawnPoint;
+    
     [SerializeField] Bench bench;
     
     private void Awake()
