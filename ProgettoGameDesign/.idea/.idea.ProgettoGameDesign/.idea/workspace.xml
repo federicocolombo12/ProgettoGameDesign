@@ -7,8 +7,8 @@
     <list default="true" id="527a8daf-816c-46f2-8b53-a90cdb675d8e" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.ProgettoGameDesign/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.ProgettoGameDesign/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Lara/Scene/Prova.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Lara/Scene/Prova.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Interactables/PlatformSwitchable.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Interactables/PlatformSwitchable.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/General/GameManager.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/General/GameManager.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Player/PlayerMovement.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Player/PlayerMovement.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/TextMesh Pro/Examples &amp; Extras/Resources/Fonts &amp; Materials/Anton SDF.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/TextMesh Pro/Examples &amp; Extras/Resources/Fonts &amp; Materials/Anton SDF.asset" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -112,6 +112,8 @@
       <workItem from="1742310568612" duration="1263000" />
       <workItem from="1745337502065" duration="2370000" />
       <workItem from="1745423865447" duration="4461000" />
+      <workItem from="1746451720717" duration="1021000" />
+      <workItem from="1746455281037" duration="336000" />
     </task>
     <servers />
   </component>

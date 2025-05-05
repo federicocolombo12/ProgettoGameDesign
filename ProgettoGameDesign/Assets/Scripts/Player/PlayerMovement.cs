@@ -171,35 +171,74 @@ public class PlayerMovement : MonoBehaviour
     }
     public void Jump(bool jumpInput)
     {
-        if (!jumpInput && rb.linearVelocity.y > 0)
+        if (!IsTouchingStickyWall())
         {
-            rb.linearVelocity = new Vector2(rb.linearVelocity.x, 0);
-            pState.jumping = false;
+            if (!jumpInput && rb.linearVelocity.y > 0)
+            {
+                rb.linearVelocity = new Vector2(rb.linearVelocity.x, 0);
+                pState.jumping = false;
             
 
-        }
+            }
 
-        if (!pState.jumping)
+            if (!pState.jumping)
+            {
+                if (coyoteTimeCounter > 0 && jumpBufferCounter > 0)
+                {
+                    rb.linearVelocity = new Vector2(rb.linearVelocity.x, jumpForce);
+                    pState.jumping = true;
+                
+
+                }
+                else if (!IsGrounded() && jumpCount < maxJumpCount && jumpInput)
+                {
+                    pState.jumping = true;
+                    jumpCount++;
+                    rb.linearVelocity = new Vector2(rb.linearVelocity.x, jumpForce);
+                
+
+
+                }
+
+            }
+            animator.SetBool("Jumping", !IsGrounded());
+        }
+        else
         {
-            if (coyoteTimeCounter > 0 && jumpBufferCounter > 0)
+            if (Player.Instance.playerInput.directionalInput.x != 0)
             {
-                rb.linearVelocity = new Vector2(rb.linearVelocity.x, jumpForce);
-                pState.jumping = true;
+                if (!jumpInput && rb.linearVelocity.y > 0)
+                {
+                    rb.linearVelocity = new Vector2(rb.linearVelocity.x, 0);
+                    pState.jumping = false;
+            
+
+                }
+
+                if (!pState.jumping)
+                {
+                    if (coyoteTimeCounter > 0 && jumpBufferCounter > 0)
+                    {
+                        rb.linearVelocity = new Vector2(rb.linearVelocity.x, jumpForce);
+                        pState.jumping = true;
                 
 
-            }
-            else if (!IsGrounded() && jumpCount < maxJumpCount && jumpInput)
-            {
-                pState.jumping = true;
-                jumpCount++;
-                rb.linearVelocity = new Vector2(rb.linearVelocity.x, jumpForce);
+                    }
+                    else if (!IsGrounded() && jumpCount < maxJumpCount && jumpInput)
+                    {
+                        pState.jumping = true;
+                        jumpCount++;
+                        rb.linearVelocity = new Vector2(rb.linearVelocity.x, jumpForce);
                 
 
 
-            }
+                    }
 
+                }
+                animator.SetBool("Jumping", !IsGrounded());
+            }
         }
-        animator.SetBool("Jumping", !IsGrounded());
+        
        
 
     }
