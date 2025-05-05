@@ -111,7 +111,7 @@ public class MenuEventSystemHandler : MonoBehaviour
             return;
         }
         Vector3 newScale = eventData.selectedObject.transform.localScale * _selectedAnimationScale;
-        _scaleUpTween = eventData.selectedObject.transform.DOScale(newScale, _selectedAnimationDuration);
+        _scaleUpTween = eventData.selectedObject.transform.DOScale(newScale, _selectedAnimationDuration).SetUpdate(true);
     }
     public void OnDeselect(BaseEventData eventData)
     {
@@ -120,7 +120,7 @@ public class MenuEventSystemHandler : MonoBehaviour
             return;
         }
         Selectable sel = eventData.selectedObject.GetComponent<Selectable>();
-        _scaleDownTween = eventData.selectedObject.transform.DOScale(_originalScales[sel], _selectedAnimationDuration);
+        _scaleDownTween = eventData.selectedObject.transform.DOScale(_originalScales[sel], _selectedAnimationDuration).SetUpdate(true);
     }
     public void OnPointerEnter(BaseEventData eventData)
     {

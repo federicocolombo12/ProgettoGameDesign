@@ -1,5 +1,6 @@
 using UnityEngine;
 using UnityEngine.InputSystem;
+using System.Collections;
 
 
 public class PauseMenuManager : MonoBehaviour
@@ -41,20 +42,22 @@ public class PauseMenuManager : MonoBehaviour
     void EnableMenu(InputActionMap uiMap)
     {
 
-        pauseMenuCanvas.enabled = true; // Abilita il menu di pausa quando l'input è attivo
-    }
+        pauseMenuCanvas.enabled = true; // Abilita il menu di pausa quando l'input ï¿½ attivo
+        Time.timeScale= 0f; // Ferma il tempo di gioco
+    }   
     void DisableMenu(InputAction.CallbackContext callback)
     {
         Debug.Log("Disabilitato il menu di pausa");
         Canvas pauseMenuCanvas = GetComponent<Canvas>();
         if (pauseMenuCanvas == null)
         {
-            Debug.LogError("Il Canvas non è stato trovato.");
+            Debug.LogError("Il Canvas non ï¿½ stato trovato.");
             return;
         }
-        pauseMenuCanvas.enabled = false; // Disabilita il menu di pausa quando l'input è attivo
-        InputManager.SwitchActionMap(InputManager.inputActions.Player); // Torna alla mappa di input del giocatore
-        
+        pauseMenuCanvas.enabled = false; // Disabilita il menu di pausa quando l'input ï¿½ attivo
+        InputManager.SwitchActionMap(InputManager.inputActions.Player);
+        Time.timeScale = 1; // Torna alla mappa di input del giocatore
+
     }
    
 
