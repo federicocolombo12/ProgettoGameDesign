@@ -194,10 +194,10 @@ MonoBehaviour:
   isRecoiling: 0
   restoreTimeSpeed: 1
   player: {fileID: 0}
-  speed: 20
+  speed: 10
   playerLayer:
     serializedVersion: 2
-    m_Bits: 0
+    m_Bits: 1024
   damage: 1
   orangeBlood: {fileID: 4792805946373802877, guid: 99392edfef6f7574fbd4cc2077f8cc06, type: 3}
   chaseDistance: 15
