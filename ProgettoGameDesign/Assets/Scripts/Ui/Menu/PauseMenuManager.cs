@@ -5,7 +5,7 @@ using UnityEngine.InputSystem;
 public class PauseMenuManager : MonoBehaviour
 {
     // Start is called once before the first execution of Update after the MonoBehaviour is created
-    
+
     Canvas pauseMenuCanvas;
     [SerializeField] InputActionReference quitActionReference;
     private void Start()
@@ -54,6 +54,7 @@ public class PauseMenuManager : MonoBehaviour
         }
         pauseMenuCanvas.enabled = false; // Disabilita il menu di pausa quando l'input è attivo
         InputManager.SwitchActionMap(InputManager.inputActions.Player); // Torna alla mappa di input del giocatore
+        
     }
    
 
