@@ -5,12 +5,17 @@ using Sirenix.OdinInspector;
 public class PlayerMovement : MonoBehaviour
 {
     private PlayerInput pInput;
+    
 
     [TabGroup("Movement"), LabelText("Speed")]
     [SerializeField] private float speed = 5f;
 
+    
+
     [TabGroup("Jumping"), LabelText("Jump Force")]
     [SerializeField] private float jumpForce = 10f;
+
+    
 
     [TabGroup("Jumping"), LabelText("Jump Buffer Frames")]
     [SerializeField] private float jumpBufferFrames;
@@ -115,6 +120,9 @@ public class PlayerMovement : MonoBehaviour
             return;
         }
         Vector2 newVelocity = new Vector2(directionalInput.x * speed, rb.linearVelocity.y);
+        
+
+
         rb.linearVelocity = newVelocity;
         animator.SetBool("Walking", rb.linearVelocity.x != 0 && IsGrounded());
         Flip(directionalInput);
