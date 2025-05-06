@@ -13,8 +13,6 @@ MonoBehaviour:
   m_Name: SampleTutorial
   m_EditorClassIdentifier: 
   tutorialImage: {fileID: -81747042, guid: da21c7ee040fc494189b02a16fa3b7d0, type: 3}
-  tutorialText: "You need to import Text Mesh pro into your script Add at the top
-    of your script  Using TMPro;  Then declare your variable using the following 
-    Public TextMeshProUGUI yourTextVariable;  yourTextVariable is the name you want
-    to call your variable Hope it helps \U0001F44D"
   tutorialTitle: Roccia
+  tutorialText: 'You need to import Text Mesh pro into your script Add at the top
+    of your script  Using TMPro; '
