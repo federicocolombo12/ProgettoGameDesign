@@ -44,6 +44,9 @@ public class PlayerTransformation : ScriptableObject
     public float attackDamage;
 
     [TabGroup("Stats"), LabelWidth(120)]
+    public float attackSpeed;
+
+    [TabGroup("Stats"), LabelWidth(120)]
     public float spellDamage;
 
     [TabGroup("Visual"), PreviewField(70)]

@@ -42,6 +42,7 @@ public class PlayerAttack : MonoBehaviour
     void UpdateVariables()
     {
         damage = Player.Instance.playerTransformation.attackDamage;
+        
     }
     private void OnTriggerEnter2D(Collider2D other)
     {
