@@ -4,59 +4,69 @@ using BehaviorDesigner.Runtime.Tasks;
 
 public class Patrol : Action
 {
-    public SharedFloat patrolRange = 3f;
-    public SharedFloat speed = 2f;
-    public LayerMask wallLayerMask;
-
-    private Rigidbody2D rb;
-    private Vector2 startPosition;
     private Vector2 target;
-    private bool movingRight = true;
+    private Rigidbody2D rb;
+    private Enemy enemy;
+    public SharedFloat speed;
+    private Sentinel sentinel;
+
+
+    public LayerMask wallLayerMask;
 
     public override void OnStart()
     {
+        enemy = GetComponent<Enemy>();
+        sentinel = GetComponent<Sentinel>();
         rb = GetComponent<Rigidbody2D>();
-        startPosition = transform.position;
-        SetNextTarget();
+
+        target = GenerateValidTarget();
     }
 
     public override TaskStatus OnUpdate()
     {
         Vector2 dir = (target - (Vector2)transform.position).normalized;
 
-        // Movimento
+        dir.y = 0; // Ignora asse verticale per camminanti
+
+        // Flip del nemico
+        if (dir.x > 0)
+        {
+            enemy.transform.localScale = new Vector3(Mathf.Abs(enemy.transform.localScale.x), enemy.transform.localScale.y, enemy.transform.localScale.z);
+        }
+        else if (dir.x < 0)
+        {
+            enemy.transform.localScale = new Vector3(-Mathf.Abs(enemy.transform.localScale.x), enemy.transform.localScale.y, enemy.transform.localScale.z);
+        }
+
         rb.linearVelocity = dir * speed.Value;
 
-        // Flip sprite
-        if (dir.x > 0)
-            transform.localScale = new Vector3(Mathf.Abs(transform.localScale.x), transform.localScale.y, transform.localScale.z);
-        else if (dir.x < 0)
-            transform.localScale = new Vector3(-Mathf.Abs(transform.localScale.x), transform.localScale.y, transform.localScale.z);
-
-        // Raggiunto il target?
-        if (Vector2.Distance(transform.position, target) < 0.3f)
-        {
-            movingRight = !movingRight;
-            SetNextTarget();
-        }
-
-        return TaskStatus.Running;
+        if (Vector2.Distance(transform.position, target) < 0.5f)
+            return TaskStatus.Success;
+        else
+            return TaskStatus.Running;
     }
 
-    private void SetNextTarget()
-    {
-        Vector2 offset = movingRight ? Vector2.right : Vector2.left;
-        Vector2 potentialTarget = startPosition + offset * patrolRange.Value;
 
-        // Controllo ostacoli
-        RaycastHit2D hit = Physics2D.Linecast(transform.position, potentialTarget, wallLayerMask);
-        if (hit.collider != null)
+    private Vector2 GenerateValidTarget()
+    {
+        int maxTries = 10;
+        for (int i = 0; i < maxTries; i++)
         {
-            movingRight = !movingRight;
-            offset = -offset;
-            potentialTarget = startPosition + offset * patrolRange.Value;
+            Vector2 randomOffset = Random.insideUnitCircle * 1f;
+
+            Vector2 potentialTarget = new Vector2(sentinel.centerOfInfluence.position.x +
+                randomOffset.x, sentinel.centerOfInfluence.position.y + randomOffset.y);
+
+
+            RaycastHit2D hit = Physics2D.Linecast(transform.position, potentialTarget, wallLayerMask);
+
+            if (hit.collider == null)
+            {
+                return potentialTarget; 
+            }
         }
 
-        target = potentialTarget;
+        
+        return (Vector2)transform.position;
     }
 }
