@@ -25,6 +25,7 @@ GameObject:
   - component: {fileID: 443132013862689332}
   - component: {fileID: 6697238519948228974}
   - component: {fileID: 1953520300672907571}
+  - component: {fileID: 2702081745871396962}
   m_Layer: 10
   m_Name: Player
   m_TagString: Player
@@ -277,7 +278,7 @@ MonoBehaviour:
     serializedVersion: 2
     m_Bits: 512
   stickGravityScale: 4
-  wallSpeed: 5
+  wallSpeed: 7
   stickTimerMax: 0.5
 --- !u!114 &1084953805667698412
 MonoBehaviour:
@@ -291,7 +292,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ea490ad14e1293441ad8b8acd832383a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  dashSpeed: 5
+  dashSpeed: 3
   dashTime: 0.2
   dashCooldown: 1
   dashEffect: {fileID: 1349972566738812877, guid: 41fe29b72e0207f4397afe6cb01e6a0b, type: 3}
@@ -436,6 +437,20 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   chargeSpeed: 10
   chargeDuration: 0.5
+  breakRockSfx: {fileID: 11400000, guid: 1feef62f8f0e94e2aae68ac47d909a5b, type: 2}
+--- !u!114 &2702081745871396962
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1038730058775713584}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 783189269af2bfe4ab71963f13020140, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  footstepSound: {fileID: 11400000, guid: bf4f405c9e7f38c498caf5257ee68588, type: 2}
 --- !u!1 &4986755741747033650
 GameObject:
   m_ObjectHideFlags: 0
