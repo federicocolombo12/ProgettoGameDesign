@@ -29,12 +29,12 @@ public class PauseMenuManager : MonoBehaviour
     {
         if (map.name == "Player")
         {
-            Debug.Log("Abilitata la mappa Player (uscita dal menu)");
+            
             // Esegui logica per tornare al gameplay, se necessario
         }
         else if (map.name == "UI")
         {
-            Debug.Log("Abilitata la mappa UI (menu di pausa)");
+            
             EnableMenu(map);
         }
     }
@@ -47,7 +47,7 @@ public class PauseMenuManager : MonoBehaviour
     }   
     void DisableMenu(InputAction.CallbackContext callback)
     {
-        Debug.Log("Disabilitato il menu di pausa");
+        
         Canvas pauseMenuCanvas = GetComponent<Canvas>();
         if (pauseMenuCanvas == null)
         {

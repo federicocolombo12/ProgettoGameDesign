@@ -81,11 +81,11 @@ public class InputManager : MonoBehaviour
             return;
         }
         inputActions.Disable();
-        Debug.Log("abilitato ActionMap: " + _inputActionMap);
+        
        
         _inputActionMap.Enable();
         OnActionMapChanged?.Invoke(_inputActionMap);
-        LogActionMapStates();
+        
 
     }
     private void HandleMove(InputAction.CallbackContext context)

@@ -71,24 +71,20 @@ public class PlayerAttack : MonoBehaviour
             timeSinceAttack = 0;
             animator.SetTrigger("Attack");
             attack = false;
-            Debug.Log("Attacco eseguito!");
 
             if (Mathf.Abs(directionalInput.y) < 0.3f || (directionalInput.y < 0 && playerMovement.IsGrounded()))
             {
-                Debug.Log("Attacco laterale");
                 int _recoilLeftOrRight = pState.lookingRight ? 1 : -1;
                 Hit(sideAttackTransform, sideAttackArea, ref pState.recoilingX, Vector2.right * _recoilLeftOrRight, recoilXSpeed);
                 Instantiate(slashEffect, sideAttackTransform);
             }
             else if (directionalInput.y > 0.3f)
             {
-                Debug.Log("Attacco alto");
                 Hit(upAttackTransform, upAttackArea, ref pState.recoilingY,Vector2.up, recoilYSpeed);
                 SlashEffectAngle(slashEffect, 90, upAttackTransform);
             }
             else if (directionalInput.y < 0.3f && !playerMovement.IsGrounded())
             {
-                Debug.Log("Attacco basso");
                 Hit(downAttackTransform, downAttackArea, ref pState.recoilingY,Vector2.down, recoilYSpeed);
                 SlashEffectAngle(slashEffect, -90, downAttackTransform);
             }
