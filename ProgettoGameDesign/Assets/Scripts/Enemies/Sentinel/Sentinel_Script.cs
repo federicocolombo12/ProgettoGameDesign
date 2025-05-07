@@ -24,7 +24,7 @@ public class Sentinel : Enemy
 
         if (health <= 0)
         {
-            Death(1.5f); // Oppure ChangeState(EnemyStates.Sentinel_Death) se ne definisci uno
+            Death(1.5f); 
         }
     }
 
