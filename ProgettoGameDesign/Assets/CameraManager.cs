@@ -26,7 +26,7 @@ public class CameraManager : MonoBehaviour
             
     }
 
-    public void ShakeCamera(float intensity = 1f)
+    public void ShakeCamera(float intensity)
     {
         if (impulseSource != null)
         {
