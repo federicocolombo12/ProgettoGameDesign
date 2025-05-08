@@ -119,6 +119,133 @@ NavMeshSettings:
     debug:
       m_Flags: 0
   m_NavMeshData: {fileID: 0}
+--- !u!1 &401439383 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1658402279035436259, guid: b1e2a26605ddb5743ab4af9d547b28a3, type: 3}
+  m_PrefabInstance: {fileID: 792834384}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &401439385
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 401439383}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 25ec9be7732dfca4686c08cec17a2e03, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  impulseSource: {fileID: 0}
+--- !u!1 &429222135
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 429222136}
+  - component: {fileID: 429222137}
+  m_Layer: 0
+  m_Name: EffectManager
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &429222136
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 429222135}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1515488699}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &429222137
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 429222135}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cee19f7d0c7cdca4793dd92b1b256912, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!1 &779413960 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 6296891000432213911, guid: b1e2a26605ddb5743ab4af9d547b28a3, type: 3}
+  m_PrefabInstance: {fileID: 792834384}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &779413966
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 779413960}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cd438dd108a0f284aa931a2da434f1d3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  ImpulseDefinition:
+    ImpulseChannel: 1
+    ImpulseShape: 0
+    CustomImpulseShape:
+      serializedVersion: 2
+      m_Curve: []
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    ImpulseDuration: 0.2
+    ImpulseType: 3
+    DissipationRate: 0
+    RawSignal: {fileID: 0}
+    AmplitudeGain: 1
+    FrequencyGain: 1
+    RepeatMode: 0
+    Randomize: 1
+    TimeEnvelope:
+      AttackShape:
+        serializedVersion: 2
+        m_Curve: []
+        m_PreInfinity: 2
+        m_PostInfinity: 2
+        m_RotationOrder: 4
+      DecayShape:
+        serializedVersion: 2
+        m_Curve: []
+        m_PreInfinity: 2
+        m_PostInfinity: 2
+        m_RotationOrder: 4
+      AttackTime: 0
+      SustainTime: 0.2
+      DecayTime: 0.7
+      ScaleWithImpact: 1
+      HoldForever: 0
+    ImpactRadius: 100
+    DirectionMode: 0
+    DissipationMode: 2
+    DissipationDistance: 100
+    PropagationSpeed: 343
+  DefaultVelocity: {x: 0, y: -1, z: 0}
+  LayerMask:
+    serializedVersion: 2
+    m_Bits: 1
+  IgnoreTag: 
+  UseImpactDirection: 0
+  ScaleImpactWithMass: 0
+  ScaleImpactWithSpeed: 0
 --- !u!1001 &792834384
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -178,7 +305,16 @@ PrefabInstance:
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 1658402279035436259, guid: b1e2a26605ddb5743ab4af9d547b28a3, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 401439385}
+    - targetCorrespondingSourceObject: {fileID: 3975372764144063381, guid: b1e2a26605ddb5743ab4af9d547b28a3, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 913258810}
+    - targetCorrespondingSourceObject: {fileID: 6296891000432213911, guid: b1e2a26605ddb5743ab4af9d547b28a3, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 779413966}
   m_SourcePrefab: {fileID: 100100000, guid: b1e2a26605ddb5743ab4af9d547b28a3, type: 3}
 --- !u!1001 &793929812
 PrefabInstance:
@@ -234,9 +370,40 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
-    m_AddedGameObjects: []
+    m_AddedGameObjects:
+    - targetCorrespondingSourceObject: {fileID: 5736177118791842018, guid: dd124a0ba37d77b409357eabb4970896, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 429222136}
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: dd124a0ba37d77b409357eabb4970896, type: 3}
+--- !u!1 &913258806 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 3975372764144063381, guid: b1e2a26605ddb5743ab4af9d547b28a3, type: 3}
+  m_PrefabInstance: {fileID: 792834384}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &913258810
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 913258806}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 00b2d199b96b516448144ab30fb26aed, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  ApplyAfter: 2
+  ChannelMask: 1
+  Gain: 1
+  Use2DDistance: 0
+  UseCameraSpace: 1
+  ReactionSettings:
+    m_SecondaryNoise: {fileID: 0}
+    AmplitudeGain: 1
+    FrequencyGain: 1
+    Duration: 1
+    m_NoiseOffsets: {x: 0, y: 0, z: 0}
 --- !u!1001 &1161212964
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -345,6 +512,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!4 &1515488699 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 5736177118791842018, guid: dd124a0ba37d77b409357eabb4970896, type: 3}
+  m_PrefabInstance: {fileID: 793929812}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1592826150
 GameObject:
   m_ObjectHideFlags: 0
