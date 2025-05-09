@@ -9,7 +9,7 @@ public class EnemyAction : Action
 	protected Collider2D col;
 	protected Animator anim;
 	protected Player player;
-	public override void OnStart()
+	public override void OnAwake()
 	{
 		rb = GetComponent<Rigidbody2D>();
 		enemy = GetComponent<Enemy>();
