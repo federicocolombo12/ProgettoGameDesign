@@ -264,8 +264,8 @@ MonoBehaviour:
   jumpForce: 10
   jumpBufferFrames: 1
   coyoteTime: 0.2
-  maxJumpCount: 2
-  jumpGScale: 1
+  maxJumpCount: 1
+  jumpGScale: 2
   fallGScale: 5
   jumpCount: 0
   groundCheck: {fileID: 3429251840089909367}
@@ -395,13 +395,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 34d89f979d1f59a4a8c80e47f5b6e790, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  hookSpeed: 10
-  stopDistance: 0.2
-  initialHookSpeed: 10
-  hookAcceleration: 300
-  hookMaxSpeed: 20
-  waitTime: 0.5
-  hookDeceleration: 50
+  initialHookSpeed: 15
+  hookAcceleration: 50
+  hookMaxSpeed: 40
+  waitTime: 0.2
+  hookDeceleration: 100
 --- !u!114 &6697238519948228974
 MonoBehaviour:
   m_ObjectHideFlags: 0

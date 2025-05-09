@@ -602,30 +602,6 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 443132013862689332, guid: 1e5e95d1c8d2a664aa123a5933f1c74e, type: 3}
-      propertyPath: waitTime
-      value: 0.2
-      objectReference: {fileID: 0}
-    - target: {fileID: 443132013862689332, guid: 1e5e95d1c8d2a664aa123a5933f1c74e, type: 3}
-      propertyPath: hookSpeed
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 443132013862689332, guid: 1e5e95d1c8d2a664aa123a5933f1c74e, type: 3}
-      propertyPath: hookMaxSpeed
-      value: 40
-      objectReference: {fileID: 0}
-    - target: {fileID: 443132013862689332, guid: 1e5e95d1c8d2a664aa123a5933f1c74e, type: 3}
-      propertyPath: hookAcceleration
-      value: 50
-      objectReference: {fileID: 0}
-    - target: {fileID: 443132013862689332, guid: 1e5e95d1c8d2a664aa123a5933f1c74e, type: 3}
-      propertyPath: hookDeceleration
-      value: 100
-      objectReference: {fileID: 0}
-    - target: {fileID: 443132013862689332, guid: 1e5e95d1c8d2a664aa123a5933f1c74e, type: 3}
-      propertyPath: initialHookSpeed
-      value: 15
-      objectReference: {fileID: 0}
     - target: {fileID: 989102055181137705, guid: 1e5e95d1c8d2a664aa123a5933f1c74e, type: 3}
       propertyPath: manaStorage
       value: 
@@ -633,10 +609,6 @@ PrefabInstance:
     - target: {fileID: 1038730058775713584, guid: 1e5e95d1c8d2a664aa123a5933f1c74e, type: 3}
       propertyPath: m_Name
       value: Player
-      objectReference: {fileID: 0}
-    - target: {fileID: 1084953805667698412, guid: 1e5e95d1c8d2a664aa123a5933f1c74e, type: 3}
-      propertyPath: dashSpeed
-      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 1653175155450436630, guid: 1e5e95d1c8d2a664aa123a5933f1c74e, type: 3}
       propertyPath: m_LocalPosition.x
@@ -677,26 +649,6 @@ PrefabInstance:
     - target: {fileID: 1653175155450436630, guid: 1e5e95d1c8d2a664aa123a5933f1c74e, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 1953520300672907571, guid: 1e5e95d1c8d2a664aa123a5933f1c74e, type: 3}
-      propertyPath: breakRockSfx
-      value: 
-      objectReference: {fileID: 11400000, guid: 1feef62f8f0e94e2aae68ac47d909a5b, type: 2}
-    - target: {fileID: 2670939194795898005, guid: 1e5e95d1c8d2a664aa123a5933f1c74e, type: 3}
-      propertyPath: moveSound
-      value: 
-      objectReference: {fileID: 11400000, guid: bf4f405c9e7f38c498caf5257ee68588, type: 2}
-    - target: {fileID: 2670939194795898005, guid: 1e5e95d1c8d2a664aa123a5933f1c74e, type: 3}
-      propertyPath: wallSpeed
-      value: 7
-      objectReference: {fileID: 0}
-    - target: {fileID: 2670939194795898005, guid: 1e5e95d1c8d2a664aa123a5933f1c74e, type: 3}
-      propertyPath: jumpGScale
-      value: 2
-      objectReference: {fileID: 0}
-    - target: {fileID: 2670939194795898005, guid: 1e5e95d1c8d2a664aa123a5933f1c74e, type: 3}
-      propertyPath: maxJumpCount
-      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
