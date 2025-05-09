@@ -14,7 +14,8 @@ using UnityEngine;
         public float buildupTime;
         public float jumpTime;
 
-        public string animationTriggerName;
+        public string triggerStart;
+        public string animationBase;
         public bool shakeCameraOnLanding;
 
         private bool hasLanded;
@@ -22,23 +23,36 @@ using UnityEngine;
         private Tween buildupTween;
         private Tween jumpTween;
 
+        public SpriteRenderer jumpEffect;
+        public Vector3 effectOffset;
+
+
         public override void OnStart()
         {
             buildupTween = DOVirtual.DelayedCall(buildupTime, StartJump, false);
-            anim.SetTrigger(animationTriggerName);
+            anim.SetTrigger(triggerStart);
         }
 
         private void StartJump()
         {
+            if (animationBase != "")
+            {
+                anim.SetTrigger(animationBase);
+            }
             var direction = player.transform.position.x < transform.position.x ? -1 : 1;
             rb.AddForce(new Vector2(horizontalForce * direction, jumpForce), ForceMode2D.Impulse);
-
+            if (jumpEffect != null)
+            {
+                EffectManager.Instance.PlaySpriteOneShot(jumpEffect, transform.position+ effectOffset, direction > 0);
+            }
             jumpTween = DOVirtual.DelayedCall(jumpTime, () =>
             {
+                rb.linearVelocity = Vector2.zero;
                 hasLanded = true;
                 if (shakeCameraOnLanding)
                     CameraManager.Instance.ShakeCamera(0.5f);
             }, false);
+
         }
 
         public override TaskStatus OnUpdate()
