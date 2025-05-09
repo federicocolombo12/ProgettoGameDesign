@@ -1,3 +1,4 @@
+using DG.Tweening;
 using Unity.VisualScripting;
 using UnityEngine;
 
@@ -17,6 +18,7 @@ public class Enemy : MonoBehaviour
     [SerializeField] protected float damage;
     [SerializeField] GameObject orangeBlood;
     protected Animator animator;
+    protected Tween hurtTween;
 
 
     protected enum EnemyStates
@@ -52,6 +54,7 @@ public class Enemy : MonoBehaviour
         sr = GetComponent<SpriteRenderer>();
         animator = GetComponent<Animator>();
         player = Player.Instance;
+        
     }
     
     protected virtual void Update()
@@ -84,6 +87,7 @@ public class Enemy : MonoBehaviour
             Destroy(_orangeBlood, 5.5f);
             rb.linearVelocity= hitDirection * _hitForce*recoilFactor;
             isRecoiling = true;
+            EnemyHitFeedback();
         }
     }
     protected virtual void OnCollisionStay2D(Collision2D collision)
@@ -116,8 +120,29 @@ public class Enemy : MonoBehaviour
         
        
     }
-    
-    
+
+    protected virtual void EnemyHitFeedback()
+    {
+        if (hurtTween != null)
+        {
+            hurtTween.Kill();
+        }
+
+        // Flash white
+        Debug.Log("Flashing white");
+        Color originalColor = sr.color;
+
+
+        hurtTween = sr.DOColor(Color.white, 0.5f).OnComplete(() =>
+        {
+            // Return to original color
+            sr.DOColor(originalColor, 0.1f);
+        });
+        
+    }
+
+
+
     protected virtual void Attack()
     {
         player.playerHealth.TakeDamage(damage);

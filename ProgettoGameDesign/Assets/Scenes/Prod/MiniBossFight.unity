@@ -130,8 +130,8 @@ GameObject:
   - component: {fileID: 274468380}
   - component: {fileID: 274468381}
   - component: {fileID: 274468383}
-  - component: {fileID: 274468382}
   - component: {fileID: 274468384}
+  - component: {fileID: 274468385}
   m_Layer: 6
   m_Name: Miniboss
   m_TagString: Enemy
@@ -203,30 +203,6 @@ BoxCollider2D:
   m_AutoTiling: 0
   m_Size: {x: 2.38, y: 4.5}
   m_EdgeRadius: 0
---- !u!114 &274468382
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 274468379}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 7dc0c87951d63884bba4d90be346ea13, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  health: 20
-  recoilLenght: 0.1
-  recoilFactor: 0.1
-  isRecoiling: 0
-  restoreTimeSpeed: 0.5
-  player: {fileID: 0}
-  speed: 0
-  playerLayer:
-    serializedVersion: 2
-    m_Bits: 1024
-  damage: 1
-  orangeBlood: {fileID: 4792805946373802877, guid: 99392edfef6f7574fbd4cc2077f8cc06, type: 3}
 --- !u!50 &274468383
 Rigidbody2D:
   serializedVersion: 5
@@ -306,6 +282,31 @@ MonoBehaviour:
       Version: 1.7.12
   gizmoViewMode: 2
   showBehaviorDesignerGizmo: 1
+--- !u!114 &274468385
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 274468379}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 96ef798020cdcc8498f7fa438a8369ad, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  health: 20
+  recoilLenght: 0.1
+  recoilFactor: 0.1
+  isRecoiling: 0
+  restoreTimeSpeed: 0.5
+  player: {fileID: 0}
+  speed: 0
+  playerLayer:
+    serializedVersion: 2
+    m_Bits: 1024
+  damage: 1
+  orangeBlood: {fileID: 4792805946373802877, guid: 99392edfef6f7574fbd4cc2077f8cc06, type: 3}
+  bossSprite: {fileID: 1147963810}
 --- !u!4 &292959290 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 7000286234650752594, guid: 42e8d62848b3a7c4c93521c2a038e3da, type: 3}
@@ -1690,6 +1691,11 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: d229b29d423bb9243b65d5af9b059f47, type: 3}
+--- !u!212 &1147963810 stripped
+SpriteRenderer:
+  m_CorrespondingSourceObject: {fileID: 8979492497803901648, guid: 42e8d62848b3a7c4c93521c2a038e3da, type: 3}
+  m_PrefabInstance: {fileID: 662314624}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &1585934145
 PrefabInstance:
   m_ObjectHideFlags: 0
