@@ -602,6 +602,30 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 443132013862689332, guid: 1e5e95d1c8d2a664aa123a5933f1c74e, type: 3}
+      propertyPath: waitTime
+      value: 0.2
+      objectReference: {fileID: 0}
+    - target: {fileID: 443132013862689332, guid: 1e5e95d1c8d2a664aa123a5933f1c74e, type: 3}
+      propertyPath: hookSpeed
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 443132013862689332, guid: 1e5e95d1c8d2a664aa123a5933f1c74e, type: 3}
+      propertyPath: hookMaxSpeed
+      value: 40
+      objectReference: {fileID: 0}
+    - target: {fileID: 443132013862689332, guid: 1e5e95d1c8d2a664aa123a5933f1c74e, type: 3}
+      propertyPath: hookAcceleration
+      value: 50
+      objectReference: {fileID: 0}
+    - target: {fileID: 443132013862689332, guid: 1e5e95d1c8d2a664aa123a5933f1c74e, type: 3}
+      propertyPath: hookDeceleration
+      value: 100
+      objectReference: {fileID: 0}
+    - target: {fileID: 443132013862689332, guid: 1e5e95d1c8d2a664aa123a5933f1c74e, type: 3}
+      propertyPath: initialHookSpeed
+      value: 15
+      objectReference: {fileID: 0}
     - target: {fileID: 989102055181137705, guid: 1e5e95d1c8d2a664aa123a5933f1c74e, type: 3}
       propertyPath: manaStorage
       value: 
@@ -665,6 +689,14 @@ PrefabInstance:
     - target: {fileID: 2670939194795898005, guid: 1e5e95d1c8d2a664aa123a5933f1c74e, type: 3}
       propertyPath: wallSpeed
       value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 2670939194795898005, guid: 1e5e95d1c8d2a664aa123a5933f1c74e, type: 3}
+      propertyPath: jumpGScale
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 2670939194795898005, guid: 1e5e95d1c8d2a664aa123a5933f1c74e, type: 3}
+      propertyPath: maxJumpCount
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []

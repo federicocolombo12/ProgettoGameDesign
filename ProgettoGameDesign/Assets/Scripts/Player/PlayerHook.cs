@@ -4,10 +4,8 @@ using UnityEngine;
 public class PlayerHook : MonoBehaviour
 {
     private Rigidbody2D rb;
-    [SerializeField] float hookSpeed = 10f;
 
 
-    [SerializeField] float stopDistance = 0.1f;
     [SerializeField] float initialHookSpeed = 0.1f; // Velocità iniziale del rampino
     [SerializeField] float hookAcceleration = 0.1f; // Accelerazione del rampino
     [SerializeField] float hookMaxSpeed = 5f; // Velocità massima del rampino
