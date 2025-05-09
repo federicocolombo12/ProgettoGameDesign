@@ -1,3 +1,4 @@
+using System;
 using UnityEngine;
 
 public class PlayerInteract : MonoBehaviour
@@ -9,12 +10,26 @@ public class PlayerInteract : MonoBehaviour
     [SerializeField] private LayerMask wallLayer;
     [SerializeField] Vector2 boxSize;
     [SerializeField] float interactionCooldown = 0.5f;
+    [SerializeField] float inputThreshold = 0.1f;
+    [SerializeField] private Vector2 interactionDirection = Vector2.right;
+    private Vector2 directionalInput;
+    
     private float interactionTimer;
     private void Start()
     {
         rb = GetComponent<Rigidbody2D>();
         coll = GetComponent<Collider2D>();
     }
+
+    private void Update()
+    {
+        directionalInput = Player.Instance.playerInput.directionalInput;
+        if (directionalInput.magnitude > inputThreshold)
+        {
+            interactionDirection = directionalInput.normalized;
+        }
+    }
+
     public void PlayerCheckForInteractables(bool interacted)
     {
         if (interactionTimer < interactionCooldown)
@@ -22,8 +37,8 @@ public class PlayerInteract : MonoBehaviour
             interactionTimer += Time.deltaTime;
         }
 
-        Vector2 direction = transform.right.normalized;
-        Vector2 boxCenter = (Vector2)transform.position + (direction * interactDistance / 2);
+        Vector2 direction = interactionDirection;
+        Vector2 boxCenter = (Vector2)transform.position + (direction * interactDistance);
         Collider2D[] colliders = Physics2D.OverlapBoxAll(boxCenter, boxSize, 0f, interactableLayer);
 
         foreach (Collider2D collider in colliders)
@@ -61,7 +76,7 @@ public class PlayerInteract : MonoBehaviour
     }
     private void OnDrawGizmosSelected()
     {
-        Vector2 direction = transform.right.normalized;
+        Vector2 direction = interactionDirection;
         Vector2 boxCenter = (Vector2)transform.position + direction * interactDistance;
 
         Gizmos.color = Color.green;

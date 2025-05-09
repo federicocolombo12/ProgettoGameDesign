@@ -6,10 +6,8 @@
   <component name="ChangeListManager">
     <list default="true" id="527a8daf-816c-46f2-8b53-a90cdb675d8e" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.ProgettoGameDesign/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.ProgettoGameDesign/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Effects/Ground Dash Sparks.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Effects/Ground Dash Sparks.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Player.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Player.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Base.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Base.unity" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scenes/Prod/MiniBossFight.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Prod/MiniBossFight.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Player/PlayerInteract.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Player/PlayerInteract.cs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -116,7 +114,7 @@
       <workItem from="1745423865447" duration="4461000" />
       <workItem from="1746451720717" duration="1021000" />
       <workItem from="1746455281037" duration="4738000" />
-      <workItem from="1746800786961" duration="1385000" />
+      <workItem from="1746800786961" duration="3110000" />
     </task>
     <servers />
   </component>
