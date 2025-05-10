@@ -10,6 +10,8 @@ namespace Core.AI
 
         public override TaskStatus OnUpdate()
         {
+            
+            
             return enemy.health < HealthTreshold.Value ? TaskStatus.Success : TaskStatus.Failure;
         }
     }
