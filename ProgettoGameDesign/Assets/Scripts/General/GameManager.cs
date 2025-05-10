@@ -1,4 +1,6 @@
+using System.Collections;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class GameManager : MonoBehaviour
 {
@@ -6,7 +8,7 @@ public class GameManager : MonoBehaviour
     public static GameManager Instance { get; private set; }
     public Vector2 platformRespawnPoint;
     public Vector2 respawnPoint;
-    
+    public string currentGameplayScene;
     [SerializeField] Bench bench;
     
     private void Awake()
@@ -34,10 +36,40 @@ public class GameManager : MonoBehaviour
 
     public void RespawnPlayer(Player player)
     {
+        ResetScene();
+        StartCoroutine(WaitThenRespawn(player));
+    }
+
+    private IEnumerator WaitThenRespawn(Player player)
+    {
+        yield return new WaitUntil(() => SceneManager.GetSceneByName(currentGameplayScene).isLoaded);
+
         respawnPoint = bench.transform.position;
         player.RespawnAt(respawnPoint);
     }
-    
+
+    private void ResetScene()
+    {
+        currentGameplayScene = GetGameplaySceneName();
+        SceneManager.UnloadSceneAsync(currentGameplayScene).completed += (op) =>
+        {
+            SceneManager.LoadScene(currentGameplayScene, LoadSceneMode.Additive);
+        };
+    }
+    public string GetGameplaySceneName()
+    {
+        for (int i = 0; i < SceneManager.sceneCount; i++)
+        {
+            Scene scene = SceneManager.GetSceneAt(i);
+            if (scene.name != "Base" && scene.name != "PauseMenu" && scene.isLoaded)
+            {
+                return scene.name;
+            }
+        }
+        return null;
+    }
+
+
 
 
 

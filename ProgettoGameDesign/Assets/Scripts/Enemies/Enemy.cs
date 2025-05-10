@@ -6,7 +6,7 @@ public class Enemy : MonoBehaviour
 {
     protected Rigidbody2D rb;
     protected SpriteRenderer sr;
-    [SerializeField] protected float health;
+    public float health;
     [SerializeField] protected float recoilLenght;
     [SerializeField] protected float recoilFactor;
     [SerializeField] protected bool isRecoiling = false;
