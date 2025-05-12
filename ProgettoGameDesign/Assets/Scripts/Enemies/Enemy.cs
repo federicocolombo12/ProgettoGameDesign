@@ -20,7 +20,12 @@ public class Enemy : MonoBehaviour
     public Image healthImage;
     protected float recoilTimer;
     [SerializeField] protected float damage;
+    protected float currentDamage;
     [SerializeField] GameObject orangeBlood;
+    [SerializeField] PlayerTransformation weakTo;
+    
+    [SerializeField] PlayerTransformation immuneTo;
+    [SerializeField] protected float damageMultiplier;
     public static Action OnEnemyDeath;
     protected Animator animator;
     protected Tween hurtTween;
@@ -61,6 +66,7 @@ public class Enemy : MonoBehaviour
         player = Player.Instance;
         healthImage = GetComponentInChildren<Image>();
         health = maxHealth;
+        
     }
     
     protected virtual void Update()
@@ -86,7 +92,11 @@ public class Enemy : MonoBehaviour
     }
     public virtual void EnemyHit(float damage, Vector2 hitDirection, float _hitForce)
     {
-        health -= damage;
+        Debug.Log("Player Transformation: " + Player.Instance.playerTransformation);
+        Debug.Log("Enemy Weakness: " + weakTo);
+        EnemyWeakness();
+        
+        
         if (healthImage!= null){
             healthImage.fillAmount = health / maxHealth;
         }
@@ -99,6 +109,19 @@ public class Enemy : MonoBehaviour
             isRecoiling = true;
             EnemyHitFeedback();
         }
+    }
+    private void EnemyWeakness(){
+        currentDamage = damage;
+        if (weakTo == Player.Instance.playerTransformation)
+        {
+            Debug.Log("damage multiplier applied");
+            currentDamage *= damageMultiplier;
+        }
+        if (immuneTo == Player.Instance.playerTransformation)
+        {
+            currentDamage *= 1/damageMultiplier;
+        }
+        health -= currentDamage;
     }
     protected virtual void OnCollisionStay2D(Collision2D collision)
     {

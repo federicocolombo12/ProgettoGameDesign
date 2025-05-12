@@ -15,6 +15,7 @@ public class Crawler : Enemy
         base.Start();
         rb.gravityScale = 12f;
         player = Player.Instance;
+        
     }
     // Update is called once per frame
     
@@ -56,6 +57,7 @@ public class Crawler : Enemy
                 break;
         }
     }
+    
     private void OnCollisionEnter2D(Collision2D collision)
     {
         if (collision.gameObject.CompareTag("Enemy"))
