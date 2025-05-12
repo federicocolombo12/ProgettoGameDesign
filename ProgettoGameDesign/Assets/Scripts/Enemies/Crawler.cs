@@ -52,6 +52,7 @@ public class Crawler : Enemy
                 {
                     timer = 0;
                    transform.localScale = new Vector3(-transform.localScale.x, transform.localScale.y);
+                    
                     ChangeState(EnemyStates.Crawler_Idle);
                 }
                 break;

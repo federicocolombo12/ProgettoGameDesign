@@ -89263,41 +89263,9 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1352595649}
     m_Modifications:
-    - target: {fileID: 4331924998440069118, guid: 101babb9685bdce4bb816672b4441d9b, type: 3}
-      propertyPath: weakTo
-      value: 
-      objectReference: {fileID: 11400000, guid: 34644fc0004a56a45927fc9ad2f602ce, type: 2}
-    - target: {fileID: 4331924998440069118, guid: 101babb9685bdce4bb816672b4441d9b, type: 3}
-      propertyPath: immuneTo
-      value: 
-      objectReference: {fileID: 11400000, guid: a85abe56df98ddd489746a5ed5666703, type: 2}
-    - target: {fileID: 4331924998440069118, guid: 101babb9685bdce4bb816672b4441d9b, type: 3}
-      propertyPath: weakToColor.b
+    - target: {fileID: 6152820183864289198, guid: 101babb9685bdce4bb816672b4441d9b, type: 3}
+      propertyPath: m_FillOrigin
       value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4331924998440069118, guid: 101babb9685bdce4bb816672b4441d9b, type: 3}
-      propertyPath: weakToColor.g
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 4331924998440069118, guid: 101babb9685bdce4bb816672b4441d9b, type: 3}
-      propertyPath: weakToColor.r
-      value: 0.954141
-      objectReference: {fileID: 0}
-    - target: {fileID: 4331924998440069118, guid: 101babb9685bdce4bb816672b4441d9b, type: 3}
-      propertyPath: damageMultiplier
-      value: 2
-      objectReference: {fileID: 0}
-    - target: {fileID: 6152820183864289198, guid: 101babb9685bdce4bb816672b4441d9b, type: 3}
-      propertyPath: m_Color.b
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 6152820183864289198, guid: 101babb9685bdce4bb816672b4441d9b, type: 3}
-      propertyPath: m_Color.g
-      value: 0.9622642
-      objectReference: {fileID: 0}
-    - target: {fileID: 6152820183864289198, guid: 101babb9685bdce4bb816672b4441d9b, type: 3}
-      propertyPath: m_Color.r
-      value: 0.68412584
       objectReference: {fileID: 0}
     - target: {fileID: 6344562058082375487, guid: 101babb9685bdce4bb816672b4441d9b, type: 3}
       propertyPath: m_Name
