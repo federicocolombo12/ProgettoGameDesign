@@ -43,7 +43,7 @@ public class GameManager : MonoBehaviour
     private IEnumerator WaitThenRespawn(Player player)
     {
         yield return new WaitUntil(() => SceneManager.GetSceneByName(currentGameplayScene).isLoaded);
-
+        bench = FindFirstObjectByType<Bench>();
         respawnPoint = bench.transform.position;
         player.RespawnAt(respawnPoint);
     }

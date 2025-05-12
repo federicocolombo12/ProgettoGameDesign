@@ -562,6 +562,7 @@ MonoBehaviour:
   tutorialTitle: {fileID: 7134562364544071515}
   tutorialEvents: {fileID: 11400000, guid: 9022d0a160f56654d8a50d30ff0a06b5, type: 2}
   cancelActionReference: {fileID: 830924870033819527, guid: 2bcd2660ca9b64942af0de543d8d7100, type: 3}
+  gameCanvas: {fileID: 0}
 --- !u!1 &6168898230576827655
 GameObject:
   m_ObjectHideFlags: 0

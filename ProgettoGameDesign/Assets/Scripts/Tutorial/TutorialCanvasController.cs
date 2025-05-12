@@ -37,14 +37,12 @@ public class TutorialCanvasController : MonoBehaviour
 
     // Update is called once per frame
     void TriggerTutorial(Tutorial tutorialMaterial) {
-        gameCanvas.SetActive(false);
         StartCoroutine(TutorialCoroutine(tutorialMaterial));
     }
     void HandleCancel(UnityEngine.InputSystem.InputAction.CallbackContext context) {
         tutorialCanvas.DOFade(0, 0.5f);
         InputManager.SwitchActionMap(InputManager.inputActions.Player);
         Time.timeScale = 1;
-        gameCanvas.SetActive(true);
     }
     IEnumerator TutorialCoroutine(Tutorial _tutorialMaterial) {
         tutorialCanvas.DOFade(1, 0.5f);
