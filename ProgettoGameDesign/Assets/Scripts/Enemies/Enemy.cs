@@ -2,12 +2,14 @@ using DG.Tweening;
 using System;
 using Unity.VisualScripting;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class Enemy : MonoBehaviour
 {
     protected Rigidbody2D rb;
     protected SpriteRenderer sr;
     public float health;
+    [SerializeField] float maxHealth = 100f;
     [SerializeField] protected float recoilLenght;
     [SerializeField] protected float recoilFactor;
     [SerializeField] protected bool isRecoiling = false;
@@ -15,6 +17,7 @@ public class Enemy : MonoBehaviour
     [SerializeField] protected Player player;
     [SerializeField] protected float speed;
     [SerializeField] protected LayerMask playerLayer;
+    Image healthImage;
     protected float recoilTimer;
     [SerializeField] protected float damage;
     [SerializeField] GameObject orangeBlood;
@@ -56,7 +59,8 @@ public class Enemy : MonoBehaviour
         sr = GetComponent<SpriteRenderer>();
         animator = GetComponent<Animator>();
         player = Player.Instance;
-        
+        healthImage = GetComponentInChildren<Image>();
+        health = maxHealth;
     }
     
     protected virtual void Update()
@@ -83,6 +87,7 @@ public class Enemy : MonoBehaviour
     public virtual void EnemyHit(float damage, Vector2 hitDirection, float _hitForce)
     {
         health -= damage;
+        healthImage.fillAmount = health / maxHealth;
         if (!isRecoiling)
         {
             GameObject _orangeBlood = Instantiate(orangeBlood, transform.position, Quaternion.identity);
