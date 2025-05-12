@@ -1,4 +1,5 @@
 using DG.Tweening;
+using System;
 using Unity.VisualScripting;
 using UnityEngine;
 
@@ -17,6 +18,7 @@ public class Enemy : MonoBehaviour
     protected float recoilTimer;
     [SerializeField] protected float damage;
     [SerializeField] GameObject orangeBlood;
+    public static Action OnEnemyDeath;
     protected Animator animator;
     protected Tween hurtTween;
 
@@ -104,6 +106,7 @@ public class Enemy : MonoBehaviour
     }
     protected virtual void Death(float _destroyTime) 
     {
+        OnEnemyDeath?.Invoke();
         Destroy(gameObject, _destroyTime);
     }
     protected virtual void UpdateEnemyState()

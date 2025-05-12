@@ -7,6 +7,7 @@ public class SwitchableObject : MonoBehaviour, IInteractable
     [SerializeField] private float moveDistance = 1f;
     Vector2 startPos;
     bool isOpen = false;
+    
 
     private void Start()
     {
@@ -35,9 +36,9 @@ public class SwitchableObject : MonoBehaviour, IInteractable
     
     public void Open()
     {
-        transform.DOMoveY(moveDistance, 1f).SetEase(Ease.OutBounce);
+        transform.DOLocalMoveY(moveDistance, 1f).SetEase(Ease.OutBounce);
     }
     public void Close() { 
-        transform.DOMoveY(startPos.y, 1f).SetEase(Ease.OutBounce);
+        transform.DOLocalMoveY(startPos.y, 1f).SetEase(Ease.OutBounce);
     }
 }
