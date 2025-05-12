@@ -89283,6 +89283,10 @@ PrefabInstance:
       propertyPath: weakToColor.r
       value: 0.954141
       objectReference: {fileID: 0}
+    - target: {fileID: 4331924998440069118, guid: 101babb9685bdce4bb816672b4441d9b, type: 3}
+      propertyPath: damageMultiplier
+      value: 2
+      objectReference: {fileID: 0}
     - target: {fileID: 6152820183864289198, guid: 101babb9685bdce4bb816672b4441d9b, type: 3}
       propertyPath: m_Color.b
       value: 0
