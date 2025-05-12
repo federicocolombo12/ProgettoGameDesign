@@ -17,7 +17,7 @@ public class Enemy : MonoBehaviour
     [SerializeField] protected Player player;
     [SerializeField] protected float speed;
     [SerializeField] protected LayerMask playerLayer;
-    Image healthImage;
+    public Image healthImage;
     protected float recoilTimer;
     [SerializeField] protected float damage;
     [SerializeField] GameObject orangeBlood;
@@ -87,7 +87,10 @@ public class Enemy : MonoBehaviour
     public virtual void EnemyHit(float damage, Vector2 hitDirection, float _hitForce)
     {
         health -= damage;
-        healthImage.fillAmount = health / maxHealth;
+        if (healthImage!= null){
+            healthImage.fillAmount = health / maxHealth;
+        }
+       
         if (!isRecoiling)
         {
             GameObject _orangeBlood = Instantiate(orangeBlood, transform.position, Quaternion.identity);
