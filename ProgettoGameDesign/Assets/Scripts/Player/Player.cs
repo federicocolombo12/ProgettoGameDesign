@@ -18,6 +18,7 @@ public class Player : MonoBehaviour
     public PlayerDash playerDash { get; private set; }
     public PlayerTransform playerTransform { get; private set; }
     public PlayerInteract playerInteract { get; private set; }
+    public PlayerCameraHandler playerCameraHandler { get; private set; }
 
     private void Awake()
     {
@@ -40,6 +41,7 @@ public class Player : MonoBehaviour
         playerDash = GetComponent<PlayerDash>();
         playerTransform = GetComponent<PlayerTransform>();
         playerInteract = GetComponent<PlayerInteract>();
+        playerCameraHandler = GetComponent<PlayerCameraHandler>();
         pState = GetComponent<PlayerStateList>();
         rb = GetComponent<Rigidbody2D>();
         animator = GetComponent<Animator>();
@@ -77,6 +79,10 @@ public class Player : MonoBehaviour
         playerTransform.HandleTransform(playerInput.leftTranformation, playerInput.rightTransformation);
         playerInteract.PlayerCheckForInteractables(playerInput.interact);
         
+    }
+    void LateUpdate()
+    {
+        playerCameraHandler.CameraYDamping();
     }
 
     public void RespawnAt(Vector2 position)
