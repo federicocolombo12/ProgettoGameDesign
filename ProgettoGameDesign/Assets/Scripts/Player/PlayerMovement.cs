@@ -1,6 +1,7 @@
 ﻿using UnityEngine;
 using System.Collections;
 using Sirenix.OdinInspector;
+using Unity.Cinemachine;
 
 public class PlayerMovement : MonoBehaviour
 {
@@ -10,7 +11,9 @@ public class PlayerMovement : MonoBehaviour
     [TabGroup("Movement"), LabelText("Speed")]
     [SerializeField] private float speed = 5f;
 
-    
+    [TabGroup("Camera Stuff"), LabelText("Camera Follow Object")]
+    private CameraFollowObject cameraFollowObject;
+    [SerializeField] private GameObject cameraFollowGO;
 
     [TabGroup("Jumping"), LabelText("Jump Force")]
     [SerializeField] private float jumpForce = 10f;
@@ -88,6 +91,7 @@ public class PlayerMovement : MonoBehaviour
         animator = GetComponent<Animator>();
         pState = GetComponent<PlayerStateList>();
         gravityScale = rb.gravityScale;
+        cameraFollowObject = cameraFollowGO.GetComponent<CameraFollowObject>();
     }
     
 
@@ -98,17 +102,32 @@ public class PlayerMovement : MonoBehaviour
         jumpForce = Player.Instance.playerTransformation.jumpForce;
         maxJumpCount = Player.Instance.playerTransformation.jumpCount;
     }
+    private void TurnCheck(Vector2 directionalInput)
+    {
+        if (directionalInput.x>0 && !pState.lookingRight)
+        {
+            Flip(directionalInput);
+        }
+        else if (directionalInput.x < 0 && pState.lookingRight)
+        {
+            Flip(directionalInput);
+        }
+    }
     void Flip(Vector2 directionalInput)
     {
-        if (directionalInput.x > 0)
+        if (pState.lookingRight)
         {
-            transform.rotation = Quaternion.Euler(0, 0, 0);
-            pState.lookingRight = true;
+            Vector3 rotator = new Vector3(transform.rotation.x,180f, transform.rotation.z);
+            transform.rotation = Quaternion.Euler(rotator);
+            pState.lookingRight = !pState.lookingRight;
+            cameraFollowObject.CallTurn();
         }
-        else if (directionalInput.x < 0)
+        else
         {
-            transform.rotation = Quaternion.Euler(0, 180, 0);
-            pState.lookingRight = false;
+            Vector3 rotator = new Vector3(transform.rotation.x, 0, transform.rotation.z);
+            transform.rotation = Quaternion.Euler(rotator);
+            pState.lookingRight = !pState.lookingRight;
+            cameraFollowObject.CallTurn();
         }
     }
     public void Move(Vector2 directionalInput)
@@ -125,7 +144,12 @@ public class PlayerMovement : MonoBehaviour
 
         rb.linearVelocity = newVelocity;
         animator.SetBool("Walking", rb.linearVelocity.x != 0 && IsGrounded());
-        Flip(directionalInput);
+        if (directionalInput.x>0 || directionalInput.x<0)
+        {
+           TurnCheck(directionalInput);
+        }
+        
+        
     }
     public bool IsGrounded()
     {
