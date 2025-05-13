@@ -111,6 +111,9 @@ public class CameraManager : MonoBehaviour
                 default:
                     break;
             }
+            endPos *= panDistance;
+            startPos = _startingTrackedObjectOffset;
+            endPos += startPos;
         }
         else
         {
