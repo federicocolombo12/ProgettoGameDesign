@@ -3,6 +3,7 @@ using UnityEngine;
 public class BreakableRock : MonoBehaviour, IInteractable
 {
     SpriteRenderer sr;
+    [SerializeField] GameObject rockEffect;
     public void Start()
     {
 
@@ -25,6 +26,7 @@ public class BreakableRock : MonoBehaviour, IInteractable
         {
 
             interactor.GetComponent<PlayerBreakableRock>().ChargeAndBreak(transform);
+            EffectManager.Instance.PlayOneShot(rockEffect.GetComponent<ParticleSystem>(), transform.position);
 
             sr.color = Color.green;
         }

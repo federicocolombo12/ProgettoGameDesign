@@ -319,8 +319,13 @@ MonoBehaviour:
   playerLayer:
     serializedVersion: 2
     m_Bits: 1024
+  flashMaterial: {fileID: 2100000, guid: d28059583e1a40249ad8daa3586d8028, type: 2}
+  healthImage: {fileID: 0}
   damage: 1
   orangeBlood: {fileID: 4792805946373802877, guid: 99392edfef6f7574fbd4cc2077f8cc06, type: 3}
+  weakTo: {fileID: 0}
+  immuneTo: {fileID: 0}
+  damageMultiplier: 0
   projectilePrefab: {fileID: 693101946130715330, guid: 0d3649e3895df481f89628e805bcb6b7, type: 3}
   projectileSpeed: 5
   projectileTransform: {fileID: 6802901137642203119}

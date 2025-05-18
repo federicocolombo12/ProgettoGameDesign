@@ -8,6 +8,8 @@ public class Enemy : MonoBehaviour
 {
     protected Rigidbody2D rb;
     protected SpriteRenderer sr;
+    
+    protected Material standardMaterial;
     public float health;
     [SerializeField] float maxHealth = 100f;
     [SerializeField] protected float recoilLenght;
@@ -17,6 +19,7 @@ public class Enemy : MonoBehaviour
     [SerializeField] protected Player player;
     [SerializeField] protected float speed;
     [SerializeField] protected LayerMask playerLayer;
+    [SerializeField] protected Material flashMaterial;
     public Image healthImage;
     protected float recoilTimer;
     [SerializeField] protected float damage;
@@ -63,6 +66,9 @@ public class Enemy : MonoBehaviour
         rb = GetComponent<Rigidbody2D>();
         sr = GetComponent<SpriteRenderer>();
         animator = GetComponent<Animator>();
+        
+        
+        standardMaterial = sr.material;
         player = Player.Instance;
         healthImage = GetComponentInChildren<Image>();
         health = maxHealth;
@@ -97,6 +103,7 @@ public class Enemy : MonoBehaviour
         EnemyWeakness();
         
         
+
         if (healthImage!= null){
             healthImage.fillAmount = health / maxHealth;
         }
@@ -107,22 +114,30 @@ public class Enemy : MonoBehaviour
             Destroy(_orangeBlood, 5.5f);
             rb.linearVelocity= hitDirection * _hitForce*recoilFactor;
             isRecoiling = true;
-            EnemyHitFeedback();
+            
         }
     }
-    private void EnemyWeakness(){
+    private void EnemyWeakness()
+    {
         currentDamage = damage;
+        sr.material = flashMaterial;
+
         if (weakTo == Player.Instance.playerTransformation)
         {
-            Debug.Log("damage multiplier applied");
             currentDamage *= damageMultiplier;
         }
         if (immuneTo == Player.Instance.playerTransformation)
         {
-            currentDamage *= 1/damageMultiplier;
+            currentDamage *= 1 / damageMultiplier;
         }
         health -= currentDamage;
+
+        // After 0.2 seconds restore the original material
+        DOVirtual.DelayedCall(0.2f, () => {
+            sr.material = standardMaterial;
+        });
     }
+
     protected virtual void OnCollisionStay2D(Collision2D collision)
     {
 
@@ -155,25 +170,7 @@ public class Enemy : MonoBehaviour
        
     }
 
-    protected virtual void EnemyHitFeedback()
-    {
-        if (hurtTween != null)
-        {
-            hurtTween.Kill();
-        }
-
-        // Flash white
-        Debug.Log("Flashing white");
-        Color originalColor = sr.color;
-
-
-        hurtTween = sr.DOColor(Color.white, 0.5f).OnComplete(() =>
-        {
-            // Return to original color
-            sr.DOColor(originalColor, 0.1f);
-        });
-        
-    }
+    
 
 
 

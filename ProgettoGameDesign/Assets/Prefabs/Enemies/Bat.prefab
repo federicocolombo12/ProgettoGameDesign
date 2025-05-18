@@ -200,8 +200,13 @@ MonoBehaviour:
   playerLayer:
     serializedVersion: 2
     m_Bits: 1024
+  flashMaterial: {fileID: 2100000, guid: d28059583e1a40249ad8daa3586d8028, type: 2}
+  healthImage: {fileID: 0}
   damage: 1
   orangeBlood: {fileID: 4792805946373802877, guid: 99392edfef6f7574fbd4cc2077f8cc06, type: 3}
+  weakTo: {fileID: 0}
+  immuneTo: {fileID: 0}
+  damageMultiplier: 0
   chaseDistance: 15
   stunDuration: 0.2
 --- !u!1001 &2021273410853614336

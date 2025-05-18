@@ -37,6 +37,7 @@ public class PlayerBreakableRock : MonoBehaviour
         pState.dashing = true;
         isCharging = true;
         AudioManager.Instance.sfxChannel.RaiseEvent(breakRockSfx);
+        CameraManager.Instance.ShakeCamera(0.3f);
 
         Vector2 direction = (targetRock.position - transform.position).normalized;
 

@@ -13,10 +13,6 @@ public class Miniboss : Enemy
         healthImage = bossHealthImage;
 
     }
-    [Button("Test Hit")][SerializeField]
-    protected override void EnemyHitFeedback()
-    {
-        base.EnemyHitFeedback();
-
-    }
+    
+    
 }
