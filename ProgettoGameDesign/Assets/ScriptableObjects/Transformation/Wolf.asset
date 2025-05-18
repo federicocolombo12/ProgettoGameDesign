@@ -23,7 +23,7 @@ MonoBehaviour:
   attackDamage: 5
   attackSpeed: 0
   spellDamage: 1
-  baseSprite: {fileID: -855298285791758126, guid: cd09ee673f258cb41a521afce39ba6ae, type: 3}
+  baseSprite: {fileID: 348132329, guid: f724fb7d020a0d047aa3ecff98ff3d34, type: 3}
   animatorController: {fileID: 9100000, guid: dab8144b4dc40d54d854714dab625fae, type: 2}
   transformationScale: {x: 1, y: 1, z: 1}
   colliderSize: {x: 1.52, y: 2.15}

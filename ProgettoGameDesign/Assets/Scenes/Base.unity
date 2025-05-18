@@ -1121,6 +1121,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 4836228512335497569, guid: 45add3c22ddf0c3488e09f91eb6c4068, type: 3}
+      propertyPath: 'imageList.Array.data[2]'
+      value: 
+      objectReference: {fileID: 348132329, guid: f724fb7d020a0d047aa3ecff98ff3d34, type: 3}
     - target: {fileID: 6715925334481713499, guid: 45add3c22ddf0c3488e09f91eb6c4068, type: 3}
       propertyPath: m_Name
       value: GameCanvas
@@ -1708,13 +1712,17 @@ PrefabInstance:
       propertyPath: m_Name
       value: Player
       objectReference: {fileID: 0}
+    - target: {fileID: 1084953805667698412, guid: 1e5e95d1c8d2a664aa123a5933f1c74e, type: 3}
+      propertyPath: dashEffect
+      value: 
+      objectReference: {fileID: 882221356994568739, guid: 899d0d0f8bb9df542a6f74d441b9d06b, type: 3}
     - target: {fileID: 1653175155450436630, guid: 1e5e95d1c8d2a664aa123a5933f1c74e, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 123
+      value: 60.17
       objectReference: {fileID: 0}
     - target: {fileID: 1653175155450436630, guid: 1e5e95d1c8d2a664aa123a5933f1c74e, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 38.015
+      value: -0.51
       objectReference: {fileID: 0}
     - target: {fileID: 1653175155450436630, guid: 1e5e95d1c8d2a664aa123a5933f1c74e, type: 3}
       propertyPath: m_LocalPosition.z
@@ -1748,6 +1756,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 2670939194795898005, guid: 1e5e95d1c8d2a664aa123a5933f1c74e, type: 3}
+      propertyPath: landEffect
+      value: 
+      objectReference: {fileID: 5470570633696875145, guid: bdb859e9353f86049bf322f669156bb8, type: 3}
     - target: {fileID: 2670939194795898005, guid: 1e5e95d1c8d2a664aa123a5933f1c74e, type: 3}
       propertyPath: cameraFollowGO
       value: 

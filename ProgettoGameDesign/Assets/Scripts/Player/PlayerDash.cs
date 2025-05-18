@@ -9,6 +9,7 @@ public class PlayerDash : MonoBehaviour
     [SerializeField] float dashTime = 0.5f;
     [SerializeField] float dashCooldown = 1f;
     [SerializeField] GameObject dashEffect;
+    [SerializeField] float effectPosition = 0.5f;
     private PlayerMovement playerMovement;
     PlayerStateList pState;
     private Rigidbody2D rb;
@@ -36,9 +37,10 @@ public class PlayerDash : MonoBehaviour
         animator.SetTrigger("Dashing");
         rb.gravityScale = 0;
         rb.linearVelocity = new Vector2(rb.linearVelocity.x * dashSpeed, 0);
-        if (playerMovement.IsGrounded()) 
-        { Instantiate(dashEffect, transform); 
-        }
+        
+        
+        EffectManager.Instance.PlayOneShot(dashEffect.GetComponent<ParticleSystem>(), transform.position+Vector3.down*effectPosition);
+        CameraManager.Instance.ShakeCamera(0.1f);
         yield return new WaitForSeconds(dashTime);
         rb.gravityScale =   playerMovement.gravityScale;
         pState.dashing = false;

@@ -40,6 +40,11 @@ public class PlayerMovement : MonoBehaviour
     [TabGroup("Jumping"), ReadOnly, LabelText("Current Jump Count")]
     public int jumpCount = 0;
 
+    [TabGroup("Jumping"), LabelText("LandEffect")]
+    [SerializeField] private ParticleSystem landEffect;
+    [TabGroup("Jumping"), LabelText("Land Effect Position")]
+    [SerializeField] private float landPosition=1f;
+
     [TabGroup("Ground Check")]
     [SerializeField] private Transform groundCheck;
 
@@ -274,9 +279,20 @@ public class PlayerMovement : MonoBehaviour
        
 
     }
+    private bool wasGrounded = false;
+
     public void UpdateJumpVariables(bool jumpInput)
     {
-        if (IsGrounded())
+        bool isGrounded = IsGrounded();
+
+        if (isGrounded && !wasGrounded)
+        {
+            OnLand(); // Chiamata quando il giocatore atterra
+        }
+
+        wasGrounded = isGrounded;
+
+        if (isGrounded)
         {
             pState.jumping = false;
             coyoteTimeCounter = coyoteTime;
@@ -286,10 +302,12 @@ public class PlayerMovement : MonoBehaviour
         {
             coyoteTimeCounter -= Time.deltaTime;
         }
-        if (jumpInput&&!pState.hooked)
+
+        if (jumpInput && !pState.hooked)
         {
             jumpBufferCounter = jumpBufferFrames;
             gravityScale = jumpGScale;
+            
         }
         else
         {
@@ -298,9 +316,15 @@ public class PlayerMovement : MonoBehaviour
                 jumpBufferCounter -= Time.deltaTime * 10;
                 gravityScale = fallGScale;
             }
-            
         }
     }
+
+    
+    private void OnLand()
+    {
+        EffectManager.Instance.PlayOneShot(landEffect, transform.position+Vector3.down*landPosition);
+    }
+
     public IEnumerator WalkIntoNewScene(Vector2 _exitDir, float _delay)
     {
 
