@@ -7,6 +7,9 @@ public class PlayerTransform : MonoBehaviour
     private float timeSinceLastTransform = 0f;
     private float transformCooldown = 1f; // Cooldown time in seconds
     public static event System.Action OnTransform; // Event to notify when transformation occurs
+    [SerializeField] GameObject baseGO;
+    [SerializeField] GameObject agileGO;
+    [SerializeField] GameObject strongGO;
     private CapsuleCollider2D collider;
     
     
@@ -91,9 +94,13 @@ public class PlayerTransform : MonoBehaviour
     void ChangeSprite(int transformationIndex)
     {
         var transformation = playerTransformations[transformationIndex];
-        Player.Instance.animator.runtimeAnimatorController = transformation.animatorController;
-        Player.Instance.playerTransformation = transformation;
         
+        Player.Instance.playerTransformation = transformation;
+        baseGO.SetActive(transformationIndex == 0);
+        agileGO.SetActive(transformationIndex == 1);
+        strongGO.SetActive(transformationIndex == 2);
+        
+
         collider.size = transformation.colliderSize;
         collider.offset = transformation.colliderOffset;
         transform.localScale = transformation.transformationScale;

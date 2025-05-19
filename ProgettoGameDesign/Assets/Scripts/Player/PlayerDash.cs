@@ -15,13 +15,26 @@ public class PlayerDash : MonoBehaviour
     private Rigidbody2D rb;
     private Animator animator;
     private bool canDash = true;
+    private void OnEnable()
+    {
+        PlayerTransform.OnTransform += ChangeVariables;
+    }
+    private void OnDisable()
+    {
+        PlayerTransform.OnTransform -= ChangeVariables;
+    }
     private void Start()
     {
         pState = GetComponent<PlayerStateList>();
         rb = GetComponent<Rigidbody2D>();
-        animator = GetComponent<Animator>();
+        animator = Player.Instance.animator;
         playerMovement = GetComponent<PlayerMovement>();
     }
+    void ChangeVariables()
+    {
+        animator = Player.Instance.animator;
+    }
+
     public void DoDash(bool dashed) { 
         if (canDash && !pState.dashing && dashed)
         {

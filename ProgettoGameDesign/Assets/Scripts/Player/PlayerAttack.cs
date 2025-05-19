@@ -28,12 +28,12 @@ public class PlayerAttack : MonoBehaviour
     PlayerCast playerSpell;
     private void Start()
     {
-        pState = GetComponent<PlayerStateList>();
-        rb = GetComponent<Rigidbody2D>();
-        animator = GetComponent<Animator>();
-        playerMovement = GetComponent<PlayerMovement>();
-        playerHealth = GetComponent<PlayerHealth>();
-        playerSpell = GetComponent<PlayerCast>();
+        pState = Player.Instance.pState;
+        rb = Player.Instance.rb;
+        animator = Player.Instance.animator;
+        playerMovement = Player.Instance.playerMovement;
+        playerHealth = Player.Instance.playerHealth;
+        playerSpell = Player.Instance.playerSpell;
     }
     private void Update()
     {
@@ -41,6 +41,7 @@ public class PlayerAttack : MonoBehaviour
     }
     void UpdateVariables()
     {
+        animator = Player.Instance.animator;
         damage = Player.Instance.playerTransformation.attackDamage;
         
     }

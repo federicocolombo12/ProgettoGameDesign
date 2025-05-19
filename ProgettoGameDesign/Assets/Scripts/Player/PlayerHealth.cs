@@ -38,21 +38,26 @@ public class PlayerHealth : MonoBehaviour
     void OnEnable()
     {
         PlayerTransform.OnTransform += SetDamageMultiplier;
+        PlayerTransform.OnTransform += UpdateVariables;
     }
     void OnDisable()
     {
         PlayerTransform.OnTransform -= SetDamageMultiplier;
+        PlayerTransform.OnTransform -= UpdateVariables;
     }
     private void Start()
     {
-        pState = GetComponent<PlayerStateList>();
-        playerMovement = GetComponent<PlayerMovement>();
-        animator = GetComponent<Animator>();
+        pState = Player.Instance.pState;
+        playerMovement = Player.Instance.playerMovement;
+        animator = Player.Instance.animator;
         Health = maxHealth;
-        sr = GetComponent<SpriteRenderer>();
+        sr = GetComponentInChildren<SpriteRenderer>();
         Mana = mana;
         manaStorage.fillAmount = mana;
         pState.alive = true;
+    }
+    void UpdateVariables(){
+        animator = Player.Instance.animator;
     }
 
     void SetDamageMultiplier()

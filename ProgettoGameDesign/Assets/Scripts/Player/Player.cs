@@ -30,9 +30,6 @@ public class Player : MonoBehaviour
         {
             Destroy(gameObject);
         }
-    }
-    void Start()
-    {
         playerAttack = GetComponent<PlayerAttack>();
         playerHealth = GetComponent<PlayerHealth>();
         playerMovement = GetComponent<PlayerMovement>();
@@ -44,9 +41,9 @@ public class Player : MonoBehaviour
         playerCameraHandler = GetComponent<PlayerCameraHandler>();
         pState = GetComponent<PlayerStateList>();
         rb = GetComponent<Rigidbody2D>();
-        animator = GetComponent<Animator>();
-
+        animator = GetComponentInChildren<Animator>();
     }
+    
 
     // Update is called once per frame
     void Update()

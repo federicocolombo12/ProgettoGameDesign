@@ -93,7 +93,7 @@ public class PlayerMovement : MonoBehaviour
     void Start()
     {
         rb = GetComponent<Rigidbody2D>();
-        animator = GetComponent<Animator>();
+        animator = Player.Instance.animator;
         pState = GetComponent<PlayerStateList>();
         gravityScale = rb.gravityScale;
         cameraFollowObject = cameraFollowGO.GetComponent<CameraFollowObject>();
@@ -103,6 +103,7 @@ public class PlayerMovement : MonoBehaviour
     // Update is called once per frame
     void UpdateVariables()
     {
+        animator = Player.Instance.animator;
         speed = Player.Instance.playerTransformation.moveSpeed;
         jumpForce = Player.Instance.playerTransformation.jumpForce;
         maxJumpCount = Player.Instance.playerTransformation.jumpCount;
