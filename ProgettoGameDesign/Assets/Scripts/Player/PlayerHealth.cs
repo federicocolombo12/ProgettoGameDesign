@@ -171,6 +171,7 @@ public class PlayerHealth : MonoBehaviour
         if (pState.alive)
         {
             Health -= Mathf.RoundToInt(damage* damageMultiplier);
+            CameraManager.Instance.ShakeCamera(1f);
             if (Health <= 0)
             {
                 Health = 0;
