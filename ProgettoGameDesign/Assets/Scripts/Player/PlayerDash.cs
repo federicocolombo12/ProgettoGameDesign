@@ -14,6 +14,7 @@ public class PlayerDash : MonoBehaviour
     PlayerStateList pState;
     private Rigidbody2D rb;
     private Animator animator;
+    [SerializeField] AnimationCurve gravityCurve;
     private bool canDash = true;
     private void OnEnable()
     {
@@ -25,10 +26,10 @@ public class PlayerDash : MonoBehaviour
     }
     private void Start()
     {
-        pState = GetComponent<PlayerStateList>();
-        rb = GetComponent<Rigidbody2D>();
+        pState = Player.Instance.pState;
+        rb = Player.Instance.rb;
         animator = Player.Instance.animator;
-        playerMovement = GetComponent<PlayerMovement>();
+        playerMovement = Player.Instance.playerMovement;
     }
     void ChangeVariables()
     {
@@ -48,17 +49,24 @@ public class PlayerDash : MonoBehaviour
         canDash = false;
         pState.dashing = true;
         animator.SetTrigger("Dashing");
-        rb.gravityScale = 0;
+        
+        while (rb.gravityScale !=0){
+                rb.gravityScale = 0;
+                yield return null;
+        }
+        
         rb.linearVelocity = new Vector2(rb.linearVelocity.x * dashSpeed, 0);
         
         
         EffectManager.Instance.PlayOneShot(dashEffect.GetComponent<ParticleSystem>(), transform.position+Vector3.down*effectPosition);
         CameraManager.Instance.ShakeCamera(0.1f);
         yield return new WaitForSeconds(dashTime);
-        rb.gravityScale =   playerMovement.gravityScale;
+        
         pState.dashing = false;
+        rb.gravityScale =   playerMovement.gravityScale;
         yield return new WaitForSeconds(dashCooldown);
         canDash = true;
+        
         
     }
 }

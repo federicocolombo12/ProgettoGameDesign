@@ -199,7 +199,7 @@ public class PlayerMovement : MonoBehaviour
         }
         else
         {
-            if (!pState.hooked)
+            if (!pState.hooked && !pState.dashing)
             {
                 pState.sticking = false;
                 rb.gravityScale = gravityScale;
@@ -304,16 +304,18 @@ public class PlayerMovement : MonoBehaviour
             coyoteTimeCounter -= Time.deltaTime;
         }
 
-        if (jumpInput && !pState.hooked)
+        if (jumpInput && !pState.hooked &&  !pState.dashing)
         {
             jumpBufferCounter = jumpBufferFrames;
+            Debug.Log("gravityScale: " + gravityScale);
             gravityScale = jumpGScale;
             
         }
         else
         {
-            if (!pState.hooked)
+            if (!pState.hooked && !pState.dashing)
             {
+               Debug.Log("gravityScale: " + gravityScale);
                 jumpBufferCounter -= Time.deltaTime * 10;
                 gravityScale = fallGScale;
             }

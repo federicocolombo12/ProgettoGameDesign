@@ -42,15 +42,18 @@ public class Player : MonoBehaviour
         pState = GetComponent<PlayerStateList>();
         rb = GetComponent<Rigidbody2D>();
         animator = GetComponentInChildren<Animator>();
+        sr = GetComponentInChildren<SpriteRenderer>();
     }
     
 
     // Update is called once per frame
-    void Update()
+    void FixedUpdate()
     {
+        
        
         playerMovement.Stick(playerInput.directionalInput, playerInput.jumpInput);
         if (pState.dashing) return;
+       
         playerHealth.RestoreTimeScale();
         if (pState.hooked) return;
         playerMovement.UpdateJumpVariables(playerInput.jumpInput);
@@ -77,6 +80,7 @@ public class Player : MonoBehaviour
         playerInteract.PlayerCheckForInteractables(playerInput.interact);
         
     }
+    
     void LateUpdate()
     {
         playerCameraHandler.CameraYDamping();
