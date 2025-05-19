@@ -44,7 +44,14 @@ public class Player : MonoBehaviour
         animator = GetComponentInChildren<Animator>();
         sr = GetComponentInChildren<SpriteRenderer>();
     }
-    
+    private void OnEnable()
+    {
+        PlayerTransform.OnTransform += SetReferences;
+    }
+    private void OnDisable()
+    {
+        PlayerTransform.OnTransform -= SetReferences;
+    }
 
     // Update is called once per frame
     void FixedUpdate()
@@ -84,6 +91,10 @@ public class Player : MonoBehaviour
     void LateUpdate()
     {
         playerCameraHandler.CameraYDamping();
+    }
+    void SetReferences()
+    {
+        animator = GetComponentInChildren<Animator>();
     }
 
     public void RespawnAt(Vector2 position)

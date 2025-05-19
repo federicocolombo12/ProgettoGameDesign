@@ -2,6 +2,7 @@
 using System.Collections;
 using Sirenix.OdinInspector;
 using Unity.Cinemachine;
+using DG.Tweening;
 
 public class PlayerMovement : MonoBehaviour
 {
@@ -103,10 +104,14 @@ public class PlayerMovement : MonoBehaviour
     // Update is called once per frame
     void UpdateVariables()
     {
-        animator = Player.Instance.animator;
-        speed = Player.Instance.playerTransformation.moveSpeed;
-        jumpForce = Player.Instance.playerTransformation.jumpForce;
-        maxJumpCount = Player.Instance.playerTransformation.jumpCount;
+        DOVirtual.DelayedCall(0.1f, () =>
+        {
+            animator = Player.Instance.animator;
+            speed = Player.Instance.playerTransformation.moveSpeed;
+            jumpForce = Player.Instance.playerTransformation.jumpForce;
+            maxJumpCount = Player.Instance.playerTransformation.jumpCount;
+        });
+        
     }
     private void TurnCheck(Vector2 directionalInput)
     {

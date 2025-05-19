@@ -10,21 +10,21 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 15c4b7b544189c24ebf7d140ea5e6685, type: 3}
-  m_Name: Wolf
+  m_Name: Agile
   m_EditorClassIdentifier: 
-  index: 2
-  abilityType: 4
-  maxHealth: 6
-  damageMultiplier: 3
-  moveSpeed: 5
-  jumpForce: 5
-  jumpCount: 0
-  dashSpeed: 8
-  attackDamage: 5
+  index: 1
+  abilityType: 2
+  maxHealth: 3
+  damageMultiplier: 2
+  moveSpeed: 10
+  jumpForce: 10
+  jumpCount: 10
+  dashSpeed: 10
+  attackDamage: 1
   attackSpeed: 0
   spellDamage: 1
-  baseSprite: {fileID: 348132329, guid: f724fb7d020a0d047aa3ecff98ff3d34, type: 3}
-  animatorController: {fileID: 9100000, guid: dab8144b4dc40d54d854714dab625fae, type: 2}
+  baseSprite: {fileID: 3526732155374269853, guid: 0923fcf6d18c22b4e833b0bfb95d3738, type: 3}
+  animatorController: {fileID: 9100000, guid: c1ddf30cc83a5f840ba7e1545d0a3ba8, type: 2}
   transformationScale: {x: 1, y: 1, z: 1}
-  colliderSize: {x: 1.52, y: 2.15}
-  colliderOffset: {x: 0.17, y: -0.07}
+  colliderSize: {x: 0.399, y: 2.932}
+  colliderOffset: {x: -0.09, y: 1.616}
