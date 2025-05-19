@@ -3,6 +3,7 @@ using UnityEngine.UI;
 using System.Collections;
 using System;
 using System.Xml.Serialization;
+using DG.Tweening;
 
 public class PlayerHealth : MonoBehaviour
 {
@@ -51,13 +52,15 @@ public class PlayerHealth : MonoBehaviour
         playerMovement = Player.Instance.playerMovement;
         animator = Player.Instance.animator;
         Health = maxHealth;
-        sr = GetComponentInChildren<SpriteRenderer>();
+        sr = Player.Instance.sr;
         Mana = mana;
         manaStorage.fillAmount = mana;
         pState.alive = true;
     }
     void UpdateVariables(){
-        animator = Player.Instance.animator;
+
+        DOVirtual.De(0.1f, () => animator = Player.Instance.animator);
+        
     }
 
     void SetDamageMultiplier()
@@ -197,6 +200,12 @@ public class PlayerHealth : MonoBehaviour
     }
     public void FlashWhileInvincible()
     {
+        if (sr == null)
+        {
+            return;
+        }
+           // Use true to include inactive objects
+
         sr.material.color = pState.invincible ? Color.Lerp(Color.white, Color.black, Mathf.PingPong(Time.time * hitFlashSpeed, 1.0f)) : Color.white;
     }
 

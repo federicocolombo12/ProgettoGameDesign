@@ -120,7 +120,11 @@ public class Enemy : MonoBehaviour
     private void EnemyWeakness()
     {
         currentDamage = damage;
-        sr.material = flashMaterial;
+        if (sr!= null)
+        {
+            sr.material = flashMaterial;
+        }
+       
 
         if (weakTo == Player.Instance.playerTransformation)
         {
