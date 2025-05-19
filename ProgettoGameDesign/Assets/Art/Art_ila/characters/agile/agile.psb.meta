@@ -1490,7 +1490,7 @@ ScriptedImporter:
     - {x: 27, y: 28}
     tessellationDetail: 0
     uvTransform: {x: 4, y: 331}
-    spritePosition: {x: 435, y: 439}
+    spritePosition: {x: 436, y: 439}
   - name: arm_L
     originalName: 
     pivot: {x: 0.5, y: 0.5}
@@ -1499,7 +1499,7 @@ ScriptedImporter:
     customData: 
     rect:
       serializedVersion: 2
-      x: 126
+      x: 125
       y: 331
       width: 58
       height: 174
@@ -1883,7 +1883,7 @@ ScriptedImporter:
     - {x: 30, y: 31}
     - {x: 31, y: 32}
     tessellationDetail: 0
-    uvTransform: {x: 126, y: 331}
+    uvTransform: {x: 125, y: 331}
     spritePosition: {x: 520, y: 351}
   - name: torso
     originalName: 
@@ -9856,7 +9856,7 @@ ScriptedImporter:
     parentIndex: -1
     spriteID: a09e3b89e4ad4274c93b8ac4e639d2e2
     layerID: -690047347
-    mosaicPosition: {x: 126, y: 331}
+    mosaicPosition: {x: 125, y: 331}
     flatten: 0
     isImported: 1
     isVisible: 1
@@ -9951,12 +9951,12 @@ ScriptedImporter:
     isImported: 1
     isVisible: 1
   - name: Paper
-    spriteName: 
+    spriteName: Paper
     isGroup: 0
     parentIndex: -1
     spriteID: 46f137830719b314586c943486679cbc
     layerID: -1779142660
-    mosaicPosition: {x: 0, y: 0}
+    mosaicPosition: {x: 4, y: 4}
     flatten: 0
     isImported: 0
     isVisible: 0
