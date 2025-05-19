@@ -17,13 +17,10 @@ public class SceneFader : MonoBehaviour
     }
 
     // Update is called once per frame
-    void Update()
-    {
-        
-    }
+    
     public IEnumerator Fade(FadeDirection _fadeDirection)
     {
-        Debug.Log("Fade " + _fadeDirection);
+        
         float _alpha = _fadeDirection == FadeDirection.Out ? 1 : 0;
         float _fadeEndValue = _fadeDirection == FadeDirection.Out ? 0 : 1;
         if (_fadeDirection == FadeDirection.Out)

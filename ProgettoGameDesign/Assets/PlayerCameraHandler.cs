@@ -4,7 +4,7 @@ public class PlayerCameraHandler : MonoBehaviour
 {
     Rigidbody2D rb;
     private float fallSpeedYDampingChangeTreshhold;
-    void Awake()
+    void Start()
     {
         rb = GetComponent<Rigidbody2D>();
         fallSpeedYDampingChangeTreshhold = CameraManager.Instance.fallSpeedYDampingChangeTreshhold;
