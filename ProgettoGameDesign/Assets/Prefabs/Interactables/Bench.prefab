@@ -87,6 +87,7 @@ GameObject:
   - component: {fileID: 7139542483236912015}
   - component: {fileID: 2261021826134115959}
   - component: {fileID: 6182742310173604989}
+  - component: {fileID: 3376689530338601347}
   m_Layer: 7
   m_Name: Bench
   m_TagString: Untagged
@@ -224,6 +225,21 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   interactableUi: {fileID: 0}
+  benchIndex: 0
+  benchIndexVariable: {fileID: 11400000, guid: 287ee11126a84422cb82fba9dd6e7592, type: 2}
+--- !u!114 &3376689530338601347
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8431439118010689875}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4a1a6450bf7ccd340ae4703e9ae366c8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _runtimeSet: {fileID: 11400000, guid: 3097019ec475544d9ad950a34227b4bc, type: 2}
 --- !u!1 &8907465171488533778
 GameObject:
   m_ObjectHideFlags: 0

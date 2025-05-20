@@ -202,6 +202,13 @@
       "dependencies": {},
       "url": "https://packages.unity.com"
     },
+    "com.unity.nuget.newtonsoft-json": {
+      "version": "3.2.1",
+      "depth": 1,
+      "source": "registry",
+      "dependencies": {},
+      "url": "https://packages.unity.com"
+    },
     "com.unity.render-pipelines.core": {
       "version": "17.0.3",
       "depth": 1,
@@ -329,6 +336,15 @@
         "com.unity.modules.jsonserialize": "1.0.0"
       },
       "url": "https://packages.unity.com"
+    },
+    "dev.nicklaj.butter": {
+      "version": "https://github.com/xNicklaj/Butter.git",
+      "depth": 0,
+      "source": "git",
+      "dependencies": {
+        "com.unity.nuget.newtonsoft-json": "3.2.1"
+      },
+      "hash": "1404b2761aed14251365ef411dd8c5e0de5b6b28"
     },
     "com.unity.modules.accessibility": {
       "version": "1.0.0",
