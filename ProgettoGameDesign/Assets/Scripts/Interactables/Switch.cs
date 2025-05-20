@@ -1,18 +1,19 @@
 using System;
 using UnityEngine;
 
-public class Switch : MonoBehaviour, IInteractable
+public class Switch : Interactable
 {
     [SerializeField] private GameObject switchObject;
     private SpriteRenderer sr;
 
-    private void Start()
+    public override void Start()
     {
+        base.Start();
         sr = GetComponent<SpriteRenderer>();
     }
 
     // The object that will be switched
-    public void Interact(GameObject interactor)
+    public override void Interact(GameObject interactor)
     {
         if (switchObject.GetComponent<IInteractable>() != null)
         {
@@ -23,12 +24,7 @@ public class Switch : MonoBehaviour, IInteractable
             Debug.LogWarning("SwitchableObject component not found on the switch object.");
         }
     }
-    public void Detected(GameObject interactor)
-    {
-        // Implement the logic for when the interactor is detected
-        Debug.Log("Switch detected by: " + interactor.name);
-        sr.color = Color.red;
-    }
+    
 }
 
    

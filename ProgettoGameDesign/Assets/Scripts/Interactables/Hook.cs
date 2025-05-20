@@ -1,12 +1,12 @@
 using UnityEngine;
 
-public class Hook : MonoBehaviour, IInteractable
+public class Hook : Interactable
 {
     SpriteRenderer sr;
-    public void Start()
+    public override void Start()
     {
         
-       
+        base.Start();
         sr = GetComponent<SpriteRenderer>();
         sr.color = Color.white;
     }
@@ -19,7 +19,7 @@ public class Hook : MonoBehaviour, IInteractable
             sr.color = Color.white;
         }
     }
-    public void Interact(GameObject interactor)
+    public override void Interact(GameObject interactor)
     {
         if (interactor.GetComponent<PlayerHook>() != null)
         {
@@ -30,14 +30,6 @@ public class Hook : MonoBehaviour, IInteractable
         }
         
     }
-    public void Detected(GameObject interactor)
-    {
-        
-        if (interactor.GetComponent<PlayerHook>() != null)
-        {
-            sr.color = Color.red;
-        }
-        
-    }
+    
     
 }
