@@ -310,6 +310,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: galadriel (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 7820058796863089348, guid: 7b3bd716dd438b342aa73588e44b5dbe, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 8957228511789724327, guid: 7b3bd716dd438b342aa73588e44b5dbe, type: 3}
       propertyPath: m_LocalPosition.x
       value: -0.15835434
@@ -473,6 +477,93 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: f9be12b4849b31048aa683a702074ba2, type: 3}
+--- !u!1001 &7046283979406014646
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 5207331774358639149, guid: 3170cd4aad9757543a74d8c57dbd5249, type: 3}
+      propertyPath: m_Name
+      value: bat
+      objectReference: {fileID: 0}
+    - target: {fileID: 6380529182514547278, guid: 3170cd4aad9757543a74d8c57dbd5249, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6380529182514547278, guid: 3170cd4aad9757543a74d8c57dbd5249, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6380529182514547278, guid: 3170cd4aad9757543a74d8c57dbd5249, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6380529182514547278, guid: 3170cd4aad9757543a74d8c57dbd5249, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6380529182514547278, guid: 3170cd4aad9757543a74d8c57dbd5249, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6380529182514547278, guid: 3170cd4aad9757543a74d8c57dbd5249, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6380529182514547278, guid: 3170cd4aad9757543a74d8c57dbd5249, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6380529182514547278, guid: 3170cd4aad9757543a74d8c57dbd5249, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6380529182514547278, guid: 3170cd4aad9757543a74d8c57dbd5249, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6380529182514547278, guid: 3170cd4aad9757543a74d8c57dbd5249, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 5207331774358639149, guid: 3170cd4aad9757543a74d8c57dbd5249, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 7046283979406014648}
+  m_SourcePrefab: {fileID: 100100000, guid: 3170cd4aad9757543a74d8c57dbd5249, type: 3}
+--- !u!1 &7046283979406014647 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 5207331774358639149, guid: 3170cd4aad9757543a74d8c57dbd5249, type: 3}
+  m_PrefabInstance: {fileID: 7046283979406014646}
+  m_PrefabAsset: {fileID: 0}
+--- !u!95 &7046283979406014648
+Animator:
+  serializedVersion: 7
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7046283979406014647}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: ad146867affa8284a9989e8ac6483ba7, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_AnimatePhysics: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorStateOnDisable: 0
+  m_WriteDefaultValuesOnDisable: 0
 --- !u!1001 &7085016726297507096
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -540,3 +631,4 @@ SceneRoots:
   - {fileID: 7085016726297507096}
   - {fileID: 201530787}
   - {fileID: 1757766791}
+  - {fileID: 7046283979406014646}
