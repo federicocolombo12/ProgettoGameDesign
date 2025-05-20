@@ -353,7 +353,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   imageList:
   - {fileID: 7709380569392148631, guid: fe1cf0ce0732a6947ae495647d7216ae, type: 3}
-  - {fileID: 7221497341766677958, guid: d2176491d8238a0438b8307ed6185987, type: 3}
+  - {fileID: -8595766070677944856, guid: d2176491d8238a0438b8307ed6185987, type: 3}
   - {fileID: 6647251808701394922, guid: 08a3b86766d31c0469efd24ff9edd7ac, type: 3}
   mainImage: {fileID: 2398713234381307362}
   sideImage1: {fileID: 5240793133545034044}
