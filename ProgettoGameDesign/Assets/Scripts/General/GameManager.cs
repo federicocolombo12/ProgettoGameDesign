@@ -44,10 +44,9 @@ public class GameManager : MonoBehaviour
     {
         
         yield return new WaitUntil(() => SceneManager.GetSceneByName(currentGameplayScene).isLoaded);
-       while (bench == null)
+       if (bench == null)
         {
             bench = FindFirstObjectByType<Bench>();
-            yield return null;
         }
         respawnPoint = bench.transform.position;
         player.RespawnAt(respawnPoint);
@@ -72,6 +71,10 @@ public class GameManager : MonoBehaviour
             }
         }
         return null;
+    }
+    public void SetBench(Bench newBench)
+    {
+        bench = newBench;
     }
 
 
