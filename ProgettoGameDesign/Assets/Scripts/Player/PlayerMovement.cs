@@ -312,7 +312,7 @@ public class PlayerMovement : MonoBehaviour
         if (jumpInput && !pState.hooked &&  !pState.dashing)
         {
             jumpBufferCounter = jumpBufferFrames;
-            Debug.Log("gravityScale: " + gravityScale);
+           
             gravityScale = jumpGScale;
             
         }
@@ -320,7 +320,7 @@ public class PlayerMovement : MonoBehaviour
         {
             if (!pState.hooked && !pState.dashing)
             {
-               Debug.Log("gravityScale: " + gravityScale);
+               
                 jumpBufferCounter -= Time.deltaTime * 10;
                 gravityScale = fallGScale;
             }
