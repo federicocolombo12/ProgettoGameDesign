@@ -11,7 +11,7 @@ public class PlayerInteract : MonoBehaviour
     [SerializeField] Vector2 boxSize;
     [SerializeField] float interactionCooldown = 0.5f;
     [SerializeField] float inputThreshold = 0.1f;
-    [SerializeField] private Vector2 interactionDirection = Vector2.right;
+    [SerializeField] private Vector2 interactionDirection = Vector2.zero;
     private Vector2 directionalInput;
     
     private float interactionTimer;
@@ -24,6 +24,7 @@ public class PlayerInteract : MonoBehaviour
     private void Update()
     {
         directionalInput = Player.Instance.playerInput.directionalInput;
+        
         if (directionalInput.magnitude > inputThreshold)
         {
             interactionDirection = directionalInput.normalized;
@@ -37,8 +38,10 @@ public class PlayerInteract : MonoBehaviour
             interactionTimer += Time.deltaTime;
         }
 
-        Vector2 direction = interactionDirection;
+        Vector2 direction = directionalInput != Vector2.zero ? interactionDirection : directionalInput;
+       
         Vector2 boxCenter = (Vector2)transform.position + (direction * interactDistance);
+       
         Collider2D[] colliders = Physics2D.OverlapBoxAll(boxCenter, boxSize, 0f, interactableLayer);
 
         foreach (Collider2D collider in colliders)
@@ -76,7 +79,7 @@ public class PlayerInteract : MonoBehaviour
     }
     private void OnDrawGizmosSelected()
     {
-        Vector2 direction = interactionDirection;
+        Vector2 direction = directionalInput != Vector2.zero ? interactionDirection : directionalInput;
         Vector2 boxCenter = (Vector2)transform.position + direction * interactDistance;
 
         Gizmos.color = Color.green;
