@@ -2266,6 +2266,10 @@ PrefabInstance:
       propertyPath: cameraFollowGO
       value: 
       objectReference: {fileID: 291414996}
+    - target: {fileID: 5724241300214373168, guid: 1e5e95d1c8d2a664aa123a5933f1c74e, type: 3}
+      propertyPath: m_Controller
+      value: 
+      objectReference: {fileID: 22100000, guid: d6081304b48124a4f803063493dcfc9f, type: 2}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
