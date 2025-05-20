@@ -92368,6 +92368,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Archer_Prefab
       objectReference: {fileID: 0}
+    - target: {fileID: 3698753111342054293, guid: 4cb7c5967ceb34f6a9baec0d9cf62b9f, type: 3}
+      propertyPath: m_LinearDamping
+      value: 27.13
+      objectReference: {fileID: 0}
     - target: {fileID: 4961024633759505629, guid: 4cb7c5967ceb34f6a9baec0d9cf62b9f, type: 3}
       propertyPath: m_LocalPosition.x
       value: 10.64

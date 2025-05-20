@@ -26,5 +26,5 @@ MonoBehaviour:
   baseSprite: {fileID: 348132329, guid: f724fb7d020a0d047aa3ecff98ff3d34, type: 3}
   animatorController: {fileID: 9100000, guid: dab8144b4dc40d54d854714dab625fae, type: 2}
   transformationScale: {x: 1, y: 1, z: 1}
-  colliderSize: {x: 1.52, y: 2.15}
-  colliderOffset: {x: 0.17, y: -0.07}
+  colliderSize: {x: 1.6, y: 3.26}
+  colliderOffset: {x: 0, y: -0.26}

@@ -39,7 +39,9 @@ public class PlayerTransform : MonoBehaviour
         currentForm = Form.Human;
         timeSinceLastTransform = transformCooldown; // Start with cooldown ready
         collider = GetComponent<CapsuleCollider2D>();
-        
+        IterateMaterials(0); // Inizializza i materiali per la forma umana
+        IterateMaterials(1); // Inizializza i materiali per la forma agile
+        IterateMaterials(2); // Inizializza i materiali per la forma forte
     
     }
     private void Update()
@@ -114,7 +116,7 @@ public class PlayerTransform : MonoBehaviour
         baseGO.SetActive(transformationIndex == 0);
         agileGO.SetActive(transformationIndex == 1);
         strongGO.SetActive(transformationIndex == 2);
-        IterateMaterials(transformationIndex);
+        
         
         collider.size = transformation.colliderSize;
         collider.offset = transformation.colliderOffset;
