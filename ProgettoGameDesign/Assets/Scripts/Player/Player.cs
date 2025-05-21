@@ -1,3 +1,4 @@
+using DG.Tweening;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
@@ -94,7 +95,8 @@ public class Player : MonoBehaviour
     }
     void SetReferences()
     {
-        animator = GetComponentInChildren<Animator>();
+        DOVirtual.DelayedCall(0.1f, () => animator = Player.Instance.animator);
+        
     }
 
     public void RespawnAt(Vector2 position)
