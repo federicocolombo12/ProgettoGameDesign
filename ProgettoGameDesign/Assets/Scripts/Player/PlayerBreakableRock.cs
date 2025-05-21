@@ -8,7 +8,7 @@ public class PlayerBreakableRock : MonoBehaviour
 
     [SerializeField] private float chargeSpeed = 10f;
     [SerializeField] private float chargeDuration = 0.5f;
-    [SerializeField] SfxData breakRockSfx;
+    [SerializeField] private SfxData breakRockSfx;
 
     private bool isCharging = false;
     private Transform targetRock;
@@ -36,6 +36,13 @@ public class PlayerBreakableRock : MonoBehaviour
     {
         pState.dashing = true;
         isCharging = true;
+
+        // Attiva animazione charge (Sability = true)
+        if (Player.Instance.animator != null)
+        {
+            Player.Instance.animator.SetBool("SpAbility", true);
+        }
+
         AudioManager.Instance.sfxChannel.RaiseEvent(breakRockSfx);
         CameraManager.Instance.ShakeCamera(0.3f);
 
@@ -52,6 +59,12 @@ public class PlayerBreakableRock : MonoBehaviour
         rb.linearVelocity = Vector2.zero;
         pState.dashing = false;
         isCharging = false;
+
+        // Disattiva animazione charge (Sability = false)
+        if (Player.Instance.animator != null)
+        {
+            Player.Instance.animator.SetBool("SpAbility", false);
+        }
     }
 
     private void OnCollisionEnter2D(Collision2D collision)
