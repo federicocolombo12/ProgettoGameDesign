@@ -11,7 +11,7 @@ public class Enemy : MonoBehaviour
     
     protected Material standardMaterial;
     public float health;
-    [SerializeField] float maxHealth = 100f;
+    [SerializeField] protected float maxHealth = 100f;
     [SerializeField] protected float recoilLenght;
     [SerializeField] protected float recoilFactor;
     [SerializeField] protected bool isRecoiling = false;

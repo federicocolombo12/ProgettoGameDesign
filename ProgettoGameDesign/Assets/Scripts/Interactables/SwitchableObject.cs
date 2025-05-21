@@ -9,8 +9,9 @@ public class SwitchableObject : Interactable
     bool isOpen = false;
     
 
-    private void Start()
+    public override void Start()
     {
+        base.Start();
         startPos = transform.position;
     
     }

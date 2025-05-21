@@ -11,6 +11,7 @@ public class GameManager : MonoBehaviour
     public Vector2 platformRespawnPoint;
     public Vector2 respawnPoint;
     public string currentGameplayScene;
+    bool loaded;
     [SerializeField] Bench currentBench;
     [SerializeField] Bench[] benchList;
     [SerializeField] GameEvent saveGameEvent;
@@ -49,7 +50,9 @@ public class GameManager : MonoBehaviour
     private IEnumerator WaitThenRespawn(Player player)
     {
         
-        yield return new WaitUntil(() => SceneManager.GetSceneByName(currentGameplayScene).isLoaded);
+        yield return new WaitUntil(() => loaded);
+        loadGameEvent.Raise();
+        
         for (int i = 0; i < benchSet.Items.Count; i++)
         {
             Debug.Log(benchSet.Items[i].GetComponent<Bench>().benchIndex);
@@ -59,10 +62,11 @@ public class GameManager : MonoBehaviour
                 currentBench = benchSet.Items[i].GetComponent<Bench>();
                 break;
             }
-        } 
-        
+        }
+
         respawnPoint = currentBench.transform.position;
         player.RespawnAt(respawnPoint);
+        loaded = false;
     }
 
     private void ResetScene()
@@ -73,7 +77,10 @@ public class GameManager : MonoBehaviour
         {
             
 
-            SceneManager.LoadScene(currentGameplayScene, LoadSceneMode.Additive);
+            SceneManager.LoadSceneAsync(currentGameplayScene, LoadSceneMode.Additive).completed += (op2) =>
+            {
+                loaded = true;
+            };
             
             
         };

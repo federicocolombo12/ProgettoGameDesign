@@ -9,17 +9,19 @@ public class MinibossManager : MonoBehaviour
     [SerializeField] AudioClip bossFightMusic;
     [SerializeField] CanvasGroup bossHealthCanvas;
     BehaviorTree bossBt;
-    
+
     private void OnEnable()
     {
         StartBossfight.OnBossfightStart += OnBossFightStart;
         Miniboss.OnEnemyDeath += OnMinibossDeath;
+        
     }
     private void Start()
     {
         bossBt = GetComponentInChildren<BehaviorTree>();
         bossBt.DisableBehavior();
         bossHealthCanvas.alpha = 0;
+        bossFightDoor = FindAnyObjectByType<SwitchableObject>();
     }
 
     private void OnBossFightStart()
