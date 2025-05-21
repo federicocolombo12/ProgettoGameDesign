@@ -36,13 +36,13 @@ public class PlayerTransform : MonoBehaviour
     private void Start()
     {
         // Initialize the current form to Human
-        currentForm = Form.Human;
+        
         timeSinceLastTransform = transformCooldown; // Start with cooldown ready
         collider = GetComponent<CapsuleCollider2D>();
         IterateMaterials(0); // Inizializza i materiali per la forma umana
         IterateMaterials(1); // Inizializza i materiali per la forma agile
         IterateMaterials(2); // Inizializza i materiali per la forma forte
-    
+        ChangeState(Form.Human, 0); // Inizializza la forma umana
     }
     private void Update()
     {
