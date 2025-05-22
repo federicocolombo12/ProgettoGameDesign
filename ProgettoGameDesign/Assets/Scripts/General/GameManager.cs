@@ -63,7 +63,7 @@ public class GameManager : MonoBehaviour
                 break;
             }
         }
-
+        
         respawnPoint = currentBench.transform.position;
         player.RespawnAt(respawnPoint);
         loaded = false;

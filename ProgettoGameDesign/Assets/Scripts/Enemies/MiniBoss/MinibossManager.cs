@@ -5,7 +5,7 @@ using UnityEngine;
 
 public class MinibossManager : MonoBehaviour
 {
-    [SerializeField] SwitchableObject bossFightDoor;
+    
     [SerializeField] AudioClip bossFightMusic;
     [SerializeField] CanvasGroup bossHealthCanvas;
     BehaviorTree bossBt;
@@ -16,16 +16,23 @@ public class MinibossManager : MonoBehaviour
         Miniboss.OnEnemyDeath += OnMinibossDeath;
         
     }
+    private void OnDisable()
+    {
+        StartBossfight.OnBossfightStart -= OnBossFightStart;
+        Miniboss.OnEnemyDeath -= OnMinibossDeath;
+        
+    }
     private void Start()
     {
         bossBt = GetComponentInChildren<BehaviorTree>();
         bossBt.DisableBehavior();
         bossHealthCanvas.alpha = 0;
-        bossFightDoor = FindAnyObjectByType<SwitchableObject>();
+        
     }
 
     private void OnBossFightStart()
     {
+        SwitchableObject bossFightDoor = FindFirstObjectByType<SwitchableObject>();
         bossFightDoor.Open();
         AudioManager.Instance.PlayMusic(bossFightMusic, 1f);
         bossBt.EnableBehavior();
@@ -33,6 +40,7 @@ public class MinibossManager : MonoBehaviour
     }
     private void OnMinibossDeath()
     {
+        SwitchableObject bossFightDoor = FindFirstObjectByType<SwitchableObject>();
         bossFightDoor.Close();
         
     }
