@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: BaseClass
   m_EditorClassIdentifier: 
   index: 0
-  abilityType: 0
+  abilityType: 1
   maxHealth: 5
   damageMultiplier: 1
   moveSpeed: 8

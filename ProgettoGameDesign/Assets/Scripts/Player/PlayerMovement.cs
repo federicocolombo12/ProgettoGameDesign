@@ -66,6 +66,8 @@ public class PlayerMovement : MonoBehaviour
 
     [TabGroup("Wall Jump"), LabelText("Wall Speed")]
     [SerializeField] private float wallSpeed = 2f;
+    [TabGroup("Wall Jump"), LabelText("Stick Distance")]
+    [SerializeField] private float stickDistance;
 
     [TabGroup("Wall Jump"), LabelText("Stick Timer Max")]
     [SerializeField] private float stickTimerMax = 0.5f;
@@ -173,44 +175,55 @@ public class PlayerMovement : MonoBehaviour
     public bool IsTouchingStickyWall()
     {
         Debug.DrawRay(transform.position, Vector2.right * (pState.lookingRight ? 1 : -1), Color.red);
-        return Physics2D.Raycast(transform.position, Vector2.right * (pState.lookingRight ? 1 : -1), 2f, wallLayer);
+        return Physics2D.Raycast(transform.position, Vector2.right * (pState.lookingRight ? 1 : -1), stickDistance, wallLayer);
         
     }
 
     public void Stick(Vector2 directionalInput, bool jumpInput)
     {
-        if (IsTouchingStickyWall())
+        if (Player.Instance.playerTransformation.abilityType == PlayerTransformation.AbilityType.WallSlide)
         {
-            pState.sticking = true;
-            rb.gravityScale = stickGravityScale;
-            Vector2 newVelocity = new Vector2(rb.linearVelocity.x, wallSpeed* directionalInput.y);
-            rb.linearVelocity = newVelocity;
-            
-            
-           
-            
-            
-            if (jumpInput&&directionalInput.x!=0)
+            if (IsTouchingStickyWall())
             {
-                
-                pState.sticking = false;
-                float jumpDirection = pState.lookingRight ? -1 : 1;
-                rb.linearVelocity = new Vector2(jumpDirection*rb.linearVelocity.x, jumpForce);
-                
-                
-            }
-            
+                pState.sticking = true;
+                animator.SetBool("Jumping", false);
+                rb.gravityScale = stickGravityScale;
 
-        }
-        else
-        {
-            if (!pState.hooked && !pState.dashing)
-            {
-                pState.sticking = false;
-                rb.gravityScale = gravityScale;
+                Vector2 newVelocity = new Vector2(0, wallSpeed * directionalInput.y);
+                rb.linearVelocity = newVelocity;
+                animator.SetBool("SpAbility", directionalInput.y!=0);
+
+
+
+
+                if (jumpInput && directionalInput.x != 0)
+                {
+
+                    pState.sticking = false;
+                    float jumpDirection = pState.lookingRight ? -1 : 1;
+                    rb.linearVelocity = new Vector2(jumpDirection * rb.linearVelocity.x, jumpForce);
+
+
+                }
+
+
             }
+            else
+            {
+                if (!pState.hooked && !pState.dashing)
+                {
+                    pState.sticking = false;
+                    rb.gravityScale = gravityScale;
+                }
+                
+                 animator.SetBool("SpAbility", false);
+                
+            }
+
             
         }
+        
+        
     }
     public void Jump(bool jumpInput)
     {
@@ -272,13 +285,13 @@ public class PlayerMovement : MonoBehaviour
                         pState.jumping = true;
                         jumpCount++;
                         rb.linearVelocity = new Vector2(rb.linearVelocity.x, jumpForce);
-                
+                        animator.SetBool("Jumping", true);
 
 
                     }
 
                 }
-                animator.SetBool("Jumping", !IsGrounded());
+               
             }
         }
         
@@ -286,6 +299,7 @@ public class PlayerMovement : MonoBehaviour
 
     }
     private bool wasGrounded = false;
+    
 
     public void UpdateJumpVariables(bool jumpInput)
     {
