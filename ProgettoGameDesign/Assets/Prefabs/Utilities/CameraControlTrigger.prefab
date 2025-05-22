@@ -96,6 +96,6 @@ MonoBehaviour:
     panCameraOnContact: 1
     cameraOnLeft: {fileID: 0}
     cameraOnRight: {fileID: 0}
-    panDirection: 2
+    panDirection: 3
     panDistance: 3
     panTime: 0.35
