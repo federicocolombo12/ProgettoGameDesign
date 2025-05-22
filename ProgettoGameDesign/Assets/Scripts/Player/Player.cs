@@ -6,6 +6,7 @@ public class Player : MonoBehaviour
 {
     public static Player Instance { get; private set; }
     public Rigidbody2D rb;
+
     public Animator animator;
     public PlayerStateList pState;
     public PlayerTransformation playerTransformation;
@@ -95,7 +96,7 @@ public class Player : MonoBehaviour
     }
     void SetReferences()
     {
-        DOVirtual.DelayedCall(0.1f, () => animator = Player.Instance.animator);
+        animator = GetComponentInChildren<Animator>();
         
     }
 

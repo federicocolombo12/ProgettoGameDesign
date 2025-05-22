@@ -209,13 +209,15 @@ public class PlayerHealth : MonoBehaviour
     IEnumerator Death()
     {
         pState.alive = false;
-        Time.timeScale = 0;
+        Time.timeScale= 0.0f;
         GameObject schizzoSangue = Instantiate(blood, transform);
         Destroy(schizzoSangue, 1.5f);
         animator.SetTrigger("Death");
 
         yield return new WaitForSecondsRealtime(1.2f);
+
         GameManager.Instance.RespawnPlayer(Player.Instance);
+        Time.timeScale = 1.0f;
     }
 
     public void Respawned()
