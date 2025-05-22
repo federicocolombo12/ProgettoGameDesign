@@ -92474,9 +92474,21 @@ PrefabInstance:
       propertyPath: m_Name
       value: Archer_Prefab
       objectReference: {fileID: 0}
+    - target: {fileID: 3686974206502128255, guid: 4cb7c5967ceb34f6a9baec0d9cf62b9f, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 3686974206502128255, guid: 4cb7c5967ceb34f6a9baec0d9cf62b9f, type: 3}
+      propertyPath: m_TagString
+      value: Enemy
+      objectReference: {fileID: 0}
     - target: {fileID: 3698753111342054293, guid: 4cb7c5967ceb34f6a9baec0d9cf62b9f, type: 3}
       propertyPath: m_LinearDamping
       value: 27.13
+      objectReference: {fileID: 0}
+    - target: {fileID: 4357849271651304176, guid: 4cb7c5967ceb34f6a9baec0d9cf62b9f, type: 3}
+      propertyPath: m_Layer
+      value: 6
       objectReference: {fileID: 0}
     - target: {fileID: 4961024633759505629, guid: 4cb7c5967ceb34f6a9baec0d9cf62b9f, type: 3}
       propertyPath: m_LocalPosition.x
@@ -92591,6 +92603,14 @@ PrefabInstance:
     - target: {fileID: 5811918271613213691, guid: a3fe3c97345c38f4a90301a68c363736, type: 3}
       propertyPath: m_Name
       value: Sentinel_Prefab
+      objectReference: {fileID: 0}
+    - target: {fileID: 5811918271613213691, guid: a3fe3c97345c38f4a90301a68c363736, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 5811918271613213691, guid: a3fe3c97345c38f4a90301a68c363736, type: 3}
+      propertyPath: m_TagString
+      value: Enemy
       objectReference: {fileID: 0}
     - target: {fileID: 9026717422995644124, guid: a3fe3c97345c38f4a90301a68c363736, type: 3}
       propertyPath: m_LocalPosition.x
