@@ -18,8 +18,10 @@ public class PlayerTransform : MonoBehaviour
     [SerializeField] List<Material> agileMaterials;
     [SerializeField] List<Material> strongMaterials;
     [SerializeField] List<Animator> animators;
+    [SerializeField] ParticleSystem effectParticle;
     ParticleSystem transformationParticle;
     [SerializeField] List<Color> transformationColors;
+    [SerializeField] float dissolveTimer = 0.5f; // Time for the dissolve effect
     private int lastTransformationIndex = 0;
 
 
@@ -101,17 +103,18 @@ public class PlayerTransform : MonoBehaviour
     }
 
     void ChangeState(Form nextForm, int transformationIndex)
-{
-    currentForm = nextForm;
-    
-    AnimateMaterialValues(lastTransformationIndex, transformationIndex); // prima di cambiare sprite
-    ChangeSprite(transformationIndex);
+    {
+        currentForm = nextForm;
 
-    timeSinceLastTransform = 0f;
-    OnTransform?.Invoke();
-    
-    lastTransformationIndex = transformationIndex; // aggiorna dopo l'animazione
-}
+        AnimateMaterialValues(lastTransformationIndex, transformationIndex); // prima di cambiare sprite
+        ChangeSprite(transformationIndex);
+
+        timeSinceLastTransform = 0f;
+        OnTransform?.Invoke();
+
+        lastTransformationIndex = transformationIndex; // aggiorna dopo l'animazione
+    }
+
 
     void ChangeSprite(int transformationIndex)
     {
@@ -130,7 +133,7 @@ public class PlayerTransform : MonoBehaviour
       
         transformationParticle.Play();
         Player.Instance.animator = animators[transformationIndex];
-        
+        EffectManager.Instance.PlayOneShot(effectParticle, transform.position);
         collider.size = transformation.colliderSize;
         collider.offset = transformation.colliderOffset;
         transform.localScale = transformation.transformationScale;
@@ -189,7 +192,7 @@ public class PlayerTransform : MonoBehaviour
         {
             if (mat.HasProperty("_DissolveAmount"))
             {
-                mat.DOFloat(0f, "_DissolveAmount", 0.5f); // dissolve out in 0.5s
+                mat.DOFloat(0f, "_DissolveAmount", dissolveTimer); // dissolve out in 0.5s
             }
             else
             {
@@ -203,7 +206,7 @@ public class PlayerTransform : MonoBehaviour
             if (mat.HasProperty("_DissolveAmount"))
             {
                 mat.SetFloat("_DissolveAmount", 0f); // forza inizio da 1
-                mat.DOFloat(1f, "_DissolveAmount", 0.5f); // dissolve in in 0.5s
+                mat.DOFloat(1f, "_DissolveAmount", dissolveTimer); // dissolve in in 0.5s
             }
             else
             {

@@ -2407,6 +2407,14 @@ PrefabInstance:
       value: 0.31636888
       objectReference: {fileID: 0}
     - target: {fileID: 4525009401178718108, guid: 1e5e95d1c8d2a664aa123a5933f1c74e, type: 3}
+      propertyPath: dissolveTimer
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4525009401178718108, guid: 1e5e95d1c8d2a664aa123a5933f1c74e, type: 3}
+      propertyPath: effectParticle
+      value: 
+      objectReference: {fileID: 7439269522956233999, guid: 3d8103a1939026d419911cbbd050bb19, type: 3}
+    - target: {fileID: 4525009401178718108, guid: 1e5e95d1c8d2a664aa123a5933f1c74e, type: 3}
       propertyPath: animators.Array.size
       value: 3
       objectReference: {fileID: 0}
@@ -2437,6 +2445,14 @@ PrefabInstance:
     - target: {fileID: 5611603777904443761, guid: 1e5e95d1c8d2a664aa123a5933f1c74e, type: 3}
       propertyPath: m_IsActive
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5786731983210329177, guid: 1e5e95d1c8d2a664aa123a5933f1c74e, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0.91
+      objectReference: {fileID: 0}
+    - target: {fileID: 5786731983210329177, guid: 1e5e95d1c8d2a664aa123a5933f1c74e, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -0.6
       objectReference: {fileID: 0}
     - target: {fileID: 5934535816852666907, guid: 1e5e95d1c8d2a664aa123a5933f1c74e, type: 3}
       propertyPath: m_LocalRotation.z
