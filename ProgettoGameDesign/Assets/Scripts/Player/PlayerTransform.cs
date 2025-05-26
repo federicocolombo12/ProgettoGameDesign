@@ -17,6 +17,8 @@ public class PlayerTransform : MonoBehaviour
     [SerializeField] List<Material> baseMaterials;
     [SerializeField] List<Material> agileMaterials;
     [SerializeField] List<Material> strongMaterials;
+    ParticleSystem transformationParticle;
+    [SerializeField] List<Color> transformationColors;
     private int lastTransformationIndex = 0;
 
 
@@ -39,6 +41,8 @@ public class PlayerTransform : MonoBehaviour
         
         timeSinceLastTransform = transformCooldown; // Start with cooldown ready
         collider = GetComponent<CapsuleCollider2D>();
+        transformationParticle = GetComponentInChildren<ParticleSystem>();
+        transformationParticle.Play();
         IterateMaterials(0); // Inizializza i materiali per la forma umana
         IterateMaterials(1); // Inizializza i materiali per la forma agile
         IterateMaterials(2); // Inizializza i materiali per la forma forte
@@ -116,7 +120,14 @@ public class PlayerTransform : MonoBehaviour
         baseGO.SetActive(transformationIndex == 0);
         agileGO.SetActive(transformationIndex == 1);
         strongGO.SetActive(transformationIndex == 2);
+        transformationParticle.Stop();
+        var main = transformationParticle.main;
         
+        main.startColor = transformationColors[transformationIndex];
+        
+        
+      
+        transformationParticle.Play();
         
         collider.size = transformation.colliderSize;
         collider.offset = transformation.colliderOffset;
