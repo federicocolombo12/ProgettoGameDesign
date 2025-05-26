@@ -17,6 +17,7 @@ public class PlayerTransform : MonoBehaviour
     [SerializeField] List<Material> baseMaterials;
     [SerializeField] List<Material> agileMaterials;
     [SerializeField] List<Material> strongMaterials;
+    [SerializeField] List<Animator> animators;
     ParticleSystem transformationParticle;
     [SerializeField] List<Color> transformationColors;
     private int lastTransformationIndex = 0;
@@ -128,6 +129,7 @@ public class PlayerTransform : MonoBehaviour
         
       
         transformationParticle.Play();
+        Player.Instance.animator = animators[transformationIndex];
         
         collider.size = transformation.colliderSize;
         collider.offset = transformation.colliderOffset;

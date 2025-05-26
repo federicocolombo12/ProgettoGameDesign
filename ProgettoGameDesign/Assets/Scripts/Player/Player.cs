@@ -1,3 +1,4 @@
+using System.Collections;
 using DG.Tweening;
 using UnityEngine;
 using UnityEngine.SceneManagement;
@@ -46,14 +47,7 @@ public class Player : MonoBehaviour
         animator = GetComponentInChildren<Animator>();
         sr = GetComponentInChildren<SpriteRenderer>();
     }
-    private void OnEnable()
-    {
-        PlayerTransform.OnTransform += SetReferences;
-    }
-    private void OnDisable()
-    {
-        PlayerTransform.OnTransform -= SetReferences;
-    }
+    
 
     // Update is called once per frame
     void FixedUpdate()
@@ -94,18 +88,15 @@ public class Player : MonoBehaviour
     {
         playerCameraHandler.CameraYDamping();
     }
-    void SetReferences()
-    {
-        animator = GetComponentInChildren<Animator>();
-        
-    }
+    
+    
 
     public void RespawnAt(Vector2 position)
     {
         transform.position = position;
         rb.linearVelocity = Vector2.zero;
         playerHealth.Respawned();
-        
+
         //eventuali altre inizializzazioni del player necessarie dopo il respawn ( l'avevo pensata cosi)
     }
 
