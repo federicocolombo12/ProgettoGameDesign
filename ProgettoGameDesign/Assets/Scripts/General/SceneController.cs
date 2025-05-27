@@ -39,7 +39,7 @@ public class SceneController : MonoBehaviour
             .completed += (operation) =>
             {
                 GameManager.Instance.currentGameplayScene = sceneName;
-                
+                CameraManager.Instance.SetCameraBounds(sceneName);
             };
 
     }

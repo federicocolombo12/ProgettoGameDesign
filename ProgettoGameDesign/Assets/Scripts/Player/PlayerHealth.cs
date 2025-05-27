@@ -226,6 +226,7 @@ public class PlayerHealth : MonoBehaviour
         {
             pState.alive = true;
             Health = maxHealth;
+            Mana = 0;
             animator.Play("Idle");
         }
     }

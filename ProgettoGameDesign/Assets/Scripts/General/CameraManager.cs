@@ -2,11 +2,15 @@ using UnityEngine;
 
 using Unity.Cinemachine;
 using System.Collections;
+using System.Collections.Generic;
+using Unity.VisualScripting;
 
 public class CameraManager : MonoBehaviour
 {
     public static CameraManager Instance { get; private set; }
+    [SerializeField] List<CameraBound> cameraBoundsList;
     [SerializeField] CinemachineCamera[] virtualCameras;
+    CinemachineConfiner2D confiner2D;
 
     [Header("Camera Settings")]
     [SerializeField] private float fallPanAmount = 0.5f;
@@ -37,10 +41,11 @@ public class CameraManager : MonoBehaviour
             Destroy(gameObject);
         }
 
-        
-        
+
+
         impulseSource = GetComponentInChildren<CinemachineImpulseSource>();
-            
+        confiner2D = GetComponentInChildren<CinemachineConfiner2D>();
+
     }
     void Start()
     {
@@ -73,27 +78,29 @@ public class CameraManager : MonoBehaviour
         else
         {
             endDampAmount = _normYPanAmount;
-           
+
         }
         float elapsedTime = 0;
         while (elapsedTime < fallPanTime)
         {
             elapsedTime += Time.deltaTime;
-           float lerpedPanAmount = Mathf.Lerp(startDampAmount, endDampAmount, elapsedTime / fallPanTime);
+            float lerpedPanAmount = Mathf.Lerp(startDampAmount, endDampAmount, elapsedTime / fallPanTime);
             currentComposer.Damping.y = lerpedPanAmount;
             yield return null;
         }
         IsLerpingYDamping = false;
 
     }
-    public void PanCameraOnContact(float panDistance, float panTime, PanDirection panDirection, bool panToStartingPos){
+    public void PanCameraOnContact(float panDistance, float panTime, PanDirection panDirection, bool panToStartingPos)
+    {
         _PanCameraCoroutine = StartCoroutine(PanCamera(panDistance, panTime, panDirection, panToStartingPos));
     }
     private IEnumerator PanCamera(float panDistance, float panTime, PanDirection panDirection, bool panToStartingPos)
     {
         Vector2 endPos = Vector2.zero;
         Vector2 startPos = Vector2.zero;
-        if (!panToStartingPos){
+        if (!panToStartingPos)
+        {
             switch (panDirection)
             {
                 case PanDirection.Left:
@@ -124,7 +131,7 @@ public class CameraManager : MonoBehaviour
         while (elapsedTime < panTime)
         {
             elapsedTime += Time.deltaTime;
-            Vector2 panLerp= Vector3.Lerp(startPos, endPos, elapsedTime / panTime);
+            Vector2 panLerp = Vector3.Lerp(startPos, endPos, elapsedTime / panTime);
             currentComposer.TargetOffset = panLerp;
             yield return null;
         }
@@ -136,5 +143,17 @@ public class CameraManager : MonoBehaviour
         {
             impulseSource.GenerateImpulse(intensity);
         }
+    }
+    public void SetCameraBounds(string sceneName)
+    {
+        foreach (CameraBound cameraBound in cameraBoundsList)
+        {
+            if (cameraBound.sceneName == sceneName)
+            {
+                confiner2D.BoundingShape2D = cameraBound._cameraBoundObject.GetComponent<PolygonCollider2D>();
+                return;
+            }
+        }
+        
     }
 }
