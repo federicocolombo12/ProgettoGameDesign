@@ -65,7 +65,9 @@ public class GameManager : MonoBehaviour
         }
         
         respawnPoint = currentBench.transform.position;
+        
         player.RespawnAt(respawnPoint);
+        SceneController.Instance.LoadAdditiveScene(currentBench.benchSceneName);
         loaded = false;
     }
 
