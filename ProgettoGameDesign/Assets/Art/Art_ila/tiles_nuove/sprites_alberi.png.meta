@@ -1,0 +1,542 @@
+fileFormatVersion: 2
+guid: 483e86ca4435d48688f4be5a2bf24312
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -7786195593489793400
+    second: sprites_alberi_0
+  - first:
+      213: 1285135269728109562
+    second: sprites_alberi_1
+  - first:
+      213: -6373168502868163217
+    second: sprites_alberi_2
+  - first:
+      213: 1819985340273059537
+    second: sprites_alberi_3
+  - first:
+      213: 1420574662307504320
+    second: sprites_alberi_4
+  - first:
+      213: 1295297742698438300
+    second: sprites_alberi_5
+  - first:
+      213: 921033870959698171
+    second: sprites_alberi_6
+  - first:
+      213: 8467751259610393135
+    second: sprites_alberi_7
+  - first:
+      213: -3371087667537088744
+    second: sprites_alberi_8
+  - first:
+      213: -1931384319609812355
+    second: sprites_alberi_9
+  - first:
+      213: -1551745483907671580
+    second: sprites_alberi_10
+  - first:
+      213: 5304199646581644344
+    second: sprites_alberi_11
+  - first:
+      213: 6801479410360604372
+    second: sprites_alberi_12
+  - first:
+      213: -2320008285376186693
+    second: sprites_alberi_13
+  - first:
+      213: -8538455230206750319
+    second: sprites_alberi_14
+  - first:
+      213: 1056221762759023847
+    second: sprites_alberi_15
+  - first:
+      213: 5206079212488638294
+    second: sprites_alberi_16
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: sprites_alberi_0
+      rect:
+        serializedVersion: 2
+        x: 1035
+        y: 1701
+        width: 361
+        height: 46
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 88e345a5c50e1f390800000000000000
+      internalID: -7786195593489793400
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sprites_alberi_1
+      rect:
+        serializedVersion: 2
+        x: 1080
+        y: 1571
+        width: 269
+        height: 76
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: af3487808b7b5d110800000000000000
+      internalID: 1285135269728109562
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sprites_alberi_2
+      rect:
+        serializedVersion: 2
+        x: 1043
+        y: 1321
+        width: 221
+        height: 147
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f65c5dc5305fd87a0800000000000000
+      internalID: -6373168502868163217
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sprites_alberi_3
+      rect:
+        serializedVersion: 2
+        x: 1297
+        y: 1321
+        width: 221
+        height: 147
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1d6e4673603e14910800000000000000
+      internalID: 1819985340273059537
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sprites_alberi_4
+      rect:
+        serializedVersion: 2
+        x: 18
+        y: 1087
+        width: 482
+        height: 173
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0c062cbf025e6b310800000000000000
+      internalID: 1420574662307504320
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sprites_alberi_5
+      rect:
+        serializedVersion: 2
+        x: 525
+        y: 1085
+        width: 482
+        height: 173
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c9ed7e72f62d9f110800000000000000
+      internalID: 1295297742698438300
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sprites_alberi_6
+      rect:
+        serializedVersion: 2
+        x: 1154
+        y: 381
+        width: 125
+        height: 775
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bf0e7a00d6b28cc00800000000000000
+      internalID: 921033870959698171
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sprites_alberi_7
+      rect:
+        serializedVersion: 2
+        x: 1280
+        y: 381
+        width: 125
+        height: 775
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f2aa17318ee738570800000000000000
+      internalID: 8467751259610393135
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sprites_alberi_8
+      rect:
+        serializedVersion: 2
+        x: 1408
+        y: 637
+        width: 125
+        height: 519
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 81f60cd80ad7731d0800000000000000
+      internalID: -3371087667537088744
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sprites_alberi_9
+      rect:
+        serializedVersion: 2
+        x: 1537
+        y: 637
+        width: 125
+        height: 519
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d7ac5e8b1385235e0800000000000000
+      internalID: -1931384319609812355
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sprites_alberi_10
+      rect:
+        serializedVersion: 2
+        x: 1640
+        y: 508
+        width: 175
+        height: 648
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4e9ddd134b7177ae0800000000000000
+      internalID: -1551745483907671580
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sprites_alberi_11
+      rect:
+        serializedVersion: 2
+        x: 33
+        y: 828
+        width: 394
+        height: 154
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 83c5048c97d4c9940800000000000000
+      internalID: 5304199646581644344
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sprites_alberi_12
+      rect:
+        serializedVersion: 2
+        x: 598
+        y: 826
+        width: 394
+        height: 154
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4d65da9ec75b36e50800000000000000
+      internalID: 6801479410360604372
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sprites_alberi_13
+      rect:
+        serializedVersion: 2
+        x: 34
+        y: 552
+        width: 314
+        height: 197
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bb67032a1ccadcfd0800000000000000
+      internalID: -2320008285376186693
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sprites_alberi_14
+      rect:
+        serializedVersion: 2
+        x: 677
+        y: 550
+        width: 314
+        height: 197
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 19153f0f430518980800000000000000
+      internalID: -8538455230206750319
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sprites_alberi_15
+      rect:
+        serializedVersion: 2
+        x: 23
+        y: 294
+        width: 209
+        height: 174
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7ecd94dd81478ae00800000000000000
+      internalID: 1056221762759023847
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sprites_alberi_16
+      rect:
+        serializedVersion: 2
+        x: 793
+        y: 292
+        width: 209
+        height: 174
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 65f3ee4f575bf3840800000000000000
+      internalID: 5206079212488638294
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable: {}
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

@@ -11,7 +11,7 @@ public class Player : MonoBehaviour
     public Animator animator;
     public PlayerStateList pState;
     public PlayerTransformation playerTransformation;
-    
+
     public SpriteRenderer sr;
     public PlayerMovement playerMovement { get; private set; }
     public PlayerInput playerInput { get; private set; }
@@ -47,28 +47,28 @@ public class Player : MonoBehaviour
         animator = GetComponentInChildren<Animator>();
         sr = GetComponentInChildren<SpriteRenderer>();
     }
-    
+
 
     // Update is called once per frame
     void FixedUpdate()
     {
-        
-       
+
+
         playerMovement.Stick(playerInput.directionalInput, playerInput.jumpInput);
         if (pState.dashing) return;
-       
+
         playerHealth.RestoreTimeScale();
         if (pState.hooked) return;
         playerMovement.UpdateJumpVariables(playerInput.jumpInput);
         if (pState.sticking) return;
-        
-       
+
+
         playerHealth.FlashWhileInvincible();
-        
-        
+
+
         playerMovement.Move(playerInput.directionalInput);
-        
-        
+
+
         playerHealth.Heal(playerInput.healPressed);
         if (pState.healing)
         {
@@ -81,15 +81,15 @@ public class Player : MonoBehaviour
         playerSpell.CastSpell(playerInput.cast, playerMovement.IsGrounded(), playerInput.directionalInput);
         playerTransform.HandleTransform(playerInput.leftTranformation, playerInput.rightTransformation);
         playerInteract.PlayerCheckForInteractables(playerInput.interact);
-        
+
     }
-    
+
     void LateUpdate()
     {
         playerCameraHandler.CameraYDamping();
     }
-    
-    
+
+
 
     public void RespawnAt(Vector2 position)
     {
@@ -99,5 +99,6 @@ public class Player : MonoBehaviour
 
         //eventuali altre inizializzazioni del player necessarie dopo il respawn ( l'avevo pensata cosi)
     }
+    
 
 }

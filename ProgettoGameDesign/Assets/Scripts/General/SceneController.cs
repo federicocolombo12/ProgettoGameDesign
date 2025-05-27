@@ -17,7 +17,7 @@ public class SceneController : MonoBehaviour
             Instance = this;
         }
         DontDestroyOnLoad(gameObject);
-        
+
     }
 
 
@@ -27,10 +27,24 @@ public class SceneController : MonoBehaviour
     {
         loadGameEvent.Raise();
         UnityEngine.SceneManagement.SceneManager.LoadScene(sceneName);
-        
+
     }
     public void LoadAdditiveScene(string sceneName)
     {
-        UnityEngine.SceneManagement.SceneManager.LoadScene(sceneName, UnityEngine.SceneManagement.LoadSceneMode.Additive);
+        loadGameEvent.Raise();
+
+        string currentScene = GameManager.Instance.GetGameplaySceneName();
+        UnloadAdditiveScene(currentScene);
+        UnityEngine.SceneManagement.SceneManager.LoadSceneAsync(sceneName, UnityEngine.SceneManagement.LoadSceneMode.Additive)
+            .completed += (operation) =>
+            {
+                GameManager.Instance.currentGameplayScene = sceneName;
+                
+            };
+
+    }
+    public void UnloadAdditiveScene(string sceneName)
+    {
+        UnityEngine.SceneManagement.SceneManager.UnloadSceneAsync(sceneName);
     }
 }

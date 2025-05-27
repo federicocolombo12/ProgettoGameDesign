@@ -2,56 +2,45 @@ using System.Collections;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 using UnityEngine.UI;
+using DG.Tweening;
+
 public class SceneFader : MonoBehaviour
 {
     private Image fadeImage;
-    public float fadeTime { get; private set; }
+    
+    [SerializeField]
+    public float fadeTime = 1.0f;
+
     public enum FadeDirection
     {
         In,
         Out
     }
+
     void Awake()
     {
-        fadeImage= GetComponent<Image>();
+        fadeImage = GetComponent<Image>();
+        fadeImage.color = new Color(0, 0, 0, 0); // start transparent
     }
 
-    // Update is called once per frame
-    
     public IEnumerator Fade(FadeDirection _fadeDirection)
     {
-        
-        float _alpha = _fadeDirection == FadeDirection.Out ? 1 : 0;
-        float _fadeEndValue = _fadeDirection == FadeDirection.Out ? 0 : 1;
-        if (_fadeDirection == FadeDirection.Out)
-        {
-            while (_alpha > _fadeEndValue)
-            {
-                SetColorImage(ref _alpha, _fadeDirection);
-                yield return null;
-            }
-            fadeImage.enabled = false;
-        }
-        else
-        {
-            fadeImage.enabled = true;
-            while (_alpha < _fadeEndValue)
-            {
-                SetColorImage(ref _alpha, _fadeDirection);
-                yield return null;
-            }
-        }
+        float _targetAlpha = _fadeDirection == FadeDirection.Out ? 0 : 1;
 
+        fadeImage.enabled = true;
+
+        // Avvia il tween e aspetta che finisca
+        Tween tween = fadeImage.DOFade(_targetAlpha, fadeTime).SetEase(Ease.InOutQuad);
+        yield return tween.WaitForCompletion();
+
+        if (_fadeDirection == FadeDirection.Out)
+            fadeImage.enabled = false;
     }
+
     public IEnumerator FadeAndLoadScene(FadeDirection _fadeDirection, string _levelToLoad)
     {
         fadeImage.enabled = true;
-        yield return Fade(_fadeDirection);
-        SceneManager.LoadScene(_levelToLoad);
-    }
-    void SetColorImage(ref float _alpha, FadeDirection _fadeDirection)
-    {
-        fadeImage.color = new Color(fadeImage.color.r, fadeImage.color.g, fadeImage.color.b, _alpha);
-        _alpha += Time.deltaTime * (1/fadeTime) * (_fadeDirection == FadeDirection.Out ? -1 : 1);
+        yield return StartCoroutine(Fade(_fadeDirection));
+        SceneController.Instance.LoadAdditiveScene(_levelToLoad);
     }
 }

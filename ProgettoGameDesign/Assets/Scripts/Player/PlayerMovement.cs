@@ -92,7 +92,7 @@ public class PlayerMovement : MonoBehaviour
     {
         PlayerTransform.OnTransform -= UpdateVariables;
     }
-    
+
     void Start()
     {
         rb = GetComponent<Rigidbody2D>();
@@ -100,6 +100,8 @@ public class PlayerMovement : MonoBehaviour
         pState = GetComponent<PlayerStateList>();
         gravityScale = rb.gravityScale;
         cameraFollowObject = cameraFollowGO.GetComponent<CameraFollowObject>();
+        pInput = Player.Instance.playerInput;
+        
     }
     
 

@@ -13,8 +13,8 @@ public class SceneTransition : MonoBehaviour
         if (transitionTo == GameManager.Instance.transitionedFromScene)
         {
             // Set the player's position to the start point
-           Player.Instance.transform.position = startPoint.position;
-            StartCoroutine(PlayerController.Instance.WalkIntoNewScene(exitDirection,exitTime));
+            Player.Instance.transform.position = startPoint.position;
+            StartCoroutine(Player.Instance.playerMovement.WalkIntoNewScene(exitDirection, exitTime));
             
         }
         if (UiManager.Instance == null)
@@ -28,7 +28,7 @@ public class SceneTransition : MonoBehaviour
         if (collision.CompareTag("Player"))
         {
             // Start the transition to the new scene
-            GameManager.Instance.transitionedFromScene = SceneManager.GetActiveScene().name;
+            GameManager.Instance.transitionedFromScene = GameManager.Instance.GetGameplaySceneName();
             Player.Instance.pState.cutscene = true;
             StartCoroutine(UiManager.Instance.sceneFader.FadeAndLoadScene(SceneFader.FadeDirection.In, transitionTo));
         }
