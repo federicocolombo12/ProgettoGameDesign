@@ -77,7 +77,7 @@ public class PlayerAttack : MonoBehaviour
             {
                 int _recoilLeftOrRight = pState.lookingRight ? 1 : -1;
                 Hit(sideAttackTransform, sideAttackArea, ref pState.recoilingX, Vector2.right * _recoilLeftOrRight, recoilXSpeed);
-                Instantiate(slashEffect, sideAttackTransform);
+                EffectManager.Instance.PlayOneShot(slashEffect.GetComponent<ParticleSystem>(), sideAttackTransform.position);
             }
             else if (directionalInput.y > 0.3f)
             {
@@ -116,9 +116,10 @@ public class PlayerAttack : MonoBehaviour
     }
     void SlashEffectAngle(GameObject slashEffect, int angle, Transform attackTransform)
     {
-        GameObject slash = Instantiate(slashEffect, attackTransform);
+        GameObject slash = Instantiate(slashEffect, attackTransform.position, Quaternion.identity);
         slash.transform.eulerAngles = new Vector3(0, 0, angle);
         slash.transform.localScale = new Vector2(transform.localScale.x, transform.localScale.y);
+        EffectManager.Instance.PlayOneShot(slash.GetComponent<ParticleSystem>(), slash.transform.position);
 
     }
     public void Recoil(Vector2 directionalInput)

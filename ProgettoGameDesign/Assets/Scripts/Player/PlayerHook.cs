@@ -38,6 +38,8 @@ public class PlayerHook : MonoBehaviour
         rb.linearVelocity = Vector2.zero;
         yield return new WaitForSeconds(waitTime);
 
+        Player.Instance.animator.SetBool("SpAbility", true);
+
         
 
         // Calcola la direzione dal punto di partenza al target
@@ -68,7 +70,7 @@ public class PlayerHook : MonoBehaviour
         }
 
         // Alla fine azzeriamo la velocità ed eventualmente correggiamo la posizione
-        
+        Player.Instance.animator.SetBool("SpAbility", false);
         rb.linearVelocity = Vector2.zero;
         rb.gravityScale = 1;
         pState.hooked = false;

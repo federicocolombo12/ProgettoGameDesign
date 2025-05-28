@@ -110,8 +110,8 @@ public class Enemy : MonoBehaviour
        
         if (!isRecoiling)
         {
-            GameObject _orangeBlood = Instantiate(orangeBlood, transform.position, Quaternion.identity);
-            Destroy(_orangeBlood, 5.5f);
+            EffectManager.Instance.PlayOneShot(orangeBlood.GetComponent<ParticleSystem>(), transform.position);
+            
             rb.linearVelocity= hitDirection * _hitForce*recoilFactor;
             isRecoiling = true;
             

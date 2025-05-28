@@ -1,2 +1,17 @@
 fileFormatVersion: 2
 guid: 7dc0c87951d63884bba4d90be346ea13
+MonoImporter:
+  externalObjects: {}
+  serializedVersion: 2
+  defaultReferences:
+  - player: {instanceID: 0}
+  - flashMaterial: {instanceID: 0}
+  - healthImage: {instanceID: 0}
+  - orangeBlood: {fileID: 867246214757349094, guid: 8fbed873f1be056428a5bb5a3089cb63, type: 3}
+  - weakTo: {instanceID: 0}
+  - immuneTo: {instanceID: 0}
+  executionOrder: 0
+  icon: {instanceID: 0}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
