@@ -134,7 +134,8 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      electricLine0001_0: 2282541025551961715
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

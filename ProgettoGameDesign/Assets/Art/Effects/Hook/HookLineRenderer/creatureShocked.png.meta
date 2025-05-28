@@ -134,7 +134,8 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      creatureShocked_0: -599412359588758078
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
