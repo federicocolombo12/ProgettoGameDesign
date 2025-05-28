@@ -1,6 +1,6 @@
 using System.Collections;
 using UnityEngine;
-
+using DG.Tweening;
 public class PlayerHook : MonoBehaviour
 {
     private Rigidbody2D rb;
@@ -10,6 +10,8 @@ public class PlayerHook : MonoBehaviour
     [SerializeField] float hookAcceleration = 0.1f; // Accelerazione del rampino
     [SerializeField] float hookMaxSpeed = 5f; // Velocità massima del rampino
     [SerializeField] float waitTime = 0.1f;
+    [SerializeField] GameObject hookTrailPrefab; // Prefab del trail del rampino
+    [SerializeField] float particleOffset = 0.5f; // Offset per la posizione del trail del rampino
 
     // Nuova variabile: decelerazione per simulare l'inerzia dopo il target
     [SerializeField] float hookDeceleration = 5f;
@@ -44,7 +46,15 @@ public class PlayerHook : MonoBehaviour
 
         // Calcola la direzione dal punto di partenza al target
         Vector2 direction = (target - rb.position).normalized;
-
+        
+        //calcola la rotazione in base alla direzione
+        float angle = Mathf.Atan2(direction.y, direction.x) * Mathf.Rad2Deg;
+        //calcola il quaternion per la rotazione
+        
+       
+        GameObject hookTrail = Instantiate(hookTrailPrefab, rb.position + direction*particleOffset, Quaternion.identity);
+        hookTrail.transform.DORotate(new Vector3(0, 0, angle), 0.1f);
+        hookTrail.transform.DOMove(target, 1f).SetEase(Ease.Linear);
         float currentSpeed = initialHookSpeed;
         float acceleration = hookAcceleration;
         float maxSpeed = hookMaxSpeed;
