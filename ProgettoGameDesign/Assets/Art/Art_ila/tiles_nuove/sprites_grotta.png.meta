@@ -309,7 +309,15 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      sprites_grotta_0: -8712864088651563824
+      sprites_grotta_1: -6836520597038725914
+      sprites_grotta_2: -634759916310761969
+      sprites_grotta_3: 917723982774685057
+      sprites_grotta_4: 3471812851513073450
+      sprites_grotta_5: 4675666681535751189
+      sprites_grotta_6: 6727469512221156547
+      sprites_grotta_7: -516692431775646591
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

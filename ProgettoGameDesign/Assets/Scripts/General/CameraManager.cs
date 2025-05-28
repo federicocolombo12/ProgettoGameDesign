@@ -137,4 +137,26 @@ public class CameraManager : MonoBehaviour
             impulseSource.GenerateImpulse(intensity);
         }
     }
+    public void SwapCamera(CinemachineCamera cameraFromLeft, CinemachineCamera cameraFromRight, Vector2 triggerExitDirection) {
+        if ( currentCamera == cameraFromLeft && triggerExitDirection.x > 0f)
+        {
+            cameraFromRight.enabled = true;
+            cameraFromLeft.enabled = false;
+            currentCamera = cameraFromRight;
+            currentComposer = currentCamera.GetComponent<CinemachinePositionComposer>();
+            cameraFromRight.GetComponent<CinemachineConfiner2D>().OversizeWindow.Enabled = true;
+            cameraFromRight.GetComponent<CinemachineConfiner2D>().OversizeWindow.Enabled = false;
+        }
+        else if (currentCamera == cameraFromRight && triggerExitDirection.x < 0f)
+        {
+            cameraFromLeft.enabled = true;
+            cameraFromRight.enabled = false;
+            currentCamera = cameraFromLeft;
+            currentComposer = currentCamera.GetComponent<CinemachinePositionComposer>();
+            cameraFromLeft.GetComponent<CinemachineConfiner2D>().OversizeWindow.Enabled = true;
+            cameraFromLeft.GetComponent<CinemachineConfiner2D>().OversizeWindow.Enabled = false;
+        }
+
+        
+    }
 }

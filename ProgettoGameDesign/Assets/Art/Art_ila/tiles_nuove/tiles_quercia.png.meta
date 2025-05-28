@@ -259,7 +259,13 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      tiles_quercia_0: 7592749820888519593
+      tiles_quercia_1: 2254460384975270784
+      tiles_quercia_2: 1269881982788916946
+      tiles_quercia_3: 2713886210925322724
+      tiles_quercia_4: -7101944368722795280
+      tiles_quercia_5: -8083456985192890172
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

@@ -134,7 +134,8 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      tiles_grotta_2x3_0: 7513388188644672927
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

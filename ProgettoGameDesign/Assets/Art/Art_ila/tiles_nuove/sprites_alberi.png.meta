@@ -534,7 +534,24 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      sprites_alberi_0: -7786195593489793400
+      sprites_alberi_1: 1285135269728109562
+      sprites_alberi_10: -1551745483907671580
+      sprites_alberi_11: 5304199646581644344
+      sprites_alberi_12: 6801479410360604372
+      sprites_alberi_13: -2320008285376186693
+      sprites_alberi_14: -8538455230206750319
+      sprites_alberi_15: 1056221762759023847
+      sprites_alberi_16: 5206079212488638294
+      sprites_alberi_2: -6373168502868163217
+      sprites_alberi_3: 1819985340273059537
+      sprites_alberi_4: 1420574662307504320
+      sprites_alberi_5: 1295297742698438300
+      sprites_alberi_6: 921033870959698171
+      sprites_alberi_7: 8467751259610393135
+      sprites_alberi_8: -3371087667537088744
+      sprites_alberi_9: -1931384319609812355
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
