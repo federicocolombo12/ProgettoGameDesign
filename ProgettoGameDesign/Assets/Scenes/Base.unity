@@ -3047,12 +3047,54 @@ CompositeCollider2D:
         Y: -39200020
       - X: 412206016
         Y: -39200020
+  - m_Collider: {fileID: 1986182273}
+    m_ColliderPaths:
+    - - X: 895465408
+        Y: 300165440
+      - X: 699620544
+        Y: 300165440
+      - X: 699620544
+        Y: 35746728
+      - X: 895465408
+        Y: 35746728
+  - m_Collider: {fileID: 1986182272}
+    m_ColliderPaths:
+    - - X: 697694720
+        Y: 566510016
+      - X: 407436512
+        Y: 566510016
+      - X: 407436512
+        Y: 249418640
+      - X: 697694720
+        Y: 249418640
+  - m_Collider: {fileID: 1986182271}
+    m_ColliderPaths:
+    - - X: 787619200
+        Y: 544074176
+      - X: 698157824
+        Y: 544074176
+      - X: 698157824
+        Y: 457274464
+      - X: 787619200
+        Y: 457274464
   m_CompositePaths:
     m_Paths:
     - - {x: 41.220573, y: -3.920002}
-      - {x: 41.220573, y: 50.17759}
+      - {x: 41.22063, y: 24.941864}
+      - {x: 69.76947, y: 24.941893}
+      - {x: 69.76944, y: 56.651}
+      - {x: 40.743652, y: 56.65097}
+      - {x: 40.74362, y: 50.17759}
       - {x: -19.413593, y: 50.17756}
       - {x: -19.413565, y: -3.920002}
+    - - {x: 78.76189, y: 45.727448}
+      - {x: 78.76189, y: 54.407417}
+      - {x: 69.81578, y: 54.407387}
+      - {x: 69.81582, y: 45.727448}
+    - - {x: 89.54651, y: 3.574673}
+      - {x: 89.54651, y: 30.016544}
+      - {x: 69.96206, y: 30.016516}
+      - {x: 69.96209, y: 3.574673}
   m_VertexDistance: 0.0005
   m_OffsetDistance: 0.00005
   m_UseDelaunayMesh: 0
@@ -3089,7 +3131,7 @@ BoxCollider2D:
     m_Bits: 4294967295
   m_IsTrigger: 0
   m_UsedByEffector: 0
-  m_CompositeOperation: 0
+  m_CompositeOperation: 1
   m_CompositeOrder: 0
   m_Offset: {x: 74.28885, y: 50.067432}
   m_SpriteTilingProperty:
@@ -3135,7 +3177,7 @@ BoxCollider2D:
     m_Bits: 4294967295
   m_IsTrigger: 0
   m_UsedByEffector: 0
-  m_CompositeOperation: 0
+  m_CompositeOperation: 1
   m_CompositeOrder: 0
   m_Offset: {x: 55.25656, y: 40.796432}
   m_SpriteTilingProperty:
@@ -3181,7 +3223,7 @@ BoxCollider2D:
     m_Bits: 4294967295
   m_IsTrigger: 0
   m_UsedByEffector: 0
-  m_CompositeOperation: 0
+  m_CompositeOperation: 1
   m_CompositeOrder: 0
   m_Offset: {x: 79.754295, y: 16.795609}
   m_SpriteTilingProperty:
