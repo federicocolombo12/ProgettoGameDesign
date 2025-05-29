@@ -128,6 +128,7 @@ GameObject:
   - component: {fileID: 7226877873270673661}
   - component: {fileID: 6009629910011221938}
   - component: {fileID: 7967295452070384794}
+  - component: {fileID: 6563482935660704923}
   m_Layer: 7
   m_Name: Rampino
   m_TagString: Untagged
@@ -290,7 +291,7 @@ LineRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: -876546973899608171, guid: 6fedb59199c14b64da06d933cf624493, type: 3}
+  - {fileID: 2100000, guid: 46b2d955738e14bb381cb0270be0c832, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -374,7 +375,7 @@ LineRenderer:
     numCornerVertices: 0
     numCapVertices: 0
     alignment: 0
-    textureMode: 0
+    textureMode: 1
     textureScale: {x: 1, y: 1}
     shadowBias: 0.5
     generateLightingData: 0
@@ -382,6 +383,24 @@ LineRenderer:
   m_UseWorldSpace: 1
   m_Loop: 0
   m_ApplyActiveColorSpace: 1
+--- !u!114 &6563482935660704923
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2762208341527280619}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3dd4bf1f04fcc4d41b09c17034763bf9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  lineTextures:
+  - {fileID: 2800000, guid: d96c9133974874cc49dffdeb201bd1b7, type: 3}
+  - {fileID: 2800000, guid: 24486716381cb4508b454aa2edbcc4f1, type: 3}
+  - {fileID: 2800000, guid: c800827261dae41e6870dc04dad89f93, type: 3}
+  - {fileID: 2800000, guid: a49ee9abcbd174a4596d70896b64bc57, type: 3}
+  fps: 30
 --- !u!1 &4395388402355216778
 GameObject:
   m_ObjectHideFlags: 0
@@ -447,8 +466,8 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 4211293783942383924, guid: a64f98d7a00501442ae40845562f1c20, type: 3}
-  m_Type: 1
+  m_Sprite: {fileID: -8497861401641160371, guid: 8c029ee7f69b5984a88ab70362247e37, type: 3}
+  m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
   m_FillMethod: 4

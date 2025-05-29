@@ -13793,25 +13793,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Rampino
       objectReference: {fileID: 0}
-    - target: {fileID: 6009629910011221938, guid: d229b29d423bb9243b65d5af9b059f47, type: 3}
-      propertyPath: detectionEffect
-      value: 
-      objectReference: {fileID: 3952214716628584443, guid: 0a3a27d2a4fa85742a94dddc6f034ca4, type: 3}
-    - target: {fileID: 7967295452070384794, guid: d229b29d423bb9243b65d5af9b059f47, type: 3}
-      propertyPath: m_Parameters.textureMode
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 7967295452070384794, guid: d229b29d423bb9243b65d5af9b059f47, type: 3}
-      propertyPath: 'm_Materials.Array.data[0]'
-      value: 
-      objectReference: {fileID: 2100000, guid: 46b2d955738e14bb381cb0270be0c832, type: 2}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents:
-    - targetCorrespondingSourceObject: {fileID: 2762208341527280619, guid: d229b29d423bb9243b65d5af9b059f47, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 1366758266}
+    m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: d229b29d423bb9243b65d5af9b059f47, type: 3}
 --- !u!1001 &834741738
 PrefabInstance:
@@ -14154,29 +14139,6 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: fe37c7982015faf4a9e9a982b944e394, type: 3}
---- !u!1 &1366758260 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 2762208341527280619, guid: d229b29d423bb9243b65d5af9b059f47, type: 3}
-  m_PrefabInstance: {fileID: 766079670}
-  m_PrefabAsset: {fileID: 0}
---- !u!114 &1366758266
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1366758260}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 3dd4bf1f04fcc4d41b09c17034763bf9, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  lineTextures:
-  - {fileID: 2800000, guid: d96c9133974874cc49dffdeb201bd1b7, type: 3}
-  - {fileID: 2800000, guid: 24486716381cb4508b454aa2edbcc4f1, type: 3}
-  - {fileID: 2800000, guid: c800827261dae41e6870dc04dad89f93, type: 3}
-  - {fileID: 2800000, guid: a49ee9abcbd174a4596d70896b64bc57, type: 3}
-  fps: 30
 --- !u!1001 &1436693680
 PrefabInstance:
   m_ObjectHideFlags: 0

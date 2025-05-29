@@ -85,8 +85,9 @@ public class Bat : Enemy
 
     protected override void Death(float _destroyTime)
     {
-        base.Death(_destroyTime);
         rb.gravityScale = 12f;
         gameObject.layer = LayerMask.NameToLayer("Background");
+        base.Death(_destroyTime);
+        
     }
 }

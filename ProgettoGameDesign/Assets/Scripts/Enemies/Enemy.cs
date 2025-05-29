@@ -29,6 +29,7 @@ public class Enemy : MonoBehaviour
     
     [SerializeField] PlayerTransformation immuneTo;
     [SerializeField] protected float damageMultiplier;
+
     public static Action OnEnemyDeath;
     protected Animator animator;
     protected Tween hurtTween;

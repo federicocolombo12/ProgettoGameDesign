@@ -1,0 +1,4842 @@
+fileFormatVersion: 2
+guid: 2708e2548a44b9546bd49730569fb72e
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -7425170051358357665
+    second: prompts-gold-theme_0
+  - first:
+      213: -848025664517333175
+    second: prompts-gold-theme_1
+  - first:
+      213: 4993951075864127118
+    second: prompts-gold-theme_2
+  - first:
+      213: 431376230178658558
+    second: prompts-gold-theme_3
+  - first:
+      213: -7246930112797147614
+    second: prompts-gold-theme_4
+  - first:
+      213: -6689012656090707247
+    second: prompts-gold-theme_5
+  - first:
+      213: 7076014623577120878
+    second: prompts-gold-theme_6
+  - first:
+      213: 3353495099083193538
+    second: prompts-gold-theme_7
+  - first:
+      213: -1256654759780148265
+    second: prompts-gold-theme_8
+  - first:
+      213: 3442496914833839122
+    second: prompts-gold-theme_9
+  - first:
+      213: 121701643353801196
+    second: prompts-gold-theme_10
+  - first:
+      213: -2962498428661070779
+    second: prompts-gold-theme_11
+  - first:
+      213: 2588468214397712483
+    second: prompts-gold-theme_12
+  - first:
+      213: -1812723258915359112
+    second: prompts-gold-theme_13
+  - first:
+      213: 8939578769744493908
+    second: prompts-gold-theme_14
+  - first:
+      213: -4070338896261893302
+    second: prompts-gold-theme_15
+  - first:
+      213: -7627209756109835412
+    second: prompts-gold-theme_16
+  - first:
+      213: -6314423963437280618
+    second: prompts-gold-theme_17
+  - first:
+      213: -6417557215086599030
+    second: prompts-gold-theme_18
+  - first:
+      213: 71862382544277523
+    second: prompts-gold-theme_19
+  - first:
+      213: -4287820373747997768
+    second: prompts-gold-theme_20
+  - first:
+      213: 6956924322912060607
+    second: prompts-gold-theme_21
+  - first:
+      213: 1456531942075390065
+    second: prompts-gold-theme_22
+  - first:
+      213: 7924267655598526930
+    second: prompts-gold-theme_23
+  - first:
+      213: -5422635754745269254
+    second: prompts-gold-theme_24
+  - first:
+      213: 2779978345553199183
+    second: prompts-gold-theme_25
+  - first:
+      213: -3839045081702491616
+    second: prompts-gold-theme_26
+  - first:
+      213: 5373888776946666696
+    second: prompts-gold-theme_27
+  - first:
+      213: -6015811781233275914
+    second: prompts-gold-theme_28
+  - first:
+      213: -8401926569474004467
+    second: prompts-gold-theme_29
+  - first:
+      213: -598771379615821741
+    second: prompts-gold-theme_30
+  - first:
+      213: -8874329586319040555
+    second: prompts-gold-theme_31
+  - first:
+      213: 5886886847390475380
+    second: prompts-gold-theme_32
+  - first:
+      213: -5502677753839017983
+    second: prompts-gold-theme_33
+  - first:
+      213: -1975771161246380508
+    second: prompts-gold-theme_34
+  - first:
+      213: -4252352824435175353
+    second: prompts-gold-theme_35
+  - first:
+      213: 8211188233799945650
+    second: prompts-gold-theme_36
+  - first:
+      213: 7272952143308191567
+    second: prompts-gold-theme_37
+  - first:
+      213: 7877503603060049117
+    second: prompts-gold-theme_38
+  - first:
+      213: -4676045502513117193
+    second: prompts-gold-theme_39
+  - first:
+      213: 4625947076666703469
+    second: prompts-gold-theme_40
+  - first:
+      213: -2433072208175128993
+    second: prompts-gold-theme_41
+  - first:
+      213: 5047330498922930094
+    second: prompts-gold-theme_42
+  - first:
+      213: -3787253732282961065
+    second: prompts-gold-theme_43
+  - first:
+      213: 1551083883717799730
+    second: prompts-gold-theme_44
+  - first:
+      213: 7596826243802387896
+    second: prompts-gold-theme_45
+  - first:
+      213: 1561648392031925278
+    second: prompts-gold-theme_46
+  - first:
+      213: 1725613998143809889
+    second: prompts-gold-theme_47
+  - first:
+      213: 4921782088829240287
+    second: prompts-gold-theme_48
+  - first:
+      213: -4324856671873150973
+    second: prompts-gold-theme_49
+  - first:
+      213: -2428976811423656374
+    second: prompts-gold-theme_50
+  - first:
+      213: 5926329705281962542
+    second: prompts-gold-theme_51
+  - first:
+      213: 886351075596830469
+    second: prompts-gold-theme_52
+  - first:
+      213: 5808480734116578671
+    second: prompts-gold-theme_53
+  - first:
+      213: 7544920500535363384
+    second: prompts-gold-theme_54
+  - first:
+      213: 8416607422644770413
+    second: prompts-gold-theme_55
+  - first:
+      213: -5232043275785344640
+    second: prompts-gold-theme_56
+  - first:
+      213: -1958626894476780530
+    second: prompts-gold-theme_57
+  - first:
+      213: -3651618104818789815
+    second: prompts-gold-theme_58
+  - first:
+      213: -4749213489599869565
+    second: prompts-gold-theme_59
+  - first:
+      213: 4993876212274517799
+    second: prompts-gold-theme_60
+  - first:
+      213: 3576938829858604128
+    second: prompts-gold-theme_61
+  - first:
+      213: 8407525183123981807
+    second: prompts-gold-theme_62
+  - first:
+      213: -643146934152785544
+    second: prompts-gold-theme_63
+  - first:
+      213: -1788336292900629265
+    second: prompts-gold-theme_64
+  - first:
+      213: 1826827297913593509
+    second: prompts-gold-theme_65
+  - first:
+      213: 5098539113487613263
+    second: prompts-gold-theme_66
+  - first:
+      213: -2405507743130371031
+    second: prompts-gold-theme_67
+  - first:
+      213: -6539534148940524842
+    second: prompts-gold-theme_68
+  - first:
+      213: -2478294438702957122
+    second: prompts-gold-theme_69
+  - first:
+      213: 3064343996379131533
+    second: prompts-gold-theme_70
+  - first:
+      213: -1363751007640941096
+    second: prompts-gold-theme_71
+  - first:
+      213: -2116189784268802824
+    second: prompts-gold-theme_72
+  - first:
+      213: 299240382415323584
+    second: prompts-gold-theme_73
+  - first:
+      213: -2220985222018038681
+    second: prompts-gold-theme_74
+  - first:
+      213: 2677294541863640149
+    second: prompts-gold-theme_75
+  - first:
+      213: 1307450969065294049
+    second: prompts-gold-theme_76
+  - first:
+      213: -2328506097509151777
+    second: prompts-gold-theme_77
+  - first:
+      213: 2203915958574083005
+    second: prompts-gold-theme_78
+  - first:
+      213: -4720741761330336754
+    second: prompts-gold-theme_79
+  - first:
+      213: -3484614594171376487
+    second: prompts-gold-theme_80
+  - first:
+      213: -8315762050693741481
+    second: prompts-gold-theme_81
+  - first:
+      213: -6415047590384759003
+    second: prompts-gold-theme_82
+  - first:
+      213: 7515896569561431849
+    second: prompts-gold-theme_83
+  - first:
+      213: -8503217062160634028
+    second: prompts-gold-theme_84
+  - first:
+      213: -893427337960639261
+    second: prompts-gold-theme_85
+  - first:
+      213: 3347697289236104923
+    second: prompts-gold-theme_86
+  - first:
+      213: 1999243929889244923
+    second: prompts-gold-theme_87
+  - first:
+      213: 712391956554345224
+    second: prompts-gold-theme_88
+  - first:
+      213: 7705222087308568373
+    second: prompts-gold-theme_89
+  - first:
+      213: -2035877016643168032
+    second: prompts-gold-theme_90
+  - first:
+      213: -74002218408608032
+    second: prompts-gold-theme_91
+  - first:
+      213: -9069358825745288930
+    second: prompts-gold-theme_92
+  - first:
+      213: -7642099982395195255
+    second: prompts-gold-theme_93
+  - first:
+      213: -688940883549649784
+    second: prompts-gold-theme_94
+  - first:
+      213: -1482384702330048855
+    second: prompts-gold-theme_95
+  - first:
+      213: -756480914509363276
+    second: prompts-gold-theme_96
+  - first:
+      213: -5352565856161099355
+    second: prompts-gold-theme_97
+  - first:
+      213: -6768576494755253742
+    second: prompts-gold-theme_98
+  - first:
+      213: -1188567805402561505
+    second: prompts-gold-theme_99
+  - first:
+      213: -906528456714270105
+    second: prompts-gold-theme_100
+  - first:
+      213: -6234022553290597964
+    second: prompts-gold-theme_101
+  - first:
+      213: -4237773076331498012
+    second: prompts-gold-theme_102
+  - first:
+      213: -6361274552918725548
+    second: prompts-gold-theme_103
+  - first:
+      213: 8739480954787778662
+    second: prompts-gold-theme_104
+  - first:
+      213: -9210286905678605886
+    second: prompts-gold-theme_105
+  - first:
+      213: -1990896201576373063
+    second: prompts-gold-theme_106
+  - first:
+      213: -2121749082171072558
+    second: prompts-gold-theme_107
+  - first:
+      213: -7956036953187680187
+    second: prompts-gold-theme_108
+  - first:
+      213: 5567391306144634541
+    second: prompts-gold-theme_109
+  - first:
+      213: 6515364461545563385
+    second: prompts-gold-theme_110
+  - first:
+      213: -5235119886464780502
+    second: prompts-gold-theme_111
+  - first:
+      213: 1949925337763018754
+    second: prompts-gold-theme_112
+  - first:
+      213: 993268950551704207
+    second: prompts-gold-theme_113
+  - first:
+      213: 1685758643889226951
+    second: prompts-gold-theme_114
+  - first:
+      213: -104996806621381222
+    second: prompts-gold-theme_115
+  - first:
+      213: 1097907745010571204
+    second: prompts-gold-theme_116
+  - first:
+      213: -3729446929382438627
+    second: prompts-gold-theme_117
+  - first:
+      213: -283266222728186457
+    second: prompts-gold-theme_118
+  - first:
+      213: -4318866200917656194
+    second: prompts-gold-theme_119
+  - first:
+      213: 3611616228399334682
+    second: prompts-gold-theme_120
+  - first:
+      213: -2735849480889099217
+    second: prompts-gold-theme_121
+  - first:
+      213: -6354436396526260997
+    second: prompts-gold-theme_122
+  - first:
+      213: 2705093490954915409
+    second: prompts-gold-theme_123
+  - first:
+      213: 7645065774170726476
+    second: prompts-gold-theme_124
+  - first:
+      213: -8772426025206904228
+    second: prompts-gold-theme_125
+  - first:
+      213: 3763233755863156935
+    second: prompts-gold-theme_126
+  - first:
+      213: 7558556206009698598
+    second: prompts-gold-theme_127
+  - first:
+      213: -1557539660346597070
+    second: prompts-gold-theme_128
+  - first:
+      213: 6178339172433868450
+    second: prompts-gold-theme_129
+  - first:
+      213: 34112053173702070
+    second: prompts-gold-theme_130
+  - first:
+      213: 7779015668986562088
+    second: prompts-gold-theme_131
+  - first:
+      213: 2702767998143619954
+    second: prompts-gold-theme_132
+  - first:
+      213: 7139276586255486402
+    second: prompts-gold-theme_133
+  - first:
+      213: -3311604218466232071
+    second: prompts-gold-theme_134
+  - first:
+      213: -4489237524657105891
+    second: prompts-gold-theme_135
+  - first:
+      213: -759226081442542187
+    second: prompts-gold-theme_136
+  - first:
+      213: -8741260826104440971
+    second: prompts-gold-theme_137
+  - first:
+      213: -2113090341278271375
+    second: prompts-gold-theme_138
+  - first:
+      213: 583727890831805454
+    second: prompts-gold-theme_139
+  - first:
+      213: 6146544515889267125
+    second: prompts-gold-theme_140
+  - first:
+      213: 6937765806268694644
+    second: prompts-gold-theme_141
+  - first:
+      213: 5781931861199377356
+    second: prompts-gold-theme_142
+  - first:
+      213: 2254802708609983205
+    second: prompts-gold-theme_143
+  - first:
+      213: -6917088047209998920
+    second: prompts-gold-theme_144
+  - first:
+      213: -5189069765882169024
+    second: prompts-gold-theme_145
+  - first:
+      213: 1811126315804063820
+    second: prompts-gold-theme_146
+  - first:
+      213: 8030519595478033709
+    second: prompts-gold-theme_147
+  - first:
+      213: 6823604521553278916
+    second: prompts-gold-theme_148
+  - first:
+      213: 6584370830127329490
+    second: prompts-gold-theme_149
+  - first:
+      213: -3977746686076513502
+    second: prompts-gold-theme_150
+  - first:
+      213: -133500902496817963
+    second: prompts-gold-theme_151
+  - first:
+      213: 1916899817574385878
+    second: prompts-gold-theme_152
+  - first:
+      213: -4000475697476964181
+    second: prompts-gold-theme_153
+  - first:
+      213: -2431240809771870881
+    second: prompts-gold-theme_154
+  - first:
+      213: 7379061340059929934
+    second: prompts-gold-theme_155
+  - first:
+      213: -5350221216016016098
+    second: prompts-gold-theme_156
+  - first:
+      213: 3244969791502497021
+    second: prompts-gold-theme_157
+  - first:
+      213: -5706821086641306553
+    second: prompts-gold-theme_158
+  - first:
+      213: 3255387347775631497
+    second: prompts-gold-theme_159
+  - first:
+      213: 5736814699211252028
+    second: prompts-gold-theme_160
+  - first:
+      213: -5409674465740582211
+    second: prompts-gold-theme_161
+  - first:
+      213: -5011133750427957099
+    second: prompts-gold-theme_162
+  - first:
+      213: 9151539114738975728
+    second: prompts-gold-theme_163
+  - first:
+      213: 4362545088136086965
+    second: prompts-gold-theme_164
+  - first:
+      213: -8530835094154349240
+    second: prompts-gold-theme_165
+  - first:
+      213: 1905360132853578750
+    second: prompts-gold-theme_166
+  - first:
+      213: -4334794340227295753
+    second: prompts-gold-theme_167
+  - first:
+      213: -7428460677637751728
+    second: prompts-gold-theme_168
+  - first:
+      213: -1885297633964017035
+    second: prompts-gold-theme_169
+  - first:
+      213: -8832679155365255737
+    second: prompts-gold-theme_170
+  - first:
+      213: 6736346375701774342
+    second: prompts-gold-theme_171
+  - first:
+      213: -1175740073743609071
+    second: prompts-gold-theme_172
+  - first:
+      213: 2450966403580513518
+    second: prompts-gold-theme_173
+  - first:
+      213: 2986468644391432163
+    second: prompts-gold-theme_174
+  - first:
+      213: -3491279717521425159
+    second: prompts-gold-theme_175
+  - first:
+      213: -2859601266852269872
+    second: prompts-gold-theme_176
+  - first:
+      213: -3941374123889781754
+    second: prompts-gold-theme_177
+  - first:
+      213: -5275784537449344906
+    second: prompts-gold-theme_178
+  - first:
+      213: 7017822690175035317
+    second: prompts-gold-theme_179
+  - first:
+      213: -4896332772269821164
+    second: prompts-gold-theme_180
+  - first:
+      213: 2075114973624850514
+    second: prompts-gold-theme_181
+  - first:
+      213: -2174861935249843217
+    second: prompts-gold-theme_182
+  - first:
+      213: 2810642022646603512
+    second: prompts-gold-theme_183
+  - first:
+      213: 4820283441448299974
+    second: prompts-gold-theme_184
+  - first:
+      213: -8124608799654613570
+    second: prompts-gold-theme_185
+  - first:
+      213: -8064439129943030055
+    second: prompts-gold-theme_186
+  - first:
+      213: 585610182916555464
+    second: prompts-gold-theme_187
+  - first:
+      213: 1569456628380283290
+    second: prompts-gold-theme_188
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: prompts-gold-theme_0
+      rect:
+        serializedVersion: 2
+        x: 14
+        y: 141
+        width: 52
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f578ae3bd2f74f890800000000000000
+      internalID: -7425170051358357665
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: prompts-gold-theme_1
+      rect:
+        serializedVersion: 2
+        x: 27
+        y: 146
+        width: 8
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 94f9702b6253b34f0800000000000000
+      internalID: -848025664517333175
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: prompts-gold-theme_2
+      rect:
+        serializedVersion: 2
+        x: 38
+        y: 146
+        width: 10
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e86af8e5b041e4540800000000000000
+      internalID: 4993951075864127118
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: prompts-gold-theme_3
+      rect:
+        serializedVersion: 2
+        x: 45
+        y: 146
+        width: 9
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ef89854556e8cf500800000000000000
+      internalID: 431376230178658558
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: prompts-gold-theme_4
+      rect:
+        serializedVersion: 2
+        x: 67
+        y: 146
+        width: 9
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 22ef4a2557bbd6b90800000000000000
+      internalID: -7246930112797147614
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: prompts-gold-theme_5
+      rect:
+        serializedVersion: 2
+        x: 75
+        y: 146
+        width: 8
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1da0f9fdd6adb23a0800000000000000
+      internalID: -6689012656090707247
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: prompts-gold-theme_6
+      rect:
+        serializedVersion: 2
+        x: 78
+        y: 141
+        width: 36
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e60a8cf4fcd033260800000000000000
+      internalID: 7076014623577120878
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: prompts-gold-theme_7
+      rect:
+        serializedVersion: 2
+        x: 82
+        y: 146
+        width: 9
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2ccfdd866020a8e20800000000000000
+      internalID: 3353495099083193538
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: prompts-gold-theme_8
+      rect:
+        serializedVersion: 2
+        x: 90
+        y: 146
+        width: 9
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7db100e67277f8ee0800000000000000
+      internalID: -1256654759780148265
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: prompts-gold-theme_9
+      rect:
+        serializedVersion: 2
+        x: 98
+        y: 146
+        width: 9
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2149c0574b436cf20800000000000000
+      internalID: 3442496914833839122
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: prompts-gold-theme_10
+      rect:
+        serializedVersion: 2
+        x: 106
+        y: 146
+        width: 9
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ce14fa4fffe50b100800000000000000
+      internalID: 121701643353801196
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: prompts-gold-theme_11
+      rect:
+        serializedVersion: 2
+        x: 114
+        y: 146
+        width: 10
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5440108006713e6d0800000000000000
+      internalID: -2962498428661070779
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: prompts-gold-theme_12
+      rect:
+        serializedVersion: 2
+        x: 126
+        y: 141
+        width: 52
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 368b09f60261ce320800000000000000
+      internalID: 2588468214397712483
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: prompts-gold-theme_13
+      rect:
+        serializedVersion: 2
+        x: 139
+        y: 146
+        width: 8
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 876f24cdcc9e7d6e0800000000000000
+      internalID: -1812723258915359112
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: prompts-gold-theme_14
+      rect:
+        serializedVersion: 2
+        x: 150
+        y: 146
+        width: 10
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 45d7e34f683cf0c70800000000000000
+      internalID: 8939578769744493908
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: prompts-gold-theme_15
+      rect:
+        serializedVersion: 2
+        x: 157
+        y: 146
+        width: 9
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a43bad4e6504387c0800000000000000
+      internalID: -4070338896261893302
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: prompts-gold-theme_16
+      rect:
+        serializedVersion: 2
+        x: 179
+        y: 146
+        width: 9
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c63fda33325b62690800000000000000
+      internalID: -7627209756109835412
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: prompts-gold-theme_17
+      rect:
+        serializedVersion: 2
+        x: 187
+        y: 146
+        width: 8
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6925b1a4cd8ae58a0800000000000000
+      internalID: -6314423963437280618
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: prompts-gold-theme_18
+      rect:
+        serializedVersion: 2
+        x: 190
+        y: 141
+        width: 36
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a84a40de6b140f6a0800000000000000
+      internalID: -6417557215086599030
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: prompts-gold-theme_19
+      rect:
+        serializedVersion: 2
+        x: 194
+        y: 146
+        width: 9
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 310d348c47e4ff000800000000000000
+      internalID: 71862382544277523
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: prompts-gold-theme_20
+      rect:
+        serializedVersion: 2
+        x: 202
+        y: 146
+        width: 9
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8b36112861a9e74c0800000000000000
+      internalID: -4287820373747997768
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: prompts-gold-theme_21
+      rect:
+        serializedVersion: 2
+        x: 210
+        y: 146
+        width: 9
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fb4c274ffc5fb8060800000000000000
+      internalID: 6956924322912060607
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: prompts-gold-theme_22
+      rect:
+        serializedVersion: 2
+        x: 218
+        y: 146
+        width: 9
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 178d9639514a63410800000000000000
+      internalID: 1456531942075390065
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: prompts-gold-theme_23
+      rect:
+        serializedVersion: 2
+        x: 226
+        y: 146
+        width: 10
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2d1511db277a8fd60800000000000000
+      internalID: 7924267655598526930
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: prompts-gold-theme_24
+      rect:
+        serializedVersion: 2
+        x: 238
+        y: 128
+        width: 52
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: af3731ce28deeb4b0800000000000000
+      internalID: -5422635754745269254
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: prompts-gold-theme_25
+      rect:
+        serializedVersion: 2
+        x: 251
+        y: 147
+        width: 12
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f400af98397749620800000000000000
+      internalID: 2779978345553199183
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: prompts-gold-theme_26
+      rect:
+        serializedVersion: 2
+        x: 262
+        y: 147
+        width: 10
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 02a996c96d8f8bac0800000000000000
+      internalID: -3839045081702491616
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: prompts-gold-theme_27
+      rect:
+        serializedVersion: 2
+        x: 269
+        y: 147
+        width: 9
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8cc4d5cde53e39a40800000000000000
+      internalID: 5373888776946666696
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: prompts-gold-theme_28
+      rect:
+        serializedVersion: 2
+        x: 291
+        y: 146
+        width: 9
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6fb0bffde0b838ca0800000000000000
+      internalID: -6015811781233275914
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: prompts-gold-theme_29
+      rect:
+        serializedVersion: 2
+        x: 299
+        y: 146
+        width: 8
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d0ae595ec4c566b80800000000000000
+      internalID: -8401926569474004467
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: prompts-gold-theme_30
+      rect:
+        serializedVersion: 2
+        x: 302
+        y: 141
+        width: 36
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 35014584a9cb0b7f0800000000000000
+      internalID: -598771379615821741
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: prompts-gold-theme_31
+      rect:
+        serializedVersion: 2
+        x: 306
+        y: 146
+        width: 9
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5dfd6bb624c08d480800000000000000
+      internalID: -8874329586319040555
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: prompts-gold-theme_32
+      rect:
+        serializedVersion: 2
+        x: 314
+        y: 146
+        width: 9
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 474e0abc56c62b150800000000000000
+      internalID: 5886886847390475380
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: prompts-gold-theme_33
+      rect:
+        serializedVersion: 2
+        x: 322
+        y: 146
+        width: 9
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1002bf0ccbf82a3b0800000000000000
+      internalID: -5502677753839017983
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: prompts-gold-theme_34
+      rect:
+        serializedVersion: 2
+        x: 330
+        y: 146
+        width: 9
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 42ec270d896a494e0800000000000000
+      internalID: -1975771161246380508
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: prompts-gold-theme_35
+      rect:
+        serializedVersion: 2
+        x: 338
+        y: 146
+        width: 10
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 74099e7d2ab9cf4c0800000000000000
+      internalID: -4252352824435175353
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: prompts-gold-theme_36
+      rect:
+        serializedVersion: 2
+        x: 366
+        y: 141
+        width: 100
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2bd4383a13004f170800000000000000
+      internalID: 8211188233799945650
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: prompts-gold-theme_37
+      rect:
+        serializedVersion: 2
+        x: 478
+        y: 141
+        width: 100
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f47fc4ac077bee460800000000000000
+      internalID: 7272952143308191567
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: prompts-gold-theme_38
+      rect:
+        serializedVersion: 2
+        x: 590
+        y: 141
+        width: 164
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: dd401494ac3825d60800000000000000
+      internalID: 7877503603060049117
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: prompts-gold-theme_39
+      rect:
+        serializedVersion: 2
+        x: 16
+        y: 128
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7f78425e3695b1fb0800000000000000
+      internalID: -4676045502513117193
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: prompts-gold-theme_40
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 127
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d6eb97e5b5aa23040800000000000000
+      internalID: 4625947076666703469
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: prompts-gold-theme_41
+      rect:
+        serializedVersion: 2
+        x: 47
+        y: 63
+        width: 18
+        height: 82
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f5e98d6b7bdfb3ed0800000000000000
+      internalID: -2433072208175128993
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: prompts-gold-theme_42
+      rect:
+        serializedVersion: 2
+        x: 80
+        y: 128
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: eafdb4cc858bb0640800000000000000
+      internalID: 5047330498922930094
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: prompts-gold-theme_43
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 127
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7537005dbc8f07bc0800000000000000
+      internalID: -3787253732282961065
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: prompts-gold-theme_44
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 128
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 23f25d1039e868510800000000000000
+      internalID: 1551083883717799730
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: prompts-gold-theme_45
+      rect:
+        serializedVersion: 2
+        x: 144
+        y: 127
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8b5d43218395d6960800000000000000
+      internalID: 7596826243802387896
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: prompts-gold-theme_46
+      rect:
+        serializedVersion: 2
+        x: 159
+        y: 63
+        width: 18
+        height: 82
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e147f1740f61ca510800000000000000
+      internalID: 1561648392031925278
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: prompts-gold-theme_47
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 128
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 169adc2e9cc92f710800000000000000
+      internalID: 1725613998143809889
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: prompts-gold-theme_48
+      rect:
+        serializedVersion: 2
+        x: 208
+        y: 127
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fd30c8aabbead4440800000000000000
+      internalID: 4921782088829240287
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: prompts-gold-theme_49
+      rect:
+        serializedVersion: 2
+        x: 304
+        y: 129
+        width: 16
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 300d58065c50bf3c0800000000000000
+      internalID: -4324856671873150973
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: prompts-gold-theme_50
+      rect:
+        serializedVersion: 2
+        x: 320
+        y: 128
+        width: 16
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a469e63957a8a4ed0800000000000000
+      internalID: -2428976811423656374
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: prompts-gold-theme_51
+      rect:
+        serializedVersion: 2
+        x: 372
+        y: 127
+        width: 9
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e224d29c77d8e3250800000000000000
+      internalID: 5926329705281962542
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: prompts-gold-theme_52
+      rect:
+        serializedVersion: 2
+        x: 380
+        y: 127
+        width: 8
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5070c3f6b93fc4c00800000000000000
+      internalID: 886351075596830469
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: prompts-gold-theme_53
+      rect:
+        serializedVersion: 2
+        x: 387
+        y: 127
+        width: 9
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f6508b9f37edb9050800000000000000
+      internalID: 5808480734116578671
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: prompts-gold-theme_54
+      rect:
+        serializedVersion: 2
+        x: 395
+        y: 127
+        width: 9
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 83709f47831f4b860800000000000000
+      internalID: 7544920500535363384
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: prompts-gold-theme_55
+      rect:
+        serializedVersion: 2
+        x: 403
+        y: 127
+        width: 9
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d6658a89bdbcdc470800000000000000
+      internalID: 8416607422644770413
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: prompts-gold-theme_56
+      rect:
+        serializedVersion: 2
+        x: 411
+        y: 127
+        width: 9
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 089e7597c5c0467b0800000000000000
+      internalID: -5232043275785344640
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: prompts-gold-theme_57
+      rect:
+        serializedVersion: 2
+        x: 419
+        y: 127
+        width: 10
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e0c5f2b773f81d4e0800000000000000
+      internalID: -1958626894476780530
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: prompts-gold-theme_58
+      rect:
+        serializedVersion: 2
+        x: 435
+        y: 115
+        width: 26
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 94214e64ea8d25dc0800000000000000
+      internalID: -3651618104818789815
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: prompts-gold-theme_59
+      rect:
+        serializedVersion: 2
+        x: 483
+        y: 127
+        width: 9
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 38d08ed5e77671eb0800000000000000
+      internalID: -4749213489599869565
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: prompts-gold-theme_60
+      rect:
+        serializedVersion: 2
+        x: 491
+        y: 127
+        width: 8
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 72755e4d4ffcd4540800000000000000
+      internalID: 4993876212274517799
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: prompts-gold-theme_61
+      rect:
+        serializedVersion: 2
+        x: 498
+        y: 127
+        width: 9
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 06406011ae6d3a130800000000000000
+      internalID: 3576938829858604128
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: prompts-gold-theme_62
+      rect:
+        serializedVersion: 2
+        x: 506
+        y: 127
+        width: 9
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fe5814ceb978da470800000000000000
+      internalID: 8407525183123981807
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: prompts-gold-theme_63
+      rect:
+        serializedVersion: 2
+        x: 514
+        y: 127
+        width: 9
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 871117b55451317f0800000000000000
+      internalID: -643146934152785544
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: prompts-gold-theme_64
+      rect:
+        serializedVersion: 2
+        x: 522
+        y: 127
+        width: 9
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fe418badd9d8e27e0800000000000000
+      internalID: -1788336292900629265
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: prompts-gold-theme_65
+      rect:
+        serializedVersion: 2
+        x: 530
+        y: 127
+        width: 10
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5ae502e9fb13a5910800000000000000
+      internalID: 1826827297913593509
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: prompts-gold-theme_66
+      rect:
+        serializedVersion: 2
+        x: 546
+        y: 114
+        width: 28
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f4d3ddc7f46a1c640800000000000000
+      internalID: 5098539113487613263
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: prompts-gold-theme_67
+      rect:
+        serializedVersion: 2
+        x: 594
+        y: 114
+        width: 28
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 92c334ad37bed9ed0800000000000000
+      internalID: -2405507743130371031
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: prompts-gold-theme_68
+      rect:
+        serializedVersion: 2
+        x: 626
+        y: 114
+        width: 28
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6d21dd7e658ee35a0800000000000000
+      internalID: -6539534148940524842
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: prompts-gold-theme_69
+      rect:
+        serializedVersion: 2
+        x: 658
+        y: 114
+        width: 28
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ebdb84ca6545b9dd0800000000000000
+      internalID: -2478294438702957122
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: prompts-gold-theme_70
+      rect:
+        serializedVersion: 2
+        x: 690
+        y: 114
+        width: 28
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d8e67cd01acb68a20800000000000000
+      internalID: 3064343996379131533
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: prompts-gold-theme_71
+      rect:
+        serializedVersion: 2
+        x: 722
+        y: 114
+        width: 28
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8dd0b7b1fabf21de0800000000000000
+      internalID: -1363751007640941096
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: prompts-gold-theme_72
+      rect:
+        serializedVersion: 2
+        x: 16
+        y: 112
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8f4f85f6a98c1a2e0800000000000000
+      internalID: -2116189784268802824
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: prompts-gold-theme_73
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 111
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0c14158da8d172400800000000000000
+      internalID: 299240382415323584
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: prompts-gold-theme_74
+      rect:
+        serializedVersion: 2
+        x: 80
+        y: 112
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 764093635b97d21e0800000000000000
+      internalID: -2220985222018038681
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: prompts-gold-theme_75
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 111
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 55cdfde6339a72520800000000000000
+      internalID: 2677294541863640149
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: prompts-gold-theme_76
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 112
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1e8806caabff42210800000000000000
+      internalID: 1307450969065294049
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: prompts-gold-theme_77
+      rect:
+        serializedVersion: 2
+        x: 144
+        y: 111
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fdbc2a09a0c7fafd0800000000000000
+      internalID: -2328506097509151777
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: prompts-gold-theme_78
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 112
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: dbb6f9133e1e59e10800000000000000
+      internalID: 2203915958574083005
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: prompts-gold-theme_79
+      rect:
+        serializedVersion: 2
+        x: 208
+        y: 111
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e0cad8f216e8c7eb0800000000000000
+      internalID: -4720741761330336754
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: prompts-gold-theme_80
+      rect:
+        serializedVersion: 2
+        x: 240
+        y: 113
+        width: 16
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 99ce5472d7924afc0800000000000000
+      internalID: -3484614594171376487
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: prompts-gold-theme_81
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 112
+        width: 16
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 754c9b3497a789c80800000000000000
+      internalID: -8315762050693741481
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: prompts-gold-theme_82
+      rect:
+        serializedVersion: 2
+        x: 271
+        y: 112
+        width: 18
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 52f04e5743c29f6a0800000000000000
+      internalID: -6415047590384759003
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: prompts-gold-theme_83
+      rect:
+        serializedVersion: 2
+        x: 304
+        y: 113
+        width: 16
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 92f394deb14dd4860800000000000000
+      internalID: 7515896569561431849
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: prompts-gold-theme_84
+      rect:
+        serializedVersion: 2
+        x: 320
+        y: 112
+        width: 16
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 45fefd942218ef980800000000000000
+      internalID: -8503217062160634028
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: prompts-gold-theme_85
+      rect:
+        serializedVersion: 2
+        x: 372
+        y: 115
+        width: 56
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3e4bb38d198e993f0800000000000000
+      internalID: -893427337960639261
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: prompts-gold-theme_86
+      rect:
+        serializedVersion: 2
+        x: 483
+        y: 115
+        width: 56
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bd6c47c92f8657e20800000000000000
+      internalID: 3347697289236104923
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: prompts-gold-theme_87
+      rect:
+        serializedVersion: 2
+        x: 16
+        y: 96
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bf6876403cdbebb10800000000000000
+      internalID: 1999243929889244923
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: prompts-gold-theme_88
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 95
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 80b6447c5bce2e900800000000000000
+      internalID: 712391956554345224
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: prompts-gold-theme_89
+      rect:
+        serializedVersion: 2
+        x: 80
+        y: 96
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 53765851aa27eea60800000000000000
+      internalID: 7705222087308568373
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: prompts-gold-theme_90
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 95
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0e81a90d3ac1fb3e0800000000000000
+      internalID: -2035877016643168032
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: prompts-gold-theme_91
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 96
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0eef92bdf5719fef0800000000000000
+      internalID: -74002218408608032
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: prompts-gold-theme_92
+      rect:
+        serializedVersion: 2
+        x: 144
+        y: 95
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e11f5e2133a232280800000000000000
+      internalID: -9069358825745288930
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: prompts-gold-theme_93
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 96
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 980c05b3e8ec1f590800000000000000
+      internalID: -7642099982395195255
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: prompts-gold-theme_94
+      rect:
+        serializedVersion: 2
+        x: 208
+        y: 95
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 88487c4aae36076f0800000000000000
+      internalID: -688940883549649784
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: prompts-gold-theme_95
+      rect:
+        serializedVersion: 2
+        x: 240
+        y: 99
+        width: 16
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9aee42d97f28d6be0800000000000000
+      internalID: -1482384702330048855
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: prompts-gold-theme_96
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 98
+        width: 16
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4b78e43cd907085f0800000000000000
+      internalID: -756480914509363276
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: prompts-gold-theme_97
+      rect:
+        serializedVersion: 2
+        x: 271
+        y: 98
+        width: 18
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5a112a286bdd7b5b0800000000000000
+      internalID: -5352565856161099355
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: prompts-gold-theme_98
+      rect:
+        serializedVersion: 2
+        x: 304
+        y: 99
+        width: 16
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 212fd0b1a8f2112a0800000000000000
+      internalID: -6768576494755253742
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: prompts-gold-theme_99
+      rect:
+        serializedVersion: 2
+        x: 320
+        y: 98
+        width: 16
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f14c387d0eb518fe0800000000000000
+      internalID: -1188567805402561505
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: prompts-gold-theme_100
+      rect:
+        serializedVersion: 2
+        x: 368
+        y: 84
+        width: 28
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 76a43ceeb2d5b63f0800000000000000
+      internalID: -906528456714270105
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: prompts-gold-theme_101
+      rect:
+        serializedVersion: 2
+        x: 403
+        y: 83
+        width: 26
+        height: 29
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4b9175d548d4c79a0800000000000000
+      internalID: -6234022553290597964
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: prompts-gold-theme_102
+      rect:
+        serializedVersion: 2
+        x: 436
+        y: 84
+        width: 28
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4e5fb8af6d76035c0800000000000000
+      internalID: -4237773076331498012
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: prompts-gold-theme_103
+      rect:
+        serializedVersion: 2
+        x: 479
+        y: 83
+        width: 30
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 45c2c826f7638b7a0800000000000000
+      internalID: -6361274552918725548
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: prompts-gold-theme_104
+      rect:
+        serializedVersion: 2
+        x: 514
+        y: 82
+        width: 28
+        height: 31
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 660da67ef9fd84970800000000000000
+      internalID: 8739480954787778662
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: prompts-gold-theme_105
+      rect:
+        serializedVersion: 2
+        x: 547
+        y: 83
+        width: 30
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2c158938bdc7e2080800000000000000
+      internalID: -9210286905678605886
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: prompts-gold-theme_106
+      rect:
+        serializedVersion: 2
+        x: 590
+        y: 65
+        width: 164
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9b4ad50f37aee54e0800000000000000
+      internalID: -1990896201576373063
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: prompts-gold-theme_107
+      rect:
+        serializedVersion: 2
+        x: 16
+        y: 80
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2df9ea683780e82e0800000000000000
+      internalID: -2121749082171072558
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: prompts-gold-theme_108
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 79
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5400e514b8a769190800000000000000
+      internalID: -7956036953187680187
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: prompts-gold-theme_109
+      rect:
+        serializedVersion: 2
+        x: 80
+        y: 80
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: da6595845e8534d40800000000000000
+      internalID: 5567391306144634541
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: prompts-gold-theme_110
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 79
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9f4a0a835793b6a50800000000000000
+      internalID: 6515364461545563385
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: prompts-gold-theme_111
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 80
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a27feaa333e1957b0800000000000000
+      internalID: -5235119886464780502
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: prompts-gold-theme_112
+      rect:
+        serializedVersion: 2
+        x: 144
+        y: 79
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 208f5e773c68f0b10800000000000000
+      internalID: 1949925337763018754
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: prompts-gold-theme_113
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 80
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f823f0419dcc8cd00800000000000000
+      internalID: 993268950551704207
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: prompts-gold-theme_114
+      rect:
+        serializedVersion: 2
+        x: 208
+        y: 79
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7c4cf0a1e84056710800000000000000
+      internalID: 1685758643889226951
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: prompts-gold-theme_115
+      rect:
+        serializedVersion: 2
+        x: 240
+        y: 83
+        width: 16
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a9d38cee5f9fa8ef0800000000000000
+      internalID: -104996806621381222
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: prompts-gold-theme_116
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 82
+        width: 16
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4c75181f64d8c3f00800000000000000
+      internalID: 1097907745010571204
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: prompts-gold-theme_117
+      rect:
+        serializedVersion: 2
+        x: 271
+        y: 82
+        width: 18
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d190d75f6c75e3cc0800000000000000
+      internalID: -3729446929382438627
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: prompts-gold-theme_118
+      rect:
+        serializedVersion: 2
+        x: 304
+        y: 83
+        width: 16
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7a57b690fd2a11cf0800000000000000
+      internalID: -283266222728186457
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: prompts-gold-theme_119
+      rect:
+        serializedVersion: 2
+        x: 320
+        y: 82
+        width: 16
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e7dbcd5921e4014c0800000000000000
+      internalID: -4318866200917656194
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: prompts-gold-theme_120
+      rect:
+        serializedVersion: 2
+        x: 625
+        y: 65
+        width: 30
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a1547c613d90f1230800000000000000
+      internalID: 3611616228399334682
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: prompts-gold-theme_121
+      rect:
+        serializedVersion: 2
+        x: 657
+        y: 65
+        width: 30
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f2c1bac646f480ad0800000000000000
+      internalID: -2735849480889099217
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: prompts-gold-theme_122
+      rect:
+        serializedVersion: 2
+        x: 689
+        y: 65
+        width: 30
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bfc2d3db3c180d7a0800000000000000
+      internalID: -6354436396526260997
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: prompts-gold-theme_123
+      rect:
+        serializedVersion: 2
+        x: 721
+        y: 65
+        width: 30
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 15ec694a23c6a8520800000000000000
+      internalID: 2705093490954915409
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: prompts-gold-theme_124
+      rect:
+        serializedVersion: 2
+        x: 16
+        y: 64
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c4061f9f0dab81a60800000000000000
+      internalID: 7645065774170726476
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: prompts-gold-theme_125
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 63
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c5a86252205124680800000000000000
+      internalID: -8772426025206904228
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: prompts-gold-theme_126
+      rect:
+        serializedVersion: 2
+        x: 80
+        y: 64
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7c88bf89921b93430800000000000000
+      internalID: 3763233755863156935
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: prompts-gold-theme_127
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 63
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 629480a82d265e860800000000000000
+      internalID: 7558556206009698598
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: prompts-gold-theme_128
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 64
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 231657d5ee1826ae0800000000000000
+      internalID: -1557539660346597070
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: prompts-gold-theme_129
+      rect:
+        serializedVersion: 2
+        x: 144
+        y: 63
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2a63dca3ebeddb550800000000000000
+      internalID: 6178339172433868450
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: prompts-gold-theme_130
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 64
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6bd4afb4bb0397000800000000000000
+      internalID: 34112053173702070
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: prompts-gold-theme_131
+      rect:
+        serializedVersion: 2
+        x: 208
+        y: 63
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8264424398d94fb60800000000000000
+      internalID: 7779015668986562088
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: prompts-gold-theme_132
+      rect:
+        serializedVersion: 2
+        x: 240
+        y: 65
+        width: 16
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 273e4a7ac29228520800000000000000
+      internalID: 2702767998143619954
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: prompts-gold-theme_133
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 64
+        width: 16
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2cd850dca3ec31360800000000000000
+      internalID: 7139276586255486402
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: prompts-gold-theme_134
+      rect:
+        serializedVersion: 2
+        x: 271
+        y: 64
+        width: 18
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9f892a94281da02d0800000000000000
+      internalID: -3311604218466232071
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: prompts-gold-theme_135
+      rect:
+        serializedVersion: 2
+        x: 304
+        y: 65
+        width: 16
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d14957e914603b1c0800000000000000
+      internalID: -4489237524657105891
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: prompts-gold-theme_136
+      rect:
+        serializedVersion: 2
+        x: 320
+        y: 64
+        width: 16
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 59dc767c6efa675f0800000000000000
+      internalID: -759226081442542187
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: prompts-gold-theme_137
+      rect:
+        serializedVersion: 2
+        x: 368
+        y: 51
+        width: 29
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 577d103879dc0b680800000000000000
+      internalID: -8741260826104440971
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: prompts-gold-theme_138
+      rect:
+        serializedVersion: 2
+        x: 403
+        y: 51
+        width: 26
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 178bccdb78bcca2e0800000000000000
+      internalID: -2113090341278271375
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: prompts-gold-theme_139
+      rect:
+        serializedVersion: 2
+        x: 435
+        y: 51
+        width: 29
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e0c848a8c61d91800800000000000000
+      internalID: 583727890831805454
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: prompts-gold-theme_140
+      rect:
+        serializedVersion: 2
+        x: 479
+        y: 50
+        width: 31
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5b184b1eba9ec4550800000000000000
+      internalID: 6146544515889267125
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: prompts-gold-theme_141
+      rect:
+        serializedVersion: 2
+        x: 514
+        y: 50
+        width: 28
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4704f713e35e74060800000000000000
+      internalID: 6937765806268694644
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: prompts-gold-theme_142
+      rect:
+        serializedVersion: 2
+        x: 546
+        y: 50
+        width: 31
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cc35d4ec46c8d3050800000000000000
+      internalID: 5781931861199377356
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: prompts-gold-theme_143
+      rect:
+        serializedVersion: 2
+        x: 17
+        y: 49
+        width: 14
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5e26945fd1baa4f10800000000000000
+      internalID: 2254802708609983205
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: prompts-gold-theme_144
+      rect:
+        serializedVersion: 2
+        x: 33
+        y: 48
+        width: 14
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8b592f1c1119100a0800000000000000
+      internalID: -6917088047209998920
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: prompts-gold-theme_145
+      rect:
+        serializedVersion: 2
+        x: 48
+        y: 48
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 049bfd17a88bcf7b0800000000000000
+      internalID: -5189069765882169024
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: prompts-gold-theme_146
+      rect:
+        serializedVersion: 2
+        x: 81
+        y: 49
+        width: 14
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c48fcd8d9c9622910800000000000000
+      internalID: 1811126315804063820
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: prompts-gold-theme_147
+      rect:
+        serializedVersion: 2
+        x: 97
+        y: 48
+        width: 14
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d25284a4603227f60800000000000000
+      internalID: 8030519595478033709
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: prompts-gold-theme_148
+      rect:
+        serializedVersion: 2
+        x: 129
+        y: 49
+        width: 14
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4c7beeac82052be50800000000000000
+      internalID: 6823604521553278916
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: prompts-gold-theme_149
+      rect:
+        serializedVersion: 2
+        x: 145
+        y: 48
+        width: 14
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2d0fe2f6262606b50800000000000000
+      internalID: 6584370830127329490
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: prompts-gold-theme_150
+      rect:
+        serializedVersion: 2
+        x: 160
+        y: 48
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2231ce9c6743cc8c0800000000000000
+      internalID: -3977746686076513502
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: prompts-gold-theme_151
+      rect:
+        serializedVersion: 2
+        x: 193
+        y: 49
+        width: 14
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5dcab71f2a5b52ef0800000000000000
+      internalID: -133500902496817963
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: prompts-gold-theme_152
+      rect:
+        serializedVersion: 2
+        x: 209
+        y: 48
+        width: 14
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6d848885a323a9a10800000000000000
+      internalID: 1916899817574385878
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: prompts-gold-theme_153
+      rect:
+        serializedVersion: 2
+        x: 240
+        y: 49
+        width: 16
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ba07d4f6c847b78c0800000000000000
+      internalID: -4000475697476964181
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: prompts-gold-theme_154
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 48
+        width: 16
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f555d126d5f724ed0800000000000000
+      internalID: -2431240809771870881
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: prompts-gold-theme_155
+      rect:
+        serializedVersion: 2
+        x: 271
+        y: 48
+        width: 18
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e4d071e5131b76660800000000000000
+      internalID: 7379061340059929934
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: prompts-gold-theme_156
+      rect:
+        serializedVersion: 2
+        x: 304
+        y: 49
+        width: 16
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e1d5b95962230c5b0800000000000000
+      internalID: -5350221216016016098
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: prompts-gold-theme_157
+      rect:
+        serializedVersion: 2
+        x: 320
+        y: 48
+        width: 16
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: df4316135d2780d20800000000000000
+      internalID: 3244969791502497021
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: prompts-gold-theme_158
+      rect:
+        serializedVersion: 2
+        x: 590
+        y: 18
+        width: 164
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 744490e257c4dc0b0800000000000000
+      internalID: -5706821086641306553
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: prompts-gold-theme_159
+      rect:
+        serializedVersion: 2
+        x: 17
+        y: 33
+        width: 14
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 980b7768b857d2d20800000000000000
+      internalID: 3255387347775631497
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: prompts-gold-theme_160
+      rect:
+        serializedVersion: 2
+        x: 33
+        y: 32
+        width: 14
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c31e9b0f2924d9f40800000000000000
+      internalID: 5736814699211252028
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: prompts-gold-theme_161
+      rect:
+        serializedVersion: 2
+        x: 48
+        y: 32
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: db2180f2cb9fce4b0800000000000000
+      internalID: -5409674465740582211
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: prompts-gold-theme_162
+      rect:
+        serializedVersion: 2
+        x: 81
+        y: 33
+        width: 14
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 59845c37760e47ab0800000000000000
+      internalID: -5011133750427957099
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: prompts-gold-theme_163
+      rect:
+        serializedVersion: 2
+        x: 97
+        y: 32
+        width: 14
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0f30c12865cc00f70800000000000000
+      internalID: 9151539114738975728
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: prompts-gold-theme_164
+      rect:
+        serializedVersion: 2
+        x: 129
+        y: 33
+        width: 14
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5b50af6d4afda8c30800000000000000
+      internalID: 4362545088136086965
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: prompts-gold-theme_165
+      rect:
+        serializedVersion: 2
+        x: 145
+        y: 32
+        width: 14
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8457e7f1ea26c9980800000000000000
+      internalID: -8530835094154349240
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: prompts-gold-theme_166
+      rect:
+        serializedVersion: 2
+        x: 160
+        y: 32
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: efbbdef12f2317a10800000000000000
+      internalID: 1905360132853578750
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: prompts-gold-theme_167
+      rect:
+        serializedVersion: 2
+        x: 193
+        y: 33
+        width: 14
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7f5d068a387b7d3c0800000000000000
+      internalID: -4334794340227295753
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: prompts-gold-theme_168
+      rect:
+        serializedVersion: 2
+        x: 209
+        y: 32
+        width: 14
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 05cb1711f5ec8e890800000000000000
+      internalID: -7428460677637751728
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: prompts-gold-theme_169
+      rect:
+        serializedVersion: 2
+        x: 240
+        y: 35
+        width: 16
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 57ab0b76ac316d5e0800000000000000
+      internalID: -1885297633964017035
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: prompts-gold-theme_170
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 34
+        width: 16
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7c5e4711b150c6580800000000000000
+      internalID: -8832679155365255737
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: prompts-gold-theme_171
+      rect:
+        serializedVersion: 2
+        x: 271
+        y: 34
+        width: 18
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 600c1b7865f4c7d50800000000000000
+      internalID: 6736346375701774342
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: prompts-gold-theme_172
+      rect:
+        serializedVersion: 2
+        x: 304
+        y: 35
+        width: 16
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 113125cd1aeeeafe0800000000000000
+      internalID: -1175740073743609071
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: prompts-gold-theme_173
+      rect:
+        serializedVersion: 2
+        x: 320
+        y: 34
+        width: 16
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: eec45d155f4930220800000000000000
+      internalID: 2450966403580513518
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: prompts-gold-theme_174
+      rect:
+        serializedVersion: 2
+        x: 368
+        y: 16
+        width: 28
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3ef2bc9b861127920800000000000000
+      internalID: 2986468644391432163
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: prompts-gold-theme_175
+      rect:
+        serializedVersion: 2
+        x: 403
+        y: 16
+        width: 26
+        height: 29
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9fcfb91389b7c8fc0800000000000000
+      internalID: -3491279717521425159
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: prompts-gold-theme_176
+      rect:
+        serializedVersion: 2
+        x: 436
+        y: 16
+        width: 28
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0d073027cc7a058d0800000000000000
+      internalID: -2859601266852269872
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: prompts-gold-theme_177
+      rect:
+        serializedVersion: 2
+        x: 479
+        y: 15
+        width: 30
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 60412aadd1d6d49c0800000000000000
+      internalID: -3941374123889781754
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: prompts-gold-theme_178
+      rect:
+        serializedVersion: 2
+        x: 514
+        y: 15
+        width: 28
+        height: 31
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 67055dd5ae5a8c6b0800000000000000
+      internalID: -5275784537449344906
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: prompts-gold-theme_179
+      rect:
+        serializedVersion: 2
+        x: 547
+        y: 15
+        width: 30
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5b72f800e80546160800000000000000
+      internalID: 7017822690175035317
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: prompts-gold-theme_180
+      rect:
+        serializedVersion: 2
+        x: 594
+        y: 18
+        width: 28
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 413f0c6194bbc0cb0800000000000000
+      internalID: -4896332772269821164
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: prompts-gold-theme_181
+      rect:
+        serializedVersion: 2
+        x: 658
+        y: 18
+        width: 29
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 258d007f21a4ccc10800000000000000
+      internalID: 2075114973624850514
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: prompts-gold-theme_182
+      rect:
+        serializedVersion: 2
+        x: 690
+        y: 17
+        width: 28
+        height: 29
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: feb1ae1c79651d1e0800000000000000
+      internalID: -2174861935249843217
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: prompts-gold-theme_183
+      rect:
+        serializedVersion: 2
+        x: 721
+        y: 18
+        width: 29
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8fed2a63708610720800000000000000
+      internalID: 2810642022646603512
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: prompts-gold-theme_184
+      rect:
+        serializedVersion: 2
+        x: 240
+        y: 19
+        width: 16
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6cd2934404615e240800000000000000
+      internalID: 4820283441448299974
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: prompts-gold-theme_185
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 18
+        width: 16
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ebde29db7579f3f80800000000000000
+      internalID: -8124608799654613570
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: prompts-gold-theme_186
+      rect:
+        serializedVersion: 2
+        x: 271
+        y: 18
+        width: 18
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9d64cfaa65b551090800000000000000
+      internalID: -8064439129943030055
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: prompts-gold-theme_187
+      rect:
+        serializedVersion: 2
+        x: 304
+        y: 19
+        width: 16
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8c2c791db51802800800000000000000
+      internalID: 585610182916555464
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: prompts-gold-theme_188
+      rect:
+        serializedVersion: 2
+        x: 320
+        y: 18
+        width: 16
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a913df8fc74d7c510800000000000000
+      internalID: 1569456628380283290
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable: {}
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

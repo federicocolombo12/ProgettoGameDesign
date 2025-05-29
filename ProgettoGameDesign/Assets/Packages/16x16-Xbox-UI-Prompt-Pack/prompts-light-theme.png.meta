@@ -1,0 +1,4342 @@
+fileFormatVersion: 2
+guid: 1f4be6624e84f7747939a7e3be18ace3
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -3556482827463451509
+    second: prompts-light-theme_0
+  - first:
+      213: 8077139644125077056
+    second: prompts-light-theme_1
+  - first:
+      213: 4130765193855308412
+    second: prompts-light-theme_2
+  - first:
+      213: 1115068675782864266
+    second: prompts-light-theme_3
+  - first:
+      213: 4468001012088606157
+    second: prompts-light-theme_4
+  - first:
+      213: 3656980952581720961
+    second: prompts-light-theme_5
+  - first:
+      213: -3000808485492395525
+    second: prompts-light-theme_6
+  - first:
+      213: -4642160442713973927
+    second: prompts-light-theme_7
+  - first:
+      213: 2199080500999313616
+    second: prompts-light-theme_8
+  - first:
+      213: 6010648415598413308
+    second: prompts-light-theme_9
+  - first:
+      213: -1911870511347174629
+    second: prompts-light-theme_10
+  - first:
+      213: 4490335687145648751
+    second: prompts-light-theme_11
+  - first:
+      213: 7175154976576484001
+    second: prompts-light-theme_12
+  - first:
+      213: 7809241651082373727
+    second: prompts-light-theme_13
+  - first:
+      213: -1174213393268015038
+    second: prompts-light-theme_14
+  - first:
+      213: 4750118881978661787
+    second: prompts-light-theme_15
+  - first:
+      213: -6967788909597352615
+    second: prompts-light-theme_16
+  - first:
+      213: -5549783945379350977
+    second: prompts-light-theme_17
+  - first:
+      213: -6786417719326755420
+    second: prompts-light-theme_18
+  - first:
+      213: -4422164505485938361
+    second: prompts-light-theme_19
+  - first:
+      213: 8724919050784730162
+    second: prompts-light-theme_20
+  - first:
+      213: 4575607353652850962
+    second: prompts-light-theme_21
+  - first:
+      213: 5507318924792825024
+    second: prompts-light-theme_22
+  - first:
+      213: 6076883972315814435
+    second: prompts-light-theme_23
+  - first:
+      213: 2053873261508121993
+    second: prompts-light-theme_24
+  - first:
+      213: 331887667154445755
+    second: prompts-light-theme_25
+  - first:
+      213: 6438254712022581362
+    second: prompts-light-theme_26
+  - first:
+      213: 4493187107132003434
+    second: prompts-light-theme_27
+  - first:
+      213: -1027052468548927657
+    second: prompts-light-theme_28
+  - first:
+      213: 4430337555486906322
+    second: prompts-light-theme_29
+  - first:
+      213: -723469113838699231
+    second: prompts-light-theme_30
+  - first:
+      213: 6249930473523825808
+    second: prompts-light-theme_31
+  - first:
+      213: 7892779660114325878
+    second: prompts-light-theme_32
+  - first:
+      213: 1886965604731769820
+    second: prompts-light-theme_33
+  - first:
+      213: -4670042440599922056
+    second: prompts-light-theme_34
+  - first:
+      213: -8670339245855164924
+    second: prompts-light-theme_35
+  - first:
+      213: -7979699348040057570
+    second: prompts-light-theme_36
+  - first:
+      213: 2335849835730891920
+    second: prompts-light-theme_37
+  - first:
+      213: -1524769167528786538
+    second: prompts-light-theme_38
+  - first:
+      213: 7385371101499715018
+    second: prompts-light-theme_39
+  - first:
+      213: 345247609181268168
+    second: prompts-light-theme_40
+  - first:
+      213: 975054130260312983
+    second: prompts-light-theme_41
+  - first:
+      213: 6470516175929976634
+    second: prompts-light-theme_42
+  - first:
+      213: 4722252536041048131
+    second: prompts-light-theme_43
+  - first:
+      213: 5329870817573615866
+    second: prompts-light-theme_44
+  - first:
+      213: -2737945522877079357
+    second: prompts-light-theme_45
+  - first:
+      213: 344551899731437809
+    second: prompts-light-theme_46
+  - first:
+      213: -7363108771970194865
+    second: prompts-light-theme_47
+  - first:
+      213: 2294007830810060112
+    second: prompts-light-theme_48
+  - first:
+      213: -7449004865623085043
+    second: prompts-light-theme_49
+  - first:
+      213: 2011350677807934202
+    second: prompts-light-theme_50
+  - first:
+      213: 8074344211508454695
+    second: prompts-light-theme_51
+  - first:
+      213: -8066201620622991513
+    second: prompts-light-theme_52
+  - first:
+      213: 5062385056454424076
+    second: prompts-light-theme_53
+  - first:
+      213: 8218512588258749948
+    second: prompts-light-theme_54
+  - first:
+      213: 7422952537200383209
+    second: prompts-light-theme_55
+  - first:
+      213: -8115405880372272864
+    second: prompts-light-theme_56
+  - first:
+      213: -576404727339065219
+    second: prompts-light-theme_57
+  - first:
+      213: -8210614516419443527
+    second: prompts-light-theme_58
+  - first:
+      213: -6198615195722964609
+    second: prompts-light-theme_59
+  - first:
+      213: -4128457350230249055
+    second: prompts-light-theme_60
+  - first:
+      213: -8991453834504703752
+    second: prompts-light-theme_61
+  - first:
+      213: 178162771709668122
+    second: prompts-light-theme_62
+  - first:
+      213: -2700229709526370606
+    second: prompts-light-theme_63
+  - first:
+      213: 8964844128309537718
+    second: prompts-light-theme_64
+  - first:
+      213: -8432617661465369901
+    second: prompts-light-theme_65
+  - first:
+      213: 5540578788208453602
+    second: prompts-light-theme_66
+  - first:
+      213: 7881122864883892496
+    second: prompts-light-theme_67
+  - first:
+      213: -2620273506838329506
+    second: prompts-light-theme_68
+  - first:
+      213: 9055365908329190072
+    second: prompts-light-theme_69
+  - first:
+      213: 2072171698792112399
+    second: prompts-light-theme_70
+  - first:
+      213: -6861160034904671514
+    second: prompts-light-theme_71
+  - first:
+      213: -3673563773245713390
+    second: prompts-light-theme_72
+  - first:
+      213: 11156632406302318
+    second: prompts-light-theme_73
+  - first:
+      213: 8139235979430501240
+    second: prompts-light-theme_74
+  - first:
+      213: -2646413281190806973
+    second: prompts-light-theme_75
+  - first:
+      213: 9138513795221782865
+    second: prompts-light-theme_76
+  - first:
+      213: 3669425865986665267
+    second: prompts-light-theme_77
+  - first:
+      213: -2780931604456925129
+    second: prompts-light-theme_78
+  - first:
+      213: 9031832985039971918
+    second: prompts-light-theme_79
+  - first:
+      213: -8771688810005666162
+    second: prompts-light-theme_80
+  - first:
+      213: -8307054299566962588
+    second: prompts-light-theme_81
+  - first:
+      213: -1808380693953981633
+    second: prompts-light-theme_82
+  - first:
+      213: 5625718439910358353
+    second: prompts-light-theme_83
+  - first:
+      213: 5327099626455721220
+    second: prompts-light-theme_84
+  - first:
+      213: 7231168145975092150
+    second: prompts-light-theme_85
+  - first:
+      213: -1481374365389526117
+    second: prompts-light-theme_86
+  - first:
+      213: 7067140563021015705
+    second: prompts-light-theme_87
+  - first:
+      213: 7677642308621175663
+    second: prompts-light-theme_88
+  - first:
+      213: 2662216001793321403
+    second: prompts-light-theme_89
+  - first:
+      213: 5938837239466138560
+    second: prompts-light-theme_90
+  - first:
+      213: -7500118041534823395
+    second: prompts-light-theme_91
+  - first:
+      213: 790549772507586246
+    second: prompts-light-theme_92
+  - first:
+      213: -8613429804923179791
+    second: prompts-light-theme_93
+  - first:
+      213: 4601428865427684024
+    second: prompts-light-theme_94
+  - first:
+      213: -5458572544601102684
+    second: prompts-light-theme_95
+  - first:
+      213: 1905652895049343925
+    second: prompts-light-theme_96
+  - first:
+      213: -6205702338433974304
+    second: prompts-light-theme_97
+  - first:
+      213: -3417249886450149818
+    second: prompts-light-theme_98
+  - first:
+      213: 6382704625631567554
+    second: prompts-light-theme_99
+  - first:
+      213: 2699855215967304672
+    second: prompts-light-theme_100
+  - first:
+      213: -8931137731384495269
+    second: prompts-light-theme_101
+  - first:
+      213: -8936491059150512129
+    second: prompts-light-theme_102
+  - first:
+      213: 2242638853409118633
+    second: prompts-light-theme_103
+  - first:
+      213: -1017284425675502468
+    second: prompts-light-theme_104
+  - first:
+      213: -9173180748479117576
+    second: prompts-light-theme_105
+  - first:
+      213: -8221688252430069249
+    second: prompts-light-theme_106
+  - first:
+      213: -3711839663532097787
+    second: prompts-light-theme_107
+  - first:
+      213: -4326691135027551840
+    second: prompts-light-theme_108
+  - first:
+      213: -4700846539051298777
+    second: prompts-light-theme_109
+  - first:
+      213: 1967279312325185706
+    second: prompts-light-theme_110
+  - first:
+      213: -3695357341224688885
+    second: prompts-light-theme_111
+  - first:
+      213: -7793397090489375682
+    second: prompts-light-theme_112
+  - first:
+      213: 2904810607937817547
+    second: prompts-light-theme_113
+  - first:
+      213: -8232497701219712915
+    second: prompts-light-theme_114
+  - first:
+      213: 6206526260471625408
+    second: prompts-light-theme_115
+  - first:
+      213: -1571879948012135514
+    second: prompts-light-theme_116
+  - first:
+      213: 1606616197738231391
+    second: prompts-light-theme_117
+  - first:
+      213: -1725086772041752680
+    second: prompts-light-theme_118
+  - first:
+      213: 4740616101922459739
+    second: prompts-light-theme_119
+  - first:
+      213: -7017147611823195549
+    second: prompts-light-theme_120
+  - first:
+      213: -1244186427231818903
+    second: prompts-light-theme_121
+  - first:
+      213: 7994482785807238848
+    second: prompts-light-theme_122
+  - first:
+      213: -4171827605999315232
+    second: prompts-light-theme_123
+  - first:
+      213: -996667255737682261
+    second: prompts-light-theme_124
+  - first:
+      213: 1585872405891257393
+    second: prompts-light-theme_125
+  - first:
+      213: 511652977490131958
+    second: prompts-light-theme_126
+  - first:
+      213: 6065473645198028569
+    second: prompts-light-theme_127
+  - first:
+      213: 914650538904403625
+    second: prompts-light-theme_128
+  - first:
+      213: -7428611732680409278
+    second: prompts-light-theme_129
+  - first:
+      213: -5134763180052447616
+    second: prompts-light-theme_130
+  - first:
+      213: -820627351135062697
+    second: prompts-light-theme_131
+  - first:
+      213: 3875224188385468485
+    second: prompts-light-theme_132
+  - first:
+      213: -2613406502470502673
+    second: prompts-light-theme_133
+  - first:
+      213: 8144252310420005949
+    second: prompts-light-theme_134
+  - first:
+      213: -5467524435750181124
+    second: prompts-light-theme_135
+  - first:
+      213: 917500456819976192
+    second: prompts-light-theme_136
+  - first:
+      213: -3492347397238711893
+    second: prompts-light-theme_137
+  - first:
+      213: 1543637142145973602
+    second: prompts-light-theme_138
+  - first:
+      213: -1522722206870437263
+    second: prompts-light-theme_139
+  - first:
+      213: 8255556010812962846
+    second: prompts-light-theme_140
+  - first:
+      213: -5290717512221768739
+    second: prompts-light-theme_141
+  - first:
+      213: -6683804881505015181
+    second: prompts-light-theme_142
+  - first:
+      213: -3973029580066876885
+    second: prompts-light-theme_143
+  - first:
+      213: 4373910908695838594
+    second: prompts-light-theme_144
+  - first:
+      213: -2866701477532104450
+    second: prompts-light-theme_145
+  - first:
+      213: 5941337126832270796
+    second: prompts-light-theme_146
+  - first:
+      213: 2003834744863891821
+    second: prompts-light-theme_147
+  - first:
+      213: -2865506072632861329
+    second: prompts-light-theme_148
+  - first:
+      213: -5566749951874811453
+    second: prompts-light-theme_149
+  - first:
+      213: 1543319784815868695
+    second: prompts-light-theme_150
+  - first:
+      213: 3304726404137612903
+    second: prompts-light-theme_151
+  - first:
+      213: 4034291681278734598
+    second: prompts-light-theme_152
+  - first:
+      213: -1406620231612680275
+    second: prompts-light-theme_153
+  - first:
+      213: 2076645200800951382
+    second: prompts-light-theme_154
+  - first:
+      213: -3075468232483821607
+    second: prompts-light-theme_155
+  - first:
+      213: -8294011603082265779
+    second: prompts-light-theme_156
+  - first:
+      213: -6109157330634847015
+    second: prompts-light-theme_157
+  - first:
+      213: 7493139657346338580
+    second: prompts-light-theme_158
+  - first:
+      213: -8565665708245186859
+    second: prompts-light-theme_159
+  - first:
+      213: 5358159118924512498
+    second: prompts-light-theme_160
+  - first:
+      213: -2724728476370306269
+    second: prompts-light-theme_161
+  - first:
+      213: 1190556721568441183
+    second: prompts-light-theme_162
+  - first:
+      213: -4363021268239408625
+    second: prompts-light-theme_163
+  - first:
+      213: -6956616638474312096
+    second: prompts-light-theme_164
+  - first:
+      213: -1047296240960743878
+    second: prompts-light-theme_165
+  - first:
+      213: 5472842251102560880
+    second: prompts-light-theme_166
+  - first:
+      213: -3012967906498441822
+    second: prompts-light-theme_167
+  - first:
+      213: -3053401560232423106
+    second: prompts-light-theme_168
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: prompts-light-theme_0
+      rect:
+        serializedVersion: 2
+        x: 14
+        y: 141
+        width: 52
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b8c934326b5d4aec0800000000000000
+      internalID: -3556482827463451509
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: prompts-light-theme_1
+      rect:
+        serializedVersion: 2
+        x: 27
+        y: 146
+        width: 8
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 04edc4936b3c71070800000000000000
+      internalID: 8077139644125077056
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: prompts-light-theme_2
+      rect:
+        serializedVersion: 2
+        x: 38
+        y: 146
+        width: 10
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c721b4ede0d635930800000000000000
+      internalID: 4130765193855308412
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: prompts-light-theme_3
+      rect:
+        serializedVersion: 2
+        x: 45
+        y: 146
+        width: 9
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a8de3308d05897f00800000000000000
+      internalID: 1115068675782864266
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: prompts-light-theme_4
+      rect:
+        serializedVersion: 2
+        x: 67
+        y: 146
+        width: 9
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: dcd80ad7f37810e30800000000000000
+      internalID: 4468001012088606157
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: prompts-light-theme_5
+      rect:
+        serializedVersion: 2
+        x: 75
+        y: 146
+        width: 8
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 18bc0050dc430c230800000000000000
+      internalID: 3656980952581720961
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: prompts-light-theme_6
+      rect:
+        serializedVersion: 2
+        x: 78
+        y: 141
+        width: 36
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bf17f37d49cfa56d0800000000000000
+      internalID: -3000808485492395525
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: prompts-light-theme_7
+      rect:
+        serializedVersion: 2
+        x: 82
+        y: 146
+        width: 9
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 95bd9ad2cabb39fb0800000000000000
+      internalID: -4642160442713973927
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: prompts-light-theme_8
+      rect:
+        serializedVersion: 2
+        x: 90
+        y: 146
+        width: 9
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0d85d8e7014b48e10800000000000000
+      internalID: 2199080500999313616
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: prompts-light-theme_9
+      rect:
+        serializedVersion: 2
+        x: 98
+        y: 146
+        width: 9
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cf5028163ec1a6350800000000000000
+      internalID: 6010648415598413308
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: prompts-light-theme_10
+      rect:
+        serializedVersion: 2
+        x: 106
+        y: 146
+        width: 9
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b137b9246eba775e0800000000000000
+      internalID: -1911870511347174629
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: prompts-light-theme_11
+      rect:
+        serializedVersion: 2
+        x: 114
+        y: 146
+        width: 10
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f6273924480e05e30800000000000000
+      internalID: 4490335687145648751
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: prompts-light-theme_12
+      rect:
+        serializedVersion: 2
+        x: 126
+        y: 141
+        width: 52
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1a2b7338f65439360800000000000000
+      internalID: 7175154976576484001
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: prompts-light-theme_13
+      rect:
+        serializedVersion: 2
+        x: 139
+        y: 146
+        width: 8
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f5a23f118efff5c60800000000000000
+      internalID: 7809241651082373727
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: prompts-light-theme_14
+      rect:
+        serializedVersion: 2
+        x: 150
+        y: 146
+        width: 10
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 24001cbd32b54bfe0800000000000000
+      internalID: -1174213393268015038
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: prompts-light-theme_15
+      rect:
+        serializedVersion: 2
+        x: 157
+        y: 146
+        width: 9
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b9bb639b4ffcbe140800000000000000
+      internalID: 4750118881978661787
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: prompts-light-theme_16
+      rect:
+        serializedVersion: 2
+        x: 179
+        y: 146
+        width: 9
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 95d1b8557e07d4f90800000000000000
+      internalID: -6967788909597352615
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: prompts-light-theme_17
+      rect:
+        serializedVersion: 2
+        x: 187
+        y: 146
+        width: 8
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f367f7bd7e43bf2b0800000000000000
+      internalID: -5549783945379350977
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: prompts-light-theme_18
+      rect:
+        serializedVersion: 2
+        x: 190
+        y: 141
+        width: 36
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4a5bc1e4a0dc1d1a0800000000000000
+      internalID: -6786417719326755420
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: prompts-light-theme_19
+      rect:
+        serializedVersion: 2
+        x: 194
+        y: 146
+        width: 9
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7417b28dfc051a2c0800000000000000
+      internalID: -4422164505485938361
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: prompts-light-theme_20
+      rect:
+        serializedVersion: 2
+        x: 202
+        y: 146
+        width: 9
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 23cef0c66a3251970800000000000000
+      internalID: 8724919050784730162
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: prompts-light-theme_21
+      rect:
+        serializedVersion: 2
+        x: 210
+        y: 146
+        width: 9
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 211b42245a2df7f30800000000000000
+      internalID: 4575607353652850962
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: prompts-light-theme_22
+      rect:
+        serializedVersion: 2
+        x: 218
+        y: 146
+        width: 9
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0c40011126ded6c40800000000000000
+      internalID: 5507318924792825024
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: prompts-light-theme_23
+      rect:
+        serializedVersion: 2
+        x: 226
+        y: 146
+        width: 10
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 32a162fa6cd655450800000000000000
+      internalID: 6076883972315814435
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: prompts-light-theme_24
+      rect:
+        serializedVersion: 2
+        x: 366
+        y: 141
+        width: 100
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9855dd579d2d08c10800000000000000
+      internalID: 2053873261508121993
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: prompts-light-theme_25
+      rect:
+        serializedVersion: 2
+        x: 478
+        y: 141
+        width: 100
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bb5e21a231a1b9400800000000000000
+      internalID: 331887667154445755
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: prompts-light-theme_26
+      rect:
+        serializedVersion: 2
+        x: 590
+        y: 141
+        width: 164
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 270479b9c86495950800000000000000
+      internalID: 6438254712022581362
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: prompts-light-theme_27
+      rect:
+        serializedVersion: 2
+        x: 16
+        y: 128
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a64d7f53ed10b5e30800000000000000
+      internalID: 4493187107132003434
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: prompts-light-theme_28
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 127
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 75ff37ea83d2fb1f0800000000000000
+      internalID: -1027052468548927657
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: prompts-light-theme_29
+      rect:
+        serializedVersion: 2
+        x: 47
+        y: 63
+        width: 18
+        height: 82
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2d79ed5a888bb7d30800000000000000
+      internalID: 4430337555486906322
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: prompts-light-theme_30
+      rect:
+        serializedVersion: 2
+        x: 80
+        y: 128
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 12d7daf8ca8b5f5f0800000000000000
+      internalID: -723469113838699231
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: prompts-light-theme_31
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 127
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 09cc641f6a63cb650800000000000000
+      internalID: 6249930473523825808
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: prompts-light-theme_32
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 128
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 671fa8b7849c88d60800000000000000
+      internalID: 7892779660114325878
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: prompts-light-theme_33
+      rect:
+        serializedVersion: 2
+        x: 144
+        y: 127
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cd3da6d4839df2a10800000000000000
+      internalID: 1886965604731769820
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: prompts-light-theme_34
+      rect:
+        serializedVersion: 2
+        x: 159
+        y: 63
+        width: 18
+        height: 82
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 87a1b0aa42da03fb0800000000000000
+      internalID: -4670042440599922056
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: prompts-light-theme_35
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 128
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 406bca0b464cca780800000000000000
+      internalID: -8670339245855164924
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: prompts-light-theme_36
+      rect:
+        serializedVersion: 2
+        x: 208
+        y: 127
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e1df7a1a8b9624190800000000000000
+      internalID: -7979699348040057570
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: prompts-light-theme_37
+      rect:
+        serializedVersion: 2
+        x: 238
+        y: 112
+        width: 52
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 094f46bbc0b9a6020800000000000000
+      internalID: 2335849835730891920
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: prompts-light-theme_38
+      rect:
+        serializedVersion: 2
+        x: 251
+        y: 131
+        width: 12
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6958afc458ee6dae0800000000000000
+      internalID: -1524769167528786538
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: prompts-light-theme_39
+      rect:
+        serializedVersion: 2
+        x: 262
+        y: 131
+        width: 10
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: acd635f23eb1e7660800000000000000
+      internalID: 7385371101499715018
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: prompts-light-theme_40
+      rect:
+        serializedVersion: 2
+        x: 269
+        y: 131
+        width: 9
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8c86dc01fd09ac400800000000000000
+      internalID: 345247609181268168
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: prompts-light-theme_41
+      rect:
+        serializedVersion: 2
+        x: 291
+        y: 130
+        width: 9
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 79381feb096188d00800000000000000
+      internalID: 975054130260312983
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: prompts-light-theme_42
+      rect:
+        serializedVersion: 2
+        x: 299
+        y: 130
+        width: 8
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a37a9b30e24ebc950800000000000000
+      internalID: 6470516175929976634
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: prompts-light-theme_43
+      rect:
+        serializedVersion: 2
+        x: 302
+        y: 125
+        width: 36
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3480a6679afc88140800000000000000
+      internalID: 4722252536041048131
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: prompts-light-theme_44
+      rect:
+        serializedVersion: 2
+        x: 306
+        y: 130
+        width: 9
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: af8323c054187f940800000000000000
+      internalID: 5329870817573615866
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: prompts-light-theme_45
+      rect:
+        serializedVersion: 2
+        x: 314
+        y: 130
+        width: 9
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3c06a8e9d0dd00ad0800000000000000
+      internalID: -2737945522877079357
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: prompts-light-theme_46
+      rect:
+        serializedVersion: 2
+        x: 322
+        y: 130
+        width: 9
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1f8ad26902818c400800000000000000
+      internalID: 344551899731437809
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: prompts-light-theme_47
+      rect:
+        serializedVersion: 2
+        x: 330
+        y: 130
+        width: 9
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f426724559bf0d990800000000000000
+      internalID: -7363108771970194865
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: prompts-light-theme_48
+      rect:
+        serializedVersion: 2
+        x: 338
+        y: 130
+        width: 10
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 055e56bc7f3f5df10800000000000000
+      internalID: 2294007830810060112
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: prompts-light-theme_49
+      rect:
+        serializedVersion: 2
+        x: 372
+        y: 127
+        width: 9
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d00316e8a81df9890800000000000000
+      internalID: -7449004865623085043
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: prompts-light-theme_50
+      rect:
+        serializedVersion: 2
+        x: 380
+        y: 127
+        width: 8
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: afaab7de8c0c9eb10800000000000000
+      internalID: 2011350677807934202
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: prompts-light-theme_51
+      rect:
+        serializedVersion: 2
+        x: 387
+        y: 127
+        width: 9
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7256139d745dd0070800000000000000
+      internalID: 8074344211508454695
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: prompts-light-theme_52
+      rect:
+        serializedVersion: 2
+        x: 395
+        y: 127
+        width: 9
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 76f1614dc581f0090800000000000000
+      internalID: -8066201620622991513
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: prompts-light-theme_53
+      rect:
+        serializedVersion: 2
+        x: 403
+        y: 127
+        width: 9
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c06363e1364314640800000000000000
+      internalID: 5062385056454424076
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: prompts-light-theme_54
+      rect:
+        serializedVersion: 2
+        x: 411
+        y: 127
+        width: 9
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cfd2d3dc7a50e0270800000000000000
+      internalID: 8218512588258749948
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: prompts-light-theme_55
+      rect:
+        serializedVersion: 2
+        x: 419
+        y: 127
+        width: 10
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9e4d96c0100a30760800000000000000
+      internalID: 7422952537200383209
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: prompts-light-theme_56
+      rect:
+        serializedVersion: 2
+        x: 435
+        y: 115
+        width: 26
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0216b4c5959406f80800000000000000
+      internalID: -8115405880372272864
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: prompts-light-theme_57
+      rect:
+        serializedVersion: 2
+        x: 483
+        y: 127
+        width: 9
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d70691454f23008f0800000000000000
+      internalID: -576404727339065219
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: prompts-light-theme_58
+      rect:
+        serializedVersion: 2
+        x: 491
+        y: 127
+        width: 8
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9b4472959990e0e80800000000000000
+      internalID: -8210614516419443527
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: prompts-light-theme_59
+      rect:
+        serializedVersion: 2
+        x: 498
+        y: 127
+        width: 9
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f71289732581af9a0800000000000000
+      internalID: -6198615195722964609
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: prompts-light-theme_60
+      rect:
+        serializedVersion: 2
+        x: 506
+        y: 127
+        width: 9
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1a1fc29d9e5c4b6c0800000000000000
+      internalID: -4128457350230249055
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: prompts-light-theme_61
+      rect:
+        serializedVersion: 2
+        x: 514
+        y: 127
+        width: 9
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8f0f5045060f73380800000000000000
+      internalID: -8991453834504703752
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: prompts-light-theme_62
+      rect:
+        serializedVersion: 2
+        x: 522
+        y: 127
+        width: 9
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a1b24ffc816f87200800000000000000
+      internalID: 178162771709668122
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: prompts-light-theme_63
+      rect:
+        serializedVersion: 2
+        x: 530
+        y: 127
+        width: 10
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2d679b7b26bd68ad0800000000000000
+      internalID: -2700229709526370606
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: prompts-light-theme_64
+      rect:
+        serializedVersion: 2
+        x: 546
+        y: 114
+        width: 28
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6bbe2a6ac36896c70800000000000000
+      internalID: 8964844128309537718
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: prompts-light-theme_65
+      rect:
+        serializedVersion: 2
+        x: 594
+        y: 114
+        width: 28
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3d2eba13ae259fa80800000000000000
+      internalID: -8432617661465369901
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: prompts-light-theme_66
+      rect:
+        serializedVersion: 2
+        x: 626
+        y: 114
+        width: 28
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2e7aa397d0714ec40800000000000000
+      internalID: 5540578788208453602
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: prompts-light-theme_67
+      rect:
+        serializedVersion: 2
+        x: 658
+        y: 114
+        width: 28
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0110d985d7f5f5d60800000000000000
+      internalID: 7881122864883892496
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: prompts-light-theme_68
+      rect:
+        serializedVersion: 2
+        x: 690
+        y: 114
+        width: 28
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e57c88ad02be2abd0800000000000000
+      internalID: -2620273506838329506
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: prompts-light-theme_69
+      rect:
+        serializedVersion: 2
+        x: 722
+        y: 114
+        width: 28
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8b2d425f05f1bad70800000000000000
+      internalID: 9055365908329190072
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: prompts-light-theme_70
+      rect:
+        serializedVersion: 2
+        x: 16
+        y: 112
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f012f146e25d1cc10800000000000000
+      internalID: 2072171698792112399
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: prompts-light-theme_71
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 111
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6ea766cdc4348c0a0800000000000000
+      internalID: -6861160034904671514
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: prompts-light-theme_72
+      rect:
+        serializedVersion: 2
+        x: 80
+        y: 112
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 21412fb2631e40dc0800000000000000
+      internalID: -3673563773245713390
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: prompts-light-theme_73
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 111
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e6e9777e5e2a72000800000000000000
+      internalID: 11156632406302318
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: prompts-light-theme_74
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 112
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 87b9801ffff54f070800000000000000
+      internalID: 8139235979430501240
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: prompts-light-theme_75
+      rect:
+        serializedVersion: 2
+        x: 144
+        y: 111
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 34afebd542d064bd0800000000000000
+      internalID: -2646413281190806973
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: prompts-light-theme_76
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 112
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 151833bf0e582de70800000000000000
+      internalID: 9138513795221782865
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: prompts-light-theme_77
+      rect:
+        serializedVersion: 2
+        x: 208
+        y: 111
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 33be3c7326b6ce230800000000000000
+      internalID: 3669425865986665267
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: prompts-light-theme_78
+      rect:
+        serializedVersion: 2
+        x: 304
+        y: 113
+        width: 16
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 73810b390752869d0800000000000000
+      internalID: -2780931604456925129
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: prompts-light-theme_79
+      rect:
+        serializedVersion: 2
+        x: 320
+        y: 112
+        width: 16
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e46a6f74f34875d70800000000000000
+      internalID: 9031832985039971918
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: prompts-light-theme_80
+      rect:
+        serializedVersion: 2
+        x: 372
+        y: 115
+        width: 56
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e86e75f6083b44680800000000000000
+      internalID: -8771688810005666162
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: prompts-light-theme_81
+      rect:
+        serializedVersion: 2
+        x: 483
+        y: 115
+        width: 56
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4680e60902a67bc80800000000000000
+      internalID: -8307054299566962588
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: prompts-light-theme_82
+      rect:
+        serializedVersion: 2
+        x: 16
+        y: 96
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f33d23e075757e6e0800000000000000
+      internalID: -1808380693953981633
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: prompts-light-theme_83
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 95
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 15db8316d11921e40800000000000000
+      internalID: 5625718439910358353
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: prompts-light-theme_84
+      rect:
+        serializedVersion: 2
+        x: 80
+        y: 96
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4056206d2e8ade940800000000000000
+      internalID: 5327099626455721220
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: prompts-light-theme_85
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 95
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6b327fbcd154a5460800000000000000
+      internalID: 7231168145975092150
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: prompts-light-theme_86
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 96
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b9b66930dd9117be0800000000000000
+      internalID: -1481374365389526117
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: prompts-light-theme_87
+      rect:
+        serializedVersion: 2
+        x: 144
+        y: 95
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 99a2f9416e6831260800000000000000
+      internalID: 7067140563021015705
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: prompts-light-theme_88
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 96
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f6b00e570077c8a60800000000000000
+      internalID: 7677642308621175663
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: prompts-light-theme_89
+      rect:
+        serializedVersion: 2
+        x: 208
+        y: 95
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bb9604e395712f420800000000000000
+      internalID: 2662216001793321403
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: prompts-light-theme_90
+      rect:
+        serializedVersion: 2
+        x: 240
+        y: 97
+        width: 16
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0cb9d35010dfa6250800000000000000
+      internalID: 5938837239466138560
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: prompts-light-theme_91
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 96
+        width: 16
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d1481d8e06a3ae790800000000000000
+      internalID: -7500118041534823395
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: prompts-light-theme_92
+      rect:
+        serializedVersion: 2
+        x: 271
+        y: 96
+        width: 18
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6ce949f54d898fa00800000000000000
+      internalID: 790549772507586246
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: prompts-light-theme_93
+      rect:
+        serializedVersion: 2
+        x: 304
+        y: 97
+        width: 16
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1fcaac37a33f67880800000000000000
+      internalID: -8613429804923179791
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: prompts-light-theme_94
+      rect:
+        serializedVersion: 2
+        x: 320
+        y: 96
+        width: 16
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8babb077c2f8bdf30800000000000000
+      internalID: 4601428865427684024
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: prompts-light-theme_95
+      rect:
+        serializedVersion: 2
+        x: 368
+        y: 84
+        width: 28
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4a6e95201314f34b0800000000000000
+      internalID: -5458572544601102684
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: prompts-light-theme_96
+      rect:
+        serializedVersion: 2
+        x: 403
+        y: 83
+        width: 26
+        height: 29
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5b36c92263d327a10800000000000000
+      internalID: 1905652895049343925
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: prompts-light-theme_97
+      rect:
+        serializedVersion: 2
+        x: 436
+        y: 84
+        width: 28
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0eff4d73a9ae0e9a0800000000000000
+      internalID: -6205702338433974304
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: prompts-light-theme_98
+      rect:
+        serializedVersion: 2
+        x: 479
+        y: 83
+        width: 30
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6461569655d7390d0800000000000000
+      internalID: -3417249886450149818
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: prompts-light-theme_99
+      rect:
+        serializedVersion: 2
+        x: 514
+        y: 82
+        width: 28
+        height: 31
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2ce130d3a0ce39850800000000000000
+      internalID: 6382704625631567554
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: prompts-light-theme_100
+      rect:
+        serializedVersion: 2
+        x: 547
+        y: 83
+        width: 30
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0eb77b4b300d77520800000000000000
+      internalID: 2699855215967304672
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: prompts-light-theme_101
+      rect:
+        serializedVersion: 2
+        x: 590
+        y: 65
+        width: 164
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b533db07d893e0480800000000000000
+      internalID: -8931137731384495269
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: prompts-light-theme_102
+      rect:
+        serializedVersion: 2
+        x: 16
+        y: 80
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fff11e0bab43bf380800000000000000
+      internalID: -8936491059150512129
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: prompts-light-theme_103
+      rect:
+        serializedVersion: 2
+        x: 16
+        y: 64
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9a990f8b7247f1f10800000000000000
+      internalID: 2242638853409118633
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: prompts-light-theme_104
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 79
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c7c03146431e1e1f0800000000000000
+      internalID: -1017284425675502468
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: prompts-light-theme_105
+      rect:
+        serializedVersion: 2
+        x: 80
+        y: 80
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8f6437af5b052b080800000000000000
+      internalID: -9173180748479117576
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: prompts-light-theme_106
+      rect:
+        serializedVersion: 2
+        x: 80
+        y: 64
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ff157e34812b6ed80800000000000000
+      internalID: -8221688252430069249
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: prompts-light-theme_107
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 79
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 50fb6fffd75ec7cc0800000000000000
+      internalID: -3711839663532097787
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: prompts-light-theme_108
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 80
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0a1e9d3265184f3c0800000000000000
+      internalID: -4326691135027551840
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: prompts-light-theme_109
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 64
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 72019389afc33ceb0800000000000000
+      internalID: -4700846539051298777
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: prompts-light-theme_110
+      rect:
+        serializedVersion: 2
+        x: 144
+        y: 79
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: aa01e198c1e2d4b10800000000000000
+      internalID: 1967279312325185706
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: prompts-light-theme_111
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 80
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b03ab26b31477bcc0800000000000000
+      internalID: -3695357341224688885
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: prompts-light-theme_112
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 64
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e3461db23aa48d390800000000000000
+      internalID: -7793397090489375682
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: prompts-light-theme_113
+      rect:
+        serializedVersion: 2
+        x: 208
+        y: 79
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bcb8be98bd5ff4820800000000000000
+      internalID: 2904810607937817547
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: prompts-light-theme_114
+      rect:
+        serializedVersion: 2
+        x: 625
+        y: 65
+        width: 30
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d60449855fa40cd80800000000000000
+      internalID: -8232497701219712915
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: prompts-light-theme_115
+      rect:
+        serializedVersion: 2
+        x: 657
+        y: 65
+        width: 30
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0c67b8410c2022650800000000000000
+      internalID: 6206526260471625408
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: prompts-light-theme_116
+      rect:
+        serializedVersion: 2
+        x: 689
+        y: 65
+        width: 30
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6ab5d25f38f8f2ae0800000000000000
+      internalID: -1571879948012135514
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: prompts-light-theme_117
+      rect:
+        serializedVersion: 2
+        x: 721
+        y: 65
+        width: 30
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f56739c6be8db4610800000000000000
+      internalID: 1606616197738231391
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: prompts-light-theme_118
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 63
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 89fd9b188b24f08e0800000000000000
+      internalID: -1725086772041752680
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: prompts-light-theme_119
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 63
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b50d5935a3d0ac140800000000000000
+      internalID: 4740616101922459739
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: prompts-light-theme_120
+      rect:
+        serializedVersion: 2
+        x: 144
+        y: 63
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 36a3cccec651e9e90800000000000000
+      internalID: -7017147611823195549
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: prompts-light-theme_121
+      rect:
+        serializedVersion: 2
+        x: 208
+        y: 63
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 96b2c725903cbbee0800000000000000
+      internalID: -1244186427231818903
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: prompts-light-theme_122
+      rect:
+        serializedVersion: 2
+        x: 240
+        y: 67
+        width: 16
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0c60403bcbb12fe60800000000000000
+      internalID: 7994482785807238848
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: prompts-light-theme_123
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 66
+        width: 16
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0e61e3845e0ba16c0800000000000000
+      internalID: -4171827605999315232
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: prompts-light-theme_124
+      rect:
+        serializedVersion: 2
+        x: 271
+        y: 66
+        width: 18
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ba6fd7659602b22f0800000000000000
+      internalID: -996667255737682261
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: prompts-light-theme_125
+      rect:
+        serializedVersion: 2
+        x: 304
+        y: 67
+        width: 16
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1341e340d86220610800000000000000
+      internalID: 1585872405891257393
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: prompts-light-theme_126
+      rect:
+        serializedVersion: 2
+        x: 320
+        y: 66
+        width: 16
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6fbf1931ca1c91700800000000000000
+      internalID: 511652977490131958
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: prompts-light-theme_127
+      rect:
+        serializedVersion: 2
+        x: 368
+        y: 51
+        width: 29
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 91fa580e424ec2450800000000000000
+      internalID: 6065473645198028569
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: prompts-light-theme_128
+      rect:
+        serializedVersion: 2
+        x: 403
+        y: 51
+        width: 26
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9ae3401b1dd71bc00800000000000000
+      internalID: 914650538904403625
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: prompts-light-theme_129
+      rect:
+        serializedVersion: 2
+        x: 435
+        y: 51
+        width: 29
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 24ff843dcf448e890800000000000000
+      internalID: -7428611732680409278
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: prompts-light-theme_130
+      rect:
+        serializedVersion: 2
+        x: 479
+        y: 50
+        width: 31
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 08ef737c718adb8b0800000000000000
+      internalID: -5134763180052447616
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: prompts-light-theme_131
+      rect:
+        serializedVersion: 2
+        x: 514
+        y: 50
+        width: 28
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 755ff92a5cb8c94f0800000000000000
+      internalID: -820627351135062697
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: prompts-light-theme_132
+      rect:
+        serializedVersion: 2
+        x: 546
+        y: 50
+        width: 31
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 540a7b51edf87c530800000000000000
+      internalID: 3875224188385468485
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: prompts-light-theme_133
+      rect:
+        serializedVersion: 2
+        x: 17
+        y: 49
+        width: 14
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fe6bc86e1a05bbbd0800000000000000
+      internalID: -2613406502470502673
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: prompts-light-theme_134
+      rect:
+        serializedVersion: 2
+        x: 33
+        y: 48
+        width: 14
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d342db38352360170800000000000000
+      internalID: 8144252310420005949
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: prompts-light-theme_135
+      rect:
+        serializedVersion: 2
+        x: 48
+        y: 48
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cf6a75e6e737f14b0800000000000000
+      internalID: -5467524435750181124
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: prompts-light-theme_136
+      rect:
+        serializedVersion: 2
+        x: 81
+        y: 49
+        width: 14
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 008630aedcd9bbc00800000000000000
+      internalID: 917500456819976192
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: prompts-light-theme_137
+      rect:
+        serializedVersion: 2
+        x: 97
+        y: 48
+        width: 14
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ba99353ab80b88fc0800000000000000
+      internalID: -3492347397238711893
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: prompts-light-theme_138
+      rect:
+        serializedVersion: 2
+        x: 129
+        y: 49
+        width: 14
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 26db5bf5dc91c6510800000000000000
+      internalID: 1543637142145973602
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: prompts-light-theme_139
+      rect:
+        serializedVersion: 2
+        x: 145
+        y: 48
+        width: 14
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 17283e778343edae0800000000000000
+      internalID: -1522722206870437263
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: prompts-light-theme_140
+      rect:
+        serializedVersion: 2
+        x: 160
+        y: 48
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e18f8d7b370a19270800000000000000
+      internalID: 8255556010812962846
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: prompts-light-theme_141
+      rect:
+        serializedVersion: 2
+        x: 193
+        y: 49
+        width: 14
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: dd3451d34789396b0800000000000000
+      internalID: -5290717512221768739
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: prompts-light-theme_142
+      rect:
+        serializedVersion: 2
+        x: 209
+        y: 48
+        width: 14
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 37a2fd16fda5e33a0800000000000000
+      internalID: -6683804881505015181
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: prompts-light-theme_143
+      rect:
+        serializedVersion: 2
+        x: 240
+        y: 51
+        width: 16
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b229efd95a6fcd8c0800000000000000
+      internalID: -3973029580066876885
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: prompts-light-theme_144
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 50
+        width: 16
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 28f75082cc043bc30800000000000000
+      internalID: 4373910908695838594
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: prompts-light-theme_145
+      rect:
+        serializedVersion: 2
+        x: 271
+        y: 50
+        width: 18
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ef88c92d13e6738d0800000000000000
+      internalID: -2866701477532104450
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: prompts-light-theme_146
+      rect:
+        serializedVersion: 2
+        x: 304
+        y: 51
+        width: 16
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ccd6da763aed37250800000000000000
+      internalID: 5941337126832270796
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: prompts-light-theme_147
+      rect:
+        serializedVersion: 2
+        x: 320
+        y: 50
+        width: 16
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d61a23c651d0fcb10800000000000000
+      internalID: 2003834744863891821
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: prompts-light-theme_148
+      rect:
+        serializedVersion: 2
+        x: 590
+        y: 18
+        width: 164
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f6d5ef6b86dab38d0800000000000000
+      internalID: -2865506072632861329
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: prompts-light-theme_149
+      rect:
+        serializedVersion: 2
+        x: 17
+        y: 33
+        width: 14
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3c93415a96eeeb2b0800000000000000
+      internalID: -5566749951874811453
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: prompts-light-theme_150
+      rect:
+        serializedVersion: 2
+        x: 33
+        y: 32
+        width: 14
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 71b38ccda29fa6510800000000000000
+      internalID: 1543319784815868695
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: prompts-light-theme_151
+      rect:
+        serializedVersion: 2
+        x: 48
+        y: 32
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 766f976c72fbcdd20800000000000000
+      internalID: 3304726404137612903
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: prompts-light-theme_152
+      rect:
+        serializedVersion: 2
+        x: 81
+        y: 33
+        width: 14
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 601bee6d8eeacf730800000000000000
+      internalID: 4034291681278734598
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: prompts-light-theme_153
+      rect:
+        serializedVersion: 2
+        x: 97
+        y: 32
+        width: 14
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: da739d81a5eaa7ce0800000000000000
+      internalID: -1406620231612680275
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: prompts-light-theme_154
+      rect:
+        serializedVersion: 2
+        x: 129
+        y: 33
+        width: 14
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 65ca24ebec9b1dc10800000000000000
+      internalID: 2076645200800951382
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: prompts-light-theme_155
+      rect:
+        serializedVersion: 2
+        x: 145
+        y: 32
+        width: 14
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9d7adc4efedb155d0800000000000000
+      internalID: -3075468232483821607
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: prompts-light-theme_156
+      rect:
+        serializedVersion: 2
+        x: 160
+        y: 32
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d4b305bf360c5ec80800000000000000
+      internalID: -8294011603082265779
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: prompts-light-theme_157
+      rect:
+        serializedVersion: 2
+        x: 193
+        y: 33
+        width: 14
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9dc498686c9e73ba0800000000000000
+      internalID: -6109157330634847015
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: prompts-light-theme_158
+      rect:
+        serializedVersion: 2
+        x: 209
+        y: 32
+        width: 14
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 41f458861dafcf760800000000000000
+      internalID: 7493139657346338580
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: prompts-light-theme_159
+      rect:
+        serializedVersion: 2
+        x: 368
+        y: 16
+        width: 28
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5d60d43db64a02980800000000000000
+      internalID: -8565665708245186859
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: prompts-light-theme_160
+      rect:
+        serializedVersion: 2
+        x: 403
+        y: 16
+        width: 26
+        height: 29
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2fcf38574510c5a40800000000000000
+      internalID: 5358159118924512498
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: prompts-light-theme_161
+      rect:
+        serializedVersion: 2
+        x: 436
+        y: 16
+        width: 28
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 32b7e8013e1df2ad0800000000000000
+      internalID: -2724728476370306269
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: prompts-light-theme_162
+      rect:
+        serializedVersion: 2
+        x: 479
+        y: 15
+        width: 30
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f536a0ac705b58010800000000000000
+      internalID: 1190556721568441183
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: prompts-light-theme_163
+      rect:
+        serializedVersion: 2
+        x: 514
+        y: 15
+        width: 28
+        height: 31
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f02ad17d54f6373c0800000000000000
+      internalID: -4363021268239408625
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: prompts-light-theme_164
+      rect:
+        serializedVersion: 2
+        x: 547
+        y: 15
+        width: 30
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 066aa296602257f90800000000000000
+      internalID: -6956616638474312096
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: prompts-light-theme_165
+      rect:
+        serializedVersion: 2
+        x: 594
+        y: 18
+        width: 28
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a36deee1e914771f0800000000000000
+      internalID: -1047296240960743878
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: prompts-light-theme_166
+      rect:
+        serializedVersion: 2
+        x: 658
+        y: 18
+        width: 29
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 072a7b0f70173fb40800000000000000
+      internalID: 5472842251102560880
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: prompts-light-theme_167
+      rect:
+        serializedVersion: 2
+        x: 690
+        y: 17
+        width: 28
+        height: 29
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2ad028507a9cf26d0800000000000000
+      internalID: -3012967906498441822
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: prompts-light-theme_168
+      rect:
+        serializedVersion: 2
+        x: 721
+        y: 18
+        width: 29
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e3119b5657320a5d0800000000000000
+      internalID: -3053401560232423106
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable: {}
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

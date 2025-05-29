@@ -1,0 +1,4342 @@
+fileFormatVersion: 2
+guid: c4b8834fb8b14fe4ba9445923da5cff0
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 8555471230205678037
+    second: prompts-dark-theme.png_0
+  - first:
+      213: 915238990928475646
+    second: prompts-dark-theme.png_1
+  - first:
+      213: 2932234192944423862
+    second: prompts-dark-theme.png_2
+  - first:
+      213: 940600807028695039
+    second: prompts-dark-theme.png_3
+  - first:
+      213: 3426046419398300477
+    second: prompts-dark-theme.png_4
+  - first:
+      213: 1585147520289613694
+    second: prompts-dark-theme.png_5
+  - first:
+      213: 2043877636789997811
+    second: prompts-dark-theme.png_6
+  - first:
+      213: 2678501302445816598
+    second: prompts-dark-theme.png_7
+  - first:
+      213: -5250542359166915133
+    second: prompts-dark-theme.png_8
+  - first:
+      213: -7590591360760205570
+    second: prompts-dark-theme.png_9
+  - first:
+      213: -2047024176750735780
+    second: prompts-dark-theme.png_10
+  - first:
+      213: -5401648823556683311
+    second: prompts-dark-theme.png_11
+  - first:
+      213: 7964249293608629007
+    second: prompts-dark-theme.png_12
+  - first:
+      213: 2547520023033621927
+    second: prompts-dark-theme.png_13
+  - first:
+      213: 3082704351495435360
+    second: prompts-dark-theme.png_14
+  - first:
+      213: -6310103595331267663
+    second: prompts-dark-theme.png_15
+  - first:
+      213: -3632419539555062537
+    second: prompts-dark-theme.png_16
+  - first:
+      213: 6651724502178411435
+    second: prompts-dark-theme.png_17
+  - first:
+      213: 8069526477652939886
+    second: prompts-dark-theme.png_18
+  - first:
+      213: -5311318858349977994
+    second: prompts-dark-theme.png_19
+  - first:
+      213: -2098063278055145360
+    second: prompts-dark-theme.png_20
+  - first:
+      213: -5671288519870307772
+    second: prompts-dark-theme.png_21
+  - first:
+      213: 8204404410152547046
+    second: prompts-dark-theme.png_22
+  - first:
+      213: -2101268166652541529
+    second: prompts-dark-theme.png_23
+  - first:
+      213: -5729641864935328909
+    second: prompts-dark-theme.png_24
+  - first:
+      213: 8189478324302446395
+    second: prompts-dark-theme.png_25
+  - first:
+      213: -5233994555440262310
+    second: prompts-dark-theme.png_26
+  - first:
+      213: 8129343118992142873
+    second: prompts-dark-theme.png_27
+  - first:
+      213: -6949047227312284554
+    second: prompts-dark-theme.png_28
+  - first:
+      213: -4158496304859650463
+    second: prompts-dark-theme.png_29
+  - first:
+      213: -7792083671150037611
+    second: prompts-dark-theme.png_30
+  - first:
+      213: -7365065933153341573
+    second: prompts-dark-theme.png_31
+  - first:
+      213: 830129031012384446
+    second: prompts-dark-theme.png_32
+  - first:
+      213: -396854001542123169
+    second: prompts-dark-theme.png_33
+  - first:
+      213: 3138336636513608622
+    second: prompts-dark-theme.png_34
+  - first:
+      213: 8113152063939956426
+    second: prompts-dark-theme.png_35
+  - first:
+      213: 2355177931947193404
+    second: prompts-dark-theme.png_36
+  - first:
+      213: -7967288808672677103
+    second: prompts-dark-theme.png_37
+  - first:
+      213: 4983527726559064158
+    second: prompts-dark-theme.png_38
+  - first:
+      213: 2887674249175610839
+    second: prompts-dark-theme.png_39
+  - first:
+      213: 4350753060299229950
+    second: prompts-dark-theme.png_40
+  - first:
+      213: -1529626720411060414
+    second: prompts-dark-theme.png_41
+  - first:
+      213: -6099513235411890221
+    second: prompts-dark-theme.png_42
+  - first:
+      213: 3308007818926455885
+    second: prompts-dark-theme.png_43
+  - first:
+      213: 616583509324958817
+    second: prompts-dark-theme.png_44
+  - first:
+      213: 2936022353065724325
+    second: prompts-dark-theme.png_45
+  - first:
+      213: 2922093222209620572
+    second: prompts-dark-theme.png_46
+  - first:
+      213: 5537611180477794544
+    second: prompts-dark-theme.png_47
+  - first:
+      213: -6887189708255221557
+    second: prompts-dark-theme.png_48
+  - first:
+      213: 4006095997348234409
+    second: prompts-dark-theme.png_49
+  - first:
+      213: -6497995943127236032
+    second: prompts-dark-theme.png_50
+  - first:
+      213: 3901740396029622572
+    second: prompts-dark-theme.png_51
+  - first:
+      213: 925038391290885902
+    second: prompts-dark-theme.png_52
+  - first:
+      213: -2422275284029435962
+    second: prompts-dark-theme.png_53
+  - first:
+      213: -9058612230686658232
+    second: prompts-dark-theme.png_54
+  - first:
+      213: 5523312595472707731
+    second: prompts-dark-theme.png_55
+  - first:
+      213: 5917384343011219052
+    second: prompts-dark-theme.png_56
+  - first:
+      213: -1146136761393641140
+    second: prompts-dark-theme.png_57
+  - first:
+      213: -8949348652361630135
+    second: prompts-dark-theme.png_58
+  - first:
+      213: -8530193652043516735
+    second: prompts-dark-theme.png_59
+  - first:
+      213: 1768739282779619176
+    second: prompts-dark-theme.png_60
+  - first:
+      213: -6127836363792628841
+    second: prompts-dark-theme.png_61
+  - first:
+      213: 3585502414168330359
+    second: prompts-dark-theme.png_62
+  - first:
+      213: -4166790834879171935
+    second: prompts-dark-theme.png_63
+  - first:
+      213: -5585788443453923186
+    second: prompts-dark-theme.png_64
+  - first:
+      213: -5975331777159106270
+    second: prompts-dark-theme.png_65
+  - first:
+      213: 8424524709832197332
+    second: prompts-dark-theme.png_66
+  - first:
+      213: -9147214114179573517
+    second: prompts-dark-theme.png_67
+  - first:
+      213: -1952569211278267797
+    second: prompts-dark-theme.png_68
+  - first:
+      213: -7876251414812834613
+    second: prompts-dark-theme.png_69
+  - first:
+      213: -185178843975107224
+    second: prompts-dark-theme.png_70
+  - first:
+      213: 7519587445596189322
+    second: prompts-dark-theme.png_71
+  - first:
+      213: -4779258911622400036
+    second: prompts-dark-theme.png_72
+  - first:
+      213: -6362827350099186886
+    second: prompts-dark-theme.png_73
+  - first:
+      213: 1321802189149427945
+    second: prompts-dark-theme.png_74
+  - first:
+      213: -4188940458232730920
+    second: prompts-dark-theme.png_75
+  - first:
+      213: 7480151907605339069
+    second: prompts-dark-theme.png_76
+  - first:
+      213: 4179078477229657791
+    second: prompts-dark-theme.png_77
+  - first:
+      213: 2560371473511227000
+    second: prompts-dark-theme.png_78
+  - first:
+      213: 7737398982882819165
+    second: prompts-dark-theme.png_79
+  - first:
+      213: 2454715321479395088
+    second: prompts-dark-theme.png_80
+  - first:
+      213: 312006414999243496
+    second: prompts-dark-theme.png_81
+  - first:
+      213: -7379161382149063343
+    second: prompts-dark-theme.png_82
+  - first:
+      213: 1367366664847369741
+    second: prompts-dark-theme.png_83
+  - first:
+      213: 8906305176449160606
+    second: prompts-dark-theme.png_84
+  - first:
+      213: 8521446693064135497
+    second: prompts-dark-theme.png_85
+  - first:
+      213: -4930910015863076433
+    second: prompts-dark-theme.png_86
+  - first:
+      213: -5997652541038143349
+    second: prompts-dark-theme.png_87
+  - first:
+      213: -381424809210100135
+    second: prompts-dark-theme.png_88
+  - first:
+      213: -7984576365371014835
+    second: prompts-dark-theme.png_89
+  - first:
+      213: 2606241348104828667
+    second: prompts-dark-theme.png_90
+  - first:
+      213: -8127624075070147756
+    second: prompts-dark-theme.png_91
+  - first:
+      213: 5283289242379525257
+    second: prompts-dark-theme.png_92
+  - first:
+      213: 7723490243724816067
+    second: prompts-dark-theme.png_93
+  - first:
+      213: 7772523218166911325
+    second: prompts-dark-theme.png_94
+  - first:
+      213: 2840503930773662718
+    second: prompts-dark-theme.png_95
+  - first:
+      213: -3871378766613245247
+    second: prompts-dark-theme.png_96
+  - first:
+      213: -3295472707981029041
+    second: prompts-dark-theme.png_97
+  - first:
+      213: 826564949091474834
+    second: prompts-dark-theme.png_98
+  - first:
+      213: -8007776122469734420
+    second: prompts-dark-theme.png_99
+  - first:
+      213: 4947425513413408596
+    second: prompts-dark-theme.png_100
+  - first:
+      213: -7316541065993449184
+    second: prompts-dark-theme.png_101
+  - first:
+      213: 7908299779228168185
+    second: prompts-dark-theme.png_102
+  - first:
+      213: -5919426505677889776
+    second: prompts-dark-theme.png_103
+  - first:
+      213: -6828569102306638277
+    second: prompts-dark-theme.png_104
+  - first:
+      213: 6360993855156474962
+    second: prompts-dark-theme.png_105
+  - first:
+      213: 3175653223233511882
+    second: prompts-dark-theme.png_106
+  - first:
+      213: 5348440066241399783
+    second: prompts-dark-theme.png_107
+  - first:
+      213: 4922247718518503077
+    second: prompts-dark-theme.png_108
+  - first:
+      213: 7104439310538326846
+    second: prompts-dark-theme.png_109
+  - first:
+      213: 3844465210269118552
+    second: prompts-dark-theme.png_110
+  - first:
+      213: -3452431261402217618
+    second: prompts-dark-theme.png_111
+  - first:
+      213: 8101686684334475842
+    second: prompts-dark-theme.png_112
+  - first:
+      213: 583772657146026722
+    second: prompts-dark-theme.png_113
+  - first:
+      213: -1988937760861064257
+    second: prompts-dark-theme.png_114
+  - first:
+      213: -4066723401156150704
+    second: prompts-dark-theme.png_115
+  - first:
+      213: -4989152944276888188
+    second: prompts-dark-theme.png_116
+  - first:
+      213: 5200914838911038826
+    second: prompts-dark-theme.png_117
+  - first:
+      213: -6238562130846893661
+    second: prompts-dark-theme.png_118
+  - first:
+      213: -9045788897909595507
+    second: prompts-dark-theme.png_119
+  - first:
+      213: -7845481375314705435
+    second: prompts-dark-theme.png_120
+  - first:
+      213: 4466191432310852369
+    second: prompts-dark-theme.png_121
+  - first:
+      213: 4317347867269070193
+    second: prompts-dark-theme.png_122
+  - first:
+      213: -482663927539109207
+    second: prompts-dark-theme.png_123
+  - first:
+      213: -2525057937072974204
+    second: prompts-dark-theme.png_124
+  - first:
+      213: -3755377405944857356
+    second: prompts-dark-theme.png_125
+  - first:
+      213: 7441899184233305560
+    second: prompts-dark-theme.png_126
+  - first:
+      213: -9018660688425875092
+    second: prompts-dark-theme.png_127
+  - first:
+      213: -2836396248150675558
+    second: prompts-dark-theme.png_128
+  - first:
+      213: 871566840554175421
+    second: prompts-dark-theme.png_129
+  - first:
+      213: 5431524011799034507
+    second: prompts-dark-theme.png_130
+  - first:
+      213: -9167797136332522377
+    second: prompts-dark-theme.png_131
+  - first:
+      213: 4338939750206514248
+    second: prompts-dark-theme.png_132
+  - first:
+      213: 3421258268216991070
+    second: prompts-dark-theme.png_133
+  - first:
+      213: 7556017288495346644
+    second: prompts-dark-theme.png_134
+  - first:
+      213: -5234319329415352634
+    second: prompts-dark-theme.png_135
+  - first:
+      213: 1566247821379060513
+    second: prompts-dark-theme.png_136
+  - first:
+      213: 2619258218996461876
+    second: prompts-dark-theme.png_137
+  - first:
+      213: 373974945794018172
+    second: prompts-dark-theme.png_138
+  - first:
+      213: -826738864248870470
+    second: prompts-dark-theme.png_139
+  - first:
+      213: -6792335924366724107
+    second: prompts-dark-theme.png_140
+  - first:
+      213: 4114142204473810840
+    second: prompts-dark-theme.png_141
+  - first:
+      213: -404384984176698799
+    second: prompts-dark-theme.png_142
+  - first:
+      213: 1698331175183693063
+    second: prompts-dark-theme.png_143
+  - first:
+      213: 6344252906344846010
+    second: prompts-dark-theme.png_144
+  - first:
+      213: 6499799985583966312
+    second: prompts-dark-theme.png_145
+  - first:
+      213: 1773327072523872468
+    second: prompts-dark-theme.png_146
+  - first:
+      213: 1980135276468015643
+    second: prompts-dark-theme.png_147
+  - first:
+      213: -469841796925979177
+    second: prompts-dark-theme.png_148
+  - first:
+      213: 2816259834286043156
+    second: prompts-dark-theme.png_149
+  - first:
+      213: -5239057610912379300
+    second: prompts-dark-theme.png_150
+  - first:
+      213: 8440461808508309351
+    second: prompts-dark-theme.png_151
+  - first:
+      213: -7418011788628910172
+    second: prompts-dark-theme.png_152
+  - first:
+      213: -418406384700539003
+    second: prompts-dark-theme.png_153
+  - first:
+      213: 972200873543293563
+    second: prompts-dark-theme.png_154
+  - first:
+      213: 7950122590163201649
+    second: prompts-dark-theme.png_155
+  - first:
+      213: 3394720168925140136
+    second: prompts-dark-theme.png_156
+  - first:
+      213: 4571182258460351987
+    second: prompts-dark-theme.png_157
+  - first:
+      213: 335723908320004420
+    second: prompts-dark-theme.png_158
+  - first:
+      213: -5109074942779812550
+    second: prompts-dark-theme.png_159
+  - first:
+      213: -5607538161946983797
+    second: prompts-dark-theme.png_160
+  - first:
+      213: -8628770485795585639
+    second: prompts-dark-theme.png_161
+  - first:
+      213: -4836645407358901286
+    second: prompts-dark-theme.png_162
+  - first:
+      213: -9007730791669057028
+    second: prompts-dark-theme.png_163
+  - first:
+      213: 7904156826001593386
+    second: prompts-dark-theme.png_164
+  - first:
+      213: -3895667666215761792
+    second: prompts-dark-theme.png_165
+  - first:
+      213: 6638294965299927081
+    second: prompts-dark-theme.png_166
+  - first:
+      213: 6614043321807226445
+    second: prompts-dark-theme.png_167
+  - first:
+      213: 106226158399333980
+    second: prompts-dark-theme.png_168
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: prompts-dark-theme.png_0
+      rect:
+        serializedVersion: 2
+        x: 14
+        y: 141
+        width: 52
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5d1db7a41c32bb670800000000000000
+      internalID: 8555471230205678037
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: prompts-dark-theme.png_1
+      rect:
+        serializedVersion: 2
+        x: 27
+        y: 146
+        width: 8
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ef5f0ea530593bc00800000000000000
+      internalID: 915238990928475646
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: prompts-dark-theme.png_2
+      rect:
+        serializedVersion: 2
+        x: 38
+        y: 146
+        width: 10
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6b3e4bc767361b820800000000000000
+      internalID: 2932234192944423862
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: prompts-dark-theme.png_3
+      rect:
+        serializedVersion: 2
+        x: 45
+        y: 146
+        width: 9
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fff1462537fad0d00800000000000000
+      internalID: 940600807028695039
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: prompts-dark-theme.png_4
+      rect:
+        serializedVersion: 2
+        x: 67
+        y: 146
+        width: 9
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d331c340113cb8f20800000000000000
+      internalID: 3426046419398300477
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: prompts-dark-theme.png_5
+      rect:
+        serializedVersion: 2
+        x: 75
+        y: 146
+        width: 8
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e77247f65439ff510800000000000000
+      internalID: 1585147520289613694
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: prompts-dark-theme.png_6
+      rect:
+        serializedVersion: 2
+        x: 78
+        y: 141
+        width: 36
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3f09b39b1ef4d5c10800000000000000
+      internalID: 2043877636789997811
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: prompts-dark-theme.png_7
+      rect:
+        serializedVersion: 2
+        x: 82
+        y: 146
+        width: 9
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 61b34b64eb2fb2520800000000000000
+      internalID: 2678501302445816598
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: prompts-dark-theme.png_8
+      rect:
+        serializedVersion: 2
+        x: 90
+        y: 146
+        width: 9
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3cde6bbfa835227b0800000000000000
+      internalID: -5250542359166915133
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: prompts-dark-theme.png_9
+      rect:
+        serializedVersion: 2
+        x: 98
+        y: 146
+        width: 9
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: efe2db2cf5dc8a690800000000000000
+      internalID: -7590591360760205570
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: prompts-dark-theme.png_10
+      rect:
+        serializedVersion: 2
+        x: 106
+        y: 146
+        width: 9
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c5ec22a5b528793e0800000000000000
+      internalID: -2047024176750735780
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: prompts-dark-theme.png_11
+      rect:
+        serializedVersion: 2
+        x: 114
+        y: 146
+        width: 10
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1d94f7e930d7905b0800000000000000
+      internalID: -5401648823556683311
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: prompts-dark-theme.png_12
+      rect:
+        serializedVersion: 2
+        x: 126
+        y: 141
+        width: 52
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f03b2304982b68e60800000000000000
+      internalID: 7964249293608629007
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: prompts-dark-theme.png_13
+      rect:
+        serializedVersion: 2
+        x: 139
+        y: 146
+        width: 8
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7ad2d1fa6fb9a5320800000000000000
+      internalID: 2547520023033621927
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: prompts-dark-theme.png_14
+      rect:
+        serializedVersion: 2
+        x: 150
+        y: 146
+        width: 10
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 064bf6a5647f7ca20800000000000000
+      internalID: 3082704351495435360
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: prompts-dark-theme.png_15
+      rect:
+        serializedVersion: 2
+        x: 157
+        y: 146
+        width: 9
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1b35d5066320e68a0800000000000000
+      internalID: -6310103595331267663
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: prompts-dark-theme.png_16
+      rect:
+        serializedVersion: 2
+        x: 179
+        y: 146
+        width: 9
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7fce1a59cad079dc0800000000000000
+      internalID: -3632419539555062537
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: prompts-dark-theme.png_17
+      rect:
+        serializedVersion: 2
+        x: 187
+        y: 146
+        width: 8
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ba33b10413caf4c50800000000000000
+      internalID: 6651724502178411435
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: prompts-dark-theme.png_18
+      rect:
+        serializedVersion: 2
+        x: 190
+        y: 141
+        width: 36
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e64dc16c397bcff60800000000000000
+      internalID: 8069526477652939886
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: prompts-dark-theme.png_19
+      rect:
+        serializedVersion: 2
+        x: 194
+        y: 146
+        width: 9
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 67e573f83a76a46b0800000000000000
+      internalID: -5311318858349977994
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: prompts-dark-theme.png_20
+      rect:
+        serializedVersion: 2
+        x: 202
+        y: 146
+        width: 9
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0704b3b809e22e2e0800000000000000
+      internalID: -2098063278055145360
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: prompts-dark-theme.png_21
+      rect:
+        serializedVersion: 2
+        x: 210
+        y: 146
+        width: 9
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 442216293298b41b0800000000000000
+      internalID: -5671288519870307772
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: prompts-dark-theme.png_22
+      rect:
+        serializedVersion: 2
+        x: 218
+        y: 146
+        width: 9
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6e27acc9756ebd170800000000000000
+      internalID: 8204404410152547046
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: prompts-dark-theme.png_23
+      rect:
+        serializedVersion: 2
+        x: 226
+        y: 146
+        width: 10
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7a5c6d44cbbc6d2e0800000000000000
+      internalID: -2101268166652541529
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: prompts-dark-theme.png_24
+      rect:
+        serializedVersion: 2
+        x: 366
+        y: 141
+        width: 100
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 373b25ea4193c70b0800000000000000
+      internalID: -5729641864935328909
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: prompts-dark-theme.png_25
+      rect:
+        serializedVersion: 2
+        x: 478
+        y: 141
+        width: 100
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b3ffecf652fd6a170800000000000000
+      internalID: 8189478324302446395
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: prompts-dark-theme.png_26
+      rect:
+        serializedVersion: 2
+        x: 590
+        y: 141
+        width: 163
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a5397a6cead1d57b0800000000000000
+      internalID: -5233994555440262310
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: prompts-dark-theme.png_27
+      rect:
+        serializedVersion: 2
+        x: 16
+        y: 128
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 912fac0ee7a31d070800000000000000
+      internalID: 8129343118992142873
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: prompts-dark-theme.png_28
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 127
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 67c53a84d56009f90800000000000000
+      internalID: -6949047227312284554
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: prompts-dark-theme.png_29
+      rect:
+        serializedVersion: 2
+        x: 47
+        y: 63
+        width: 18
+        height: 82
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 166e015b4ad0a46c0800000000000000
+      internalID: -4158496304859650463
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: prompts-dark-theme.png_30
+      rect:
+        serializedVersion: 2
+        x: 80
+        y: 128
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 595faf07f25fcd390800000000000000
+      internalID: -7792083671150037611
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: prompts-dark-theme.png_31
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 127
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b7f601b3e870ac990800000000000000
+      internalID: -7365065933153341573
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: prompts-dark-theme.png_32
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 128
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ebe7b3b94f5358b00800000000000000
+      internalID: 830129031012384446
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: prompts-dark-theme.png_33
+      rect:
+        serializedVersion: 2
+        x: 144
+        y: 127
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f51b36263671e7af0800000000000000
+      internalID: -396854001542123169
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: prompts-dark-theme.png_34
+      rect:
+        serializedVersion: 2
+        x: 159
+        y: 63
+        width: 18
+        height: 82
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ea3ecf41b8c9d8b20800000000000000
+      internalID: 3138336636513608622
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: prompts-dark-theme.png_35
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 128
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ace4edb11d4b79070800000000000000
+      internalID: 8113152063939956426
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: prompts-dark-theme.png_36
+      rect:
+        serializedVersion: 2
+        x: 208
+        y: 127
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c343d80d9d54fa020800000000000000
+      internalID: 2355177931947193404
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: prompts-dark-theme.png_37
+      rect:
+        serializedVersion: 2
+        x: 238
+        y: 112
+        width: 52
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 113be108a018e6190800000000000000
+      internalID: -7967288808672677103
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: prompts-dark-theme.png_38
+      rect:
+        serializedVersion: 2
+        x: 251
+        y: 131
+        width: 12
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e50fcdd301c092540800000000000000
+      internalID: 4983527726559064158
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: prompts-dark-theme.png_39
+      rect:
+        serializedVersion: 2
+        x: 262
+        y: 131
+        width: 10
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7d5b7291e64131820800000000000000
+      internalID: 2887674249175610839
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: prompts-dark-theme.png_40
+      rect:
+        serializedVersion: 2
+        x: 269
+        y: 131
+        width: 9
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: efa44986bdaf06c30800000000000000
+      internalID: 4350753060299229950
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: prompts-dark-theme.png_41
+      rect:
+        serializedVersion: 2
+        x: 291
+        y: 130
+        width: 9
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 247f3f22a9ca5cae0800000000000000
+      internalID: -1529626720411060414
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: prompts-dark-theme.png_42
+      rect:
+        serializedVersion: 2
+        x: 299
+        y: 130
+        width: 8
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3df0b7c670d2a5ba0800000000000000
+      internalID: -6099513235411890221
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: prompts-dark-theme.png_43
+      rect:
+        serializedVersion: 2
+        x: 302
+        y: 125
+        width: 36
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d4c7351b59768ed20800000000000000
+      internalID: 3308007818926455885
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: prompts-dark-theme.png_44
+      rect:
+        serializedVersion: 2
+        x: 306
+        y: 130
+        width: 9
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 16c8da75f6b8e8800800000000000000
+      internalID: 616583509324958817
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: prompts-dark-theme.png_45
+      rect:
+        serializedVersion: 2
+        x: 314
+        y: 130
+        width: 9
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5a9c61f36c8deb820800000000000000
+      internalID: 2936022353065724325
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: prompts-dark-theme.png_46
+      rect:
+        serializedVersion: 2
+        x: 322
+        y: 130
+        width: 9
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c5a816ebd4c5d8820800000000000000
+      internalID: 2922093222209620572
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: prompts-dark-theme.png_47
+      rect:
+        serializedVersion: 2
+        x: 330
+        y: 130
+        width: 9
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0f84c94770c89dc40800000000000000
+      internalID: 5537611180477794544
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: prompts-dark-theme.png_48
+      rect:
+        serializedVersion: 2
+        x: 338
+        y: 130
+        width: 10
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bc8a8b24379cb60a0800000000000000
+      internalID: -6887189708255221557
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: prompts-dark-theme.png_49
+      rect:
+        serializedVersion: 2
+        x: 372
+        y: 127
+        width: 9
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9a44e0a9513889730800000000000000
+      internalID: 4006095997348234409
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: prompts-dark-theme.png_50
+      rect:
+        serializedVersion: 2
+        x: 380
+        y: 127
+        width: 8
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 042c8f91e1b72d5a0800000000000000
+      internalID: -6497995943127236032
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: prompts-dark-theme.png_51
+      rect:
+        serializedVersion: 2
+        x: 387
+        y: 127
+        width: 9
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c293327c734c52630800000000000000
+      internalID: 3901740396029622572
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: prompts-dark-theme.png_52
+      rect:
+        serializedVersion: 2
+        x: 395
+        y: 127
+        width: 9
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e07fd7c048566dc00800000000000000
+      internalID: 925038391290885902
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: prompts-dark-theme.png_53
+      rect:
+        serializedVersion: 2
+        x: 403
+        y: 127
+        width: 9
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6cf87338679526ed0800000000000000
+      internalID: -2422275284029435962
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: prompts-dark-theme.png_54
+      rect:
+        serializedVersion: 2
+        x: 411
+        y: 127
+        width: 9
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 841b9e7bb28594280800000000000000
+      internalID: -9058612230686658232
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: prompts-dark-theme.png_55
+      rect:
+        serializedVersion: 2
+        x: 419
+        y: 127
+        width: 10
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3907794ba8fb6ac40800000000000000
+      internalID: 5523312595472707731
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: prompts-dark-theme.png_56
+      rect:
+        serializedVersion: 2
+        x: 435
+        y: 115
+        width: 26
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c6654a455b5ce1250800000000000000
+      internalID: 5917384343011219052
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: prompts-dark-theme.png_57
+      rect:
+        serializedVersion: 2
+        x: 483
+        y: 127
+        width: 9
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c498d1120ba1810f0800000000000000
+      internalID: -1146136761393641140
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: prompts-dark-theme.png_58
+      rect:
+        serializedVersion: 2
+        x: 491
+        y: 127
+        width: 8
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 94e3ddcf0d68dc380800000000000000
+      internalID: -8949348652361630135
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: prompts-dark-theme.png_59
+      rect:
+        serializedVersion: 2
+        x: 498
+        y: 127
+        width: 9
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1c477a0811aae9980800000000000000
+      internalID: -8530193652043516735
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: prompts-dark-theme.png_60
+      rect:
+        serializedVersion: 2
+        x: 506
+        y: 127
+        width: 9
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 86fbb5aa103db8810800000000000000
+      internalID: 1768739282779619176
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: prompts-dark-theme.png_61
+      rect:
+        serializedVersion: 2
+        x: 514
+        y: 127
+        width: 9
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7934b663b4d85faa0800000000000000
+      internalID: -6127836363792628841
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: prompts-dark-theme.png_62
+      rect:
+        serializedVersion: 2
+        x: 522
+        y: 127
+        width: 9
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7701fc9e27342c130800000000000000
+      internalID: 3585502414168330359
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: prompts-dark-theme.png_63
+      rect:
+        serializedVersion: 2
+        x: 530
+        y: 127
+        width: 10
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1a27ca1ffc59c26c0800000000000000
+      internalID: -4166790834879171935
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: prompts-dark-theme.png_64
+      rect:
+        serializedVersion: 2
+        x: 546
+        y: 114
+        width: 28
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e806275610b4b72b0800000000000000
+      internalID: -5585788443453923186
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: prompts-dark-theme.png_65
+      rect:
+        serializedVersion: 2
+        x: 594
+        y: 114
+        width: 28
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 221f357486b531da0800000000000000
+      internalID: -5975331777159106270
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: prompts-dark-theme.png_66
+      rect:
+        serializedVersion: 2
+        x: 626
+        y: 114
+        width: 28
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4d48c0ba69ce9e470800000000000000
+      internalID: 8424524709832197332
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: prompts-dark-theme.png_67
+      rect:
+        serializedVersion: 2
+        x: 658
+        y: 114
+        width: 28
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3f813e72a319e0180800000000000000
+      internalID: -9147214114179573517
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: prompts-dark-theme.png_68
+      rect:
+        serializedVersion: 2
+        x: 690
+        y: 114
+        width: 28
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b6ae462c5a417e4e0800000000000000
+      internalID: -1952569211278267797
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: prompts-dark-theme.png_69
+      rect:
+        serializedVersion: 2
+        x: 722
+        y: 114
+        width: 28
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bc4c962811fe1b290800000000000000
+      internalID: -7876251414812834613
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: prompts-dark-theme.png_70
+      rect:
+        serializedVersion: 2
+        x: 16
+        y: 112
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 86d32f092dc1e6df0800000000000000
+      internalID: -185178843975107224
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: prompts-dark-theme.png_71
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 111
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a827f38f0f0fa5860800000000000000
+      internalID: 7519587445596189322
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: prompts-dark-theme.png_72
+      rect:
+        serializedVersion: 2
+        x: 80
+        y: 112
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cd7702b6759acadb0800000000000000
+      internalID: -4779258911622400036
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: prompts-dark-theme.png_73
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 111
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a3ba23e9c32b2b7a0800000000000000
+      internalID: -6362827350099186886
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: prompts-dark-theme.png_74
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 112
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9e8d59b761cf75210800000000000000
+      internalID: 1321802189149427945
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: prompts-dark-theme.png_75
+      rect:
+        serializedVersion: 2
+        x: 144
+        y: 111
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8daa6c1e8d4edd5c0800000000000000
+      internalID: -4188940458232730920
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: prompts-dark-theme.png_76
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 112
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: dbbd6c64786dec760800000000000000
+      internalID: 7480151907605339069
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: prompts-dark-theme.png_77
+      rect:
+        serializedVersion: 2
+        x: 208
+        y: 111
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fbe01cbbbb11ff930800000000000000
+      internalID: 4179078477229657791
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: prompts-dark-theme.png_78
+      rect:
+        serializedVersion: 2
+        x: 304
+        y: 113
+        width: 16
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 87e1eab2a44488320800000000000000
+      internalID: 2560371473511227000
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: prompts-dark-theme.png_79
+      rect:
+        serializedVersion: 2
+        x: 320
+        y: 112
+        width: 16
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d5cf2346163c06b60800000000000000
+      internalID: 7737398982882819165
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: prompts-dark-theme.png_80
+      rect:
+        serializedVersion: 2
+        x: 372
+        y: 115
+        width: 56
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 017fc794496e01220800000000000000
+      internalID: 2454715321479395088
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: prompts-dark-theme.png_81
+      rect:
+        serializedVersion: 2
+        x: 483
+        y: 115
+        width: 56
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8ea4cad6e28745400800000000000000
+      internalID: 312006414999243496
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: prompts-dark-theme.png_82
+      rect:
+        serializedVersion: 2
+        x: 16
+        y: 96
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 15d79b4c1d3f79990800000000000000
+      internalID: -7379161382149063343
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: prompts-dark-theme.png_83
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 95
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d0620ffacbcd9f210800000000000000
+      internalID: 1367366664847369741
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: prompts-dark-theme.png_84
+      rect:
+        serializedVersion: 2
+        x: 80
+        y: 96
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e95997fce5d899b70800000000000000
+      internalID: 8906305176449160606
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: prompts-dark-theme.png_85
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 95
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 943d3886e92424670800000000000000
+      internalID: 8521446693064135497
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: prompts-dark-theme.png_86
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 96
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fa9c0153773e19bb0800000000000000
+      internalID: -4930910015863076433
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: prompts-dark-theme.png_87
+      rect:
+        serializedVersion: 2
+        x: 144
+        y: 95
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b88d3357ace04cca0800000000000000
+      internalID: -5997652541038143349
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: prompts-dark-theme.png_88
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 96
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 956c28a2828e4baf0800000000000000
+      internalID: -381424809210100135
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: prompts-dark-theme.png_89
+      rect:
+        serializedVersion: 2
+        x: 208
+        y: 95
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d41c41c8916113190800000000000000
+      internalID: -7984576365371014835
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: prompts-dark-theme.png_90
+      rect:
+        serializedVersion: 2
+        x: 240
+        y: 97
+        width: 16
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bf639b892ba3b2420800000000000000
+      internalID: 2606241348104828667
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: prompts-dark-theme.png_91
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 96
+        width: 16
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 453f78937f0e43f80800000000000000
+      internalID: -8127624075070147756
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: prompts-dark-theme.png_92
+      rect:
+        serializedVersion: 2
+        x: 271
+        y: 96
+        width: 18
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 98c9ca9e293025940800000000000000
+      internalID: 5283289242379525257
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: prompts-dark-theme.png_93
+      rect:
+        serializedVersion: 2
+        x: 304
+        y: 97
+        width: 16
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3cea963b4795f2b60800000000000000
+      internalID: 7723490243724816067
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: prompts-dark-theme.png_94
+      rect:
+        serializedVersion: 2
+        x: 320
+        y: 96
+        width: 16
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d519053bfac8ddb60800000000000000
+      internalID: 7772523218166911325
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: prompts-dark-theme.png_95
+      rect:
+        serializedVersion: 2
+        x: 368
+        y: 84
+        width: 28
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: efb6dd0864f7b6720800000000000000
+      internalID: 2840503930773662718
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: prompts-dark-theme.png_96
+      rect:
+        serializedVersion: 2
+        x: 403
+        y: 83
+        width: 26
+        height: 29
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1c21701f589164ac0800000000000000
+      internalID: -3871378766613245247
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: prompts-dark-theme.png_97
+      rect:
+        serializedVersion: 2
+        x: 436
+        y: 84
+        width: 28
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f41dbc148012442d0800000000000000
+      internalID: -3295472707981029041
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: prompts-dark-theme.png_98
+      rect:
+        serializedVersion: 2
+        x: 479
+        y: 83
+        width: 30
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 29dd26e117c887b00800000000000000
+      internalID: 826564949091474834
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: prompts-dark-theme.png_99
+      rect:
+        serializedVersion: 2
+        x: 514
+        y: 82
+        width: 28
+        height: 31
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ce7265b2b0aaed090800000000000000
+      internalID: -8007776122469734420
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: prompts-dark-theme.png_100
+      rect:
+        serializedVersion: 2
+        x: 547
+        y: 83
+        width: 30
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 457f5b7ba49c8a440800000000000000
+      internalID: 4947425513413408596
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: prompts-dark-theme.png_101
+      rect:
+        serializedVersion: 2
+        x: 590
+        y: 65
+        width: 163
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 02117e84aac667a90800000000000000
+      internalID: -7316541065993449184
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: prompts-dark-theme.png_102
+      rect:
+        serializedVersion: 2
+        x: 16
+        y: 80
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9ffe13ecfbcefbd60800000000000000
+      internalID: 7908299779228168185
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: prompts-dark-theme.png_103
+      rect:
+        serializedVersion: 2
+        x: 16
+        y: 64
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 01f990f94f8f9dda0800000000000000
+      internalID: -5919426505677889776
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: prompts-dark-theme.png_104
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 79
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b360ecca49c0c31a0800000000000000
+      internalID: -6828569102306638277
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: prompts-dark-theme.png_105
+      rect:
+        serializedVersion: 2
+        x: 80
+        y: 80
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2545b03953ac64850800000000000000
+      internalID: 6360993855156474962
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: prompts-dark-theme.png_106
+      rect:
+        serializedVersion: 2
+        x: 80
+        y: 64
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ac168acf7cf221c20800000000000000
+      internalID: 3175653223233511882
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: prompts-dark-theme.png_107
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 79
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7eb09ca27e9793a40800000000000000
+      internalID: 5348440066241399783
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: prompts-dark-theme.png_108
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 80
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5a6b5c688365f4440800000000000000
+      internalID: 4922247718518503077
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: prompts-dark-theme.png_109
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 64
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e3345f879e9089260800000000000000
+      internalID: 7104439310538326846
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: prompts-dark-theme.png_110
+      rect:
+        serializedVersion: 2
+        x: 144
+        y: 79
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 85030796db84a5530800000000000000
+      internalID: 3844465210269118552
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: prompts-dark-theme.png_111
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 80
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e63caac3f008610d0800000000000000
+      internalID: -3452431261402217618
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: prompts-dark-theme.png_112
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 64
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 24ac4456d19fe6070800000000000000
+      internalID: 8101686684334475842
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: prompts-dark-theme.png_113
+      rect:
+        serializedVersion: 2
+        x: 208
+        y: 79
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2ea56c2832af91800800000000000000
+      internalID: 583772657146026722
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: prompts-dark-theme.png_114
+      rect:
+        serializedVersion: 2
+        x: 625
+        y: 65
+        width: 30
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fb3f383f4afd564e0800000000000000
+      internalID: -1988937760861064257
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: prompts-dark-theme.png_115
+      rect:
+        serializedVersion: 2
+        x: 657
+        y: 65
+        width: 30
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 05ab152fc981097c0800000000000000
+      internalID: -4066723401156150704
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: prompts-dark-theme.png_116
+      rect:
+        serializedVersion: 2
+        x: 689
+        y: 65
+        width: 30
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4852842b4d7f2cab0800000000000000
+      internalID: -4989152944276888188
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: prompts-dark-theme.png_117
+      rect:
+        serializedVersion: 2
+        x: 721
+        y: 65
+        width: 30
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a65b9588d7c5d2840800000000000000
+      internalID: 5200914838911038826
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: prompts-dark-theme.png_118
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 63
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3a9baa99bcc2c69a0800000000000000
+      internalID: -6238562130846893661
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: prompts-dark-theme.png_119
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 63
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d822dea8ce6e67280800000000000000
+      internalID: -9045788897909595507
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: prompts-dark-theme.png_120
+      rect:
+        serializedVersion: 2
+        x: 144
+        y: 63
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5e38c6c91404f1390800000000000000
+      internalID: -7845481375314705435
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: prompts-dark-theme.png_121
+      rect:
+        serializedVersion: 2
+        x: 208
+        y: 63
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 11b08cdd1791bfd30800000000000000
+      internalID: 4466191432310852369
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: prompts-dark-theme.png_122
+      rect:
+        serializedVersion: 2
+        x: 240
+        y: 67
+        width: 16
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 17dfc50d20d4aeb30800000000000000
+      internalID: 4317347867269070193
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: prompts-dark-theme.png_123
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 66
+        width: 16
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9a2f22517bb3d49f0800000000000000
+      internalID: -482663927539109207
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: prompts-dark-theme.png_124
+      rect:
+        serializedVersion: 2
+        x: 271
+        y: 66
+        width: 18
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4861c7f3f2135fcd0800000000000000
+      internalID: -2525057937072974204
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: prompts-dark-theme.png_125
+      rect:
+        serializedVersion: 2
+        x: 304
+        y: 67
+        width: 16
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4fcf029652832ebc0800000000000000
+      internalID: -3755377405944857356
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: prompts-dark-theme.png_126
+      rect:
+        serializedVersion: 2
+        x: 320
+        y: 66
+        width: 16
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8d5de7211efe64760800000000000000
+      internalID: 7441899184233305560
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: prompts-dark-theme.png_127
+      rect:
+        serializedVersion: 2
+        x: 368
+        y: 51
+        width: 29
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c69889403e747d280800000000000000
+      internalID: -9018660688425875092
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: prompts-dark-theme.png_128
+      rect:
+        serializedVersion: 2
+        x: 403
+        y: 51
+        width: 26
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a9f6ab2e3a813a8d0800000000000000
+      internalID: -2836396248150675558
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: prompts-dark-theme.png_129
+      rect:
+        serializedVersion: 2
+        x: 435
+        y: 51
+        width: 29
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: dbbbd397c6d681c00800000000000000
+      internalID: 871566840554175421
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: prompts-dark-theme.png_130
+      rect:
+        serializedVersion: 2
+        x: 479
+        y: 50
+        width: 31
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b8a3940bf46a06b40800000000000000
+      internalID: 5431524011799034507
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: prompts-dark-theme.png_131
+      rect:
+        serializedVersion: 2
+        x: 514
+        y: 50
+        width: 28
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 77c7e0cd31175c080800000000000000
+      internalID: -9167797136332522377
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: prompts-dark-theme.png_132
+      rect:
+        serializedVersion: 2
+        x: 546
+        y: 50
+        width: 30
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 844a1e0d6b2073c30800000000000000
+      internalID: 4338939750206514248
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: prompts-dark-theme.png_133
+      rect:
+        serializedVersion: 2
+        x: 17
+        y: 49
+        width: 14
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e5d11f1b440ca7f20800000000000000
+      internalID: 3421258268216991070
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: prompts-dark-theme.png_134
+      rect:
+        serializedVersion: 2
+        x: 33
+        y: 48
+        width: 14
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4d3b97db0bd5cd860800000000000000
+      internalID: 7556017288495346644
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: prompts-dark-theme.png_135
+      rect:
+        serializedVersion: 2
+        x: 48
+        y: 48
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6ceac317d46fb57b0800000000000000
+      internalID: -5234319329415352634
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: prompts-dark-theme.png_136
+      rect:
+        serializedVersion: 2
+        x: 81
+        y: 49
+        width: 14
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 123478f581e6cb510800000000000000
+      internalID: 1566247821379060513
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: prompts-dark-theme.png_137
+      rect:
+        serializedVersion: 2
+        x: 97
+        y: 48
+        width: 14
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4317e460979795420800000000000000
+      internalID: 2619258218996461876
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: prompts-dark-theme.png_138
+      rect:
+        serializedVersion: 2
+        x: 129
+        y: 49
+        width: 14
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c7bc2f65b30a03500800000000000000
+      internalID: 373974945794018172
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: prompts-dark-theme.png_139
+      rect:
+        serializedVersion: 2
+        x: 145
+        y: 48
+        width: 14
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ab9af6a1265d684f0800000000000000
+      internalID: -826738864248870470
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: prompts-dark-theme.png_140
+      rect:
+        serializedVersion: 2
+        x: 160
+        y: 48
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5f33ff0d676ccb1a0800000000000000
+      internalID: -6792335924366724107
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: prompts-dark-theme.png_141
+      rect:
+        serializedVersion: 2
+        x: 193
+        y: 49
+        width: 14
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 89f9a1d898e581930800000000000000
+      internalID: 4114142204473810840
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: prompts-dark-theme.png_142
+      rect:
+        serializedVersion: 2
+        x: 209
+        y: 48
+        width: 14
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 15a55a9dff5536af0800000000000000
+      internalID: -404384984176698799
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: prompts-dark-theme.png_143
+      rect:
+        serializedVersion: 2
+        x: 240
+        y: 51
+        width: 16
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 705bbc7a43fa19710800000000000000
+      internalID: 1698331175183693063
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: prompts-dark-theme.png_144
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 50
+        width: 16
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ab29cefa7605b0850800000000000000
+      internalID: 6344252906344846010
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: prompts-dark-theme.png_145
+      rect:
+        serializedVersion: 2
+        x: 271
+        y: 50
+        width: 18
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 86842d346ade33a50800000000000000
+      internalID: 6499799985583966312
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: prompts-dark-theme.png_146
+      rect:
+        serializedVersion: 2
+        x: 304
+        y: 51
+        width: 16
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4d86e54b39f1c9810800000000000000
+      internalID: 1773327072523872468
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: prompts-dark-theme.png_147
+      rect:
+        serializedVersion: 2
+        x: 320
+        y: 50
+        width: 16
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b129811fa8ada7b10800000000000000
+      internalID: 1980135276468015643
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: prompts-dark-theme.png_148
+      rect:
+        serializedVersion: 2
+        x: 590
+        y: 18
+        width: 163
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7d588910069ca79f0800000000000000
+      internalID: -469841796925979177
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: prompts-dark-theme.png_149
+      rect:
+        serializedVersion: 2
+        x: 17
+        y: 33
+        width: 14
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 410f1d9e56d551720800000000000000
+      internalID: 2816259834286043156
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: prompts-dark-theme.png_150
+      rect:
+        serializedVersion: 2
+        x: 33
+        y: 32
+        width: 14
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c5ec2cf4cd02b47b0800000000000000
+      internalID: -5239057610912379300
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: prompts-dark-theme.png_151
+      rect:
+        serializedVersion: 2
+        x: 48
+        y: 32
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 76f836c9b4b822570800000000000000
+      internalID: 8440461808508309351
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: prompts-dark-theme.png_152
+      rect:
+        serializedVersion: 2
+        x: 81
+        y: 33
+        width: 14
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4af1d1f949ded0990800000000000000
+      internalID: -7418011788628910172
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: prompts-dark-theme.png_153
+      rect:
+        serializedVersion: 2
+        x: 97
+        y: 32
+        width: 14
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 58f3b242c95813af0800000000000000
+      internalID: -418406384700539003
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: prompts-dark-theme.png_154
+      rect:
+        serializedVersion: 2
+        x: 129
+        y: 33
+        width: 14
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b7a5fd52b83fd7d00800000000000000
+      internalID: 972200873543293563
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: prompts-dark-theme.png_155
+      rect:
+        serializedVersion: 2
+        x: 145
+        y: 32
+        width: 14
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 17e6c7bcf52845e60800000000000000
+      internalID: 7950122590163201649
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: prompts-dark-theme.png_156
+      rect:
+        serializedVersion: 2
+        x: 160
+        y: 32
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8a413a4f1087c1f20800000000000000
+      internalID: 3394720168925140136
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: prompts-dark-theme.png_157
+      rect:
+        serializedVersion: 2
+        x: 193
+        y: 33
+        width: 14
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3fdd81f7b0a107f30800000000000000
+      internalID: 4571182258460351987
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: prompts-dark-theme.png_158
+      rect:
+        serializedVersion: 2
+        x: 209
+        y: 32
+        width: 14
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 449050aad1bb8a400800000000000000
+      internalID: 335723908320004420
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: prompts-dark-theme.png_159
+      rect:
+        serializedVersion: 2
+        x: 368
+        y: 16
+        width: 28
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a3592c8986be819b0800000000000000
+      internalID: -5109074942779812550
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: prompts-dark-theme.png_160
+      rect:
+        serializedVersion: 2
+        x: 403
+        y: 16
+        width: 26
+        height: 29
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b8204b070c50e22b0800000000000000
+      internalID: -5607538161946983797
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: prompts-dark-theme.png_161
+      rect:
+        serializedVersion: 2
+        x: 436
+        y: 16
+        width: 28
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 99187c9d5f2704880800000000000000
+      internalID: -8628770485795585639
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: prompts-dark-theme.png_162
+      rect:
+        serializedVersion: 2
+        x: 479
+        y: 15
+        width: 30
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ad329dda0a8c0ecb0800000000000000
+      internalID: -4836645407358901286
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: prompts-dark-theme.png_163
+      rect:
+        serializedVersion: 2
+        x: 514
+        y: 15
+        width: 28
+        height: 31
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cf9b73ae19c1ef280800000000000000
+      internalID: -9007730791669057028
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: prompts-dark-theme.png_164
+      rect:
+        serializedVersion: 2
+        x: 547
+        y: 15
+        width: 30
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a24ddc651c431bd60800000000000000
+      internalID: 7904156826001593386
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: prompts-dark-theme.png_165
+      rect:
+        serializedVersion: 2
+        x: 594
+        y: 18
+        width: 28
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0880c30d5eecfe9c0800000000000000
+      internalID: -3895667666215761792
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: prompts-dark-theme.png_166
+      rect:
+        serializedVersion: 2
+        x: 658
+        y: 18
+        width: 29
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 92857f88916ff1c50800000000000000
+      internalID: 6638294965299927081
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: prompts-dark-theme.png_167
+      rect:
+        serializedVersion: 2
+        x: 690
+        y: 17
+        width: 28
+        height: 29
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d464d55cb5dc9cb50800000000000000
+      internalID: 6614043321807226445
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: prompts-dark-theme.png_168
+      rect:
+        serializedVersion: 2
+        x: 721
+        y: 18
+        width: 29
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c562f35d024697100800000000000000
+      internalID: 106226158399333980
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable: {}
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
