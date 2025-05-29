@@ -6,11 +6,14 @@ public class Bat : Enemy
 {
     [SerializeField] private float chaseDistance;
     [SerializeField] private float stunDuration;
+    [SerializeField] SpriteRenderer batSr;
+    private Tween moveTween;
+
     float timer;
     protected override void Start()
     {
         rb = GetComponent<Rigidbody2D>();
-        sr = GetComponentInChildren<SpriteRenderer>();
+        sr = batSr;
         animator = GetComponentInChildren <Animator>();
 
         standardMaterial = sr.material;
@@ -33,13 +36,21 @@ public class Bat : Enemy
                 }
                 break;
             case EnemyStates.Bat_Chase:
-                transform.DOMove(player.transform.position, 1f / speed).SetEase(Ease.Linear);
+                if (moveTween == null || !moveTween.IsActive() || !moveTween.IsPlaying())
+                {
+                    moveTween = transform.DOMove(player.transform.position, 1f / speed)
+                        .SetEase(Ease.Linear);
+                }
+
                 FlipBat();
+
                 if (_dist > chaseDistance)
                 {
+                    moveTween?.Kill(); // Stop movement tween
                     ChangeState(EnemyStates.Bat_Idle);
                 }
                 break;
+
             case EnemyStates.Bat_Stunned:
                 timer += Time.deltaTime;
                 if (timer > stunDuration)
@@ -64,6 +75,7 @@ public class Bat : Enemy
         base.EnemyHit(damage, hitDirection, _hitForce);
         if (health <= 0)
         {
+            moveTween?.Kill(); // Stop movement tween if the bat is dead
             ChangeState(EnemyStates.Bat_Death);
         }
         else
@@ -85,9 +97,12 @@ public class Bat : Enemy
 
     protected override void Death(float _destroyTime)
     {
-        rb.gravityScale = 12f;
+        rb.gravityScale = 2f;
         gameObject.layer = LayerMask.NameToLayer("Background");
-        base.Death(_destroyTime);
+        DOVirtual.DelayedCall(_destroyTime, () =>
+        {
+            Destroy(gameObject);
+        });
         
     }
 }

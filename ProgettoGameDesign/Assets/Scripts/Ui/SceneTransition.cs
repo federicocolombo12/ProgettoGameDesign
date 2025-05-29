@@ -27,7 +27,7 @@ public class SceneTransition : MonoBehaviour
     {
         if (collision.CompareTag("Player"))
         {
-            // Start the transition to the new scene
+            // Start the transition to the new scene, setting transitionedFromScene to the scene the object is currently in
             GameManager.Instance.transitionedFromScene = GameManager.Instance.GetGameplaySceneName();
             Player.Instance.pState.cutscene = true;
             StartCoroutine(UiManager.Instance.sceneFader.FadeAndLoadScene(SceneFader.FadeDirection.In, transitionTo));

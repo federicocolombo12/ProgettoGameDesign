@@ -132,6 +132,7 @@ MonoBehaviour:
   damageMultiplier: 2
   chaseDistance: 10
   stunDuration: 0.2
+  batSr: {fileID: 5884542449403423146}
 --- !u!1001 &2021273410853614336
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -464,5 +465,10 @@ Animator:
 --- !u!4 &5824017292467524285 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: -7552582706839291426, guid: 9a6565003c04c084fbb3b4b94011aeb7, type: 3}
+  m_PrefabInstance: {fileID: 5187239492265159523}
+  m_PrefabAsset: {fileID: 0}
+--- !u!212 &5884542449403423146 stripped
+SpriteRenderer:
+  m_CorrespondingSourceObject: {fileID: 1609719090194301641, guid: 9a6565003c04c084fbb3b4b94011aeb7, type: 3}
   m_PrefabInstance: {fileID: 5187239492265159523}
   m_PrefabAsset: {fileID: 0}
