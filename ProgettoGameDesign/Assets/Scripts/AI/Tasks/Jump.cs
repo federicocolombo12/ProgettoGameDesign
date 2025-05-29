@@ -16,6 +16,7 @@ using UnityEngine;
 
         public string triggerStart;
         public string animationBase;
+        public string animationEnd;
         public bool shakeCameraOnLanding;
 
         private bool hasLanded;
@@ -49,6 +50,10 @@ using UnityEngine;
             {
                 rb.linearVelocity = Vector2.zero;
                 hasLanded = true;
+                if (animationEnd != "")
+                {
+                    anim.SetTrigger(animationEnd);
+                }
                 if (shakeCameraOnLanding)
                     CameraManager.Instance.ShakeCamera(0.5f);
             }, false);

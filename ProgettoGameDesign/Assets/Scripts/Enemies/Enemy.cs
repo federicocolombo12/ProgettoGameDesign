@@ -7,7 +7,7 @@ using UnityEngine.UI;
 public class Enemy : MonoBehaviour
 {
     protected Rigidbody2D rb;
-    protected SpriteRenderer sr;
+    public SpriteRenderer sr;
     
     protected Material standardMaterial;
     public float health;
@@ -65,7 +65,11 @@ public class Enemy : MonoBehaviour
     protected virtual void Start()
     {
         rb = GetComponent<Rigidbody2D>();
-        sr = GetComponent<SpriteRenderer>();
+        if (GetComponent<SpriteRenderer>()==null)
+        {
+            sr = GetComponent<SpriteRenderer>();
+        }
+        
         animator = GetComponent<Animator>();
         
         
