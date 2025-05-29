@@ -1,4 +1,6 @@
 using UnityEngine;
+using UnityEngine.UI;
+using DG.Tweening;
 
 public class Bat : Enemy
 {
@@ -7,7 +9,14 @@ public class Bat : Enemy
     float timer;
     protected override void Start()
     {
-        base.Start();
+        rb = GetComponent<Rigidbody2D>();
+        sr = GetComponentInChildren<SpriteRenderer>();
+        animator = GetComponentInChildren <Animator>();
+
+        standardMaterial = sr.material;
+        player = Player.Instance;
+        healthImage = GetComponentInChildren<Image>();
+        health = maxHealth;
         ChangeState(EnemyStates.Bat_Idle);
     }
 
@@ -24,8 +33,7 @@ public class Bat : Enemy
                 }
                 break;
             case EnemyStates.Bat_Chase:
-                rb.MovePosition(Vector2.MoveTowards(transform.position, player.transform.position, 
-                    speed * Time.deltaTime));
+                transform.DOMove(player.transform.position, 1f / speed).SetEase(Ease.Linear);
                 FlipBat();
                 if (_dist > chaseDistance)
                 {
@@ -34,9 +42,8 @@ public class Bat : Enemy
                 break;
             case EnemyStates.Bat_Stunned:
                 timer += Time.deltaTime;
-                if (timer> stunDuration)
+                if (timer > stunDuration)
                 {
-
                     timer = 0;
                     ChangeState(EnemyStates.Bat_Idle);
                 }
@@ -46,10 +53,12 @@ public class Bat : Enemy
                 break;
         }
     }
+
     void FlipBat()
     {
         sr.flipX = player.transform.position.x < transform.position.x;
     }
+
     public override void EnemyHit(float damage, Vector2 hitDirection, float _hitForce)
     {
         base.EnemyHit(damage, hitDirection, _hitForce);
@@ -60,9 +69,9 @@ public class Bat : Enemy
         else
         {
             ChangeState(EnemyStates.Bat_Stunned);
-            
         }
     }
+
     protected override void ChangeCurrentAnimation()
     {
         animator.SetBool("Idle", GetCurrentEnemyState == EnemyStates.Bat_Idle);
@@ -73,6 +82,7 @@ public class Bat : Enemy
             animator.SetTrigger("Death");
         }
     }
+
     protected override void Death(float _destroyTime)
     {
         base.Death(_destroyTime);

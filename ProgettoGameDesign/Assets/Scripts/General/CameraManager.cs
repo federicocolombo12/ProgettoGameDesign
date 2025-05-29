@@ -2,6 +2,7 @@ using UnityEngine;
 
 using Unity.Cinemachine;
 using System.Collections;
+using DG.Tweening;
 
 public class CameraManager : MonoBehaviour
 {
@@ -145,7 +146,8 @@ public class CameraManager : MonoBehaviour
             currentCamera = cameraFromRight;
             currentComposer = currentCamera.GetComponent<CinemachinePositionComposer>();
             cameraFromRight.GetComponent<CinemachineConfiner2D>().OversizeWindow.Enabled = true;
-            cameraFromRight.GetComponent<CinemachineConfiner2D>().OversizeWindow.Enabled = false;
+            
+            
         }
         else if (currentCamera == cameraFromRight && triggerExitDirection.x < 0f)
         {
@@ -154,7 +156,8 @@ public class CameraManager : MonoBehaviour
             currentCamera = cameraFromLeft;
             currentComposer = currentCamera.GetComponent<CinemachinePositionComposer>();
             cameraFromLeft.GetComponent<CinemachineConfiner2D>().OversizeWindow.Enabled = true;
-            cameraFromLeft.GetComponent<CinemachineConfiner2D>().OversizeWindow.Enabled = false;
+            
+            
         }
 
         
