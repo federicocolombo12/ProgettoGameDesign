@@ -14299,7 +14299,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6627553321793929906, guid: 4f685e4a63d16d644b6d9723490a39fb, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 7.01
+      value: 3.05
       objectReference: {fileID: 0}
     - target: {fileID: 6627553321793929906, guid: 4f685e4a63d16d644b6d9723490a39fb, type: 3}
       propertyPath: m_LocalPosition.y
@@ -14307,7 +14307,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7616698771256031348, guid: 4f685e4a63d16d644b6d9723490a39fb, type: 3}
       propertyPath: exitTime
-      value: 1
+      value: 0.5
       objectReference: {fileID: 0}
     - target: {fileID: 7616698771256031348, guid: 4f685e4a63d16d644b6d9723490a39fb, type: 3}
       propertyPath: transitionTo
@@ -14315,11 +14315,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7616698771256031348, guid: 4f685e4a63d16d644b6d9723490a39fb, type: 3}
       propertyPath: exitDirection.x
-      value: -1
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 8809172332059533845, guid: 4f685e4a63d16d644b6d9723490a39fb, type: 3}
       propertyPath: m_Name
       value: SceneTransition (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 8809172332059533845, guid: 4f685e4a63d16d644b6d9723490a39fb, type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -14605,9 +14609,9 @@ PrefabInstance:
 SceneRoots:
   m_ObjectHideFlags: 0
   m_Roots:
+  - {fileID: 1650078288}
   - {fileID: 59493355}
   - {fileID: 766079670}
-  - {fileID: 1650078288}
   - {fileID: 834741738}
   - {fileID: 1971488862}
   - {fileID: 129404221}
