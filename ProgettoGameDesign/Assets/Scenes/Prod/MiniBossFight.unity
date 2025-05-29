@@ -351,8 +351,8 @@ MonoBehaviour:
         byteData: 
         byteDataArray: 
       Version: 1.7.12
-  gizmoViewMode: 2
-  showBehaviorDesignerGizmo: 1
+  gizmoViewMode: 0
+  showBehaviorDesignerGizmo: 0
 --- !u!114 &274468385
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -442,7 +442,7 @@ MonoBehaviour:
   m_BlockingObjects: 0
   m_BlockingMask:
     serializedVersion: 2
-    m_Bits: 4294967295
+    m_Bits: 4095
 --- !u!114 &279704494
 MonoBehaviour:
   m_ObjectHideFlags: 0
