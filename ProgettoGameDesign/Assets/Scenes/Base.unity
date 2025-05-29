@@ -204,7 +204,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &44435070
 Transform:
   m_ObjectHideFlags: 0
@@ -1173,7 +1173,7 @@ PrefabInstance:
     - target: {fileID: 1567474458351274973, guid: b1e2a26605ddb5743ab4af9d547b28a3, type: 3}
       propertyPath: BoundingShape2D
       value: 
-      objectReference: {fileID: 237722183}
+      objectReference: {fileID: 0}
     - target: {fileID: 1567474458351274973, guid: b1e2a26605ddb5743ab4af9d547b28a3, type: 3}
       propertyPath: OversizeWindow.Enabled
       value: 1
@@ -1196,11 +1196,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5173624916291810296, guid: b1e2a26605ddb5743ab4af9d547b28a3, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -11.516468
+      value: 6.175541
       objectReference: {fileID: 0}
     - target: {fileID: 5173624916291810296, guid: b1e2a26605ddb5743ab4af9d547b28a3, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 1.4972999
+      value: 0.26303685
       objectReference: {fileID: 0}
     - target: {fileID: 7281744561779612869, guid: b1e2a26605ddb5743ab4af9d547b28a3, type: 3}
       propertyPath: m_LocalPosition.x
