@@ -44,11 +44,9 @@ public class Crawler : Enemy
                 {
                     
                     rb.linearVelocity = new Vector2(speed, 0);
-                    Debug.Log(rb.linearVelocity);
                 }
                 else
                 {
-                    Debug.Log(rb.linearVelocity);
                     rb.linearVelocity = new Vector2(-speed, 0);
                 }
                 break;
