@@ -309,6 +309,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3efaecc7cda864a8dba3f742e2794092, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  sr: {fileID: 3082681272420044538}
   health: 50
   maxHealth: 100
   recoilLenght: 0.5

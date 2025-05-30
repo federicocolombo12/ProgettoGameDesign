@@ -63,11 +63,26 @@ public class GameManager : MonoBehaviour
                 break;
             }
         }
+        if (currentBench == null)
+        {
+            
+            for (int i = 0; i < benchSet.Items.Count; i++)
+            {
+                if (benchSet.Items[i].GetComponent<Bench>().benchIndex == 0)
+                {
+                    currentBench = benchSet.Items[i].GetComponent<Bench>();
+                    break;
+                }
+            }
+           
+            Debug.LogWarning("No bench found with the specified index, using default bench.");
+        }
         
         respawnPoint = currentBench.transform.position;
         
         player.RespawnAt(respawnPoint);
         SceneController.Instance.LoadAdditiveScene(currentBench.benchSceneName);
+        SceneFader.Instance.StartCoroutine(SceneFader.Instance.Fade(SceneFader.FadeDirection.Out));
         loaded = false;
     }
 

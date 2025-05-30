@@ -1249,7 +1249,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6182742310173604989, guid: 4d52adf8764b54a059168e028554dc5c, type: 3}
       propertyPath: benchIndex
-      value: 1
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 6182742310173604989, guid: 4d52adf8764b54a059168e028554dc5c, type: 3}
+      propertyPath: benchSceneName
+      value: OnBoarding
       objectReference: {fileID: 0}
     - target: {fileID: 6182742310173604989, guid: 4d52adf8764b54a059168e028554dc5c, type: 3}
       propertyPath: benchIndexVariable
@@ -91112,7 +91116,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6182742310173604989, guid: 4d52adf8764b54a059168e028554dc5c, type: 3}
       propertyPath: benchIndex
-      value: 5
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 6182742310173604989, guid: 4d52adf8764b54a059168e028554dc5c, type: 3}
       propertyPath: benchSceneName

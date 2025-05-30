@@ -10,6 +10,7 @@ public class SceneFader : MonoBehaviour
     
     [SerializeField]
     public float fadeTime = 1.0f;
+    public static SceneFader Instance { get; private set; }
 
     public enum FadeDirection
     {
@@ -21,7 +22,16 @@ public class SceneFader : MonoBehaviour
     {
         fadeImage = GetComponent<Image>();
         fadeImage.color = new Color(0, 0, 0, 0); // start transparent
+        if (SceneFader.Instance != null && SceneFader.Instance != this)
+        {
+            Destroy(gameObject);
+        }
+        else
+        {
+            SceneFader.Instance = this;
+        }
     }
+    
 
     public IEnumerator Fade(FadeDirection _fadeDirection)
     {
@@ -43,4 +53,5 @@ public class SceneFader : MonoBehaviour
         yield return StartCoroutine(Fade(_fadeDirection));
         SceneController.Instance.LoadAdditiveScene(_levelToLoad);
     }
+    
 }
