@@ -91053,6 +91053,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 7211913953476336912, guid: 89acd282f25c78f4784e141f01c6f155, type: 3}
+      propertyPath: smokeEffect
+      value: 
+      objectReference: {fileID: 1281523390588808242, guid: c1e6b68f00b76a04dbe3b28ad188844b, type: 3}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []

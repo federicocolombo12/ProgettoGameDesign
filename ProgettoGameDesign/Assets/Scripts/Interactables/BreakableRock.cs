@@ -4,6 +4,7 @@ public class BreakableRock : Interactable
 {
     SpriteRenderer sr;
     [SerializeField] GameObject rockEffect;
+    [SerializeField] GameObject smokeEffect;
     public override void Start()
     {
 
@@ -20,7 +21,7 @@ public class BreakableRock : Interactable
 
             interactor.GetComponent<PlayerBreakableRock>().ChargeAndBreak(transform);
             EffectManager.Instance.PlayOneShot(rockEffect.GetComponent<ParticleSystem>(), transform.position);
-
+            EffectManager.Instance.PlayOneShot(smokeEffect.GetComponent<ParticleSystem>(), transform.position);
             sr.color = Color.green;
         }
 
