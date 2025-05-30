@@ -379,8 +379,8 @@ CapsuleCollider2D:
   m_UsedByEffector: 0
   m_CompositeOperation: 0
   m_CompositeOrder: 0
-  m_Offset: {x: 0.0152282715, y: 2.2558947}
-  m_Size: {x: 1.7792358, y: 2.9109173}
+  m_Offset: {x: 0.0152282715, y: 2.08}
+  m_Size: {x: 1.7792358, y: 3.5}
   m_Direction: 0
 --- !u!1 &279704491
 GameObject:
@@ -4707,6 +4707,22 @@ PrefabInstance:
     - target: {fileID: -7552582706839291426, guid: d234688aa4f0caf47b442704bbb49a2b, type: 3}
       propertyPath: m_ConstrainProportionsScale
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7366221178068154654, guid: d234688aa4f0caf47b442704bbb49a2b, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 0.010739594
+      objectReference: {fileID: 0}
+    - target: {fileID: 7366221178068154654, guid: d234688aa4f0caf47b442704bbb49a2b, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7366221178068154654, guid: d234688aa4f0caf47b442704bbb49a2b, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0.99994236
+      objectReference: {fileID: 0}
+    - target: {fileID: 7366221178068154654, guid: d234688aa4f0caf47b442704bbb49a2b, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: -178.769
       objectReference: {fileID: 0}
     - target: {fileID: 9011704873779949634, guid: d234688aa4f0caf47b442704bbb49a2b, type: 3}
       propertyPath: m_LocalRotation.w
