@@ -6,7 +6,7 @@ using DG.Tweening;
 
 public class SceneFader : MonoBehaviour
 {
-    private Image fadeImage;
+    private CanvasGroup fadeImage;
     
     [SerializeField]
     public float fadeTime = 1.0f;
@@ -20,8 +20,8 @@ public class SceneFader : MonoBehaviour
 
     void Awake()
     {
-        fadeImage = GetComponent<Image>();
-        fadeImage.color = new Color(0, 0, 0, 0); // start transparent
+        fadeImage = GetComponent<CanvasGroup>();
+        fadeImage.alpha = 0f; // start transparent
         if (SceneFader.Instance != null && SceneFader.Instance != this)
         {
             Destroy(gameObject);
@@ -37,14 +37,13 @@ public class SceneFader : MonoBehaviour
     {
         float _targetAlpha = _fadeDirection == FadeDirection.Out ? 0 : 1;
 
-        fadeImage.enabled = true;
+        
 
         // Avvia il tween e aspetta che finisca
         Tween tween = fadeImage.DOFade(_targetAlpha, fadeTime).SetEase(Ease.InOutQuad);
         yield return tween.WaitForCompletion();
 
-        if (_fadeDirection == FadeDirection.Out)
-            fadeImage.enabled = false;
+       
     }
 
     public IEnumerator FadeAndLoadScene(FadeDirection _fadeDirection, string _levelToLoad)
