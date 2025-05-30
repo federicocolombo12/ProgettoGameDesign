@@ -1,27 +1,20 @@
 using UnityEngine;
 
-public class BreakableRock : MonoBehaviour, IInteractable
+public class BreakableRock : Interactable
 {
     SpriteRenderer sr;
     [SerializeField] GameObject rockEffect;
-    public void Start()
+    public override void Start()
     {
 
-
+        base.Start();
         sr = GetComponent<SpriteRenderer>();
         sr.color = Color.white;
     }
-    public void Update()
+    
+    public override void Interact(GameObject interactor)
     {
-        
-
-        if (sr.color == Color.red)
-        {
-            sr.color = Color.white;
-        }
-    }
-    public void Interact(GameObject interactor)
-    {
+        base.Interact(interactor);
         if (interactor.GetComponent<PlayerBreakableRock>() != null)
         {
 
@@ -32,14 +25,6 @@ public class BreakableRock : MonoBehaviour, IInteractable
         }
 
     }
-    public void Detected(GameObject interactor)
-    {
-
-        if (interactor.GetComponent<PlayerBreakableRock>() != null)
-        {
-            sr.color = Color.red;
-        }
-
-    }
+   
 
 }

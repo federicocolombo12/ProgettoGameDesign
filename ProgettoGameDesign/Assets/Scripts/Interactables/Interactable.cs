@@ -12,6 +12,7 @@ public class Interactable : MonoBehaviour, IInteractable
     public virtual void Start()
     {
         interactableUi = GetComponentInChildren<CanvasGroup>();
+        interactableUi.DOFade(0, 0f); // Inizialmente invisibile
     }
 
     public virtual void Update()
@@ -54,5 +55,9 @@ public class Interactable : MonoBehaviour, IInteractable
     public virtual void Interact(GameObject interactor)
     {
         // Override nei figli
+        interactableUi.DOFade(0, 0.2f).OnComplete(() =>
+        {
+            interactableUi.gameObject.SetActive(false);
+        });
     }
 }

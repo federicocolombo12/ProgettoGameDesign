@@ -89041,7 +89041,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8887817112748523517, guid: bd3592b578acb8547b75ed4fad6f917e, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -0.41058642
+      value: -0.77
       objectReference: {fileID: 0}
     - target: {fileID: 8887817112748523517, guid: bd3592b578acb8547b75ed4fad6f917e, type: 3}
       propertyPath: m_LocalPosition.z
@@ -90201,6 +90201,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1352595649}
     m_Modifications:
+    - target: {fileID: 5134359070225032766, guid: 101babb9685bdce4bb816672b4441d9b, type: 3}
+      propertyPath: m_CollisionDetection
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 6344562058082375487, guid: 101babb9685bdce4bb816672b4441d9b, type: 3}
       propertyPath: m_Name
       value: Crawler (2)
@@ -91010,14 +91014,6 @@ PrefabInstance:
       value: BreakableRock
       objectReference: {fileID: 0}
     - target: {fileID: 4009413240571249993, guid: 89acd282f25c78f4784e141f01c6f155, type: 3}
-      propertyPath: m_LocalScale.x
-      value: 1.246445
-      objectReference: {fileID: 0}
-    - target: {fileID: 4009413240571249993, guid: 89acd282f25c78f4784e141f01c6f155, type: 3}
-      propertyPath: m_LocalScale.y
-      value: 1.4797
-      objectReference: {fileID: 0}
-    - target: {fileID: 4009413240571249993, guid: 89acd282f25c78f4784e141f01c6f155, type: 3}
       propertyPath: m_LocalPosition.x
       value: 73.507
       objectReference: {fileID: 0}
@@ -91057,10 +91053,6 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 7211913953476336912, guid: 89acd282f25c78f4784e141f01c6f155, type: 3}
-      propertyPath: rockEffect
-      value: 
-      objectReference: {fileID: 7097757957843592753, guid: acc118949b61e03489fb9bd2bb150553, type: 3}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -91113,14 +91105,6 @@ PrefabInstance:
     - target: {fileID: 3384439507848394309, guid: 4d52adf8764b54a059168e028554dc5c, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 6182742310173604989, guid: 4d52adf8764b54a059168e028554dc5c, type: 3}
-      propertyPath: benchIndex
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 6182742310173604989, guid: 4d52adf8764b54a059168e028554dc5c, type: 3}
-      propertyPath: benchSceneName
-      value: OnBoarding
       objectReference: {fileID: 0}
     - target: {fileID: 8431439118010689875, guid: 4d52adf8764b54a059168e028554dc5c, type: 3}
       propertyPath: m_Name
