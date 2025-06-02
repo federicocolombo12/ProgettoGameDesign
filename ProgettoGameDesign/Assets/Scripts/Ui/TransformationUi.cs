@@ -19,28 +19,32 @@ public class TransformationUi : MonoBehaviour
         sideImage2.sprite = imageList[2];
     }
     // Update is called once per frame
-    public void SetNextImage(int index)
+   public void SetNextImage(int index)
 {
-    if (imageList == null || imageList.Count < 3)
+    if (imageList == null || imageList.Count < 6)
     {
-        Debug.LogWarning("Image list must have at least 3 sprites.");
+        Debug.LogWarning("Image list must have at least 6 sprites (3 transformations, each with selected and unselected).");
         return;
     }
 
-    if (index < 0 || index >= imageList.Count)
+    if (index < 0 || index > 2)
     {
-        Debug.LogWarning("Index out of bounds for imageList.");
+        Debug.LogWarning("Index must be between 0 and 2.");
         return;
     }
 
-    mainImage.sprite = imageList[index];
+    // Set the selected image for main
+    mainImage.sprite = imageList[index * 2 + 1]; // selected version
 
-    // Default: side images are 1 (left) and 2 (right)
-    // But if selected index is 1 or 2, show 0 in that side slot
+    // Get the other two indices
+    List<int> otherIndices = new List<int> { 0, 1, 2 };
+    otherIndices.Remove(index);
 
-    sideImage1.sprite = (index == 1) ? imageList[0] : imageList[1];
-    sideImage2.sprite = (index == 2) ? imageList[0] : imageList[2];
+    // Set the unselected images for the side images
+    sideImage1.sprite = imageList[otherIndices[0] * 2]; // unselected version
+    sideImage2.sprite = imageList[otherIndices[1] * 2]; // unselected version
 }
+
 
 
 }
