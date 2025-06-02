@@ -6,7 +6,7 @@ using System.Collections.Generic;
 public class TransformationUi : MonoBehaviour
 {
     [SerializeField] List<Sprite> imageList;
-    
+
     [SerializeField] Image mainImage;
     [SerializeField] Image sideImage1;
     [SerializeField] Image sideImage2;
@@ -19,7 +19,7 @@ public class TransformationUi : MonoBehaviour
         sideImage2.sprite = imageList[2];
     }
     // Update is called once per frame
-   public void SetNextImage(int index)
+    public void SetNextImage(int index)
 {
     if (imageList == null || imageList.Count < 6)
     {
@@ -33,18 +33,39 @@ public class TransformationUi : MonoBehaviour
         return;
     }
 
-    // Set the selected image for main
-    mainImage.sprite = imageList[index * 2 + 1]; // selected version
+    // Set main image (selected)
+    mainImage.sprite = imageList[index * 2 + 1];
 
-    // Get the other two indices
-    List<int> otherIndices = new List<int> { 0, 1, 2 };
-    otherIndices.Remove(index);
+    // Determine which two indices to use for the sides, in visual order
+    int leftIndex, rightIndex;
 
-    // Set the unselected images for the side images
-    sideImage1.sprite = imageList[otherIndices[0] * 2]; // unselected version
-    sideImage2.sprite = imageList[otherIndices[1] * 2]; // unselected version
+    switch (index)
+    {
+        case 0:
+            leftIndex = 1;
+            rightIndex = 2;
+            break;
+        case 1:
+            leftIndex = 0;
+            rightIndex = 2;
+            break;
+        case 2:
+            leftIndex = 1;
+            rightIndex = 0;
+            break;
+        default:
+            leftIndex = 0;
+            rightIndex = 0;
+            break;
+    }
+
+    // Set side images (not selected versions)
+    sideImage1.sprite = imageList[leftIndex * 2];   // unselected
+    sideImage2.sprite = imageList[rightIndex * 2];  // unselected
 }
 
 
 
+
 }
+
