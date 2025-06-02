@@ -29,27 +29,28 @@ public class Crawler : Enemy
         switch (GetCurrentEnemyState)
         {
             case EnemyStates.Crawler_Idle:
-                Vector3 _ledgeCheckStart = transform.localScale.x > 0 ? new Vector3(ledgeCheckX, 0) : new Vector3(-ledgeCheckX, 0);
-                Vector2 _wallCheckDir = transform.localScale.x > 0 ? transform.right : -transform.right;
-                Debug.DrawRay(transform.position + _ledgeCheckStart, Vector2.down * ledgeCheckY, Color.red);
-                Debug.DrawRay(transform.position, _wallCheckDir * ledgeCheckX, Color.blue);
-                if (!Physics2D.Raycast(transform.position + _ledgeCheckStart, Vector2.down, ledgeCheckY, whatIsGround) ||
-                    Physics2D.Raycast(transform.position, _wallCheckDir, ledgeCheckX, whatIsGround))
                 {
-                   
-                    ChangeState(EnemyStates.Crawler_Flip);
+                    Vector3 _ledgeCheckStart = transform.localScale.x > 0 ? new Vector3(ledgeCheckX, 0) : new Vector3(-ledgeCheckX, 0);
+                    Vector2 _wallCheckDir = transform.localScale.x > 0 ? transform.right : -transform.right;
+
+                    Debug.DrawRay(transform.position + _ledgeCheckStart, Vector2.down * ledgeCheckY, Color.red);
+                    Debug.DrawRay(transform.position, _wallCheckDir * ledgeCheckX, Color.blue);
+
+                    bool noGroundAhead = !Physics2D.Raycast(transform.position + _ledgeCheckStart, Vector2.down, ledgeCheckY, whatIsGround);
+                    bool wallAhead = Physics2D.Raycast(transform.position, _wallCheckDir, ledgeCheckX, whatIsGround);
+
+                    if (noGroundAhead || wallAhead)
+                    {
+                        rb.linearVelocity = Vector2.zero; // <--- ferma subito se necessario
+                        ChangeState(EnemyStates.Crawler_Flip);
+                        break;
+                    }
+
+                    float direction = transform.localScale.x > 0 ? 1f : -1f;
+                    rb.linearVelocity = new Vector2(direction * speed, rb.linearVelocity.y);
+                    break;
                 }
-                
-                if (transform.localScale.x>0)
-                {
-                    
-                    rb.linearVelocity = new Vector2(speed, 0);
-                }
-                else
-                {
-                    rb.linearVelocity = new Vector2(-speed, 0);
-                }
-                break;
+
             case EnemyStates.Crawler_Flip:
                 timer += Time.deltaTime;
                 if (timer >= flipWaitTime)
