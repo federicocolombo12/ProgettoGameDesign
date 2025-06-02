@@ -48,7 +48,7 @@ TextureImporter:
   compressionQuality: 50
   spriteMode: 2
   spriteExtrude: 1
-  spriteMeshType: 1
+  spriteMeshType: 0
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
   spritePixelsToUnits: 127
@@ -104,9 +104,9 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 0
-        y: 868
+        y: 768
         width: 256
-        height: 284
+        height: 384
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -126,9 +126,9 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 256
-        y: 868
+        y: 768
         width: 256
-        height: 284
+        height: 384
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -148,9 +148,9 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 512
-        y: 868
+        y: 768
         width: 256
-        height: 284
+        height: 384
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -170,9 +170,9 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 0
-        y: 584
+        y: 384
         width: 256
-        height: 284
+        height: 384
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -192,9 +192,9 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 256
-        y: 584
+        y: 384
         width: 256
-        height: 284
+        height: 384
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -214,9 +214,9 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 512
-        y: 584
+        y: 384
         width: 256
-        height: 284
+        height: 384
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -236,9 +236,9 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 0
-        y: 300
+        y: 0
         width: 256
-        height: 284
+        height: 384
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -258,9 +258,9 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 256
-        y: 300
+        y: 0
         width: 256
-        height: 284
+        height: 384
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -280,9 +280,9 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 512
-        y: 300
+        y: 0
         width: 256
-        height: 284
+        height: 384
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -293,72 +293,6 @@ TextureImporter:
       bones: []
       spriteID: 1e22c1708bd6b3849801603fda056a4f
       internalID: 1514136277
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: tiles_grotta_2x3_9
-      rect:
-        serializedVersion: 2
-        x: 0
-        y: 16
-        width: 256
-        height: 284
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 330d9fded149b444c82887df16314d71
-      internalID: -2086055209
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: tiles_grotta_2x3_10
-      rect:
-        serializedVersion: 2
-        x: 256
-        y: 16
-        width: 256
-        height: 284
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 9d31f74b658e2cd48ad080ee37d202fb
-      internalID: -91071264
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: tiles_grotta_2x3_11
-      rect:
-        serializedVersion: 2
-        x: 512
-        y: 16
-        width: 256
-        height: 284
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 2f83236188c26df45ada22b2c5ff2953
-      internalID: -737561169
       vertices: []
       indices: 
       edges: []
@@ -379,8 +313,6 @@ TextureImporter:
     nameFileIdTable:
       tiles_grotta_2x3_0: 7513388188644672927
       tiles_grotta_2x3_1: -596314248
-      tiles_grotta_2x3_10: -91071264
-      tiles_grotta_2x3_11: -737561169
       tiles_grotta_2x3_2: 1038345097
       tiles_grotta_2x3_3: 1150647914
       tiles_grotta_2x3_4: 1902415208
@@ -388,7 +320,6 @@ TextureImporter:
       tiles_grotta_2x3_6: -68745377
       tiles_grotta_2x3_7: 154296172
       tiles_grotta_2x3_8: 1514136277
-      tiles_grotta_2x3_9: -2086055209
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
