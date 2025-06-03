@@ -1,3 +1,4 @@
+using DG.Tweening;
 using UnityEngine;
 
 public class PlayerAttack : MonoBehaviour
@@ -26,6 +27,8 @@ public class PlayerAttack : MonoBehaviour
     private PlayerMovement playerMovement;
     private PlayerHealth playerHealth;
     PlayerCast playerSpell;
+    [SerializeField] private float attackShakeIntensity;
+
     private void Start()
     {
         pState = Player.Instance.pState;
@@ -72,6 +75,11 @@ public class PlayerAttack : MonoBehaviour
             timeSinceAttack = 0;
             animator.SetTrigger("Attack");
             attack = false;
+            if (Player.Instance.playerTransformation.index == 2)
+            {
+                DOVirtual.DelayedCall(0.3f, () => CameraManager.Instance.ShakeCamera(attackShakeIntensity));
+                
+            }
 
             if (Mathf.Abs(directionalInput.y) < 0.3f || (directionalInput.y < 0 && playerMovement.IsGrounded()))
             {

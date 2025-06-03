@@ -1,5 +1,6 @@
 using UnityEngine;
 using System.Collections;
+using DG.Tweening;
 
 public class PlayerDash : MonoBehaviour
 {
@@ -9,6 +10,8 @@ public class PlayerDash : MonoBehaviour
     [SerializeField] float dashTime = 0.5f;
     [SerializeField] float dashCooldown = 1f;
     [SerializeField] GameObject dashEffect;
+    [SerializeField] GameObject dashTrail;
+    [SerializeField] Transform dashPosition;
     [SerializeField] float effectPosition = 0.5f;
     private PlayerMovement playerMovement;
     PlayerStateList pState;
@@ -16,6 +19,8 @@ public class PlayerDash : MonoBehaviour
     private Animator animator;
     [SerializeField] AnimationCurve gravityCurve;
     private bool canDash = true;
+    [SerializeField] private float shakeIntensity;
+
     private void OnEnable()
     {
         PlayerTransform.OnTransform += ChangeVariables;
@@ -30,6 +35,7 @@ public class PlayerDash : MonoBehaviour
         rb = Player.Instance.rb;
         animator = Player.Instance.animator;
         playerMovement = Player.Instance.playerMovement;
+        
     }
     void ChangeVariables()
     {
@@ -50,6 +56,8 @@ public class PlayerDash : MonoBehaviour
         pState.dashing = true;
         animator.SetTrigger("Dashing");
         
+       
+        
         while (rb.gravityScale !=0){
                 rb.gravityScale = 0;
                 yield return null;
@@ -59,14 +67,29 @@ public class PlayerDash : MonoBehaviour
         
         
         EffectManager.Instance.PlayOneShot(dashEffect.GetComponent<ParticleSystem>(), transform.position+Vector3.down*effectPosition);
-        CameraManager.Instance.ShakeCamera(0.1f);
+        ChangeAlpha();
+        CameraManager.Instance.ShakeCamera(shakeIntensity);
         yield return new WaitForSeconds(dashTime);
         
         pState.dashing = false;
         rb.gravityScale =   playerMovement.gravityScale;
+        
+        
         yield return new WaitForSeconds(dashCooldown);
+       
         canDash = true;
         
+        
+    }
+    void ChangeAlpha()
+    {
+        foreach (SpriteRenderer spriteRenderer in GetComponentsInChildren<SpriteRenderer>())
+        {
+            spriteRenderer.DOFade(0, dashTime).OnComplete(() => 
+            {
+                spriteRenderer.DOFade(1, dashCooldown);
+            });
+        }
         
     }
 }

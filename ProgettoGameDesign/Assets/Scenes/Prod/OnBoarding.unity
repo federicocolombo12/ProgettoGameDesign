@@ -89216,10 +89216,6 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1352595649}
     m_Modifications:
-    - target: {fileID: 6152820183864289198, guid: 101babb9685bdce4bb816672b4441d9b, type: 3}
-      propertyPath: m_FillOrigin
-      value: 0
-      objectReference: {fileID: 0}
     - target: {fileID: 6344562058082375487, guid: 101babb9685bdce4bb816672b4441d9b, type: 3}
       propertyPath: m_Name
       value: Crawler
@@ -89263,38 +89259,6 @@ PrefabInstance:
     - target: {fileID: 7563456943173454491, guid: 101babb9685bdce4bb816672b4441d9b, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 8147206582426690114, guid: 101babb9685bdce4bb816672b4441d9b, type: 3}
-      propertyPath: m_LocalScale.x
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 8147206582426690114, guid: 101babb9685bdce4bb816672b4441d9b, type: 3}
-      propertyPath: m_LocalScale.y
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 8147206582426690114, guid: 101babb9685bdce4bb816672b4441d9b, type: 3}
-      propertyPath: m_LocalScale.z
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 8147206582426690114, guid: 101babb9685bdce4bb816672b4441d9b, type: 3}
-      propertyPath: m_ConstrainProportionsScale
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 8147206582426690115, guid: 101babb9685bdce4bb816672b4441d9b, type: 3}
-      propertyPath: playOnAwake
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 8147206582426690115, guid: 101babb9685bdce4bb816672b4441d9b, type: 3}
-      propertyPath: InitialModule.startColor.maxColor.b
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 8147206582426690115, guid: 101babb9685bdce4bb816672b4441d9b, type: 3}
-      propertyPath: InitialModule.startColor.maxColor.g
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 8147206582426690115, guid: 101babb9685bdce4bb816672b4441d9b, type: 3}
-      propertyPath: InitialModule.startColor.maxColor.r
-      value: 0.9811321
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
