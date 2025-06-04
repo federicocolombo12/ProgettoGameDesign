@@ -56,7 +56,8 @@ public class PlayerTransformation : ScriptableObject
     [TabGroup("Visual")]
     [Tooltip("Animator Controller da usare per questa trasformazione.")]
     public RuntimeAnimatorController animatorController;
-
+    [TabGroup("Visual"), LabelWidth(120)]
+    public Color color;
     [TabGroup("Visual")]
     public Vector3 transformationScale = Vector3.one;
 

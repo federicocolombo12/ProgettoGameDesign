@@ -11,7 +11,7 @@ public class TransformationUi : MonoBehaviour
     [SerializeField] Image sideImage1;
     [SerializeField] Image sideImage2;
 
-
+    
     private void Start()
     {
         mainImage.sprite = imageList[0];
@@ -62,7 +62,12 @@ public class TransformationUi : MonoBehaviour
     // Set side images (not selected versions)
     sideImage1.sprite = imageList[leftIndex * 2];   // unselected
     sideImage2.sprite = imageList[rightIndex * 2];  // unselected
+    UpdateImages(index);
 }
+    void UpdateImages(int index)
+    {
+        mainImage.color = Player.Instance.playerTransform.transformationColors[index];
+    }
 
 
 

@@ -20,7 +20,7 @@ public class PlayerTransform : MonoBehaviour
     [SerializeField] List<Animator> animators;
     [SerializeField] ParticleSystem effectParticle;
     ParticleSystem transformationParticle;
-    [SerializeField] List<Color> transformationColors;
+    public List<Color> transformationColors;
     [SerializeField] float dissolveTimer = 0.5f; // Time for the dissolve effect
     private int lastTransformationIndex = 0;
 

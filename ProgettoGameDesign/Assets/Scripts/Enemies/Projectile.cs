@@ -7,6 +7,7 @@ public class Projectile : MonoBehaviour
     private Player _player;
     public GameObject shooter;
     Rigidbody2D rb;
+    float projectileDamage = 1f;
 
     void Start()
     {
@@ -18,7 +19,7 @@ public class Projectile : MonoBehaviour
     {
         if (other.gameObject.CompareTag("Player"))
         {
-            _player.playerHealth.TakeDamage(1);
+            _player.playerHealth.TakeDamage(projectileDamage);
         }
         if (!other.gameObject.CompareTag("Enemy"))
         {
