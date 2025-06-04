@@ -195,7 +195,7 @@ MonoBehaviour:
   healthImage: {fileID: 0}
   damage: 1
   orangeBlood: {fileID: 4792805946373802877, guid: 99392edfef6f7574fbd4cc2077f8cc06, type: 3}
-  weakTo: {fileID: 0}
+  weakTo: {fileID: 11400000, guid: a85abe56df98ddd489746a5ed5666703, type: 2}
   immuneTo: {fileID: 0}
   damageMultiplier: 0
   projectilePrefab: {fileID: 693101946130715330, guid: 0d3649e3895df481f89628e805bcb6b7, type: 3}
@@ -344,11 +344,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8866130527325745022, guid: da2f707ff50440b41ae1e07967fb6f52, type: 3}
       propertyPath: m_SizeDelta.x
-      value: 6.052
+      value: 1.9458
       objectReference: {fileID: 0}
     - target: {fileID: 8866130527325745022, guid: da2f707ff50440b41ae1e07967fb6f52, type: 3}
       propertyPath: m_SizeDelta.y
-      value: 0.717
+      value: 0.7407
       objectReference: {fileID: 0}
     - target: {fileID: 8866130527325745022, guid: da2f707ff50440b41ae1e07967fb6f52, type: 3}
       propertyPath: m_LocalPosition.x
@@ -380,11 +380,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8866130527325745022, guid: da2f707ff50440b41ae1e07967fb6f52, type: 3}
       propertyPath: m_AnchoredPosition.x
-      value: 0.14787292
+      value: 0.07
       objectReference: {fileID: 0}
     - target: {fileID: 8866130527325745022, guid: da2f707ff50440b41ae1e07967fb6f52, type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: 1.6087952
+      value: 1.45
       objectReference: {fileID: 0}
     - target: {fileID: 8866130527325745022, guid: da2f707ff50440b41ae1e07967fb6f52, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
@@ -397,6 +397,10 @@ PrefabInstance:
     - target: {fileID: 8866130527325745022, guid: da2f707ff50440b41ae1e07967fb6f52, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 9072003972968934890, guid: da2f707ff50440b41ae1e07967fb6f52, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: -0.000001013279
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
