@@ -716,6 +716,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 6914180631650740491, guid: 98a551074325d5a47801f117a26744ee, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 8059696389102378518, guid: 98a551074325d5a47801f117a26744ee, type: 3}
       propertyPath: m_Name
       value: Bat (1)
@@ -63977,20 +63981,11 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 6967404304315582629, guid: 064097e86fb574f43a75f505dec4aef2, type: 3}
-      propertyPath: sr
-      value: 
-      objectReference: {fileID: 628726481}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 064097e86fb574f43a75f505dec4aef2, type: 3}
---- !u!212 &628726481 stripped
-SpriteRenderer:
-  m_CorrespondingSourceObject: {fileID: 7396596622832786950, guid: 064097e86fb574f43a75f505dec4aef2, type: 3}
-  m_PrefabInstance: {fileID: 628726480}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1 &650455382
 GameObject:
   m_ObjectHideFlags: 0
