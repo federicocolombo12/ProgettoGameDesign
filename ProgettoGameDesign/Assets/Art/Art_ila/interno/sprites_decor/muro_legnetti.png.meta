@@ -134,7 +134,8 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      muro_legnetti_0: 4132091111294399538
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

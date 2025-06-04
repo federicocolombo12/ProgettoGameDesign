@@ -209,7 +209,11 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      colonne_legno_0: 809755942895334970
+      colonne_legno_1: -4969726996603511345
+      colonne_legno_2: 6444119179451110017
+      colonne_legno_3: 6513245841669747056
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

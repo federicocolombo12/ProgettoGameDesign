@@ -209,7 +209,11 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      muri_legno_decorati_0: -3519577283799036343
+      muri_legno_decorati_1: 792629215114034171
+      muri_legno_decorati_2: 866096134832666848
+      muri_legno_decorati_3: 2046425673412688164
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

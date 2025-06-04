@@ -234,7 +234,12 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      decor_stendino_0: -7677077515273940007
+      decor_stendino_1: -330571269600973964
+      decor_stendino_2: 7679713461812290747
+      decor_stendino_3: -8441059727996959389
+      decor_stendino_4: -6995166921847285559
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

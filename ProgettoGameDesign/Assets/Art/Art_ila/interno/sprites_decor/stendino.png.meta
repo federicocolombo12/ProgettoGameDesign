@@ -184,7 +184,10 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      stendino_0: 7882756952427383444
+      stendino_1: 1233189316647583182
+      stendino_2: -2343068689116761963
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
