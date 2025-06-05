@@ -134,7 +134,8 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      moduli_colonna_paglia_0: -3436261060980741264
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

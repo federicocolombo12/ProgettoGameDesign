@@ -134,7 +134,8 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      texture_quercia_0: -9178741187909870902
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

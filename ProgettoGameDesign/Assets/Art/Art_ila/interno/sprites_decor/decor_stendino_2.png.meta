@@ -184,7 +184,10 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      decor_stendino_2_0: 91417949843237188
+      decor_stendino_2_1: -8747335431299111909
+      decor_stendino_2_2: -5453129155177301879
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
