@@ -1,6 +1,7 @@
 using System.Collections;
 using UnityEngine;
 using DG.Tweening;
+using System.Linq;
 public class PlayerHook : MonoBehaviour
 {
     private Rigidbody2D rb;
@@ -26,7 +27,7 @@ public class PlayerHook : MonoBehaviour
 
     public void Hook(Vector2 hookPosition)
     {
-        if (Player.Instance.playerTransformation.abilityType == PlayerTransformation.AbilityType.GrapplingHook)
+        if (Player.Instance.playerTransformation.abilities.Contains(PlayerTransformation.AbilityType.GrapplingHook))
         {
             StartCoroutine(MoveToHook(hookPosition));
         }

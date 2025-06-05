@@ -3,6 +3,7 @@ using System.Collections;
 using Sirenix.OdinInspector;
 using Unity.Cinemachine;
 using DG.Tweening;
+using System.Linq;
 
 public class PlayerMovement : MonoBehaviour
 {
@@ -106,7 +107,7 @@ public class PlayerMovement : MonoBehaviour
     
 
     // Update is called once per frame
-    void UpdateVariables()
+    public void UpdateVariables()
     {
         DOVirtual.DelayedCall(0.1f, () =>
         {
@@ -183,7 +184,7 @@ public class PlayerMovement : MonoBehaviour
 
     public void Stick(Vector2 directionalInput, bool jumpInput)
     {
-        if (Player.Instance.playerTransformation.abilityType == PlayerTransformation.AbilityType.WallSlide)
+        if (Player.Instance.playerTransformation.abilities.Contains(PlayerTransformation.AbilityType.WallSlide))
         {
             if (IsTouchingStickyWall())
             {

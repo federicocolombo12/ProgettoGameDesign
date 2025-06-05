@@ -26,10 +26,25 @@ public class PlayerTransform : MonoBehaviour
 
 
     private CapsuleCollider2D collider;
-    
-    
-   
 
+
+
+    void OnEnable()
+    {
+        UpgradeAbility.OnAbilityUpgraded += HandleAbilityUpgrade;
+    }
+    void OnDisable()
+    {
+        UpgradeAbility.OnAbilityUpgraded -= HandleAbilityUpgrade;
+    }
+    private void HandleAbilityUpgrade(PlayerTransformation.AbilityType abilityType)
+    {
+        if (abilityType == PlayerTransformation.AbilityType.doubleJump)
+        {
+            playerTransformations[1].jumpCount++;
+        }
+        
+    }
     enum Form
     {
         Human,
