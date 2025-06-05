@@ -23,6 +23,7 @@ public class EffectManager : MonoBehaviour
     public void PlayOneShot(ParticleSystem effect, Vector3 position)
     {
         ParticleSystem instance = Instantiate(effect, position, Quaternion.identity);
+        
         instance.Play();
         Destroy(instance.gameObject, instance.main.duration + instance.main.startLifetime.constantMax);
     }

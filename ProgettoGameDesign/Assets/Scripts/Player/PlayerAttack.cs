@@ -1,4 +1,5 @@
 using DG.Tweening;
+using Unity.VisualScripting;
 using UnityEngine;
 
 public class PlayerAttack : MonoBehaviour
@@ -11,7 +12,8 @@ public class PlayerAttack : MonoBehaviour
     [SerializeField] Vector2 sideAttackArea, upAttackArea, downAttackArea;
     [SerializeField] float damage = 10;
     [SerializeField] float hitForce = 10;
-    [SerializeField] GameObject slashEffect;
+    [SerializeField] GameObject slashEffectR;
+    [SerializeField] GameObject slashEffectL;
     [SerializeField] float timeBetweenAttack, timeSinceAttack;
     [Space(10)]
     [Header("Recoil")]
@@ -85,17 +87,18 @@ public class PlayerAttack : MonoBehaviour
             {
                 int _recoilLeftOrRight = pState.lookingRight ? 1 : -1;
                 Hit(sideAttackTransform, sideAttackArea, ref pState.recoilingX, Vector2.right * _recoilLeftOrRight, recoilXSpeed);
-                EffectManager.Instance.PlayOneShot(slashEffect.GetComponent<ParticleSystem>(), sideAttackTransform.position);
+                GameObject slash = pState.lookingRight ? slashEffectR : slashEffectL;
+                EffectManager.Instance.PlayOneShot(slash.GetComponent<ParticleSystem>(), sideAttackTransform.position);
             }
             else if (directionalInput.y > 0.3f)
             {
                 Hit(upAttackTransform, upAttackArea, ref pState.recoilingY,Vector2.up, recoilYSpeed);
-                SlashEffectAngle(slashEffect, 90, upAttackTransform);
+                SlashEffectAngle(slashEffectR, 90, upAttackTransform);
             }
             else if (directionalInput.y < 0.3f && !playerMovement.IsGrounded())
             {
                 Hit(downAttackTransform, downAttackArea, ref pState.recoilingY,Vector2.down, recoilYSpeed);
-                SlashEffectAngle(slashEffect, -90, downAttackTransform);
+                SlashEffectAngle(slashEffectR, -90, downAttackTransform);
             }
             // Attacco
         }
