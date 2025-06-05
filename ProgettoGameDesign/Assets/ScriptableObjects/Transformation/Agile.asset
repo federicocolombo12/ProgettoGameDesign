@@ -12,6 +12,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 15c4b7b544189c24ebf7d140ea5e6685, type: 3}
   m_Name: Agile
   m_EditorClassIdentifier: 
+  abilities: 000000000200000003000000
+  isUnlocked: 1
   index: 1
   abilityType: 2
   maxHealth: 3
@@ -25,6 +27,7 @@ MonoBehaviour:
   spellDamage: 1
   baseSprite: {fileID: 3526732155374269853, guid: 0923fcf6d18c22b4e833b0bfb95d3738, type: 3}
   animatorController: {fileID: 9100000, guid: c1ddf30cc83a5f840ba7e1545d0a3ba8, type: 2}
+  color: {r: 0, g: 0, b: 0, a: 0}
   transformationScale: {x: 1, y: 1, z: 1}
   colliderSize: {x: 0.88, y: 2.6}
   colliderOffset: {x: 0, y: 0}

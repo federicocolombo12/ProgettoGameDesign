@@ -10,9 +10,33 @@ public class PlayerTransformation : ScriptableObject
         None,
         WallSlide,
         GrapplingHook,
-        miniMe,
+        doubleJump,
         ChargingRockBreaker,
     }
+    [InfoBox("Aggiungi qui le abilità che questa trasformazione possiede.")]
+    public AbilityType[] abilities = new AbilityType[]
+    {
+        AbilityType.None,
+        // Per aggiungere altre abilità, scrivi qui sotto, ad esempio:
+        // AbilityType.WallSlide,
+        // AbilityType.GrapplingHook,
+        // AbilityType.doubleJump,
+        // AbilityType.ChargingRockBreaker,
+    };
+
+    // Metodo per aggiungere un'abilità via codice
+    public void AddAbility(AbilityType ability)
+    {
+        if (System.Array.IndexOf(abilities, ability) < 0)
+        {
+            var list = new System.Collections.Generic.List<AbilityType>(abilities);
+            list.Add(ability);
+            abilities = list.ToArray();
+        }
+    }
+
+    public bool isUnlocked = false;
+    [InfoBox("Questa trasformazione è sbloccata quando il giocatore ottiene un certo numero di gemme. Se non è sbloccata, il giocatore non può usarla.")]
 
     [Title("General Info")]
     [LabelWidth(120)]

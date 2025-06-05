@@ -1,4 +1,5 @@
 using System.Collections;
+using System.Linq;
 using UnityEngine;
 
 public class PlayerBreakableRock : MonoBehaviour
@@ -21,7 +22,7 @@ public class PlayerBreakableRock : MonoBehaviour
 
     public void ChargeAndBreak(Transform rockTransform)
     {
-        if (Player.Instance.playerTransformation.abilityType == PlayerTransformation.AbilityType.ChargingRockBreaker)
+        if (Player.Instance.playerTransformation.abilities.Contains(PlayerTransformation.AbilityType.ChargingRockBreaker))
         {
             targetRock = rockTransform;
             StartCoroutine(ChargeTowardsRock());

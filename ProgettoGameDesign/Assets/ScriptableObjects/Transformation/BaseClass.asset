@@ -12,19 +12,22 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 15c4b7b544189c24ebf7d140ea5e6685, type: 3}
   m_Name: BaseClass
   m_EditorClassIdentifier: 
+  abilities: 00000000
+  isUnlocked: 0
   index: 0
   abilityType: 1
   maxHealth: 5
   damageMultiplier: 1
   moveSpeed: 8
   jumpForce: 10
-  jumpCount: 1
+  jumpCount: 0
   dashSpeed: 10
   attackDamage: 1
   attackSpeed: 0
   spellDamage: 2
   baseSprite: {fileID: 21300000, guid: e70ab950968e2ef439f986ec395141c6, type: 3}
   animatorController: {fileID: 9100000, guid: 9ec7393172c4048e8918d2775e9f7b5b, type: 2}
+  color: {r: 0, g: 0, b: 0, a: 0}
   transformationScale: {x: 1, y: 1, z: 1}
   colliderSize: {x: 1.217247, y: 3.385728}
   colliderOffset: {x: 0.05137646, y: -0.102864}
