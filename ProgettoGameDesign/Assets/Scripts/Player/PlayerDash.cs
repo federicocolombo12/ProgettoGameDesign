@@ -69,6 +69,7 @@ public class PlayerDash : MonoBehaviour
 
 
         EffectManager.Instance.PlayOneShot(dashEffect.GetComponent<ParticleSystem>(), transform.position + Vector3.down * effectPosition);
+        
         ChangeAlpha();
         ParticleSpawn();
 
@@ -101,6 +102,12 @@ public class PlayerDash : MonoBehaviour
         if (dashTrail != null)
         {
             GameObject trail = Instantiate(dashTrail, dashPosition.position, Quaternion.identity, dashPosition);
+            foreach (Transform child in trail.transform)
+            {
+                child.transform.localScale = new Vector3(pState.lookingRight ? child.transform.localScale.x : -child.transform.localScale.x,
+                child.transform.localScale.y, child.transform.localScale.z);
+            }
+          
             
             Destroy(trail, dashCooldown);
         }
