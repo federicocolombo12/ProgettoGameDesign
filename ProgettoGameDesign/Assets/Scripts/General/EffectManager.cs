@@ -33,6 +33,15 @@ public class EffectManager : MonoBehaviour
         obj.flipX = flipX;
         obj.gameObject.AddComponent<Disposable>().lifetime = 2f;
     }
+    public void PlayLooped(ParticleSystem effect, Vector3 position, float duration, Transform parent)
+    {
+        ParticleSystem instance = Instantiate(effect, position, Quaternion.identity, parent);
+        
+        instance.Play();
+        Destroy(instance.gameObject, duration);
+        
+       
+    }
 
     private class EffectPool
     {

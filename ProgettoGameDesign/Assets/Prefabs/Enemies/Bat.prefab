@@ -127,7 +127,7 @@ MonoBehaviour:
   flashMaterial: {fileID: 2100000, guid: d28059583e1a40249ad8daa3586d8028, type: 2}
   healthImage: {fileID: 0}
   damage: 1
-  orangeBlood: {fileID: 867246214757349094, guid: 8fbed873f1be056428a5bb5a3089cb63, type: 3}
+  orangeBlood: {fileID: 1018504420545732665, guid: 8e88e1f612b228c4891428b837d80d61, type: 3}
   weakTo: {fileID: 11400000, guid: a85abe56df98ddd489746a5ed5666703, type: 2}
   immuneTo: {fileID: 11400000, guid: 08614dbdfebc506409c90886dd347a37, type: 2}
   damageMultiplier: 2
@@ -142,6 +142,14 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 463847687225890801}
     m_Modifications:
+    - target: {fileID: 3932498036490793124, guid: da2f707ff50440b41ae1e07967fb6f52, type: 3}
+      propertyPath: m_Color.g
+      value: 0.18764453
+      objectReference: {fileID: 0}
+    - target: {fileID: 3932498036490793124, guid: da2f707ff50440b41ae1e07967fb6f52, type: 3}
+      propertyPath: m_Color.r
+      value: 0.08962262
+      objectReference: {fileID: 0}
     - target: {fileID: 4897976666849188363, guid: da2f707ff50440b41ae1e07967fb6f52, type: 3}
       propertyPath: m_Name
       value: EnemyHealthBar

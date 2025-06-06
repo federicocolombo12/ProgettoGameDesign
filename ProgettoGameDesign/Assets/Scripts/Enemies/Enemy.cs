@@ -154,7 +154,10 @@ public class Enemy : MonoBehaviour
             &&health>0)
         {
             Attack();
-            player.playerHealth.HitStopTime(0.1f,restoreTimeSpeed,0.5f);
+            DOVirtual.DelayedCall(0.1f, () => {
+                player.playerHealth.HitStopTime(0.1f,restoreTimeSpeed,0.5f);
+            });
+            
         }
 
 

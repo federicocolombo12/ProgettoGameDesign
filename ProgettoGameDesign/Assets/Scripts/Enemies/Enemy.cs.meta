@@ -4,10 +4,11 @@ MonoImporter:
   externalObjects: {}
   serializedVersion: 2
   defaultReferences:
+  - sr: {instanceID: 0}
   - player: {instanceID: 0}
   - flashMaterial: {instanceID: 0}
   - healthImage: {instanceID: 0}
-  - orangeBlood: {fileID: 867246214757349094, guid: 8fbed873f1be056428a5bb5a3089cb63, type: 3}
+  - orangeBlood: {fileID: 1018504420545732665, guid: 8e88e1f612b228c4891428b837d80d61, type: 3}
   - weakTo: {instanceID: 0}
   - immuneTo: {instanceID: 0}
   executionOrder: 0

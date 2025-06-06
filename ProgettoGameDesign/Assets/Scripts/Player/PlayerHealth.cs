@@ -57,6 +57,7 @@ public class PlayerHealth : MonoBehaviour
         manaStorage.fillAmount = mana;
         pState.alive = true;
     }
+    
     void UpdateVariables(){
 
         DOVirtual.DelayedCall(0.1f, () => animator = Player.Instance.animator);
@@ -123,7 +124,7 @@ public class PlayerHealth : MonoBehaviour
     }
     IEnumerator StartTimeAgain()
     {
-        yield return new WaitForSecondsRealtime(0.5f);
+        yield return new WaitForSecondsRealtime(0.1f);
         restoreTime = true;
 
 
@@ -174,7 +175,8 @@ public class PlayerHealth : MonoBehaviour
         if (pState.alive)
         {
             Health -= Mathf.RoundToInt(damage* damageMultiplier);
-            CameraManager.Instance.ShakeCamera(1f);
+            CameraManager.Instance.ShakeCamera(0.1f);
+            
             if (Health <= 0 && pState.alive)
             {
                 Health = 0;
@@ -193,8 +195,8 @@ public class PlayerHealth : MonoBehaviour
         pState.invincible = true;
 
         animator.SetTrigger("TakeDamage");
-        GameObject schizzoSangue = Instantiate(blood, transform);
-        Destroy(schizzoSangue, 1.5f);
+        EffectManager.Instance.PlayOneShot(blood.GetComponent<ParticleSystem>(), transform.position);
+        
         yield return new WaitForSeconds(invincibleTime);
         pState.invincible = false;
     }

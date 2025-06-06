@@ -256,7 +256,7 @@ MonoBehaviour:
   flashMaterial: {fileID: 2100000, guid: d28059583e1a40249ad8daa3586d8028, type: 2}
   healthImage: {fileID: 0}
   damage: 1
-  orangeBlood: {fileID: 4792805946373802877, guid: 99392edfef6f7574fbd4cc2077f8cc06, type: 3}
+  orangeBlood: {fileID: 1018504420545732665, guid: 8e88e1f612b228c4891428b837d80d61, type: 3}
   weakTo: {fileID: 11400000, guid: 08614dbdfebc506409c90886dd347a37, type: 2}
   immuneTo: {fileID: 0}
   damageMultiplier: 2

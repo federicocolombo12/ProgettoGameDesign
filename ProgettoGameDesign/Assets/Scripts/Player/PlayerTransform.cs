@@ -19,7 +19,7 @@ public class PlayerTransform : MonoBehaviour
     [SerializeField] List<Material> strongMaterials;
     [SerializeField] List<Animator> animators;
     [SerializeField] ParticleSystem effectParticle;
-    ParticleSystem transformationParticle;
+    [SerializeField] ParticleSystem transformationParticle;
     public List<Color> transformationColors;
     [SerializeField] float dissolveTimer = 0.5f; // Time for the dissolve effect
     private int lastTransformationIndex = 0;
@@ -41,7 +41,7 @@ public class PlayerTransform : MonoBehaviour
     {
         if (abilityType == PlayerTransformation.AbilityType.doubleJump)
         {
-            playerTransformations[1].jumpCount++;
+            playerTransformations[1].jumpCount = 1;
         }
         
     }
@@ -59,7 +59,7 @@ public class PlayerTransform : MonoBehaviour
         
         timeSinceLastTransform = transformCooldown; // Start with cooldown ready
         collider = GetComponent<CapsuleCollider2D>();
-        transformationParticle = GetComponentInChildren<ParticleSystem>();
+        
         transformationParticle.Play();
         IterateMaterials(0); // Inizializza i materiali per la forma umana
         IterateMaterials(1); // Inizializza i materiali per la forma agile
