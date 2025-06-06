@@ -10,6 +10,7 @@ public class Hook : Interactable
     {
 
         base.Start();
+        interactionEffect = GetComponentInChildren<ParticleSystem>();
         lineRenderer = GetComponent<LineRenderer>();
         sr = GetComponent<SpriteRenderer>();
         sr.color = Color.white;

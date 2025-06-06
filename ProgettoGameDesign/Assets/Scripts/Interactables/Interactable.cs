@@ -8,11 +8,15 @@ public class Interactable : MonoBehaviour, IInteractable
 
     protected bool isVisible = false;
     [SerializeField] protected CanvasGroup interactableUi;
+    [SerializeField] protected ParticleSystem interactionEffect;
 
     public virtual void Start()
     {
         interactableUi = GetComponentInChildren<CanvasGroup>();
-        interactableUi.DOFade(0, 0f); // Inizialmente invisibile
+        interactableUi.DOFade(0, 0f);
+        interactionEffect = GetComponentInChildren<ParticleSystem>();
+        
+        
     }
 
     public virtual void Update()
@@ -28,6 +32,8 @@ public class Interactable : MonoBehaviour, IInteractable
                     interactableUi.DOFade(0, 0.2f).OnComplete(() =>
                     {
                         interactableUi.gameObject.SetActive(false);
+                        interactionEffect?.Stop();
+                        interactionEffect?.Clear();
                     });
 
                     isVisible = false;
@@ -47,6 +53,7 @@ public class Interactable : MonoBehaviour, IInteractable
         if (!isVisible)
         {
             interactableUi.gameObject.SetActive(true);
+            interactionEffect?.Play();
             interactableUi.DOFade(1, 0.2f);
             isVisible = true;
         }
