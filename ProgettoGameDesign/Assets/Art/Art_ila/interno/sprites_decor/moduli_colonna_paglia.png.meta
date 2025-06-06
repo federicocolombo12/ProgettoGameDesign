@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 38812ad3168f54ec9b2615a7bad2a335
+guid: 2eb743f1c9c22e94781f3accb8370378
 TextureImporter:
   internalIDToNameTable:
   - first:
@@ -51,7 +51,7 @@ TextureImporter:
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 100
+  spritePixelsToUnits: 128
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
@@ -104,9 +104,9 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 27
-        y: 0
-        width: 141
-        height: 640
+        y: 512
+        width: 140
+        height: 128
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -121,11 +121,99 @@ TextureImporter:
       indices: 
       edges: []
       weights: []
+    - serializedVersion: 2
+      name: moduli_colonna_paglia_1
+      rect:
+        serializedVersion: 2
+        x: 27
+        y: 384
+        width: 140
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d4e3607feae360a46b2c6e76e2ac8180
+      internalID: 1573347559
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: moduli_colonna_paglia_2
+      rect:
+        serializedVersion: 2
+        x: 27
+        y: 256
+        width: 140
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3ae5843e16010c442839130cfc31b919
+      internalID: -963226061
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: moduli_colonna_paglia_3
+      rect:
+        serializedVersion: 2
+        x: 27
+        y: 128
+        width: 140
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3b3c2ef3c0dde4944a86dfdcb58fcc4a
+      internalID: 577343076
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: moduli_colonna_paglia_4
+      rect:
+        serializedVersion: 2
+        x: 27
+        y: 0
+        width: 140
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a21baec942d11254a9eadc819665d6f0
+      internalID: -1624639315
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     outline: []
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 
+    spriteID: a1722de855b398e4a9f9c4b67d22b082
     internalID: 0
     vertices: []
     indices: 
@@ -136,6 +224,10 @@ TextureImporter:
       entries: []
     nameFileIdTable:
       moduli_colonna_paglia_0: -3436261060980741264
+      moduli_colonna_paglia_1: 1573347559
+      moduli_colonna_paglia_2: -963226061
+      moduli_colonna_paglia_3: 577343076
+      moduli_colonna_paglia_4: -1624639315
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
