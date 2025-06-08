@@ -2,50 +2,54 @@ using UnityEngine;
 using UnityEngine.UI;
 using System.Collections;
 using System;
-using System.Xml.Serialization;
 using DG.Tweening;
 
 public class PlayerHealth : MonoBehaviour
 {
-    
     [Header("Health")]
     [SerializeField] int health;
     public int maxHealth = 100;
     [SerializeField] float invincibleTime = 1;
     [SerializeField] GameObject blood;
     [SerializeField] float hitFlashSpeed;
-    float restoreTimeSpeed;
-    bool restoreTime;
+    [SerializeField] float hitStopTimeScale;
+   [SerializeField]  float hitStopTimeDuration;
+
     public delegate void OnHealtChangedDelegate();
     [HideInInspector] public OnHealtChangedDelegate OnHealthChangedCallback;
+
     [Space(10)]
     [Header("Healing")]
     [SerializeField] float timeToHeal = 1;
     float healTimer;
     float damageMultiplier = 1;
+
     [Space(10)]
     [Header("Mana")]
     [SerializeField] Image manaStorage;
     [SerializeField] float mana;
     [SerializeField] float manaDrainSpeed;
     public float manaGain;
-    
+
     private Animator animator;
     private SpriteRenderer sr;
     private PlayerMovement playerMovement;
     public PlayerStateList pState { get; private set; }
 
     public static event Action OnPlayerDeath;
+
     void OnEnable()
     {
         PlayerTransform.OnTransform += SetDamageMultiplier;
         PlayerTransform.OnTransform += UpdateVariables;
     }
+
     void OnDisable()
     {
         PlayerTransform.OnTransform -= SetDamageMultiplier;
         PlayerTransform.OnTransform -= UpdateVariables;
     }
+
     private void Start()
     {
         pState = Player.Instance.pState;
@@ -57,21 +61,18 @@ public class PlayerHealth : MonoBehaviour
         manaStorage.fillAmount = mana;
         pState.alive = true;
     }
-    
-    void UpdateVariables(){
 
+    void UpdateVariables()
+    {
         DOVirtual.DelayedCall(0.1f, () => animator = Player.Instance.animator);
-        
     }
 
     void SetDamageMultiplier()
     {
-        
         damageMultiplier = Player.Instance.playerTransformation.damageMultiplier;
-        
-       
         OnHealthChangedCallback?.Invoke();
     }
+
     public float Mana
     {
         get { return mana; }
@@ -82,56 +83,13 @@ public class PlayerHealth : MonoBehaviour
                 mana = Mathf.Clamp(value, 0, 1);
                 manaStorage.fillAmount = mana;
             }
-
         }
     }
-    public void RestoreTimeScale()
-    {
 
-        if (restoreTime)
-        {
-            if (Time.timeScale < 1)
-            {
+    
 
-                Time.timeScale += restoreTimeSpeed * Time.unscaledDeltaTime;
-            }
-            else
-            {
+    
 
-                Time.timeScale = 1;
-                restoreTime = false;
-
-            }
-
-
-        }
-
-    }
-    public void HitStopTime(float _newTimeScale, float _restoreSpeed, float _delay)
-    {
-        restoreTimeSpeed = _restoreSpeed;
-        Time.timeScale = _newTimeScale;
-        if (_delay > 0)
-        {
-            Debug.Log(_delay);
-            StartCoroutine(StartTimeAgain());
-        }
-        else
-        {
-
-            restoreTime = true;
-        }
-    }
-    IEnumerator StartTimeAgain()
-    {
-        yield return new WaitForSecondsRealtime(0.1f);
-        restoreTime = true;
-
-
-
-
-
-    }
     public int Health
     {
         get { return health; }
@@ -140,15 +98,13 @@ public class PlayerHealth : MonoBehaviour
             if (health != value)
             {
                 health = Math.Clamp(value, 0, maxHealth);
-                if (OnHealthChangedCallback != null)
-                {
-
-                    OnHealthChangedCallback.Invoke();
-                }
+                OnHealthChangedCallback?.Invoke();
             }
         }
     }
-    
+
+   
+
     public void Heal(bool healPressed)
     {
         if (healPressed && Health < maxHealth && playerMovement.IsGrounded() && !pState.dashing && Mana > 0)
@@ -170,13 +126,14 @@ public class PlayerHealth : MonoBehaviour
             animator.SetBool("Healing", false);
         }
     }
+
     public void TakeDamage(float damage)
     {
         if (pState.alive)
         {
-            Health -= Mathf.RoundToInt(damage* damageMultiplier);
+            Health -= Mathf.RoundToInt(damage * damageMultiplier);
             CameraManager.Instance.ShakeCamera(0.1f);
-            
+            EffectManager.Instance.TimeStopEffect(hitStopTimeScale, hitStopTimeDuration);
             if (Health <= 0 && pState.alive)
             {
                 Health = 0;
@@ -186,25 +143,20 @@ public class PlayerHealth : MonoBehaviour
             {
                 StartCoroutine(StopTakingDamage());
             }
-            StartCoroutine(StopTakingDamage());
         }
-
     }
+
     IEnumerator StopTakingDamage()
     {
         pState.invincible = true;
-
         animator.SetTrigger("TakeDamage");
         EffectManager.Instance.PlayOneShot(blood.GetComponent<ParticleSystem>(), transform.position);
-        
         yield return new WaitForSeconds(invincibleTime);
         pState.invincible = false;
     }
+
     public void FlashWhileInvincible()
     {
-        
-           // Use true to include inactive objects
-
         sr.material.color = pState.invincible ? Color.Lerp(Color.white, Color.black, Mathf.PingPong(Time.time * hitFlashSpeed, 1.0f)) : Color.white;
     }
 
@@ -212,7 +164,7 @@ public class PlayerHealth : MonoBehaviour
     {
         OnPlayerDeath?.Invoke();
         pState.alive = false;
-        Time.timeScale= 0.0f;
+        Time.timeScale = 0.0f;
         GameObject schizzoSangue = Instantiate(blood, transform);
         Destroy(schizzoSangue, 1.5f);
         animator.SetTrigger("Death");

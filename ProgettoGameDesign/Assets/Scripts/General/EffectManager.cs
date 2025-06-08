@@ -43,7 +43,18 @@ public class EffectManager : MonoBehaviour
         
        
     }
-    public void TimeStopEffect(float targetTimeScale, float duration)
+    public void TimeStopEffect(float targetTimeScale, float duration, float delay = 0f)
+    {
+        if (delay > 0f)
+        {
+            DOVirtual.DelayedCall(delay, () => ApplyTimeScale(targetTimeScale, duration), true);
+        }
+        else
+        {
+            ApplyTimeScale(targetTimeScale, duration);
+        }
+    }
+    private void ApplyTimeScale(float targetTimeScale, float duration)
     {
         Time.timeScale = targetTimeScale;
         DOVirtual.DelayedCall(duration, () =>

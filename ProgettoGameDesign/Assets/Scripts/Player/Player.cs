@@ -57,7 +57,7 @@ public class Player : MonoBehaviour
         playerMovement.Stick(playerInput.directionalInput, playerInput.jumpInput);
         if (pState.dashing) return;
 
-        playerHealth.RestoreTimeScale();
+       
         if (pState.hooked) return;
         playerMovement.UpdateJumpVariables(playerInput.jumpInput);
         if (pState.sticking) return;

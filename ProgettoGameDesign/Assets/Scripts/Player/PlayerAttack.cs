@@ -30,6 +30,9 @@ public class PlayerAttack : MonoBehaviour
     private PlayerHealth playerHealth;
     PlayerCast playerSpell;
     [SerializeField] private float attackShakeIntensity;
+    [SerializeField] private float attackTimeScale = 0.1f;
+    [SerializeField] private float attackTimerDuration = 0.2f;
+    [SerializeField] private float delay = 0.1f;
 
     private void Start()
     {
@@ -110,7 +113,7 @@ public class PlayerAttack : MonoBehaviour
         if (hits.Length > 0)
         {
             _recoildBool = true;
-            EffectManager.Instance.TimeStopEffect(0.1f, 0.2f);
+            EffectManager.Instance.TimeStopEffect(attackTimeScale, attackTimerDuration, delay);
             CameraManager.Instance.ShakeCamera(attackShakeIntensity);
             for (int i = 0; i < hits.Length; i++)
             {
