@@ -77,11 +77,8 @@ public class PlayerAttack : MonoBehaviour
             timeSinceAttack = 0;
             animator.SetTrigger("Attack");
             attack = false;
-            if (Player.Instance.playerTransformation.index == 2)
-            {
-                DOVirtual.DelayedCall(0.3f, () => CameraManager.Instance.ShakeCamera(attackShakeIntensity));
-                
-            }
+            
+            
 
             if (Mathf.Abs(directionalInput.y) < 0.3f || (directionalInput.y < 0 && playerMovement.IsGrounded()))
             {
@@ -92,17 +89,18 @@ public class PlayerAttack : MonoBehaviour
             }
             else if (directionalInput.y > 0.3f)
             {
-                Hit(upAttackTransform, upAttackArea, ref pState.recoilingY,Vector2.up, recoilYSpeed);
+                Hit(upAttackTransform, upAttackArea, ref pState.recoilingY, Vector2.up, recoilYSpeed);
                 SlashEffectAngle(slashEffectR, 90, upAttackTransform);
             }
             else if (directionalInput.y < 0.3f && !playerMovement.IsGrounded())
             {
-                Hit(downAttackTransform, downAttackArea, ref pState.recoilingY,Vector2.down, recoilYSpeed);
+                Hit(downAttackTransform, downAttackArea, ref pState.recoilingY, Vector2.down, recoilYSpeed);
                 SlashEffectAngle(slashEffectR, -90, downAttackTransform);
             }
             // Attacco
         }
     }
+    
 
 
 
@@ -112,6 +110,8 @@ public class PlayerAttack : MonoBehaviour
         if (hits.Length > 0)
         {
             _recoildBool = true;
+            EffectManager.Instance.TimeStopEffect(0.1f, 0.2f);
+            CameraManager.Instance.ShakeCamera(attackShakeIntensity);
             for (int i = 0; i < hits.Length; i++)
             {
 

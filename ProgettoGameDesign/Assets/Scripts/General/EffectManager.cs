@@ -2,6 +2,7 @@ using System.Collections.Generic;
 using System;
 using UnityEngine;
 using System.Collections;
+using DG.Tweening;
 
 public class EffectManager : MonoBehaviour
 {
@@ -41,6 +42,14 @@ public class EffectManager : MonoBehaviour
         Destroy(instance.gameObject, duration);
         
        
+    }
+    public void TimeStopEffect(float targetTimeScale, float duration)
+    {
+        Time.timeScale = targetTimeScale;
+        DOVirtual.DelayedCall(duration, () =>
+        {
+            Time.timeScale = 1f;
+        }, true);
     }
 
     private class EffectPool
