@@ -192,7 +192,7 @@ MonoBehaviour:
     serializedVersion: 2
     m_Bits: 1024
   flashMaterial: {fileID: 2100000, guid: d28059583e1a40249ad8daa3586d8028, type: 2}
-  healthImage: {fileID: 0}
+  healthImage: {fileID: 3217489924119835813}
   damage: 1
   orangeBlood: {fileID: 4792805946373802877, guid: 99392edfef6f7574fbd4cc2077f8cc06, type: 3}
   weakTo: {fileID: 11400000, guid: a85abe56df98ddd489746a5ed5666703, type: 2}
@@ -314,6 +314,14 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 8302232846308391441}
     m_Modifications:
+    - target: {fileID: 3932498036490793124, guid: da2f707ff50440b41ae1e07967fb6f52, type: 3}
+      propertyPath: m_Color.g
+      value: 0.2688679
+      objectReference: {fileID: 0}
+    - target: {fileID: 3932498036490793124, guid: da2f707ff50440b41ae1e07967fb6f52, type: 3}
+      propertyPath: m_Color.r
+      value: 0.2988167
+      objectReference: {fileID: 0}
     - target: {fileID: 4897976666849188363, guid: da2f707ff50440b41ae1e07967fb6f52, type: 3}
       propertyPath: m_Name
       value: EnemyHealthBar
@@ -407,6 +415,17 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: da2f707ff50440b41ae1e07967fb6f52, type: 3}
+--- !u!114 &3217489924119835813 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 3932498036490793124, guid: da2f707ff50440b41ae1e07967fb6f52, type: 3}
+  m_PrefabInstance: {fileID: 1888653289281274881}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!224 &7007331182929292159 stripped
 RectTransform:
   m_CorrespondingSourceObject: {fileID: 8866130527325745022, guid: da2f707ff50440b41ae1e07967fb6f52, type: 3}

@@ -75,7 +75,7 @@ public class Enemy : MonoBehaviour
         
         standardMaterial = sr.material;
         player = Player.Instance;
-        healthImage = GetComponentInChildren<Image>();
+        
         health = maxHealth;
         
     }

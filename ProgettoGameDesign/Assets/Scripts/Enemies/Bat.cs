@@ -17,7 +17,7 @@ public class Bat : Enemy
 
         standardMaterial = sr.material;
         player = Player.Instance;
-        healthImage = GetComponentInChildren<Image>();
+        
         health = maxHealth;
         ChangeState(EnemyStates.Bat_Idle);
     }

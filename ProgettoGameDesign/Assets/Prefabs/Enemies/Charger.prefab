@@ -213,7 +213,7 @@ MonoBehaviour:
     serializedVersion: 2
     m_Bits: 0
   flashMaterial: {fileID: 0}
-  healthImage: {fileID: 0}
+  healthImage: {fileID: 1491182617961902758}
   damage: 1
   orangeBlood: {fileID: 4792805946373802877, guid: 99392edfef6f7574fbd4cc2077f8cc06, type: 3}
   weakTo: {fileID: 11400000, guid: 34644fc0004a56a45927fc9ad2f602ce, type: 2}
@@ -348,6 +348,17 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: da2f707ff50440b41ae1e07967fb6f52, type: 3}
+--- !u!114 &1491182617961902758 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 3932498036490793124, guid: da2f707ff50440b41ae1e07967fb6f52, type: 3}
+  m_PrefabInstance: {fileID: 2459726884551737858}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!224 &6424497211288071548 stripped
 RectTransform:
   m_CorrespondingSourceObject: {fileID: 8866130527325745022, guid: da2f707ff50440b41ae1e07967fb6f52, type: 3}
