@@ -74,7 +74,8 @@ public class Player : MonoBehaviour
         {
             return;
         }
-        playerMovement.Jump(playerInput.jumpInput);
+        playerMovement.Jump(playerInput.jumpPressed);
+
         playerDash.DoDash(playerInput.dashed);
         playerAttack.Attack(playerInput.attack, playerInput.directionalInput);
         playerAttack.Recoil(playerInput.directionalInput);

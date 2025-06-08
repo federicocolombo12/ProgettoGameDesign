@@ -5,6 +5,9 @@ public class PlayerInput : MonoBehaviour
     InputSystem_Actions inputActions;
     public Vector2 directionalInput { get; private set; }
     public bool jumpInput { get; private set; }
+    public bool jumpPressed { get; private set; } // nuova proprietà
+
+    private bool previousJumpInput = false;
     public bool attack { get; private set; }
     public bool healPressed { get; private set; }
     public bool cast { get; private set; }
@@ -54,10 +57,9 @@ public class PlayerInput : MonoBehaviour
 
     private void HandleJump(bool jump)
     {
-        // Logica di salto, ad esempio:
-
         jumpInput = jump;
-
+        jumpPressed = jump && !previousJumpInput; // true solo al primo frame della pressione
+        previousJumpInput = jump;
     }
     private void HandleDash(bool dash)
     {

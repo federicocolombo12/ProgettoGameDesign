@@ -50,6 +50,7 @@ public class InputManager : MonoBehaviour
         inputActions.Player.Move.performed += HandleMove;
         inputActions.Player.Move.canceled += HandleMoveCanceled;
         inputActions.Player.Jump.started += HandleJump;
+       
         inputActions.Player.Jump.canceled += HandleJumpCanceled;
         inputActions.Player.Dash.performed += HandleDash;
         inputActions.Player.Dash.canceled += HandleDashCanceled;

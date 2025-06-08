@@ -29,6 +29,10 @@ public class PlayerMovement : MonoBehaviour
     [TabGroup("Jumping"), LabelText("Coyote Time")]
     [SerializeField] private float coyoteTime;
     private float coyoteTimeCounter = 0;
+     [TabGroup("Jumping"), LabelText("Double Jump Effect")]
+    [SerializeField] private ParticleSystem doubleJumpEffect;
+    [TabGroup("Jumping"), LabelText("Double Jump Boost")]
+    [SerializeField] private float doubleJumpBoost;
 
     [TabGroup("Jumping"), LabelText("Max Jump Count")]
     [SerializeField] private int maxJumpCount = 2;
@@ -232,7 +236,22 @@ public class PlayerMovement : MonoBehaviour
     {
         if (!IsTouchingStickyWall())
         {
-            if (!jumpInput && rb.linearVelocity.y > 0)
+            JumpLogic(jumpInput);
+        }
+        else
+        {
+            if (Player.Instance.playerInput.directionalInput.x != 0)
+            {
+                JumpLogic(jumpInput);
+            }
+        }
+        
+       
+
+    }
+    void JumpLogic(bool jumpInput )
+    {
+        if (!jumpInput && rb.linearVelocity.y > 0)
             {
                 rb.linearVelocity = new Vector2(rb.linearVelocity.x, 0);
                 pState.jumping = false;
@@ -246,14 +265,15 @@ public class PlayerMovement : MonoBehaviour
                 {
                     rb.linearVelocity = new Vector2(rb.linearVelocity.x, jumpForce);
                     pState.jumping = true;
-                
+
 
                 }
                 else if (!IsGrounded() && jumpCount < maxJumpCount && jumpInput)
                 {
                     pState.jumping = true;
                     jumpCount++;
-                    rb.linearVelocity = new Vector2(rb.linearVelocity.x, jumpForce);
+                    rb.linearVelocity = new Vector2(rb.linearVelocity.x, jumpForce* doubleJumpBoost);
+                    EffectManager.Instance.PlayOneShot(doubleJumpEffect, transform.position);
                 
 
 
@@ -261,45 +281,6 @@ public class PlayerMovement : MonoBehaviour
 
             }
             animator.SetBool("Jumping", !IsGrounded());
-        }
-        else
-        {
-            if (Player.Instance.playerInput.directionalInput.x != 0)
-            {
-                if (!jumpInput && rb.linearVelocity.y > 0)
-                {
-                    rb.linearVelocity = new Vector2(rb.linearVelocity.x, 0);
-                    pState.jumping = false;
-            
-
-                }
-
-                if (!pState.jumping)
-                {
-                    if (coyoteTimeCounter > 0 && jumpBufferCounter > 0)
-                    {
-                        rb.linearVelocity = new Vector2(rb.linearVelocity.x, jumpForce);
-                        pState.jumping = true;
-                
-
-                    }
-                    else if (!IsGrounded() && jumpCount < maxJumpCount && jumpInput)
-                    {
-                        pState.jumping = true;
-                        jumpCount++;
-                        rb.linearVelocity = new Vector2(rb.linearVelocity.x, jumpForce);
-                        animator.SetBool("Jumping", true);
-
-
-                    }
-
-                }
-               
-            }
-        }
-        
-       
-
     }
     private bool wasGrounded = false;
     
@@ -337,9 +318,10 @@ public class PlayerMovement : MonoBehaviour
         {
             if (!pState.hooked && !pState.dashing)
             {
-               
+
                 jumpBufferCounter -= Time.deltaTime * 10;
                 gravityScale = fallGScale;
+                pState.jumping = false;
             }
         }
     }
@@ -347,7 +329,7 @@ public class PlayerMovement : MonoBehaviour
     
     private void OnLand()
     {
-        EffectManager.Instance.PlayOneShot(landEffect, transform.position+Vector3.down*landPosition);
+        EffectManager.Instance.PlayOneShot(landEffect, groundCheck.position);
     }
 
     public IEnumerator WalkIntoNewScene(Vector2 _exitDir, float _delay)
