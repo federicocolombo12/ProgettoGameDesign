@@ -12,6 +12,7 @@ public class PlayerTransformation : ScriptableObject
         GrapplingHook,
         doubleJump,
         ChargingRockBreaker,
+        SpellCasting
     }
     [InfoBox("Aggiungi qui le abilità che questa trasformazione possiede.")]
     public AbilityType[] abilities = new AbilityType[]

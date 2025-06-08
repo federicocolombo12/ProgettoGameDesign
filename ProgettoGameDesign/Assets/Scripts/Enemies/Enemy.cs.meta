@@ -11,6 +11,7 @@ MonoImporter:
   - orangeBlood: {fileID: 1018504420545732665, guid: 8e88e1f612b228c4891428b837d80d61, type: 3}
   - weakTo: {instanceID: 0}
   - immuneTo: {instanceID: 0}
+  - weakToEffect: {fileID: 5569289640993081841, guid: 6dbb3939c6bb00b4eae30e45299b42df, type: 3}
   executionOrder: 0
   icon: {instanceID: 0}
   userData: 

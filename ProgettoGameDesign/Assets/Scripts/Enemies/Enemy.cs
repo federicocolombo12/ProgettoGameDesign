@@ -28,7 +28,9 @@ public class Enemy : MonoBehaviour
     [SerializeField] PlayerTransformation weakTo;
     
     [SerializeField] PlayerTransformation immuneTo;
+    [SerializeField] ParticleSystem weakToEffect;
     [SerializeField] protected float damageMultiplier;
+    
 
     public static Action OnEnemyDeath;
     protected Animator animator;
@@ -129,11 +131,21 @@ public class Enemy : MonoBehaviour
         {
             sr.material = flashMaterial;
         }
-       
+
 
         if (weakTo == Player.Instance.playerTransformation)
         {
             currentDamage *= damageMultiplier;
+            if (weakToEffect != null)
+            {
+                // Play the weak to effect if it exists
+                 EffectManager.Instance.PlayOneShot(weakToEffect, transform.position);
+            }
+            else
+            {
+                Debug.LogWarning("Weak to effect is not assigned for " + gameObject.name);
+            }
+           
         }
         if (immuneTo == Player.Instance.playerTransformation)
         {

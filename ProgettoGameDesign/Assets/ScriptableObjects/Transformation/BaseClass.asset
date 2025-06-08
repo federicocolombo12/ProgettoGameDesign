@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 15c4b7b544189c24ebf7d140ea5e6685, type: 3}
   m_Name: BaseClass
   m_EditorClassIdentifier: 
-  abilities: 00000000
+  abilities: 0000000005000000
   isUnlocked: 0
   index: 0
   abilityType: 1
