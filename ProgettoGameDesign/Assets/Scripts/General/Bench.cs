@@ -1,5 +1,6 @@
 using Dev.Nicklaj.Butter;
 using DG.Tweening;
+using Unity.Cinemachine;
 using UnityEngine;
 
 public class Bench : Interactable
@@ -7,6 +8,7 @@ public class Bench : Interactable
     
     [SerializeField] public int benchIndex;
     [SerializeField] IntVariable benchIndexVariable;
+    [SerializeField] int benchCamera;
     public string benchSceneName;
     public override void Interact(GameObject interactor)
     {
@@ -14,6 +16,7 @@ public class Bench : Interactable
         Debug.Log("Interacting with bench");
         benchIndexVariable.Value = benchIndex;
         GameManager.Instance.SetBench(this);
+        CameraManager.Instance.SetCamera(benchCamera);
 
     }
 }

@@ -4594,7 +4594,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6182742310173604989, guid: 4d52adf8764b54a059168e028554dc5c, type: 3}
       propertyPath: benchIndex
-      value: 4
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 6182742310173604989, guid: 4d52adf8764b54a059168e028554dc5c, type: 3}
+      propertyPath: benchCamera
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 6182742310173604989, guid: 4d52adf8764b54a059168e028554dc5c, type: 3}
       propertyPath: benchSceneName

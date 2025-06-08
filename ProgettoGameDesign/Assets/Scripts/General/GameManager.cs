@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using Dev.Nicklaj.Butter;
+using DG.Tweening;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
@@ -12,6 +13,7 @@ public class GameManager : MonoBehaviour
     public Vector2 respawnPoint;
     public string currentGameplayScene;
     bool loaded;
+    [SerializeField] Transform startPoint;
     [SerializeField] Bench currentBench;
     [SerializeField] Bench[] benchList;
     [SerializeField] GameEvent saveGameEvent;
@@ -63,27 +65,22 @@ public class GameManager : MonoBehaviour
                 break;
             }
         }
-        if (currentBench == null)
-        {
-            
-            for (int i = 0; i < benchSet.Items.Count; i++)
-            {
-                if (benchSet.Items[i].GetComponent<Bench>().benchIndex == 0)
-                {
-                    currentBench = benchSet.Items[i].GetComponent<Bench>();
-                    break;
-                }
-            }
-           
-            Debug.LogWarning("No bench found with the specified index, using default bench.");
-        }
-        
-        respawnPoint = currentBench.transform.position;
+
+
+        respawnPoint = currentBench == null ? currentBench.transform.position : SetStartPoint();
         
         player.RespawnAt(respawnPoint);
-        SceneController.Instance.LoadAdditiveScene(currentBench.benchSceneName);
         SceneFader.Instance.StartCoroutine(SceneFader.Instance.Fade(SceneFader.FadeDirection.Out));
         loaded = false;
+    }
+    private Vector2 SetStartPoint()
+    {
+        DOVirtual.DelayedCall(0.1f, () =>
+        {
+             CameraManager.Instance.SetCamera(0);
+        });
+       
+        return startPoint.position;
     }
 
     private void ResetScene()
@@ -92,14 +89,14 @@ public class GameManager : MonoBehaviour
         currentGameplayScene = GetGameplaySceneName();
         SceneManager.UnloadSceneAsync(currentGameplayScene).completed += (op) =>
         {
-            
+
 
             SceneManager.LoadSceneAsync(currentGameplayScene, LoadSceneMode.Additive).completed += (op2) =>
             {
                 loaded = true;
             };
-            
-            
+
+
         };
     }
     public string GetGameplaySceneName()

@@ -35,6 +35,11 @@ public class SceneFader : MonoBehaviour
 
     public IEnumerator Fade(FadeDirection _fadeDirection)
     {
+        if (fadeImage == null)
+        {
+            Debug.LogError("Fade Image is not assigned in SceneFader.");
+            yield break;
+        }
         float _targetAlpha = _fadeDirection == FadeDirection.Out ? 0 : 1;
 
         
@@ -48,6 +53,11 @@ public class SceneFader : MonoBehaviour
 
     public IEnumerator FadeAndLoadScene(FadeDirection _fadeDirection, string _levelToLoad)
     {
+        if (fadeImage == null)
+        {
+            Debug.LogError("Fade Image is not assigned in SceneFader.");
+            yield break;
+        }
         fadeImage.enabled = true;
         yield return StartCoroutine(Fade(_fadeDirection));
         SceneController.Instance.LoadAdditiveScene(_levelToLoad);

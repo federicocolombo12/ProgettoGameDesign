@@ -954,6 +954,11 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 557991596}
   m_CullTransparentMesh: 1
+--- !u!4 &641430481 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 8495782708223436279, guid: dd124a0ba37d77b409357eabb4970896, type: 3}
+  m_PrefabInstance: {fileID: 793929812}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &647016306
 GameObject:
   m_ObjectHideFlags: 0
@@ -1102,7 +1107,7 @@ MonoBehaviour:
   Damping: 1.49
   SlowingDistance: 5
   OversizeWindow:
-    Enabled: 0
+    Enabled: 1
     MaxWindowSize: 0.57
     Padding: 4.2
   m_LegacyMaxWindowSize: -2
@@ -1394,6 +1399,37 @@ CompositeCollider2D:
   m_OffsetDistance: 0.00005
   m_UseDelaunayMesh: 0
   m_CompositeGameObject: {fileID: 669169299}
+--- !u!1 &672706580
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 672706581}
+  m_Layer: 0
+  m_Name: StartPoint
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &672706581
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 672706580}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -44.6, y: 9.6, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 641430481}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &792834384
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1424,7 +1460,7 @@ PrefabInstance:
       objectReference: {fileID: 237722183}
     - target: {fileID: 1567474458351274973, guid: b1e2a26605ddb5743ab4af9d547b28a3, type: 3}
       propertyPath: OversizeWindow.Enabled
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 1567474458351274973, guid: b1e2a26605ddb5743ab4af9d547b28a3, type: 3}
       propertyPath: OversizeWindow.Padding
@@ -1495,6 +1531,10 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 8709016159537575846, guid: b1e2a26605ddb5743ab4af9d547b28a3, type: 3}
+      propertyPath: UpdateMethod
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8709016159537575846, guid: b1e2a26605ddb5743ab4af9d547b28a3, type: 3}
       propertyPath: DefaultBlend.Style
       value: 6
       objectReference: {fileID: 0}
@@ -1554,6 +1594,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Manager
       objectReference: {fileID: 0}
+    - target: {fileID: 3064236729484881184, guid: dd124a0ba37d77b409357eabb4970896, type: 3}
+      propertyPath: startPoint
+      value: 
+      objectReference: {fileID: 672706581}
     - target: {fileID: 3560006445941120717, guid: dd124a0ba37d77b409357eabb4970896, type: 3}
       propertyPath: m_LocalPosition.x
       value: 3.44
@@ -1609,7 +1653,10 @@ PrefabInstance:
     m_RemovedComponents: []
     m_RemovedGameObjects:
     - {fileID: 1215431153789222506, guid: dd124a0ba37d77b409357eabb4970896, type: 3}
-    m_AddedGameObjects: []
+    m_AddedGameObjects:
+    - targetCorrespondingSourceObject: {fileID: 8495782708223436279, guid: dd124a0ba37d77b409357eabb4970896, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 672706581}
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: dd124a0ba37d77b409357eabb4970896, type: 3}
 --- !u!1 &969152979 stripped
@@ -2043,7 +2090,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7696002633538637689, guid: 45add3c22ddf0c3488e09f91eb6c4068, type: 3}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 8176920366964386150, guid: 45add3c22ddf0c3488e09f91eb6c4068, type: 3}
       propertyPath: m_SizeDelta.x

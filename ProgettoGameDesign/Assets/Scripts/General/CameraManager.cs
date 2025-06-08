@@ -38,10 +38,10 @@ public class CameraManager : MonoBehaviour
             Destroy(gameObject);
         }
 
-        
-        
+
+
         impulseSource = GetComponentInChildren<CinemachineImpulseSource>();
-            
+
     }
     void Start()
     {
@@ -74,27 +74,29 @@ public class CameraManager : MonoBehaviour
         else
         {
             endDampAmount = _normYPanAmount;
-           
+
         }
         float elapsedTime = 0;
         while (elapsedTime < fallPanTime)
         {
             elapsedTime += Time.deltaTime;
-           float lerpedPanAmount = Mathf.Lerp(startDampAmount, endDampAmount, elapsedTime / fallPanTime);
+            float lerpedPanAmount = Mathf.Lerp(startDampAmount, endDampAmount, elapsedTime / fallPanTime);
             currentComposer.Damping.y = lerpedPanAmount;
             yield return null;
         }
         IsLerpingYDamping = false;
 
     }
-    public void PanCameraOnContact(float panDistance, float panTime, PanDirection panDirection, bool panToStartingPos){
+    public void PanCameraOnContact(float panDistance, float panTime, PanDirection panDirection, bool panToStartingPos)
+    {
         _PanCameraCoroutine = StartCoroutine(PanCamera(panDistance, panTime, panDirection, panToStartingPos));
     }
     private IEnumerator PanCamera(float panDistance, float panTime, PanDirection panDirection, bool panToStartingPos)
     {
         Vector2 endPos = Vector2.zero;
         Vector2 startPos = Vector2.zero;
-        if (!panToStartingPos){
+        if (!panToStartingPos)
+        {
             switch (panDirection)
             {
                 case PanDirection.Left:
@@ -125,7 +127,7 @@ public class CameraManager : MonoBehaviour
         while (elapsedTime < panTime)
         {
             elapsedTime += Time.deltaTime;
-            Vector2 panLerp= Vector3.Lerp(startPos, endPos, elapsedTime / panTime);
+            Vector2 panLerp = Vector3.Lerp(startPos, endPos, elapsedTime / panTime);
             currentComposer.TargetOffset = panLerp;
             yield return null;
         }
@@ -138,16 +140,17 @@ public class CameraManager : MonoBehaviour
             impulseSource.GenerateImpulse(intensity);
         }
     }
-    public void SwapCamera(CinemachineCamera cameraFromLeft, CinemachineCamera cameraFromRight, Vector2 triggerExitDirection) {
-        if ( currentCamera == cameraFromLeft && triggerExitDirection.x > 0f)
+    public void SwapCamera(CinemachineCamera cameraFromLeft, CinemachineCamera cameraFromRight, Vector2 triggerExitDirection)
+    {
+        if (currentCamera == cameraFromLeft && triggerExitDirection.x > 0f)
         {
             cameraFromRight.enabled = true;
             cameraFromLeft.enabled = false;
             currentCamera = cameraFromRight;
             currentComposer = currentCamera.GetComponent<CinemachinePositionComposer>();
             cameraFromRight.GetComponent<CinemachineConfiner2D>().OversizeWindow.Enabled = true;
-            
-            
+
+
         }
         else if (currentCamera == cameraFromRight && triggerExitDirection.x < 0f)
         {
@@ -156,10 +159,22 @@ public class CameraManager : MonoBehaviour
             currentCamera = cameraFromLeft;
             currentComposer = currentCamera.GetComponent<CinemachinePositionComposer>();
             cameraFromLeft.GetComponent<CinemachineConfiner2D>().OversizeWindow.Enabled = true;
-            
-            
+
+
         }
 
-        
+
+    }
+    public void SetCamera(int index)
+    {
+        if (currentCamera != null)
+        {
+            currentCamera.enabled = false;
+        }
+        currentCamera = virtualCameras[index];
+        currentComposer = currentCamera.GetComponent<CinemachinePositionComposer>();
+        currentCamera.enabled = true;
+        currentComposer.TargetOffset = _startingTrackedObjectOffset;
+        currentCamera.GetComponent<CinemachineConfiner2D>().InvalidateBoundingShapeCache();
     }
 }
