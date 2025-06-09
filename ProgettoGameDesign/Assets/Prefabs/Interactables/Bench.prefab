@@ -150,8 +150,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   interactableUi: {fileID: 0}
+  interactionEffect: {fileID: 0}
   benchIndex: 0
   benchIndexVariable: {fileID: 11400000, guid: 287ee11126a84422cb82fba9dd6e7592, type: 2}
+  benchCamera: 1
   benchSceneName: OnBoarding
 --- !u!114 &3376689530338601347
 MonoBehaviour:

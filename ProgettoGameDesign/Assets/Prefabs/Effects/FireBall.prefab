@@ -171,6 +171,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   damage: 10
+  hitEffect: {fileID: 4173435617116166559, guid: ee2aab568467c624c96f1a5648ef5d77, type: 3}
   hitForce: 5
   speed: 1
   lifetime: 1

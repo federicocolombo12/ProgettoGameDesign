@@ -3,9 +3,11 @@ using UnityEngine;
 public class FireBall : MonoBehaviour
 {
     [SerializeField] float damage;
+    [SerializeField] ParticleSystem hitEffect;
     [SerializeField] float hitForce;
     [SerializeField] int speed;
     [SerializeField] float lifetime = 1;
+
 
     void Start()
     {
@@ -24,6 +26,7 @@ public class FireBall : MonoBehaviour
         {
             Debug.Log("Enemy Hit");
             _other.GetComponent<Enemy>().EnemyHit(damage, (_other.transform.position - transform.position).normalized, -hitForce);
+            EffectManager.Instance.PlayOneShot(hitEffect, transform.position);
         }
     }
 
