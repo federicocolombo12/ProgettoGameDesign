@@ -17,12 +17,12 @@ MonoBehaviour:
   index: 2
   abilityType: 4
   maxHealth: 6
-  damageMultiplier: 3
+  damageMultiplier: 2
   moveSpeed: 5
-  jumpForce: 7
+  jumpForce: 10
   jumpCount: 0
   dashSpeed: 8
-  attackDamage: 5
+  attackDamage: 1.3
   attackSpeed: 0
   spellDamage: 1
   baseSprite: {fileID: 348132329, guid: f724fb7d020a0d047aa3ecff98ff3d34, type: 3}
