@@ -4,6 +4,7 @@ using Sirenix.OdinInspector;
 using Unity.Cinemachine;
 using DG.Tweening;
 using System.Linq;
+using Sirenix.Utilities;
 
 public class PlayerMovement : MonoBehaviour
 {
@@ -12,6 +13,8 @@ public class PlayerMovement : MonoBehaviour
 
     [TabGroup("Movement"), LabelText("Speed")]
     [SerializeField] private float speed = 5f;
+    [TabGroup("Movement"), LabelText("Max Speed")]
+    [SerializeField] private Vector2 maxSpeed = new Vector2(10f, 10f);
 
     [TabGroup("Camera Stuff"), LabelText("Camera Follow Object")]
     private CameraFollowObject cameraFollowObject;
@@ -159,10 +162,11 @@ public class PlayerMovement : MonoBehaviour
             return;
         }
         Vector2 newVelocity = new Vector2(directionalInput.x * speed, rb.linearVelocity.y);
-        
+        newVelocity.y = Mathf.Clamp(newVelocity.y, -maxSpeed.y, maxSpeed.y);
 
 
         rb.linearVelocity = newVelocity;
+        Debug.Log("Velocity: " + rb.linearVelocity);
         animator.SetBool("Walking", rb.linearVelocity.x != 0 && IsGrounded());
         if (directionalInput.x>0 || directionalInput.x<0)
         {

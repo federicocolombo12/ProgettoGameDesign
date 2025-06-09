@@ -1306,31 +1306,43 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 570546343097932429, guid: b1e2a26605ddb5743ab4af9d547b28a3, type: 3}
       propertyPath: orthographic size
-      value: 5.08
+      value: 8.09
       objectReference: {fileID: 0}
     - target: {fileID: 1567474458351274973, guid: b1e2a26605ddb5743ab4af9d547b28a3, type: 3}
       propertyPath: BoundingShape2D
       value: 
       objectReference: {fileID: 237722183}
+    - target: {fileID: 1567474458351274973, guid: b1e2a26605ddb5743ab4af9d547b28a3, type: 3}
+      propertyPath: OversizeWindow.MaxWindowSize
+      value: 10
+      objectReference: {fileID: 0}
     - target: {fileID: 1658402279035436259, guid: b1e2a26605ddb5743ab4af9d547b28a3, type: 3}
       propertyPath: m_Name
       value: Cameras
+      objectReference: {fileID: 0}
+    - target: {fileID: 2721921412107687756, guid: b1e2a26605ddb5743ab4af9d547b28a3, type: 3}
+      propertyPath: Lens.OrthographicSize
+      value: 8.09
       objectReference: {fileID: 0}
     - target: {fileID: 2721921412107687756, guid: b1e2a26605ddb5743ab4af9d547b28a3, type: 3}
       propertyPath: Target.TrackingTarget
       value: 
       objectReference: {fileID: 291414998}
     - target: {fileID: 3829273486838846668, guid: b1e2a26605ddb5743ab4af9d547b28a3, type: 3}
+      propertyPath: Lens.OrthographicSize
+      value: 8.09
+      objectReference: {fileID: 0}
+    - target: {fileID: 3829273486838846668, guid: b1e2a26605ddb5743ab4af9d547b28a3, type: 3}
       propertyPath: Target.TrackingTarget
       value: 
       objectReference: {fileID: 291414998}
     - target: {fileID: 5173624916291810296, guid: b1e2a26605ddb5743ab4af9d547b28a3, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 6.175541
+      value: 2.8194206
       objectReference: {fileID: 0}
     - target: {fileID: 5173624916291810296, guid: b1e2a26605ddb5743ab4af9d547b28a3, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 0.26303685
+      value: 2.3446398
       objectReference: {fileID: 0}
     - target: {fileID: 7281744561779612869, guid: b1e2a26605ddb5743ab4af9d547b28a3, type: 3}
       propertyPath: m_LocalPosition.x
@@ -2360,6 +2372,14 @@ PrefabInstance:
     - target: {fileID: 1653175155450436630, guid: 1e5e95d1c8d2a664aa123a5933f1c74e, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2670939194795898005, guid: 1e5e95d1c8d2a664aa123a5933f1c74e, type: 3}
+      propertyPath: maxSpeed.x
+      value: 100
+      objectReference: {fileID: 0}
+    - target: {fileID: 2670939194795898005, guid: 1e5e95d1c8d2a664aa123a5933f1c74e, type: 3}
+      propertyPath: maxSpeed.y
+      value: 100
       objectReference: {fileID: 0}
     - target: {fileID: 2670939194795898005, guid: 1e5e95d1c8d2a664aa123a5933f1c74e, type: 3}
       propertyPath: cameraFollowGO
