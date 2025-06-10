@@ -29,5 +29,5 @@ MonoBehaviour:
   animatorController: {fileID: 9100000, guid: 9ec7393172c4048e8918d2775e9f7b5b, type: 2}
   color: {r: 0, g: 0, b: 0, a: 0}
   transformationScale: {x: 1, y: 1, z: 1}
-  colliderSize: {x: 1.15, y: 2.7}
+  colliderSize: {x: 1.15, y: 3.06}
   colliderOffset: {x: 0.08, y: -0.2}
