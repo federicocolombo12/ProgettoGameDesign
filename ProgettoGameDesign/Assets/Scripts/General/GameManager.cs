@@ -7,7 +7,7 @@ using UnityEngine.SceneManagement;
 
 public class GameManager : MonoBehaviour
 {
-    public string transitionedFromScene;    
+    public string transitionedFromScene;
     public static GameManager Instance { get; private set; }
     public Vector2 platformRespawnPoint;
     public Vector2 respawnPoint;
@@ -20,7 +20,7 @@ public class GameManager : MonoBehaviour
     [SerializeField] GameEvent loadGameEvent;
     [SerializeField] GameObjectRuntimeSet benchSet;
     [SerializeField] IntVariable benchIndexVariable;
-    
+
     private void Awake()
     {
         if (Instance != null && Instance != this)
@@ -34,9 +34,9 @@ public class GameManager : MonoBehaviour
 
         }
         DontDestroyOnLoad(gameObject);
-        
+
     }
-   
+
     public void SetRespawnPoint(Vector2 newRespawnPoint)
     {
         platformRespawnPoint = newRespawnPoint;
@@ -51,10 +51,10 @@ public class GameManager : MonoBehaviour
 
     private IEnumerator WaitThenRespawn(Player player)
     {
-        
+
         yield return new WaitUntil(() => loaded);
         loadGameEvent.Raise();
-        
+
         for (int i = 0; i < benchSet.Items.Count; i++)
         {
             Debug.Log(benchSet.Items[i].GetComponent<Bench>().benchIndex);
@@ -68,7 +68,7 @@ public class GameManager : MonoBehaviour
 
 
         respawnPoint = currentBench != null ? currentBench.transform.position : SetStartPoint();
-        
+
         player.RespawnAt(respawnPoint);
         SceneFader.Instance.StartCoroutine(SceneFader.Instance.Fade(SceneFader.FadeDirection.Out));
         loaded = false;
@@ -77,9 +77,9 @@ public class GameManager : MonoBehaviour
     {
         DOVirtual.DelayedCall(0.1f, () =>
         {
-             CameraManager.Instance.SetCamera(0);
+            CameraManager.Instance.SetCamera(0);
         });
-       
+
         return startPoint.position;
     }
 
@@ -113,12 +113,13 @@ public class GameManager : MonoBehaviour
     }
     public void SetBench(Bench newBench)
     {
-       
-        
-            saveGameEvent.Raise();
-        
-        
+
+
+        saveGameEvent.Raise();
+
+
     }
+    
 
 
 

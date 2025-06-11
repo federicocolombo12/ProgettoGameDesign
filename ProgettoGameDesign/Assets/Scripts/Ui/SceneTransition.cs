@@ -5,6 +5,7 @@ public class SceneTransition : MonoBehaviour
 {
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     [SerializeField] private string transitionTo;
+    [SerializeField] ScenesToLoad scenesToLoad;
     [SerializeField] Transform startPoint;
     [SerializeField] private Vector2 exitDirection;
     [SerializeField] private float exitTime = 1f;
@@ -30,7 +31,12 @@ public class SceneTransition : MonoBehaviour
             // Start the transition to the new scene
             GameManager.Instance.transitionedFromScene = GameManager.Instance.GetGameplaySceneName();
             Player.Instance.pState.cutscene = true;
-            StartCoroutine(UiManager.Instance.sceneFader.FadeAndLoadScene(SceneFader.FadeDirection.In, transitionTo));
+            if (scenesToLoad == null || scenesToLoad.scenesToLoad.Count == 0)
+            {
+                Debug.LogWarning("ScenesToLoad is null or empty. Cannot transition to new scene.");
+                return;
+            }
+            StartCoroutine(UiManager.Instance.sceneFader.FadeAndLoadScene(SceneFader.FadeDirection.In, scenesToLoad));
         }
     }
 }

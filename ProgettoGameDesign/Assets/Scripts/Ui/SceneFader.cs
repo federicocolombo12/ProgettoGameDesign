@@ -51,7 +51,7 @@ public class SceneFader : MonoBehaviour
        
     }
 
-    public IEnumerator FadeAndLoadScene(FadeDirection _fadeDirection, string _levelToLoad)
+    public IEnumerator FadeAndLoadScene(FadeDirection _fadeDirection, ScenesToLoad scenesToLoad)
     {
         if (fadeImage == null)
         {
@@ -60,7 +60,7 @@ public class SceneFader : MonoBehaviour
         }
         fadeImage.enabled = true;
         yield return StartCoroutine(Fade(_fadeDirection));
-        SceneController.Instance.LoadAdditiveScene(_levelToLoad);
+        SceneController.Instance.LoadSceneSet(scenesToLoad);
     }
     
 }
