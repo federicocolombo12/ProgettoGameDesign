@@ -132,29 +132,50 @@ public class PlayerTransform : MonoBehaviour
 
 
     void ChangeSprite(int transformationIndex)
+{
+    // Disattiva tutti i GO e Animator
+    baseGO.SetActive(false);
+    agileGO.SetActive(false);
+    strongGO.SetActive(false);
+    
+    animators.ForEach(a => {
+        a.enabled = false;
+        a.Rebind(); // Resetta l'animator
+    });
+
+    // Attiva solo quello corretto
+    GameObject targetGO = transformationIndex switch
     {
-        var transformation = playerTransformations[transformationIndex];
-        
-        Player.Instance.playerTransformation = transformation;
-        baseGO.SetActive(transformationIndex == 0);
-        agileGO.SetActive(transformationIndex == 1);
-        strongGO.SetActive(transformationIndex == 2);
-        transformationParticle.Stop();
-        var main = transformationParticle.main;
-        
-        main.startColor = transformationColors[transformationIndex];
-        
-        
-      
-        transformationParticle.Play();
-        Player.Instance.animator = animators[transformationIndex];
-        EffectManager.Instance.PlayOneShot(effectParticle, transform.position);
-        collider.size = transformation.colliderSize;
-        collider.offset = transformation.colliderOffset;
-        transform.localScale = transformation.transformationScale;
-        
-        
+        0 => baseGO,
+        1 => agileGO,
+        2 => strongGO,
+        _ => null
+    };
+
+    if (targetGO != null)
+    {
+        targetGO.SetActive(true);
+        animators[transformationIndex].enabled = true;
+        animators[transformationIndex].Rebind();
     }
+
+    Player.Instance.playerTransformation = playerTransformations[transformationIndex];
+    Player.Instance.animator = animators[transformationIndex];
+
+    // Altri effetti
+    transformationParticle.Stop();
+    var main = transformationParticle.main;
+    main.startColor = transformationColors[transformationIndex];
+    transformationParticle.Play();
+
+    EffectManager.Instance.PlayOneShot(effectParticle, transform.position);
+
+    var transformation = playerTransformations[transformationIndex];
+    collider.size = transformation.colliderSize;
+    collider.offset = transformation.colliderOffset;
+    transform.localScale = transformation.transformationScale;
+}
+
 
     
 
