@@ -120,7 +120,7 @@ MonoBehaviour:
   isRecoiling: 0
   restoreTimeSpeed: 1
   player: {fileID: 0}
-  speed: 0.28
+  speed: 3
   playerLayer:
     serializedVersion: 2
     m_Bits: 1024
@@ -145,15 +145,15 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 3932498036490793124, guid: da2f707ff50440b41ae1e07967fb6f52, type: 3}
       propertyPath: m_Color.b
-      value: 1
+      value: 0.09019607
       objectReference: {fileID: 0}
     - target: {fileID: 3932498036490793124, guid: da2f707ff50440b41ae1e07967fb6f52, type: 3}
       propertyPath: m_Color.g
-      value: 0.18764453
+      value: 0.91761255
       objectReference: {fileID: 0}
     - target: {fileID: 3932498036490793124, guid: da2f707ff50440b41ae1e07967fb6f52, type: 3}
       propertyPath: m_Color.r
-      value: 0.08962262
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 4897976666849188363, guid: da2f707ff50440b41ae1e07967fb6f52, type: 3}
       propertyPath: m_Name

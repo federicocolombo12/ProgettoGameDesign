@@ -1,6 +1,7 @@
 using UnityEngine;
 using UnityEngine.UI;
 using DG.Tweening;
+using Sirenix.Utilities;
 
 public class Bat : Enemy
 {
@@ -35,11 +36,8 @@ public class Bat : Enemy
                 }
                 break;
             case EnemyStates.Bat_Chase:
-                if (moveTween == null || !moveTween.IsActive() || !moveTween.IsPlaying())
-                {
-                    moveTween = transform.DOMove(player.transform.position, 1f / speed)
-                        .SetEase(Ease.Linear);
-                }
+                Vector2 direction = (player.transform.position - transform.position).normalized;
+                rb.linearVelocity = new Vector2(direction.x * speed, direction.y * speed);
 
 
                 FlipBat();

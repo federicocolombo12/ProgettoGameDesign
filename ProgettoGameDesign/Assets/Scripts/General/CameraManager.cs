@@ -54,6 +54,7 @@ public class CameraManager : MonoBehaviour
                 break;
             }
         }
+        
         _normYPanAmount = currentComposer.Damping.y;
         _startingTrackedObjectOffset = currentComposer.TargetOffset;
     }

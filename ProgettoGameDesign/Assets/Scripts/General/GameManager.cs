@@ -68,7 +68,7 @@ public class GameManager : MonoBehaviour
 
 
         respawnPoint = currentBench != null ? currentBench.transform.position : SetStartPoint();
-
+        CameraManager.Instance.SetCamera(currentBench.benchCamera);
         player.RespawnAt(respawnPoint);
         SceneFader.Instance.StartCoroutine(SceneFader.Instance.Fade(SceneFader.FadeDirection.Out));
         loaded = false;

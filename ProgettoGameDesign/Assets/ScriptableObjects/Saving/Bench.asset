@@ -14,5 +14,5 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   ResetOn: 1
   _initialValue: 0
-  _value: 4
+  _value: 0
   <PersistencyId>k__BackingField: fd3b0d19-ea7a-4833-bb70-2760c778a1f5

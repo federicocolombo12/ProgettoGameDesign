@@ -8,7 +8,7 @@ public class Bench : Interactable
     
     [SerializeField] public int benchIndex;
     [SerializeField] IntVariable benchIndexVariable;
-    [SerializeField] int benchCamera;
+    public int benchCamera;
     public string benchSceneName;
     public override void Interact(GameObject interactor)
     {
