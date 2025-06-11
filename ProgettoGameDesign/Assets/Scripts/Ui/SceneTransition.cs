@@ -11,7 +11,7 @@ public class SceneTransition : MonoBehaviour
     [SerializeField] private float exitTime = 1f;
     private void Start()
     {
-        if (transitionTo == GameManager.Instance.transitionedFromScene)
+        if (scenesToLoad.scenesToLoad.Contains(transitionTo))
         {
             // Set the player's position to the start point
             Player.Instance.transform.position = startPoint.position;
@@ -29,7 +29,7 @@ public class SceneTransition : MonoBehaviour
         if (collision.CompareTag("Player"))
         {
             // Start the transition to the new scene
-            GameManager.Instance.transitionedFromScene = GameManager.Instance.GetGameplaySceneName();
+            
             Player.Instance.pState.cutscene = true;
             if (scenesToLoad == null || scenesToLoad.scenesToLoad.Count == 0)
             {
@@ -37,6 +37,7 @@ public class SceneTransition : MonoBehaviour
                 return;
             }
             StartCoroutine(UiManager.Instance.sceneFader.FadeAndLoadScene(SceneFader.FadeDirection.In, scenesToLoad));
+            SceneController.Instance.LoadSceneSet(scenesToLoad);
         }
     }
 }
