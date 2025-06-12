@@ -5,13 +5,14 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="527a8daf-816c-46f2-8b53-a90cdb675d8e" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.ProgettoGameDesign/.idea/indexLayout.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Prod/00Scena.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Prod/00Scena.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Prod/01Scena.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Prod/01Scena.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Prod/02Scena.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Prod/02Scena.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Prod/03Scena.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Prod/03Scena.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/ScriptableObjects/Transformation/Agile.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/ScriptableObjects/Transformation/Agile.asset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/ScriptableObjects/Transformation/Strong.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/ScriptableObjects/Transformation/Strong.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.ProgettoGameDesign/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.ProgettoGameDesign/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Art/Art_ila/enemies/galadriel/galadriel.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Art/Art_ila/enemies/galadriel/galadriel.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Packages/TextMesh Pro/Examples &amp; Extras/Resources/Fonts &amp; Materials/Oswald Bold SDF.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Packages/TextMesh Pro/Examples &amp; Extras/Resources/Fonts &amp; Materials/Oswald Bold SDF.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Enemies/Sentinel_Wall.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Enemies/Sentinel_Wall.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Base.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Base.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Prod/01Zone.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Prod/01Zone.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Prod/02Zone.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Prod/02Zone.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Prod/03Zone.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Prod/03Zone.unity" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -47,22 +48,22 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;Develop&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "RunOnceActivity.git.unshallow": "true",
+    "git-widget-placeholder": "branchProvq",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "vue.rearranger.settings.migration": "true"
   }
-}</component>
+}]]></component>
   <component name="RunManager" selected="Attach to Unity Editor.Attach to Unity Editor">
     <configuration name="Start Unity" type="RunUnityExe" factoryName="Unity Executable">
-      <option name="EXE_PATH" value="/Applications/Unity/Hub/Editor/6000.0.39f1/Unity.app/Contents/MacOS/Unity" />
+      <option name="EXE_PATH" value="C:\Program Files\Unity\Hub\Editor\6000.0.39f1\Editor\Unity.exe" />
       <option name="PROGRAM_PARAMETERS" value="-projectPath &quot;$PROJECT_DIR$/../../../../../Università/Anno 1 LM/GameDesign/ProgettoGameDesign/ProgettoGameDesign&quot; -debugCodeOptimization" />
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/../../../../../Università/Anno 1 LM/GameDesign/ProgettoGameDesign/ProgettoGameDesign" />
       <option name="PASS_PARENT_ENVS" value="1" />
@@ -70,7 +71,7 @@
       <method v="2" />
     </configuration>
     <configuration name="Unit Tests (batch mode)" type="RunUnityExe" factoryName="Unity Executable">
-      <option name="EXE_PATH" value="/Applications/Unity/Hub/Editor/6000.0.39f1/Unity.app/Contents/MacOS/Unity" />
+      <option name="EXE_PATH" value="C:\Program Files\Unity\Hub\Editor\6000.0.39f1\Editor\Unity.exe" />
       <option name="PROGRAM_PARAMETERS" value="-runTests -batchmode -projectPath &quot;$PROJECT_DIR$/../../../../../Università/Anno 1 LM/GameDesign/ProgettoGameDesign/ProgettoGameDesign&quot; -testResults Logs/results.xml -logFile Logs/Editor.log -testPlatform EditMode -debugCodeOptimization" />
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/../../../../../Università/Anno 1 LM/GameDesign/ProgettoGameDesign/ProgettoGameDesign" />
       <option name="PASS_PARENT_ENVS" value="1" />
@@ -120,6 +121,7 @@
       <workItem from="1746455281037" duration="4738000" />
       <workItem from="1746800786961" duration="3110000" />
       <workItem from="1747997304951" duration="2000" />
+      <workItem from="1749743413574" duration="210000" />
     </task>
     <servers />
   </component>
