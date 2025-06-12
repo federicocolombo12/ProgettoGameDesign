@@ -1314,7 +1314,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 570546343097932429, guid: b1e2a26605ddb5743ab4af9d547b28a3, type: 3}
       propertyPath: orthographic size
-      value: 8.09
+      value: 5.08
       objectReference: {fileID: 0}
     - target: {fileID: 1418163105948081804, guid: b1e2a26605ddb5743ab4af9d547b28a3, type: 3}
       propertyPath: CenterOnActivate
@@ -1358,11 +1358,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5173624916291810296, guid: b1e2a26605ddb5743ab4af9d547b28a3, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 2.8194206
+      value: 6.175541
       objectReference: {fileID: 0}
     - target: {fileID: 5173624916291810296, guid: b1e2a26605ddb5743ab4af9d547b28a3, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 2.3446398
+      value: 0.26303685
       objectReference: {fileID: 0}
     - target: {fileID: 7281744561779612869, guid: b1e2a26605ddb5743ab4af9d547b28a3, type: 3}
       propertyPath: m_LocalPosition.x
