@@ -268,6 +268,7 @@ public class PlayerMovement : MonoBehaviour
                 if (coyoteTimeCounter > 0 && jumpBufferCounter > 0)
                 {
                     rb.linearVelocity = new Vector2(rb.linearVelocity.x, jumpForce);
+
                     pState.jumping = true;
 
 
@@ -289,7 +290,7 @@ public class PlayerMovement : MonoBehaviour
     private bool wasGrounded = false;
     
 
-    public void UpdateJumpVariables(bool jumpInput)
+    public void UpdateJumpVariables(bool jumpInput, bool jumpPressed)
     {
         bool isGrounded = IsGrounded();
 
@@ -311,11 +312,11 @@ public class PlayerMovement : MonoBehaviour
             coyoteTimeCounter -= Time.deltaTime;
         }
 
-        if (jumpInput && !pState.hooked &&  !pState.dashing)
+        if (jumpPressed && !pState.hooked &&  !pState.dashing)
         {
             jumpBufferCounter = jumpBufferFrames;
            
-            gravityScale = jumpGScale;
+           
             
         }
         else
@@ -323,11 +324,12 @@ public class PlayerMovement : MonoBehaviour
             if (!pState.hooked && !pState.dashing)
             {
 
-                jumpBufferCounter -= Time.deltaTime * 10;
-                gravityScale = fallGScale;
-                pState.jumping = false;
+                jumpBufferCounter -= Time.deltaTime*10;
+                
+                
             }
         }
+        gravityScale = jumpInput ? jumpGScale : fallGScale;
     }
 
     

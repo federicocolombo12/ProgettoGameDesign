@@ -1,3 +1,4 @@
+using DG.Tweening;
 using UnityEngine;
 
 public class PlayerInput : MonoBehaviour
@@ -20,8 +21,9 @@ public class PlayerInput : MonoBehaviour
     {
         inputActions = InputManager.inputActions;
         InputManager.Instance.OnMoveInput += HandleMoveInput;
-        InputManager.Instance.OnJumpInput += HandleJump;
-
+        InputManager.Instance.OnJumpInputStarted += HandleJumpStarted;
+        InputManager.Instance.OnJumpInputPerformed += HandleJumpPerformed; // Imposta jumpInput a true quando il salto inizia
+        InputManager.Instance.OnJumpInputCanceled += ResetJumpInput; // Aggiunto per resettare jumpInput quando il salto finisce
         InputManager.Instance.OnDashInput += HandleDash;
         InputManager.Instance.OnAttackInput += HandleAttack;
         InputManager.Instance.OnHealInput += HandleHeal;
@@ -37,7 +39,7 @@ public class PlayerInput : MonoBehaviour
     {
         // Rimozione delle sottoscrizioni per evitare errori
         InputManager.Instance.OnMoveInput -= HandleMoveInput;
-        InputManager.Instance.OnJumpInput -= HandleJump;
+        InputManager.Instance.OnJumpInputStarted -= HandleJumpStarted;
 
         InputManager.Instance.OnDashInput -= HandleDash;
         InputManager.Instance.OnAttackInput -= HandleAttack;
@@ -55,11 +57,20 @@ public class PlayerInput : MonoBehaviour
         directionalInput = input;
     }
 
-    private void HandleJump(bool jump)
+    private void HandleJumpStarted()
     {
-        jumpInput = jump;
-        jumpPressed = jump && !previousJumpInput; // true solo al primo frame della pressione
-        previousJumpInput = jump;
+        jumpPressed = true; // Imposta jumpPressed a true quando il salto inizia
+        DOVirtual.DelayedCall(0.1f, () => jumpPressed=false); // Imposta previousJumpInput a true dopo un breve ritardo
+    }
+    private void HandleJumpPerformed()
+    {
+        jumpInput = true; // Imposta jumpInput a true quando il salto inizia
+        
+    }
+    private void ResetJumpInput()
+    {
+        jumpInput = false; // Resetta jumpInput quando il salto finisce
+        jumpPressed = false; // Resetta jumpPressed quando il salto finisce
     }
     private void HandleDash(bool dash)
     {

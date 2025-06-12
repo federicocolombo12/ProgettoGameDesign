@@ -8,7 +8,9 @@ public class InputManager : MonoBehaviour
 
     // Eventi per gli input, ad esempio per il movimento e il salto
     public event System.Action<Vector2> OnMoveInput;
-    public event System.Action<bool> OnJumpInput;
+    public event System.Action OnJumpInputStarted;
+    public event System.Action OnJumpInputPerformed;
+    public event System.Action OnJumpInputCanceled;
     public event System.Action<bool> OnHealInput;
     public event System.Action<bool> OnDashInput;
     public event System.Action<bool> OnAttackInput;
@@ -49,8 +51,8 @@ public class InputManager : MonoBehaviour
     private void PlayerInputActionMap() {
         inputActions.Player.Move.performed += HandleMove;
         inputActions.Player.Move.canceled += HandleMoveCanceled;
-        inputActions.Player.Jump.started += HandleJump;
-       
+        inputActions.Player.Jump.started += HandleJumpStarted;
+        inputActions.Player.Jump.performed += HandleJumpPerformed; // Aggiunto per gestire il salto
         inputActions.Player.Jump.canceled += HandleJumpCanceled;
         inputActions.Player.Dash.performed += HandleDash;
         inputActions.Player.Dash.canceled += HandleDashCanceled;
@@ -101,15 +103,20 @@ public class InputManager : MonoBehaviour
         OnMoveInput?.Invoke(Vector2.zero);
     }
 
-    private void HandleJump(InputAction.CallbackContext context)
+    private void HandleJumpStarted(InputAction.CallbackContext context)
     {
         
-        OnJumpInput?.Invoke(true);
+        OnJumpInputStarted?.Invoke();
+    }
+    private void HandleJumpPerformed(InputAction.CallbackContext context)
+    {
+        OnJumpInputPerformed?.Invoke();
     }
     private void HandleJumpCanceled(InputAction.CallbackContext context)
     {
-        OnJumpInput?.Invoke(false);
+        OnJumpInputCanceled?.Invoke();
     }
+    
     private void HandleDash(InputAction.CallbackContext context)
     {
         OnDashInput?.Invoke(true);

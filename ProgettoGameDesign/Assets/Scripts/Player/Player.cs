@@ -59,7 +59,7 @@ public class Player : MonoBehaviour
 
        
         if (pState.hooked) return;
-        playerMovement.UpdateJumpVariables(playerInput.jumpInput);
+        playerMovement.UpdateJumpVariables(playerInput.jumpInput, playerInput.jumpPressed);
         if (pState.sticking) return;
 
 
