@@ -946,7 +946,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 792834384}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 0}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: f9dfa5b682dcd46bda6128250e975f58, type: 3}
   m_Name: 
@@ -1340,6 +1340,10 @@ PrefabInstance:
       propertyPath: Target.TrackingTarget
       value: 
       objectReference: {fileID: 291414998}
+    - target: {fileID: 3829273486838846668, guid: b1e2a26605ddb5743ab4af9d547b28a3, type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 3829273486838846668, guid: b1e2a26605ddb5743ab4af9d547b28a3, type: 3}
       propertyPath: Lens.OrthographicSize
       value: 8.09
