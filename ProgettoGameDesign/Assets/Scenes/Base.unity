@@ -2495,7 +2495,7 @@ PrefabInstance:
       objectReference: {fileID: 291414996}
     - target: {fileID: 2670939194795898005, guid: 1e5e95d1c8d2a664aa123a5933f1c74e, type: 3}
       propertyPath: doubleJumpBoost
-      value: 1
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 2718766553805673949, guid: 1e5e95d1c8d2a664aa123a5933f1c74e, type: 3}
       propertyPath: m_LocalRotation.w

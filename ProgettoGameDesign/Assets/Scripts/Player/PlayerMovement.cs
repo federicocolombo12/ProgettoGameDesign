@@ -259,6 +259,9 @@ public class PlayerMovement : MonoBehaviour
         if (!jumpInput && rb.linearVelocity.y > 0)
             {
                 rb.AddForce(new Vector2(0, -jumpForce * jumpCutMultiplier), ForceMode2D.Impulse);
+            
+
+            
                 pState.jumping = false;
             
 
@@ -269,6 +272,7 @@ public class PlayerMovement : MonoBehaviour
                 if (coyoteTimeCounter > 0 && jumpBufferCounter > 0)
                 {
                     rb.linearVelocity = new Vector2(rb.linearVelocity.x, jumpForce);
+
 
                     pState.jumping = true;
 
@@ -330,6 +334,7 @@ public class PlayerMovement : MonoBehaviour
                 
             }
         }
+        
         
         gravityScale = rb.linearVelocityY>0 ? jumpGScale : fallGScale;
     }
