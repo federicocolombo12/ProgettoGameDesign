@@ -22,8 +22,9 @@ public class PlayerMovement : MonoBehaviour
 
     [TabGroup("Jumping"), LabelText("Jump Force")]
     [SerializeField] private float jumpForce = 10f;
+    [TabGroup("Jumping"), LabelText("Jump Cut Multiplier")]
+    [SerializeField] private float jumpCutMultiplier = 0.5f;
 
-    
 
     [TabGroup("Jumping"), LabelText("Jump Buffer Frames")]
     [SerializeField] private float jumpBufferFrames;
@@ -257,7 +258,7 @@ public class PlayerMovement : MonoBehaviour
     {
         if (!jumpInput && rb.linearVelocity.y > 0)
             {
-                rb.linearVelocity = new Vector2(rb.linearVelocity.x, 0);
+                rb.AddForce(new Vector2(0, -jumpForce * jumpCutMultiplier), ForceMode2D.Impulse);
                 pState.jumping = false;
             
 
@@ -329,7 +330,8 @@ public class PlayerMovement : MonoBehaviour
                 
             }
         }
-        gravityScale = jumpInput ? jumpGScale : fallGScale;
+        
+        gravityScale = rb.linearVelocityY>0 ? jumpGScale : fallGScale;
     }
 
     
