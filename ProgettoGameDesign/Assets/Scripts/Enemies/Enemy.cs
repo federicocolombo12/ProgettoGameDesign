@@ -25,7 +25,7 @@ public class Enemy : MonoBehaviour
     [SerializeField] protected float damage;
     protected float currentDamage;
     [SerializeField] GameObject orangeBlood;
-    [SerializeField] PlayerTransformation weakTo;
+    public PlayerTransformation weakTo;
     
     [SerializeField] PlayerTransformation immuneTo;
     [SerializeField] ParticleSystem weakToEffect;
@@ -66,12 +66,13 @@ public class Enemy : MonoBehaviour
     }
     protected virtual void Start()
     {
+        
         rb = GetComponent<Rigidbody2D>();
         if (GetComponent<SpriteRenderer>()==null)
         {
             sr = GetComponent<SpriteRenderer>();
         }
-        
+       
         animator = GetComponent<Animator>();
         
         
