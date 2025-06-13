@@ -1,3 +1,4 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using Dev.Nicklaj.Butter;
@@ -9,11 +10,13 @@ public class GameManager : MonoBehaviour
 {
     public string transitionedFromScene;
     public static GameManager Instance { get; private set; }
+
     public Vector2 platformRespawnPoint;
     public Vector2 respawnPoint;
     public string currentGameplayScene;
     bool loaded;
     [SerializeField] Transform startPoint;
+    [SerializeField] ScenesToLoad gameplayScenesToLoad;
     [SerializeField] Bench currentBench;
     [SerializeField] Bench[] benchList;
     [SerializeField] GameEvent saveGameEvent;
@@ -36,7 +39,20 @@ public class GameManager : MonoBehaviour
         DontDestroyOnLoad(gameObject);
 
     }
+    void OnEnable()
+    {
+        SceneController.OnSceneLoaded+= OnSceneLoaded;
+    }
 
+    private void OnSceneLoaded()
+    {
+        loaded = true;
+    }
+
+    void OnDisable()
+    {
+        SceneController.OnSceneLoaded -= OnSceneLoaded;
+    }
     public void SetRespawnPoint(Vector2 newRespawnPoint)
     {
         platformRespawnPoint = newRespawnPoint;
@@ -86,18 +102,9 @@ public class GameManager : MonoBehaviour
     private void ResetScene()
     {
 
-        currentGameplayScene = GetGameplaySceneName();
-        SceneManager.UnloadSceneAsync(currentGameplayScene).completed += (op) =>
-        {
+        SceneController.Instance.ReloadSpecificScenesOnly(gameplayScenesToLoad);
 
-
-            SceneManager.LoadSceneAsync(currentGameplayScene, LoadSceneMode.Additive).completed += (op2) =>
-            {
-                loaded = true;
-            };
-
-
-        };
+       
     }
     public string GetGameplaySceneName()
     {
