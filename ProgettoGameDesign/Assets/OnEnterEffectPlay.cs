@@ -2,13 +2,14 @@ using UnityEngine;
 
 public class OnEnterEffectPlay : StateMachineBehaviour
 {
-    [SerializeField] private ParticleSystem effect;
+    private ParticleSystem effect;
     
     
    
     // OnStateEnter is called when a transition starts and the state machine starts to evaluate this state
     override public void OnStateEnter(Animator animator, AnimatorStateInfo stateInfo, int layerIndex)
     {
+        effect = animator.GetComponentInChildren<ParticleSystem>();
         if (effect != null)
         {
             // Play the effect at the position of the GameObject this Animator is attached to
