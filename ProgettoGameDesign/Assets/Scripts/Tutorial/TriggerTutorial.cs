@@ -13,7 +13,9 @@ public class TriggerTutorial : MonoBehaviour
     }
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        tutorialEvents.RaiseEvent(tutorial);
         Destroy(gameObject);
+        if (tutorial.unlocked) return; // Check if the tutorial is unlocked
+        tutorialEvents.RaiseEvent(tutorial);
+        
     }
 }

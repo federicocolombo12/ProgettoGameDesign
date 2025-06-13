@@ -16,4 +16,6 @@ public class Tutorial : ScriptableObject
     [Multiline(4)]
     [LabelText("Testo del Tutorial")]
     public string tutorialText;
+    [Title("Eventi del Tutorial")]
+    [SerializeField] public bool unlocked;
 }

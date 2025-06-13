@@ -1,0 +1,17 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ea85109bd69c5fd4dac11376dcb87800, type: 3}
+  m_Name: TutorialTrasformazioni
+  m_EditorClassIdentifier: 
+  tutorialImage: {fileID: 7709380569392148631, guid: fe1cf0ce0732a6947ae495647d7216ae, type: 3}
+  tutorialTitle: Trasformation
+  tutorialText: hit R1-L1 to change the current transformation.

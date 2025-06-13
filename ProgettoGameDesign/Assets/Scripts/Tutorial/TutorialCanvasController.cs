@@ -8,7 +8,7 @@ using UnityEngine.InputSystem;
 public class TutorialCanvasController : MonoBehaviour
 {
     // Start is called once before the first execution of Update after the MonoBehaviour is created
-    Image powerImage;
+    [SerializeField] Image powerImage;
     CanvasGroup tutorialCanvas;
     [SerializeField] TextMeshProUGUI tutorialText;
     [SerializeField] TextMeshProUGUI tutorialTitle;
@@ -28,7 +28,7 @@ public class TutorialCanvasController : MonoBehaviour
 
     void Start()
     {
-        powerImage = GetComponentInChildren<Image>();
+        
         tutorialCanvas = GetComponent<CanvasGroup>();
         tutorialCanvas.alpha = 0;
         
