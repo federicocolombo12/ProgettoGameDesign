@@ -202,8 +202,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   sr: {fileID: 7396596622832786950}
   health: 10
-  maxHealth: 100
-  recoilLenght: 0.1
+  maxHealth: 10
+  recoilLenght: 0.4
   recoilFactor: 0.75
   isRecoiling: 0
   restoreTimeSpeed: 1
@@ -222,7 +222,7 @@ MonoBehaviour:
   damageMultiplier: 2
   ledgeCheckX: 2
   ledgeCheckY: 1
-  chargeSpeedMultiplier: 2.5
+  chargeSpeedMultiplier: 1.5
   chargeDuration: 3
   jumpForce: 20
   whatIsGround:
@@ -286,15 +286,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8866130527325745022, guid: da2f707ff50440b41ae1e07967fb6f52, type: 3}
       propertyPath: m_LocalScale.x
-      value: 3.05
+      value: 4.319563
       objectReference: {fileID: 0}
     - target: {fileID: 8866130527325745022, guid: da2f707ff50440b41ae1e07967fb6f52, type: 3}
       propertyPath: m_LocalScale.y
-      value: 3.05
+      value: 4.319563
       objectReference: {fileID: 0}
     - target: {fileID: 8866130527325745022, guid: da2f707ff50440b41ae1e07967fb6f52, type: 3}
       propertyPath: m_LocalScale.z
-      value: 3.05
+      value: 4.319563
       objectReference: {fileID: 0}
     - target: {fileID: 8866130527325745022, guid: da2f707ff50440b41ae1e07967fb6f52, type: 3}
       propertyPath: m_LocalPosition.x
@@ -326,11 +326,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8866130527325745022, guid: da2f707ff50440b41ae1e07967fb6f52, type: 3}
       propertyPath: m_AnchoredPosition.x
-      value: -0.079
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 8866130527325745022, guid: da2f707ff50440b41ae1e07967fb6f52, type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: 3.93
+      value: 4.6
       objectReference: {fileID: 0}
     - target: {fileID: 8866130527325745022, guid: da2f707ff50440b41ae1e07967fb6f52, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
