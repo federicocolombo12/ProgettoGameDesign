@@ -7,6 +7,10 @@ public class MovingPlatform : Interactable
     [SerializeField] private Vector2 offset = new Vector2(6f, 0f);
     [SerializeField] private float moveDuration = 2f;
     [SerializeField] private float waitDuration = 2f;
+    [SerializeField] private Color startColor= Color.green;
+    
+    [SerializeField] private Color otherColor= Color.red;
+
     private SpriteRenderer spriteRenderer;
     private Vector2 startPosition;
     private Vector2 targetPosition;
@@ -18,7 +22,7 @@ public class MovingPlatform : Interactable
         targetPosition = startPosition + offset;
         StartCoroutine(MoveLoop());
         spriteRenderer = GetComponent<SpriteRenderer>();
-        spriteRenderer.color = Color.green;
+        spriteRenderer.color = startColor;
         isGreen = true;
         
         
@@ -42,7 +46,7 @@ public class MovingPlatform : Interactable
         // Optional: Add any logic when the player interacts with the platform
         ChangeOffset(new Vector2(offset.y, offset.x));
         isGreen = !isGreen;
-        spriteRenderer.color = isGreen ? Color.green : Color.red;
+        spriteRenderer.color = isGreen ? startColor : otherColor;
     }
     void ChangeOffset(Vector2 newOffset)
     {
