@@ -18,13 +18,14 @@ public class Sentinel : Enemy
         Vector2 projectileDirection = (player.transform.position - projectileTransform.position).normalized;
         projectile.GetComponent<Rigidbody2D>().AddForce(projectileDirection * projectileSpeed, ForceMode2D.Impulse);
     }
+    
     public override void EnemyHit(float damage, Vector2 hitDirection, float _hitForce)
     {
         base.EnemyHit(damage, hitDirection, _hitForce);
 
         if (health <= 0)
         {
-            Death(1.5f); 
+            Death(0.3f); 
         }
     }
 

@@ -27,7 +27,7 @@ public class Charger : Enemy
     {
         if (health <= 0)
         {
-            Death(0.05f);
+            Death(0f);
         }
         Vector3 _ledgeCheckStart = transform.localScale.x > 0 ? new Vector3(ledgeCheckX, 0) : new Vector3(-ledgeCheckX, 0);
         Vector2 _wallCheckDir = transform.localScale.x > 0 ? transform.right : -transform.right;

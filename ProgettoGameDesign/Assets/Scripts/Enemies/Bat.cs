@@ -56,7 +56,7 @@ public class Bat : Enemy
                 }
                 break;
             case EnemyStates.Bat_Death:
-                Death(Random.Range(5, 10));
+                Death(0f);
                 break;
         }
     }
@@ -93,6 +93,7 @@ public class Bat : Enemy
 
     protected override void Death(float _destroyTime)
     {
+        base.Death(_destroyTime);
         rb.gravityScale = 2f;
         gameObject.layer = LayerMask.NameToLayer("Background");
         DOVirtual.DelayedCall(_destroyTime, () =>

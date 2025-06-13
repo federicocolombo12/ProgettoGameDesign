@@ -20,6 +20,7 @@ public class Enemy : MonoBehaviour
     [SerializeField] protected float speed;
     [SerializeField] protected LayerMask playerLayer;
     [SerializeField] protected Material flashMaterial;
+    [SerializeField] protected ParticleSystem deathEffect;
     public Image healthImage;
     protected float recoilTimer;
     [SerializeField] protected float damage;
@@ -176,6 +177,7 @@ public class Enemy : MonoBehaviour
     protected virtual void Death(float _destroyTime) 
     {
         OnEnemyDeath?.Invoke();
+        EffectManager.Instance.PlayOneShot(deathEffect, transform.position);
         Destroy(gameObject, _destroyTime);
     }
     protected virtual void UpdateEnemyState()

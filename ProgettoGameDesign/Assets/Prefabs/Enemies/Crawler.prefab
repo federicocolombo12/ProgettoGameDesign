@@ -191,6 +191,7 @@ MonoBehaviour:
     serializedVersion: 2
     m_Bits: 1024
   flashMaterial: {fileID: 2100000, guid: d28059583e1a40249ad8daa3586d8028, type: 2}
+  deathEffect: {fileID: 713872799470891955, guid: 86205f73cb9a21d48b58f62520527137, type: 3}
   healthImage: {fileID: 6152820183864289198}
   damage: 1
   orangeBlood: {fileID: 1018504420545732665, guid: 8e88e1f612b228c4891428b837d80d61, type: 3}
