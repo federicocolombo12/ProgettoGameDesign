@@ -459,11 +459,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2724791294963458816, guid: 7b3bd716dd438b342aa73588e44b5dbe, type: 3}
       propertyPath: gizmoViewMode
-      value: 2
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 2724791294963458816, guid: 7b3bd716dd438b342aa73588e44b5dbe, type: 3}
       propertyPath: showBehaviorDesignerGizmo
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 2724791294963458816, guid: 7b3bd716dd438b342aa73588e44b5dbe, type: 3}
       propertyPath: mBehaviorSource.mTaskData.JSONSerialization
@@ -511,9 +511,21 @@ PrefabInstance:
       propertyPath: m_Layer
       value: 6
       objectReference: {fileID: 0}
+    - target: {fileID: 7922039281048046403, guid: 7b3bd716dd438b342aa73588e44b5dbe, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0.81
+      objectReference: {fileID: 0}
+    - target: {fileID: 7922039281048046403, guid: 7b3bd716dd438b342aa73588e44b5dbe, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 1.04
+      objectReference: {fileID: 0}
     - target: {fileID: 8933822761361162110, guid: 7b3bd716dd438b342aa73588e44b5dbe, type: 3}
       propertyPath: m_Layer
       value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 8957228511789724327, guid: 7b3bd716dd438b342aa73588e44b5dbe, type: 3}
+      propertyPath: m_LocalScale.x
+      value: -1
       objectReference: {fileID: 0}
     - target: {fileID: 8957228511789724327, guid: 7b3bd716dd438b342aa73588e44b5dbe, type: 3}
       propertyPath: m_LocalPosition.x
