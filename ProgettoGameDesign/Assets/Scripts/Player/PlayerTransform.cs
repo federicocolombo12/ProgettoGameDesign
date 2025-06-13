@@ -1,11 +1,9 @@
 ﻿using UnityEngine;
 using System.Collections.Generic;
+using DG.Tweening;
 
 public class PlayerTransform : MonoBehaviour
 {
-    
-    
-
     [Header("Prefab delle trasformazioni")]
     [SerializeField] private GameObject basePrefab;
     [SerializeField] private GameObject agilePrefab;
@@ -27,10 +25,15 @@ public class PlayerTransform : MonoBehaviour
     [Header("Collider")]
     [SerializeField] private CapsuleCollider2D collider;
 
+    [Header("Cooldown Trasformazione")]
+    [SerializeField] private float transformCooldown = 1.5f; // Tempo di cooldown in secondi
+
     private GameObject currentInstance;
     private Animator currentAnimator;
     private int currentIndex = 0;
     private int totalForms => playerTransformations.Count;
+
+    private bool canTransform = true;
 
     public static event System.Action OnTransform;
 
@@ -39,8 +42,11 @@ public class PlayerTransform : MonoBehaviour
         // Istanzia forma di default (es. base)
         ChangeSprite(0);
     }
+
     public void HandleTransform(bool left, bool right)
     {
+        if (!canTransform) return; // Blocca la trasformazione se siamo in cooldown
+
         if (left)
         {
             switch (currentIndex)
@@ -56,6 +62,7 @@ public class PlayerTransform : MonoBehaviour
                     break;
             }
             ChangeSprite(currentIndex);
+            StartTransformCooldown();
         }
         else if (right)
         {
@@ -72,11 +79,19 @@ public class PlayerTransform : MonoBehaviour
                     break;
             }
             ChangeSprite(currentIndex);
+            StartTransformCooldown();
         }
     }
 
-
-
+    private void StartTransformCooldown()
+    {
+        canTransform = false;
+        // Usa DOTween.DelayedCall per aspettare il cooldown e riabilitare la trasformazione
+        DOVirtual.DelayedCall(transformCooldown, () =>
+        {
+            canTransform = true;
+        });
+    }
 
     public void ChangeSprite(int transformationIndex)
     {
