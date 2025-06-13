@@ -132,7 +132,7 @@ MonoBehaviour:
   immuneTo: {fileID: 11400000, guid: a85abe56df98ddd489746a5ed5666703, type: 2}
   weakToEffect: {fileID: 5569289640993081841, guid: 6dbb3939c6bb00b4eae30e45299b42df, type: 3}
   damageMultiplier: 2
-  chaseDistance: 10
+  chaseDistance: 5
   stunDuration: 0.2
   batSr: {fileID: 5884542449403423146}
 --- !u!1001 &2021273410853614336
@@ -145,16 +145,20 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 3932498036490793124, guid: da2f707ff50440b41ae1e07967fb6f52, type: 3}
       propertyPath: m_Color.b
-      value: 0.09019607
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 3932498036490793124, guid: da2f707ff50440b41ae1e07967fb6f52, type: 3}
       propertyPath: m_Color.g
-      value: 0.91761255
+      value: 0.85490197
       objectReference: {fileID: 0}
     - target: {fileID: 3932498036490793124, guid: da2f707ff50440b41ae1e07967fb6f52, type: 3}
       propertyPath: m_Color.r
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 3932498036490793124, guid: da2f707ff50440b41ae1e07967fb6f52, type: 3}
+      propertyPath: m_Material
+      value: 
+      objectReference: {fileID: 2100000, guid: 15196218564d97d47aa3d6b82957cf86, type: 2}
     - target: {fileID: 4897976666849188363, guid: da2f707ff50440b41ae1e07967fb6f52, type: 3}
       propertyPath: m_Name
       value: EnemyHealthBar

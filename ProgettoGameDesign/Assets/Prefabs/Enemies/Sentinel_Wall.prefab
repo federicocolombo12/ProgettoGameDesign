@@ -459,11 +459,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2724791294963458816, guid: 7b3bd716dd438b342aa73588e44b5dbe, type: 3}
       propertyPath: gizmoViewMode
-      value: 0
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 2724791294963458816, guid: 7b3bd716dd438b342aa73588e44b5dbe, type: 3}
       propertyPath: showBehaviorDesignerGizmo
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 2724791294963458816, guid: 7b3bd716dd438b342aa73588e44b5dbe, type: 3}
       propertyPath: mBehaviorSource.mTaskData.JSONSerialization
@@ -490,6 +490,10 @@ PrefabInstance:
     - target: {fileID: 6561011605813997032, guid: 7b3bd716dd438b342aa73588e44b5dbe, type: 3}
       propertyPath: m_BodyType
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6561011605813997032, guid: 7b3bd716dd438b342aa73588e44b5dbe, type: 3}
+      propertyPath: m_Constraints
+      value: 7
       objectReference: {fileID: 0}
     - target: {fileID: 7520591157220054121, guid: 7b3bd716dd438b342aa73588e44b5dbe, type: 3}
       propertyPath: m_Layer

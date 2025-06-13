@@ -211,7 +211,7 @@ MonoBehaviour:
   speed: 3
   playerLayer:
     serializedVersion: 2
-    m_Bits: 0
+    m_Bits: 1024
   flashMaterial: {fileID: 2100000, guid: d28059583e1a40249ad8daa3586d8028, type: 2}
   healthImage: {fileID: 1491182617961902758}
   damage: 1
@@ -222,9 +222,9 @@ MonoBehaviour:
   damageMultiplier: 2
   ledgeCheckX: 2
   ledgeCheckY: 1
-  chargeSpeedMultiplier: 1.5
+  chargeSpeedMultiplier: 3
   chargeDuration: 3
-  jumpForce: 20
+  jumpForce: 30
   whatIsGround:
     serializedVersion: 2
     m_Bits: 8
@@ -344,7 +344,8 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: -5397947814381190816, guid: da2f707ff50440b41ae1e07967fb6f52, type: 3}
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents: []

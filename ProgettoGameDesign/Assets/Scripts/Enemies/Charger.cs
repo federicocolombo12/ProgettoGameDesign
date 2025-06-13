@@ -42,7 +42,8 @@ public class Charger : Enemy
 
                     
                 }
-                RaycastHit2D _hit = Physics2D.Raycast(transform.position + _ledgeCheckStart, _wallCheckDir, ledgeCheckX * 10);
+                Debug.DrawRay(transform.position, _wallCheckDir * ledgeCheckX*5, Color.red);
+                RaycastHit2D _hit = Physics2D.Raycast(transform.position, _wallCheckDir, ledgeCheckX*5, playerLayer);
                 if (_hit.collider != null && _hit.collider.gameObject.CompareTag("Player"))
                 {
                     ChangeState(EnemyStates.Charger_Surprised);
