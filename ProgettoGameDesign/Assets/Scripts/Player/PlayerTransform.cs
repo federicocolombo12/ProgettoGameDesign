@@ -1,187 +1,145 @@
-﻿using DG.Tweening;
-using NUnit.Framework;
-using System;
+﻿using UnityEngine;
 using System.Collections.Generic;
-using UnityEngine;
 
 public class PlayerTransform : MonoBehaviour
 {
-    private float timeSinceLastTransform = 0f;
-    private float transformCooldown = 1f; // Cooldown time in seconds
-    public static event System.Action OnTransform; // Event to notify when transformation occurs
-    [SerializeField] GameObject baseGO;
     
-    [SerializeField] GameObject agileGO;
     
-    [SerializeField] GameObject strongGO;
-    [SerializeField] List<Material> baseMaterials;
-    [SerializeField] List<Material> agileMaterials;
-    [SerializeField] List<Material> strongMaterials;
-    [SerializeField] List<Animator> animators;
-    [SerializeField] ParticleSystem effectParticle;
-    [SerializeField] ParticleSystem transformationParticle;
-    public List<Color> transformationColors;
-    [SerializeField] float dissolveTimer = 0.5f; // Time for the dissolve effect
-    private int lastTransformationIndex = 0;
 
+    [Header("Prefab delle trasformazioni")]
+    [SerializeField] private GameObject basePrefab;
+    [SerializeField] private GameObject agilePrefab;
+    [SerializeField] private GameObject strongPrefab;
 
-    private CapsuleCollider2D collider;
+    [Header("Dati delle trasformazioni")]
+    [SerializeField] private List<PlayerTransformation> playerTransformations;
 
+    [Header("Materiali")]
+    private List<Material> baseMaterials = new List<Material>();
+    private List<Material> agileMaterials = new List<Material>();
+    private List<Material> strongMaterials = new List<Material>();
 
+    [Header("Particelle ed effetti")]
+    [SerializeField] private ParticleSystem transformationParticle;
+    [SerializeField] private ParticleSystem effectParticle;
+    [SerializeField] public List<Color> transformationColors;
 
-    void OnEnable()
-    {
-        UpgradeAbility.OnAbilityUpgraded += HandleAbilityUpgrade;
-    }
-    void OnDisable()
-    {
-        UpgradeAbility.OnAbilityUpgraded -= HandleAbilityUpgrade;
-    }
-    private void HandleAbilityUpgrade(PlayerTransformation.AbilityType abilityType)
-    {
-        if (abilityType == PlayerTransformation.AbilityType.doubleJump)
-        {
-            playerTransformations[1].jumpCount = 1;
-        }
-        
-    }
-    enum Form
-    {
-        Human,
-        Bat,
-        Wolf
-    }
-    [SerializeField] List<PlayerTransformation> playerTransformations; // List of possible transformations
-    Form currentForm;
+    [Header("Collider")]
+    [SerializeField] private CapsuleCollider2D collider;
+
+    private GameObject currentInstance;
+    private Animator currentAnimator;
+    private int currentIndex = 0;
+    private int totalForms => playerTransformations.Count;
+
+    public static event System.Action OnTransform;
+
     private void Start()
     {
-        // Initialize the current form to Human
-        
-        timeSinceLastTransform = transformCooldown; // Start with cooldown ready
-        collider = GetComponent<CapsuleCollider2D>();
-        
+        // Istanzia forma di default (es. base)
+        ChangeSprite(0);
+    }
+    public void HandleTransform(bool left, bool right)
+    {
+        if (left)
+        {
+            switch (currentIndex)
+            {
+                case 0:
+                    currentIndex = 1;
+                    break;
+                case 1:
+                    currentIndex = 0;
+                    break;
+                case 2:
+                    currentIndex = 1;
+                    break;
+            }
+            ChangeSprite(currentIndex);
+        }
+        else if (right)
+        {
+            switch (currentIndex)
+            {
+                case 0:
+                    currentIndex = 2;
+                    break;
+                case 2:
+                    currentIndex = 0;
+                    break;
+                case 1:
+                    currentIndex = 2;
+                    break;
+            }
+            ChangeSprite(currentIndex);
+        }
+    }
+
+
+
+
+    public void ChangeSprite(int transformationIndex)
+    {
+        // Distruggi la forma corrente
+        if (currentInstance != null)
+        {
+            Destroy(currentInstance);
+        }
+
+        // Istanzia il prefab corretto
+        GameObject prefab = GetPrefabByIndex(transformationIndex);
+        if (prefab == null) return;
+
+        currentInstance = Instantiate(prefab, transform);
+        currentAnimator = currentInstance.GetComponentInChildren<Animator>();
+
+        if (currentAnimator != null)
+        {
+            currentAnimator.Rebind(); // Reset animazioni
+            currentAnimator.enabled = true;
+        }
+
+        // Aggiorna riferimenti globali se serve
+        Player.Instance.playerTransformation = playerTransformations[transformationIndex];
+        Player.Instance.animator = currentAnimator;
+
+        // Emetti particelle
+        transformationParticle.Stop();
+        var main = transformationParticle.main;
+        main.startColor = transformationColors[transformationIndex];
         transformationParticle.Play();
-        IterateMaterials(0); // Inizializza i materiali per la forma umana
-        IterateMaterials(1); // Inizializza i materiali per la forma agile
-        IterateMaterials(2); // Inizializza i materiali per la forma forte
-        ChangeState(Form.Human, 0); // Inizializza la forma umana
-    }
-    private void Update()
-    {
-        // Update the cooldown timer
-        if (timeSinceLastTransform < transformCooldown)
-        {
-            timeSinceLastTransform += Time.deltaTime;
-        }
-    }
 
-    public void HandleTransform(bool leftTransform, bool rightTransform)
-    {
-        if (timeSinceLastTransform < transformCooldown)
+        if (effectParticle != null)
         {
-            return; // Prevent transformation if cooldown is active
+            EffectManager.Instance.PlayOneShot(effectParticle, transform.position);
         }
 
-        switch (currentForm)
-        {
-            case Form.Human:
-                if (leftTransform)
-                {
-                    ChangeState(Form.Bat, 1);
-                }
-                else if (rightTransform)
-                {
-                    ChangeState(Form.Wolf, 2);
-                }
-                break;
-            case Form.Bat:
-                if (leftTransform)
-                {
-                    ChangeState(Form.Human, 0);
-                }
-                else if (rightTransform)
-                {
-                    ChangeState(Form.Wolf, 2);
-                }
-                break;
-            case Form.Wolf:
-                if (leftTransform)
-                {
-                    ChangeState(Form.Bat, 1);
-                }
-                else if (rightTransform)
-                {
-                    ChangeState(Form.Human, 0);
-                }
-                break;
-        }
-    }
+        // Aggiorna Collider e scala
+        var transformation = playerTransformations[transformationIndex];
+        collider.size = transformation.colliderSize;
+        collider.offset = transformation.colliderOffset;
+        transform.localScale = transformation.transformationScale;
 
-    void ChangeState(Form nextForm, int transformationIndex)
-    {
-        currentForm = nextForm;
+        // Salva i materiali per effetti successivi
+        IterateMaterials(transformationIndex);
 
-        AnimateMaterialValues(lastTransformationIndex, transformationIndex); // prima di cambiare sprite
-        ChangeSprite(transformationIndex);
-
-        timeSinceLastTransform = 0f;
+        // Trigger evento
         OnTransform?.Invoke();
-
-        lastTransformationIndex = transformationIndex; // aggiorna dopo l'animazione
     }
 
-
-    void ChangeSprite(int transformationIndex)
-{
-    // Disattiva tutti i GO e Animator
-    baseGO.SetActive(false);
-    agileGO.SetActive(false);
-    strongGO.SetActive(false);
-    
-    animators.ForEach(a => {
-        a.enabled = false;
-        a.Rebind(); // Resetta l'animator
-    });
-
-    // Attiva solo quello corretto
-    GameObject targetGO = transformationIndex switch
+    private GameObject GetPrefabByIndex(int index)
     {
-        0 => baseGO,
-        1 => agileGO,
-        2 => strongGO,
-        _ => null
-    };
-
-    if (targetGO != null)
-    {
-        targetGO.SetActive(true);
-        animators[transformationIndex].enabled = true;
-        animators[transformationIndex].Rebind();
+        return index switch
+        {
+            0 => basePrefab,
+            1 => agilePrefab,
+            2 => strongPrefab,
+            _ => null
+        };
     }
 
-    Player.Instance.playerTransformation = playerTransformations[transformationIndex];
-    Player.Instance.animator = animators[transformationIndex];
-
-    // Altri effetti
-    transformationParticle.Stop();
-    var main = transformationParticle.main;
-    main.startColor = transformationColors[transformationIndex];
-    transformationParticle.Play();
-
-    EffectManager.Instance.PlayOneShot(effectParticle, transform.position);
-
-    var transformation = playerTransformations[transformationIndex];
-    collider.size = transformation.colliderSize;
-    collider.offset = transformation.colliderOffset;
-    transform.localScale = transformation.transformationScale;
-}
-
-
-    
-
-    void IterateMaterials(int transformationIndex)
+    private void IterateMaterials(int transformationIndex)
     {
-        // Svuota le liste prima di riempirle
         switch (transformationIndex)
         {
             case 0: baseMaterials.Clear(); break;
@@ -189,26 +147,15 @@ public class PlayerTransform : MonoBehaviour
             case 2: strongMaterials.Clear(); break;
         }
 
-        // Seleziona il GameObject giusto
-        GameObject targetGO = null;
-        switch (transformationIndex)
-        {
-            case 0: targetGO = baseGO; break;
-            case 1: targetGO = agileGO; break;
-            case 2: targetGO = strongGO; break;
-        }
+        if (currentInstance == null) return;
 
-        if (targetGO == null) return;
-
-        // Itera sui figli del GameObject selezionato
-        foreach (Transform child in targetGO.transform)
+        foreach (Transform child in currentInstance.transform)
         {
             SpriteRenderer spriteRenderer = child.GetComponent<SpriteRenderer>();
             if (spriteRenderer != null)
             {
                 Material material = spriteRenderer.material;
 
-                // Aggiungi alla lista corretta
                 switch (transformationIndex)
                 {
                     case 0: baseMaterials.Add(material); break;
@@ -218,49 +165,4 @@ public class PlayerTransform : MonoBehaviour
             }
         }
     }
-    void AnimateMaterialValues(int fromIndex, int toIndex)
-    {
-        List<Material> fromMaterials = GetMaterialsByIndex(fromIndex);
-        List<Material> toMaterials = GetMaterialsByIndex(toIndex);
-
-        // Dissolvi la forma precedente: dissolveAmount da 0 → 1
-        foreach (var mat in fromMaterials)
-        {
-            if (mat.HasProperty("_DissolveAmount"))
-            {
-                mat.DOFloat(0f, "_DissolveAmount", dissolveTimer); // dissolve out in 0.5s
-            }
-            else
-            {
-                Debug.LogWarning($"Material {mat.name} does not have 'Dissolve Amount' property.");
-            }
-        }
-
-        // Appari con la nuova forma: dissolveAmount da 1 → 0
-        foreach (var mat in toMaterials)
-        {
-            if (mat.HasProperty("_DissolveAmount"))
-            {
-                mat.SetFloat("_DissolveAmount", 0f); // forza inizio da 1
-                mat.DOFloat(1f, "_DissolveAmount", dissolveTimer); // dissolve in in 0.5s
-            }
-            else
-            {
-                Debug.LogWarning($"Material {mat.name} does not have 'Dissolve Amount' property.");
-            }
-        }
-    }
-
-    List<Material> GetMaterialsByIndex(int index)
-    {
-        switch (index)
-        {
-            case 0: return baseMaterials;
-            case 1: return agileMaterials;
-            case 2: return strongMaterials;
-            default: return new List<Material>();
-        }
-    }
-
-
 }
