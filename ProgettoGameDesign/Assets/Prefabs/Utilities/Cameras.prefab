@@ -10,7 +10,6 @@ GameObject:
   m_Component:
   - component: {fileID: 2307895908653778355}
   - component: {fileID: 8570616482197260357}
-  - component: {fileID: 1566150068040406377}
   - component: {fileID: 1698782040157687828}
   - component: {fileID: 2524560597052352681}
   m_Layer: 0
@@ -78,37 +77,6 @@ MonoBehaviour:
       BarrelClipping: 0.25
       Anamorphism: 0
   BlendHint: 0
---- !u!114 &1566150068040406377
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 77197181048876167}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 886251e9a18ece04ea8e61686c173e1b, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  CameraDistance: 10
-  DeadZoneDepth: 0
-  Composition:
-    ScreenPosition: {x: 0, y: 0}
-    DeadZone:
-      Enabled: 0
-      Size: {x: 0.2, y: 0.2}
-    HardLimits:
-      Enabled: 0
-      Size: {x: 0.8, y: 0.8}
-      Offset: {x: 0, y: 0}
-  CenterOnActivate: 0
-  TargetOffset: {x: 1, y: 0, z: 0}
-  Damping: {x: 0.75, y: 2, z: 0}
-  Lookahead:
-    Enabled: 1
-    Time: 0.05
-    Smoothing: 1
-    IgnoreY: 1
 --- !u!114 &1698782040157687828
 MonoBehaviour:
   m_ObjectHideFlags: 0
