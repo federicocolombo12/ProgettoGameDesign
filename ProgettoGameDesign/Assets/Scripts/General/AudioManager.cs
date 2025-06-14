@@ -55,4 +55,14 @@ public class AudioManager : MonoBehaviour
             yield return null;
         }
     }
+    public void DisableVolume()
+    {
+                sfxSource.volume = 0f;
+        musicSource.volume = 0f;
+    }
+    public void EnableVolume()
+    {
+        sfxSource.volume = 1f;
+        musicSource.volume = 1f;
+    }
 }
