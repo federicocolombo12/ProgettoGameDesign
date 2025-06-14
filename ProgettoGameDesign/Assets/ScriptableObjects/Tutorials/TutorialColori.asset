@@ -13,8 +13,6 @@ MonoBehaviour:
   m_Name: TutorialColori
   m_EditorClassIdentifier: 
   tutorialImage: {fileID: -2950031364595783801, guid: d234688aa4f0caf47b442704bbb49a2b, type: 3}
-  tutorialTitle: Enemy Colors
-  tutorialText: Every enemy has a specific color associated  to them, which makes
-    them weaker against the matching transformation. Try hitting them with the right
-    one!
+  tutorialTitle: Enemy weakness
+  tutorialText: "Each enemy has a weakness. Spot it \u2014 and turn it against them. "
   unlocked: 0
