@@ -10,7 +10,7 @@ public class GameManager : MonoBehaviour
 {
     public string transitionedFromScene;
     public static GameManager Instance { get; private set; }
-
+    
     public Vector2 platformRespawnPoint;
     public Vector2 respawnPoint;
     public string currentGameplayScene;
@@ -23,6 +23,7 @@ public class GameManager : MonoBehaviour
     [SerializeField] GameEvent loadGameEvent;
     [SerializeField] GameObjectRuntimeSet benchSet;
     [SerializeField] IntVariable benchIndexVariable;
+    [SerializeField] bool debugFinished = false; // Set to true for debugging purposes
 
     private void Awake()
     {
@@ -37,7 +38,17 @@ public class GameManager : MonoBehaviour
 
         }
         DontDestroyOnLoad(gameObject);
+        
+        
+        
 
+    }
+    private void Start()
+    {
+        if (debugFinished)
+        {
+            Player.Instance.transform.position = startPoint.position;
+        }
     }
     void OnEnable()
     {

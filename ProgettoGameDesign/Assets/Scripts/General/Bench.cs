@@ -8,6 +8,7 @@ public class Bench : Interactable
     
     [SerializeField] public int benchIndex;
     [SerializeField] IntVariable benchIndexVariable;
+    [SerializeField] GameObject interactEffect;
     public int benchCamera;
     public string benchSceneName;
     public override void Interact(GameObject interactor)
@@ -18,6 +19,7 @@ public class Bench : Interactable
         GameManager.Instance.SetBench(this);
         CameraManager.Instance.SetCamera(benchCamera);
         Camera.main.transform.position = transform.position;
+        EffectManager.Instance.PlayOneShot(interactEffect.GetComponent<ParticleSystem>(), transform.position);
 
 
     }

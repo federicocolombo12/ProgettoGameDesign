@@ -10,7 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 8633983352308830436}
   - component: {fileID: 6090154330004301045}
-  m_Layer: 0
+  m_Layer: 2
   m_Name: moduli_colonna_paglia_3
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -97,7 +97,7 @@ GameObject:
   m_Component:
   - component: {fileID: 4364246332029029838}
   - component: {fileID: 3200070179035449778}
-  m_Layer: 0
+  m_Layer: 2
   m_Name: moduli_colonna_paglia_4
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -184,7 +184,7 @@ GameObject:
   m_Component:
   - component: {fileID: 8162439395813879953}
   - component: {fileID: 5530399451814224962}
-  m_Layer: 0
+  m_Layer: 2
   m_Name: moduli_colonna_paglia_2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -271,7 +271,7 @@ GameObject:
   m_Component:
   - component: {fileID: 7898081669585471626}
   - component: {fileID: 4256065648664839598}
-  m_Layer: 0
+  m_Layer: 2
   m_Name: moduli_colonna_paglia_1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -360,7 +360,7 @@ GameObject:
   - component: {fileID: 2395704524636589735}
   - component: {fileID: 5704932264108203683}
   - component: {fileID: 6248027993234440092}
-  m_Layer: 0
+  m_Layer: 2
   m_Name: DoorSwitchable1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -377,7 +377,7 @@ Transform:
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 53.67, y: 41.78, z: 0}
-  m_LocalScale: {x: 1.0777481, y: 1.0777481, z: 1.0777481}
+  m_LocalScale: {x: 0.9253329, y: 0.9253329, z: 0.9253329}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 8633983352308830436}
@@ -513,7 +513,7 @@ GameObject:
   m_Component:
   - component: {fileID: 3730934446534818461}
   - component: {fileID: 8788122634223623379}
-  m_Layer: 0
+  m_Layer: 2
   m_Name: moduli_colonna_paglia_0
   m_TagString: Untagged
   m_Icon: {fileID: 0}
