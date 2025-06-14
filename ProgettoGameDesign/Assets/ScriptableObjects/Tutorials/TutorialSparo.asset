@@ -13,6 +13,7 @@ MonoBehaviour:
   m_Name: TutorialSparo
   m_EditorClassIdentifier: 
   tutorialImage: {fileID: 21300000, guid: 2c961366528f28c458c619797d0bbb2f, type: 3}
-  tutorialTitle: 
-  tutorialText: Dash to reach the more distant platforms.
+  tutorialTitle: Fireball
+  tutorialText: Cast spells to strike enemies from afar. When your mana is full enough,
+    press Triangle to cast.
   unlocked: 0
