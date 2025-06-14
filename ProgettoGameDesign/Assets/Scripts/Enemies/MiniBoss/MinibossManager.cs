@@ -5,7 +5,7 @@ using UnityEngine;
 
 public class MinibossManager : MonoBehaviour
 {
-    
+    [SerializeField] SwitchableObject bossFightDoor; // The door that opens when the boss fight starts
     [SerializeField] AudioClip bossFightMusic;
     [SerializeField] CanvasGroup bossHealthCanvas;
     BehaviorTree bossBt;
@@ -13,13 +13,13 @@ public class MinibossManager : MonoBehaviour
     private void OnEnable()
     {
         StartBossfight.OnBossfightStart += OnBossFightStart;
-        Miniboss.OnEnemyDeath += OnMinibossDeath;
+        
         
     }
     private void OnDisable()
     {
         StartBossfight.OnBossfightStart -= OnBossFightStart;
-        Miniboss.OnEnemyDeath -= OnMinibossDeath;
+        
         
     }
     private void Start()
@@ -32,16 +32,15 @@ public class MinibossManager : MonoBehaviour
 
     private void OnBossFightStart()
     {
-        SwitchableObject bossFightDoor = FindFirstObjectByType<SwitchableObject>();
-        bossFightDoor.Open();
+        
         AudioManager.Instance.PlayMusic(bossFightMusic, 1f);
         bossBt.EnableBehavior();
         bossHealthCanvas.DOFade(1, 0.5f).SetEase(Ease.OutSine);
     }
     private void OnMinibossDeath()
     {
-        SwitchableObject bossFightDoor = FindFirstObjectByType<SwitchableObject>();
-        bossFightDoor.Close();
+       bossFightDoor = FindFirstObjectByType<SwitchableObject>();
+        bossFightDoor.Open();
         
     }
 
