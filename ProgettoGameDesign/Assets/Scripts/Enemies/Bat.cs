@@ -8,6 +8,12 @@ public class Bat : Enemy
     [SerializeField] private float chaseDistance;
     [SerializeField] private float stunDuration;
     [SerializeField] SpriteRenderer batSr;
+    [SerializeField] private LayerMask obstacleMask;
+    private Vector3 initialPosition;
+    [SerializeField] private float idleReturnTime = 3f;
+    private bool isReturningToStart = false;
+
+
     private Tween moveTween;
     float timer;
     protected override void Start()
@@ -15,7 +21,7 @@ public class Bat : Enemy
         rb = GetComponent<Rigidbody2D>();
         sr = batSr;
         animator = GetComponentInChildren<Animator>();
-
+        initialPosition = transform.position;
         standardMaterial = sr.material;
         player = Player.Instance;
         
@@ -30,11 +36,26 @@ public class Bat : Enemy
         switch (GetCurrentEnemyState)
         {
             case EnemyStates.Bat_Idle:
-                if (_dist < chaseDistance)
+                if (_dist < chaseDistance && HasLineOfSightToPlayer())
                 {
+                    timer = 0;
+                    isReturningToStart = false;
                     ChangeState(EnemyStates.Bat_Chase);
                 }
+                else
+                {
+                    timer += Time.deltaTime;
+
+                    if (timer >= idleReturnTime && !isReturningToStart && Vector2.Distance(transform.position, initialPosition) > 0.1f)
+                    {
+                        isReturningToStart = true;
+                        Vector2 _direction = (initialPosition - transform.position).normalized;
+                        rb.linearVelocity = new Vector2(_direction.x * speed, _direction.y * speed);
+                    }
+                }
                 break;
+
+
             case EnemyStates.Bat_Chase:
                 Vector2 direction = (player.transform.position - transform.position).normalized;
                 rb.linearVelocity = new Vector2(direction.x * speed, direction.y * speed);
@@ -102,4 +123,15 @@ public class Bat : Enemy
         });
 
     }
+    private bool HasLineOfSightToPlayer()
+    {
+        Vector2 directionToPlayer = (player.transform.position - transform.position).normalized;
+        float distanceToPlayer = Vector2.Distance(transform.position, player.transform.position);
+
+        RaycastHit2D hit = Physics2D.Raycast(transform.position, directionToPlayer, distanceToPlayer, obstacleMask);
+
+        // Se il raycast NON colpisce niente, allora c'è linea visiva libera
+        return hit.collider == null;
+    }
+
 }

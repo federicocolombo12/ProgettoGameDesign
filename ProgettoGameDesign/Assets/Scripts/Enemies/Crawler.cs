@@ -23,7 +23,7 @@ public class Crawler : Enemy
     {
         if (health <= 0)
         {
-            Death(0.05f);
+            Death(0f);
         }
 
         switch (GetCurrentEnemyState)
@@ -63,6 +63,7 @@ public class Crawler : Enemy
                 break;
         }
     }
+   
     
     private void OnCollisionEnter2D(Collision2D collision)
     {

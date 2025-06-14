@@ -136,6 +136,9 @@ MonoBehaviour:
   chaseDistance: 5
   stunDuration: 0.2
   batSr: {fileID: 5884542449403423146}
+  obstacleMask:
+    serializedVersion: 2
+    m_Bits: 2568
 --- !u!1001 &2021273410853614336
 PrefabInstance:
   m_ObjectHideFlags: 0
