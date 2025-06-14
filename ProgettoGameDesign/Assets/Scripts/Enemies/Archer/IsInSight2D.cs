@@ -8,6 +8,7 @@ public class IsInSight2D : Conditional
     private Enemy enemy;
     [SerializeField] private LayerMask playerLayer;
     [SerializeField] private LayerMask wallLayer;
+    [SerializeField] private float distance = 10f; // Maximum distance to check for the player
 
     public override void OnStart()
     {
@@ -22,7 +23,7 @@ public class IsInSight2D : Conditional
 
         if (angle <= 45f)
         {
-            RaycastHit2D hit = Physics2D.Raycast(enemy.transform.position, direction.normalized, direction.magnitude, playerLayer);
+            RaycastHit2D hit = Physics2D.Raycast(enemy.transform.position, direction.normalized, direction.magnitude*distance, playerLayer);
 
             if (hit.collider != null && hit.collider.CompareTag("Player"))
             {

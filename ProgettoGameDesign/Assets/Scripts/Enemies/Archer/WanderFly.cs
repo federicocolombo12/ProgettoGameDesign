@@ -9,6 +9,7 @@ public class WanderFly : Action
     private Enemy enemy;
     public SharedFloat speed;
     private Archer_Base archer;
+    [SerializeField] private float circleRadius = 5f; // Raggio del cerchio in cui il nemico può vagare
     
     
     public LayerMask wallLayerMask;
@@ -49,7 +50,7 @@ public class WanderFly : Action
         int maxTries = 10;
         for (int i = 0; i < maxTries; i++)
         {
-            Vector2 randomOffset = Random.insideUnitCircle * 1f;
+            Vector2 randomOffset = Random.insideUnitCircle * circleRadius;
 
             Vector2 potentialTarget = new Vector2(archer.centerOfInfluence.position.x + 
                 randomOffset.x,archer.centerOfInfluence.position.y + randomOffset.y);
