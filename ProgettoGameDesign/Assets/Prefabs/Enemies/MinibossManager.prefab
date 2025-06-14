@@ -601,7 +601,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   bossFightDoor: {fileID: 0}
-  bossFightMusic: {fileID: 8300000, guid: b7b5a6156961bac44a67504d42ce6fcf, type: 3}
+  bossFightMusic: {fileID: 0}
   bossHealthCanvas: {fileID: 272627061797857804}
 --- !u!1 &8598184160181433542
 GameObject:

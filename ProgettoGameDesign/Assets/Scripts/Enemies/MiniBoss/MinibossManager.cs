@@ -32,8 +32,10 @@ public class MinibossManager : MonoBehaviour
 
     private void OnBossFightStart()
     {
+        if (bossFightMusic != null) {
+            AudioManager.Instance.PlayMusic(bossFightMusic, 1f);
+        }
         
-        AudioManager.Instance.PlayMusic(bossFightMusic, 1f);
         bossBt.EnableBehavior();
         bossHealthCanvas.DOFade(1, 0.5f).SetEase(Ease.OutSine);
     }
