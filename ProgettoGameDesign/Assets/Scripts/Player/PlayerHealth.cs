@@ -170,7 +170,8 @@ public class PlayerHealth : MonoBehaviour
         animator.SetTrigger("Death");
         StartCoroutine(SceneFader.Instance.Fade(SceneFader.FadeDirection.In));
         yield return new WaitForSecondsRealtime(3f);
-
+        Mana = 0;
+        Health = maxHealth;
         GameManager.Instance.RespawnPlayer(Player.Instance);
         Time.timeScale = 1.0f;
     }
