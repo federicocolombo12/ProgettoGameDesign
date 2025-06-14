@@ -243,6 +243,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: LaserSparks
       objectReference: {fileID: 0}
+    - target: {fileID: 5281855749132893485, guid: cf21d8a743789054da9eb0342bd8b4fb, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 5281855749132893522, guid: cf21d8a743789054da9eb0342bd8b4fb, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0.85
