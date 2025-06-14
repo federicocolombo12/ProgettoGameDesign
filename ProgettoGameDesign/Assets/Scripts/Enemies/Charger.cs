@@ -8,7 +8,7 @@ public class Charger : Enemy
     [SerializeField] private float ledgeCheckY;
     [SerializeField] private float chargeSpeedMultiplier;
     [SerializeField] private float chargeDuration;
-
+    [SerializeField] private LayerMask obstacleLayer;
     [SerializeField] private float jumpForce;
     [SerializeField] private LayerMask whatIsGround;
     float timer;
@@ -34,9 +34,9 @@ public class Charger : Enemy
         switch (GetCurrentEnemyState)
         {
             case EnemyStates.Charger_Idle:
-                
+                Debug.DrawRay(transform.position + _ledgeCheckStart, Vector2.down * ledgeCheckY, Color.red);
                 if (!Physics2D.Raycast(transform.position + _ledgeCheckStart, Vector2.down, ledgeCheckY, whatIsGround) ||
-                    Physics2D.Raycast(transform.position, _wallCheckDir, ledgeCheckX, whatIsGround))
+                    Physics2D.Raycast(transform.position, _wallCheckDir, ledgeCheckX, whatIsGround) && Physics2D.Raycast(transform.position, _wallCheckDir, ledgeCheckX, obstacleLayer))
                 {
                     transform.localScale = new Vector3(-transform.localScale.x, transform.localScale.y);
 
@@ -48,7 +48,7 @@ public class Charger : Enemy
                 {
                     ChangeState(EnemyStates.Charger_Surprised);
                 }
-
+                
                 if (transform.localScale.x > 0)
                 {
                     rb.linearVelocity = new Vector2(speed, rb.linearVelocity.y);
@@ -110,4 +110,6 @@ public class Charger : Enemy
             animator.speed = chargeSpeedMultiplier;
         }
     }
+    
+
 }
