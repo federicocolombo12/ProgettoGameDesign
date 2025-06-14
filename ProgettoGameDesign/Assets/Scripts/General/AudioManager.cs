@@ -46,6 +46,8 @@ public class AudioManager : MonoBehaviour
         }
 
         musicSource.clip = newClip;
+        //loop it
+        musicSource.loop = true;
         musicSource.Play();
 
         // fade in
