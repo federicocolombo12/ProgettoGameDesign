@@ -231,7 +231,7 @@ MonoBehaviour:
   jumpForce: 30
   whatIsGround:
     serializedVersion: 2
-    m_Bits: 8
+    m_Bits: 35336
 --- !u!1001 &2459726884551737858
 PrefabInstance:
   m_ObjectHideFlags: 0
