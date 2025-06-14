@@ -179,8 +179,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   sr: {fileID: 7506218011817709974}
-  health: 3
-  maxHealth: 3
+  health: 5
+  maxHealth: 5
   recoilLenght: 0
   recoilFactor: 0
   isRecoiling: 0
