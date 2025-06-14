@@ -1,2 +1,18 @@
 fileFormatVersion: 2
 guid: 7ddb78fd84e35e541a85960b06e470c7
+MonoImporter:
+  externalObjects: {}
+  serializedVersion: 2
+  defaultReferences:
+  - startPoint: {instanceID: 0}
+  - gameplayScenesToLoad: {instanceID: 0}
+  - currentBench: {instanceID: 0}
+  - saveGameEvent: {fileID: 11400000, guid: 418c87519ab0445dfa185caff4335ddd, type: 2}
+  - loadGameEvent: {fileID: 11400000, guid: 2fe71115243604402beb35c175c05607, type: 2}
+  - benchSet: {fileID: 11400000, guid: 3097019ec475544d9ad950a34227b4bc, type: 2}
+  - benchIndexVariable: {fileID: 11400000, guid: 287ee11126a84422cb82fba9dd6e7592, type: 2}
+  executionOrder: 0
+  icon: {instanceID: 0}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

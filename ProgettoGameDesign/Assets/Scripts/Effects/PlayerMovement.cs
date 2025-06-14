@@ -166,7 +166,7 @@ public class PlayerMovement : MonoBehaviour
 
 
         rb.linearVelocity = newVelocity;
-        Debug.Log("Velocity: " + rb.linearVelocity);
+        
         animator.SetBool("Walking", rb.linearVelocity.x != 0 && IsGrounded());
         if (directionalInput.x>0 || directionalInput.x<0)
         {

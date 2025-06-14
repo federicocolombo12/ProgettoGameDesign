@@ -14,9 +14,9 @@ public class Bench : Interactable
     public override void Interact(GameObject interactor)
     {
         base.Interact(interactor);
-        Debug.Log("Interacting with bench");
+        Debug.Log("Interacting with bench: " + benchIndexVariable);
         benchIndexVariable.Value = benchIndex;
-        GameManager.Instance.SetBench(this);
+        GameManager.Instance.SetBench();
         CameraManager.Instance.SetCamera(benchCamera);
         Camera.main.transform.position = transform.position;
         EffectManager.Instance.PlayOneShot(interactEffect.GetComponent<ParticleSystem>(), transform.position);

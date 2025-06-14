@@ -15,7 +15,7 @@ public class GameManager : MonoBehaviour
     public Vector2 respawnPoint;
     public string currentGameplayScene;
     bool loaded;
-    [SerializeField] Transform startPoint;
+    
     [SerializeField] ScenesToLoad gameplayScenesToLoad;
     [SerializeField] Bench currentBench;
     [SerializeField] Bench[] benchList;
@@ -45,10 +45,9 @@ public class GameManager : MonoBehaviour
     }
     private void Start()
     {
-        if (debugFinished)
-        {
-            Player.Instance.transform.position = startPoint.position;
-        }
+        
+        
+        Debug.Log(saveGameEvent);
     }
     void OnEnable()
     {
@@ -94,21 +93,13 @@ public class GameManager : MonoBehaviour
         }
 
 
-        respawnPoint = currentBench != null ? currentBench.transform.position : SetStartPoint();
+        respawnPoint =currentBench.transform.position;
         CameraManager.Instance.SetCamera(currentBench.benchCamera);
         player.RespawnAt(respawnPoint);
         SceneFader.Instance.StartCoroutine(SceneFader.Instance.Fade(SceneFader.FadeDirection.Out));
         loaded = false;
     }
-    private Vector2 SetStartPoint()
-    {
-        DOVirtual.DelayedCall(0.1f, () =>
-        {
-            CameraManager.Instance.SetCamera(0);
-        });
-
-        return startPoint.position;
-    }
+    
 
     private void ResetScene()
     {
@@ -129,10 +120,10 @@ public class GameManager : MonoBehaviour
         }
         return null;
     }
-    public void SetBench(Bench newBench)
+    public void SetBench()
     {
 
-
+        Debug.Log("Save Game Event Raised" + saveGameEvent.name);
         saveGameEvent.Raise();
 
 
