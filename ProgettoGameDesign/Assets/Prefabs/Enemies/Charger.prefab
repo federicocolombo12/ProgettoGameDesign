@@ -227,11 +227,11 @@ MonoBehaviour:
   chargeDuration: 3
   obstacleLayer:
     serializedVersion: 2
-    m_Bits: 35328
+    m_Bits: 35332
   jumpForce: 30
   whatIsGround:
     serializedVersion: 2
-    m_Bits: 35336
+    m_Bits: 35340
 --- !u!1001 &2459726884551737858
 PrefabInstance:
   m_ObjectHideFlags: 0

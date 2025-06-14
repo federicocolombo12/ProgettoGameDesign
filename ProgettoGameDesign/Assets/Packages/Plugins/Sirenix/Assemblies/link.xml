@@ -3,4 +3,8 @@
        <assembly fullname="Sirenix.Serialization.Config" preserve="all"/>
        <assembly fullname="Sirenix.Serialization" preserve="all"/>
        <assembly fullname="Sirenix.Utilities" preserve="all"/>
+	<assembly fullname="Assembly-CSharp">
+		<type fullname="BehaviorDesigner.Runtime.BehaviorTree" preserve="all"/>
+		<type fullname="BehaviorDesigner.Runtime.Tasks.*" preserve="all"/>
+	</assembly>
 </linker>
