@@ -17,7 +17,7 @@ MonoBehaviour:
   index: 0
   abilityType: 1
   maxHealth: 5
-  damageMultiplier: 3
+  damageMultiplier: 1
   moveSpeed: 8
   jumpForce: 18
   jumpCount: 0

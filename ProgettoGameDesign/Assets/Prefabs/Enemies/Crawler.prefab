@@ -179,8 +179,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   sr: {fileID: 7506218011817709974}
-  health: 5
-  maxHealth: 5
+  health: 8
+  maxHealth: 8
   recoilLenght: 0
   recoilFactor: 0
   isRecoiling: 0
@@ -196,7 +196,7 @@ MonoBehaviour:
   damage: 1
   orangeBlood: {fileID: 1018504420545732665, guid: 8e88e1f612b228c4891428b837d80d61, type: 3}
   weakTo: {fileID: 11400000, guid: 34644fc0004a56a45927fc9ad2f602ce, type: 2}
-  immuneTo: {fileID: 11400000, guid: a85abe56df98ddd489746a5ed5666703, type: 2}
+  immuneTo: {fileID: 0}
   weakToEffect: {fileID: 5569289640993081841, guid: 6dbb3939c6bb00b4eae30e45299b42df, type: 3}
   damageMultiplier: 2
   flipWaitTime: 0.5

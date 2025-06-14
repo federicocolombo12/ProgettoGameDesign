@@ -310,8 +310,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   sr: {fileID: 3082681272420044538}
-  health: 50
-  maxHealth: 100
+  health: 20
+  maxHealth: 20
   recoilLenght: 0.5
   recoilFactor: 1
   isRecoiling: 0
@@ -328,8 +328,8 @@ MonoBehaviour:
   orangeBlood: {fileID: 4792805946373802877, guid: 99392edfef6f7574fbd4cc2077f8cc06, type: 3}
   weakTo: {fileID: 0}
   immuneTo: {fileID: 0}
-  weakToEffect: {fileID: 0}
-  damageMultiplier: 0
+  weakToEffect: {fileID: 5569289640993081841, guid: 6dbb3939c6bb00b4eae30e45299b42df, type: 3}
+  damageMultiplier: 2
   projectilePrefab: {fileID: 693101946130715330, guid: 0d3649e3895df481f89628e805bcb6b7, type: 3}
   projectileSpeed: 5
   projectileTransform: {fileID: 6802901137642203119}

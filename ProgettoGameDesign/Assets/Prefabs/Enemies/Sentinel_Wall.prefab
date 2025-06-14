@@ -256,6 +256,7 @@ MonoBehaviour:
     serializedVersion: 2
     m_Bits: 1024
   flashMaterial: {fileID: 2100000, guid: d28059583e1a40249ad8daa3586d8028, type: 2}
+  deathEffect: {fileID: 0}
   healthImage: {fileID: 2964611911367411770}
   damage: 1
   orangeBlood: {fileID: 1018504420545732665, guid: 8e88e1f612b228c4891428b837d80d61, type: 3}
@@ -454,12 +455,28 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 171226383725723840}
     - target: {fileID: 2508846079777664993, guid: 7b3bd716dd438b342aa73588e44b5dbe, type: 3}
+      propertyPath: health
+      value: 15
+      objectReference: {fileID: 0}
+    - target: {fileID: 2508846079777664993, guid: 7b3bd716dd438b342aa73588e44b5dbe, type: 3}
+      propertyPath: maxHealth
+      value: 15
+      objectReference: {fileID: 0}
+    - target: {fileID: 2508846079777664993, guid: 7b3bd716dd438b342aa73588e44b5dbe, type: 3}
       propertyPath: weakToEffect
       value: 
       objectReference: {fileID: 5569289640993081841, guid: 6dbb3939c6bb00b4eae30e45299b42df, type: 3}
     - target: {fileID: 2561933346792616601, guid: 7b3bd716dd438b342aa73588e44b5dbe, type: 3}
       propertyPath: m_Layer
       value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 2651900717101519260, guid: 7b3bd716dd438b342aa73588e44b5dbe, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -1.45
+      objectReference: {fileID: 0}
+    - target: {fileID: 2651900717101519260, guid: 7b3bd716dd438b342aa73588e44b5dbe, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -0.48
       objectReference: {fileID: 0}
     - target: {fileID: 2724791294963458816, guid: 7b3bd716dd438b342aa73588e44b5dbe, type: 3}
       propertyPath: gizmoViewMode

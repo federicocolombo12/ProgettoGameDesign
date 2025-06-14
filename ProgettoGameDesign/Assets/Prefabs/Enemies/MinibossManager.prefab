@@ -501,7 +501,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   sr: {fileID: 8349207404329976639}
-  health: 20
+  health: 50
   maxHealth: 50
   recoilLenght: 0
   recoilFactor: 0
