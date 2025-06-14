@@ -117,13 +117,12 @@ public class PlayerMovement : MonoBehaviour
     // Update is called once per frame
     public void UpdateVariables()
     {
-        DOVirtual.DelayedCall(0.1f, () =>
-        {
+       
             animator = Player.Instance.animator;
             speed = Player.Instance.playerTransformation.moveSpeed;
             jumpForce = Player.Instance.playerTransformation.jumpForce;
             maxJumpCount = Player.Instance.playerTransformation.jumpCount;
-        });
+        
         
     }
     private void TurnCheck(Vector2 directionalInput)
@@ -228,7 +227,7 @@ public class PlayerMovement : MonoBehaviour
                     rb.gravityScale = gravityScale;
                 }
                 
-                 animator.SetBool("SpAbility", false);
+                 animator?.SetBool("SpAbility", false);
                 
             }
 

@@ -64,7 +64,7 @@ public class PlayerHealth : MonoBehaviour
 
     void UpdateVariables()
     {
-        DOVirtual.DelayedCall(0.1f, () => animator = Player.Instance.animator);
+         animator = Player.Instance.animator;
     }
 
     void SetDamageMultiplier()
