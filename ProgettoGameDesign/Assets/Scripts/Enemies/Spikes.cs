@@ -18,11 +18,12 @@ public class Spikes : MonoBehaviour
     IEnumerator RespawnPoint()
     {
         Player.Instance.pState.cutscene = true;
+        Player.Instance.playerHealth.TakeDamage(1);
         Player.Instance.pState.invincible = true;
         Player.Instance.rb.linearVelocity = Vector2.zero;
         Time.timeScale = 0f;
         StartCoroutine(UiManager.Instance.sceneFader.Fade(SceneFader.FadeDirection.In));
-        Player.Instance.playerHealth.TakeDamage(1);
+        
         yield return new WaitForSecondsRealtime(respawnTime);
         
         Player.Instance.transform.position = GameManager.Instance.platformRespawnPoint;
