@@ -129,7 +129,7 @@ public class PlayerHealth : MonoBehaviour
 
     public void TakeDamage(float damage)
     {
-        if (pState.alive)
+        if (pState.alive && !pState.invincible)
         {
             Health -= Mathf.RoundToInt(damage * damageMultiplier);
             CameraManager.Instance.ShakeCamera(0.1f);
