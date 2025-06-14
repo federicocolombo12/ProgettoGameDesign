@@ -8,6 +8,7 @@ public class UpgradeAbility : MonoBehaviour
     [SerializeField] PlayerTransformation.AbilityType abilityToUpgrade;
     [SerializeField] Tutorial tutorialToShow;
     [SerializeField] TutorialEvents tutorialEvents;
+    
     public static event Action<PlayerTransformation.AbilityType> OnAbilityUpgraded;
     void OnTriggerEnter2D(Collider2D collision)
     {

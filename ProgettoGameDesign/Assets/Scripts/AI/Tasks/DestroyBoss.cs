@@ -11,6 +11,7 @@ using UnityEngine;
         public float bleedTime = 2.0f;
         public ParticleSystem bleedEffect;
         public ParticleSystem explodeEffect;
+    [SerializeField] private SwitchableObject switchableObject;
 
         private bool isDestroyed;
 
@@ -20,6 +21,7 @@ using UnityEngine;
             DOVirtual.DelayedCall(bleedTime, () =>
             {
                 EffectManager.Instance.PlayOneShot(explodeEffect, transform.position);
+                switchableObject?.Open();
                 CameraManager.Instance.ShakeCamera(0.7f);
                 isDestroyed = true;
                 Object.Destroy(gameObject);

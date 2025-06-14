@@ -17,6 +17,8 @@ public class Bench : Interactable
         benchIndexVariable.Value = benchIndex;
         GameManager.Instance.SetBench(this);
         CameraManager.Instance.SetCamera(benchCamera);
+        Camera.main.transform.position = transform.position;
+
 
     }
 }

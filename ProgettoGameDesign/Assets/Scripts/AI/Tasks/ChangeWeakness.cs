@@ -12,7 +12,7 @@ public class ChangeWeakness : EnemyAction
 {
 	private int weakness;
 	[SerializeField] Color[] weaknessColors;
-	
+	[SerializeField] SpriteRenderer weaponSr;
 	[SerializeField] List<PlayerTransformation> playerTransformations; // List of possible transformations
 	[SerializeField] Image healthBarWeaknessImage;
 	[SerializeField] float attackDuration = 1f;
@@ -24,15 +24,15 @@ public class ChangeWeakness : EnemyAction
 		{
 			case 0:
 				healthBarWeaknessImage.color = weaknessColors[0];
-				enemy.sr.color = weaknessColors[0];
+				weaponSr.color = weaknessColors[0];
 				break;
 			case 1:
 				healthBarWeaknessImage.color = weaknessColors[1];
-				enemy.sr.color = weaknessColors[1];
+				weaponSr.color = weaknessColors[1];
 				break;
 			case 2:
 				healthBarWeaknessImage.color = weaknessColors[2];
-				enemy.sr.color = weaknessColors[2];
+				weaponSr.color = weaknessColors[2];
 				break;
 			default:
 				Debug.LogError("Invalid weakness value: " + weakness);

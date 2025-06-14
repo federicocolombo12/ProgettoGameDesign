@@ -177,5 +177,10 @@ public class CameraManager : MonoBehaviour
         currentCamera.enabled = true;
         currentComposer.TargetOffset = _startingTrackedObjectOffset;
         currentCamera.GetComponent<CinemachineConfiner2D>().InvalidateBoundingShapeCache();
+        DOVirtual.DelayedCall(0.1f, () =>
+        {
+            currentCamera.ForceCameraPosition(Player.Instance.transform.position, currentCamera.transform.rotation);
+        }, false);
+        
     }
 }
