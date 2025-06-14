@@ -1591,6 +1591,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 925560524222670874, guid: dd124a0ba37d77b409357eabb4970896, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -42.91
+      objectReference: {fileID: 0}
     - target: {fileID: 2098648762049072556, guid: dd124a0ba37d77b409357eabb4970896, type: 3}
       propertyPath: m_Name
       value: Manager
@@ -1637,6 +1641,18 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5736177118791842018, guid: dd124a0ba37d77b409357eabb4970896, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8495782708223436279, guid: dd124a0ba37d77b409357eabb4970896, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8495782708223436279, guid: dd124a0ba37d77b409357eabb4970896, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8495782708223436279, guid: dd124a0ba37d77b409357eabb4970896, type: 3}
+      propertyPath: m_LocalPosition.z
       value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
@@ -2590,11 +2606,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1653175155450436630, guid: 1e5e95d1c8d2a664aa123a5933f1c74e, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 72.8
+      value: -30.63
       objectReference: {fileID: 0}
     - target: {fileID: 1653175155450436630, guid: 1e5e95d1c8d2a664aa123a5933f1c74e, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -18.2
+      value: 1.58
       objectReference: {fileID: 0}
     - target: {fileID: 1653175155450436630, guid: 1e5e95d1c8d2a664aa123a5933f1c74e, type: 3}
       propertyPath: m_LocalPosition.z
@@ -2862,7 +2878,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6697238519948228974, guid: 1e5e95d1c8d2a664aa123a5933f1c74e, type: 3}
       propertyPath: wallLayer.m_Bits
-      value: 2569
+      value: 2572
       objectReference: {fileID: 0}
     - target: {fileID: 6712740809553697042, guid: 1e5e95d1c8d2a664aa123a5933f1c74e, type: 3}
       propertyPath: m_LocalPosition.x
