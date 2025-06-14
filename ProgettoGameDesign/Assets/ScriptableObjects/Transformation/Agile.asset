@@ -20,7 +20,7 @@ MonoBehaviour:
   damageMultiplier: 2
   moveSpeed: 10
   jumpForce: 20
-  jumpCount: 1
+  jumpCount: 0
   dashSpeed: 10
   attackDamage: 0.5
   attackSpeed: 0

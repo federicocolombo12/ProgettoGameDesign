@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ea85109bd69c5fd4dac11376dcb87800, type: 3}
   m_Name: TutorialSparo
   m_EditorClassIdentifier: 
-  tutorialImage: {fileID: -2950031364595783801, guid: d234688aa4f0caf47b442704bbb49a2b, type: 3}
-  tutorialTitle: Dash
+  tutorialImage: {fileID: 21300000, guid: 2c961366528f28c458c619797d0bbb2f, type: 3}
+  tutorialTitle: 
   tutorialText: Dash to reach the more distant platforms.
   unlocked: 0
