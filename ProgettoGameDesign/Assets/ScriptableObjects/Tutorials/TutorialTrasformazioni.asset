@@ -14,4 +14,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   tutorialImage: {fileID: 7709380569392148631, guid: fe1cf0ce0732a6947ae495647d7216ae, type: 3}
   tutorialTitle: Trasformation
-  tutorialText: hit R1-L1 to change the current transformation.
+  tutorialText: hit R1-L1 to change the current transformation. Each transformation
+    has unique characteristics.
+  unlocked: 0
