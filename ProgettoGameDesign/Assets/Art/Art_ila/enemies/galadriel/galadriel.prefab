@@ -532,12 +532,14 @@ MonoBehaviour:
         fieldNameHash: 
         startIndex: 
         dataPosition: 
-        unityObjects: []
+        unityObjects:
+        - {fileID: 2651900717101519260}
+        - {fileID: 7029223364542620381, guid: 0d3649e3895df481f89628e805bcb6b7, type: 3}
         byteData: 
         byteDataArray: 
-      Version: 1.7.12
-  gizmoViewMode: 0
-  showBehaviorDesignerGizmo: 0
+      Version: 1.7.11
+  gizmoViewMode: 2
+  showBehaviorDesignerGizmo: 1
 --- !u!4 &8957228511789724327 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: -7552582706839291426, guid: 04c271649d382fe44a2cdfd69e9171bf, type: 3}

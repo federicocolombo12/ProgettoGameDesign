@@ -13,7 +13,7 @@ public class Archer_Base : Enemy
     public void Shoot()
     {
         GameObject projectile=Instantiate(projectilePrefab, projectileTransform.position, Quaternion.identity);
-        Vector2 projectileDirection = (player.transform.position - projectileTransform.position).normalized;
+        Vector2 projectileDirection = Vector2.right;
         projectile.GetComponent<Rigidbody2D>().AddForce(projectileDirection * projectileSpeed, ForceMode2D.Impulse);
     }
 

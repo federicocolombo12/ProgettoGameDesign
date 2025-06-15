@@ -1,11 +1,19 @@
 using UnityEngine;
-
+using BehaviorDesigner.Runtime;
 public class Sentinel : Enemy
 {
     [SerializeField] private GameObject projectilePrefab;
     [SerializeField] private float projectileSpeed;
     [SerializeField] private Transform projectileTransform;
-    
+
+    protected override void Start()
+    {
+        base.Start();
+        var bt = GetComponent<BehaviorTree>();
+        bt.StartWhenEnabled = true;
+        bt.EnableBehavior(); // chiamalo in Start o dopo un delay
+
+    }
     public void Shoot()
     {
         if (player == null)
@@ -15,7 +23,7 @@ public class Sentinel : Enemy
         }
 
         GameObject projectile = Instantiate(projectilePrefab, projectileTransform.position, Quaternion.identity);
-        Vector2 projectileDirection = (player.transform.position - projectileTransform.position).normalized;
+        Vector2 projectileDirection = Vector2.left*transform.localScale.x;
         projectile.GetComponent<Rigidbody2D>().AddForce(projectileDirection * projectileSpeed, ForceMode2D.Impulse);
     }
     

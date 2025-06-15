@@ -487,6 +487,10 @@ PrefabInstance:
       value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 2724791294963458816, guid: 7b3bd716dd438b342aa73588e44b5dbe, type: 3}
+      propertyPath: mBehaviorSource.mTaskData.Version
+      value: 1.7.11
+      objectReference: {fileID: 0}
+    - target: {fileID: 2724791294963458816, guid: 7b3bd716dd438b342aa73588e44b5dbe, type: 3}
       propertyPath: mBehaviorSource.mTaskData.fieldSerializationData.unityObjects.Array.size
       value: 2
       objectReference: {fileID: 0}

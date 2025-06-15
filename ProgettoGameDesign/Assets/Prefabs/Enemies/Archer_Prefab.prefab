@@ -273,7 +273,7 @@ MonoBehaviour:
   logTaskChanges: 0
   group: 0
   resetValuesOnRestart: 0
-  externalBehavior: {fileID: 0}
+  externalBehavior: {fileID: 11400000, guid: a9c22decfebc720499a416648e80f73c, type: 2}
   mBehaviorSource:
     behaviorName: Archer
     behaviorDescription: 
