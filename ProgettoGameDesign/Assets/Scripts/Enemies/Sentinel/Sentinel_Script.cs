@@ -6,13 +6,14 @@ public class Sentinel : Enemy
     [SerializeField] private float projectileSpeed;
     [SerializeField] private Transform projectileTransform;
 
-    protected override void Start()
+    private void OnEnable()
     {
-        base.Start();
-        var bt = GetComponent<BehaviorTree>();
-        bt.StartWhenEnabled = true;
-        bt.EnableBehavior(); // chiamalo in Start o dopo un delay
+        
 
+        if (GetComponent<BehaviorTree>() != null)
+        {
+            GetComponent<BehaviorTree>().EnableBehavior();
+        }
     }
     public void Shoot()
     {
