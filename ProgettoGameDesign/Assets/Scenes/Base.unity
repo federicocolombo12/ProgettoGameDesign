@@ -1574,6 +1574,14 @@ PrefabInstance:
       propertyPath: CustomBlends
       value: 
       objectReference: {fileID: 11400000, guid: df4da82a1be30884eb2da20a582fb39a, type: 2}
+    - target: {fileID: 8709016159537575846, guid: b1e2a26605ddb5743ab4af9d547b28a3, type: 3}
+      propertyPath: UpdateMethod
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8709016159537575846, guid: b1e2a26605ddb5743ab4af9d547b28a3, type: 3}
+      propertyPath: BlendUpdateMethod
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects:
     - {fileID: 77197181048876167, guid: b1e2a26605ddb5743ab4af9d547b28a3, type: 3}
