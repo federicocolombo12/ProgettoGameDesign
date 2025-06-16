@@ -1522,6 +1522,10 @@ PrefabInstance:
       propertyPath: m_LocalPosition.y
       value: 5.09995
       objectReference: {fileID: 0}
+    - target: {fileID: 6274697143802695307, guid: b1e2a26605ddb5743ab4af9d547b28a3, type: 3}
+      propertyPath: ImpulseDefinition.ImpulseShape
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 7281744561779612869, guid: b1e2a26605ddb5743ab4af9d547b28a3, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0
@@ -1580,7 +1584,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8709016159537575846, guid: b1e2a26605ddb5743ab4af9d547b28a3, type: 3}
       propertyPath: BlendUpdateMethod
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects:
@@ -3100,6 +3104,10 @@ PrefabInstance:
     - target: {fileID: 4924826173201959246, guid: 1e5e95d1c8d2a664aa123a5933f1c74e, type: 3}
       propertyPath: m_LocalRotation.z
       value: -0.0076113497
+      objectReference: {fileID: 0}
+    - target: {fileID: 4980118878545884433, guid: 1e5e95d1c8d2a664aa123a5933f1c74e, type: 3}
+      propertyPath: attackTimeScale
+      value: 0.1
       objectReference: {fileID: 0}
     - target: {fileID: 5234595097808888867, guid: 1e5e95d1c8d2a664aa123a5933f1c74e, type: 3}
       propertyPath: m_Enabled
