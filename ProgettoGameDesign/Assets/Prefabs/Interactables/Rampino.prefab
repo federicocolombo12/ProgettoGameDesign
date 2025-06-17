@@ -153,6 +153,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   interactableUi: {fileID: 0}
   interactionEffect: {fileID: 0}
+  requiredAbility: 2
   hookOffset: 2
 --- !u!120 &7967295452070384794
 LineRenderer:

@@ -148,7 +148,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: cc604e93c4b99c24195d039ee346ce45, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  rockEffect: {fileID: 7097757957843592753, guid: acc118949b61e03489fb9bd2bb150553, type: 3}
+  interactableUi: {fileID: 0}
+  interactionEffect: {fileID: 0}
+  requiredAbility: 4
 --- !u!1001 &3628074481194161506
 PrefabInstance:
   m_ObjectHideFlags: 0
