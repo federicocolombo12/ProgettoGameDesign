@@ -1,4 +1,5 @@
 using System.Collections;
+using System.Collections.Generic;
 using UnityEngine;
 
 public class AudioManager : MonoBehaviour
@@ -9,6 +10,9 @@ public class AudioManager : MonoBehaviour
     public AudioSource musicSource;
     public SfxEventChannel sfxChannel;
     public MusicEventChannel musicChannel;
+    [SerializeField] float audioCooldown = 0.1f;
+
+    private HashSet<AudioClip> cooldownClips = new HashSet<AudioClip>();
 
     private void Awake()
     {
@@ -27,11 +31,32 @@ public class AudioManager : MonoBehaviour
         musicChannel.OnMusicChangeRequested -= PlayMusic;
     }
 
-    public void PlaySFX(SfxData data)
+    public void PlaySFX(SfxData data, bool randomizePitch)
+{
+    if (cooldownClips.Contains(data.clip))
+        return;
+
+    sfxSource.pitch = data.pitch;
+    if (randomizePitch)
     {
-        sfxSource.pitch = data.pitch;
-        sfxSource.PlayOneShot(data.clip, data.volume);
+        sfxSource.pitch = Random.Range(data.pitch - 0.1f, data.pitch + 0.1f);
     }
+    sfxSource.PlayOneShot(data.clip, data.volume);
+    Debug.Log("Playing SFX: " + data.clip.name);
+
+       
+
+    // Start cooldown coroutine
+        StartCoroutine(HandleCooldown(data.clip, audioCooldown));
+}
+
+private IEnumerator HandleCooldown(AudioClip clip, float cooldown)
+{
+    cooldownClips.Add(clip);
+    yield return new WaitForSeconds(cooldown);
+    cooldownClips.Remove(clip);
+}
+
     public void PlayMusic(AudioClip newClip, float fadeDuration)
     {
         StartCoroutine(FadeMusic(newClip, fadeDuration));

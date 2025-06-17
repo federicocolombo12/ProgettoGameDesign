@@ -44,7 +44,7 @@ public class PlayerBreakableRock : MonoBehaviour
             Player.Instance.animator.SetBool("SpAbility", true);
         }
 
-        AudioManager.Instance.sfxChannel.RaiseEvent(breakRockSfx);
+        AudioManager.Instance.sfxChannel.RaiseEvent(breakRockSfx, true);
         CameraManager.Instance.ShakeCamera(0.3f);
 
         Vector2 direction = (targetRock.position - transform.position).normalized;

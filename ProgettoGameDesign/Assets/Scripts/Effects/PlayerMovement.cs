@@ -28,6 +28,8 @@ public class PlayerMovement : MonoBehaviour
 
     [TabGroup("Jumping"), LabelText("Jump Buffer Frames")]
     [SerializeField] private float jumpBufferFrames;
+    [TabGroup("Jumping"), LabelText("Jump Audio")]
+    [SerializeField] private SfxData jumpAudio;
     private float jumpBufferCounter = 0;
 
     [TabGroup("Jumping"), LabelText("Coyote Time")]
@@ -258,7 +260,7 @@ public class PlayerMovement : MonoBehaviour
         if (!jumpInput && rb.linearVelocity.y > 0)
             {
                 rb.AddForce(new Vector2(0, -jumpForce * jumpCutMultiplier), ForceMode2D.Impulse);
-            
+                
 
             
                 pState.jumping = false;
@@ -271,14 +273,15 @@ public class PlayerMovement : MonoBehaviour
                 if (coyoteTimeCounter > 0 && jumpBufferCounter > 0)
                 {
                     rb.linearVelocity = new Vector2(rb.linearVelocity.x, jumpForce);
-
-
+                    
+                    
                     pState.jumping = true;
 
 
                 }
                 else if (!IsGrounded() && jumpCount < maxJumpCount && jumpInput)
                 {
+                    
                     pState.jumping = true;
                     jumpCount++;
                     rb.linearVelocity = new Vector2(rb.linearVelocity.x, jumpForce* doubleJumpBoost);
@@ -316,10 +319,12 @@ public class PlayerMovement : MonoBehaviour
             coyoteTimeCounter -= Time.deltaTime;
         }
 
-        if (jumpPressed && !pState.hooked &&  !pState.dashing)
+        if (jumpPressed && !pState.hooked && !pState.dashing)
         {
             jumpBufferCounter = jumpBufferFrames;
-           
+
+            AudioManager.Instance.sfxChannel.RaiseEvent(jumpAudio, true);
+            
            
             
         }
@@ -328,9 +333,9 @@ public class PlayerMovement : MonoBehaviour
             if (!pState.hooked && !pState.dashing)
             {
 
-                jumpBufferCounter -= Time.deltaTime*10;
-                
-                
+                jumpBufferCounter -= Time.deltaTime * 10;
+
+
             }
         }
         
