@@ -1,5 +1,6 @@
 using UnityEngine;
 using DG.Tweening;
+using System.Linq;
 
 public class Interactable : MonoBehaviour, IInteractable
 {
@@ -9,14 +10,15 @@ public class Interactable : MonoBehaviour, IInteractable
     protected bool isVisible = false;
     [SerializeField] protected CanvasGroup interactableUi;
     [SerializeField] protected ParticleSystem interactionEffect;
+    [SerializeField] PlayerTransformation.AbilityType requiredAbility = PlayerTransformation.AbilityType.None;
 
     public virtual void Start()
     {
         interactableUi = GetComponentInChildren<CanvasGroup>();
         interactableUi.DOFade(0, 0f);
         interactionEffect = GetComponentInChildren<ParticleSystem>();
-        
-        
+
+
     }
 
     public virtual void Update()
@@ -44,8 +46,10 @@ public class Interactable : MonoBehaviour, IInteractable
 
     public virtual void Detected(GameObject interactor)
     {
+        if (!Player.Instance.playerTransformation.abilities.Contains(requiredAbility))
+        return;
         if (interactableUi == null)
-            return;
+                return;
 
         // Reset il timer
         timeSinceLastDetection = 0f;
@@ -62,6 +66,11 @@ public class Interactable : MonoBehaviour, IInteractable
     public virtual void Interact(GameObject interactor)
     {
         // Override nei figli
+        if (!Player.Instance.playerTransformation.abilities.Contains(requiredAbility))
+        {
+            Debug.Log("Non hai la trasformazione corretta per interagire con questo oggetto!");
+            return;
+        }
         interactableUi.DOFade(0, 0.2f).OnComplete(() =>
         {
             interactableUi.gameObject.SetActive(false);

@@ -10,6 +10,7 @@ public class PlayerBreakableRock : MonoBehaviour
     [SerializeField] private float chargeSpeed = 10f;
     [SerializeField] private float chargeDuration = 0.5f;
     [SerializeField] private SfxData breakRockSfx;
+    [SerializeField] ParticleSystem chargeEffect;
 
     private bool isCharging = false;
     private Transform targetRock;
@@ -72,6 +73,8 @@ public class PlayerBreakableRock : MonoBehaviour
     {
         if (isCharging && collision.transform == targetRock)
         {
+            
+            EffectManager.Instance.PlayOneShot(chargeEffect, transform.position);
             Destroy(targetRock.gameObject);
             isCharging = false;
         }

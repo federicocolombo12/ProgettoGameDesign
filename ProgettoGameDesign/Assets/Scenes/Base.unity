@@ -2935,11 +2935,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1653175155450436630, guid: 1e5e95d1c8d2a664aa123a5933f1c74e, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -27.4
+      value: 94.2
       objectReference: {fileID: 0}
     - target: {fileID: 1653175155450436630, guid: 1e5e95d1c8d2a664aa123a5933f1c74e, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 4.5
+      value: 5.4
       objectReference: {fileID: 0}
     - target: {fileID: 1653175155450436630, guid: 1e5e95d1c8d2a664aa123a5933f1c74e, type: 3}
       propertyPath: m_LocalPosition.z
@@ -2989,6 +2989,14 @@ PrefabInstance:
       propertyPath: m_Offset.y
       value: -0.2
       objectReference: {fileID: 0}
+    - target: {fileID: 1953520300672907571, guid: 1e5e95d1c8d2a664aa123a5933f1c74e, type: 3}
+      propertyPath: breakRockSfx
+      value: 
+      objectReference: {fileID: 11400000, guid: e91c75e08a8ff4598a523fe80c0fde59, type: 2}
+    - target: {fileID: 1953520300672907571, guid: 1e5e95d1c8d2a664aa123a5933f1c74e, type: 3}
+      propertyPath: chargeEffect
+      value: 
+      objectReference: {fileID: 1887303755996554667, guid: 1f653d7adce4df140a311cec19cbf40b, type: 3}
     - target: {fileID: 2670939194795898005, guid: 1e5e95d1c8d2a664aa123a5933f1c74e, type: 3}
       propertyPath: jumpAudio
       value: 
