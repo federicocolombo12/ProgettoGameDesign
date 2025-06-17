@@ -13,7 +13,7 @@ GameObject:
   - component: {fileID: 5679906420602367020}
   - component: {fileID: 1127312474444860185}
   m_Layer: 0
-  m_Name: VFX_Charge_02_OS
+  m_Name: VFX_Charge_02_OS 1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0

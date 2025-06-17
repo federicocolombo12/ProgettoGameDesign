@@ -9,6 +9,7 @@ public class Interactable : MonoBehaviour, IInteractable
 
     protected bool isVisible = false;
     [SerializeField] protected CanvasGroup interactableUi;
+    [SerializeField] protected ParticleSystem detectedEffect;
     [SerializeField] protected ParticleSystem interactionEffect;
     [SerializeField] PlayerTransformation.AbilityType requiredAbility = PlayerTransformation.AbilityType.None;
 
@@ -16,7 +17,7 @@ public class Interactable : MonoBehaviour, IInteractable
     {
         interactableUi = GetComponentInChildren<CanvasGroup>();
         interactableUi.DOFade(0, 0f);
-        interactionEffect = GetComponentInChildren<ParticleSystem>();
+        detectedEffect = GetComponentInChildren<ParticleSystem>();
 
 
     }
@@ -34,8 +35,8 @@ public class Interactable : MonoBehaviour, IInteractable
                     interactableUi.DOFade(0, 0.2f).OnComplete(() =>
                     {
                         interactableUi.gameObject.SetActive(false);
-                        interactionEffect?.Stop();
-                        interactionEffect?.Clear();
+                        detectedEffect?.Stop();
+                        detectedEffect?.Clear();
                     });
 
                     isVisible = false;
@@ -57,7 +58,7 @@ public class Interactable : MonoBehaviour, IInteractable
         if (!isVisible)
         {
             interactableUi.gameObject.SetActive(true);
-            interactionEffect?.Play();
+            detectedEffect?.Play();
             interactableUi.DOFade(1, 0.2f);
             isVisible = true;
         }
@@ -75,5 +76,10 @@ public class Interactable : MonoBehaviour, IInteractable
         {
             interactableUi.gameObject.SetActive(false);
         });
+        if (interactionEffect != null)
+        {
+             EffectManager.Instance.PlayOneShot(interactionEffect, transform.position);
+        }
+       
     }
 }
