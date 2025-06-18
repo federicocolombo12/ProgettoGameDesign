@@ -3,13 +3,13 @@ using UnityEngine;
 using UnityEngine.SceneManagement;
 using UnityEngine.UI;
 using DG.Tweening;
+using TMPro;
 
 public class SceneFader : MonoBehaviour
 {
     private CanvasGroup fadeImage;
-    
-    [SerializeField]
-    public float fadeTime = 1.0f;
+    public TextMeshProUGUI textMeshPro;
+   
     public static SceneFader Instance { get; private set; }
 
     public enum FadeDirection
@@ -22,6 +22,7 @@ public class SceneFader : MonoBehaviour
     {
         fadeImage = GetComponent<CanvasGroup>();
         fadeImage.alpha = 0f; // start transparent
+       
         if (SceneFader.Instance != null && SceneFader.Instance != this)
         {
             Destroy(gameObject);
@@ -33,7 +34,7 @@ public class SceneFader : MonoBehaviour
     }
     
 
-    public IEnumerator Fade(FadeDirection _fadeDirection)
+    public IEnumerator Fade(FadeDirection _fadeDirection, float fadeTime=1f, bool callFromRespawn=true)
     {
         if (fadeImage == null)
         {
@@ -41,11 +42,12 @@ public class SceneFader : MonoBehaviour
             yield break;
         }
         float _targetAlpha = _fadeDirection == FadeDirection.Out ? 0 : 1;
+        textMeshPro.enabled = callFromRespawn;
 
-        
 
         // Avvia il tween e aspetta che finisca
         Tween tween = fadeImage.DOFade(_targetAlpha, fadeTime).SetEase(Ease.InOutQuad);
+      
         yield return tween.WaitForCompletion();
 
        

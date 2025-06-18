@@ -22,13 +22,13 @@ public class Spikes : MonoBehaviour
         Player.Instance.pState.invincible = true;
         Player.Instance.rb.linearVelocity = Vector2.zero;
         Time.timeScale = 0f;
-        StartCoroutine(UiManager.Instance.sceneFader.Fade(SceneFader.FadeDirection.In));
+        StartCoroutine(UiManager.Instance.sceneFader.Fade(SceneFader.FadeDirection.In,0.5f, false));
         
         yield return new WaitForSecondsRealtime(respawnTime);
         
         Player.Instance.transform.position = GameManager.Instance.platformRespawnPoint;
-        StartCoroutine(UiManager.Instance.sceneFader.Fade(SceneFader.FadeDirection.Out));
-        yield return new WaitForSecondsRealtime(UiManager.Instance.sceneFader.fadeTime);
+        StartCoroutine(UiManager.Instance.sceneFader.Fade(SceneFader.FadeDirection.Out,1f,  false));
+        yield return new WaitForSecondsRealtime(1f);
         Player.Instance.pState.cutscene = false;
         Player.Instance.pState.invincible = false;
         Time.timeScale = 1f;
