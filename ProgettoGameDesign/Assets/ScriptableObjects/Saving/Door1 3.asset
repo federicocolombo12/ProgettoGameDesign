@@ -12,3 +12,4 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d98c2b119962faa4da97b003614a595f, type: 3}
   m_Name: Door1 3
   m_EditorClassIdentifier: 
+  isOpen: 0

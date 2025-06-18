@@ -126,6 +126,10 @@ public class PlayerTransform : MonoBehaviour
 
         if (effectParticle != null)
         {
+            //change the color of effectParticle
+            var effectMain = effectParticle.main;
+            effectMain.startColor = transformationColors[transformationIndex];
+            // Riproduci l'effetto
             EffectManager.Instance.PlayOneShot(effectParticle, transform.position);
         }
 

@@ -810,7 +810,7 @@ PrefabInstance:
     - target: {fileID: 639063560507615671, guid: e22b0d7e74eef7041969717eaf376ee1, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgument
       value: 
-      objectReference: {fileID: 11400000, guid: 2471707350cc7824798aefec7f48ce8b, type: 2}
+      objectReference: {fileID: 11400000, guid: dd5316671aa1347549010edd2a359d61, type: 2}
     - target: {fileID: 639063560507615671, guid: e22b0d7e74eef7041969717eaf376ee1, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_StringArgument
       value: 
