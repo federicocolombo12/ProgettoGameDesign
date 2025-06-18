@@ -189,7 +189,7 @@ public class PlayerMovement : MonoBehaviour
 
     public bool IsTouchingStickyWall()
     {
-        Debug.DrawRay(transform.position, Vector2.right * (pState.lookingRight ? 1 : -1), Color.red);
+        Debug.DrawRay(transform.position, Vector2.right * (pState.lookingRight ? 1 : -1)*stickDistance, Color.red);
         return Physics2D.Raycast(transform.position, Vector2.right * (pState.lookingRight ? 1 : -1), stickDistance, wallLayer);
         
     }
