@@ -23,6 +23,7 @@ MonoBehaviour:
   jumpCount: 0
   dashSpeed: 8
   attackDamage: 1.5
+  attackDelay: 0.1
   attackSpeed: 0
   spellDamage: 1
   baseSprite: {fileID: 348132329, guid: f724fb7d020a0d047aa3ecff98ff3d34, type: 3}

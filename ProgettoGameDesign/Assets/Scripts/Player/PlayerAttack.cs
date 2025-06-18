@@ -73,6 +73,7 @@ public class PlayerAttack : MonoBehaviour
     }
     public void Attack(bool attack, Vector2 directionalInput)
     {
+        
         timeSinceAttack += Time.deltaTime;
         if (attack && timeSinceAttack >= timeBetweenAttack)
         {
@@ -80,24 +81,29 @@ public class PlayerAttack : MonoBehaviour
             timeSinceAttack = 0;
             animator.SetTrigger("Attack");
             attack = false;
-            
+            //manage delay based on the transformation
+            float hitDelay = Player.Instance.playerTransformation.attackDelay;
+            PlayerTransformation currentTransformation = Player.Instance.playerTransformation;
             
 
             if (Mathf.Abs(directionalInput.y) < 0.3f || (directionalInput.y < 0 && playerMovement.IsGrounded()))
             {
                 int _recoilLeftOrRight = pState.lookingRight ? 1 : -1;
-                Hit(sideAttackTransform, sideAttackArea, ref pState.recoilingX, Vector2.right * _recoilLeftOrRight, recoilXSpeed);
+                Hit(sideAttackTransform, sideAttackArea, ref pState.recoilingX, Vector2.right * _recoilLeftOrRight, recoilXSpeed, hitDelay);
                 GameObject slash = pState.lookingRight ? slashEffectR : slashEffectL;
+                Vector3 newScale = slash.transform.localScale;
+                newScale.y = (currentTransformation.index == 0 || currentTransformation.index == 2) ? -1 : 1;
+                slash.transform.localScale = newScale;
                 EffectManager.Instance.PlayOneShot(slash.GetComponent<ParticleSystem>(), sideAttackTransform.position);
             }
             else if (directionalInput.y > 0.3f)
             {
-                Hit(upAttackTransform, upAttackArea, ref pState.recoilingY, Vector2.up, recoilYSpeed);
+                Hit(upAttackTransform, upAttackArea, ref pState.recoilingY, Vector2.up, recoilYSpeed, hitDelay);
                 SlashEffectAngle(slashEffectR, 90, upAttackTransform);
             }
             else if (directionalInput.y < 0.3f && !playerMovement.IsGrounded())
             {
-                Hit(downAttackTransform, downAttackArea, ref pState.recoilingY, Vector2.down, recoilYSpeed);
+                Hit(downAttackTransform, downAttackArea, ref pState.recoilingY, Vector2.down, recoilYSpeed, hitDelay);
                 SlashEffectAngle(slashEffectR, -90, downAttackTransform);
             }
             // Attacco
@@ -107,25 +113,30 @@ public class PlayerAttack : MonoBehaviour
 
 
 
-    void Hit(Transform _attackTransform, Vector2 _attackArea, ref bool _recoildBool,Vector2 _recoilDir, float _recoilStrenght)
+    void Hit(Transform _attackTransform, Vector2 _attackArea, ref bool _recoildBool,Vector2 _recoilDir, float _recoilStrenght, float hitDelay=0)
     {
+
         Collider2D[] hits = Physics2D.OverlapBoxAll(_attackTransform.position, _attackArea, 0, attackableLayer);
         if (hits.Length > 0)
         {
             _recoildBool = true;
-            EffectManager.Instance.TimeStopEffect(attackTimeScale, attackTimerDuration, delay);
-            CameraManager.Instance.ShakeCamera(attackShakeIntensity);
-            for (int i = 0; i < hits.Length; i++)
+            DOVirtual.DelayedCall(hitDelay, () =>
             {
-
-
-                hits[i].GetComponent<Enemy>().EnemyHit(
-                    damage, _recoilDir, _recoilStrenght);
-                if (hits[i].CompareTag("Enemy"))
+                EffectManager.Instance.TimeStopEffect(attackTimeScale, attackTimerDuration, delay);
+                CameraManager.Instance.ShakeCamera(attackShakeIntensity);
+                for (int i = 0; i < hits.Length; i++)
                 {
-                    playerHealth.Mana += playerHealth.manaGain;
+
+
+                    hits[i].GetComponent<Enemy>().EnemyHit(
+                        damage, _recoilDir, _recoilStrenght);
+                    if (hits[i].CompareTag("Enemy"))
+                    {
+                        playerHealth.Mana += playerHealth.manaGain;
+                    }
                 }
-            }
+            });
+            
         }
     }
     void SlashEffectAngle(GameObject slashEffect, int angle, Transform attackTransform)

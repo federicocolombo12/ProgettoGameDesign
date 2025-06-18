@@ -67,6 +67,8 @@ public class PlayerTransformation : ScriptableObject
 
     [TabGroup("Stats"), LabelWidth(120)]
     public float attackDamage;
+    [TabGroup("Stats"), LabelWidth(120)]
+    public float attackDelay;
 
     [TabGroup("Stats"), LabelWidth(120)]
     public float attackSpeed;
