@@ -11,7 +11,7 @@ public class Hook : Interactable
     {
 
         base.Start();
-        interactionEffect = GetComponentInChildren<ParticleSystem>();
+        
         lineRenderer = GetComponent<LineRenderer>();
         sr = GetComponent<SpriteRenderer>();
         sr.color = Color.white;
@@ -37,6 +37,7 @@ public class Hook : Interactable
     public override void Interact(GameObject interactor)
     {
         base.Interact(interactor);
+        
         if (interactor.GetComponent<PlayerHook>() != null)
         {
 

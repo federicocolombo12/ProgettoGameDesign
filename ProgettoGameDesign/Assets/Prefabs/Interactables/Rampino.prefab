@@ -152,7 +152,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   interactableUi: {fileID: 0}
-  detectedEffect: {fileID: 0}
+  detectedEffect: {fileID: 3091103816404367045, guid: 83d9115f331824e979da48ed0edfc060, type: 3}
   interactionEffect: {fileID: 2653244096889297828, guid: 36792652ca3ae634abadc285704fd4b5, type: 3}
   requiredAbility: 2
   hookOffset: 2

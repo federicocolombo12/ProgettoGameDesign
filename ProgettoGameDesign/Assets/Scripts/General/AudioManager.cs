@@ -84,7 +84,7 @@ private IEnumerator HandleCooldown(AudioClip clip, float cooldown)
     }
     public void DisableVolume()
     {
-                sfxSource.volume = 0f;
+            sfxSource.volume = 0f;
         musicSource.volume = 0f;
     }
     public void EnableVolume()

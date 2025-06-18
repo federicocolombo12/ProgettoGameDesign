@@ -11,7 +11,7 @@ public class Interactable : MonoBehaviour, IInteractable
     [SerializeField] protected CanvasGroup interactableUi;
     [SerializeField] protected ParticleSystem detectedEffect;
     [SerializeField] protected ParticleSystem interactionEffect;
-    [SerializeField] PlayerTransformation.AbilityType requiredAbility = PlayerTransformation.AbilityType.None;
+    [SerializeField] protected PlayerTransformation.AbilityType requiredAbility = PlayerTransformation.AbilityType.None;
 
     public virtual void Start()
     {
@@ -78,6 +78,9 @@ public class Interactable : MonoBehaviour, IInteractable
         });
         if (interactionEffect != null)
         {
+            Debug.Log("Playing interaction effect: " + interactionEffect.name);
+             detectedEffect?.Stop();
+            timeSinceLastDetection = 0f; // Reset the timer when interacting
              EffectManager.Instance.PlayOneShot(interactionEffect, transform.position);
         }
        
