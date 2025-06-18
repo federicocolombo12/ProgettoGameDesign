@@ -22,6 +22,7 @@ public class Miniboss : Enemy
         healthImage = bossHealthImage;
 
     }
+
     
     
 }

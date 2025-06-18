@@ -3140,6 +3140,10 @@ PrefabInstance:
       value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 989102055181137705, guid: 1e5e95d1c8d2a664aa123a5933f1c74e, type: 3}
+      propertyPath: hitEffect1
+      value: 
+      objectReference: {fileID: 868468853075218060, guid: 28aa90600df2fd9479eb5ccbc39a3fc1, type: 3}
+    - target: {fileID: 989102055181137705, guid: 1e5e95d1c8d2a664aa123a5933f1c74e, type: 3}
       propertyPath: manaStorage
       value: 
       objectReference: {fileID: 1161212965}
