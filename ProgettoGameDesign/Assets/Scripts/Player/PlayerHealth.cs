@@ -158,7 +158,7 @@ public class PlayerHealth : MonoBehaviour
         healEffect.Play();
         yield return new WaitForSeconds(invincibleTime);
         //enable collision
-        Player.Instance.rb.excludeLayers = LayerMask.GetMask("Default");
+        Player.Instance.rb.excludeLayers = LayerMask.GetMask("Nothing");
         healEffect.Stop();
         pState.invincible = false;
         Player.Instance.coll.enabled = true;
