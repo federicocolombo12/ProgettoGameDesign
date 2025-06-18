@@ -3577,6 +3577,14 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 2670939194795898005, guid: 1e5e95d1c8d2a664aa123a5933f1c74e, type: 3}
+      propertyPath: maxSpeed.x
+      value: 100
+      objectReference: {fileID: 0}
+    - target: {fileID: 2670939194795898005, guid: 1e5e95d1c8d2a664aa123a5933f1c74e, type: 3}
+      propertyPath: maxSpeed.y
+      value: 20
+      objectReference: {fileID: 0}
+    - target: {fileID: 2670939194795898005, guid: 1e5e95d1c8d2a664aa123a5933f1c74e, type: 3}
       propertyPath: cameraFollowGO
       value: 
       objectReference: {fileID: 291414996}
