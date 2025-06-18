@@ -64156,6 +64156,18 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 2012429226}
     m_Modifications:
+    - target: {fileID: 1491182617961902758, guid: 064097e86fb574f43a75f505dec4aef2, type: 3}
+      propertyPath: m_Color.b
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1491182617961902758, guid: 064097e86fb574f43a75f505dec4aef2, type: 3}
+      propertyPath: m_Color.g
+      value: 0.20000345
+      objectReference: {fileID: 0}
+    - target: {fileID: 1491182617961902758, guid: 064097e86fb574f43a75f505dec4aef2, type: 3}
+      propertyPath: m_Color.r
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 1818189122005398297, guid: 064097e86fb574f43a75f505dec4aef2, type: 3}
       propertyPath: m_Name
       value: Charger (1)
