@@ -28,8 +28,10 @@ public class PlayerMovement : MonoBehaviour
 
     [TabGroup("Jumping"), LabelText("Jump Buffer Frames")]
     [SerializeField] private float jumpBufferFrames;
-    [TabGroup("Jumping"), LabelText("Jump Audio")]
-    [SerializeField] private SfxData jumpAudio;
+    [TabGroup("Jumping"), LabelText("Jump Audio1")]
+    [SerializeField] private SfxData jumpAudio1;
+        [TabGroup("Jumping"), LabelText("Jump Audio2")]
+    [SerializeField] private SfxData jumpAudio2;
     private float jumpBufferCounter = 0;
 
     [TabGroup("Jumping"), LabelText("Coyote Time")]
@@ -322,8 +324,9 @@ public class PlayerMovement : MonoBehaviour
         if (jumpPressed && !pState.hooked && !pState.dashing)
         {
             jumpBufferCounter = jumpBufferFrames;
-
-            AudioManager.Instance.sfxChannel.RaiseEvent(jumpAudio, true);
+            //choose a random one between 1 and 2
+            
+            AudioManager.Instance.sfxChannel.RaiseEvent(jumpAudio1, true);
             
            
             
