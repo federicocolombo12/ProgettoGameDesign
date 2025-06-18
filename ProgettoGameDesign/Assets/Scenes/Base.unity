@@ -3576,6 +3576,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 1953520300672907571, guid: 1e5e95d1c8d2a664aa123a5933f1c74e, type: 3}
+      propertyPath: smokeEffect
+      value: 
+      objectReference: {fileID: 7996381934119508223, guid: 6c0e2ea3d9659784bad0f7b76ee08899, type: 3}
     - target: {fileID: 2670939194795898005, guid: 1e5e95d1c8d2a664aa123a5933f1c74e, type: 3}
       propertyPath: maxSpeed.x
       value: 100
