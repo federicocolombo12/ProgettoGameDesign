@@ -24,7 +24,7 @@ public class Sentinel : Enemy
         }
 
         GameObject projectile = Instantiate(projectilePrefab, projectileTransform.position, Quaternion.identity);
-        Vector2 projectileDirection = Vector2.left*transform.localScale.x;
+        Vector2 projectileDirection = Vector2.right*transform.localScale.x;
         projectile.GetComponent<Rigidbody2D>().AddForce(projectileDirection * projectileSpeed, ForceMode2D.Impulse);
     }
     

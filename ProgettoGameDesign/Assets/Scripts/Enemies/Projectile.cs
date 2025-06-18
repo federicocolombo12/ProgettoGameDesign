@@ -7,11 +7,20 @@ public class Projectile : MonoBehaviour
     private Player _player;
     public GameObject shooter;
     Rigidbody2D rb;
+    SpriteRenderer sr;
     float projectileDamage = 1f;
 
     void Start()
     {
         _player = Player.Instance;
+        sr = GetComponent<SpriteRenderer>();
+        rb = GetComponent<Rigidbody2D>();
+        
+    }
+    private void Update()
+    {
+
+        sr.flipX = Mathf.Sign(rb.linearVelocity.x)==1?true:false;
         
     }
 

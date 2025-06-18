@@ -2185,11 +2185,11 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 920671413938369830, guid: a3fe3c97345c38f4a90301a68c363736, type: 3}
       propertyPath: gizmoViewMode
-      value: 0
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 920671413938369830, guid: a3fe3c97345c38f4a90301a68c363736, type: 3}
       propertyPath: showBehaviorDesignerGizmo
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 920671413938369830, guid: a3fe3c97345c38f4a90301a68c363736, type: 3}
       propertyPath: mBehaviorSource.mTaskData.JSONSerialization
