@@ -74,8 +74,9 @@ public class PlayerDash : MonoBehaviour
         ParticleSpawn();
 
         CameraManager.Instance.ShakeCamera(shakeIntensity);
+        rb.excludeLayers = LayerMask.GetMask("Attackable");
         yield return new WaitForSeconds(dashTime);
-
+        rb.excludeLayers = LayerMask.GetMask("Nothing");
         pState.dashing = false;
         rb.gravityScale = playerMovement.gravityScale;
 
