@@ -24,7 +24,7 @@ public class PlayerHealth : MonoBehaviour
     [SerializeField] float timeToHeal = 1;
     float healTimer;
     float damageMultiplier = 1;
-
+    [SerializeField] ParticleSystem healEffect;
     [Space(10)]
     [Header("Mana")]
     [SerializeField] Image manaStorage;
@@ -153,8 +153,15 @@ public class PlayerHealth : MonoBehaviour
         animator.SetTrigger("TakeDamage");
         EffectManager.Instance.PlayOneShot(blood.GetComponent<ParticleSystem>(), transform.position);
         EffectManager.Instance.PlayOneShot(hitEffect1.GetComponent<ParticleSystem>(), transform.position);
+        //disable collision
+        Player.Instance.rb.excludeLayers = LayerMask.GetMask("Attackable");
+        healEffect.Play();
         yield return new WaitForSeconds(invincibleTime);
+        //enable collision
+        Player.Instance.rb.excludeLayers = LayerMask.GetMask("Default");
+        healEffect.Stop();
         pState.invincible = false;
+        Player.Instance.coll.enabled = true;
     }
 
     public void FlashWhileInvincible()

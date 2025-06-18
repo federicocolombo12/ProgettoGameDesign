@@ -7,7 +7,7 @@ public class Player : MonoBehaviour
 {
     public static Player Instance { get; private set; }
     public Rigidbody2D rb;
-
+    public Collider2D coll;
     public Animator animator;
     public PlayerStateList pState;
     public PlayerTransformation playerTransformation;
@@ -46,6 +46,7 @@ public class Player : MonoBehaviour
         rb = GetComponent<Rigidbody2D>();
         animator = GetComponentInChildren<Animator>();
         sr = GetComponentInChildren<SpriteRenderer>();
+        coll = GetComponent<Collider2D>();
     }
 
 
@@ -55,6 +56,7 @@ public class Player : MonoBehaviour
 
 
         playerMovement.Stick(playerInput.directionalInput, playerInput.jumpInput);
+        playerDash.DoDash(playerInput.dashed);
         if (pState.dashing) return;
 
        
@@ -76,7 +78,7 @@ public class Player : MonoBehaviour
         }
         playerMovement.Jump(playerInput.jumpPressed);
 
-        playerDash.DoDash(playerInput.dashed);
+        
         playerAttack.Attack(playerInput.attack, playerInput.directionalInput);
         playerAttack.Recoil(playerInput.directionalInput);
         playerSpell.CastSpell(playerInput.cast, playerMovement.IsGrounded(), playerInput.directionalInput);

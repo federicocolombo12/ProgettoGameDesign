@@ -155,6 +155,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   rb: {fileID: 0}
+  coll: {fileID: 0}
   animator: {fileID: 0}
   pState: {fileID: 0}
   playerTransformation: {fileID: 11400000, guid: 34644fc0004a56a45927fc9ad2f602ce, type: 2}
@@ -209,9 +210,9 @@ MonoBehaviour:
   wallLayer:
     serializedVersion: 2
     m_Bits: 512
-  stickGravityScale: 4
+  stickGravityScale: 6.9
   wallSpeed: 7
-  stickDistance: 1
+  stickDistance: 0.45
   stickTimerMax: 0.5
 --- !u!114 &1084953805667698412
 MonoBehaviour:
@@ -313,6 +314,7 @@ MonoBehaviour:
   hitStopTimeScale: 0.1
   hitStopTimeDuration: 0.3
   timeToHeal: 1
+  healEffect: {fileID: 8916131291933999213}
   manaStorage: {fileID: 0}
   mana: 0
   manaDrainSpeed: 0.1
@@ -803,6 +805,11 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 88ac81127d155884ca17e13e76d97ed8, type: 3}
+--- !u!198 &8916131291933999213 stripped
+ParticleSystem:
+  m_CorrespondingSourceObject: {fileID: 8461290916847762350, guid: 88ac81127d155884ca17e13e76d97ed8, type: 3}
+  m_PrefabInstance: {fileID: 1067631742682905539}
+  m_PrefabAsset: {fileID: 0}
 --- !u!4 &8916131291933999215 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 8461290916847762348, guid: 88ac81127d155884ca17e13e76d97ed8, type: 3}
