@@ -10,6 +10,7 @@ public class PlayerHealth : MonoBehaviour
     [SerializeField] int health;
     public int maxHealth = 100;
     [SerializeField] float invincibleTime = 1;
+    [SerializeField] GameObject hitEffect1;
     [SerializeField] GameObject blood;
     [SerializeField] float hitFlashSpeed;
     [SerializeField] float hitStopTimeScale;
@@ -151,6 +152,7 @@ public class PlayerHealth : MonoBehaviour
         pState.invincible = true;
         animator.SetTrigger("TakeDamage");
         EffectManager.Instance.PlayOneShot(blood.GetComponent<ParticleSystem>(), transform.position);
+        EffectManager.Instance.PlayOneShot(hitEffect1.GetComponent<ParticleSystem>(), transform.position);
         yield return new WaitForSeconds(invincibleTime);
         pState.invincible = false;
     }
