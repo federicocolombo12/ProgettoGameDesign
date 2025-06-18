@@ -185,7 +185,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   speed: 8
-  maxSpeed: {x: 100, y: 100}
+  maxSpeed: {x: 10, y: 10}
   cameraFollowGO: {fileID: 0}
   jumpForce: 15
   jumpCutMultiplier: 0.5
