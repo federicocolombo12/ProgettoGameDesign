@@ -76,8 +76,11 @@ public class Enemy : MonoBehaviour
        
         animator = GetComponent<Animator>();
         
+        if (sr != null)
+        {
+            standardMaterial = sr.material;
+        }
         
-        standardMaterial = sr.material;
         player = Player.Instance;
         
         health = maxHealth;

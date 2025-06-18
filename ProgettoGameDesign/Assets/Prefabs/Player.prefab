@@ -185,7 +185,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   speed: 8
-  maxSpeed: {x: 10, y: 10}
+  maxSpeed: {x: 100, y: 20}
   cameraFollowGO: {fileID: 0}
   jumpForce: 15
   jumpCutMultiplier: 0.5
@@ -421,6 +421,7 @@ MonoBehaviour:
   chargeDuration: 0.5
   breakRockSfx: {fileID: 11400000, guid: e91c75e08a8ff4598a523fe80c0fde59, type: 2}
   chargeEffect: {fileID: 1887303755996554667, guid: 1f653d7adce4df140a311cec19cbf40b, type: 3}
+  smokeEffect: {fileID: 7996381934119508223, guid: 6c0e2ea3d9659784bad0f7b76ee08899, type: 3}
 --- !u!114 &1518023018435234811
 MonoBehaviour:
   m_ObjectHideFlags: 0
