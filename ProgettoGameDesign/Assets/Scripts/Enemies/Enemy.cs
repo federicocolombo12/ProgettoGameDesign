@@ -112,7 +112,7 @@ public class Enemy : MonoBehaviour
     {
         Debug.Log("Player Transformation: " + Player.Instance.playerTransformation);
         Debug.Log("Enemy Weakness: " + weakTo);
-        EnemyWeakness();
+        EnemyWeakness(damage);
         
         
 
@@ -132,7 +132,7 @@ public class Enemy : MonoBehaviour
             
         }
     }
-    private void EnemyWeakness()
+    private void EnemyWeakness(float damage)
     {
         currentDamage = damage;
         if (sr!= null)
