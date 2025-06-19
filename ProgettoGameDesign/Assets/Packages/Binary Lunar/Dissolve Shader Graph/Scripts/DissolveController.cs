@@ -21,29 +21,8 @@ public class DissolveController : MonoBehaviour
         mat = GetComponent<SpriteRenderer>().material;
     }
 
-    // Update is called once per frame
-    void Update()
-    {
-        if (Input.GetKeyDown(KeyCode.A))
-            isDissolving = true;
-
-        if (Input.GetKeyDown(KeyCode.S))
-            isDissolving = false;
-
-        if (isDissolving)
-        {
-            DissolveOut(dissolveSpeed, outColor);
-        }
-
-        if (!isDissolving)
-        {
-            DissolveIn(dissolveSpeed, inColor);
-        }
-
-        mat.SetFloat("_DissolveAmount", dissolveAmount);
-
-
-    }
+    //create a flash effect dissolving
+    
 
 
 

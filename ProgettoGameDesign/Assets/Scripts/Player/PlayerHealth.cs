@@ -38,6 +38,7 @@ public class PlayerHealth : MonoBehaviour
     public PlayerStateList pState { get; private set; }
 
     public static event Action OnPlayerDeath;
+    public static event Action<float, Color> OnPlayerHit;
 
     void OnEnable()
     {
@@ -162,6 +163,7 @@ public class PlayerHealth : MonoBehaviour
         //disable collision
         Player.Instance.rb.excludeLayers = LayerMask.GetMask("Attackable");
         healEffect.Play();
+        OnPlayerHit?.Invoke(invincibleTime, Color.red);
         yield return new WaitForSeconds(invincibleTime);
         //enable collision
         Player.Instance.rb.excludeLayers = LayerMask.GetMask("Nothing");
@@ -200,4 +202,5 @@ public class PlayerHealth : MonoBehaviour
             animator.Play("Idle");
         }
     }
+
 }
