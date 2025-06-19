@@ -11,6 +11,6 @@ public class DoNotFlip : MonoBehaviour
 {
     Vector3 parentScale = transform.parent.localScale;
     
-    rectTransform.localScale = parentScale.x > 0 ? new Vector3(1, 1, 1) : new Vector3(-1, 1, 1);
+    rectTransform.localScale = parentScale.x > 0 ? new Vector3(rectTransform.localScale.x, rectTransform.localScale.y, rectTransform.localScale.z) : new Vector3(-rectTransform.localScale.x, rectTransform.localScale.y, rectTransform.localScale.z);
 }
 }
