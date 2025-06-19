@@ -2133,6 +2133,10 @@ PrefabInstance:
       propertyPath: m_LocalPosition.y
       value: 5.09995
       objectReference: {fileID: 0}
+    - target: {fileID: 5482139222769379381, guid: b1e2a26605ddb5743ab4af9d547b28a3, type: 3}
+      propertyPath: priority
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 6274697143802695307, guid: b1e2a26605ddb5743ab4af9d547b28a3, type: 3}
       propertyPath: ImpulseDefinition.ImpulseShape
       value: 1
@@ -3576,6 +3580,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 1953520300672907571, guid: 1e5e95d1c8d2a664aa123a5933f1c74e, type: 3}
+      propertyPath: smokeEffect
+      value: 
+      objectReference: {fileID: 433150739519853361, guid: fef2db09a0e5b01488591e4abba160ae, type: 3}
     - target: {fileID: 2670939194795898005, guid: 1e5e95d1c8d2a664aa123a5933f1c74e, type: 3}
       propertyPath: cameraFollowGO
       value: 
