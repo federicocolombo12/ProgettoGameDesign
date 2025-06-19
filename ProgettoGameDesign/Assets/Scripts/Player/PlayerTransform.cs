@@ -27,6 +27,8 @@ public class PlayerTransform : MonoBehaviour
 
     [Header("Cooldown Trasformazione")]
     [SerializeField] private float transformCooldown = 1.5f; // Tempo di cooldown in secondi
+    [Header("Audio")]
+    [SerializeField] private SfxData transformationSfx;
 
     private GameObject currentInstance;
     private Animator currentAnimator;
@@ -123,7 +125,8 @@ public class PlayerTransform : MonoBehaviour
         var main = transformationParticle.main;
         main.startColor = transformationColors[transformationIndex];
         transformationParticle.Play();
-
+        // Riproduci l'effetto sonoro di trasformazione
+        AudioManager.Instance.sfxChannel.RaiseEvent(transformationSfx, true);
         if (effectParticle != null)
         {
             //change the color of effectParticle

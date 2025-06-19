@@ -60,6 +60,18 @@ public class SceneController : MonoBehaviour
                 loadingOps.Add(loadOp);
             }
         }
+        // Scarica tutte le scene non più necessarie
+        foreach (Scene scene in currentlyLoaded)
+        {
+            if (!scenesToLoad.Contains(scene.name))
+            {
+                if (scene.isLoaded)
+                {
+                    Debug.Log($"Scarico scena: {scene.name}");
+                    SceneManager.UnloadSceneAsync(scene.name);
+                }
+            }
+        }
 
         // Aspetta che tutte le scene siano caricate
         foreach (var op in loadingOps)
@@ -80,18 +92,7 @@ public class SceneController : MonoBehaviour
             Debug.LogWarning("Impossibile impostare la scena attiva.");
         }
 
-        // Scarica tutte le scene non più necessarie
-        foreach (Scene scene in currentlyLoaded)
-        {
-            if (!scenesToLoad.Contains(scene.name))
-            {
-                if (scene.isLoaded)
-                {
-                    Debug.Log($"Scarico scena: {scene.name}");
-                    SceneManager.UnloadSceneAsync(scene.name);
-                }
-            }
-        }
+        
         
 
     }
@@ -157,7 +158,10 @@ private IEnumerator ReloadSpecificScenesRoutine(List<string> scenesToReload)
 
     OnSceneLoaded?.Invoke();
 }
-
+    public void QuitGame()
+    {
+        Application.Quit();
+    }
 
 
 

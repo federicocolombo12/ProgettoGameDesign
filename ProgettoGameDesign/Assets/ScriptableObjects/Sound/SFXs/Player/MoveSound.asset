@@ -12,6 +12,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e2183179d9fce44cfaf4b918ef696289, type: 3}
   m_Name: MoveSound
   m_EditorClassIdentifier: 
-  clip: {fileID: 8300000, guid: 2352822feb4caa14ebdbc0c713289f8d, type: 3}
-  volume: 1
+  clip: {fileID: 8300000, guid: 8920198cffc84d74183164e64dec4fb5, type: 3}
+  volume: 0.67
   pitch: 1

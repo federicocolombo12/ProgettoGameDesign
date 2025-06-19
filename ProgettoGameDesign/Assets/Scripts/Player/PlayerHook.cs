@@ -13,6 +13,8 @@ public class PlayerHook : MonoBehaviour
     [SerializeField] float waitTime = 0.1f;
     [SerializeField] GameObject hookTrailPrefab; // Prefab del trail del rampino
     [SerializeField] float particleOffset = 0.5f; // Offset per la posizione del trail del rampino
+    //hook sfx
+    [SerializeField] SfxData hookSfx;
 
     // Nuova variabile: decelerazione per simulare l'inerzia dopo il target
     [SerializeField] float hookDeceleration = 5f;
@@ -39,8 +41,10 @@ public class PlayerHook : MonoBehaviour
         pState.hooked = true;
         rb.gravityScale = 0;
         rb.linearVelocity = Vector2.zero;
+        // Riproduci l'audio del rampino
+        AudioManager.Instance.sfxChannel.RaiseEvent(hookSfx, true);
         yield return new WaitForSeconds(waitTime);
-
+        rb.excludeLayers = LayerMask.GetMask("Attackable"); // Escludi il layer del player per evitare collisioni durante il movimento del rampino
         Player.Instance.animator.SetBool("SpAbility", true);
 
         
@@ -82,6 +86,7 @@ public class PlayerHook : MonoBehaviour
 
         // Alla fine azzeriamo la velocità ed eventualmente correggiamo la posizione
         Player.Instance.animator.SetBool("SpAbility", false);
+        rb.excludeLayers = LayerMask.GetMask("Nothing"); // Ripristina il layer del player
         rb.linearVelocity = Vector2.zero;
         rb.gravityScale = 1;
         pState.hooked = false;

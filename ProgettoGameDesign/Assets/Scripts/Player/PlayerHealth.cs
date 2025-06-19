@@ -112,6 +112,7 @@ public class PlayerHealth : MonoBehaviour
         {
             animator.SetBool("Healing", true);
             pState.healing = true;
+            healEffect?.Play();
             healTimer += Time.deltaTime;
             if (healTimer >= timeToHeal)
             {
@@ -122,6 +123,11 @@ public class PlayerHealth : MonoBehaviour
         }
         else
         {
+            if (healEffect.isPlaying)
+            {
+                healEffect?.Stop();
+                healEffect?.Clear();
+            }
             pState.healing = false;
             healTimer = 0;
             animator.SetBool("Healing", false);
