@@ -28,7 +28,7 @@ MonoBehaviour:
   spellDamage: 1
   baseSprite: {fileID: 3526732155374269853, guid: 0923fcf6d18c22b4e833b0bfb95d3738, type: 3}
   animatorController: {fileID: 9100000, guid: c1ddf30cc83a5f840ba7e1545d0a3ba8, type: 2}
-  color: {r: 0, g: 0.108952045, b: 1, a: 1}
+  color: {r: 0.13725491, g: 0.60784316, b: 0.7529412, a: 1}
   transformationScale: {x: 1, y: 1, z: 1}
   colliderSize: {x: 0.88, y: 2.6}
   colliderOffset: {x: 0, y: 0}

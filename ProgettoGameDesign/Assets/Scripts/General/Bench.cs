@@ -18,7 +18,7 @@ public class Bench : Interactable
         benchIndexVariable.Value = benchIndex;
         GameManager.Instance.SetBench();
         CameraManager.Instance.SetCamera(benchCamera);
-        Camera.main.transform.position = transform.position;
+       
         EffectManager.Instance.PlayOneShot(interactEffect.GetComponent<ParticleSystem>(), transform.position);
 
 
