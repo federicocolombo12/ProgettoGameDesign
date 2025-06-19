@@ -113,7 +113,11 @@ public class PlayerHealth : MonoBehaviour
         {
             animator.SetBool("Healing", true);
             pState.healing = true;
-            healEffect?.Play();
+            if (!healEffect.isPlaying)
+            {
+                healEffect?.Play();
+            }
+            
             healTimer += Time.deltaTime;
             if (healTimer >= timeToHeal)
             {
@@ -162,7 +166,12 @@ public class PlayerHealth : MonoBehaviour
         EffectManager.Instance.PlayOneShot(hitEffect1.GetComponent<ParticleSystem>(), transform.position);
         //disable collision
         Player.Instance.rb.excludeLayers = LayerMask.GetMask("Attackable");
-        healEffect.Play();
+        if (!healEffect.isPlaying)
+        {
+
+            healEffect?.Play();
+        }
+        
         OnPlayerHit?.Invoke(invincibleTime, Color.red);
         yield return new WaitForSeconds(invincibleTime);
         //enable collision

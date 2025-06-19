@@ -2238,11 +2238,6 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 143a6883c081a4b97a29d9783e89651a, type: 3}
---- !u!1 &890001885 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 1038730058775713584, guid: 1e5e95d1c8d2a664aa123a5933f1c74e, type: 3}
-  m_PrefabInstance: {fileID: 1753540828}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1 &968865548
 GameObject:
   m_ObjectHideFlags: 0
@@ -3044,10 +3039,6 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 443132013862689332, guid: 1e5e95d1c8d2a664aa123a5933f1c74e, type: 3}
-      propertyPath: hookSfx
-      value: 
-      objectReference: {fileID: 11400000, guid: 61be0b69c9371ee4284ad458dd55563f, type: 2}
     - target: {fileID: 989102055181137705, guid: 1e5e95d1c8d2a664aa123a5933f1c74e, type: 3}
       propertyPath: manaStorage
       value: 
@@ -3100,55 +3091,11 @@ PrefabInstance:
       propertyPath: cameraFollowGO
       value: 
       objectReference: {fileID: 291414996}
-    - target: {fileID: 4525009401178718108, guid: 1e5e95d1c8d2a664aa123a5933f1c74e, type: 3}
-      propertyPath: transformationSfx
-      value: 
-      objectReference: {fileID: 11400000, guid: d41499c93db50d14ea70afaf1060f7e9, type: 2}
-    - target: {fileID: 4525009401178718108, guid: 1e5e95d1c8d2a664aa123a5933f1c74e, type: 3}
-      propertyPath: transformationColors.Array.data[1].b
-      value: 0.754717
-      objectReference: {fileID: 0}
-    - target: {fileID: 4525009401178718108, guid: 1e5e95d1c8d2a664aa123a5933f1c74e, type: 3}
-      propertyPath: transformationColors.Array.data[1].g
-      value: 0.6083492
-      objectReference: {fileID: 0}
-    - target: {fileID: 4525009401178718108, guid: 1e5e95d1c8d2a664aa123a5933f1c74e, type: 3}
-      propertyPath: transformationColors.Array.data[1].r
-      value: 0.13883947
-      objectReference: {fileID: 0}
-    - target: {fileID: 4525009401178718108, guid: 1e5e95d1c8d2a664aa123a5933f1c74e, type: 3}
-      propertyPath: transformationColors.Array.data[2].b
-      value: 0.07609467
-      objectReference: {fileID: 0}
-    - target: {fileID: 4525009401178718108, guid: 1e5e95d1c8d2a664aa123a5933f1c74e, type: 3}
-      propertyPath: transformationColors.Array.data[2].g
-      value: 0.62263566
-      objectReference: {fileID: 0}
-    - target: {fileID: 4525009401178718108, guid: 1e5e95d1c8d2a664aa123a5933f1c74e, type: 3}
-      propertyPath: transformationColors.Array.data[2].r
-      value: 0.8490566
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents:
-    - targetCorrespondingSourceObject: {fileID: 1038730058775713584, guid: 1e5e95d1c8d2a664aa123a5933f1c74e, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 1753540845}
+    m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 1e5e95d1c8d2a664aa123a5933f1c74e, type: 3}
---- !u!114 &1753540845
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 890001885}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 783189269af2bfe4ab71963f13020140, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  footstepSound: {fileID: 11400000, guid: bf4f405c9e7f38c498caf5257ee68588, type: 2}
 --- !u!1 &1796350798
 GameObject:
   m_ObjectHideFlags: 0

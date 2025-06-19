@@ -24,6 +24,7 @@ GameObject:
   - component: {fileID: 6697238519948228974}
   - component: {fileID: 1953520300672907571}
   - component: {fileID: 1518023018435234811}
+  - component: {fileID: 4266963285877739821}
   m_Layer: 10
   m_Name: Player
   m_TagString: Player
@@ -360,10 +361,11 @@ MonoBehaviour:
   effectParticle: {fileID: 2653244096889297828, guid: 36792652ca3ae634abadc285704fd4b5, type: 3}
   transformationColors:
   - {r: 1, g: 0, b: 0, a: 1}
-  - {r: 0, g: 0.2157743, b: 1, a: 1}
-  - {r: 1, g: 0.89133024, b: 0, a: 1}
+  - {r: 0.13883947, g: 0.6083492, b: 0.754717, a: 1}
+  - {r: 0.8490566, g: 0.62263566, b: 0.07609467, a: 1}
   collider: {fileID: 1814032075909799558}
   transformCooldown: 1
+  transformationSfx: {fileID: 11400000, guid: d41499c93db50d14ea70afaf1060f7e9, type: 2}
 --- !u!114 &443132013862689332
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -382,6 +384,7 @@ MonoBehaviour:
   waitTime: 0.2
   hookTrailPrefab: {fileID: 4338487729092471324, guid: f90b8b00bb58f490990b8c76daf35548, type: 3}
   particleOffset: 2
+  hookSfx: {fileID: 11400000, guid: 61be0b69c9371ee4284ad458dd55563f, type: 2}
   hookDeceleration: 100
 --- !u!114 &6697238519948228974
 MonoBehaviour:
@@ -436,6 +439,19 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3a039cf98ea774265a4ba39d96e469f0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &4266963285877739821
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1038730058775713584}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 783189269af2bfe4ab71963f13020140, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  footstepSound: {fileID: 11400000, guid: bf4f405c9e7f38c498caf5257ee68588, type: 2}
 --- !u!1 &4986755741747033650
 GameObject:
   m_ObjectHideFlags: 0
