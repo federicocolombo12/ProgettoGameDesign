@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ea85109bd69c5fd4dac11376dcb87800, type: 3}
   m_Name: TutorialBench
   m_EditorClassIdentifier: 
-  tutorialImage: {fileID: 6812781481494791175, guid: 222e3b2fc71b15d4b811646314515a45, type: 3}
+  tutorialImage: {fileID: 2582934879572047440, guid: 6340be2c5d4f33249a76623ffe7fb82d, type: 3}
   tutorialTitle: Totem
   tutorialText: The totem is a place of rest. Save your progress and recover your
     health.
