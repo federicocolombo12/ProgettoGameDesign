@@ -956,7 +956,7 @@ PrefabInstance:
       addedObject: {fileID: 708877019374827495}
     - targetCorrespondingSourceObject: {fileID: -8653719598885068355, guid: fe1cf0ce0732a6947ae495647d7216ae, type: 3}
       insertIndex: -1
-      addedObject: {fileID: 411438574773126275}
+      addedObject: {fileID: -3426369895894381215}
   m_SourcePrefab: {fileID: 4843985084834002234, guid: fe1cf0ce0732a6947ae495647d7216ae, type: 3}
 --- !u!4 &998299971261675334 stripped
 Transform:
@@ -1086,7 +1086,7 @@ Animator:
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorStateOnDisable: 0
   m_WriteDefaultValuesOnDisable: 0
---- !u!114 &411438574773126275
+--- !u!114 &-3426369895894381215
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}

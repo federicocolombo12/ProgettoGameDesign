@@ -1,3 +1,4 @@
+using BehaviorDesigner.Runtime.Tasks;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -49,8 +50,25 @@ public class AudioManager : MonoBehaviour
     // Start cooldown coroutine
         StartCoroutine(HandleCooldown(data.clip, audioCooldown));
 }
+    public void PlaySFXContinuos(SfxData data, bool randomizePitch)
+    {
+        
 
-private IEnumerator HandleCooldown(AudioClip clip, float cooldown)
+        sfxSource.pitch = data.pitch;
+        if (randomizePitch)
+        {
+            sfxSource.pitch = Random.Range(data.pitch - 0.1f, data.pitch + 0.1f);
+        }
+        sfxSource.PlayOneShot(data.clip, data.volume);
+        Debug.Log("Playing SFX: " + data.clip.name);
+
+
+
+        // Start cooldown coroutine
+        StartCoroutine(HandleCooldown(data.clip, audioCooldown));
+    }
+
+    private IEnumerator HandleCooldown(AudioClip clip, float cooldown)
 {
     cooldownClips.Add(clip);
     yield return new WaitForSeconds(cooldown);

@@ -12,6 +12,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e2183179d9fce44cfaf4b918ef696289, type: 3}
   m_Name: JumpSound 1
   m_EditorClassIdentifier: 
-  clip: {fileID: 8300000, guid: ab2c8de3eef51fb44af57a632c7a33db, type: 3}
-  volume: 10
+  clip: {fileID: 8300000, guid: a0e37955590017c4689917178372d46c, type: 3}
+  volume: 1
   pitch: 1.04
