@@ -6,12 +6,13 @@ public class PlayerBreakableRock : MonoBehaviour
 {
     private Rigidbody2D rb;
     private PlayerStateList pState;
-
+    private Animator anim;
     [SerializeField] private float chargeSpeed = 10f;
     [SerializeField] private float chargeDuration = 0.5f;
     [SerializeField] private SfxData breakRockSfx;
     [SerializeField] ParticleSystem chargeEffect;
     [SerializeField] ParticleSystem smokeEffect;
+    [SerializeField] ParticleSystem fireCharge;
 
     private bool isCharging = false;
     private Transform targetRock;
@@ -20,6 +21,18 @@ public class PlayerBreakableRock : MonoBehaviour
     {
         rb = GetComponent<Rigidbody2D>();
         pState = GetComponent<PlayerStateList>();
+    }
+    private void OnEnable()
+    {
+        PlayerTransform.OnTransform += PlayerTransform_OnTransform;
+    }
+    private void OnDisable()
+    {
+        PlayerTransform.OnTransform -= PlayerTransform_OnTransform;
+    }
+    private void PlayerTransform_OnTransform()
+    {
+        anim = Player.Instance.animator;
     }
 
     public void ChargeAndBreak(Transform rockTransform)
@@ -41,12 +54,13 @@ public class PlayerBreakableRock : MonoBehaviour
         isCharging = true;
 
         
-            Player.Instance.animator.SetBool("SpAbility", true);
+            anim.SetBool("SpAbility", true);
         
 
         AudioManager.Instance.sfxChannel.RaiseEvent(breakRockSfx, true);
         CameraManager.Instance.ShakeCamera(0.3f);
-
+        fireCharge?.Play();
+        
         Vector2 direction = (targetRock.position - transform.position).normalized;
 
         float timer = 0f;
@@ -60,8 +74,10 @@ public class PlayerBreakableRock : MonoBehaviour
         rb.linearVelocity = Vector2.zero;
         pState.dashing = false;
         isCharging = false;
+        fireCharge?.Stop();
+        fireCharge?.Clear();
 
-            Player.Instance.animator.SetBool("SpAbility", false);
+         anim.SetBool("SpAbility", false);
         
     }
 
