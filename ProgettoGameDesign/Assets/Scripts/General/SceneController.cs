@@ -60,6 +60,13 @@ public class SceneController : MonoBehaviour
                 loadingOps.Add(loadOp);
             }
         }
+        
+
+        // Aspetta che tutte le scene siano caricate
+        foreach (var op in loadingOps)
+        {
+            yield return new WaitUntil(() => op.isDone);
+        }
         // Scarica tutte le scene non più necessarie
         foreach (Scene scene in currentlyLoaded)
         {
@@ -71,12 +78,6 @@ public class SceneController : MonoBehaviour
                     SceneManager.UnloadSceneAsync(scene.name);
                 }
             }
-        }
-
-        // Aspetta che tutte le scene siano caricate
-        foreach (var op in loadingOps)
-        {
-            yield return new WaitUntil(() => op.isDone);
         }
 
         // Imposta la prima scena come attiva

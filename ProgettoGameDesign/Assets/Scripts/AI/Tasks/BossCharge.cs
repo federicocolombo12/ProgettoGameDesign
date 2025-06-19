@@ -27,7 +27,7 @@ public class BossCharge : EnemyAction
         direction = player.transform.position.x < transform.position.x ? -1 : 1;
 
         if (!string.IsNullOrEmpty(chargeLoopAnim))
-            anim.SetTrigger(chargeLoopAnim);
+            anim.SetBool(chargeLoopAnim, true);
         timeoutTween = DOVirtual.DelayedCall(maxChargeTime, () =>
         {
             StopCharge();
@@ -57,7 +57,7 @@ public class BossCharge : EnemyAction
         hasHitWall = true;
 
         if (!string.IsNullOrEmpty(chargeEndAnim))
-            anim.SetTrigger(chargeEndAnim);
+            anim.SetBool(chargeLoopAnim, false);
 
         if (shakeCameraOnImpact)
             CameraManager.Instance.ShakeCamera(0.4f);
