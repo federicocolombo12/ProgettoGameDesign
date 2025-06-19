@@ -38,6 +38,7 @@ public class PlayerTransform : MonoBehaviour
     private bool canTransform = true;
 
     public static event System.Action OnTransform;
+    public static event System.Action<float, Color> OnTransformEffect;
 
     private void Start()
     {
@@ -88,6 +89,7 @@ public class PlayerTransform : MonoBehaviour
     private void StartTransformCooldown()
     {
         canTransform = false;
+        
         // Usa DOTween.DelayedCall per aspettare il cooldown e riabilitare la trasformazione
         DOVirtual.DelayedCall(transformCooldown, () =>
         {
@@ -127,6 +129,7 @@ public class PlayerTransform : MonoBehaviour
         transformationParticle.Play();
         // Riproduci l'effetto sonoro di trasformazione
         AudioManager.Instance.sfxChannel.RaiseEvent(transformationSfx, true);
+        
         if (effectParticle != null)
         {
             //change the color of effectParticle
@@ -147,6 +150,8 @@ public class PlayerTransform : MonoBehaviour
 
         // Trigger evento
         OnTransform?.Invoke();
+        OnTransformEffect?.Invoke(transformCooldown, transformationColors[transformationIndex]);
+
     }
 
     private GameObject GetPrefabByIndex(int index)

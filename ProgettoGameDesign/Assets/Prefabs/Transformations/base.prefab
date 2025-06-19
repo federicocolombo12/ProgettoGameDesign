@@ -964,9 +964,6 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: -1125081754167440450, guid: fe1cf0ce0732a6947ae495647d7216ae, type: 3}
       insertIndex: -1
       addedObject: {fileID: 2125157369694998209}
-    - targetCorrespondingSourceObject: {fileID: -1125081754167440450, guid: fe1cf0ce0732a6947ae495647d7216ae, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 8219529715085362154}
     - targetCorrespondingSourceObject: {fileID: 8224306227829879300, guid: fe1cf0ce0732a6947ae495647d7216ae, type: 3}
       insertIndex: -1
       addedObject: {fileID: 6971528309660164983}
@@ -1018,7 +1015,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ded550ecb90af8f458b6b8edf3f26542, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  flashColor: {r: 1, g: 1, b: 1, a: 1}
   flashCurve:
     serializedVersion: 2
     m_Curve:
@@ -1065,7 +1061,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ded550ecb90af8f458b6b8edf3f26542, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  flashColor: {r: 1, g: 1, b: 1, a: 1}
   flashCurve:
     serializedVersion: 2
     m_Curve:
@@ -1112,7 +1107,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ded550ecb90af8f458b6b8edf3f26542, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  flashColor: {r: 1, g: 1, b: 1, a: 1}
   flashCurve:
     serializedVersion: 2
     m_Curve:
@@ -1154,7 +1148,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ded550ecb90af8f458b6b8edf3f26542, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  flashColor: {r: 1, g: 1, b: 1, a: 1}
   flashCurve:
     serializedVersion: 2
     m_Curve:
@@ -1196,7 +1189,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ded550ecb90af8f458b6b8edf3f26542, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  flashColor: {r: 1, g: 1, b: 1, a: 1}
   flashCurve:
     serializedVersion: 2
     m_Curve:
@@ -1238,7 +1230,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ded550ecb90af8f458b6b8edf3f26542, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  flashColor: {r: 1, g: 1, b: 1, a: 1}
   flashCurve:
     serializedVersion: 2
     m_Curve:
@@ -1280,7 +1271,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ded550ecb90af8f458b6b8edf3f26542, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  flashColor: {r: 1, g: 1, b: 1, a: 1}
   flashCurve:
     serializedVersion: 2
     m_Curve:
@@ -1322,7 +1312,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ded550ecb90af8f458b6b8edf3f26542, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  flashColor: {r: 1, g: 1, b: 1, a: 1}
   flashCurve:
     serializedVersion: 2
     m_Curve:
@@ -1344,25 +1333,6 @@ MonoBehaviour:
       weightedMode: 0
       inWeight: 0
       outWeight: 0
-    m_PreInfinity: 2
-    m_PostInfinity: 2
-    m_RotationOrder: 4
---- !u!114 &8219529715085362154
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3080884042161517628}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ded550ecb90af8f458b6b8edf3f26542, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  flashColor: {r: 1, g: 1, b: 1, a: 1}
-  flashCurve:
-    serializedVersion: 2
-    m_Curve: []
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
@@ -1393,7 +1363,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ded550ecb90af8f458b6b8edf3f26542, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  flashColor: {r: 1, g: 1, b: 1, a: 1}
   flashCurve:
     serializedVersion: 2
     m_Curve:
@@ -1440,7 +1409,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ded550ecb90af8f458b6b8edf3f26542, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  flashColor: {r: 1, g: 1, b: 1, a: 1}
   flashCurve:
     serializedVersion: 2
     m_Curve:
@@ -1608,7 +1576,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ded550ecb90af8f458b6b8edf3f26542, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  flashColor: {r: 1, g: 1, b: 1, a: 1}
   flashCurve:
     serializedVersion: 2
     m_Curve:
@@ -1650,7 +1617,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ded550ecb90af8f458b6b8edf3f26542, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  flashColor: {r: 1, g: 1, b: 1, a: 1}
   flashCurve:
     serializedVersion: 2
     m_Curve:

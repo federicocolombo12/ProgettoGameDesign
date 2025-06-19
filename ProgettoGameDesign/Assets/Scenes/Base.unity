@@ -3104,6 +3104,30 @@ PrefabInstance:
       propertyPath: transformationSfx
       value: 
       objectReference: {fileID: 11400000, guid: d41499c93db50d14ea70afaf1060f7e9, type: 2}
+    - target: {fileID: 4525009401178718108, guid: 1e5e95d1c8d2a664aa123a5933f1c74e, type: 3}
+      propertyPath: transformationColors.Array.data[1].b
+      value: 0.754717
+      objectReference: {fileID: 0}
+    - target: {fileID: 4525009401178718108, guid: 1e5e95d1c8d2a664aa123a5933f1c74e, type: 3}
+      propertyPath: transformationColors.Array.data[1].g
+      value: 0.6083492
+      objectReference: {fileID: 0}
+    - target: {fileID: 4525009401178718108, guid: 1e5e95d1c8d2a664aa123a5933f1c74e, type: 3}
+      propertyPath: transformationColors.Array.data[1].r
+      value: 0.13883947
+      objectReference: {fileID: 0}
+    - target: {fileID: 4525009401178718108, guid: 1e5e95d1c8d2a664aa123a5933f1c74e, type: 3}
+      propertyPath: transformationColors.Array.data[2].b
+      value: 0.07609467
+      objectReference: {fileID: 0}
+    - target: {fileID: 4525009401178718108, guid: 1e5e95d1c8d2a664aa123a5933f1c74e, type: 3}
+      propertyPath: transformationColors.Array.data[2].g
+      value: 0.62263566
+      objectReference: {fileID: 0}
+    - target: {fileID: 4525009401178718108, guid: 1e5e95d1c8d2a664aa123a5933f1c74e, type: 3}
+      propertyPath: transformationColors.Array.data[2].r
+      value: 0.8490566
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []

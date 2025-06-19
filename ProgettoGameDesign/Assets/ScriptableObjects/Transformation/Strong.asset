@@ -18,17 +18,17 @@ MonoBehaviour:
   abilityType: 4
   maxHealth: 6
   damageMultiplier: 1
-  moveSpeed: 5
+  moveSpeed: 6.78
   jumpForce: 10
   jumpCount: 0
   dashSpeed: 8
-  attackDamage: 1.5
-  attackDelay: 0.1
+  attackDamage: 2
+  attackDelay: 0.14
   attackSpeed: 0
   spellDamage: 1
   baseSprite: {fileID: 348132329, guid: f724fb7d020a0d047aa3ecff98ff3d34, type: 3}
   animatorController: {fileID: 9100000, guid: dab8144b4dc40d54d854714dab625fae, type: 2}
-  color: {r: 0, g: 0, b: 0, a: 0}
+  color: {r: 0.8509804, g: 0.62352943, b: 0.07450981, a: 1}
   transformationScale: {x: 1, y: 1, z: 1}
   colliderSize: {x: 1.39, y: 3.75}
   colliderOffset: {x: 0, y: 0}

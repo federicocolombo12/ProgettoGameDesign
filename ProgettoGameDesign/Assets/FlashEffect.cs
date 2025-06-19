@@ -3,16 +3,16 @@ using DG.Tweening;
 
 public class FlashEffect : MonoBehaviour
 {
-    [ColorUsage(true, true)]
-    public Color flashColor = Color.white;
-    
+
+
     public AnimationCurve flashCurve;
 
     private Material mat;
     private float dissolveAmount = 1f;
     private Tween currentTween;
+    float oscillationSpeed = 2f; // Speed of the oscillation effect
 
-    void Start()
+    void Awake()
     {
         mat = GetComponent<SpriteRenderer>().material;
         mat.SetFloat("_DissolveAmount", dissolveAmount);
@@ -20,36 +20,40 @@ public class FlashEffect : MonoBehaviour
     private void OnEnable()
     {
         PlayerHealth.OnPlayerHit += FlashDissolve;
+        PlayerTransform.OnTransformEffect += FlashDissolve;
     }
     private void OnDisable()
     {
         PlayerHealth.OnPlayerHit -= FlashDissolve;
+        PlayerTransform.OnTransformEffect -= FlashDissolve;
     }
 
     public void FlashDissolve(float flashDuration, Color color)
     {
-        // Stop any ongoing tween
         if (currentTween != null && currentTween.IsPlaying())
             currentTween.Kill();
 
-        // Set color
-        mat.SetColor("_DissolveColor", flashColor);
+        mat.SetColor("_DissolveColor", color);
 
-        // Animazione dissolveAmount da 1 → 0 → 1 seguendo la curva
+        // Calcola la durata di un ciclo (1→0→1)
+        float singleCycleDuration = 1f / oscillationSpeed;
+
+        // Ogni ciclo è composto da 2 tween (1→0, 0→1), quindi loopCount è flashDuration diviso metà ciclo
+        int loopCount = Mathf.FloorToInt(flashDuration / (singleCycleDuration));
+
         currentTween = DOTween.To(() => dissolveAmount, x =>
         {
             dissolveAmount = x;
             mat.SetFloat("_DissolveAmount", dissolveAmount);
-        }, 0f, flashDuration / 2f)
+        }, 0f, singleCycleDuration / 2f) // durata metà ciclo
         .SetEase(flashCurve)
-        .OnComplete(() =>
+        .SetLoops(loopCount, LoopType.Yoyo)
+        .OnKill(() =>
         {
-            currentTween = DOTween.To(() => dissolveAmount, x =>
-            {
-                dissolveAmount = x;
-                mat.SetFloat("_DissolveAmount", dissolveAmount);
-            }, 1f, flashDuration / 2f)
-            .SetEase(flashCurve);
+            // Alla fine, riporta dissolveAmount a 1 (opzionale)
+            dissolveAmount = 1f;
+            mat.SetFloat("_DissolveAmount", dissolveAmount);
         });
+
     }
 }

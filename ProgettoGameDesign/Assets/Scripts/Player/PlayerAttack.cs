@@ -92,6 +92,8 @@ public class PlayerAttack : MonoBehaviour
                 Hit(sideAttackTransform, sideAttackArea, ref pState.recoilingX, Vector2.right * _recoilLeftOrRight, recoilXSpeed, hitDelay);
                 GameObject slash = pState.lookingRight ? slashEffectR : slashEffectL;
                 Vector3 newScale = slash.transform.localScale;
+                var renderer = slash.GetComponent<ParticleSystemRenderer>().sharedMaterial;
+                ModifyColor(Player.Instance.playerTransformation.color, renderer);
                 newScale.y = (currentTransformation.index == 0 || currentTransformation.index == 2) ? -1 : 1;
                 slash.transform.localScale = newScale;
                 EffectManager.Instance.PlayOneShot(slash.GetComponent<ParticleSystem>(), sideAttackTransform.position);
@@ -100,6 +102,7 @@ public class PlayerAttack : MonoBehaviour
             {
                 Hit(upAttackTransform, upAttackArea, ref pState.recoilingY, Vector2.up, recoilYSpeed, hitDelay);
                 SlashEffectAngle(slashEffectR, 90, upAttackTransform);
+
             }
             else if (directionalInput.y < 0.3f && !playerMovement.IsGrounded())
             {
@@ -109,7 +112,45 @@ public class PlayerAttack : MonoBehaviour
             // Attacco
         }
     }
-    
+    void ModifyColor(Color color, Material mat)
+    {
+        // Funzione interna per aggiungere variazione limitata
+        Color Vary(Color baseColor, float amount)
+        {
+            return new Color(
+                Mathf.Clamp01(baseColor.r + Random.Range(-amount, amount)),
+                Mathf.Clamp01(baseColor.g + Random.Range(-amount, amount)),
+                Mathf.Clamp01(baseColor.b + Random.Range(-amount, amount)),
+                1f
+            );
+        }
+
+        float variationAmount = 0.1f; // variazione massima +/-5%
+
+        Color newR = Vary(color, variationAmount);
+        Color newG = Vary(color, variationAmount);
+        Color newB = Vary(color, variationAmount);
+        Color newOutline = Vary(color, variationAmount);
+        //rendi una delle tre componenti nera, a random
+        int randomComponent = Random.Range(0, 3);
+        switch (randomComponent)
+        {
+            case 0:
+                newR = Color.black;
+                break;
+            case 1:
+                newG = Color.black;
+                break;
+            case 2:
+                newB = Color.black;
+                break;
+        }
+        mat.SetColor("_R", newR);
+        mat.SetColor("_G", newG);
+        mat.SetColor("_B", newB);
+        mat.SetColor("_Outline", newOutline);
+    }
+
 
 
 
@@ -144,6 +185,7 @@ public class PlayerAttack : MonoBehaviour
         GameObject slash = Instantiate(slashEffect, attackTransform.position, Quaternion.identity);
         slash.transform.eulerAngles = new Vector3(0, 0, angle);
         slash.transform.localScale = new Vector2(transform.localScale.x, transform.localScale.y);
+        ModifyColor(Player.Instance.playerTransformation.color, slash.GetComponent<ParticleSystemRenderer>().sharedMaterial);
         EffectManager.Instance.PlayOneShot(slash.GetComponent<ParticleSystem>(), slash.transform.position);
 
     }
