@@ -44,6 +44,7 @@ public class AudioManager : MonoBehaviour
     {
         sfxChannel.OnSFXPlayRequested -= PlaySFX;
         musicChannel.OnMusicChangeRequested -= PlayMusic;
+        SceneController.OnSceneLoaded -= ResetVolume;
     }
 
     public void PlaySFX(SfxData data, bool randomizePitch)
