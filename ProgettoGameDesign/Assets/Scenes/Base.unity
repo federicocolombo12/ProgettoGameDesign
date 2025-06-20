@@ -1046,6 +1046,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   powerImage: {fileID: 557991598}
+  buttonImage: {fileID: 400517369}
+  secondButtonImage: {fileID: 1363663143}
   tutorialText: {fileID: 1245826265}
   tutorialTitle: {fileID: 1316634126}
   tutorialEvents: {fileID: 11400000, guid: 9022d0a160f56654d8a50d30ff0a06b5, type: 2}
@@ -3134,7 +3136,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: -6470460504253458178, guid: d028d2d796fc9ac49ac886b632f41f5c, type: 3}
+  m_Sprite: {fileID: 0}
   m_Type: 0
   m_PreserveAspect: 1
   m_FillCenter: 1

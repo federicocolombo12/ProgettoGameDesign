@@ -8,6 +8,10 @@ public class Tutorial : ScriptableObject
     [PreviewField(100, ObjectFieldAlignment.Left)]
     [HideLabel]
     public Sprite tutorialImage;
+    [PreviewField(100, ObjectFieldAlignment.Left)]
+    
+    public Sprite tastoDaPremere;
+    public Sprite secondTastoDaPremere;
 
     [Title("Titolo del Tutorial")]
     

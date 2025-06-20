@@ -13,6 +13,8 @@ MonoBehaviour:
   m_Name: TutorialTrasformazioni
   m_EditorClassIdentifier: 
   tutorialImage: {fileID: 7709380569392148631, guid: fe1cf0ce0732a6947ae495647d7216ae, type: 3}
+  tastoDaPremere: {fileID: 6284851335262372166, guid: 8c029ee7f69b5984a88ab70362247e37, type: 3}
+  secondTastoDaPremere: {fileID: 3745426777212231145, guid: 8c029ee7f69b5984a88ab70362247e37, type: 3}
   tutorialTitle: Trasformation
   tutorialText: hit R1-L1 to change the current transformation. Each transformation
     has unique characteristics.

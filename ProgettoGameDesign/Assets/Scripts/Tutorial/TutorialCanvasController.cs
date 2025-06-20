@@ -9,6 +9,9 @@ public class TutorialCanvasController : MonoBehaviour
 {
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     [SerializeField] Image powerImage;
+    [SerializeField] Image buttonImage;
+    [SerializeField] Image secondButtonImage;
+   
     CanvasGroup tutorialCanvas;
     [SerializeField] TextMeshProUGUI tutorialText;
     [SerializeField] TextMeshProUGUI tutorialTitle;
@@ -49,6 +52,18 @@ public class TutorialCanvasController : MonoBehaviour
         tutorialText.text = _tutorialMaterial.tutorialText;
         tutorialTitle.text = _tutorialMaterial.tutorialTitle;
         powerImage.sprite = _tutorialMaterial.tutorialImage;
+        buttonImage.sprite = _tutorialMaterial.tastoDaPremere;
+        if (_tutorialMaterial.secondTastoDaPremere== null)
+        {
+            secondButtonImage.sprite = null;
+            secondButtonImage.color = new Color(1, 1, 1, 0); // alpha 0 = trasparente
+        }
+        else
+        {
+            secondButtonImage.sprite = _tutorialMaterial.secondTastoDaPremere;
+            secondButtonImage.color = Color.white; // alpha 1 = opaco
+        }
+
         InputManager.SwitchActionMap(InputManager.inputActions.Tutorial);
         yield return new WaitForSeconds(0.5f);
         Time.timeScale = 0;
