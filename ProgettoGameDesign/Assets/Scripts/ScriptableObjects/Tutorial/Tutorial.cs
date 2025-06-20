@@ -9,10 +9,13 @@ public class Tutorial : ScriptableObject
     [HideLabel]
     public Sprite tutorialImage;
     [PreviewField(100, ObjectFieldAlignment.Left)]
-    
     public Sprite tastoDaPremere;
+    [PreviewField(100, ObjectFieldAlignment.Left)]
     public Sprite secondTastoDaPremere;
-
+    
+    [PreviewField(100, ObjectFieldAlignment.Left)]
+    public Sprite transformImage;
+    public Color ColorTransformImage = Color.white;
     [Title("Titolo del Tutorial")]
     
     public string tutorialTitle;

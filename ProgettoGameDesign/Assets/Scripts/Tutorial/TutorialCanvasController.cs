@@ -11,6 +11,8 @@ public class TutorialCanvasController : MonoBehaviour
     [SerializeField] Image powerImage;
     [SerializeField] Image buttonImage;
     [SerializeField] Image secondButtonImage;
+    [SerializeField] Image TransformImage;
+    [SerializeField] Image TransformImage2;
    
     CanvasGroup tutorialCanvas;
     [SerializeField] TextMeshProUGUI tutorialText;
@@ -53,7 +55,7 @@ public class TutorialCanvasController : MonoBehaviour
         tutorialTitle.text = _tutorialMaterial.tutorialTitle;
         powerImage.sprite = _tutorialMaterial.tutorialImage;
         buttonImage.sprite = _tutorialMaterial.tastoDaPremere;
-        if (_tutorialMaterial.secondTastoDaPremere== null)
+        if (_tutorialMaterial.secondTastoDaPremere== null
         {
             secondButtonImage.sprite = null;
             secondButtonImage.color = new Color(1, 1, 1, 0); // alpha 0 = trasparente
@@ -63,9 +65,29 @@ public class TutorialCanvasController : MonoBehaviour
             secondButtonImage.sprite = _tutorialMaterial.secondTastoDaPremere;
             secondButtonImage.color = Color.white; // alpha 1 = opaco
         }
+        if(_tutorialMaterial.transformImage == null)
+        {
+            TransformImage.sprite = null;
+            TransformImage.color = new Color(1, 1, 1, 0); // alpha 0 = trasparente
+            TransformImage2.sprite = null;
+            TransformImage2.color = new Color(1, 1, 1, 0); // alpha 0 = trasparente
+        }
+        else
+        {
+            TransformImage.sprite = _tutorialMaterial.transformImage;
+            TransformImage.color = _tutorialMaterial.ColorTransformImage; // alpha 1 = opaco
+            TransformImage2.sprite = _tutorialMaterial.transformImage;
+            TransformImage2.color = _tutorialMaterial.ColorTransformImage; // alpha 1 = opaco
+        }
 
         InputManager.SwitchActionMap(InputManager.inputActions.Tutorial);
-        yield return new WaitForSeconds(0.5f);
-        Time.timeScale = 0;
+        
+        
+        float startTime = Time.unscaledTime;
+        while (Time.unscaledTime < startTime + 0.5f) {
+            yield return null; // Aspetta il frame successivo
+        }
+
+        Time.timeScale = 0; // Sospende il tempo di gioco
     }
 }
