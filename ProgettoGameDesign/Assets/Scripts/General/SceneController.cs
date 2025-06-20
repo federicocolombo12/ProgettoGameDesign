@@ -4,12 +4,14 @@ using Dev.Nicklaj.Butter;
 using UnityEngine.SceneManagement;
 using DG.Tweening;
 using System.Collections;
+using System;
 
 public class SceneController : MonoBehaviour
 {
     public static SceneController Instance { get; private set; }
     [SerializeField] GameEvent loadGameEvent;
     public static event System.Action OnSceneLoaded;
+    
     private void Awake()
     {
         if (Instance != null && Instance != this)
@@ -22,6 +24,15 @@ public class SceneController : MonoBehaviour
         }
         DontDestroyOnLoad(gameObject);
 
+    }
+    private void OnEnable()
+    {
+       
+        EventHandler.OnClosedRequest += QuitGame;
+    }
+    private void OnDisable()
+    {
+        EventHandler.OnClosedRequest -= QuitGame;
     }
 
 
@@ -161,6 +172,7 @@ private IEnumerator ReloadSpecificScenesRoutine(List<string> scenesToReload)
 }
     public void QuitGame()
     {
+        Debug.Log("Uscita dal gioco...");
         Application.Quit();
     }
 

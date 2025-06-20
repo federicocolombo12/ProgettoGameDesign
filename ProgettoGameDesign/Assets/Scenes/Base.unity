@@ -210,17 +210,6 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 143a6883c081a4b97a29d9783e89651a, type: 3}
---- !u!114 &119710108 stripped
-MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 2116082936189241451, guid: dd124a0ba37d77b409357eabb4970896, type: 3}
-  m_PrefabInstance: {fileID: 793929812}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 846816264e5620c46acb55767de4ad4b, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1001 &129414564
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -678,6 +667,50 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 4928648345711424812, guid: 143a6883c081a4b97a29d9783e89651a, type: 3}
   m_PrefabInstance: {fileID: 184509637}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &339607486
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 339607488}
+  - component: {fileID: 339607487}
+  m_Layer: 0
+  m_Name: EventHandler
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &339607487
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 339607486}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f40a95aa1bd86204d8ba6db2476ce4c1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!4 &339607488
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 339607486}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 1209.7048, y: 428.49728, z: -2.3420289}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &346149098
 GameObject:
   m_ObjectHideFlags: 0
@@ -998,10 +1031,22 @@ PrefabInstance:
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
       objectReference: {fileID: 844481461}
+    - target: {fileID: 1952207433528021482, guid: 4b8e405500c7dcc4c9fe2f3db276d2be, type: 3}
+      propertyPath: m_RaycastTarget
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 5094970432785375414, guid: 4b8e405500c7dcc4c9fe2f3db276d2be, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
-      objectReference: {fileID: 119710108}
+      objectReference: {fileID: 339607487}
+    - target: {fileID: 5094970432785375414, guid: 4b8e405500c7dcc4c9fe2f3db276d2be, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: RaiseCloseEvent
+      objectReference: {fileID: 0}
+    - target: {fileID: 5094970432785375414, guid: 4b8e405500c7dcc4c9fe2f3db276d2be, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
+      value: EventHandler, Assembly-CSharp
+      objectReference: {fileID: 0}
     - target: {fileID: 8778941739818025656, guid: 4b8e405500c7dcc4c9fe2f3db276d2be, type: 3}
       propertyPath: m_Name
       value: PauseMenuCanvas
@@ -3471,3 +3516,4 @@ SceneRoots:
   - {fileID: 1796350799}
   - {fileID: 968865549}
   - {fileID: 499414162}
+  - {fileID: 339607488}
