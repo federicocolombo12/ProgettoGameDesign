@@ -42,11 +42,9 @@ public class PlayerTransform : MonoBehaviour
 
     private void Start()
     {
-        // Istanzia forma di default (es. base)
-        DOVirtual.DelayedCall(0.1f, () => 
-        {
-            ChangeSprite(0);
-        });
+        
+         ChangeSprite(0);
+        
         
     }
 

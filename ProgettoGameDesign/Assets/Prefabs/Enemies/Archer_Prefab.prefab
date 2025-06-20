@@ -327,10 +327,10 @@ MonoBehaviour:
   healthImage: {fileID: 7720817172819703281}
   damage: 1
   orangeBlood: {fileID: 4792805946373802877, guid: 99392edfef6f7574fbd4cc2077f8cc06, type: 3}
-  weakTo: {fileID: 11400000, guid: a85abe56df98ddd489746a5ed5666703, type: 2}
+  weakTo: {fileID: 11400000, guid: 34644fc0004a56a45927fc9ad2f602ce, type: 2}
   immuneTo: {fileID: 0}
   weakToEffect: {fileID: 5569289640993081841, guid: 6dbb3939c6bb00b4eae30e45299b42df, type: 3}
-  damageMultiplier: 5
+  damageMultiplier: 3
   projectilePrefab: {fileID: 693101946130715330, guid: 0d3649e3895df481f89628e805bcb6b7, type: 3}
   projectileSpeed: 5
   projectileTransform: {fileID: 6802901137642203119}
@@ -756,7 +756,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   sr: {fileID: 4856498866381529004}
   health: 20
-  maxHealth: 20
+  maxHealth: 10
   recoilLenght: 0.5
   recoilFactor: 1
   isRecoiling: 0
@@ -770,8 +770,8 @@ MonoBehaviour:
   deathEffect: {fileID: 0}
   healthImage: {fileID: 507384076149555728}
   damage: 1
-  orangeBlood: {fileID: 4792805946373802877, guid: 99392edfef6f7574fbd4cc2077f8cc06, type: 3}
-  weakTo: {fileID: 0}
+  orangeBlood: {fileID: 1018504420545732665, guid: 8e88e1f612b228c4891428b837d80d61, type: 3}
+  weakTo: {fileID: 11400000, guid: a85abe56df98ddd489746a5ed5666703, type: 2}
   immuneTo: {fileID: 0}
   weakToEffect: {fileID: 5569289640993081841, guid: 6dbb3939c6bb00b4eae30e45299b42df, type: 3}
   damageMultiplier: 2
@@ -1006,15 +1006,15 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 3932498036490793124, guid: da2f707ff50440b41ae1e07967fb6f52, type: 3}
       propertyPath: m_Color.b
-      value: 0.79
+      value: 0.078431375
       objectReference: {fileID: 0}
     - target: {fileID: 3932498036490793124, guid: da2f707ff50440b41ae1e07967fb6f52, type: 3}
       propertyPath: m_Color.g
-      value: 0.12087005
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 3932498036490793124, guid: da2f707ff50440b41ae1e07967fb6f52, type: 3}
       propertyPath: m_Color.r
-      value: 0.1398331
+      value: 0.9294118
       objectReference: {fileID: 0}
     - target: {fileID: 4897976666849188363, guid: da2f707ff50440b41ae1e07967fb6f52, type: 3}
       propertyPath: m_Name
