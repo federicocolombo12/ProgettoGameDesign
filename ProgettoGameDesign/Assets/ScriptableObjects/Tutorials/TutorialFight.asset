@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ea85109bd69c5fd4dac11376dcb87800, type: 3}
   m_Name: TutorialFight
   m_EditorClassIdentifier: 
-  tutorialImage: {fileID: 21300000, guid: 82e10937dee60ac49aab93107e008888, type: 3}
+  tutorialImage: {fileID: -3660571561243988826, guid: 32e92bbf53f7ce042b77b5d7c29a80f8, type: 3}
   tastoDaPremere: {fileID: -3290444800413014147, guid: 8c029ee7f69b5984a88ab70362247e37, type: 3}
   secondTastoDaPremere: {fileID: 0}
   transformImage: {fileID: 0}

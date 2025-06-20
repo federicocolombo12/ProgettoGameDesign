@@ -19,4 +19,6 @@ MonoBehaviour:
   ColorTransformImage: {r: 1, g: 0.9057375, b: 0.27058828, a: 1}
   tutorialTitle: Breakable Rock
   tutorialText: Smash through the stone to open your path.
+  TestoTasto: press
+  TestoSecondoTasto: 
   unlocked: 0
