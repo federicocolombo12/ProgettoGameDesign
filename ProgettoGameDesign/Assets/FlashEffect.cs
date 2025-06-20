@@ -10,7 +10,7 @@ public class FlashEffect : MonoBehaviour
     private Material mat;
     private float dissolveAmount = 1f;
     private Tween currentTween;
-    float oscillationSpeed = 2f; // Speed of the oscillation effect
+    float oscillationSpeed = 3f; // Speed of the oscillation effect
 
     void Awake()
     {
