@@ -12,6 +12,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e2183179d9fce44cfaf4b918ef696289, type: 3}
   m_Name: Button
   m_EditorClassIdentifier: 
-  clip: {fileID: 8300000, guid: c5cb2ac29e89dbf43a9b644caaad45e6, type: 3}
+  clip: {fileID: 8300000, guid: aca95e4313ca8d242baac6f68723c360, type: 3}
   volume: 0.67
   pitch: 1
