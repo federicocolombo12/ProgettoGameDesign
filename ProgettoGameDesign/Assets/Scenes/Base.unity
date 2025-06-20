@@ -1416,10 +1416,26 @@ PrefabInstance:
       propertyPath: m_IsActive
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 7239923679517913195, guid: 4b8e405500c7dcc4c9fe2f3db276d2be, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 844481461}
+    - target: {fileID: 7239923679517913195, guid: 4b8e405500c7dcc4c9fe2f3db276d2be, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: DisableMusic
+      objectReference: {fileID: 0}
     - target: {fileID: 8495597082758630657, guid: 4b8e405500c7dcc4c9fe2f3db276d2be, type: 3}
       propertyPath: m_Sprite
       value: 
       objectReference: {fileID: -6144018244211316465, guid: 65781493097b2974a97f6876c8a93862, type: 3}
+    - target: {fileID: 8658491879831026774, guid: 4b8e405500c7dcc4c9fe2f3db276d2be, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 844481461}
+    - target: {fileID: 8658491879831026774, guid: 4b8e405500c7dcc4c9fe2f3db276d2be, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: DisableSfx
+      objectReference: {fileID: 0}
     - target: {fileID: 8778941739818025656, guid: 4b8e405500c7dcc4c9fe2f3db276d2be, type: 3}
       propertyPath: m_Name
       value: PauseMenuCanvas
