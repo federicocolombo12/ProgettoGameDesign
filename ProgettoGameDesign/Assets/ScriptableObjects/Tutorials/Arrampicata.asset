@@ -13,6 +13,10 @@ MonoBehaviour:
   m_Name: Arrampicata
   m_EditorClassIdentifier: 
   tutorialImage: {fileID: -2061515138, guid: 30d0d9ed4e68f42afbc5068209371400, type: 3}
+  tastoDaPremere: {fileID: 6614609703658307580, guid: 8c029ee7f69b5984a88ab70362247e37, type: 3}
+  secondTastoDaPremere: {fileID: -5769844184903310746, guid: 8c029ee7f69b5984a88ab70362247e37, type: 3}
+  transformImage: {fileID: -6342496699349389731, guid: acd26184959097b4985e172f3c452fbb, type: 3}
+  ColorTransformImage: {r: 0.9294118, g: 0, b: 0.078431375, a: 1}
   tutorialTitle: 'Wall Climb '
   tutorialText: You've gained the ability to climb specific walls. Jump onto them
     and use the stick to move vertically.

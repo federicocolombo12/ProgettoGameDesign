@@ -13,6 +13,10 @@ MonoBehaviour:
   m_Name: TutorialRoccia
   m_EditorClassIdentifier: 
   tutorialImage: {fileID: 3469940636223747940, guid: 17730596000c8a8438ae692545c33155, type: 3}
+  tastoDaPremere: {fileID: -5954487174091891807, guid: 8c029ee7f69b5984a88ab70362247e37, type: 3}
+  secondTastoDaPremere: {fileID: 0}
+  transformImage: {fileID: 838941711894094114, guid: adc18e6ae09d6544faa52e6de7692656, type: 3}
+  ColorTransformImage: {r: 1, g: 0.9057375, b: 0.27058828, a: 1}
   tutorialTitle: Breakable Rock
-  tutorialText: Press Circle to charge into the stone and break it to move forward.
+  tutorialText: Smash through the stone to open your path.
   unlocked: 0
