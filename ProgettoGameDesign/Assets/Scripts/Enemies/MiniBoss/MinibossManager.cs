@@ -40,11 +40,11 @@ public class MinibossManager : MonoBehaviour
         
         bossBt.EnableBehavior();
         bossHealthCanvas.DOFade(1, 0.5f).SetEase(Ease.OutSine);
-        bossFightDoor.Open();
+       
     }
     private void OnMinibossDeath()
     {
-       bossFightDoor = FindFirstObjectByType<SwitchableObject>();
+       
         bossFightDoor.Close();
         AudioManager.Instance.PlayMusic(postFightMusic, 1f);
         bossHealthCanvas.DOFade(0, 0.5f).SetEase(Ease.InSine);
