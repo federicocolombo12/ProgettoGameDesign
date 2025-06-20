@@ -14,6 +14,7 @@ public class AudioManager : MonoBehaviour
     public MusicEventChannel musicChannel;
     [SerializeField] float audioCooldown = 0.1f;
     [SerializeField] AudioMixer mixer;
+    [SerializeField] SfxData buttonClickSfx;
 
     private HashSet<AudioClip> cooldownClips = new HashSet<AudioClip>();
 
@@ -33,6 +34,10 @@ public class AudioManager : MonoBehaviour
     {
         sfxSource.clip = null;
         musicSource.clip = null;
+    }
+    public void PlayButtonSfx()
+    {
+        PlaySFX(buttonClickSfx, true);
     }
 
     private void OnDisable()
