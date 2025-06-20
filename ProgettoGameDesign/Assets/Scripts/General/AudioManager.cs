@@ -37,7 +37,7 @@ public class AudioManager : MonoBehaviour
     }
     public void PlayButtonSfx()
     {
-        PlaySFX(buttonClickSfx, true);
+        sfxChannel.RaiseEvent(buttonClickSfx, true); // Play button click sound
     }
 
     private void OnDisable()

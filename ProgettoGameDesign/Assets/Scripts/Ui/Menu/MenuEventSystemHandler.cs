@@ -15,11 +15,11 @@ public class MenuEventSystemHandler : MonoBehaviour
     [Header("Reference")]
     public List<Selectable> selectables = new List<Selectable>();
     [SerializeField] protected Selectable _firstSelected;
-    [SerializeField] protected ScenesToLoad gameStart;
+    
 
     [Header("Controls")]
     [SerializeField] protected InputActionReference _navigateActionReference;
-    [SerializeField] protected InputActionReference _cancelActionReference;
+    
 
     [Header("Animations")]
     [SerializeField] protected float _selectedAnimationScale = 1.1f;
@@ -29,8 +29,7 @@ public class MenuEventSystemHandler : MonoBehaviour
 
     [Header("Sound")]
     public UnityEvent SoundEvent;
-    [Header("Video")]
-    [SerializeField] protected VideoPlayer videoPlayer;
+    
 
     protected Dictionary<Selectable, Vector3> _originalScales = new Dictionary<Selectable, Vector3>();
 
@@ -46,8 +45,7 @@ public class MenuEventSystemHandler : MonoBehaviour
             selectables[i].transform.localScale = _originalScales[selectables[i]];
         }
        StartCoroutine(SelectAfterDelay());
-        videoPlayer.loopPointReached += VideoEnded;
-        _cancelActionReference.action.performed += SkipVideo;
+        
        
     }
     protected virtual IEnumerator SelectAfterDelay()
@@ -66,24 +64,12 @@ public class MenuEventSystemHandler : MonoBehaviour
         {
             _scaleDownTween.Kill();
         }
-        videoPlayer.loopPointReached -= VideoEnded;
-        _cancelActionReference.action.performed -= SkipVideo;
-    }
-
-    private void SkipVideo(InputAction.CallbackContext context)
-    {
-        if (videoPlayer.isPlaying)
-        {
-            videoPlayer.Stop();
-            SceneController.Instance.LoadSceneSet(gameStart);
-        }
         
     }
 
-    void VideoEnded(VideoPlayer vp)
-    {
-        SceneController.Instance.LoadSceneSet(gameStart);
-    }
+    
+
+    
     public virtual void Awake()
     {
 

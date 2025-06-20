@@ -46,7 +46,7 @@ AudioSource:
   m_Resource: {fileID: 0}
   m_PlayOnAwake: 1
   m_Volume: 0
-  m_Pitch: 1
+  m_Pitch: 1.01895
   Loop: 0
   Mute: 0
   Spatialize: 0
@@ -178,6 +178,9 @@ MonoBehaviour:
   musicSource: {fileID: 9029225146296769998}
   sfxChannel: {fileID: 11400000, guid: 09d6b5a02903e4e1f96729887283af28, type: 2}
   musicChannel: {fileID: 11400000, guid: 83dc18cdb497e43ffa63a8b0a3d0b9e7, type: 2}
+  audioCooldown: 0.1
+  mixer: {fileID: 24100000, guid: 55eaf5422325f9045a031538e7058637, type: 2}
+  buttonClickSfx: {fileID: 11400000, guid: 476554ee2f7952b43897b568a8516df3, type: 2}
 --- !u!1 &6478153116016046193
 GameObject:
   m_ObjectHideFlags: 0
