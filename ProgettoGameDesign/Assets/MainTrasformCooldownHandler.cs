@@ -14,6 +14,10 @@ public class MainTrasformCooldownHandler : MonoBehaviour
     {
         PlayerTransform.OnTransformEffect += HandleTransformCooldown;
     }
+    private void OnDisable()
+    {
+        PlayerTransform.OnTransformEffect -= HandleTransformCooldown;
+    }
 
     private void HandleTransformCooldown(float timer, Color color)
     {
