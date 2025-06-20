@@ -545,11 +545,11 @@ PrefabInstance:
     - target: {fileID: 7115418943511187805, guid: 80bcbeb127ebb2b40a27d57dca412ac4, type: 3}
       propertyPath: OutputAudioMixerGroup
       value: 
-      objectReference: {fileID: 24300002, guid: 55eaf5422325f9045a031538e7058637, type: 2}
+      objectReference: {fileID: -669860192830190020, guid: 55eaf5422325f9045a031538e7058637, type: 2}
     - target: {fileID: 9029225146296769998, guid: 80bcbeb127ebb2b40a27d57dca412ac4, type: 3}
       propertyPath: OutputAudioMixerGroup
       value: 
-      objectReference: {fileID: 24300002, guid: 55eaf5422325f9045a031538e7058637, type: 2}
+      objectReference: {fileID: -7760875463425737455, guid: 55eaf5422325f9045a031538e7058637, type: 2}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
