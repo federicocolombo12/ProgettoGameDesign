@@ -648,6 +648,10 @@ PrefabInstance:
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
       objectReference: {fileID: 1291464375}
+    - target: {fileID: 873553061373119968, guid: e22b0d7e74eef7041969717eaf376ee1, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 1206779486670402149, guid: e22b0d7e74eef7041969717eaf376ee1, type: 3}
       propertyPath: m_Name
       value: MainMenuCanvas
