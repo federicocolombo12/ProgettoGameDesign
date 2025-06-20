@@ -13,7 +13,10 @@ MonoBehaviour:
   m_Name: TutorialSparo
   m_EditorClassIdentifier: 
   tutorialImage: {fileID: 21300000, guid: 2c961366528f28c458c619797d0bbb2f, type: 3}
+  tastoDaPremere: {fileID: 1049651089572498557, guid: 8c029ee7f69b5984a88ab70362247e37, type: 3}
+  secondTastoDaPremere: {fileID: 0}
+  transformImage: {fileID: -6342496699349389731, guid: acd26184959097b4985e172f3c452fbb, type: 3}
+  ColorTransformImage: {r: 0.9294118, g: 0, b: 0.078431375, a: 1}
   tutorialTitle: Fireball
-  tutorialText: Cast spells to strike enemies from afar. When your mana is full enough,
-    press Triangle to cast.
+  tutorialText: With enough mana, you can cast spells to hit enemies from a distance.
   unlocked: 0

@@ -13,6 +13,10 @@ MonoBehaviour:
   m_Name: TutorialDash
   m_EditorClassIdentifier: 
   tutorialImage: {fileID: -2950031364595783801, guid: d234688aa4f0caf47b442704bbb49a2b, type: 3}
+  tastoDaPremere: {fileID: -7331861683358846762, guid: 8c029ee7f69b5984a88ab70362247e37, type: 3}
+  secondTastoDaPremere: {fileID: 0}
+  transformImage: {fileID: 0}
+  ColorTransformImage: {r: 1, g: 1, b: 1, a: 1}
   tutorialTitle: Dash
   tutorialText: Dash to reach the more distant platforms.
   unlocked: 0

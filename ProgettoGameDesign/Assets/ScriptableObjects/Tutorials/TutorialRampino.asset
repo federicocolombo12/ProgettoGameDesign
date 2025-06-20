@@ -12,8 +12,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ea85109bd69c5fd4dac11376dcb87800, type: 3}
   m_Name: TutorialRampino
   m_EditorClassIdentifier: 
-  tutorialImage: {fileID: 21300000, guid: db2cb8f03c8d7044c9a8b35233aaa2d7, type: 3}
+  tutorialImage: {fileID: 6156703004183705088, guid: d9572a709d1148542977c818d958759a, type: 3}
+  tastoDaPremere: {fileID: 0}
+  secondTastoDaPremere: {fileID: 0}
+  transformImage: {fileID: -2269000695882682710, guid: 98fc281b455a35549a7843da147e64d8, type: 3}
+  ColorTransformImage: {r: 0.2988167, g: 0.2688679, b: 1, a: 1}
   tutorialTitle: Grappling Hook
-  tutorialText: Use the grappling hook to reach distant areas. Aim at it and press
-    Circle to pull yourself toward it.
+  tutorialText: Use the grappling hook to reach distant areas. Aim at a target and
+    pull yourself toward it.
   unlocked: 0
