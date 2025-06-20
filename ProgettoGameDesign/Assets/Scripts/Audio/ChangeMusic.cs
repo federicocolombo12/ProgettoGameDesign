@@ -13,6 +13,7 @@ public class ChangeMusic : MonoBehaviour
         if (collision.CompareTag("Player") && newMusicClip != null) {
             AudioManager.Instance.PlayMusic(newMusicClip, 1f);
         }
+        Destroy(gameObject, 0.1f); // Destroy the trigger after it has been used
         
     }
 

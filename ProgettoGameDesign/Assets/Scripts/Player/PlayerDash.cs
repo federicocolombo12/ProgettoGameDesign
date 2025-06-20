@@ -13,6 +13,7 @@ public class PlayerDash : MonoBehaviour
     [SerializeField] GameObject dashTrail;
     [SerializeField] Transform dashPosition;
     [SerializeField] float effectPosition = 0.5f;
+    [SerializeField] SfxData dashSfx;
     private PlayerMovement playerMovement;
     PlayerStateList pState;
     private Rigidbody2D rb;
@@ -69,7 +70,7 @@ public class PlayerDash : MonoBehaviour
 
 
         EffectManager.Instance.PlayOneShot(dashEffect.GetComponent<ParticleSystem>(), transform.position + Vector3.down * effectPosition);
-        
+        AudioManager.Instance.sfxChannel.RaiseEvent(dashSfx, true);
         ChangeAlpha();
         ParticleSpawn();
 

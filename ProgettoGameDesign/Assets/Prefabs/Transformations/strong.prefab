@@ -1171,7 +1171,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 783189269af2bfe4ab71963f13020140, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  footstepSound: {fileID: 11400000, guid: bf4f405c9e7f38c498caf5257ee68588, type: 2}
+  footstepSound: {fileID: 11400000, guid: a4b137bffe3e17f479ad690591f5e170, type: 2}
 --- !u!4 &1175112090249045470 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 1617043042561621135, guid: 08a3b86766d31c0469efd24ff9edd7ac, type: 3}
@@ -1204,7 +1204,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ded550ecb90af8f458b6b8edf3f26542, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  flashColor: {r: 1, g: 1, b: 1, a: 1}
   flashCurve:
     serializedVersion: 2
     m_Curve:
@@ -1251,7 +1250,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ded550ecb90af8f458b6b8edf3f26542, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  flashColor: {r: 1, g: 1, b: 1, a: 1}
   flashCurve:
     serializedVersion: 2
     m_Curve:
@@ -1308,7 +1306,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ded550ecb90af8f458b6b8edf3f26542, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  flashColor: {r: 1, g: 1, b: 1, a: 1}
   flashCurve:
     serializedVersion: 2
     m_Curve:
@@ -1355,7 +1352,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ded550ecb90af8f458b6b8edf3f26542, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  flashColor: {r: 1, g: 1, b: 1, a: 1}
   flashCurve:
     serializedVersion: 2
     m_Curve:
@@ -1402,7 +1398,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ded550ecb90af8f458b6b8edf3f26542, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  flashColor: {r: 1, g: 1, b: 1, a: 1}
   flashCurve:
     serializedVersion: 2
     m_Curve:
@@ -1444,7 +1439,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ded550ecb90af8f458b6b8edf3f26542, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  flashColor: {r: 1, g: 1, b: 1, a: 1}
   flashCurve:
     serializedVersion: 2
     m_Curve:
@@ -1486,7 +1480,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ded550ecb90af8f458b6b8edf3f26542, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  flashColor: {r: 1, g: 1, b: 1, a: 1}
   flashCurve:
     serializedVersion: 2
     m_Curve:
@@ -1528,7 +1521,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ded550ecb90af8f458b6b8edf3f26542, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  flashColor: {r: 1, g: 1, b: 1, a: 1}
   flashCurve:
     serializedVersion: 2
     m_Curve:
@@ -1575,7 +1567,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ded550ecb90af8f458b6b8edf3f26542, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  flashColor: {r: 1, g: 1, b: 1, a: 1}
   flashCurve:
     serializedVersion: 2
     m_Curve:
@@ -1622,7 +1613,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ded550ecb90af8f458b6b8edf3f26542, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  flashColor: {r: 1, g: 1, b: 1, a: 1}
   flashCurve:
     serializedVersion: 2
     m_Curve:

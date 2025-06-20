@@ -2327,6 +2327,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: Manager
       objectReference: {fileID: 0}
+    - target: {fileID: 3429492992916967938, guid: dd124a0ba37d77b409357eabb4970896, type: 3}
+      propertyPath: OutputAudioMixerGroup
+      value: 
+      objectReference: {fileID: 24300002, guid: 55eaf5422325f9045a031538e7058637, type: 2}
+    - target: {fileID: 3488400810576649873, guid: dd124a0ba37d77b409357eabb4970896, type: 3}
+      propertyPath: OutputAudioMixerGroup
+      value: 
+      objectReference: {fileID: 24300002, guid: 55eaf5422325f9045a031538e7058637, type: 2}
     - target: {fileID: 5736177118791842018, guid: dd124a0ba37d77b409357eabb4970896, type: 3}
       propertyPath: m_LocalPosition.x
       value: 30.207617
@@ -3999,13 +4007,17 @@ PrefabInstance:
       propertyPath: m_Name
       value: Player
       objectReference: {fileID: 0}
+    - target: {fileID: 1084953805667698412, guid: 1e5e95d1c8d2a664aa123a5933f1c74e, type: 3}
+      propertyPath: dashSfx
+      value: 
+      objectReference: {fileID: 11400000, guid: 4b9ab26605e464d45a4410727653a440, type: 2}
     - target: {fileID: 1653175155450436630, guid: 1e5e95d1c8d2a664aa123a5933f1c74e, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -34.5
+      value: 13.1
       objectReference: {fileID: 0}
     - target: {fileID: 1653175155450436630, guid: 1e5e95d1c8d2a664aa123a5933f1c74e, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 3.1
+      value: 14.4
       objectReference: {fileID: 0}
     - target: {fileID: 1653175155450436630, guid: 1e5e95d1c8d2a664aa123a5933f1c74e, type: 3}
       propertyPath: m_LocalPosition.z
@@ -4047,6 +4059,10 @@ PrefabInstance:
       propertyPath: transformCooldown
       value: 2
       objectReference: {fileID: 0}
+    - target: {fileID: 4980118878545884433, guid: 1e5e95d1c8d2a664aa123a5933f1c74e, type: 3}
+      propertyPath: attackSfx
+      value: 
+      objectReference: {fileID: 11400000, guid: ffcd1652abfd9bb4aa227aab6dfad7c1, type: 2}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []

@@ -24,6 +24,13 @@ public class AudioManager : MonoBehaviour
     {
         sfxChannel.OnSFXPlayRequested += PlaySFX;
         musicChannel.OnMusicChangeRequested += PlayMusic;
+        SceneController.OnSceneLoaded += ResetVolume; // Disable volume when a new scene is loaded
+    }
+
+    private void ResetVolume()
+    {
+        sfxSource.clip = null;
+        musicSource.clip = null;
     }
 
     private void OnDisable()

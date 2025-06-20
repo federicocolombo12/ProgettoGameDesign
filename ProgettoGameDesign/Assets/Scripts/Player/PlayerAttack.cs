@@ -15,6 +15,7 @@ public class PlayerAttack : MonoBehaviour
     [SerializeField] GameObject slashEffectR;
     [SerializeField] GameObject slashEffectL;
     [SerializeField] float timeBetweenAttack, timeSinceAttack;
+    [SerializeField] SfxData attackSfx;
     [Space(10)]
     [Header("Recoil")]
     [SerializeField] float recoilXSpeed = 1f;
@@ -81,6 +82,7 @@ public class PlayerAttack : MonoBehaviour
             timeSinceAttack = 0;
             animator.SetTrigger("Attack");
             attack = false;
+            AudioManager.Instance.sfxChannel.RaiseEvent(attackSfx, true);
             //manage delay based on the transformation
             float hitDelay = Player.Instance.playerTransformation.attackDelay;
             PlayerTransformation currentTransformation = Player.Instance.playerTransformation;
