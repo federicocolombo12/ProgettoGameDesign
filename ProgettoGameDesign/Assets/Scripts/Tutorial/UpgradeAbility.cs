@@ -16,10 +16,16 @@ public class UpgradeAbility : MonoBehaviour
         {
             transformationToUpgrade.isUnlocked = true;
             transformationToUpgrade.AddAbility(abilityToUpgrade);
+            
             tutorialEvents.RaiseEvent(tutorialToShow);
             OnAbilityUpgraded?.Invoke(abilityToUpgrade);
+            if (abilityToUpgrade.Equals(PlayerTransformation.AbilityType.doubleJump))
+            {
+                transformationToUpgrade.jumpCount = transformationToUpgrade.jumpCount + 1;
+            }
             Player.Instance.playerMovement.UpdateVariables();
             Destroy(gameObject, 0.5f);
+            
             
         }
     }

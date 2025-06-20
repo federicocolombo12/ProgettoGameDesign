@@ -8,6 +8,8 @@ public class MinibossManager : MonoBehaviour
     [SerializeField] SwitchableObject bossFightDoor; // The door that opens when the boss fight starts
     [SerializeField] AudioClip bossFightMusic;
     [SerializeField] CanvasGroup bossHealthCanvas;
+    [SerializeField] AudioClip postFightMusic;
+
     BehaviorTree bossBt;
 
     private void OnEnable()
@@ -44,6 +46,8 @@ public class MinibossManager : MonoBehaviour
     {
        bossFightDoor = FindFirstObjectByType<SwitchableObject>();
         bossFightDoor.Close();
+        AudioManager.Instance.PlayMusic(postFightMusic, 1f);
+        bossHealthCanvas.DOFade(0, 0.5f).SetEase(Ease.InSine);
         
     }
 
