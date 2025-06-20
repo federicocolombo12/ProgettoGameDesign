@@ -235,6 +235,7 @@ MonoBehaviour:
   dashTrail: {fileID: 3407818901819470167, guid: b9a7955b868131d428569a45d40e357e, type: 3}
   dashPosition: {fileID: 8741919656094062384}
   effectPosition: 0.5
+  dashSfx: {fileID: 11400000, guid: 4b9ab26605e464d45a4410727653a440, type: 2}
   gravityCurve:
     serializedVersion: 2
     m_Curve:
@@ -287,6 +288,7 @@ MonoBehaviour:
   slashEffectL: {fileID: 8010427548078772200, guid: 8ea9b0b6d8cd3b54ebd83752cf3f4873, type: 3}
   timeBetweenAttack: 0.5
   timeSinceAttack: 0
+  attackSfx: {fileID: 11400000, guid: ffcd1652abfd9bb4aa227aab6dfad7c1, type: 2}
   recoilXSpeed: 5
   recoilYSpeed: 10
   recoilXSteps: 5
@@ -364,7 +366,7 @@ MonoBehaviour:
   - {r: 0.13883947, g: 0.6083492, b: 0.754717, a: 1}
   - {r: 0.8490566, g: 0.62263566, b: 0.07609467, a: 1}
   collider: {fileID: 1814032075909799558}
-  transformCooldown: 1
+  transformCooldown: 2
   transformationSfx: {fileID: 11400000, guid: d41499c93db50d14ea70afaf1060f7e9, type: 2}
 --- !u!114 &443132013862689332
 MonoBehaviour:
