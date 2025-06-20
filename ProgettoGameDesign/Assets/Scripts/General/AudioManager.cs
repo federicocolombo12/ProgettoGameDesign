@@ -2,6 +2,7 @@ using BehaviorDesigner.Runtime.Tasks;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.Audio;
 
 public class AudioManager : MonoBehaviour
 {
@@ -12,6 +13,7 @@ public class AudioManager : MonoBehaviour
     public SfxEventChannel sfxChannel;
     public MusicEventChannel musicChannel;
     [SerializeField] float audioCooldown = 0.1f;
+    [SerializeField] AudioMixer mixer;
 
     private HashSet<AudioClip> cooldownClips = new HashSet<AudioClip>();
 
@@ -107,14 +109,28 @@ public class AudioManager : MonoBehaviour
             yield return null;
         }
     }
-    public void DisableVolume()
+    public void DisableSfx()
     {
-            sfxSource.volume = 0f;
-        musicSource.volume = 0f;
+           mixer.SetFloat("Sfx", -80f); // Mute SFX
+
     }
-    public void EnableVolume()
+    public void DisableMusic()
     {
-        sfxSource.volume = 1f;
-        musicSource.volume = 1f;
+        mixer.SetFloat("Music", -80f); // Mute Music
     }
+    public void EnableSfx()
+    {
+        mixer.SetFloat("Sfx", 0f); // Unmute SFX
+    }
+    public void EnableMusic()
+    {
+        mixer.SetFloat("Music", 0f); // Unmute Music
+    }
+    public void DisableEverything()
+    {
+
+        DisableSfx();
+        DisableMusic();
+    }
+    
 }
