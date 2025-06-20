@@ -21,6 +21,8 @@ public class AudioManager : MonoBehaviour
     private void Awake()
     {
         Instance = this;
+        EnableMusic();
+        EnableSfx();
     }
 
     private void OnEnable()
