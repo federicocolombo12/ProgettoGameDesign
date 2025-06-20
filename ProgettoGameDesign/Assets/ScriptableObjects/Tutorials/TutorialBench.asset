@@ -19,4 +19,6 @@ MonoBehaviour:
   ColorTransformImage: {r: 1, g: 1, b: 1, a: 1}
   tutorialTitle: Totem
   tutorialText: The totem marks your journey. Rest and save your progress.
+  TestoTasto: press
+  TestoSecondoTasto: 
   unlocked: 0

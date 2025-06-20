@@ -19,4 +19,6 @@ MonoBehaviour:
   ColorTransformImage: {r: 0.9294118, g: 0, b: 0.078431375, a: 1}
   tutorialTitle: Fireball
   tutorialText: With enough mana, you can cast spells to hit enemies from a distance.
+  TestoTasto: press
+  TestoSecondoTasto: 
   unlocked: 0

@@ -23,6 +23,9 @@ public class Tutorial : ScriptableObject
     [Multiline(4)]
     [LabelText("Testo del Tutorial")]
     public string tutorialText;
+
+    public string TestoTasto;
+    public string TestoSecondoTasto;
     [Title("Eventi del Tutorial")]
     [SerializeField] public bool unlocked;
 }

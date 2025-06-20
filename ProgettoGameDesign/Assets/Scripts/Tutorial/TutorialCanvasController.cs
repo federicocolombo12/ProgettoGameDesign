@@ -13,6 +13,9 @@ public class TutorialCanvasController : MonoBehaviour
     [SerializeField] Image secondButtonImage;
     [SerializeField] Image TransformImage;
     [SerializeField] Image TransformImage2;
+    [SerializeField] private TextMeshProUGUI testoTasti;
+    [SerializeField] private TextMeshProUGUI testoTasti2;
+    
    
     CanvasGroup tutorialCanvas;
     [SerializeField] TextMeshProUGUI tutorialText;
@@ -54,7 +57,18 @@ public class TutorialCanvasController : MonoBehaviour
         tutorialText.text = _tutorialMaterial.tutorialText;
         tutorialTitle.text = _tutorialMaterial.tutorialTitle;
         powerImage.sprite = _tutorialMaterial.tutorialImage;
-        buttonImage.sprite = _tutorialMaterial.tastoDaPremere;
+        testoTasti.text = _tutorialMaterial.TestoTasto;
+        testoTasti2.text = _tutorialMaterial.TestoSecondoTasto;
+        if (_tutorialMaterial.tastoDaPremere == null)
+        {
+            buttonImage.sprite = null;
+            buttonImage.color = new Color(1, 1, 1, 0); // alpha 0 = trasparente
+        }
+        else
+        {
+            buttonImage.sprite = _tutorialMaterial.tastoDaPremere;
+            buttonImage.color = Color.white; // alpha 1 = opaco
+        }
         if (_tutorialMaterial.secondTastoDaPremere== null)
         {
             secondButtonImage.sprite = null;

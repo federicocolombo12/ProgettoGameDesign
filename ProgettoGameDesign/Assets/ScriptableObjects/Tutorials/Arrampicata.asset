@@ -20,4 +20,6 @@ MonoBehaviour:
   tutorialTitle: 'Wall Climb '
   tutorialText: You've gained the ability to climb specific walls. Jump onto them
     and use the stick to move vertically.
+  TestoTasto: Move
+  TestoSecondoTasto: 
   unlocked: 0

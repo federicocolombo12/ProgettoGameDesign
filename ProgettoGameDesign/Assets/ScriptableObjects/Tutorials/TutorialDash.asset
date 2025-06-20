@@ -19,4 +19,6 @@ MonoBehaviour:
   ColorTransformImage: {r: 1, g: 1, b: 1, a: 1}
   tutorialTitle: Dash
   tutorialText: Dash to reach the more distant platforms.
+  TestoTasto: press
+  TestoSecondoTasto: 
   unlocked: 0
