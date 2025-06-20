@@ -7,12 +7,14 @@ using DG.Tweening;
 using UnityEngine.InputSystem;
 using System.Collections;
 using UnityEngine.Events;
+using UnityEngine.Video;
 
 public class MenuEventSystemHandler : MonoBehaviour
 {
     [Header("Reference")]
     public List<Selectable> selectables = new List<Selectable>();
     [SerializeField] protected Selectable _firstSelected;
+    [SerializeField] protected ScenesToLoad gameStart;
 
     [Header("Controls")]
     [SerializeField] protected InputActionReference _navigateActionReference;
@@ -25,6 +27,8 @@ public class MenuEventSystemHandler : MonoBehaviour
 
     [Header("Sound")]
     public UnityEvent SoundEvent;
+    [Header("Video")]
+    [SerializeField] protected VideoPlayer videoPlayer;
 
     protected Dictionary<Selectable, Vector3> _originalScales = new Dictionary<Selectable, Vector3>();
 
@@ -40,6 +44,8 @@ public class MenuEventSystemHandler : MonoBehaviour
             selectables[i].transform.localScale = _originalScales[selectables[i]];
         }
        StartCoroutine(SelectAfterDelay());
+        videoPlayer.loopPointReached += VideoEnded;
+       
     }
     protected virtual IEnumerator SelectAfterDelay()
     {
@@ -57,6 +63,11 @@ public class MenuEventSystemHandler : MonoBehaviour
         {
             _scaleDownTween.Kill();
         }
+        videoPlayer.loopPointReached -= VideoEnded;
+    }
+    void VideoEnded(VideoPlayer vp)
+    {
+        SceneController.Instance.LoadSceneSet(gameStart);
     }
     public virtual void Awake()
     {
