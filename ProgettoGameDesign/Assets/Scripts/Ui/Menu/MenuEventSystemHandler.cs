@@ -8,6 +8,7 @@ using UnityEngine.InputSystem;
 using System.Collections;
 using UnityEngine.Events;
 using UnityEngine.Video;
+using System;
 
 public class MenuEventSystemHandler : MonoBehaviour
 {
@@ -18,6 +19,7 @@ public class MenuEventSystemHandler : MonoBehaviour
 
     [Header("Controls")]
     [SerializeField] protected InputActionReference _navigateActionReference;
+    [SerializeField] protected InputActionReference _cancelActionReference;
 
     [Header("Animations")]
     [SerializeField] protected float _selectedAnimationScale = 1.1f;
@@ -45,6 +47,7 @@ public class MenuEventSystemHandler : MonoBehaviour
         }
        StartCoroutine(SelectAfterDelay());
         videoPlayer.loopPointReached += VideoEnded;
+        _cancelActionReference.action.performed += SkipVideo;
        
     }
     protected virtual IEnumerator SelectAfterDelay()
@@ -64,7 +67,19 @@ public class MenuEventSystemHandler : MonoBehaviour
             _scaleDownTween.Kill();
         }
         videoPlayer.loopPointReached -= VideoEnded;
+        _cancelActionReference.action.performed -= SkipVideo;
     }
+
+    private void SkipVideo(InputAction.CallbackContext context)
+    {
+        if (videoPlayer.isPlaying)
+        {
+            videoPlayer.Stop();
+            SceneController.Instance.LoadSceneSet(gameStart);
+        }
+        
+    }
+
     void VideoEnded(VideoPlayer vp)
     {
         SceneController.Instance.LoadSceneSet(gameStart);
