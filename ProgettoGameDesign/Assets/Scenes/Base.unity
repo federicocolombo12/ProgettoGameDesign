@@ -1394,6 +1394,18 @@ PrefabInstance:
       propertyPath: m_Sprite
       value: 
       objectReference: {fileID: -6144018244211316465, guid: 65781493097b2974a97f6876c8a93862, type: 3}
+    - target: {fileID: 3135378146394343242, guid: 4b8e405500c7dcc4c9fe2f3db276d2be, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.size
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3135378146394343242, guid: 4b8e405500c7dcc4c9fe2f3db276d2be, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 532265822}
+    - target: {fileID: 3135378146394343242, guid: 4b8e405500c7dcc4c9fe2f3db276d2be, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_BoolArgument
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 3447735741816676839, guid: 4b8e405500c7dcc4c9fe2f3db276d2be, type: 3}
       propertyPath: m_IsActive
       value: 0
