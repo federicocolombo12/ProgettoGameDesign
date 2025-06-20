@@ -55,7 +55,7 @@ public class TutorialCanvasController : MonoBehaviour
         tutorialTitle.text = _tutorialMaterial.tutorialTitle;
         powerImage.sprite = _tutorialMaterial.tutorialImage;
         buttonImage.sprite = _tutorialMaterial.tastoDaPremere;
-        if (_tutorialMaterial.secondTastoDaPremere== null
+        if (_tutorialMaterial.secondTastoDaPremere== null)
         {
             secondButtonImage.sprite = null;
             secondButtonImage.color = new Color(1, 1, 1, 0); // alpha 0 = trasparente
