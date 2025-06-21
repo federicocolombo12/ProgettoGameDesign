@@ -15,13 +15,13 @@ public class MinibossManager : MonoBehaviour
     private void OnEnable()
     {
         StartBossfight.OnBossfightStart += OnBossFightStart;
-        
+        DestroyBoss.OnBossDestroyed += OnMinibossDeath;
         
     }
     private void OnDisable()
     {
         StartBossfight.OnBossfightStart -= OnBossFightStart;
-        
+        DestroyBoss.OnBossDestroyed -= OnMinibossDeath;
         
     }
     private void Start()
@@ -37,7 +37,7 @@ public class MinibossManager : MonoBehaviour
         if (bossFightMusic != null) {
             AudioManager.Instance.PlayMusic(bossFightMusic, 1f);
         }
-        
+        bossFightDoor.Open();
         bossBt.EnableBehavior();
         bossHealthCanvas.DOFade(1, 0.5f).SetEase(Ease.OutSine);
        

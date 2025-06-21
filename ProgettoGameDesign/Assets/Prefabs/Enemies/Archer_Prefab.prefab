@@ -754,9 +754,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3efaecc7cda864a8dba3f742e2794092, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  sr: {fileID: 4856498866381529004}
+  sr: {fileID: 7503675482175738335}
   health: 25
-  maxHealth: 25
+  maxHealth: 20
   recoilLenght: 0.5
   recoilFactor: 1
   isRecoiling: 0
@@ -767,14 +767,14 @@ MonoBehaviour:
     serializedVersion: 2
     m_Bits: 1024
   flashMaterial: {fileID: 2100000, guid: d28059583e1a40249ad8daa3586d8028, type: 2}
-  deathEffect: {fileID: 0}
+  deathEffect: {fileID: 713872799470891955, guid: 86205f73cb9a21d48b58f62520527137, type: 3}
   healthImage: {fileID: 507384076149555728}
   damage: 1
   orangeBlood: {fileID: 1018504420545732665, guid: 8e88e1f612b228c4891428b837d80d61, type: 3}
   weakTo: {fileID: 11400000, guid: a85abe56df98ddd489746a5ed5666703, type: 2}
   immuneTo: {fileID: 0}
   weakToEffect: {fileID: 5569289640993081841, guid: 6dbb3939c6bb00b4eae30e45299b42df, type: 3}
-  damageMultiplier: 2
+  damageMultiplier: 5
   projectilePrefab: {fileID: 693101946130715330, guid: 0d3649e3895df481f89628e805bcb6b7, type: 3}
   projectileSpeed: 5
   projectileTransform: {fileID: 1639369493155351710}
@@ -784,9 +784,9 @@ Transform:
   m_CorrespondingSourceObject: {fileID: -7552582706839291426, guid: 73e3818573769b948be414d8d9060321, type: 3}
   m_PrefabInstance: {fileID: 505339184674294673}
   m_PrefabAsset: {fileID: 0}
---- !u!212 &4856498866381529004 stripped
+--- !u!212 &7503675482175738335 stripped
 SpriteRenderer:
-  m_CorrespondingSourceObject: {fileID: 4928887097212458045, guid: 73e3818573769b948be414d8d9060321, type: 3}
+  m_CorrespondingSourceObject: {fileID: -1215626275159516594, guid: 73e3818573769b948be414d8d9060321, type: 3}
   m_PrefabInstance: {fileID: 505339184674294673}
   m_PrefabAsset: {fileID: 0}
 --- !u!1001 &3574060402744619700

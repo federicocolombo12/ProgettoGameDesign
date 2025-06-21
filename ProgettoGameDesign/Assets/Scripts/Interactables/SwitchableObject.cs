@@ -12,42 +12,28 @@ public class SwitchableObject : Interactable
     public override void Start()
     {
         base.Start();
-        startPos = transform.position;
-        //open or close it based on the state of the doorOpen instance
+        startPos = transform.localPosition; // usa localPosition
+
         if (doorOpen.isOpen)
         {
             isOpen = true;
-            transform.localPosition = new Vector3(transform.localPosition.x, moveDistance, transform.localPosition.z);
+            transform.localPosition = new Vector3(startPos.x, moveDistance,0);
         }
         else
         {
             isOpen = false;
-            transform.localPosition = new Vector3(transform.localPosition.x, startPos.y, transform.localPosition.z);
+            transform.localPosition = new Vector3(startPos.x, startPos.y, 0);
         }
     }
 
-   
-    
-
-    public override void Interact(GameObject interactor)
-    {
-        if (isOpen)
-        {
-            Close();
-        }
-        else
-        {
-            Open();
-        }
-        isOpen = !isOpen;
-        doorOpen.isOpen = isOpen;
-    }
-    
     public void Open()
     {
         transform.DOLocalMoveY(moveDistance, 1f).SetEase(Ease.OutBounce);
     }
-    public void Close() { 
+
+    public void Close()
+    {
         transform.DOLocalMoveY(startPos.y, 1f).SetEase(Ease.OutBounce);
     }
+
 }

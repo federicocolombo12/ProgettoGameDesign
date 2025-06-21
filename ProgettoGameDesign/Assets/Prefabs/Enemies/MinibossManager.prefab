@@ -623,6 +623,7 @@ MonoBehaviour:
   bossFightDoor: {fileID: 0}
   bossFightMusic: {fileID: 0}
   bossHealthCanvas: {fileID: 272627061797857804}
+  postFightMusic: {fileID: 0}
 --- !u!1 &8598184160181433542
 GameObject:
   m_ObjectHideFlags: 0

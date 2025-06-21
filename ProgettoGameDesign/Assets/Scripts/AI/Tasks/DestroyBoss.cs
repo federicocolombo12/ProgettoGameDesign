@@ -12,7 +12,7 @@ using UnityEngine;
         public ParticleSystem bleedEffect;
         public ParticleSystem explodeEffect;
     [SerializeField] private SwitchableObject switchableObject;
-
+    public static System.Action OnBossDestroyed;
         private bool isDestroyed;
 
         public override void OnStart()
@@ -21,7 +21,8 @@ using UnityEngine;
             DOVirtual.DelayedCall(bleedTime, () =>
             {
                 EffectManager.Instance.PlayOneShot(explodeEffect, transform.position);
-                switchableObject?.Open();
+               
+                OnBossDestroyed?.Invoke();
                 CameraManager.Instance.ShakeCamera(0.7f);
                 isDestroyed = true;
                 Object.Destroy(gameObject);
