@@ -79,7 +79,7 @@ public class GameManager : MonoBehaviour
     {
 
         yield return new WaitUntil(() => loaded);
-        loadGameEvent.Raise();
+        
 
         for (int i = 0; i < benchSet.Items.Count; i++)
         {
@@ -124,7 +124,7 @@ public class GameManager : MonoBehaviour
     {
 
         Debug.Log("Save Game Event Raised" + saveGameEvent.name);
-        saveGameEvent.Raise();
+        //saveGameEvent.Raise();
 
 
     }
