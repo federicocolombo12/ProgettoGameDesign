@@ -2148,7 +2148,7 @@ PrefabInstance:
     - target: {fileID: 7521415080919476131, guid: 875939db26fc740399ddb53ee1a9a603, type: 3}
       propertyPath: newMusicClip
       value: 
-      objectReference: {fileID: 8300000, guid: c8974d1c4618ecf40aed223091efb3a4, type: 3}
+      objectReference: {fileID: 8300000, guid: 2da8c7135b47e654185465420b426d93, type: 3}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -124396,7 +124396,7 @@ PrefabInstance:
     - target: {fileID: 7521415080919476131, guid: 875939db26fc740399ddb53ee1a9a603, type: 3}
       propertyPath: newMusicClip
       value: 
-      objectReference: {fileID: 8300000, guid: c8974d1c4618ecf40aed223091efb3a4, type: 3}
+      objectReference: {fileID: 8300000, guid: 2da8c7135b47e654185465420b426d93, type: 3}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
